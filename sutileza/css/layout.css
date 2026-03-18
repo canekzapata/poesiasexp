@@ -1,0 +1,452 @@
+@font-face {
+  font-family: 'ever';
+  src: url(Web437_IBM_Model3x_Alt4.woff);
+}
+@font-face {
+  font-family: 'symbola';
+  src: url(Symbola.ttf);
+}
+@font-face {
+  font-family: 'alpha';
+  src: url(ALPHA-Test.otf);
+}
+
+@font-face {
+  font-family: 'unscii';
+  src: url(unscii-16-full.woff);
+}
+@font-face {
+  font-family: 'jomo';
+  src: url(Jomolhari-xvVK.ttf);
+}
+
+
+:root {
+--main-bg-color:  black;
+--main-bg-color1:  black;
+--main-bg-color2:  black;
+--main-bg-color3:  black;
+--main-bg-color4:  black;
+--main-bg-color5:  black;
+--main-bg-color6:  black;
+--main-bg-color7:  black;
+--main-bg-color8:  black;
+--main-bg-color9:  black;
+--main-bg-color10:  black;
+--main-bg-color11:  black;
+--main-bg-color12:  black;
+--main-bg-color13:  black;
+
+--main-bg-color15:  black;
+--main-bg-color16:  black;
+--main-bg-color17:  black;
+--main-bg-color18:  black;
+--main-bg-color19:  black;
+--main-bg-color20:  black;
+--main-bg-color21:  black;
+--main-bg-color22:  black;
+--main-bg-color23:  black;
+--main-bg-color24:  black;
+--main-bg-color25:  black;
+--main-bg-color26:  black;
+--main-bg-color27:  black;
+--main-bg-color28:  black;
+--main-bg-color29:  black;
+--main-bg-color30:  black;
+--main-bg-color31:  black;
+--main-bg-color32:  black;
+}
+
+
+
+@-webkit-keyframes shadow {
+	0% {
+	text-shadow: var(--main-bg-color);
+	}
+	8% {
+			text-shadow: var(--main-bg-color1);
+	}
+	16% {
+	text-shadow: var(--main-bg-color2);
+	}
+	24% {
+	text-shadow:var(--main-bg-color3);
+	}
+	32% {
+	text-shadow: var(--main-bg-color4);
+	}
+	40% {
+	text-shadow:var(--main-bg-color5);
+	}
+	48% {
+	text-shadow: var(--main-bg-color6);
+			}
+	56% {
+	text-shadow:var(--main-bg-color7);
+	}
+	64% {
+	text-shadow: var(--main-bg-color8);
+	}
+	72% {
+	text-shadow: var(--main-bg-color9);
+	}
+	80% {
+	text-shadow: var(--main-bg-color10);
+	}
+	88% {
+	text-shadow: var(--main-bg-color11);
+}
+	95% {
+	text-shadow: var(--main-bg-color12);
+	}
+100% {
+	text-shadow:var(--main-bg-color13);
+}
+}
+
+
+@-webkit-keyframes fondo1 {
+	0% {
+	background-color: var(--main-bg-color);
+	}
+	8% {
+			background-color: var(--main-bg-color1);
+	}
+	16% {
+	background-color: var(--main-bg-color2);
+	}
+	24% {
+	background-color:var(--main-bg-color3);
+	}
+	32% {
+	background-color: var(--main-bg-color4);
+	}
+	40% {
+	background-color:var(--main-bg-color5);
+	}
+	48% {
+	background-color: var(--main-bg-color6);
+			}
+	56% {
+	background-color:var(--main-bg-color7);
+	}
+	64% {
+	background-color: var(--main-bg-color8);
+	}
+	72% {
+	background-color: var(--main-bg-color9);
+	}
+	80% {
+	background-color: var(--main-bg-color10);
+	}
+	88% {
+	background-color: var(--main-bg-color11);
+}
+	95% {
+	background-color: var(--main-bg-color12);
+	}
+100% {
+	background-color:var(--main-bg-color13);
+}
+}
+
+
+
+@-webkit-keyframes esquina {
+	0% {
+	border-color: var(--main-bg-color6);
+	}
+	20% {
+	border-color: var(--main-bg-color23);
+	}
+	38% {
+	border-color: var(--main-bg-color12);
+	}
+	66% {
+	border-color:var(--main-bg-color1);
+	}
+	89% {
+	border-color: var(--main-bg-color9);
+	}
+	100% {
+	border-color:var(--main-bg-color26);
+
+}
+}
+@-webkit-keyframes pulse2 {
+	0% {
+	color: var(--main-bg-color4);
+	}
+	20% {
+	color: var(--main-bg-color20);
+	}
+	38% {
+	color: var(--main-bg-color17);
+	}
+	66% {
+	color:var(--main-bg-color19);
+	}
+	89% {
+	color: var(--main-bg-color18);
+	}
+	100% {
+	color:var(--main-bg-color);
+
+}
+}
+
+
+
+@-webkit-keyframes fond1 {
+	0% {
+	background-color: var(--main-bg-color21);
+	}
+	20% {
+			background-color: var(--main-bg-color20);
+	}
+	38% {
+	background-color: var(--main-bg-color22);
+	}
+	66% {
+	background-color:var(--main-bg-color23);
+	}
+	89% {
+	background-color: var(--main-bg-color24);
+	}
+	100% {
+	background-color:var(--main-bg-color25);
+
+}
+}
+
+.css-selector {
+
+}
+
+@-webkit-keyframes cielo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes cielo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes cielo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-webkit-keyframes ciel2 {
+    0%{background-position:0% 60%}
+    50%{background-position:130% 60%}
+    100%{background-position:0% 60%}
+}
+@-moz-keyframes ciel2 {
+    0%{background-position:0% 60%}
+    50%{background-position:130% 60%}
+    100%{background-position:0% 60%}
+}
+@keyframes ciel2 {
+    0%{background-position:0% 60%}
+    50%{background-position:130% 60%}
+    100%{background-position:0% 60%}
+}
+
+/*
+shadow : text shadow
+fondo1 : background color
+pulse2 : color
+fond1 : background color
+cielo : background position
+
+colores de body: 29-32
+
+
+*/
+html {
+  background: linear-gradient(var(--deg),var(--main-bg-color29),var(--main-bg-color30),var(--main-bg-color31),var(--main-bg-color32));
+  -webkit-animation: ciel2 var(--temp3) ease infinite;
+  -moz-animation: ciel2 var(--temp3) ease infinite;
+  animation: ciel2 var(--temp3) ease infinite;
+    background-size: 900% 900%;
+}
+
+body{
+  background: linear-gradient(var(--deg),var(--main-bg-color29),var(--main-bg-color30),var(--main-bg-color31),var(--main-bg-color32));
+  background-size: 900% 900%;
+
+	font-family: 'ever', 'symbola', 'jomo','alpha', 'unicode','Arial', 'unscii';
+
+  -webkit-animation: cielo var(--temp2) ease infinite;
+  -moz-animation: cielo var(--temp2) ease infinite;
+  animation: cielo var(--temp2) ease infinite;
+}
+#container {
+	width: fit-content;
+  width: 100%;
+	height: 100%;
+
+	margin: 0 auto;
+  box-sizing: content-box;
+  padding:.6vmax;
+
+  overflow: none;
+  margin-top:10px;
+  background: linear-gradient(var(--deg),var(--main-bg-color3),var(--main-bg-color6),var(--main-bg-color7));
+  background-size: 900% 900%;
+	font-family: 'ever', 'symbola', 'jomo','alpha', 'unicode','Arial', 'unscii';
+
+  -webkit-animation: cielo var(--temp2) ease infinite;
+  -moz-animation: cielo var(--temp2) ease infinite;
+  animation: cielo var(--temp2) ease infinite;
+}
+
+
+
+.outputSample {
+
+  min-width: 90%;
+  min-height: 90%;
+  background: linear-gradient(var(--deg),var(--main-bg-color5),var(--main-bg-color9),var(--main-bg-color12),var(--main-bg-color22),var(--main-bg-color31));
+  background-size: 900% 900%;
+	font-family: 'ever', 'symbola', 'jomo','alpha', 'unicode','Arial', 'unscii';
+overflow: none;
+  -webkit-animation: cielo var(--temp3) ease infinite;
+  -moz-animation: cielo var(--temp3) ease infinite;
+  animation: cielo var(--temp3) ease infinite;
+}
+
+#content {
+
+  width: 890px;
+  height:90vh;
+  max-height: 95%;
+  max-width: 95%;
+ margin: 0 auto;
+min-width: 80%;
+min-height: 80%;
+	font-family: 'ever', 'symbola', 'jomo', 'alpha','unicode','Arial','unscii';
+align-content: center;
+word-break: break-all;
+text-align: center;
+border-style: dashed;
+border-width: .6vmax;
+overflow: hidden;
+
+     -webkit-animation: esquina  var(--temp3) ease infinite;
+     -moz-animation: esquina var(--temp3) ease infinite;
+     animation: esquina var(--temp3) ease infinite;
+padding-bottom: 10px;
+}
+
+/* h4 con background color pulsante */
+h4 {
+  font-size:7.4vmax;
+	font-family: 'ever', 'symbola', 'jomo', 'alpha', 'unicode','Arial','unscii';
+overflow: hidden;
+
+display: inline-block;
+      -webkit-animation: fond1 var(--temp4) ease infinite;
+      -moz-animation: fond1 var(--temp4) ease infinite;
+      animation: fond1 var(--temp4) ease infinite;
+}
+
+/* h5 con gradiente */
+h5 {
+
+  background: linear-gradient(var(--deg),var(--main-bg-color3),var(--main-bg-color4),var(--main-bg-color5),var(--main-bg-color23),,var(--main-bg-color19),,var(--main-bg-color31));
+  background-size: 900% 900%;
+  font-size:7.4vmax;
+	font-family: 'ever', 'symbola', 'jomo', 'alpha', 'unicode','Arial','unscii';
+overflow: hidden;
+
+display: inline-block;
+      -webkit-animation: cielo var(--temp2) ease infinite;
+      -moz-animation: cielo var(--temp2) ease infinite;
+      animation: cielo var(--temp2) ease infinite;
+}
+
+/* span con gradiente */
+span {
+  background: linear-gradient(var(--deg),var(--main-bg-color1),var(--main-bg-color2),var(--main-bg-color4),var(--main-bg-color6),var(--main-bg-color5),var(--main-bg-color9),var(--main-bg-color12),var(--main-bg-color15));
+  background-size: 900% 900%;
+  font-size:7.4vmax;
+	font-family: 'ever', 'symbola', 'jomo', 'alpha', 'unicode','Arial','unscii';
+overflow: hidden;
+
+display: inline-block;
+      -webkit-animation: cielo var(--temp1) ease infinite;
+      -moz-animation: cielo var(--temp1) ease infinite;
+      animation: cielo var(--temp1) ease infinite;
+
+}
+font {
+
+  font-size:7.4vmax;
+	font-family: 'ever', 'symbola', 'jomo', 'alpha', 'unicode','Arial','unscii';
+overflow: hidden;
+
+display: inline-block;
+      -webkit-animation: pulse2 var(--temp1) ease infinite;
+      -moz-animation: pulse2 var(--temp1) ease infinite;
+      animation: pulse2 var(--temp1) ease infinite;
+
+}
+h6 {
+  font-size:7.4vmax;
+  font-family: 'ever', 'symbola', 'jomo', 'alpha', 'unicode','Arial','unscii';
+  overflow: hidden;
+
+  display: inline-block;
+      -webkit-animation: shadow var(--temp4) ease infinite;
+      -moz-animation: shadow var(--temp4) ease infinite;
+      animation: shadow var(--temp4) ease infinite;
+ text-shadow: var(--shad) var(--shad) var(--main-bg-color12);
+}
+
+h2 {
+  font-size:7.4vmax;
+  font-family: 'ever', 'symbola', 'jomo', 'alpha', 'unicode','Arial','unscii';
+  overflow: hidden;
+
+  display: inline-block;
+      -webkit-animation: shadow var(--temp3) ease infinite;
+      -moz-animation: shadow var(--temp3) ease infinite;
+      animation: shadow var(--temp3) ease infinite;
+ text-shadow: var(--shad) var(--shad) var(--main-bg-color12);
+}
+#output {
+position: sticky;
+top:-44%;
+	font-size:5.6vmax;
+	font-family: 'ever', 'symbola', 'jomo', 'alpha', 'unicode','Arial','unscii';
+overflow: hidden;
+ text-shadow: 5px 5px var(--main-bg-color12);
+   /* Create the gradient. */
+   background-image: linear-gradient(var(--deg), var(--main-bg-color20),var(--main-bg-color19),var(--main-bg-color18),var(--main-bg-color),var(--main-bg-color17));
+
+   /* Set the background size and repeat properties. */
+background-size: 900% 900%;
+
+
+   /* Use the text as a mask for the background. */
+   /* This will show the gradient as a text color rather than element bg. */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-background-clip: text;
+   -moz-text-fill-color: transparent;
+
+
+
+     -webkit-animation: ciel2 var(--temp2) ease infinite;
+     -moz-animation: ciel2 var(--temp2) ease infinite;
+     animation: ciel2 var(--temp2) ease infinite;
+
+}
+
+#grammar {
+
+}

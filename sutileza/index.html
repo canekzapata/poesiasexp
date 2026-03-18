@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPJQQ3486C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DPJQQ3486C');
+</script>
+
+<link rel="preload" href="css/Symbola.ttf" as="font" crossorigin="anonymous">
+<link rel="preload" href="css/ALPHA-Test.otf" as="font" crossorigin="anonymous">
+<link rel="preload" href="css/Jomolhari-xvVK.ttf" as="font" crossorigin="anonymous">
+
+<link rel="preload" href="css/unscii-16-full.woff" as="font" crossorigin="anonymous">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/layout.css">
+<link rel="shortcut icon" type="image/ico" href="est.ico">
+<title>cosas sutiles del texto zurcido</title>
+<!--
+cosas sutiles del texto zurcido
+
+este es un experimento en tracery.io sobre caracteres de unicode, gradientes y pixeles pulsantes
+
+canekzapata.net
+
+2022
+-->
+
+<script id="fxhash-snippet">
+  //---- do not edit the following code (you can indent as you wish)
+  let alphabet = "123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ"
+  var fxhash = "oo" + Array(49).fill(0).map(_=>alphabet[(Math.random()*alphabet.length)|0]).join('')
+  let b58dec = str=>[...str].reduce((p,c)=>p*alphabet.length+alphabet.indexOf(c)|0, 0)
+  let fxhashTrunc = fxhash.slice(2)
+  let regex = new RegExp(".{" + ((fxhashTrunc.length/4)|0) + "}", 'g')
+  let hashes = fxhashTrunc.match(regex).map(h => b58dec(h))
+  let sfc32 = (a, b, c, d) => {
+    return () => {
+      a |= 0; b |= 0; c |= 0; d |= 0
+      var t = (a + b | 0) + d | 0
+      d = d + 1 | 0
+      a = b ^ b >>> 9
+      b = c + (c << 3) | 0
+      c = c << 21 | c >>> 11
+      c = c + t | 0
+      return (t >>> 0) / 4294967296
+    }
+  }
+  var fxrand = sfc32(...hashes)
+  // true if preview mode active, false otherwise
+  // you can append preview=1 to the URL to simulate preview active
+  var isFxpreview = new URLSearchParams(window.location.search).get('preview') === "1"
+  // call this method to trigger the preview
+  function fxpreview() {
+    console.log("fxhash: TRIGGER PREVIEW")
+  }
+  //---- /do not edit the following code
+</script>
+<script>
+
+// colores general
+const randomColor = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor1 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor2 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor3 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor4 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor5 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor6 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor7 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor8 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor9 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor10 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor11 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor12 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor13 = "#"+((1<<24)*fxrand()|0).toString(16);
+
+
+//colores de fondo
+const randomColor15 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor16 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor17 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor18 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor19 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor20 = "#"+((1<<24)*fxrand()|0).toString(16);
+
+// colores EPXlz4tn4EsorA04
+const randomColor21 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor22 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor23 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor24 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor25 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor26 = "#"+((1<<24)*fxrand()|0).toString(16);
+
+// cielos
+
+const randomColor27 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor28 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor29 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor30 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor31 = "#"+((1<<24)*fxrand()|0).toString(16);
+const randomColor32 = "#"+((1<<24)*fxrand()|0).toString(16);
+
+document.documentElement.style.setProperty('--main-bg-color', randomColor);
+document.documentElement.style.setProperty('--main-bg-color1', randomColor1);
+document.documentElement.style.setProperty('--main-bg-color2', randomColor2);
+document.documentElement.style.setProperty('--main-bg-color3', randomColor3);
+document.documentElement.style.setProperty('--main-bg-color4', randomColor4);
+document.documentElement.style.setProperty('--main-bg-color5', randomColor5);
+document.documentElement.style.setProperty('--main-bg-color6', randomColor6);
+document.documentElement.style.setProperty('--main-bg-color7', randomColor7);
+document.documentElement.style.setProperty('--main-bg-color8', randomColor8);
+document.documentElement.style.setProperty('--main-bg-color9', randomColor9);
+document.documentElement.style.setProperty('--main-bg-color10', randomColor10);
+document.documentElement.style.setProperty('--main-bg-color11', randomColor11);
+document.documentElement.style.setProperty('--main-bg-color12', randomColor12);
+document.documentElement.style.setProperty('--main-bg-color13', randomColor13);
+//colores de fondo
+document.documentElement.style.setProperty('--main-bg-color15', randomColor15);
+document.documentElement.style.setProperty('--main-bg-color16', randomColor16);
+document.documentElement.style.setProperty('--main-bg-color17', randomColor17);
+document.documentElement.style.setProperty('--main-bg-color18', randomColor18);
+document.documentElement.style.setProperty('--main-bg-color19', randomColor19);
+document.documentElement.style.setProperty('--main-bg-color20', randomColor20);
+document.documentElement.style.setProperty('--main-bg-color21', randomColor21);
+document.documentElement.style.setProperty('--main-bg-color22', randomColor22);
+document.documentElement.style.setProperty('--main-bg-color23', randomColor23);
+document.documentElement.style.setProperty('--main-bg-color24', randomColor24);
+document.documentElement.style.setProperty('--main-bg-color25', randomColor25);
+document.documentElement.style.setProperty('--main-bg-color26', randomColor26);
+
+// cielos
+
+document.documentElement.style.setProperty('--main-bg-color27', randomColor27);
+document.documentElement.style.setProperty('--main-bg-color28', randomColor28);
+document.documentElement.style.setProperty('--main-bg-color29', randomColor29);
+document.documentElement.style.setProperty('--main-bg-color30', randomColor30);
+document.documentElement.style.setProperty('--main-bg-color31', randomColor31);
+document.documentElement.style.setProperty('--main-bg-color32', randomColor32);
+
+
+// radio
+const radio = Math.floor((fxrand() * 360) + 1)+'deg';
+const radio2 = Math.floor((fxrand() * 360) + 1)+'deg';
+
+document.documentElement.style.setProperty('--deg', radio);
+document.documentElement.style.setProperty('--deg', radio2);
+
+// tiempo
+
+const tiempo1 = Math.floor((fxrand() * 1.3) + 1)+'s';
+const tiempo2 = Math.floor((fxrand() * 2) + 5)+'s';
+const tiempo3 = Math.floor((fxrand() * 2) + 3.4)+'s';
+const tiempo4 = Math.floor((fxrand() * 1.4) + 1.4)+'s';
+
+document.documentElement.style.setProperty('--temp1', tiempo1);
+document.documentElement.style.setProperty('--temp2', tiempo2);
+document.documentElement.style.setProperty('--temp3', tiempo3);
+document.documentElement.style.setProperty('--temp4', tiempo4);
+
+// opacidad
+
+const opi = Math.floor((fxrand() * .3) + .1);
+document.documentElement.style.setProperty('--opa', opi);
+
+//sombra
+const somb = Math.floor((fxrand() * 1.1) + .8);
+document.documentElement.style.setProperty('--shad', somb)+'px';
+</script>
+
+
+	</head>
+
+	<body id="gradient">
+
+		<div id="container">
+
+			<div id="content">
+
+				<div id="output">
+				</div>
+
+			</div>
+		</div>
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+		<script src="js/tracery.min.js"></script>
+		<script src="js/grammars.js"></script>
+		<script src="js/app.js"></script>
+		<script>var height = 0; var previousY = 0;
+	$(document).ready(function(){
+
+	 $("#pulldown").mousedown(function(e){
+
+	  height = 0;
+	  previousY = 0;
+
+	  $(document).on('mousemove',function(e){
+	   var mouseButton = e.which;
+
+	   if(previousY == 0){
+	    previousY = e.pageY;
+	   }
+
+	   var Y = e.pageY;
+
+	   // When Mouse Right button pressed
+	   if(mouseButton == 1){
+
+	    // Check mouse movement up or down
+	    if( Y < previousY ){
+	     height -= 1;
+	    }else{
+	     height += 1;
+	    }
+	    previousY = e.pageY;
+
+	    // Set height
+	    $('.pulldown-content').css('height',height+"px");
+
+	   }
+
+	   if(height > 150){
+	    location.reload();
+	   }
+
+	  });
+
+	 });
+
+	 // Remove mouse move Event and set height of .pulldown-content
+	 $(document).on('mouseleave mouseup',function(){
+
+	  if(height > 20){
+	   location.reload();
+	  }
+	  $(document).off('mousemove');
+	  $('.pulldown-content').css('height',"0px");
+	 });
+	});
+
+
+	</script>
+	<script>
+
+</script>
+	<script>
+	var flo = ["Pinos verdes y una choza rústica, el Sol hundiéndose en el aire puro.", "Me saco el gorro y paseo solo, escuchando el canto de los pájaros.", "No hay gansos silvestres que pasen volando, y ella está lejos, lejos.", "Pero mis pensamientos la hacen presente, como en los días que se fueron.", "Del otro lado del agua nubes oscuras se arremolinan, bajo los rayos de la Luna los islotes aparecen expuestos.", "Y se intercambian palabras dulces, aunque el gran Río pase entre medio.", "Una marmita de jade con una compra de primavera.", "Un chaparrón sobre la choza de techo de paja, dentro de la que se sienta un gentil estudioso.", "Altos bambúes creciendo a derecha e izquierda.", "Nubes blancas en el cielo recién despejado, y pájaros piando en lo profundo de los árboles.", "Entonces, reclinado sobre su laúd en la verde sombra, una cascada cayendo por encima de la cabeza.", "Hojas cayendo, ni una palabra hablada.", "El hombre, plácido como un crisantemo.", "Anotando la gloria florida de la estación: un libro bien digno de ser leído.", "La mente similar al vacío.", "La vitalidad similar al arco iris.", "Entre los miles de picos de Wu, volando con las nubes, corriendo con el viento.", "Bebe de lo espiritual, aliméntate de fuerza, almacénalos para su uso diario, guárdalos en tu corazón.", "Sé como Él en su poder, porque esto es preservar tu energía.", "Sé un observador del Cielo y la Tierra.", "Un trabajador en transformación divina.", "Busca estar lleno de esto, y mantente siempre con ello.", "Siguiendo nuestra propia inclinación.", "Disfrutando de lo Natural, libres de restricción.", "Ricos con lo que llega a las manos.", "Esperando algún día estar con Dios.", "Construir una choza bajo los pinos.", "Con la cabeza descubierta inclinarse sobre la poesía.", "Conociendo sólo la mañana y la noche, pero no cuál estación pueda ser.", "Entonces, si la felicidad es nuestra, ¿por qué debe haber acción?", "Si por nosotros mismos podemos llegar hasta este punto, ¿no puede decirse que lo hemos logrado?", "Escogiendo palabras llanas para expresar pensamientos simples.", "Repentinamente me encontré con un recluso, y me pareció ver el corazón del Tao.", "Al lado del arroyo sinuoso.", "Debajo de la sombra del pino oscuro.", "Había un forastero llevando un haz de leña y otro escuchando el laúd.", "Y así, hacia donde me llevó mi fantasía.", "Mejor que si lo hubiera buscado.", "Escuché la música del cielo, sorprendido por sus raras melodías.", "No es de la espiritualidad de la mente.", "No es de los átomos del cosmos sino como si llegara hasta las nubes blancas.", "Nacido allí de brisas translúcidas.", "Allá lejos, parece a mano.", "¡Llegas cerca, ya no está allí!", "Compartiendo la naturaleza del Tao.", "Esquiva los límites de la mortalidad.", "Está en las colinas apiladas, en los árboles altos, en los musgos oscuros, en los rayos del Sol.", "Canta acerca de eso, piensa en eso.", "Su débil sonido elude el oído.", "La vida se extiende a cien años, y aún así es un período muy corto.", "Sus alegrías son tan pasajeras.", "¡Sus penas son tan abundantes!", "¿Qué hay como una copa de vino?", "Visitas diarias al árbol de glicina, donde las flores se agrupan alrededor de los aleros.", "¿Y el ligero chaparrón pasa sobre la cabeza?", "Entonces cuando la copa de vino se ha escanciado, pasear con un bastón de espino.", "¿Quién de nosotros será algún día uno de los Antiguos?", "¡Ah, ahí está la Montaña del Sur en su grandiosidad!", "Bajo el pino pregunto al muchacho, responde: el maestro fue a juntar hierbas.", "Justo aquí, en esta montaña.", "Pero las nubes son densas y no conozco el lugar.", "En el acantilado del Oeste.", "Un viejo pescador duerme toda la noche, al amanecer junta agua del río Hsiang, y hace un fuego con bambúes.", "Las nieblas se disuelven, el Sol se eleva, ningún hombre aparece aún.", "El remo boga, repentinamente las montañas y el río son verdes.", "Navegando en medio de la corriente, mira hacia atrás, al cielo infinito.", "Desde los acantilados, las nubes lo siguen sin intención.", "Mil montañas, ningún pájaro vuela.", "Diez mil senderos, ni una huella de hombre.", "En un bote, un viejo vestido a la ligera, pescando solo, en el helado río nevado.", "Al lado del biombo, sobre mi lecho de bambú.", "Con una piedra por almohada, me dormí, y mi libro cayó de mi mano cansada.", "Cuando desperté, estaba lleno de alegría, y sonreí silenciosamente.", "Repentinamente, desde el río, llegan fragmentos de melodías de la flauta del pescador.", "Las brisas de primavera barren los prados verdes.", "La lluvia cesó, pero de las hojas de los bambúes aún cae agua.", "Repentinamente un pájaro blanco aparece en la escena rompe el universo verde de la ladera de la montaña.", "Todos en el mundo quieren que sus hijos tengan talento, pero a causa del talento, yo he sufrido toda mi vida.", "Ojalá hijo mío, que seas estúpido y zopenco, y, libre de problemas, llegues al cargo de primer ministro.", "El agua viviente debe ser cocida con fuego viviente.", "Voy al lugar donde solía pescar.", "Extraigo yo mismo la pureza de la laguna.", "Guardo una vasija de calabaza en la despensa.", "La Luna está guardada en un jarro.", "Corto el río con un cucharón.", "El río está guardado en un porrón.", "La leche nevada se eleva desde el fondo, donde fue hervida.", "Repentinamente se oye el viento, vertiéndose en el bosque de pinos.", "Es difícil evitar que mi lengua seca vacíe tres tazas llenas.", "Sentado ociosamente, escucho las guardias sonando en la ciudad desierta.", "Estoy viejo, enfermo y solo.", "Hago mi hogar en la Ladera Este.", "Blanca, escasa e hirsuta, mi barba se mezcla con el viento.", "Frecuentemente mi hijito se sorprende deleitado de encontrar rosas en mis mejillas.", "¿Cómo podría saber él, sonrío, que están rojas por el vino?", "Bebiendo en la Ladera Este por la noche, estoy chispeado y sobrio.", "Debe ser la tercera guardia cuando llego a casa.", "Mi hijo ronca como el trueno.", "Nadie escucha mis golpes.", "Apoyado en mi vara escucho al río.", "Siempre me lamento que mi ser no es mío.", "¿Cuándo no recordaré de apresurarme por nada?", "En la noche profunda el viento sueña.", "La seda blanca yace plana.", "Pronto el pequeño barco navegará, pasando el resto de su vida por los ríos y mares.", "El pescador va por su bebida, entra al negocio de vinos.", "El pescador ordena pescado y cangrejos.", "En cuanto al vino, el pecador sólo pide lo suficiente como para intoxicarse.", "No pregunta el precio, el pescador se emborracha.", "El pescador trata de hallar el camino a casa.", "El pescador deja que el pequeño remo se mueva, y que el bote flote.", "Cuando se despierta el pescador, no tiene idea de dónde se encuentra.", "El pescador se despierta al mediodía.", "Y ahí en el río, su sueño se rompe en pedazos en esta primavera.", "Entre capullos que caen, y candelillas que vuelan.", "Sobrio pero borracho, borracho pero sobrio.", "El pescador se ríe de la mortalidad.", "Todo esto es antiguo y nuevo.", "Interminablemente, interminablemente en el lago crecen los berzos.", "Los vientos nocturnos y los rocíos tienen el aroma del perfume de los lotos.", "Gradualmente la luz de una linterna de un templo lejano se hace visible.", "Esperemos y miremos el brillo del lago cuando la Luna se ponga.", "Es cuando estamos por terminar un libro que lo disfrutamos.", "Los huéspedes a los que esperamos ansiosos suelen no venir.", "Así el mundo siempre corre en contra de nuestros deseos.", "¡Qué pocas veces en cien años abrimos nuestros corazones!", "¡Qué profundamente silencioso es el templo de Tao!", "¡Limitado e infinito, es el lugar de residencia de lo divino!", "El salón de luz es amplio y alto, también reverenciado con silencio.", "Árboles con hojas coloreadas están creciendo y extendiéndose.", "Olvidado de las palabras, paseo y descanso aquí.", "He descartado el mundo de la fama y la ganancia.", "Qué elegante el Sol de la mañana, brillando sobre las balsas y los aleros.", "Qué frescas son la terraza y la laguna después de la lluvia.", "Quemo incienso para romper el profundo silencio.", "Bebo el agua del arroyo y me relajo con alegría.", "Penetro las maravillas de Tao, y canto los antiguos sutras.", "Cuando mi mente está cómoda mi espíritu está alegre.", "Cuando se obtiene el entendimiento, no queda nada por comprender.", "¿Quién puede decir que el reino del Tao está lejos de nosotros?", "Qué tranquilo es, como al comienzo del Cielo y la Tierra.", "Mi naturaleza esencial no gusta de la vida en las ciudades.", "Para estar libre del ruido me construí una pequeña cabaña con techo de paja lejos, en lo profundo de las montañas.", "Cuando llega la primavera observo los pájaros.", "En verano me baño en el arroyo corriente.", "En otoño trepo a los más altos picos.", "Durante el invierno me caliento al Sol.", "Así disfruto del verdadero sabor de las estaciones.", "¡Que el Sol y la Luna giren solos!", "Cuando tengo tiempo leo los sutras.", "Cuando estoy cansado duermo en mi cama de paja.", "Si me preguntas: ¿a quién ves en tus sueños?, contestaría: al Emperador Amarillo.", "He llevado la túnica negra durante décadas.", "El significado de la enseñanza es profundo y vasto como el océano.", "Cuando lo revelo con mi trabajo de pincel, sus méritos son ilimitados.", "Si te explicara esta enseñanza secreta a ti, la montaña sólida, me temo, saldría volando.",  "¿Puede acaso el sol dejar de salir y de ponerse?", "La Naturaleza no es igual que el hombre.", "la primavera no es nuestra primavera.", "el verano no es nuestro verano.", "el otoño no es nuestro otoño.", "el invierno no es nuestro invierno.", "La quietud es como el estanque de los cuatro mares.", "¿Qué decir al contemplar todo esto?", "Yo sé dónde está el contento sólo está en los seis dragones.", "la armonía de los seis dragones.", "hace que mi corazón.", "se sienta satisfecho.", "¿Por qué no desciendes del cielo, caballo divino?", "Alta es la Montaña de las Brujas alta y grande.", "profundas son las aguas del Huai profundas y raudas.", "Quiero retornar al este ¿por qué no lo hago?", "Aquí estoy detenido sin botador ni remo.", "ante estas turbulentas arremolinadas aguas.", "me acerco al borde del río miro hacia la lejanía.", "noto mi vestido empapado por las lágrimas.", "largo muy largo el camino.", "mi corazón sólo piensa en regresar", "¡Mas no puedo hacer nada!", "Salgo caminando por las puertas de Qi.", "a lo lejos veo el burgo de Dangyin.", "en el burgo hay tres tumbas tres montículos iguales.", "pregunto de quién son «de Gongsun Jie, de Tianjiang, de Guyeshi», me responden.", "Eran muy fuertes como para mover el monte Nan.", "eran muy sabios como para explicar los grandes Principios del mundo.", "pero un día, calumniados, dos duraznos los mataron a estos tres nobles hombres.", "¿Quién pudo tramar su muerte?", "Sembramos trigo en los campos altos.", "al final no veremos espigar.", "Un varón, lejos de su tierra, ¿no ha de verse consumido por la pena?", "El trigo, de un verde resplandeciente y la cebada ya seca.", "¿Quién va a recoger la mies? ¿Sólo mujeres y mozas?", "Los hombres se han ido al oeste a combatir a los bárbaros.", "Los mandarines compran caballos los señores aprestan sus carros.", "Os pido a todos: a voz en cuello gritad para que cese la guerra.", "Solloza el pez varado.", "en las arenas del río", "¡Ya es demasiado tarde no puedes arrepentirte!", "El que escribe y los peces del río se previenen mutuamente: ten cuidado cuando salgas y cuidado cuando entres.", "Profundos y oscuros los caminos del Monte Frío.", "frescos y silenciosos los bordes de sus torrentes.", "pájaros por doquier cantando sin nadie que rompa la paz.", "susurro del viento que acaricia el rostro.", "y la nieve copiosa que cubre el vestido.", "Pasan los días sin que el sol aparezca.", "pasan los años sin gozar de primavera.", "Mi corazón como la luna de otoño.", "verde estanque de limpias y brillantes aguas.", "nada se le puede comparar ¿qué más podría decir?", "Trepo por los senderos de la Montaña Fría.", "senderos que parecen no tener final.", "largas torrenteras pedregosas.", "anchos barrancos con yerba que la neblina empaña.", "musgo resbaladizo sin haber llovido.", "cantan los pinos sin soplar el viento.", "¿Por qué no rompes los lazos del mundo y vienes a sentarte conmigo entre las blancas nubes?", "Hace treinta años que nací.", "he recorrido errante muchos miles de leguas.", "viajado por ríos donde crecía poderosa la yerba.", "cruzado la lejana muralla donde se levantan rojizas polvaredas.", "aderezado pociones buscando en vano la inmortalidad.", "estudiado los clásicos y recitado la historia.", "Ahora he vuelto a la Montaña Fría.", "apoyo la cabeza en la corriente y me lavo los oídos.", "He echado las suertes y elegido una morada.", "Tiantai, ¿qué más se puede decir?", "Gritan los monos.", "una fría niebla cubre los arroyos.", "mi puerta de ramas armoniza con el color de los riscos.", "hojas de bambú cubren la choza de pino.", "he cavado una poza donde se vierte el agua del manantial.", "Por fin descanso gozoso.", "libre de mundanos asuntos.", "recogiendo plantas pasaré los años que me restan.", "Desde la atalaya de la amurallada ciudad.", "contemplo a lo lejos entre el viento y la bruma el país de los cinco vados.", "Tristeza siento al separarnos.", "ambos somos mandarines errantes amigos del corazón en nuestra tierra.", "aun en los confines del mundo seguiremos estando cerca.", "no seamos como esas parejitas que empapan de lágrimas sus pañuelos al separarse en la encrucijada.", "Claras como el espacio.", "las aguas de Chu allá muy lejos se unen al verde mar.", "Miles de leguas nos separan.", "mas una copa de vino y nos sentimos unidos.", "En el valle los pájaros cantan al brillante sol.", "en la ribera los monos aúllan al viento de la tarde.", "Rara vez en mi vida he llorado mas ahora mis lágrimas no cesan.", "Ante mi lecho la luz de una brillante luna semeja escarcha que cubriera el suelo.", "Alzo la cabeza contemplo la brillante luna luego la bajo y me acuerdo de mi tierra.", "La bella dama enrolla la cortina perlada.", "se sienta, triste, fruncidas sus hermosas cejas,.", "veo las húmedas huellas de sus lágrimas.", "mas ignoro a quién aborrece su corazón.", "Doradas nubes sobre el borde de la muralla.", "los cuervos retornan volando.", "graznan posados en las ramas.", "Una damita de Qinchuan teje un brocado.", "hasta ella llegan voces a través de la verde gasa de la ventana.", "Detiene su lanzadera y su tristeza.", "recuerda a quien muy lejos está.", "en la soledad de su alcoba.", "su llanto parece lluvia",  "Mis blancos cabellos tan largos como mi tristeza miden ya mil varas.", "Ignoro en el límpido espejo de dónde me ha venido esta otoñal escarcha.", "¿No veis que las aguas del Río Amarillo descienden del cielo y hasta el mar corren raudas para no retornar?", "¿No veis en esas nobles mansiones cómo se miran, tristes, en los brillantes espejos los cabellos blancos?", "Por la mañana negra seda ahora, en el ocaso, se han vuelto nieve.", "Gocemos gocemos de los placeres en esta existencia nuestra no dejemos vacías ante la luna nuestras copas doradas.", "Debemos usar el talento que el Cielo nos ha otorgado ¿perdemos mil onzas de oro? ya volverán.", "Asad el cordero, sacrificad la ternera, que reine la alegría, hay que beber trescientos vasos, de un trago.", "Maestro Cen, señor Danqiu, bebed, bebed, sin parar, mientras os canto una canción, escuchadme con la mayor atención, os ruego campanas y tambores, manjares y galas carecen de valor; sólo deseo una larga embriaguez y no tener que despertar.", "Los santos y sabios de antaño han caído en el olvido sólo de los bebedores hoy conocemos el nombre.", "En tiempos el rey Chen daba fiestas en su palacio de la Paz y la Alegría con excelentes vinos se entregaba a los placeres sin freno.", "Posadero, ¿por qué dices que falta dinero? Ocúpate sólo de traer vino a sus mercedes.", "Mi caballo pío mi abrigo de mil onzas le diré a mi hijo que los cambie por buen vino y juntos ahogaremos nuestras viejas penas.", "Verdes montañas se extienden más allá de la muralla norte blancas aguas rodean la ciudad del este.", "Aquí nos separamos, amigo, para siempre, comienzas, solitario, un larguísimo camino.", "Los pensamientos del viajero nubes flotantes, los sentimientos del viejo amigo el sol poniente.", "Me dice adiós con la mano mientras se parte, relincha su caballo pío.",  "Una jarra de vino entre las flores bebo solo, sin compañía de amigo alzo mi taza, invito a la luna, con mi sombra somos tres.", "Mas la luna no sabe lo que es beber, y mi sombra sólo seguirme, por un momento las dos se han vuelto mis compañeras.", "Es primavera, tiempo de alegría canto la luna empieza a oscilar bailo y se alborota mi sombra.", "Disfrutemos juntos mientras conservo el sentido, cuando me embriague vendrá la separación.", "Anudemos una eterna amistad libre de sentimientos, volveremos a encontrarnos, espero, allá lejos, en el Río de Plata.",  "Las praderas de Yan<p>parecen campos de jade las moreras de Qin se adornan con verdes ramas.", "Ya es tiempo, mi señor, de pensar en el retorno, que la pena de esta esclava le está partiendo el corazón.", "Viento de primavera no te conozco ¿por qué pasas a través de las cortinas de seda?",   "En la montaña florida dos hombres beben frente a frente una taza, otra taza, una taza más.", "Estoy borracho, quiero dormir, ya os podéis marchar; mañana, si es vuestro gusto, volved con el laúd.", "Sopla el viento las flores de los sauces llenan la taberna con su fragancia.", "Una mocita de Wu escancia el vino me dice: pruebe el señor.", "Mis amigos de Jinling han venido a despedirme quiero partir, y no quiero.", "Apuramos nuestras tazas.", "Un ruego, señores: preguntad a esas aguas que fluyen hacia el este si pueden ir más lejos", "que la amistad de un amigo."]
+
+
+	var virus = flo [(Math.floor(fxrand() * 11 >> 0))];
+
+			window.$fxhashFeatures = {
+
+			"text": virus,
+			"color": randomColor,
+
+
+			};
+
+			console.log(randomColor);
+			console.log(virus);
+						console.log(fxhash);
+
+</script>
+
+	</body>
+</html>
