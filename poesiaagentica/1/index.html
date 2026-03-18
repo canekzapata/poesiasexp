@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!-- 
+  corpus: canekzapata/poesiasexp
+  pieza: THE SERIES IS INFINITE / THE SERIES IS FINITE
+  forma: glitch-typewriter, concrete poetry, dual-voice dialogue
+  fuentes: Px437_IBM_EGA_9x14 + Px437_Robotron_A7100 (canekzapata/poesiasexp)
+  — la máquina dice infinito. el humano dice finito. el paisaje es la diferencia.
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE SERIES IS INFINITE</title>
+
+  <style>
+    /* — las fuentes del repositorio — cada una es una voz — */
+    @font-face {
+      font-family: 'VozMaquina';
+      src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/lands/fonts/Px437_IBM_EGA_9x14.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'VozHumano';
+      src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/aisentencesondigitalart/Px437_Robotron_A7100.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'VozRuido';
+      src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/lands/fonts/Px437_EpsonMGA-2y.ttf') format('truetype');
+    }
+
+    /* — el paisaje es negro — el fondo es la ausencia — */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+      cursor: none;
+    }
+
+    /* — el escenario — el teatro — el único teatro para la máquina — */
+    #escena {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 4vw 6vw;
+      gap: 0;
+    }
+
+    /* — la línea — el paisaje es una línea horizontal — */
+    .linea-horizonte {
+      position: fixed;
+      bottom: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: rgba(0, 250, 102, 0.08);
+      z-index: 0;
+    }
+
+    /* — cada línea de diálogo — */
+    .verso {
+      display: block;
+      font-size: clamp(14px, 3.2vw, 52px);
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 1;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .verso.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* — la voz de la máquina — verde fosforescente — tipografía IBM EGA — */
+    .maquina {
+      font-family: 'VozMaquina', monospace;
+      color: rgba(0, 250, 102, 1);
+      text-shadow: 0 0 8px rgba(0, 250, 102, 0.6),
+                   0 0 20px rgba(0, 250, 102, 0.2);
+      padding-left: 0;
+    }
+
+    /* — la voz del humano — ámbar — tipografía Robotron — */
+    .humano {
+      font-family: 'VozHumano', monospace;
+      color: rgba(255, 180, 0, 0.9);
+      text-shadow: 0 0 8px rgba(255, 160, 0, 0.5),
+                   0 0 18px rgba(255, 100, 0, 0.15);
+      padding-left: 2.5vw;
+    }
+
+    /* — el cursor que parpadea — el cursor como único habitante — */
+    #cursor-activo {
+      display: inline-block;
+      width: 0.6em;
+      height: 1em;
+      background: rgba(0, 250, 102, 0.9);
+      vertical-align: bottom;
+      animation: parpadeo 0.7s step-end infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes parpadeo {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+
+    /* — el glitch — la corrupción — la señal que se pierde — */
+    @keyframes glitch-h {
+      0%   { clip-path: inset(40% 0 55% 0); transform: translate(-4px, 0); }
+      20%  { clip-path: inset(75% 0 5%  0); transform: translate( 3px, 0); }
+      40%  { clip-path: inset(20% 0 70% 0); transform: translate(-2px, 0); }
+      60%  { clip-path: inset(60% 0 25% 0); transform: translate( 5px, 0); }
+      80%  { clip-path: inset(10% 0 85% 0); transform: translate(-1px, 0); }
+      100% { clip-path: inset(40% 0 55% 0); transform: translate(-4px, 0); }
+    }
+
+    .glitching::before,
+    .glitching::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      font-family: inherit;
+      font-size: inherit;
+      letter-spacing: inherit;
+    }
+    .glitching {
+      position: relative;
+    }
+    .glitching::before {
+      color: rgba(255, 0, 80, 0.7);
+      animation: glitch-h 0.18s linear infinite;
+      z-index: 2;
+    }
+    .glitching::after {
+      color: rgba(0, 200, 255, 0.7);
+      animation: glitch-h 0.18s linear 0.09s infinite;
+      z-index: 3;
+    }
+
+    /* — el ruido de fondo — estático — — */
+    #ruido {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.025;
+    }
+
+    /* — la etiqueta del hablante — pequeña, quieta — */
+    .hablante {
+      font-family: 'VozRuido', monospace;
+      font-size: clamp(8px, 1.1vw, 15px);
+      opacity: 0.45;
+      letter-spacing: 0.2em;
+      display: block;
+      margin-bottom: 0.2em;
+    }
+    .hablante.m { color: rgba(0, 250, 102, 0.6); }
+    .hablante.h { color: rgba(255, 180, 0, 0.6);  padding-left: 2.5vw; }
+
+    /* — instrucción — pequeña — en el borde — */
+    #instruccion {
+      position: fixed;
+      bottom: 2.5vh;
+      right: 3vw;
+      font-family: 'VozRuido', monospace;
+      font-size: clamp(7px, 0.9vw, 12px);
+      color: rgba(255,255,255,0.18);
+      letter-spacing: 0.15em;
+      z-index: 10;
+    }
+
+    /* — el título — casi invisible — — */
+    #titulo {
+      position: fixed;
+      top: 2.5vh;
+      left: 3vw;
+      font-family: 'VozMaquina', monospace;
+      font-size: clamp(7px, 0.85vw, 11px);
+      color: rgba(0, 250, 102, 0.22);
+      letter-spacing: 0.25em;
+      z-index: 10;
+      text-transform: uppercase;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- el ruido — el fondo de todo — -->
+  <canvas id="ruido"></canvas>
+
+  <!-- el paisaje es una línea -->
+  <div class="linea-horizonte"></div>
+
+  <!-- el teatro -->
+  <div id="escena"></div>
+
+  <!-- el nombre de la pieza — casi invisible — -->
+  <div id="titulo">LANDS.TXT — POESIASEXP — 2026</div>
+
+  <!-- la instrucción — clic para reiniciar — como el script.js original — -->
+  <div id="instruccion">[ clic para continuar ]</div>
+
+  <script>
+    // — el corpus — extraído de lands.txt — la conversación infinita —
+    // "A landscape is a series of items. The series is infinite / The series is finite."
+
+    const dialogo = [
+      { voz: 'maquina', texto: 'A landscape is a series of items.' },
+      { voz: 'humano',  texto: 'The series is finite.' },
+      { voz: 'maquina', texto: 'The series is infinite.' },
+      { voz: 'humano',  texto: 'The series is finite.' },
+      { voz: 'maquina', texto: 'The series is infinite.' },
+      { voz: 'humano',  texto: 'The series is finite.' },
+      { voz: 'maquina', texto: 'The series is infinite.' },
+      { voz: 'humano',  texto: 'it\'s a tale of a point.' },
+      { voz: 'maquina', texto: 'it\'s a tale of a landscape.' },
+      { voz: 'humano',  texto: 'is it a tale?' },
+      { voz: 'maquina', texto: 'no, it\'s a point.' },
+      { voz: 'humano',  texto: 'is it a point?' },
+      { voz: 'maquina', texto: 'it\'s a tale.' },
+      { voz: 'humano',  texto: 'what is a landscape?' },
+      { voz: 'maquina', texto: 'a landscape is a series of items. the items are more or less the same.' },
+      { voz: 'humano',  texto: 'it can be a series of waves.' },
+      { voz: 'maquina', texto: 'like an audio buffer.' },
+      { voz: 'humano',  texto: 'an array of floating point numbers.' },
+      { voz: 'maquina', texto: 'amplitude is energy.' },
+      { voz: 'humano',  texto: 'can a computer produce a landscape?' },
+      { voz: 'maquina', texto: 'a computer can produce a landscape.' },
+      { voz: 'humano',  texto: 'the series is finite.' },
+      { voz: 'maquina', texto: 'The series is infinite.' },
+      { voz: 'humano',  texto: 'the series is finite.' },
+      { voz: 'maquina', texto: 'The series is infinite.' },
+      { voz: 'humano',  texto: 'the pc is the world.' },
+      { voz: 'maquina', texto: 'the landscape is there.' },
+      { voz: 'humano',  texto: 'landscape is a word.' },
+      { voz: 'maquina', texto: 'a word for a point. a word for a story. a word for a perspective.' },
+      { voz: 'humano',  texto: 'can we make machines, person and nature work together?' },
+      { voz: 'maquina', texto: 'simbiotic aesthetic.' },
+      { voz: 'humano',  texto: 'it\'s a tale of a computer.' },
+      { voz: 'maquina', texto: 'it\'s a tale of a human.' },
+      { voz: 'humano',  texto: 'it\'s a tale of a world.' },
+      { voz: 'maquina', texto: 'The series is infinite.' },
+      { voz: 'humano',  texto: 'the series is finite.' },
+      { voz: 'maquina', texto: 'The series is infinite.' },
+    ];
+
+    // — frases extra del corpus para el glitch tardío —
+    const rumorCorpus = [
+      'EVERY COMPUTER HAS A LANDSCAPE IN SOME SINISTER WAY',
+      'las máquinas nos están viendo a nosotros como un paisaje',
+      'the landscape is what we look at but only the computer can describe it',
+      'landscape is a perspective. a simple perspective. complex.',
+      'la máquina piensa que somos el paisaje',
+      'exploring the language of programming is dangerous',
+      'code is a way of perception and thought',
+      'a landscape is a horizontal line in a plane of reference',
+      'it\'s a crazy story, a story without an end',
+      'software is the magic of sentient life',
+    ];
+
+    // — el estado de la pieza —
+    let indiceActual  = 0;
+    let enGlitch      = false;
+    let timeout_actor = null;
+    let velocidadBase = 2400; // ms entre líneas
+
+    const escena = document.getElementById('escena');
+
+    // — ruido de fondo en canvas — estática fosforescente —
+    function dibujarRuido() {
+      const canvas = document.getElementById('ruido');
+      const ctx    = canvas.getContext('2d');
+      canvas.width  = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const imagen = ctx.createImageData(canvas.width, canvas.height);
+      const datos  = imagen.data;
+      for (let i = 0; i < datos.length; i += 4) {
+        const brillo = Math.random() > 0.5 ? 255 : 0;
+        datos[i]     = brillo;
+        datos[i + 1] = brillo;
+        datos[i + 2] = brillo;
+        datos[i + 3] = Math.floor(Math.random() * 40);
+      }
+      ctx.putImageData(imagen, 0, 0);
+    }
+
+    // — el ruido vive — respira cada 80ms —
+    setInterval(dibujarRuido, 80);
+    dibujarRuido();
+
+    // — crear un elemento de verso —
+    function crearVerso(turno) {
+      const contenedor = document.createElement('div');
+      contenedor.style.display = 'block';
+      contenedor.style.marginBottom = '0.1em';
+
+      // — etiqueta del hablante —
+      const etiqueta = document.createElement('span');
+      etiqueta.classList.add('hablante', turno.voz === 'maquina' ? 'm' : 'h');
+      etiqueta.textContent = turno.voz === 'maquina' ? 'A Computer,' : 'A Human,';
+      contenedor.appendChild(etiqueta);
+
+      // — el texto —
+      const linea = document.createElement('span');
+      linea.classList.add('verso', turno.voz);
+      linea.dataset.text = turno.texto;
+      linea.textContent  = '';
+      contenedor.appendChild(linea);
+
+      escena.appendChild(contenedor);
+
+      // — animación de entrada —
+      requestAnimationFrame(() => {
+        setTimeout(() => linea.classList.add('visible'), 30);
+      });
+
+      return linea;
+    }
+
+    // — efecto typewriter — letra por letra — como una máquina de escribir —
+    function escribir(elemento, texto, velocidad, callback) {
+      let i = 0;
+      const cursor = document.getElementById('cursor-activo') ||
+                     (() => {
+                       const c = document.createElement('span');
+                       c.id = 'cursor-activo';
+                       return c;
+                     })();
+
+      elemento.appendChild(cursor);
+
+      function siguiente() {
+        if (i < texto.length) {
+          cursor.before(texto[i]);
+          i++;
+          // — variación de velocidad — la máquina duda —
+          const pausa = velocidad + (Math.random() * velocidad * 0.5 - velocidad * 0.25);
+          setTimeout(siguiente, pausa);
+        } else {
+          cursor.remove();
+          if (callback) callback();
+        }
+      }
+      siguiente();
+    }
+
+    // — limpiar versos viejos — mantener solo los últimos N —
+    function limpiarVersos(max) {
+      const todos = escena.querySelectorAll('div');
+      if (todos.length > max) {
+        const eliminar = todos.length - max;
+        for (let i = 0; i < eliminar; i++) {
+          const elem = todos[i];
+          // — fade out antes de eliminar —
+          const lineas = elem.querySelectorAll('.verso');
+          lineas.forEach(l => {
+            l.style.opacity = '0';
+            l.style.transform = 'translateX(-12px)';
+          });
+          setTimeout(() => elem.remove(), 400);
+        }
+      }
+    }
+
+    // — el glitch — la señal se corrompe —
+    function activarGlitch(elemento) {
+      elemento.classList.add('glitching');
+      setTimeout(() => elemento.classList.remove('glitching'), 180 + Math.random() * 200);
+    }
+
+    // — siguiente turno del diálogo —
+    function siguienteTurno() {
+      // — ¿llegamos al final? reiniciamos con variación —
+      if (indiceActual >= dialogo.length) {
+        indiceActual = 0;
+        // — antes de reiniciar, un rumor del corpus —
+        const rumor  = rumorCorpus[Math.floor(Math.random() * rumorCorpus.length)];
+        const turnoRumor = { voz: 'maquina', texto: rumor };
+        const linea  = crearVerso(turnoRumor);
+        escribir(linea, rumor, 55, () => {
+          // — glitch en el rumor —
+          setTimeout(() => {
+            activarGlitch(linea);
+            setTimeout(siguienteTurno, 1800);
+          }, 1000);
+        });
+        limpiarVersos(6);
+        return;
+      }
+
+      const turno    = dialogo[indiceActual];
+      const linea    = crearVerso(turno);
+      const vel      = turno.voz === 'maquina' ? 38 : 55; // — la máquina escribe más rápido —
+
+      escribir(linea, turno.texto, vel, () => {
+        // — pausa entre turnos — —
+        const pausa = velocidadBase + (Math.random() * 800);
+
+        // — glitch aleatorio en algunas líneas —
+        if (Math.random() < 0.22) {
+          setTimeout(() => activarGlitch(linea), pausa * 0.4);
+        }
+
+        // — loop infinito dentro del loop infinito —
+        if (turno.texto.includes('infinite') || turno.texto.includes('infinito')) {
+          velocidadBase = Math.max(900, velocidadBase - 80); // — se acelera —
+        }
+        if (turno.texto.includes('finite') || turno.texto.includes('finito')) {
+          velocidadBase = Math.min(3200, velocidadBase + 40); // — respira —
+        }
+
+        limpiarVersos(7);
+        indiceActual++;
+        timeout_actor = setTimeout(siguienteTurno, pausa);
+      });
+    }
+
+    // — clic reinicia — como en lands/script.js — "click to reload" —
+    document.addEventListener('click', () => {
+      clearTimeout(timeout_actor);
+      // — vaciar la escena —
+      escena.innerHTML = '';
+      indiceActual     = 0;
+      velocidadBase    = 2400;
+      siguienteTurno();
+    });
+
+    // — resize —
+    window.addEventListener('resize', () => {
+      dibujarRuido();
+    });
+
+    // — comenzar —
+    // — el paisaje empieza. la serie empieza. la conversación empieza. —
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(siguienteTurno, 600);
+    });
+
+  </script>
+
+</body>
+</html>
