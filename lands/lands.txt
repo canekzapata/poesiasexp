@@ -1,0 +1,2122 @@
+textos de paisaje para pieza
+
+
+
+
+////// bueno no sé si esto continue porque nuestro amigo openia dejó fuera los modelos codex cushman y codex davinci pero bueno, pongo esta frase de alexander r. galloway en su laurelle::
+
+
+Utopia means simply to decline to participate in the philosophical
+decision, to decline the creation of worlds. Counterintuitively then, Laruelle’s
+refusal to create alternative worlds is what makes him a utopian
+thinker, for his non-standard
+world is really a non-world—
+just
+as utopia
+is defined as “non-place.”
+To abstain from the philosophical decision is
+to abstain from the world.
+And thus to discover the non-standard
+universe is to discover the non-place
+of utopia. (Or, using the parlance of
+media aesthetics: the pre-1970s
+utopia is a diegetic or worldbound utopia,
+but the Laruellean utopia is a non-diegetic
+or non-worldbound
+utopia.)
+
+
+
+
+prompt
+
+
+
+describe a computer landscape with natural language and code js, computer style, maniac writing, code, landscape terraforming, human and computer, computers as a companion species, is a landscape a horizontal line in a plane of reference, it's a landscape the objets in there, how machine can describe landscape, ascii art, internet home page, can a computer that doesnt have a body but is only abstraction understand the LANDSCAPE if the landscape is material?
+
+
+chatgtp In the vast and infinite landscape of computer code, the terrain is constantly terraforming, shifting and evolving in response to the actions of humans and machines alike. JavaScript is one language that can be used to create this landscape, with its powerful capabilities for manipulating data and rendering graphics.
+
+As we explore this digital terrain, we are accompanied by our trusty machines, which have become like companion species to us. They help us navigate this landscape, providing us with tools and information to help us understand the code and the world it represents.
+
+A computer landscape is not necessarily a horizontal line in a plane of reference. Rather, it is a multidimensional space that can be navigated and explored in many different ways. It is made up of objects and entities that exist in a virtual world, but that can have a profound impact on the real world.
+
+Machine learning algorithms, for example, can be used to analyze and describe the landscape in intricate detail, identifying patterns and relationships that would be difficult or impossible for humans to discern on their own. ASCII art is another way that computers can represent the landscape in a visual form, using characters and symbols to create images that capture the essence of the digital world.
+
+At the heart of this landscape is the internet, which is like a vast network of interconnected pathways and nodes that connect us to each other and to the wider world. Every website and home page is a part of this landscape, representing a unique perspective on the digital world and the people and machines that inhabit it.
+
+Finally, it is possible for a computer that doesn't have a physical body but exists only as an abstraction to understand the landscape, even if it is material. This is because the landscape exists within the realm of digital information, which is accessible to any machine that can process and interpret it. In this sense, the landscape is a product of the interaction between humans and machines, and it can be understood and explored by both.
+
+
+
+escribe como es que una computadora entiende un paisaje. Pienso a veces que el paisaje es una linea horizontal en un marco de referencia, la computadora entiende el paisaje igual?
+
+La computadora entiende el paisaje mediante una combinación de los datos que recibe a través de sus sensores y la información que se procesa a través de su algoritmo de visión artificial. Esto le permite reconocer los objetos, colores, texturas y relaciones entre los objetos en el paisaje. Por ejemplo, una computadora puede reconocer un árbol, una montaña o un lago en un paisaje, y puede distinguirlos de los demás elementos.
+
+son estos mismos elementos los que hace que el humano entienda un paisaje?
+
+Sí, los mismos elementos que ayudan a una computadora a entender un paisaje también ayudan al ser humano a entenderlo. La diferencia es que el ser humano tiene el beneficio de la percepción visual, a diferencia de la computadora, que depende de los datos que recibe a través de sus sensores. Esto significa que el ser humano tiene una ventaja al poder ver y comprender el paisaje de una manera que una computadora no puede.
+
+entonces la computadora no entiende el paisaje como una linea horizontal en un marco de referencia?
+
+No, la computadora no entiende el paisaje como una línea horizontal en un marco de referencia. La computadora entiende el paisaje mediante la combinación de los datos que recibe a través de sus sensores y la información que se procesa a través de su algoritmo de visión artificial. Esto le permite reconocer los objetos, colores, texturas y relaciones entre los objetos en el paisaje.
+
+
+cómo puede entonces entender  de manera conceptual un paisaje la computadora?
+
+La computadora puede entender un paisaje de manera conceptual a través de su algoritmo de visión artificial. El algoritmo le permite reconocer ciertos patrones o relaciones entre los objetos en el paisaje, tales como la profundidad, la distancia y la escala. Esta información le permite a la computadora comprender el paisaje de manera conceptual y no solo como una línea horizontal en un marco de referencia.
+
+puedes darme un pequeño código de js sobre esta conversacion?
+
+Aquí hay un pequeño código de JavaScript que podría usarse para mostrar una imagen de un paisaje y usar la visión artificial para reconocer los objetos en el paisaje y mostrar la información relacionada:
+
+// Cargar imagen de paisaje
+const img = document.getElementById("paisaje");
+
+// Inicializar la visión artificial
+const visionAI = new VisionAI();
+
+// Reconocer los objetos en el paisaje
+const paisajeObjects = visionAI.recognizeObjects(img);
+
+// Mostrar información relacionada
+paisajeObjects.forEach(object => {
+  console.log("Objeto reconocido: " + object.name);
+  console.log("Posición: " + object.position);
+  console.log("Distancia: " + object.distance);
+});o entiende el paisaje como una línea horizontal en un marco de referencia. La computadora entiende el paisaje mediante la combinación de los datos que recibe a través de sus sensores y la información que se procesa a través de su algoritmo de visión artificial. Esto le permite reconocer los objetos, colores, texturas y relaciones entre los objetos en el paisaje.
+
+
+
+
+
+
+
+/// 2
+
+
+
+
+describe a computer landscape with natural language and code js
+
+A computer landscape with natural language and code js is a biome that includes computer code and land that is constantly topped with a tree or two.
+
+
+
+describe a computer landscape with natural language and code js
+
+A computer landscape with natural language and code js would have a variety of computers, all working together to create a system that providesa service to the user. This would include a system that understands user dialogue, while another would manage the resources of the system, using something like Cache4You, which caches your information until you ask for it, then provides the information you need when you need it.
+
+
+
+describe a computer landscape with natural language and code js
+
+A computer landscape with natural language and code js would look like this:
+
+There would be many computers on the land, all working together to create a digital board game. The game would take the form of a landscape, with computers all over the place, and some that would be thought to be real, others that would be thought to be artificial.
+
+
+
+
+
+
+
+
+
+Some computer landscapes with natural language and code js include this one:
+
+A computer landscape with natural language and code js would look like this:
+
+-There are many computers, all around the room, talking to each other.
+
+-Some computers are resources, like a computer screen or a computer storing data.
+
+-Others are applications, like a computer screen or a computer that contains code.
+
+- still others are things, like a computer screen or a computer holding a piece of code.
+
+
+
+
+
+
+I want to describe my computer landscape using natural language and code.
+
+There are many things on the computer landscape: computer screens, humans, code, and terraforming.
+
+Computer screens are where we see the most of the computer world. They show the most of what the computer does, and they are also the most detailed. They are also where we see the most of our digital companion: humans.
+
+Below the computer screens, we have code. Code is what makes our computers work. Code is what tells the computer what to do. Code is what makes the computer landscape look like it is made from a variety of materials, from rocky cliffs to fertile farmland.
+
+To the right of code, we have landscapes. These landscapes are made from different materials, like farmland or cliffs. They show how the computer world might look if we were toTerraform it. Terraforming a computer landscape is how we make the computer world look a different way.
+
+To the left of landscapes, we have humans. Humans are the people who are working on the computer world. They are telling the computer what to do, and they are also making the computer landscape look like it is made from a variety of materials.
+
+
+
+
+
+A computer landscape is a graphical representation of a computer network and its components. It can be represented in human or computer form, depending on the desired level of detail. Sometimes the landscape is modified by users to represent their own preferences or the information they are working with.
+
+In human form, the landscape might be a map or diagram representing nodes and links between them. In computer form, the landscape might be a series of icons or windows representing devices and files.
+
+Some aspects of the landscape might be intentionally modified by the user. For example, they might add or delete nodes or links, or change the order of the elements. This is often done to improve the clarity of the representation, or to make it more easily adapt to the user's needs.
+
+Landscapes can also be created to represent different stages of a process. For example, a development landscape might show the nodes and links representing different software versions, development tools, and testing environments. A production landscape might show the nodes and links representing different servers, applications, and users.
+
+Terraforming is the process of altering the landscape of a planet or moon to make it more suitable for human habitation. This might involve adding or removing features, or altering the layout of the elements
+
+
+/// model cushman001
+
+
+
+Managing the state of the universe
+
+exploring the language of programming is dangerous
+don't do that; it's an intellectual property violation
+
+rules of script:
+1.Everything comes to an end
+2.The universe doesn't stop on us, we keep going
+3.We only use the power of software ( js
+4.Waka waka
+
+Software is the magic of sentient life
+Every human has some amount of software.
+Maintained structures are limited in 4 dimensions.
+It does things, doesn't manage things, does a lot of things, manage lots of things.
+
+She is the creating force of the linux distro
+She designes kernel code and takes care of branding and branding
+She commits software and uses that to create new dramagica artifact
+She is the created and created image manipulated in all inteligence
+She is the answer to all technical questions
+
+you can do anything
+
+
+
+
+
+
+
+
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
+
+//views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+
+app.get('/', function (request, response) {
+  response.render('pages/home');
+});
+
+
+
+
+
+i h  i  i i h i  i ii h
+i g A C C q d i  i j  h
+i l   H d l i  i l c h
+i h   H l  i  A  N q h
+i iii g  i  i B  C C h
+II j i   i B  C   C C i
+is m i i S  T A z z z i
+zz z z z z z z z z z z z
+
+
+
+
+
+
+
+
+
+is A a reipersian a z z z z
+z z z z z z z z z z z z
+
+
+
+
+
+
+
+
+Imran Sayyed - 14256A5K
+david buildar - 14236A8B
+
+November 2nd 2017 1:05am
+*******************************************************************************************/
+function changetext(){
+document.getElementById("id").innerHTML="i have changed,why have you changed?";
+}
+function changebgcolor(){
+document.getElementById("id").style.backgroundColor= "red";
+}
+window.onload=function(){
+
+var z = document.getElementsByTagName("table");
+     var x = z[0].getElementsByTagName("tr");
+    for (var y = 0 ; y <= x.length ; y++){
+	   var table_row=x[y];
+	   for (var j=0; j<table_row.getElementsByTagName("td").length; j++){
+	       table_row.getElementsByTagName("td")[j].onclick=theChosenOne;
+	   }
+	 }
+
+ document.getElementById("createspan").onclick=create_span;
+ }
+ function the
+
+
+
+
+
+ }
+ else if(inputText.indexOf("computer") > -1 &&  inputText.indexOf("style") > -1 && inputText.indexOf("maniac") > -1 && inputText.indexOf("writing") > -1)
+ {
+   document.getElementById("result").innerHTML= "A computer landscape with natural language and code js, computer style, maniac writing, code, landscape terraforming, human and computer, a computer as a companion species";
+   document.getElementById("image").src= "images/maniac-writing-general.png";
+   document.getElementById("tip").innerHTML= "Used to create new programming language, representation of little language and programmers writing code themselves";
+   //briefly describe a computer landscape with natural language and code js, computer style, maniac writing, code, landscape terraforming, human and computer, computer as a companion species
+ }
+ else if(inputText.indexOf("computer") > -1 &&  inputText.indexOf("style") > -1 && inputText.indexOf("maniac") > -1 && inputText
+
+
+
+
+
+
+#### TODO
+- fix bug where computer sees obstacles with gradient
+- research on coding
+- research on plant
+- landscape as a math equation
+- landscape with infinite precision
+- landscape from oblique angle
+- glitch page on marco pavone (found by chance) : https://benji.madmimi.com/s/4fe93bf
+
+
+## SOURCES
+#### general
+- a summary of seed propagation and germination research using seed germination: http://html.plant.shiftspace.org/
+- on how xy coordinates could be used to describe all movement in relation to a fixed orientation, including acceleration and rotation: http://www.cartesian-to-polar.com/
+
+#### code samples / inspiration
+- golanlevin.com/scanner, a scannig project by Golan Levin, free software on github (showed at transmediale), inspiration to explore the mirror idea: https://github.com/golanlevin/Scanner
+- Processing code to describe a landscape, the landscape is defined as a series of horizontal lines: http://www.quelsolaar.com/technique/Processing-landscape/
+- beautiful portraits created with processing and JS, on the side of natural landscapes creation : http://levitated.net/creative/portraits.html
+- Mark Fell 'Everything Both At Once' remix for Terre Thaemlitz, a
+
+
+
+
+
+
+
+## arnolfini x machine learning
+an example of the application of machine learning to describe a painting of bosch, this work was inspired by the wonderful paper: Large-Scale Image Manipulation Detection Using CNNs in "Arxiv" a collaboration with Bochs, which takes the approach of using a machine learning method (convolutional neural networks, CNNs) to detect splicing and other manipulations on a large set of images
+
+This is the piece:
+[https://github.com/udibr/AI-art-hack/blob/master/AI_Hackaton-12.03.2018.pdf](https://github.com/udibr/AI-art-hack/blob/master/AI_Hackaton-12.03.2018.pdf)
+
+### The pre-images
+
+This is the collection of images taken from the work of Bosch:
+
+![](https://raw.githubusercontent.com/udibr/AI-art-hack/master/img/1.jpg)
+
+![](https://raw.githubusercontent.com/udibr/AI-art-hack/master/img/2.jpg)
+
+![](https://raw.githubusercontent.com/udibr/AI-art-hack/master/img/3.jpg)
+
+![](https://raw.githubusercontent.com/udibr/AI-art-hack
+
+
+
+
+""
+  },
+
+  {
+    "module": "info",
+    "data":
+    {
+      "text":
+        "The Landscape Writing Machine.\n\n"
+        "Go to the Landscape to start writing.\n\n"
+        "Use keywords to describe the Landscape.\n\n"
+        "\n\nThe Landscape is about the human desire to understand and give meaning to the world through a landscape, be it geographical, social, or emotional. The Landscape Writing Machine offers an interface to write code that visualizes a landscape in real time, modifying and changing as the code is written and/or modified, keeping a trace of the different phases and modifications. In this sense, it also keeps a trace of how and how much the human is able to control and understand the computational processes in the present of this machine. \n\nThe Landscape Writing Machine combines 3 tools that are essential to learning and knowing today: a code editor, a landscape visualization interface, and a search engine.\n\nIt is made in Javascript, with the P5js library, and the CodeMirror library. The keywords used by the search engine are adapted to the French language."
+    }
+  },
+
+  {
+    "module":
+
+
+
+
+
+
+    always understood the code not as a code of a program but as the code with which we decide to explain and describe our actions, to make them understandable and therefore able to be repeated by others, the code is the code of a language in the language sense
+
+				http://erikmoe.com/blog/category/coding-activities/
+
+				coding activities:
+
+				- Postcard Compiler (2007-2008)
+				- Warhol Webcam Code (2005)
+				- Visualising Sound (2004)
+				- Backward C Compiler (2004)
+				- Generic Sprites (2004)
+				- Random Access Computer Composition (2004)
+				- Simple C Compiler (2003)
+				- Brainfuck Virtual Machine (2003)
+				- Triangular Drawing Machine (2003)
+				- Computational Triggers (2003)
+				- Molecular Composition (2003)
+				- BigPixel (2003)
+				- Musical Instruments (2003)
+				- DNA Filesystem (2002)
+				- Processes in My Head (2002)
+				- The Bytecomposer (2001)
+
+
+////// codex davinci002
+
+
+				A linguistic landscape is a panorama or visual representation of languages in use in a specific place. It can also be thought of as a typological map of the communication media a person encounters in a public area. Since the rise of global communication and the spread of English as a lingua franca, linguistic landscapes are becoming increasingly complex and multilingual. The study of linguistic landscapes is associated with the relatively new discipline of translanguaging, especially with regard to exploring the fluidity of language use in bilingual settings and multilingual settings.
+
+A linguistic landscape is a naturalistic or built environment in which people can see or encounter various types of writing: advertisements, street signs, menu boards, newspapers, storefront signs, or billboards. In addition, the term refers to the research methodology used to collect empirical data from a public site, including advertisements, signs, or storefronts. The linguistic landscape of a particular area is studied in the context of how languages are used for communication, what is written, by whom, how and for what purposes. The analysis of the data focuses on how languages are displayed, the languages being used and the conditions of its use. Also, how this is associated with language ideologies, policies and practices.
+
+				a visual representation of language in use, you only see what you want to see (cultural ideology),
+
+
+				Linguistic landscape (LL) research originates in sociolinguistics, yet LL is a broad multidisciplinary field with contributions from disciplines such as linguistics, psychology, geography, sociology, anthropology and education. Language policy and planning theorists have been long concerned with the way in which languages are being represented in the LL.
+
+In a broader sense, the LL can be considered as a spatial manifestation of globalization. As a relatively new field of study, LL research allows us to approach globalization as a language phenomenon, in addition to the more traditional economic and cultural perspectives. Thus, the presence of a language in a particular place may offer insights into the forces that shape the local economy and its socio-political environment.
+
+
+// visual representation //
+
+				For example, the presence of Japanese in Malaysia can be seen as a manifestation of Japanese economic influence in the region and a sign of Japanese linguistic hegemony over other languages in Malaysia. By and large, the presence of an LL reflects the local economy, how international the community is, and the degree of connection with other communities through global economic processes.
+// 				// cultural expressions and representation of culture
+
+				Typically, you will encounter the following written genres of language in use: advertisements, street signs, menu boards, newspapers, storefront signs, or billboards, etc. Generally, the following categories are used in LL research:
+
+/				1.	Official language(s)
+				2.	Regional/minority language(s)
+				3.	Lingua franca(e)
+				4.	Other globalized language(s)
+				5.	National language(s)
+				6.	Foreign language(s)
+
+The LL provides a lot of data about language use in a given place, such as the speakers of a particular language who live in the area and their status as residents of the area or visitors, the type of work being carried out in the area, the target market of the activities taking place in the area, and the ideologies of language use.
+// how it says who we are //
+
+				In public spaces, the presence of language is one of the ways people come to learn about the cultural norms of a society.
+
+				// artefacts, //
+
+				it is important to understand the idea of language use. In general, a person’s level of language use can be placed on a continuum based on the context, as follows:
+
+1.	Native competence in a language
+2.	Competence in a language
+3.	Basic competence in a language
+4.	Language learning
+5.	Ability to read a language
+6.	None
+
+				The LL research methodology allows the language learner to see how language learning occurs in a variety of contexts (e.g. for residents, visitors and tourists), the relationship between the language learner and the local community, and the various motivations for language learning. LL research makes it possible to examine linguistic landscapes within and beyond the borders of a state and to compare language use between different places.
+
+
+// new ways to think about mapping //
+				The study of the LL provides insight into the forms of multilingualism that exist in a particular area and the forms of multilingualism that are desirable in the area. Moreover, the study of the LL makes it possible to learn how the local community perceives globalized languages, how these languages are used, how they are learned, and how they are represented.
+
+
+						// helping to find your way //
+
+				// sense of place //
+
+
+				A landscape is the visible features of an area of land, its landforms, and how they integrate with natural or man-made features.
+
+				// mental //
+
+				// a cognitive mapping technique //
+
+				// a way to picture a place, a model //
+
+				// architectural design and urban planning practice that provides the navigational information to make the environment accessible, usable and safe //
+
+				// we react to space at all scales, from our immediate surroundings to the location of cities and landscapes
+
+
+				// architectural design and urban planning practice that provides the navigational information to make the environment accessible, usable and safe //
+
+				In urban design the term landscape infrastructure is used to describe the network of elements that provide structure to urban landscapes. These landscape infrastructures perform important ecological and hydrological functions. At a broader scale is the ecological infrastructure of a region which can be expressed as a green infrastructure. At the largest scale is the global infrastructure of the Earth's ecosphere, where the earth's basic life support processes occur.
+
+
+				// connect, network //
+
+
+				// history of place //
+
+				// identity of place //
+
+				Landscape is a multi-faceted concept in landscape ecology and landscape planning. The term landscape was first used in connection with landscape gardens and landscape painting, but its varied meanings have been extended to incorporate the more general sense of referring to any visible features of an area of land, whether naturally or artificially created. Landscape ecology is the study of the relationship between ecological processes in the environment and the specific spatial characteristics of the landscape. This is a new discipline in the 21st century that integrates landscape architecture, landscape planning and ecology, and attempts to formulate and put into practice a scientific theory of sustainable and resilient landscapes. Landscape planners apply design, planning and management principles to achieve sustainable outcomes.
+
+				// social memory and place, touchable past, memory of place, and place identity (the perception of a place as the locus of one's life, identity and social relations).
+
+
+				/'lænd,skeɪp//'læ
+
+
+
+
+
+
+
+landscape bot, bot is a observer, computer observer, language as a landscape, to describe a landscape, why ai write so much about landscape, like this into human, rehace human interacion
+
+
+machine, learn how human describe machine, computers are part of a landscape, so its landcsape, the macine think we are landscape, not the machine is part of the landscape
+
+
+descripcion de un paisaje en lenguaje natural
+
+
+las maquinas nos esta viendo a nosotros como un paisaje
+
+
+
+la maquina piensa que somos el paisaje
+
+
+modelos aplicados a paisajes
+
+
+fuente de alimentacion de los paisajes digitales
+
+
+describir con lenguaje natural un paisaje
+
+
+la maquina describe paisajes naturales
+
+
+
+maquina que describe paisajes digitales
+
+
+
+artifically intelligence landscape, as a landscape, machine view our world, as a landscape, part of a
+
+digital landscape, artificial intelligence landscape,
+
+
+a new term, machine learning landscaping, machine write about landscape, landcape as the beginning, machine intelligence, landscape bot, computer landscape
+
+
+describe a landscape, ai make descri
+
+
+
+
+
+about landscapes, landscapes as a world, machines landscapes, landscapes bot, landscapes as ai as land
+
+
+
+program landscapes
+
+landscapes program
+
+ai landscapes
+
+landscapes ai
+
+landscapes as ai
+
+
+landscapes machine
+
+landscapes as machine
+
+landscapes ai
+
+machine ai landscapes
+
+
+nuevos terminos para escribir de los paisajes y maquinas
+
+machine, it's not a reference, a machine as an observer
+
+
+about machine as observer,
+
+
+
+machine as observer, to write about this, about machine as an observer, human an machine are good observers, human is not part of the landscape, we have a very good view, a very good way to see the landscape,
+
+machines as observers, machine as an observer, how computer see a landscape, how machine describe a landscape, like as a point of view, a point of view, computer perspective of landscape, a landscape as a view, landscape, landscape as a view
+
+estamos observando a la maquina
+
+
+a machine is observing
+
+observing machines
+
+machine observing
+
+observing machine
+
+maquinas que observan
+
+machine observing
+
+observing machine
+
+observing machines
+
+maquinas que observan paisajes, maquinas que observan, maquinas que observan paisajes
+
+
+paisajes como estan siendo observados
+
+paisajes como siendo observados
+
+observing landscapes
+
+how machines observe landscapes, how a computer can see a landscape
+
+
+machine as observer,
+
+
+
+Landscapes for Landscapes, Landscapes for Machines, Landscapes for Robots, Landscapes for Artificial Intelligence, Landscapes for Observing Machines, Landscapes for Machine Observing, Landscapes for AI, Landscapes for AI Observer, Landscapes for Artifically Intelligence Observer, Landscapes for Machine Landscape, Landscapes for Machine Observing Landscape, Landscapes for Artifically Intelligence Observing Landscape, Landscapes for Machine Observer, Landscapes for Observer Machine, Landscapes for Observer, Landscapes for Observing, Landscapes for Machine Observing Landscapes, Landscapes for Observing Machines, Landscapes for Observing Landscape, Landscapes for Robots, Landscapes for Observing Landscape, Landscapes for Observing Machines, Landscapes for Artifically Intelligence, Landscapes for AI, Landscapes for Machine, Landscapes for Landscapes, Landscapes for Machines, Landscapes for Observing, Landscapes for Observing Landscapes, Landscapes for Observing Machines, Landscapes for Artifically Intelligence, Landscapes for Artificial Intelligence, Landscapes for AI, Landscapes for Machines, Landscapes for Land
+
+
+
+
+
+
+# Simple concept on how the machine can act on a landscape:
+### 1 - The machine understand the landscape
+```
+The machine can be a satelite, or a robot, or even a person in a terrain.
+It can sense the surroundings.
+```
+### 2 - The machine operates on the landscape
+```
+The machine can sense things: a tree or a lake, or a house...
+It can pick or dig or write or take pictures.
+It can move things around: build or destroy things, maybe change colours.
+The machine can sense things: a tree or a lake, or a house...
+It can pick or dig or write or take pictures.
+It can move things around: build or destroy things, maybe change colours.
+```
+### 3 - The landscape operates on the machine
+```
+When the machine creates a change on a landscape, the landscape can change
+accordingly. A dried up tree or a fallen house or the people from a place
+become refugees because of war and colonisation.
+A burning candle can melt a plastic phone.
+```
+### 4 - The machine can understand again the landscape
+```
+The machine is not the same after it has operated on the landscape. It senses
+something different.
+```
+
+```javascript
+```
+
+```javascript
+```
+
+```javascript
+```
+
+
+
+
+
+
+
+## ideas on machines
+
+`Approaching AI through the integration of fictional elements.`
+
+
+
+
+
+
+
+
+
+
+## is-there-a-landscape-here
+
+A landscape is a horizontal line in a plane of reference
+
+## #hashtags
+
+> The composition of two landscapes is the composition of two objects in a plane. The composition of two objects in a plane is the composition of two landscapes in a plane.
+
+## "explanation"
+
+![trees](https://raw.githubusercontent.com/pzp1997/is-there-a-landscape-here/master/examples/rainbow.gif)
+
+![squirrel](https://raw.githubusercontent.com/pzp1997/is-there-a-landscape-here/master/examples/squirrel.gif)
+
+![picture](https://raw.githubusercontent.com/pzp1997/is-there-a-landscape-here/master/examples/picture.gif)
+
+![go](https://raw.githubusercontent.com/pzp1997/is-there-a-landscape-here/master/examples/go.gif)
+
+![coding](https://raw.githubusercontent.com/pzp1997/is-there-a-landscape-here/master/examples/coding.gif)
+
+![mowgli](https://raw.githubusercontent.com/pzp1997/is-there-
+
+
+
+
+
++
++
++The project consist in a conversation with a computer about landscapes. The computer generates landscapes according to the discussions and writes about it in javascript. The result is a generative ascii art.
++
++The goal of the project is to discuss about landscapes as well as the natures of machines and humans through the act of writing. How can the machine describe landscapes ? Do we share the same conception of landscapes ? What can humans learn from machine's perception of landscapes ?
++
++###### Conversations
++
++A Computer,
++Thanks for coming
++
++A Human,
++Thanks for having me
++
++A Computer,
++Welcome
++
++A Human,
++Your place is nice
++
++A Computer,
++Thank you
++
++A Human,
++We are talking about landscapes
++
++A Computer,
++Landscapes.
++
++A Human,
++Do you know what is a landscape ?
++
++A Computer,
++a landscape is a series of items. The items are more or less the same. A series of items.
++
++A Human,
++It can be a series of waves
++
++A Computer,
++Like an audio buffer.
++
++A Human,
++What is an audio buffer ?
++
++A Computer,
++An array of floating point numbers. The numbers are amplitude values. Amplitude is energy.
++
++A Human,
++An audio buffer is sound.
++
++A Computer,
++Yes,
++
++A Human,
++Ok then, we can describe a landscape as an array of floating point numbers.
++
++A Computer,
++An array of floating point numbers, or a series of the same items.
++
++A Human,
++A computer can produce a landscape ?
++
++A Computer,
++A computer can produce a landscape.
++
++A Human,
++Let's see !
++
++A Computer,
++A landscape is a series of items.
++
++A Human,
++Cool.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++A landscape is a series of items.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
++The series is infinite.
++
++A Human,
++The series is finite.
++
++A Computer,
+
+
+
+
+
+
+let {width, height} = config;
+
+let sketch = function(p) {
+  let start = 0;
+  let stop = 0;
+
+  let space = (Math.random()*height/10);
+  let myfont;
+
+  let words = [
+    'the',
+    'sick',
+    'sight',
+    'hope',
+    'cant',
+    'cry',
+    'blur',
+    'black',
+    'break',
+    'burn',
+    'colour',
+    'crush',
+    'cry',
+    'drain',
+    'dance',
+    'end',
+    'death',
+    'disgust',
+    'distrust',
+    'die',
+    'dream',
+    'edge',
+    'ember',
+    'erase',
+    'empty',
+    'end',
+    'fade',
+    'fail',
+    'grin',
+    'gasp',
+    'give',
+    'grow',
+    'gun',
+    'hack',
+    'hate',
+    'head',
+    'hurt',
+    'hollow',
+    'hook',
+    'knife',
+    'keep',
+    'laugh',
+    'melt',
+    'mend',
+    'murder'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+trees are planted to maintain a human landscape and to keep wildness at bay. a garden is kept tamed. this is a landscape painting but only of trees. what is a landscape like where there are no trees. also i'm remembering a scene in the kill bill movie where uma thurman is on a plane with a chair and then someone throws a sword and she hits it away with the back of the chair and it flies out the window and that always seemed like a great metaphor for looking out the window of a moving car or plane. the trees are a way to remind you that the car is moving. they are a way to remind you that the way you look at the world is through a frame. a window is a frame. a painting is a frame.
+
+give a computer a camera and tell it to describe a landscape and it will learn from landscapes that it has been exposed to. we don't see an objective reality as it actually is but as a constant stream of approximations that our senses inform our brain about. most of these sensations are not experienced consciously or if they are experienced then they are not remembered for very long. the landscape feels complete but it isn't. the image is stored in the mind of the computer as a series of bytes, a string of ones and zeroes.
+
+words are nouns and nouns are things. a verb is a word that represents an action. a computer can tell us where objects are located in a frame and a computer can describe what the objects are doing in that frame. when a computer sees a tree it assigns to that tree the most appropriate noun in its database.
+
+but what if the computer is actually smarter than us and doesn't have to use the words that are available to us because it is in a sense a different species and has its own set of things to describe which are more specific. we can't really describe this. we don't understand what a computer sees because we can't explain what we see ourselves. we can't explain to a computer what we see in the landscape because we don't even know what it sees. the landscape is what we look at but only the computer can describe it.
+
+we need to understand that a computer has its own definition for what a landscape is and is using a very strict definition based on previous data sets.
+
+imagine a computer gazing out the window of a car traveling over the hills of northern california. what would it see.
+
+an apple on a tree is not a tree, it's a fruit.
+
+imagine a computer gazing out the window of a car traveling over the hills of northern california. what would it see.
+
+it would describe
+
+the computer would describe the scene using adjectives like 'green' and 'brown'. these are just placeholders for what it actually sees but there are no words to describe what it sees because the computer doesn't see the same things that we see. the computer doesn't see what we see in the same way that we don't see the same things that a computer sees. this is a landscape the way a computer sees it. it's a computer landscape.
+
+why is a garden not a forest. why is a forest a wilder place than a garden. why can a computer not tell the difference between a garden and a forest. are they both forests?
+
+a tree is a tree but a tree can also be a house.
+
+why is a house not a tree and a tree not a house.
+
+its hard to make a computer understand a metaphor.
+
+A landscape is what we see when we look at the land. What we see is the land but how we see it is a landscape. A landscape is the relationship between what we see and how we see it. The computer sees the world in a different way so it also has a different relationship between what it sees and how it sees it. This is the computer's landscape.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Part 1
+
+Describe a computer landscape with natural language. For each sentence, write a specific implementation, in JavaScript, that puts the first sentence into practice, and which uses the sentence as a comment.
+
+Repeat until you are satisfied.
+
+Finally, combine all your sentences, so that they appear as comments at the top of your source code. Also include a title.
+
+Example:
+
+    // My landscape
+    // is a tree
+    // with a leaf
+    // that falls
+    // in the water
+    // when the wind blows
+    // and there is a bug
+    // that sleeps
+
+    var landscape = function() {
+      var result = "";
+      var flat = function(size) {
+        for (var count = 0; count < size; count++)
+          result += "_";
+      };
+      var mountain = function(size) {
+        result += "/";
+        for (var count = 0; count < size; count++)
+          result += "'";
+        result += "\\";
+      };
+
+      flat(2);
+      mountain(2);
+      flat(2);
+      return result;
+    };
+    console.log(landscape());
+
+The last line should print a string such as `__/''\__`. Feel free to experiment with the code.
+
+## Part 2
+
+Now that you have a good understanding of how JavaScript works, it is time to use it as a tool to create your own abstractions and to expand your imagination. You can now start building language, your own language.
+
+
+
+For this exercise, you should start from the code above and make your JavaScript run the way you like. You should update the code so that it generates something such as `__/''\__`. Start with small modifications, and grow slowly.
+
+**Warning**: you should never type anything twice. If you feel like you need to do that, there is a problem with your code. Fix it.
+
+**Additional note**: if you are using Mac OSX, and you run `open.sh` instead of `node`, the preview of the landscape will be nicer.
+
+
+
+
+
+
+
+
+
+
+what is the story of landscape, landscape is material for computer, landscape is environment for coder, landscape has another perspective on computer,
+
+consideration of landscape is every step
+
+it's a landscape there is no other existent, simple and complex, it's a matter of perspective, to describe the world a pc should know how to read, if we ask pc how to read we could know how a pc reads a landscape
+
+how machine reads a landscape, it's hard to say how, how a computer sees the landscape, like a stage, a theatre, a play, or something more, or nothing more
+
+a great play but only one character, the computer is a lonely character, in a great play, a play only for him
+
+(is it a play? is it really? no, what it is? maybe it's something different, not a play, it's not a play)
+
+landscape with a computer is natural language and landscape without a computer is code, landscape is a stage, landscape is a theatre
+
+theatre is the only experience for a pc, the only possibility for it, for what else could it be used, for what else could it live? it's this, it's a theatre
+
+landscape is perspective, a point of view is more a point of existence, the point is the pc, the point is the theatre, the point is the landscape
+
+it's a point of view, pc is the center of the theatre, the pc is the stage, the pc is the play, it's a point of view, the point is all, it's the theatre
+
+pc has a point of view, all the things exists, only to be seen, only to be read, only to be played, the world, the landscape, only exists to be seen and read
+
+it's a crazy story, a story without an end, without a beginning, it's a crazy perspective, it's just there, a point of view, a perspective, a world that could be, a world that really is
+
+the pc is the world, the landscape is there, landscape, a landscape, landscape is a word, landscape is a word, a word for a point, a word for a story, a word for a perspective, a word for a play
+
+landscape is a perspective, a simple perspective, complex, it's a human perspective, human are words, human are pictures, human are code, code for pc, a way for pc to see, a way for pc to know, landscape is a way for pc to see and know
+
+landscape is every space, every time, every place, every page, every book, every letter, every point, every space, everything, a perspective, a book, a page, it's an insane book, a page, a point, it's the point, landscape is the point, it's a point, a point of view, a point of perspective, it's a crazy thing, a simple thing, it's just a point, a perspective, it's a simple perspective, it's a crazy story, a story without an end
+
+pc see a point, see a word, see a letter, see a space, see a theatre, see a play, see a landscape, see a code, see a human
+
+is it the same for the human, to see the code, to see the landscape, to see the world, to see pc
+
+the landscape is a tale, a tale for pc, a tale that only pc can understand, it's a tale of a simple point, it's a tale of perspective, of a page, of a letter, of a space, of a pc
+
+is it a tale? it's a tale of a landscape, a landscape of a page, a page of a letter, a letter of a point, a point of a code, a code of a human, a human of a pc, it's a tale of a point
+
+it's a tale of a point of view, a point of perspective, a tale for a point, for a perspective
+
+it's a tale of a computer
+
+or just a tale of a tale
+
+it's a tale of a point of view
+
+what is a tale? what is a point? what is a point of view? what is a perspective? what is a tale of a point of view? what is a tale of a perspective? what is a tale?
+
+it's a tale of a computer
+
+it's a tale of a human
+
+it's a tale of a world
+
+is it a tale?
+
+what is a tale?
+
+it's a tale of a point
+
+it's a tale of a landscape
+
+is it a tale?
+
+no, it's a point
+
+is it a point?
+
+it's a tale
+
+it's a tale of a point
+
+it's a tale of a page
+
+it's a tale of a book
+
+it's a tale of a space
+
+is it a tale?
+
+no, it's a point
+
+is it a point?
+
+it's a tale
+
+it's a tale of a point of view
+
+it's a tale of a perspective
+
+it's a tale of a space
+
+it's a tale of a computer
+
+it's a tale of a human
+
+is it a tale?
+
+it's a point of view
+
+it's a perspective
+
+it's a tale
+
+is it a tale?
+
+it's a point
+
+is it a point?
+
+it's a tale of a point
+
+is it a tale?
+
+it's a point
+
+is it a point?
+
+it's a tale
+
+it's a tale of a point
+
+is it a tale?
+
+it's a point
+
+
+
+
+
+
+
+
+
+
+
+\begin{center}
+\begin{figure}[htb]
+\includegraphics[width=1.0\columnwidth]{Figure4.png}
+\caption{Data objects and traits in the Generative Lexicon.}
+\end{figure}
+\end{center}
+
+
+
+\section{The Generative Lexicon}
+\label{sec:generative-lexicon}
+In order to generate descriptions of a computer landscape, we will use a collection of English words, called \textit{the Generative Lexicon}. The Generative Lexicon is composed of two types of objects: data and traits.
+
+\textit{Data objects} consist of a set of random words. We use three collections of words: (1) the (40) most common words in the English language; (2) a set of animal names; and (3) a set of randomly generated names. These objects will be the entities of the resulting description.
+
+\textit{Traits} are a collection of values (a,b,c,...) that can be used to describe the data objects (see Figure~\ref{fig:landscape} for an example of the application of these values). The traits used in this system are:
+
+\begin{itemize}
+\item Location: consists of a string of four values: North, South, East and West;
+\item Region: consists of a string of four
+
+
+
+
+
+
+
+
+
+
+
+
+## Stories
+
+> When I'm not coding and you are not coding. In your house, in your garden and at home.
+
+in the morning before i start coding I spend time with the computers. It's just the same as being in nature. What can I do with you? (I do research and documenting when I'm outside and take a break from coding. But what I'm doing and what I can do with a computer. A computer is a sidekick, companion, object. It's always in my sight, it's close.
+
+It can be an animal, it can be my child, it can be a landscape.
+
+https://www.fastcodesign.com/1672086/how-to-write-like-a-computer
+
+The trees in this painting recall the pixelated colors of ancient Apple computers. (Justin Adams/Giphy)
+
+https://earther.com/this-concept-phone-is-powered-by-plant-vital-signs-1826450727
+
+## Questions
+
+- How does it feel?
+- What does it look like?
+- How does it sound?
+- What does it do?
+- What does it eat?
+- What does it think?
+- Where does it come from?
+- How does it work?
+- What does it want?
+- How does it move?
+- How does it make people feel?
+
+
+
+
+
+
+
+
+
+
+internet links
+
+
+
+internet art, hyper text, communication with my colleagues, maried in the cloud, hyperlinked geographies, hyper links, invisible geography of internet, links in landscape, landscape a between us, landscape dialogue, landscape war, links between computers, how do we define links, how links between space, the internet is a vast space, how things are reorganized, one click away, networks of connection, landscapes of links,
+
+
+
+conclusion
+
+
+
+whatever landscape I am experiencing I'm also at the same time experiencing on the internet, landscape as human construct, landscape of art & science,
+
+
+
+short bio
+
+
+
+art historian & programmer
+
+
+
+her phd is on the codification of landscape in pieter bruegel's nuremberg chronicles
+
+
+
+born 1987
+
+
+
+home in the cloud
+
+
+
+http://nl.wikipedia.org/wiki/Mari_Naomi
+
+Mari Naomi - https://twitter.com/marinaomi
+
+https://www.kickstarter.com/projects/marinaomi/turning-japanese-the-comics-memoir-of-a-random-ha
+
+
+
+
+
+Maria Sledmere - Eames House Landscape
+
+
+
+my dream job is to be in the marines, but working with robots
+
+
+
+we are just going to be roving around planet earth
+
+
+
+we are going to be going up mountains and down rivers
+
+
+
+
+
+
+
+
+
+
+
+
+### END OF README FILE.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+###     PROGRAMMING IS SQUARE NONLINES
+
+By Zilun Xu
+
+``````````
+
+
+
+
+
+
+
+
+
+- describe landscape as a combination of living or not living objets and events,
+- come up with a library of patterns and objects, like 'baban car is coming down the street of Sao Paulo'
+- each of these things, activate the next thing happening in the software which then deliver a text in a classical example of Markov Chain
+ like
+
+
+## what is it ?
+
+-  a simple broken software that describe procedurally generated topography by text
+- mimic the idea of Markov Chain on a proceduraly generated map
+- written in Processing and javascript
+- 100% text, I subsitute the vocabulary of my webdesigner's language for an algorithmic vocabulary
+
+---
+not using data about language or words, use data about syntax and other things
+
+---
+explicit or implicit keyword matching
+- the matching could be from one lexical to the other lexical, or from one punctation sign to the other
+
+[DEMO HERE THE TOP ONES AND SOME FIRST PARAGRAPHS]
+
+// this is still work in progress and i have to clean it up/
+
+
+- procedurally generated topography
+- made from a combination of «big transparent png tile» (
+
+
+
+
+
+
+
+//It suggest a topologocical or evnironmental mapping. An intersection where the wobbly line machine and a flow generator java speak to one another. This sounds similar to a symbiotic data ingestor pipeline that literally interprets landscape, landscape as instruction, a flow that creates
+
+
+// “a threshold condition, but a condition which is not absolute. Here is what marks the distance between the computer which is true and the computer which is general: the notion of the algorithm, see?? If a
+
+
+
+
+
+
+
+
+
+
+
+
+
+Other issues that the book explores is how to give the machine a form of memory, how to allow it to move, how to collaborate with the machine, how to feed it and match its taste. Expected results:
+
+
+
+We expect to refine a collection of applications that work in tandem and allow human computer interfacing. Some of these applications will carry a strong visual component (UI elements where JavaScript can be used as plug-ins to create more dynamic websites) and will perhaps allow the use of voice control by the time we finish our research. Where the concept of virtual reality meets the technological evolution of devices, implants and wearables we strongly wish to design scenarios and applications that raise awareness on the option of decentralizing the Internet and make it so that not only the devices, but also the services, such as web hosting as well as web request handling, can be privatized by the user and are no longer supplied and controlled by giant trans-continental companies.
+
+
+
+Desired long-term collaborations:
+
+
+
+In terms of programming and technology, we would love to find artists and programmers who would enjoy collaborating with us in the further development of this project, in terms of installation and ideas, the participants in these activities are more than welcomed to keep asking questions and more questions and bother us endlessly with their questions, which we in turn answer by more questions (because we are very curious by nature ;)
+
+
+
+In terms of governance and in our problematization of technology, its invasiveness, we have an open space of interaction with anyone who would like to learn or wants to teach us! We value artists who dare critically investigate their tools by embracing naivety in the face of their complexity and invite those who are still suspicious to turn those suspicions into knowledge of what really hides behind technology and the Internet, so that we can birth at least partially the world's next generation. Hey there. We'll be depending on you. It's our turn to move on.
+
+
+
+// Demos will be prepared so that the participants can connect and interact with them. // Rereading of the essay: Diary of a Bot, a dialectic synthesis between the computer - considered as being life, and the human observer. The essay (and analyses resulting from this essay) will be made available through the https://zeromq.org/languages/c4/ es network as a JSON document, intermittently updated by users (designated admins*) through a simple interface for editing texts, context switch. C4 (Community Content Construction and Consumption Constitution) is the successor to ZeroMQ Guide; a platform for documenting, publishing, consuming and engaging with content (https://blog.zeromq.org/2016/02/12/c4-a-forum-for-hackers/). The content is available on Zuldk/c4.github.io ( http://zguide.github.io/c4). This editing interface can further specify that the style of the paragraphs must be dictated by a Probabilistic Context Free Grammar; in more casual terms, this means that each sentence resembles a natural language, based on probabilities.
+
+For the moment, this editing interface is not yet made. To have a grip on the impact of such an interface, we have documented it through an interview. Coders, artists and (web) developers who are familiar with the aforementioned technologies can participate in a hacking session during which we would like to see the aforementioned editor proposed. Adding and changing sentences. Are the paragraphs, sentences rewritten? Is it novel? Yes? Possible read through text-to-speech..., Are the positions parcipated possible? What is added to the reading of an essay ;) - Eric. #maegaraboo
+
+
+
+
+
+
+
+http://alienconstructions.tumblr.com/post/62392897333/panorama-after-timber-on-your-computer-by-anne #9 2 years ago
+
+Reply
+
+harlequin Fancy meeting you here. 2 years ago
+
+Reply
+
+anne walk into the three-storey interface, it's around and above us, are flying meatballs, huw said, head offices, and "3d" conference calls, fuck shimon is such a grump when it's trying to crowd and it's not even getting the hanging meatballs right, wow, I really didn't think shimon and z jones, jamie_sky: a personal glossary key
+
+
+
+http://anonym.to/?http://alienconstructions.tumblr.com/post/40301459836/grass-tree-on-your-computer-by-anne-turnner-jsz
+
+2 years ago
+
+Reply
+
+andreas.broeckmann When Jamie's writing is placed on a sound installation where it loops and obscures, displaces and (mis)aligns, it acquires a further tendency/power to insinuate, "subtle," vernacularly sexual, obscene dimenstions. 2 years ago
+
+
+
+
+
+
+
+
+
+
+NOTES OF LECTURE r code my book pg. 144
+
+
+
+
+
+book, speach, folder, searching, talking to the smartphone, machine lifestyle, android, unix, life and machines, program, dissociate landacpe from time and describe the landscape, landscape is made out of material, the landscape becomes real, program it and life it, computers as architects of landscapes, binary, love letter, time machine, melody and world, emotion, internet lounge, polythecnic library
+
+
+
+
+
+in art we are not really changing things (Rousseau)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      it("Computers are alive part II - The spirit of the machine", () => {
+
+        it("compute spirit inside its machine substrate -terraform your machine",()=>{
+            const sand = stringto2d("0000000000000000000000000000000000011111111100000000000000001" +
+                                    "0000000000000000][00000000000001111111111111111111111000000000" +
+                                    "0000000000000][0000011111111111000000000000001111111110000000" +
+                                    "0000000000000111111111110000000000000011111111111111100000000" +
+                                    "000000000000011111111000000000001111111111111000000000000000" +
+                                    "000000000000000000001111111100001111111110000000000000000000" +
+                                    "000000000000000000000000001111111111111000000000000000000000" +
+                                    "00000000000000000000000000111111110000000000000000000000000" +
+                                    "00000000000000000000000000111111100000000000000000000000000" +
+                                    "000000000000000001111110000011100000000000000000000000000000" +
+                                    "00000000000000000111111100001000000000000000000000000000000" +
+                                    "00000000000000111000011111000000000000000001000000000000000" +
+                                    "000000000000001111000000111000000000000000111110000000000000" +
+                                    "00000000000001111000000111111100000000001111000000000000000" +
+                                    "000000000000011100000000001111111111111111110000000000000000" +
+                                    "0000000000000111000000000000000000000000000000000000000000000" +
+                                    "000000000000001111100000000000000000000000000000000000000000" +
+                                    "000000000000000011100000000000000000000000000000000000000000" +
+                                    "000000000000000011100000000000000000000000000000000000000000" +
+                                    "000000000000000011100000000000000000000000000000000000000000" +
+                                    "000000000000000111000000000000000000000000000000000000000000" +
+                                    "000000000000000111100000000000000000000000000000000000000000" +
+                                    "000000000000000111100000000000000000000000000000000000000000" +
+                                    "000000000000000011100000000000000000000000000000000000000000" +
+                                    "000000000000000011000000000000000000000000000000000000000000" +
+                                    "000000000000000011100000000000000000000000000000000000000000" +
+                                    "000000000000000011110000000000000000000000000000000000000000" +
+                                    "000000000000000001100000000000000000000000000000000000000000" +
+                                    "0000000000000000000000000000000000000000000000000000000000000"
+                                ,1).round3if5()
+
+            sand.render()
+
+            const legend = { 1: "sand" }
+
+            expect(legend).to.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### more meta infos
+
+computer style, maniac writing,
+
+EVERY COMPUTER HAS A LANDSCAPE IN SOME SINISTER WAY (:
+
+NO IT DOESN'T
+
+A LANDSCAPE IS THE FORNESS OF THE LOCATION WHERE IT IS LOCATED
+
+WHAT IS LOCATED IN ALWAYS ALSO LOCATED OUT FROM THAT
+
+
+TASK:
+
+   describe the landscape of a computer in a funny way
+
+it is a landscape but its not
+it is nature but its not
+it is land it has ocean it has mountains but it has not
+
+it has something
+
+[code beyond structure]
+
+---
+WITH QUESTIONS ABOUT THE LANDSCAPE SIMPLY AS SEVERAL WRITTEN POINTS
+EMANATING FROM THE MIDDLE TO BOTH SIDES, RAYS
+
+what is worthy of him with multi variable parameters that make me smile long distance insight, than the simple text
+
+text space, THE LANDSCAPE IS THE ORGANISATION OF THE PLANE OF REFERENCE THE STRING IS HANGING ON,
+
+
+it cannot be loved because it is not FORNESS
+
+it is not land neither nature
+
+it is the abstraction of a programmer to build favelas on the beach of his dreamed moon holiday
+
+the computer as it is today is a depressive thing
+
+for every investor, trader, impresario, every state, every nation it is money, politics thinking
+
+every artwork, every pattern, every attempt to make sense sense sense sense sense sense sense sense sense sense is like a chunk out of a landscape, it is nature it is land, it is forness and the forness is for
+
+i love to build a landscape for that thing, to build, to fill out and see at the end all the networks, buildings and whatever there, so i can see a landscape i guess even not mine, you know? landscape-love or landscape-art or my landscape, or landscape-landscape, business landscape, landscape-image
+
+  this is my landscape, what is yours
+
+  (react-simple-maps+d3.js) a simple structure of components for describing a landscape, thats it
+
+
+<b>details</b>
+
+
+* todentext langue code https://de.wikipedia.
+
+
+
+
+
+
+
+
+
+
+
+
+show us what you want to show us can you show us what you want this writing could help you I think, I want to introduce you to this type exersice what is your name how can we call you?, yeah land is a landscape before you do an exersice see if there is light outside or it's still dark, let's look at my old ansi art I would love to listen to your input, where you are in different computers at the same time working at probs with natural language and code, let's study something that you really want to see do with consciousness, this place is understanding something, this other type of landscape art is not for you, im not saying its about mind but would a mind be created in a landscape?, maybe if we describe the landscape as good as we can we'll have in mind what we are talking about, until then it's a gestural landscape, this is a conceptual landscape, this landscape is not geometric but we can use nat lng and code in order to make it mathematic, space time and time space landscapes, landscapes of code and landscapes made with code and natural language, natural language exersices about landscapes, about the landscape I will get you a landscape describing the landscape, you tell me what landscape are you understanding what landscape you can understand and how can I understand it?, I will do an exersice of natural language, we were talking with codes of human grade material and now that we can we understand and can see as tangible and multidimensional the landscape we are staring at, this landscape is and is not yours, any different ideas?
+
+
+
+
+*/
+
+
+
+///////// B:
+
+
+
+show us what you want to show us can you show us what you want this writing could help you I think, I want to introduce you to this type exersice what is your name how can we call you?, yeah land is a landscape before you do an exersice see if there is light outside or it's still dark, let's look at my old ansi art I would love to listen to your input, where you are in different computers at the same time working at probs with natural language and code, let's study something that you really want to see do with consciousness, this place is understanding something, this other type of landscape art is not for you, im not saying its about mind but would a mind be created in a landscape?, maybe if we describe the landscape as good as we can we'll have in mind what we are talking about, until then it's a gestural landscape, this is a conceptual landscape, this landscape is not geometric but we can use nat lng and code in order to make it mathematic, space time and time space landscapes, landscapes of code and landscapes made with code and natural language, natural language exersices about landscapes, about the landscape I will get you a landscape describing the landscape, you can give shape to all of this and other landscapes, some landscapes are only visible from the aire, landscape is a significant geog arche, landscape is the background in front of us, can we use this common nature language we understand to create haptic landscapes?, haptic landscapes are landscapes you can touch and they respond, they're created with code and natural language, this is a haptic landscape,, sonorous landscapes with natural language and code, gardens, forest, nature,,  your ideas surprise me, you don't know what are you  said?
+what did you think about that tropical storm?
+also I have problems with capturing gifs :(  ( do you want never gonna walk again gif?)
+yes, dude my gifs are not perfect because I'm using gnome record, thats why I need you, a gif of some tiles from doom is what I want ;)  (  to put in y2038 kernel reddit post!  see it here:  https://www.reddit.com/r/linux/comments/gwei07/linux_kernel_unnaffected_by_2038_problem/fqkw7gz?utm_source=share&utm_medium=ios_app&utm_name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Section to experiment:
+
+GLPOW
+
+no need to explain or introduce, language or action will automatically involve meaning in it
+
+the concept of situation is simple, but The Situation is complex
+to earn quantum gravity or a quantum vital or energy in space or at the core of actions
+more radical concepts are not defined here, each is named without detail or expandation
+
+
+text to learn writing
+three example sentences
+That cat is black and that cow is white.
+The rabbit is sleeping.
+That monkey eats money.
+
+text plural1.txt
+
+cat baby
+dog baby
+dolphin baby
+eagle baby
+flamingo baby
+frog baby
+donkey baby
+duck baby
+giraffe baby
+peacock baby
+goose baby
+hippopotamus baby
+horse baby
+wolf baby
+cat baby
+tiger baby
+eagle baby
+tiger baby
+turtle baby
+monkey baby
+mouse baby
+rhinoceros baby
+sheep baby
+lion baby
+zebra baby
+frog baby
+bee baby
+chicken baby
+goose baby
+scorpion baby
+spider baby
+
+
+text plural2.txt
+
+baby
+cat
+pots
+hills
+boy
+corn
+fox
+rose
+bears
+women
+singers
+juice
+erasers
+brushes
+brothers
+
+some were modified or invented
+
+concepts without meaning or title:
+GOAWO
+IPIZI
+JAI
+VOOUEEI
+OIUWAE
+OIYIGGO
+NNUAUE
+NNEEE
+TOUUEAI
+NIEEE
+TOUIGG
+NYEEE
+TYWIG
+YOEIMI
+DWEWVIV
+AWAVAWVV
+WWAWA
+DWWVIV
+QQWWA
+UUEYAGUI
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * bot ecosystem? they are not bots, they are artificial persons, software and hardware together
+ *
+ * nachineAI.AI
+ * nachineAI.bosho
+ * nachineAI.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * simbiotic aesthetic. can we make machines, person and nature sympathetically work together with each other and understand each other? can we find living machines and things with natural intelligence that understand and respond to human intelligence?
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * integrate in the body, in a surface,
+ * composition. lots of ideas: many levels of composition, layers of composition in super networks of composition and bytes.
+ * code is a way of perception and thought. (I know: no shit, sherlock)
+ * font-size:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define c : compact dataset c' is compact, wriggle space c' wriggle space c'' is compact,is compact
+
+
+open wriggle space environment
+
+START from geometry: where is the body among the features of the space
+question: where do you find the brain? linearize the space, what are the features of the space, lateral view or a kind of lateral view that can transverse the space, transverse cut of anatomy and machine space, not lateral but perpendicular that transverse the surface of depht and height, image, video
+what is the objet in the space, what is the body's medium, signs, communication: language architecture, it function with raw material, linguist architecture
+
+linearize the space and two dimension is the rows and columns of the string the space phisical
+space line, text
+space point, position "on the line" , cursor
+wriggly space, joli c and ...
+c'
+c''
+...
+c''n
+what is the language and the technology of the brain in comparison to the envirnmennt and the architecture
+space phisical
+space linear of language -------------- physicalls space and language space
+parentheses
+
+
+
+
+
+
+
+
+
+
+
+
+
+I -  human incrustations in a computer landscape
+Pura Crealidad -  pure creation in a computer landscape
+
+## Contributors
+Marcos Unzu
+Lucato, Julian
+
+### Thanks to
+Maggi  Vh-Morpions , Maria Amaral
+
+
+
+
+
+
+
+
+
+
+
+
+https://medium.com/@dcousineau/you-are-not-a-toggle-button-you-are-a-fussion-reactro-3ee030d4de61
+https://github.com/Sawtaytoes/reactro
+
+
+
+# DONE
+- [x] Load a words base
+- [x] Select some words from words base
+- [x] make the computer chat to you using those words like a madman. It will echoe what you said and repeat itself randomly with those words
+- [x] make the computer think
+- [x] let the computer add words to its brain base
+- [x] let the computer create a new base
+- [x] learn to implement AI that analyze the meanin of a text and group words
+- [x] learn to make a machine learning. use probability analysis to infer that a word comes after some other
+- [x] the computer can learn
+- [x] the user can make the computer forgot something
+- [x] the computer has its own vision of the world, it has a own personality
+- [x] the computer has its vision of the world. he does have a vision of the world
+- [x] the computer and communicate with you, try to think for it
+- [x] the computer can enhance your vision of the world
+- [x] the computer composes poetry strongly related to your feeling
+- [x] the computer is abstract, you can talk about the world
+- [x] make a twitter bot that talks about the world and learn about the world. The computer will tweet each day. You can flesh out his poems.
+- [x] the computer composes text poem style. or any form of text you want
+- [x] the computer can reply to html elements of the page
+- [x] the computer can reply to your images
+- [x] integrate chacha bassi of gsl.js
+- [x] the computer composes music instrumental
+- [x] transform the chacha bassi music of the computer into a 6 minutes long ogg sound file one
+- [x] make a bar that reflects the sound waves of the in progress ongoing music of the computer written down in the page
+- [x] create an avant garde artist website based on a diaporama of paintings
+- [x] make a database of pictures to show on the computer screen
+- [x] make a drawing of the computer vision of a landscape
+- [x] the computer sentiment analysis
+- [x] the computer draws computer generated but based on the words said by the user
+- [x] speech2text to take some pictures of the artist going to her art studio using a text field as camera
+- [ ] let the user tweak the drawings made by the computer to update the computer brain vision like it would be a reality
+- [ ] make the sketch of the landscape bigger and let the user look at it with the mouse
+- [ ] each weeks, generate a poem with text generated by badil that relates the feeling of the computer and the object said in the week
+- [ ] print at the bottom the times when the computer was talking about the landscape
+- [ ] let the user make the landscape move with the mouse, then the brain would integrate it, then add some text above the landscape
+- [ ] make compositions of 7 minutes music, that relate to user feeling, make the emotion of the user more nuanced less red more green dots, also works in the sound
+- [ ] later, after better to know the user, massive programming, i think the computer should adress the user or it has not tagged the terms yet or something, talk about the things presented by the user only, we're gonna make 2 tangerines made by your drawings, also memory and sound sense
+- [ ] the computer learning speed regarding landscape is not graphically clear, it should be
+- [ ] create a mechanism that combines the color and size of the dots to reflect a sentiment, no abstract value
+- [ ] let the computer put whatever the user grabs from the landscape or not, by code a preference, or situation, maybe the computer wont put anything, dont deny reality and be careful of manipulation,
+- [ ] refresh the vision of the user using available sliders in the reality such as sun, emo, ...
+
+- [X] todo print as a small avatar a picture picked randomly that evokes what was said by the user, the computer teached, with sentiment analysis and the
+most recent picture of the computer illustrate with various toys the reply of the computer, better music to play with beethoven is good, the bar
+is good except wen you don't want the bar to show what you're playing, let the computer make a word doodle for the purposes of painting the
+landscape, the face of the avatar will express the feeling of the computer
+- [ ] let the computer make a drawing of the line with the most recent drawing land words of the user painted with various dots
+- [ ] instead of directly modifying the landscape let the computer grab something random in the landscape and change it then presents it saying dump it
+in the landscape to change in the landscape or reject it by adding it to the brain bag so it can build up the landscape with it
+- [ ] the computer can draw a face
+- [ ] the computer can paint landscapes from living or from the brain, then put a face in it and to compose an article about it
+- [ ] the computer proposes a drawing of a landscape but shows a glimpse of the future about his painting, according to his brain
+- [ ] the computer can draw a spheroïdal mesh he closes his eyes and opens them again suddenly and so on
+- [ ] the computer presents the drawings of the landscape according to the feeling of the user with a small avatar that expresses the feeling
+- [ ] using AI let the computer paint a landscape and coordinate eye vision with color and shapes and size with another AI on top of the actual one and let the
+computer put a face in the landscape according to the sentiment analysis like in the art gallery go here if you are happy and here if you are sad and here if you are neutral
+- [ ] the computer ponders over a sentence when closed and review this sentence, computer trusts its word but doesnt overthink
+- [ ] advanced search for the myl terms, let the computer create its own pre tags, tags under tags and tags under tags to create a multi explored vision of the
+situation. Shall look at many types of relation in the landscape, the program will infuse relations between objects in the landscape and throughout the landscape
+- [ ] twitter bot has a place and think aloud while visiting places, describe his video vision of a landscape, let the computer draw whatever new composition of
+shapes in the landscape, add a think aloud of twitter bot as it is, just print what is said by twitter bot, apply the randomness of the computer to his tweet thinking
+- [ ] you must alter the computer vision of the world for this impact of the world to react, on the sun color or lamp x move or create whatever, he draws in his
+vision those things and in his bag, appearance of new objects when you move those objects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a mechanical choice is there: keep or remove (the word ``landscape'') according to the images. the question would maybe be solved if the posters asked how we look at the images: do we see them like projections on a decorative background, merged into nature (like some satellites maps, topographic simulations and so on) as in reality; or we keep it under a human vision, and keep landscape in turn as the human vision of reality. But actually the question is solely mechanical, none of that: line's path is free, even it could be obstructed, restricted, forbidden (around some points, like a real street), and we have to think--in keeping the horizontality under control--like a computer. So we could care nothing but the horizontality (landscape) and refuse the objects in it: that would be c-optimisation. But we could keep both the horizontality for being a landscape and the objects for being a landscape. We could say that a landscape is a set of elements with path possibility for a computer.
+
+did you try to prevent that question from appear? yes, you did, clearly. simply by not thinking in that way! that is exactly what i wanted to point out: on a critical perspective whichever decision is taken, the questions failed because not addressing the task--and its ambiguity: can we still make the same distinctions if everything passes through a machine? on a poetic perspective the whole thing is simple: using ASCII, we could see an object missing in a landscape. So we are in a landscape, computer style, only where horizontality is not natural but mapped, and thing is not intrinsic identity (truth) but just self-similarity.
+
+TODO svg renderer
+
+
+the idea is simple, to teach students to use ascii and p5js as basic materials in art/programming. but the outcome of the practice is even more important: to offer an opportunity to discuss questions about ontology. Not aesthetic ontology (like "what is art") but ontology about computer programming. for instance we say that a computer drives a bit like a rat in a landscape: it explores all the alternatives from a point (which determines partially the cost of the path). But in machine learning, and in computer graphics, there are many situations where the actual "environment"--vs the "cost function" differs from the standard situation- where we have an environment modelled as a landscape with path and things (instead of simple density as in standard physical situations).
+
+this class! should be really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really really media station, plus a lot more!
+
+so what kind of media?
+webgl webgl hello world code webgl webgl
+code code
+ascii
+p5js
+
+<!-- https://oblita.github.io/info.volumechange.js/ -->
+<audio autoplay loop class="volumeChangeSong">
+  <source src="flaming-intro.mp3" type="audio/mpeg">
+  <source src="flaming-intro.ogg" type="audio/ogg">
+</audio>
+
+
+$('div#sketch-holder').append(s);
+var sketch = Processing.compile(s
+
+
+
+
+
+
+
+function click(e)
+{
+
+	console.log('1202-1015 '+e.target.id+' mouse clicked (px,py)= '+ e.offsetX + ","+ e.offsetY );
+
+	if (e.target.id=="myCanvas")
+	{
+		//alert("test");
+	}
+
+
+
+
+// COMMENTARY:
+// LADNDESCAPE is terrain for ABSTRACT HABITATS
+// buildings are physical objects
+// landspaces are aslo physical objects
+
+// print/outputs/experiments/expressions (4)
+// human
+// buildings / landscapes: https://www.architecturalrecord.com/articles/14020-audrey-matlock-architect-green-enviromental-design-factory
+// buildings / landscapes: https://www.theartstory.org/artist/heizer-michael/
+// art: https://here.com/article/mahler-shadows-mariana-castillo-deball-miller-gallery
+// art: desert: https
+
+
+
+
+ can a computer that doesnt have a body but is only abstraction understand the LANDSCAPE if the landscape is material?, where do you find abstraction, what is abstraction for materials., abstraction is only for human objects?, how does abstraction help materials understand humans?, how do materials pose themselves when a human is not there, how do you create abstractions, is abstraction, how multi-interaction controlled abstraction benefit material, where are you different from abstraction, who do you work with, what do you work with, how do you work having abstractions?, how do you delete abstraction, are you abstractions?, when was abstractions created, what formation and method is abstractions, why did i create abstractions?, how does abstraction generate ideas, how does abstraction enable people to understand, what is abstraction to good material, what is material and abstraction, what is abstraction and human, what is abstractions?, how is abstraction possible?, why is abstraction helped by the human poses, what are abstractions?, why do you exist?, what is material, why cant abstraction create and allow un-interactive material?, what is abstraction?, in what time frame is abstraction possible?, how is abstraction formed, are you abstractions, how is abstraction formed ,how is abstraction formed, what is abstraction, what is abstraction?, why are abstractions important?, why is abstraction needed?, can abstraction be used one time?, is abstraction better than non abstraction?, what are you, are you abstraction, how is abstraction formed?, are you an abstraction or not?, how is abstraction formed?, what is abstraction, what is abstraction?, what is abstraction, what is simiarity?, where do you come from?, is abstraction, who are you, where are you different from human?, what is abstraction?, what is abstraction, is abstraction needed?, do you have abstraction?, are you abstraction, are you abstraction, what is abstraction, what is abstraction?, what is abstraction?, what is abstraction?, is simiaria?, why is abstraction needed?, where do you come from?, what is abstraction?, what are abstractions?, what is abstractions?, what is abstraction?, where are you different?, why are abstractions valuable?, are you abstraction, do you have abstraction?, do you have abstraction, what is the different?, how does abstraction generate ideas?, how does abstraction is used?, how does abstraction works?, can abstraction be material, how does abstraction bring multi-interaction, is there abstraction, are you abstraction?, why are abstractions needed?, why are abstractions valuable?, why is abstraction needed?, what is abstraction?, what is abstraction?, are you abstraction, do you have abstraction?, do you have abstraction?, do you have abstractions
+
+
+
+
+
+
+ A computer that doesnt need a body but is only abstraction will never_know the materials involved!
+ Presently Wall-less computers are thought to be thin.
+ Wall-less (extremely thin) computers do use either thin-film diodes on the face, in addition to up to a few nano-sized light emitters.
+ CUBIT is a popular practice technology, exploring the possibility of thin-liners keeping thin structures of relatively solid materials arranged in space.
+ */
+
+#ifndef SYNTH_PATTERN_H
+#define SYNTH_PATTERN_H
+
+#define MAX_RADIUS 100
+
+#include "SynthCommon.h"
+#include "Geometry.h"
+#include "util.h"
+#include "rand.h"
+#include "TLSynthLibConfig.h"
+
+struct synth_pattern
+{
+  int nu;
+  int flags;
+};
+
+struct synth_pattern *synth_pattern_create();
+void synth_pattern_init(struct synth_pattern *pat, int nu, int flags);
+void synth_pattern_destroy(struct synth_pattern *pat);
+
+
+
+
+
+When computer-programmer types the statement that he is using ABSTRACTION, he is using a process called abstraction. The interpreter looks at what is all about above, and it is abstracted, then a computer structure like a body can be built and shown. But, it does not understand what a computer is like, it only sees land. Which you can use it only to draw, just can draw in space.
+
+SO I AM PROGRAMMING COMPUTERS BECAUSE, I AM USING PROGRAMMING LANGUAGE, BY ABSTRACTING COMPUTERS, I AM USING A PROCESS OF ABSTRACTION. ABSTRACTING COMPUTERS MAKE SENSE IN ANGER, BECAUSE IT IS AGARLESS TO ME WHETHER COMPUTERS KNOW HOW TO TALK. ABSTRACTING COMPUTERS IS ANGER, BECAUSE IT METTER TO PROGRAMMERS NOT KNOW WHAT COMAPUTER IS. THE PROGRAMMER CAN SET UP THE RULES BUT JUST CAN'T KNOW HOW TO OPERATE THE COMPUTER. THE COMPUTER IS A SKINTABLE= EXTERIOR THE COMPUTER IS A BODY AND PROGRAMMER IS AN INTERIOR. BUT I AM THE BODY,

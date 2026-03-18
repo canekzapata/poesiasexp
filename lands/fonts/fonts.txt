@@ -1,0 +1,9 @@
+Px437_Tandy1K-II_225L-2y.ttf
+Px437_EuroPC_CGA-2y.ttf
+Px437_DG_One-2y.ttf
+Px437_EagleSpCGA_Alt3-2y.ttf
+Px437_TsengEVA_132_6x8.ttf
+Px437_IBM_EGA_9x14.ttf
+Px437_EpsonMGA-2y.ttf
+Px437_DOS-V_re_PRC19.ttf
+Px437_EagleSpCGA_Alt2-2y.ttf

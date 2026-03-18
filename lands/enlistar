@@ -1,0 +1,12 @@
+import os
+import json
+
+# Directorio donde están las imágenes
+carpeta_imagenes = 'imagenesFondo'
+
+# Obtener lista de archivos en el directorio
+nombres_imagenes = [f for f in os.listdir(carpeta_imagenes) if os.path.isfile(os.path.join(carpeta_imagenes, f))]
+
+# Escribir los nombres en un archivo .json
+with open('lista_imagenes.json', 'w') as archivo:
+    json.dump(nombres_imagenes, archivo)
