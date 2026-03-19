@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!-- corpus: canekzapata/poesiasexp | pieza 2 | CAMPO DE SIGNOS / FIELD OF SIGNS -->
+<!-- forma: Tracery grammar + canvas particle system + alfabetos abstractos -->
+<!-- caracteres: Disco de Festos, Sutom, Ogham, Buginese, Kayah Li, Box Drawing, Tibetano -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMPO DE SIGNOS / FIELD OF SIGNS</title>
+
+  <style>
+    @font-face {
+      font-family: 'Symbola';
+      src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/sutileza/css/Symbola.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Jomolhari';
+      src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/sutileza/css/Jomolhari-xvVK.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'VozMaquina';
+      src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/lands/fonts/Px437_IBM_EGA_9x14.ttf') format('truetype');
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+
+    /* — el cielo de signos — */
+    #campo {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+    }
+
+    #ruido {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      pointer-events: none;
+      opacity: 0.018;
+      z-index: 1;
+    }
+
+    #titulo {
+      position: fixed;
+      bottom: 2.2vh;
+      left: 2.5vw;
+      font-family: 'VozMaquina', monospace;
+      font-size: clamp(7px, 0.9vw, 12px);
+      color: rgba(0, 250, 102, 0.2);
+      letter-spacing: 0.22em;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    #contador {
+      position: fixed;
+      bottom: 2.2vh;
+      right: 2.5vw;
+      font-family: 'VozMaquina', monospace;
+      font-size: clamp(7px, 0.8vw, 10px);
+      color: rgba(255, 180, 0, 0.15);
+      letter-spacing: 0.18em;
+      z-index: 10;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="campo"></canvas>
+  <canvas id="ruido"></canvas>
+
+  <div id="titulo">CAMPO DE SIGNOS / FIELD OF SIGNS — POESIASEXP — II</div>
+  <div id="contador" id="contador">░░░░░</div>
+
+  <!-- Tracery desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tracery-grammar@2.7.7/tracery.js"></script>
+
+  <script>
+  // ─────────────────────────────────────────────────────────────────
+  // — los alfabetos del repositorio — extraídos de grammars.js —
+  // — cada uno es un sistema de escritura que nadie descifró del todo —
+  // ─────────────────────────────────────────────────────────────────
+
+  const festos = [
+    "\uD800\uDDD0","\uD800\uDDD1","\uD800\uDDD2","\uD800\uDDD3","\uD800\uDDD4",
+    "\uD800\uDDD5","\uD800\uDDD6","\uD800\uDDD7","\uD800\uDDD8","\uD800\uDDD9",
+    "\uD800\uDDDA","\uD800\uDDDB","\uD800\uDDDC","\uD800\uDDDD","\uD800\uDDDE",
+    "\uD800\uDDDF","\uD800\uDDE0","\uD800\uDDE1","\uD800\uDDE2","\uD800\uDDE3",
+    "\uD800\uDDE4","\uD800\uDDE5","\uD800\uDDE6","\uD800\uDDE7","\uD800\uDDE8",
+    "\uD800\uDDE9","\uD800\uDDEA","\uD800\uDDEB","\uD800\uDDEC","\uD800\uDDED",
+    "\uD800\uDDEE","\uD800\uDDEF","\uD800\uDDF0","\uD800\uDDF1","\uD800\uDDF2",
+    "\uD800\uDDF3","\uD800\uDDF4","\uD800\uDDF5","\uD800\uDDF6","\uD800\uDDF7",
+    "\uD800\uDDF8","\uD800\uDDF9","\uD800\uDDFA","\uD800\uDDFB","\uD800\uDDFC"
+  ];
+
+  // — los signos imposibles — Sutom / Symbols for Legacy Computing —
+  const imposible = [
+    "\uD836\uDD83","\uD836\uDD84","\uD836\uDD85","\uD836\uDD86","\uD836\uDD87",
+    "\uD836\uDD88","\uD836\uDD89","\uD836\uDD8A","\uD836\uDD8B","\uD836\uDD8C",
+    "\uD836\uDD8D","\uD836\uDD8E","\uD836\uDD8F","\uD836\uDD90","\uD836\uDD91",
+    "\uD836\uDD92","\uD836\uDD93","\uD836\uDD94","\uD836\uDD95","\uD836\uDD96",
+    "\uD836\uDD97","\uD836\uDD98","\uD836\uDD99","\uD836\uDD9A","\uD836\uDD9B",
+    "\uD836\uDD9C","\uD836\uDD9D","\uD836\uDD9E","\uD836\uDD9F","\uD836\udda0",
+    "\uD836\udda1","\uD836\udda2","\uD836\udda3","\uD836\udda4","\uD836\udda5",
+    "\uD836\udda6","\uD836\udda7","\uD836\udda8","\uD836\udda9","\uD836\uddaa",
+    "\uD836\uddab","\uD836\uddac","\uD836\uddad","\uD836\uddae","\uD836\uddaf"
+  ];
+
+  // — ogham — escritura de los árboles —
+  const ogham = [
+    "\u1680","\u1681","\u1682","\u1683","\u1684","\u1685","\u1686","\u1687",
+    "\u1688","\u1689","\u168A","\u168B","\u168C","\u168D","\u168E","\u168F",
+    "\u1690","\u1691","\u1692","\u1693","\u1694","\u1695","\u1696","\u1697",
+    "\u1698","\u1699","\u169A","\u169B","\u169C"
+  ];
+
+  // — buginese — escritura de los navegantes de Sulawesi —
+  const buginese = [
+    "\u1A00","\u1A01","\u1A02","\u1A03","\u1A04","\u1A05","\u1A06","\u1A07",
+    "\u1A08","\u1A09","\u1A0A","\u1A0B","\u1A0C","\u1A0D","\u1A0E","\u1A0F",
+    "\u1A10","\u1A11","\u1A12","\u1A13","\u1A14","\u1A15","\u1A16","\u1A17",
+    "\u1A18","\u1A19","\u1A1A","\u1A1B","\u1A1E","\u1A1F"
+  ];
+
+  // — kayah li — escritura de los karen de Myanmar —
+  const kayahli = [
+    "\uA900","\uA901","\uA902","\uA903","\uA904","\uA905","\uA906","\uA907",
+    "\uA908","\uA909","\uA90A","\uA90B","\uA90C","\uA90D","\uA90E","\uA90F",
+    "\uA910","\uA911","\uA912","\uA913","\uA914","\uA915","\uA916","\uA917",
+    "\uA918","\uA919","\uA91A","\uA91B","\uA91C","\uA91D","\uA91E","\uA91F",
+    "\uA920","\uA921","\uA922","\uA923","\uA924","\uA925"
+  ];
+
+  // — box drawing — arquitectura de la terminal —
+  const boxdrawing = [
+    "─","│","┌","┐","└","┘","├","┤","┬","┴","┼",
+    "═","║","╔","╗","╚","╝","╠","╣","╦","╩","╬",
+    "╱","╲","╳","┃","━","╌","╍","╎","╏","▒","░","▓"
+  ];
+
+  // — ideographic description — el lenguaje de los lenguajes —
+  const ideographic = [
+    "\u2FF0","\u2FF1","\u2FF2","\u2FF3","\u2FF4","\u2FF5",
+    "\u2FF6","\u2FF7","\u2FF8","\u2FF9","\u2FFA","\u2FFB"
+  ];
+
+  // — ojos / operadores matemáticos —
+  const ojos = [
+    "\u2A5F","\u2A60","\u2A1E","\u2A2D","\u2A2E","\u2A33","\u2A34",
+    "\u2A35","\u2A36","\u2A37","\u2A38","\u2A44","\u2A45","\u2A46",
+    "\u2ABB","\u2ABC","\u2ABD","\u2ABE","\u2ABF","\u2AC0","\u2AC1",
+    "\u2AC2","\u2AC3","\u2AC4","\u2AC5","\u2AC6","\u2AC7","\u2AC8",
+    "\u2300","\u2301","\u2338","\u2339","\u233A","\u233B","\u233C"
+  ];
+
+  // — separadores — el espacio entre los signos también es signo —
+  const separadores = [" ", "  ", " │ ", " ╱ ", " ⿰ ", "  ", " ─ ", " "];
+
+  // ─────────────────────────────────────────────────────────────────
+  // — la gramática Tracery — el oráculo —
+  // ─────────────────────────────────────────────────────────────────
+
+  function elegir(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function construirGramatica() {
+    // — construimos listas de strings para Tracery —
+    const g = {
+      "festos"    : festos,
+      "imposible" : imposible,
+      "ogham"     : ogham,
+      "buginese"  : buginese,
+      "kayahli"   : kayahli,
+      "box"       : boxdrawing,
+      "ideo"      : ideographic,
+      "ojo"       : ojos,
+      "sep"       : separadores,
+
+      // — el signo elemental — elige entre todos los alfabetos —
+      "signo": [
+        "#festos#", "#festos#", "#festos#",
+        "#imposible#", "#imposible#",
+        "#ogham#", "#ogham#",
+        "#buginese#",
+        "#kayahli#", "#kayahli#",
+        "#box#",
+        "#ideo#",
+        "#ojo#"
+      ],
+
+      // — frases de distintas longitudes —
+      "frase_corta"  : ["#signo##sep##signo##sep##signo#",
+                        "#signo##sep##signo##sep##signo##sep##signo#"],
+
+      "frase_media"  : ["#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#",
+                        "#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#"],
+
+      "frase_larga"  : ["#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#",
+                        "#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#"],
+
+      // — el origen — elige densidad aleatoriamente —
+      "origin": [
+        "#frase_corta#",
+        "#frase_corta#",
+        "#frase_media#",
+        "#frase_media#",
+        "#frase_media#",
+        "#frase_larga#",
+        "#frase_corta##sep##frase_corta#",
+        "#frase_media##sep##frase_corta#"
+      ]
+    };
+
+    const grammar = tracery.createGrammar(g);
+    grammar.addModifiers(tracery.baseEngModifiers);
+    return grammar;
+  }
+
+  // ─────────────────────────────────────────────────────────────────
+  // — el sistema de partículas — los signos como materia viva —
+  // ─────────────────────────────────────────────────────────────────
+
+  const canvas  = document.getElementById('campo');
+  const ctx     = canvas.getContext('2d');
+  const ruidoC  = document.getElementById('ruido');
+  const ruidoX  = ruidoC.getContext('2d');
+
+  let W, H;
+  let particulas = [];
+  let grammar;
+  let frameN = 0;
+
+  // — paletas de color — cada signo elige su temperatura —
+  const paletas = [
+    { base: [0,   250, 102],  nombre: "verde"  }, // verde fosforescente
+    { base: [255, 180,   0],  nombre: "ambar"  }, // ámbar antiguo
+    { base: [255, 255, 255],  nombre: "blanco" }, // blanco puro
+    { base: [255,  45, 120],  nombre: "rosa"   }, // rosa profundo
+    { base: [0,   229, 255],  nombre: "cian"   }, // cian eléctrico
+    { base: [180,   0, 255],  nombre: "violeta"}, // violeta
+    { base: [255, 100,   0],  nombre: "naranja"}, // naranja quemado
+  ];
+
+  function resize() {
+    W = canvas.width  = ruidoC.width  = window.innerWidth;
+    H = canvas.height = ruidoC.height = window.innerHeight;
+  }
+
+  // — detectar qué fuente usar según el rango del carácter —
+  function detectarFuente(glifo) {
+    if (!glifo) return 'Symbola';
+    const cp = glifo.codePointAt(0);
+    // Tibetano: 0x0F00–0x0FFF
+    if (cp >= 0x0F00 && cp <= 0x0FFF) return 'Jomolhari';
+    // Box Drawing: 0x2500–0x257F
+    if (cp >= 0x2500 && cp <= 0x257F) return 'VozMaquina';
+    // Ogham: 0x1680–0x169C
+    if (cp >= 0x1680 && cp <= 0x169C) return 'Symbola';
+    return 'Symbola';
+  }
+
+  // — crear una partícula desde un glifo —
+  function crearParticula(glifo, indice, total) {
+    const paleta  = paletas[Math.floor(Math.random() * paletas.length)];
+    const tamano  = Math.random() * 54 + 18;  // 18px – 72px
+    const vida    = (Math.random() * 4 + 8) * 60; // 8–12 seg @ 60fps
+
+    // — dispersión en el canvas — no solo centro —
+    const x = Math.random() * W * 0.9 + W * 0.05;
+    const y = Math.random() * H * 0.85 + H * 0.07;
+
+    // — velocidad de deriva — muy lenta —
+    const angulo   = Math.random() * Math.PI * 2;
+    const speed    = Math.random() * 0.3 + 0.05;
+    const vx       = Math.cos(angulo) * speed;
+    const vy       = Math.sin(angulo) * speed;
+
+    // — rotación orbital muy lenta —
+    const orbita   = (Math.random() - 0.5) * 0.003;
+
+    return {
+      glifo, x, y, vx, vy,
+      tamano, paleta,
+      vida, vidaMax: vida,
+      fuente: detectarFuente(glifo),
+      angulo: Math.random() * Math.PI * 2,
+      orbita,
+      fase: Math.random() * Math.PI * 2, // para oscilación
+    };
+  }
+
+  // — generar nueva constelación desde Tracery —
+  function nuevaConstelacion() {
+    const frase  = grammar.flatten('#origin#');
+
+    // — parsear correctamente los pares sustitutos unicode —
+    const glifos = Array.from(frase).filter(g => g.trim() !== '');
+
+    const nuevas = glifos.map((g, i) => crearParticula(g, i, glifos.length));
+    particulas = particulas.concat(nuevas);
+
+    // — actualizar contador —
+    document.getElementById('contador').textContent =
+      '░'.repeat(Math.min(glifos.length, 20));
+  }
+
+  // — dibujar el ruido de fondo —
+  function dibujarRuido() {
+    const img  = ruidoX.createImageData(W, H);
+    const data = img.data;
+    for (let i = 0; i < data.length; i += 4) {
+      const v = Math.random() > 0.5 ? 255 : 0;
+      data[i] = data[i+1] = data[i+2] = v;
+      data[i+3] = Math.floor(Math.random() * 30);
+    }
+    ruidoX.putImageData(img, 0, 0);
+  }
+
+  // — el loop principal — el canvas como respiración —
+  function loop() {
+    frameN++;
+
+    // — limpiar con negro semitransparente — trail suave —
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.045)';
+    ctx.fillRect(0, 0, W, H);
+
+    // — ruido cada 3 frames —
+    if (frameN % 3 === 0) dibujarRuido();
+
+    // — actualizar y dibujar partículas —
+    particulas = particulas.filter(p => p.vida > 0);
+
+    for (const p of particulas) {
+      p.vida--;
+      p.x += p.vx;
+      p.y += p.vy;
+      p.angulo += p.orbita;
+
+      // — oscilación suave —
+      p.x += Math.sin(p.fase + frameN * 0.008) * 0.12;
+      p.y += Math.cos(p.fase + frameN * 0.006) * 0.10;
+
+      // — alpha: fade in y fade out —
+      const progreso = p.vida / p.vidaMax;
+      let alpha;
+      if (progreso > 0.85) {
+        // fade in
+        alpha = (1 - progreso) / 0.15;
+      } else if (progreso < 0.2) {
+        // fade out
+        alpha = progreso / 0.2;
+      } else {
+        alpha = 1;
+      }
+      alpha = Math.max(0, Math.min(1, alpha));
+
+      const [r, g, b] = p.paleta.base;
+
+      // — brillo / glow —
+      ctx.save();
+      ctx.shadowColor  = `rgba(${r},${g},${b},${alpha * 0.7})`;
+      ctx.shadowBlur   = p.tamano * 0.6;
+      ctx.fillStyle    = `rgba(${r},${g},${b},${alpha})`;
+      ctx.font         = `${p.tamano}px '${p.fuente}', Symbola, serif`;
+      ctx.textBaseline = 'middle';
+      ctx.textAlign    = 'center';
+
+      // — rotación orbital —
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.angulo * 0.15);
+      ctx.fillText(p.glifo, 0, 0);
+      ctx.restore();
+    }
+
+    requestAnimationFrame(loop);
+  }
+
+  // ─────────────────────────────────────────────────────────────────
+  // — inicialización —
+  // ─────────────────────────────────────────────────────────────────
+
+  resize();
+  window.addEventListener('resize', resize);
+
+  // — esperar a que carguen las fuentes antes de comenzar —
+  document.fonts.ready.then(() => {
+    grammar = construirGramatica();
+
+    // — primera constelación —
+    nuevaConstelacion();
+
+    // — nueva constelación cada 3.5 segundos —
+    setInterval(nuevaConstelacion, 3500);
+
+    // — clic para constelación inmediata —
+    canvas.addEventListener('click', nuevaConstelacion);
+
+    loop();
+  });
+
+  </script>
+</body>
+</html>
+ARCHIVO 2: poesiaagentica/index.html
+<!DOCTYPE html>
+<!-- canekzapata/poesiasexp — índice de poesía agéntica — 2026 -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POESÍA AGÉNTICA — canekzapata</title>
+
+  <style>
+    @font-face {
+      font-family: 'VozMaquina';
+      src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/lands/fonts/Px437_IBM_EGA_9x14.ttf') format('truetype');
+    }
+
+    :root {
+      --verde  : #00fa66;
+      --ambar  : #ffb400;
+      --blanco : #e8e8e8;
+      --gris   : rgba(255,255,255,0.3);
+      --fondo  : #000000;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      background: var(--fondo);
+      color: var(--blanco);
+      font-family: 'VozMaquina', 'Courier New', monospace;
+      min-height: 100vh;
+      padding: 6vh 6vw;
+      line-height: 1.7;
+    }
+
+    /* — scanlines sutiles — */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.06) 2px,
+        rgba(0,0,0,0.06) 4px
+      );
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    /* ── cabecera ── */
+    header {
+      margin-bottom: 7vh;
+      border-bottom: 1px solid rgba(0, 250, 102, 0.15);
+      padding-bottom: 4vh;
+    }
+
+    .ascii-deco {
+      color: rgba(0, 250, 102, 0.25);
+      font-size: clamp(7px, 1vw, 12px);
+      letter-spacing: 0.1em;
+      margin-bottom: 2.5vh;
+      display: block;
+    }
+
+    h1 {
+      font-size: clamp(18px, 3.5vw, 48px);
+      color: var(--verde);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-shadow: 0 0 18px rgba(0, 250, 102, 0.4);
+      margin-bottom: 0.6em;
+    }
+
+    /* — cursor parpadeante — */
+    h1::after {
+      content: '█';
+      animation: parpadeo 0.9s step-end infinite;
+      color: var(--verde);
+      opacity: 0.8;
+    }
+    @keyframes parpadeo {
+      0%, 100% { opacity: 0.8; }
+      50%       { opacity: 0; }
+    }
+
+    .subtitulo {
+      font-size: clamp(9px, 1.2vw, 15px);
+      color: var(--gris);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* ── introducción ── */
+    .intro {
+      max-width: 72ch;
+      margin-bottom: 6vh;
+      font-size: clamp(10px, 1.15vw, 15px);
+      color: rgba(232, 232, 232, 0.65);
+      letter-spacing: 0.04em;
+      line-height: 2;
+      border-left: 2px solid rgba(0, 250, 102, 0.2);
+      padding-left: 2ch;
+    }
+
+    /* ── lista de piezas ── */
+    .lista {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4vh;
+      margin-bottom: 8vh;
+    }
+
+    .pieza {
+      border: 1px solid rgba(0, 250, 102, 0.1);
+      padding: 3vh 2.5ch;
+      transition: border-color 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .pieza:hover {
+      border-color: rgba(0, 250, 102, 0.45);
+      background: rgba(0, 250, 102, 0.03);
+    }
+
+    .pieza a {
+      text-decoration: none;
+      display: block;
+    }
+
+    .pieza-numero {
+      font-size: clamp(10px, 1vw, 13px);
+      color: var(--ambar);
+      letter-spacing: 0.3em;
+      margin-bottom: 0.8em;
+      opacity: 0.85;
+    }
+
+    .pieza-titulo {
+      font-size: clamp(14px, 2.2vw, 28px);
+      color: var(--verde);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 250, 102, 0.25);
+      margin-bottom: 0.6em;
+      transition: text-shadow 0.3s ease;
+    }
+
+    .pieza:hover .pieza-titulo {
+      text-shadow: 0 0 22px rgba(0, 250, 102, 0.6);
+    }
+
+    .pieza-desc {
+      font-size: clamp(8px, 0.95vw, 12px);
+      color: rgba(0, 229, 255, 0.6);
+      letter-spacing: 0.15em;
+      line-height: 1.9;
+    }
+
+    .pieza-tecnica {
+      font-size: clamp(7px, 0.8vw, 10px);
+      color: rgba(255,255,255,0.2);
+      letter-spacing: 0.12em;
+      margin-top: 0.8em;
+    }
+
+    /* ── pie ── */
+    footer {
+      border-top: 1px solid rgba(0, 250, 102, 0.1);
+      padding-top: 3vh;
+      font-size: clamp(7px, 0.85vw, 11px);
+      color: rgba(255,255,255,0.2);
+      letter-spacing: 0.18em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em 4ch;
+    }
+
+    footer a {
+      color: rgba(0, 250, 102, 0.35);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    footer a:hover { color: var(--verde); }
+
+    @media (max-width: 600px) {
+      body { padding: 5vh 5vw; }
+      .pieza-titulo { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="ascii-deco">
+      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    </span>
+    <h1>POESÍA AGÉNTICA</h1>
+    <p class="subtitulo">una serie de experimentos net.art generativos</p>
+  </header>
+
+  <p class="intro">
+    Esta es una serie de piezas generadas por un agente de inteligencia
+    artificial entrenado en el corpus de canekzapata/poesiasexp. Cada
+    pieza es un experimento distinto en la frontera entre código, lenguaje
+    y poesía visual. El agente lee los archivos de texto, las fuentes
+    tipográficas y los caracteres del repositorio, y produce piezas que
+    no hubiera podido escribir sola ni la máquina ni el humano.
+  </p>
+
+  <ul class="lista">
+
+    <li class="pieza">
+      <a href="./1/index.html">
+        <div class="pieza-numero">[ PIEZA 001 ]</div>
+        <div class="pieza-titulo">THE SERIES IS INFINITE&nbsp;/&nbsp;THE SERIES IS FINITE</div>
+        <div class="pieza-desc">
+          Un diálogo perpetuo entre una computadora y un humano<br>
+          tomado directamente del corpus lands.txt. Dos voces,<br>
+          dos fuentes, dos colores. La velocidad cambia con cada "infinita".
+        </div>
+        <div class="pieza-tecnica">
+          ▸ forma: glitch-typewriter · diálogo dual-voice · DOM mutation<br>
+          ▸ fuentes: Px437_IBM_EGA_9x14 · Px437_Robotron_A7100 · Px437_EpsonMGA<br>
+          ▸ corpus: lands.txt
+        </div>
+      </a>
+    </li>
+
+    <li class="pieza">
+      <a href="./2/index.html">
+        <div class="pieza-numero">[ PIEZA 002 ]</div>
+        <div class="pieza-titulo">CAMPO DE SIGNOS&nbsp;/&nbsp;FIELD OF SIGNS</div>
+        <div class="pieza-desc">
+          Una gramática Tracery de alfabetos sin descifrar. Los signos<br>
+          nacen como partículas en el canvas, derivan, brillan y se<br>
+          disuelven. Disco de Festos, Ogham, Kayah Li, Buginese, imposibles.
+        </div>
+        <div class="pieza-tecnica">
+          ▸ forma: Tracery grammar · canvas particle system · Unicode SMP<br>
+          ▸ fuentes: Symbola · Jomolhari · Px437_IBM_EGA_9x14<br>
+          ▸ corpus: grammars.js / sutileza
+        </div>
+      </a>
+    </li>
+
+  </ul>
+
+  <footer>
+    <span>CANEKZAPATA — 2026</span>
+    <a href="https://github.com/canekzapata/poesiasexp" target="_blank">
+      ↗ github.com/canekzapata/poesiasexp
+    </a>
+    <a href="https://canekzapata.github.io/poesiasexp/" target="_blank">
+      ↗ sitio principal
+    </a>
+  </footer>
+
+</body>
+</html>
