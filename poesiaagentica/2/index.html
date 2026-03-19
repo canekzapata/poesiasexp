@@ -7,7 +7,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CAMPO DE SIGNOS / FIELD OF SIGNS</title>
-<script src="https://raw.githubusercontent.com/canekzapata/poesiasexp/main/sutileza/tracery.js"></script>
+
   <style>
     @font-face {
       font-family: 'Symbola';
@@ -80,13 +80,15 @@
   <div id="contador" id="contador">░░░░░</div>
 
   <!-- Tracery desde CDN -->
-  <script src="https://raw.githubusercontent.com/canekzapata/poesiasexp/main/sutileza/tracery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tracery-grammar@2.7.7/tracery.js"></script>
 
   <script>
   // ─────────────────────────────────────────────────────────────────
   // — los alfabetos del repositorio — extraídos de grammars.js —
   // — cada uno es un sistema de escritura que nadie descifró del todo —
   // ─────────────────────────────────────────────────────────────────
+
+  let grammar = null; // ← INICIALIZAR COMO NULL
 
   const festos = [
     "\uD800\uDDD0","\uD800\uDDD1","\uD800\uDDD2","\uD800\uDDD3","\uD800\uDDD4",
@@ -172,6 +174,12 @@
   }
 
   function construirGramatica() {
+    // — verificar que Tracery esté cargado —
+    if (typeof tracery === 'undefined') {
+      console.error('Tracery no está cargado aún');
+      return null;
+    }
+
     // — construimos listas de strings para Tracery —
     const g = {
       "festos"    : festos,
@@ -235,7 +243,6 @@
 
   let W, H;
   let particulas = [];
-  let grammar;
   let frameN = 0;
 
   // — paletas de color — cada signo elige su temperatura —
@@ -299,6 +306,11 @@
 
   // — generar nueva constelación desde Tracery —
   function nuevaConstelacion() {
+    if (!grammar) {
+      console.error('Grammar no inicializada');
+      return;
+    }
+
     const frase  = grammar.flatten('#origin#');
 
     // — parsear correctamente los pares sustitutos unicode —
@@ -390,9 +402,27 @@
   resize();
   window.addEventListener('resize', resize);
 
-  // — esperar a que carguen las fuentes antes de comenzar —
-  document.fonts.ready.then(() => {
+  // — esperar a que carguen las fuentes Y tracery antes de comenzar —
+  Promise.all([
+    document.fonts.ready,
+    new Promise(resolve => {
+      // Esperar a que Tracery esté disponible
+      const checkTracery = () => {
+        if (typeof tracery !== 'undefined') {
+          resolve();
+        } else {
+          setTimeout(checkTracery, 100);
+        }
+      };
+      checkTracery();
+    })
+  ]).then(() => {
     grammar = construirGramatica();
+
+    if (!grammar) {
+      console.error('No se pudo inicializar la gramática');
+      return;
+    }
 
     // — primera constelación —
     nuevaConstelacion();
