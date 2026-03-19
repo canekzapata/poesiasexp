@@ -12,38 +12,43 @@
     @font-face {
       font-family: 'Symbola';
       src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/sutileza/css/Symbola.ttf') format('truetype');
+      font-display: swap;
     }
     @font-face {
       font-family: 'Jomolhari';
       src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/sutileza/css/Jomolhari-xvVK.ttf') format('truetype');
+      font-display: swap;
     }
     @font-face {
       font-family: 'VozMaquina';
       src: url('https://raw.githubusercontent.com/canekzapata/poesiasexp/main/lands/fonts/Px437_IBM_EGA_9x14.ttf') format('truetype');
+      font-display: swap;
     }
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
 
     html, body {
-      width: 100%; height: 100%;
+      width: 100%; 
+      height: 100%;
       background: #000;
       overflow: hidden;
+      font-family: monospace;
     }
 
     /* — el cielo de signos — */
     #campo {
       position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-    }
-
-    #ruido {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      pointer-events: none;
-      opacity: 0.018;
-      z-index: 1;
+      top: 0; 
+      left: 0;
+      width: 100vw; 
+      height: 100vh;
+      display: block;
+      background: #000;
+      cursor: pointer;
     }
 
     #titulo {
@@ -69,231 +74,111 @@
       z-index: 10;
       pointer-events: none;
     }
+
+    #status {
+      position: fixed;
+      top: 2vh;
+      left: 2.5vw;
+      font-family: 'VozMaquina', monospace;
+      font-size: 10px;
+      color: rgba(0, 255, 100, 0.4);
+      z-index: 11;
+      pointer-events: none;
+      max-width: 300px;
+      line-height: 1.2;
+    }
   </style>
 </head>
 <body>
 
   <canvas id="campo"></canvas>
-  <canvas id="ruido"></canvas>
 
   <div id="titulo">CAMPO DE SIGNOS / FIELD OF SIGNS — POESIASEXP — II</div>
-  <div id="contador" id="contador">░░░░░</div>
+  <div id="contador">░░░░░</div>
+  <div id="status">Cargando...</div>
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  
   <!-- Tracery desde CDN -->
-  <script src="tracery.js"></script>
-		<script src="js/vendor/jquery-1.11.2.min.js"></script>
-		<script src="js/tracery.min.js"></script>
-		<script src="js/grammars.js"></script>
-		<script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tracery-grammar@2.7.7/tracery.js"></script>
+
+  <!-- Tus scripts locales -->
+  <script src="grammars.js"></script>
+  <script src="app.js"></script>
+
   <script>
-  // ─────────────────────────────────────────────────────────────────
-  // — los alfabetos del repositorio — extraídos de grammars.js —
-  // — cada uno es un sistema de escritura que nadie descifró del todo —
-  // ─────────────────────────────────────────────────────────────────
+  // ═══════════════════════════════════════════════════════════════════
+  // CAMPO DE SIGNOS — Sistema de Partículas Generativo
+  // Integración con grammars.js y tracery
+  // ═══════════════════════════════════════════════════════════════════
 
-  let grammar = null; // ← INICIALIZAR COMO NULL
-
-  const festos = [
-    "\uD800\uDDD0","\uD800\uDDD1","\uD800\uDDD2","\uD800\uDDD3","\uD800\uDDD4",
-    "\uD800\uDDD5","\uD800\uDDD6","\uD800\uDDD7","\uD800\uDDD8","\uD800\uDDD9",
-    "\uD800\uDDDA","\uD800\uDDDB","\uD800\uDDDC","\uD800\uDDDD","\uD800\uDDDE",
-    "\uD800\uDDDF","\uD800\uDDE0","\uD800\uDDE1","\uD800\uDDE2","\uD800\uDDE3",
-    "\uD800\uDDE4","\uD800\uDDE5","\uD800\uDDE6","\uD800\uDDE7","\uD800\uDDE8",
-    "\uD800\uDDE9","\uD800\uDDEA","\uD800\uDDEB","\uD800\uDDEC","\uD800\uDDED",
-    "\uD800\uDDEE","\uD800\uDDEF","\uD800\uDDF0","\uD800\uDDF1","\uD800\uDDF2",
-    "\uD800\uDDF3","\uD800\uDDF4","\uD800\uDDF5","\uD800\uDDF6","\uD800\uDDF7",
-    "\uD800\uDDF8","\uD800\uDDF9","\uD800\uDDFA","\uD800\uDDFB","\uD800\uDDFC"
-  ];
-
-  // — los signos imposibles — Sutom / Symbols for Legacy Computing —
-  const imposible = [
-    "\uD836\uDD83","\uD836\uDD84","\uD836\uDD85","\uD836\uDD86","\uD836\uDD87",
-    "\uD836\uDD88","\uD836\uDD89","\uD836\uDD8A","\uD836\uDD8B","\uD836\uDD8C",
-    "\uD836\uDD8D","\uD836\uDD8E","\uD836\uDD8F","\uD836\uDD90","\uD836\uDD91",
-    "\uD836\uDD92","\uD836\uDD93","\uD836\uDD94","\uD836\uDD95","\uD836\uDD96",
-    "\uD836\uDD97","\uD836\uDD98","\uD836\uDD99","\uD836\uDD9A","\uD836\uDD9B",
-    "\uD836\uDD9C","\uD836\uDD9D","\uD836\uDD9E","\uD836\uDD9F","\uD836\udda0",
-    "\uD836\udda1","\uD836\udda2","\uD836\udda3","\uD836\udda4","\uD836\udda5",
-    "\uD836\udda6","\uD836\udda7","\uD836\udda8","\uD836\udda9","\uD836\uddaa",
-    "\uD836\uddab","\uD836\uddac","\uD836\uddad","\uD836\uddae","\uD836\uddaf"
-  ];
-
-  // — ogham — escritura de los árboles —
-  const ogham = [
-    "\u1680","\u1681","\u1682","\u1683","\u1684","\u1685","\u1686","\u1687",
-    "\u1688","\u1689","\u168A","\u168B","\u168C","\u168D","\u168E","\u168F",
-    "\u1690","\u1691","\u1692","\u1693","\u1694","\u1695","\u1696","\u1697",
-    "\u1698","\u1699","\u169A","\u169B","\u169C"
-  ];
-
-  // — buginese — escritura de los navegantes de Sulawesi —
-  const buginese = [
-    "\u1A00","\u1A01","\u1A02","\u1A03","\u1A04","\u1A05","\u1A06","\u1A07",
-    "\u1A08","\u1A09","\u1A0A","\u1A0B","\u1A0C","\u1A0D","\u1A0E","\u1A0F",
-    "\u1A10","\u1A11","\u1A12","\u1A13","\u1A14","\u1A15","\u1A16","\u1A17",
-    "\u1A18","\u1A19","\u1A1A","\u1A1B","\u1A1E","\u1A1F"
-  ];
-
-  // — kayah li — escritura de los karen de Myanmar —
-  const kayahli = [
-    "\uA900","\uA901","\uA902","\uA903","\uA904","\uA905","\uA906","\uA907",
-    "\uA908","\uA909","\uA90A","\uA90B","\uA90C","\uA90D","\uA90E","\uA90F",
-    "\uA910","\uA911","\uA912","\uA913","\uA914","\uA915","\uA916","\uA917",
-    "\uA918","\uA919","\uA91A","\uA91B","\uA91C","\uA91D","\uA91E","\uA91F",
-    "\uA920","\uA921","\uA922","\uA923","\uA924","\uA925"
-  ];
-
-  // — box drawing — arquitectura de la terminal —
-  const boxdrawing = [
-    "─","│","┌","┐","└","┘","├","┤","┬","┴","┼",
-    "═","║","╔","╗","╚","╝","╠","╣","╦","╩","╬",
-    "╱","╲","╳","┃","━","╌","╍","╎","╏","▒","░","▓"
-  ];
-
-  // — ideographic description — el lenguaje de los lenguajes —
-  const ideographic = [
-    "\u2FF0","\u2FF1","\u2FF2","\u2FF3","\u2FF4","\u2FF5",
-    "\u2FF6","\u2FF7","\u2FF8","\u2FF9","\u2FFA","\u2FFB"
-  ];
-
-  // — ojos / operadores matemáticos —
-  const ojos = [
-    "\u2A5F","\u2A60","\u2A1E","\u2A2D","\u2A2E","\u2A33","\u2A34",
-    "\u2A35","\u2A36","\u2A37","\u2A38","\u2A44","\u2A45","\u2A46",
-    "\u2ABB","\u2ABC","\u2ABD","\u2ABE","\u2ABF","\u2AC0","\u2AC1",
-    "\u2AC2","\u2AC3","\u2AC4","\u2AC5","\u2AC6","\u2AC7","\u2AC8",
-    "\u2300","\u2301","\u2338","\u2339","\u233A","\u233B","\u233C"
-  ];
-
-  // — separadores — el espacio entre los signos también es signo —
-  const separadores = [" ", "  ", " │ ", " ╱ ", " ⿰ ", "  ", " ─ ", " "];
-
-  // ─────────────────────────────────────────────────────────────────
-  // — la gramática Tracery — el oráculo —
-  // ─────────────────────────────────────────────────────────────────
-
-  function elegir(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+  const statusEl = document.getElementById('status');
+  
+  function log(msg) {
+    console.log(msg);
+    statusEl.textContent += '\n' + msg;
   }
 
-  function construirGramatica() {
-    // — verificar que Tracery esté cargado —
-    if (typeof tracery === 'undefined') {
-      console.error('Tracery no está cargado aún');
-      return null;
-    }
-
-    // — construimos listas de strings para Tracery —
-    const g = {
-      "festos"    : festos,
-      "imposible" : imposible,
-      "ogham"     : ogham,
-      "buginese"  : buginese,
-      "kayahli"   : kayahli,
-      "box"       : boxdrawing,
-      "ideo"      : ideographic,
-      "ojo"       : ojos,
-      "sep"       : separadores,
-
-      // — el signo elemental — elige entre todos los alfabetos —
-      "signo": [
-        "#festos#", "#festos#", "#festos#",
-        "#imposible#", "#imposible#",
-        "#ogham#", "#ogham#",
-        "#buginese#",
-        "#kayahli#", "#kayahli#",
-        "#box#",
-        "#ideo#",
-        "#ojo#"
-      ],
-
-      // — frases de distintas longitudes —
-      "frase_corta"  : ["#signo##sep##signo##sep##signo#",
-                        "#signo##sep##signo##sep##signo##sep##signo#"],
-
-      "frase_media"  : ["#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#",
-                        "#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#"],
-
-      "frase_larga"  : ["#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#",
-                        "#signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo##sep##signo#"],
-
-      // — el origen — elige densidad aleatoriamente —
-      "origin": [
-        "#frase_corta#",
-        "#frase_corta#",
-        "#frase_media#",
-        "#frase_media#",
-        "#frase_media#",
-        "#frase_larga#",
-        "#frase_corta##sep##frase_corta#",
-        "#frase_media##sep##frase_corta#"
-      ]
-    };
-
-    const grammar = tracery.createGrammar(g);
-    grammar.addModifiers(tracery.baseEngModifiers);
-    return grammar;
-  }
+  log('📍 Iniciando...');
 
   // ─────────────────────────────────────────────────────────────────
-  // — el sistema de partículas — los signos como materia viva —
+  // — el sistema de partículas —
   // ─────────────────────────────────────────────────────────────────
 
   const canvas  = document.getElementById('campo');
-  const ctx     = canvas.getContext('2d');
-  const ruidoC  = document.getElementById('ruido');
-  const ruidoX  = ruidoC.getContext('2d');
+  const ctx     = canvas.getContext('2d', { alpha: true });
+  
+  if (!ctx) {
+    log('❌ No se puede obtener contexto 2D del canvas');
+    throw new Error('Canvas context failed');
+  }
 
-  let W, H;
+  let W = window.innerWidth;
+  let H = window.innerHeight;
   let particulas = [];
   let frameN = 0;
+  let isRunning = false;
+  let grammar = null;
 
-  // — paletas de color — cada signo elige su temperatura —
+  // — paletas de color —
   const paletas = [
-    { base: [0,   250, 102],  nombre: "verde"  }, // verde fosforescente
-    { base: [255, 180,   0],  nombre: "ambar"  }, // ámbar antiguo
-    { base: [255, 255, 255],  nombre: "blanco" }, // blanco puro
-    { base: [255,  45, 120],  nombre: "rosa"   }, // rosa profundo
-    { base: [0,   229, 255],  nombre: "cian"   }, // cian eléctrico
-    { base: [180,   0, 255],  nombre: "violeta"}, // violeta
-    { base: [255, 100,   0],  nombre: "naranja"}, // naranja quemado
+    { base: [0,   250, 102],  nombre: "verde"  },
+    { base: [255, 180,   0],  nombre: "ambar"  },
+    { base: [255, 255, 255],  nombre: "blanco" },
+    { base: [255,  45, 120],  nombre: "rosa"   },
+    { base: [0,   229, 255],  nombre: "cian"   },
+    { base: [180,   0, 255],  nombre: "violeta"},
+    { base: [255, 100,   0],  nombre: "naranja"},
   ];
 
   function resize() {
-    W = canvas.width  = ruidoC.width  = window.innerWidth;
-    H = canvas.height = ruidoC.height = window.innerHeight;
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
   }
 
-  // — detectar qué fuente usar según el rango del carácter —
   function detectarFuente(glifo) {
-    if (!glifo) return 'Symbola';
+    if (!glifo) return 'serif';
     const cp = glifo.codePointAt(0);
-    // Tibetano: 0x0F00–0x0FFF
     if (cp >= 0x0F00 && cp <= 0x0FFF) return 'Jomolhari';
-    // Box Drawing: 0x2500–0x257F
     if (cp >= 0x2500 && cp <= 0x257F) return 'VozMaquina';
-    // Ogham: 0x1680–0x169C
     if (cp >= 0x1680 && cp <= 0x169C) return 'Symbola';
     return 'Symbola';
   }
 
-  // — crear una partícula desde un glifo —
   function crearParticula(glifo, indice, total) {
     const paleta  = paletas[Math.floor(Math.random() * paletas.length)];
-    const tamano  = Math.random() * 54 + 18;  // 18px – 72px
-    const vida    = (Math.random() * 4 + 8) * 60; // 8–12 seg @ 60fps
+    const tamano  = Math.random() * 54 + 18;
+    const vida    = (Math.random() * 4 + 8) * 60;
 
-    // — dispersión en el canvas — no solo centro —
     const x = Math.random() * W * 0.9 + W * 0.05;
     const y = Math.random() * H * 0.85 + H * 0.07;
 
-    // — velocidad de deriva — muy lenta —
     const angulo   = Math.random() * Math.PI * 2;
     const speed    = Math.random() * 0.3 + 0.05;
     const vx       = Math.cos(angulo) * speed;
     const vy       = Math.sin(angulo) * speed;
 
-    // — rotación orbital muy lenta —
     const orbita   = (Math.random() - 0.5) * 0.003;
 
     return {
@@ -303,54 +188,54 @@
       fuente: detectarFuente(glifo),
       angulo: Math.random() * Math.PI * 2,
       orbita,
-      fase: Math.random() * Math.PI * 2, // para oscilación
+      fase: Math.random() * Math.PI * 2,
     };
   }
 
-  // — generar nueva constelación desde Tracery —
   function nuevaConstelacion() {
     if (!grammar) {
-      console.error('Grammar no inicializada');
+      log('❌ No hay gramática');
       return;
     }
 
-    const frase  = grammar.flatten('#origin#');
+    try {
+      // Extraer solo los caracteres Unicode, ignorar HTML
+      const frase  = grammar.flatten('#origin#');
+      
+      // Limpiar HTML tags y espacios
+      const textoLimpio = frase.replace(/<[^>]*>/g, '').trim();
+      
+      // Convertir a array de caracteres unicode
+      const glifos = Array.from(textoLimpio)
+        .filter(g => g.trim() !== '' && g.length > 0)
+        .slice(0, 30); // Limitar a 30 caracteres
 
-    // — parsear correctamente los pares sustitutos unicode —
-    const glifos = Array.from(frase).filter(g => g.trim() !== '');
+      if (glifos.length === 0) {
+        log('⚠️  Sin caracteres válidos');
+        return;
+      }
 
-    const nuevas = glifos.map((g, i) => crearParticula(g, i, glifos.length));
-    particulas = particulas.concat(nuevas);
+      const nuevas = glifos.map((g, i) => crearParticula(g, i, glifos.length));
+      particulas = particulas.concat(nuevas);
 
-    // — actualizar contador —
-    document.getElementById('contador').textContent =
-      '░'.repeat(Math.min(glifos.length, 20));
-  }
-
-  // — dibujar el ruido de fondo —
-  function dibujarRuido() {
-    const img  = ruidoX.createImageData(W, H);
-    const data = img.data;
-    for (let i = 0; i < data.length; i += 4) {
-      const v = Math.random() > 0.5 ? 255 : 0;
-      data[i] = data[i+1] = data[i+2] = v;
-      data[i+3] = Math.floor(Math.random() * 30);
+      document.getElementById('contador').textContent = '░'.repeat(Math.min(glifos.length, 20));
+      log(`✓ ${glifos.length} caracteres`);
+    } catch(e) {
+      log('❌ Error: ' + e.message);
     }
-    ruidoX.putImageData(img, 0, 0);
   }
 
-  // — el loop principal — el canvas como respiración —
+  // — el loop principal —
   function loop() {
+    if (!isRunning) return;
+    
     frameN++;
 
-    // — limpiar con negro semitransparente — trail suave —
+    // Limpiar con desvanecimiento suave
     ctx.fillStyle = 'rgba(0, 0, 0, 0.045)';
     ctx.fillRect(0, 0, W, H);
 
-    // — ruido cada 3 frames —
-    if (frameN % 3 === 0) dibujarRuido();
-
-    // — actualizar y dibujar partículas —
+    // Filtrar partículas vivas
     particulas = particulas.filter(p => p.vida > 0);
 
     for (const p of particulas) {
@@ -359,18 +244,16 @@
       p.y += p.vy;
       p.angulo += p.orbita;
 
-      // — oscilación suave —
+      // Oscilación suave
       p.x += Math.sin(p.fase + frameN * 0.008) * 0.12;
       p.y += Math.cos(p.fase + frameN * 0.006) * 0.10;
 
-      // — alpha: fade in y fade out —
+      // Calcular alpha con fade in/out
       const progreso = p.vida / p.vidaMax;
       let alpha;
       if (progreso > 0.85) {
-        // fade in
         alpha = (1 - progreso) / 0.15;
       } else if (progreso < 0.2) {
-        // fade out
         alpha = progreso / 0.2;
       } else {
         alpha = 1;
@@ -379,16 +262,14 @@
 
       const [r, g, b] = p.paleta.base;
 
-      // — brillo / glow —
       ctx.save();
       ctx.shadowColor  = `rgba(${r},${g},${b},${alpha * 0.7})`;
       ctx.shadowBlur   = p.tamano * 0.6;
       ctx.fillStyle    = `rgba(${r},${g},${b},${alpha})`;
-      ctx.font         = `${p.tamano}px '${p.fuente}', Symbola, serif`;
+      ctx.font         = `bold ${p.tamano}px '${p.fuente}', Symbola, serif`;
       ctx.textBaseline = 'middle';
       ctx.textAlign    = 'center';
 
-      // — rotación orbital —
       ctx.translate(p.x, p.y);
       ctx.rotate(p.angulo * 0.15);
       ctx.fillText(p.glifo, 0, 0);
@@ -405,39 +286,45 @@
   resize();
   window.addEventListener('resize', resize);
 
-  // — esperar a que carguen las fuentes Y tracery antes de comenzar —
-  Promise.all([
-    document.fonts.ready,
-    new Promise(resolve => {
-      // Esperar a que Tracery esté disponible
-      const checkTracery = () => {
-        if (typeof tracery !== 'undefined') {
-          resolve();
-        } else {
-          setTimeout(checkTracery, 100);
-        }
-      };
-      checkTracery();
-    })
-  ]).then(() => {
-    grammar = construirGramatica();
-
-    if (!grammar) {
-      console.error('No se pudo inicializar la gramática');
-      return;
+  // Esperar a que todo esté cargado
+  const waitForDeps = setInterval(() => {
+    // Verificar que tracery, grammars y jquery estén disponibles
+    if (typeof tracery !== 'undefined' && typeof grammars !== 'undefined' && typeof $ !== 'undefined') {
+      clearInterval(waitForDeps);
+      log('✓ Todas las dependencias cargadas');
+      
+      try {
+        // Crear la gramática desde grammars.js
+        grammar = tracery.createGrammar(grammars.e);
+        log('✓ Gramática de grammars.js creada');
+        
+        isRunning = true;
+        log('✓ Sistema LISTO');
+        
+        // Generar primera constelación
+        nuevaConstelacion();
+        
+        // Nueva constelación cada 3.5 segundos
+        setInterval(nuevaConstelacion, 3500);
+        
+        // Click para constelación inmediata
+        canvas.addEventListener('click', nuevaConstelacion);
+        
+        // Iniciar el loop de animación
+        loop();
+        
+      } catch(e) {
+        log('❌ Error: ' + e.message);
+      }
     }
+  }, 100);
 
-    // — primera constelación —
-    nuevaConstelacion();
-
-    // — nueva constelación cada 3.5 segundos —
-    setInterval(nuevaConstelacion, 3500);
-
-    // — clic para constelación inmediata —
-    canvas.addEventListener('click', nuevaConstelacion);
-
-    loop();
-  });
+  // Timeout de seguridad
+  setTimeout(() => {
+    if (!isRunning) {
+      log('⏱️  TIMEOUT - Dependencias no cargaron');
+    }
+  }, 5000);
 
   </script>
 </body>
