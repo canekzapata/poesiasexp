@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- corpus: canekzapata/poesiasexp | pieza 2 | CAMPO DE SIGNOS / FIELD OF SIGNS -->
 <!-- forma: Tracery grammar + canvas particle system + alfabetos abstractos -->
-<!-- caracteres: Disco de Festos, Sutom, Ogham, Buginese, Kayah Li, Box Drawing, Tibetano -->
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -39,7 +38,6 @@
       font-family: monospace;
     }
 
-    /* — el cielo de signos — */
     #campo {
       position: fixed;
       top: 0; 
@@ -92,7 +90,6 @@
 <body>
 
   <canvas id="campo"></canvas>
-
   <div id="titulo">CAMPO DE SIGNOS / FIELD OF SIGNS — POESIASEXP — II</div>
   <div id="contador">░░░░░</div>
   <div id="status">Cargando...</div>
@@ -100,17 +97,15 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   
-  <!-- Tracery desde CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/tracery-grammar@2.7.7/tracery.js"></script>
+  <!-- Tracery versión compatible -->
+  <script src="https://cdn.jsdelivr.net/npm/tracery@0.5.6/tracery.min.js"></script>
 
   <!-- Tus scripts locales -->
   <script src="grammars.js"></script>
-  <script src="app.js"></script>
 
   <script>
   // ═══════════════════════════════════════════════════════════════════
   // CAMPO DE SIGNOS — Sistema de Partículas Generativo
-  // Integración con grammars.js y tracery
   // ═══════════════════════════════════════════════════════════════════
 
   const statusEl = document.getElementById('status');
@@ -120,7 +115,7 @@
     statusEl.textContent += '\n' + msg;
   }
 
-  log('📍 Iniciando...');
+  log('📍 Iniciando CAMPO DE SIGNOS...');
 
   // ─────────────────────────────────────────────────────────────────
   // — el sistema de partículas —
@@ -130,7 +125,7 @@
   const ctx     = canvas.getContext('2d', { alpha: true });
   
   if (!ctx) {
-    log('❌ No se puede obtener contexto 2D del canvas');
+    log('❌ Error: No se puede obtener contexto 2D');
     throw new Error('Canvas context failed');
   }
 
@@ -141,15 +136,14 @@
   let isRunning = false;
   let grammar = null;
 
-  // — paletas de color —
   const paletas = [
-    { base: [0,   250, 102],  nombre: "verde"  },
-    { base: [255, 180,   0],  nombre: "ambar"  },
-    { base: [255, 255, 255],  nombre: "blanco" },
-    { base: [255,  45, 120],  nombre: "rosa"   },
-    { base: [0,   229, 255],  nombre: "cian"   },
-    { base: [180,   0, 255],  nombre: "violeta"},
-    { base: [255, 100,   0],  nombre: "naranja"},
+    { base: [0,   250, 102] },
+    { base: [255, 180,   0] },
+    { base: [255, 255, 255] },
+    { base: [255,  45, 120] },
+    { base: [0,   229, 255] },
+    { base: [180,   0, 255] },
+    { base: [255, 100,   0] },
   ];
 
   function resize() {
@@ -162,7 +156,6 @@
     const cp = glifo.codePointAt(0);
     if (cp >= 0x0F00 && cp <= 0x0FFF) return 'Jomolhari';
     if (cp >= 0x2500 && cp <= 0x257F) return 'VozMaquina';
-    if (cp >= 0x1680 && cp <= 0x169C) return 'Symbola';
     return 'Symbola';
   }
 
@@ -199,19 +192,18 @@
     }
 
     try {
-      // Extraer solo los caracteres Unicode, ignorar HTML
       const frase  = grammar.flatten('#origin#');
       
       // Limpiar HTML tags y espacios
-      const textoLimpio = frase.replace(/<[^>]*>/g, '').trim();
+      const textoLimpio = frase.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim();
       
       // Convertir a array de caracteres unicode
       const glifos = Array.from(textoLimpio)
         .filter(g => g.trim() !== '' && g.length > 0)
-        .slice(0, 30); // Limitar a 30 caracteres
+        .slice(0, 30);
 
       if (glifos.length === 0) {
-        log('⚠️  Sin caracteres válidos');
+        log('⚠️  Sin caracteres');
         return;
       }
 
@@ -219,23 +211,19 @@
       particulas = particulas.concat(nuevas);
 
       document.getElementById('contador').textContent = '░'.repeat(Math.min(glifos.length, 20));
-      log(`✓ ${glifos.length} caracteres`);
     } catch(e) {
-      log('❌ Error: ' + e.message);
+      log('❌ Error en constelación: ' + e.message);
     }
   }
 
-  // — el loop principal —
   function loop() {
     if (!isRunning) return;
     
     frameN++;
 
-    // Limpiar con desvanecimiento suave
     ctx.fillStyle = 'rgba(0, 0, 0, 0.045)';
     ctx.fillRect(0, 0, W, H);
 
-    // Filtrar partículas vivas
     particulas = particulas.filter(p => p.vida > 0);
 
     for (const p of particulas) {
@@ -244,11 +232,9 @@
       p.y += p.vy;
       p.angulo += p.orbita;
 
-      // Oscilación suave
       p.x += Math.sin(p.fase + frameN * 0.008) * 0.12;
       p.y += Math.cos(p.fase + frameN * 0.006) * 0.10;
 
-      // Calcular alpha con fade in/out
       const progreso = p.vida / p.vidaMax;
       let alpha;
       if (progreso > 0.85) {
@@ -286,43 +272,35 @@
   resize();
   window.addEventListener('resize', resize);
 
-  // Esperar a que todo esté cargado
+  // Esperar a que las dependencias carguen
   const waitForDeps = setInterval(() => {
-    // Verificar que tracery, grammars y jquery estén disponibles
-    if (typeof tracery !== 'undefined' && typeof grammars !== 'undefined' && typeof $ !== 'undefined') {
+    if (typeof tracery !== 'undefined' && typeof grammars !== 'undefined') {
       clearInterval(waitForDeps);
-      log('✓ Todas las dependencias cargadas');
+      log('✓ Dependencias cargadas');
       
       try {
-        // Crear la gramática desde grammars.js
+        // Crear la gramática SIN llamar a addModifiers
         grammar = tracery.createGrammar(grammars.e);
-        log('✓ Gramática de grammars.js creada');
+        log('✓ Gramática creada');
         
         isRunning = true;
-        log('✓ Sistema LISTO');
+        log('✓ LISTO');
         
-        // Generar primera constelación
         nuevaConstelacion();
-        
-        // Nueva constelación cada 3.5 segundos
         setInterval(nuevaConstelacion, 3500);
-        
-        // Click para constelación inmediata
         canvas.addEventListener('click', nuevaConstelacion);
-        
-        // Iniciar el loop de animación
         loop();
         
       } catch(e) {
         log('❌ Error: ' + e.message);
+        console.error(e);
       }
     }
   }, 100);
 
-  // Timeout de seguridad
   setTimeout(() => {
     if (!isRunning) {
-      log('⏱️  TIMEOUT - Dependencias no cargaron');
+      log('⏱️  TIMEOUT');
     }
   }, 5000);
 
