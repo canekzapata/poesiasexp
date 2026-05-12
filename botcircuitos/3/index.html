@@ -98,3 +98,244 @@ class RCLowpass {
       ? '→ el filtro no detiene la señal — la recuerda mas despacio'
       : `→ cargando ${p}%   Vc = ${fmt(this.Vc,2)}V / ${this.Vcc}V`;
   }
+  
+}
+
+// ── RLC RESONADOR ─────────────────────────────────────────────
+class RLCResonator {
+  constructor() {
+    // Fix f0 and Q directly for stable visible oscillation
+    this.f0    = +(Math.random() * 1.6 + 0.2).toFixed(3); // 0.2–1.8 Hz
+    this.Q     = +(Math.random() * 6   + 1.2).toFixed(2); // 1.2–7.2
+    this.Vcc   = rv(5, 12);
+    this.w0    = 2 * Math.PI * this.f0;
+    this.alpha = this.w0 / (2 * this.Q);
+    // Display values — aesthetically plausible
+    this.Rd = rv(5, 80);
+    this.Ld = rv(50, 400);
+    this.Cd = rv(50, 470);
+    // State
+    this.Vc  = 0;
+    this.dVc = 0;
+    this.t   = 0;
+    this.name = 'RESONADOR RLC — AMORTIGUADO';
+  }
+  step(dt) {
+    // d²Vc/dt² + 2α·dVc/dt + ω₀²·Vc = ω₀²·Vcc
+    const d2 = this.w0 * this.w0 * (this.Vcc - this.Vc) - 2 * this.alpha * this.dVc;
+    this.dVc += d2 * dt;
+    this.Vc  += this.dVc * dt;
+    this.t   += dt;
+  }
+  get displayV() { return clamp(this.Vc, 0, this.Vcc * 1.6); }
+  get vNorm()    { return clamp(this.Vc / this.Vcc, -1.2, 1.2); }
+  diagram() {
+    return [
+      `  +${this.Vcc}V --[${this.Rd}Ω]--[${this.Ld}mH]--[${this.Cd}µF]-- GND`,
+      `                                    Vc = ${fmt(this.Vc,3)}V`,
+      ``,
+      `  f₀ = ${fmt(this.f0,3)} Hz`,
+      `  Q  = ${fmt(this.Q,2)}`,
+      `  α  = ${fmt(this.alpha,3)} Np/s`,
+      `  t  = ${fmt(this.t,3)}s`,
+    ].join('\n');
+  }
+  // Text oscillates spatially with phase offset per character
+  xfChar(ch, pos, len) {
+    if (ch === ' ' || ch === '\n') return ch;
+    const phi = (pos / len) * 2 * Math.PI;
+    const env = Math.exp(-this.alpha * this.t);
+    const v   = Math.sin(this.w0 * this.t + phi) * env;
+    if (v >  0.5) return ch.toUpperCase();
+    if (v >  0.1) return ch;
+    if (v > -0.1) return '·';
+    if (v > -0.5) return ch.toLowerCase();
+    return '_';
+  }
+  poem() {
+    return `∅ oscilando a ${fmt(this.f0,2)}Hz  Q=${fmt(this.Q,2)}  Vc=${fmt(this.Vc,2)}V`;
+  }
+}
+
+// ── 555 ASTABLE ───────────────────────────────────────────────
+class Astable555 {
+  constructor() {
+    this.Ra  = rv(10, 80);
+    this.Rb  = rv(10, 80);
+    this.C   = rv(10, 100);
+    this.Vcc = pick([5, 9, 12]);
+    this.f   = 1000 / (0.693 * (this.Ra + 2 * this.Rb) * this.C);
+    this.T   = 1 / this.f;
+    this.D   = (this.Ra + this.Rb) / (this.Ra + 2 * this.Rb);
+    this.t   = 0;
+    this.name = 'OSCILADOR ASTABLE — NE555';
+  }
+  step(dt) { this.t += dt; }
+  get high()     { return (this.t % this.T) / this.T < this.D; }
+  get displayV() { return this.high ? this.Vcc * 0.667 : this.Vcc * 0.333; }
+  get vNorm()    { return this.high ? 1 : 0; }
+  diagram() {
+    const state = this.high
+      ? `HIGH  ${fmt(this.Vcc*0.667,1)}V`
+      : `LOW   ${fmt(this.Vcc*0.333,1)}V`;
+    return [
+      `  +${this.Vcc}V --[Ra=${this.Ra}kΩ]--[Rb=${this.Rb}kΩ]--[C=${this.C}µF]-- GND`,
+      ``,
+      `  f    = ${fmt(this.f,3)} Hz`,
+      `  T    = ${fmt(this.T*1000,1)} ms`,
+      `  D    = ${fmt(this.D*100,1)}%   Th=${fmt(this.D*this.T*1000,1)}ms  Tl=${fmt((1-this.D)*this.T*1000,1)}ms`,
+      `  OUT  = ${state}`,
+      `  t    = ${fmt(this.t,3)}s`,
+    ].join('\n');
+  }
+  // All chars toggle UPPER/lower at duty cycle frequency
+  xfChar(ch, pos, len) {
+    if (ch === ' ' || ch === '\n') return ch;
+    return this.high ? ch.toUpperCase() : ch.toLowerCase();
+  }
+  poem() {
+    return `■ ${this.high ? 'HIGH' : 'low '} — el oscilador no pregunta por que — solo pulsa`;
+  }
+}
+
+// ── RC PASO-ALTAS ─────────────────────────────────────────────
+class RCHighpass {
+  constructor() {
+    this.R   = rv(10, 80);
+    this.C   = rv(5, 50);
+    this.tau = this.R * this.C / 1000;
+    this.Vcc = rv(5, 12);
+    this.Vc  = 0;
+    this.t   = 0;
+    this.name = 'FILTRO RC — PASO-ALTAS';
+  }
+  step(dt) {
+    this.Vc += (this.Vcc - this.Vc) / this.tau * dt;
+    this.t  += dt;
+  }
+  get Vout()     { return clamp(this.Vcc - this.Vc, 0, this.Vcc); }
+  get displayV() { return this.Vout; }
+  get vNorm()    { return clamp(this.Vout / this.Vcc, 0, 1); }
+  diagram() {
+    return [
+      `  in --[${this.C}µF]--+--[${this.R}kΩ]-- GND`,
+      `                  |`,
+      `                 Vout = ${fmt(this.Vout,3)}V`,
+      ``,
+      `  τ    = ${fmt(this.tau,3)}s`,
+      `  V(t) = ${this.Vcc}·e^(−t/${fmt(this.tau,2)})`,
+      `  t    = ${fmt(this.t,3)}s`,
+    ].join('\n');
+  }
+  // Deterministic noise: chars visible based on hash + decaying probability
+  xfChar(ch, pos, len) {
+    if (ch === ' ' || ch === '\n') return ch;
+    const bucket = (this.t * 5) | 0;
+    const h = ((pos * 7919 + bucket * 6271) % 97) / 97;
+    if (h < this.vNorm) return ch;
+    return this.vNorm > 0.25 ? '·' : '_';
+  }
+  poem() {
+    const p = Math.round(this.vNorm * 100);
+    return `⊥ solo el principio es visible — ${p}% de señal restante`;
+  }
+}
+
+// ── WAVEFORM BUFFER ───────────────────────────────────────────
+const W = 50; // columns
+const H = 5;  // rows
+
+class Waveform {
+  constructor() {
+    this.buf  = [];
+    this.vmax = 1;
+  }
+  push(v) {
+    this.buf.push(v);
+    if (this.buf.length > W) this.buf.shift();
+    if (v > this.vmax) this.vmax = v * 1.1;
+  }
+  render() {
+    const lines = [];
+    lines.push(`  ┄┄┄┄┄┄ OSCILOSCOPIO ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄`);
+    for (let r = 0; r < H; r++) {
+      const v_level = this.vmax * (1 - r / (H - 1));
+      const label   = fmt(v_level, 0).padStart(3);
+      let row = `  ${label}V ┤`;
+      for (let x = 0; x < W; x++) {
+        const v   = x < this.buf.length ? this.buf[x] : 0;
+        const row_for_v = Math.round((1 - clamp(v, 0, this.vmax) / this.vmax) * (H - 1));
+        if (r === row_for_v)    row += '•';
+        else if (r > row_for_v) row += '·';
+        else                    row += ' ';
+      }
+      lines.push(row);
+    }
+    lines.push(`      └${'─'.repeat(W)}→ t`);
+    return lines.join('\n');
+  }
+}
+
+// ── TEXT TRANSFORM ────────────────────────────────────────────
+function xfText(text, circuit) {
+  const chars = [...text];
+  return chars.map((ch, i) => {
+    if (ch === '\n') return '\n';
+    return circuit.xfChar(ch, i, chars.length);
+  }).join('');
+}
+
+// ── MAIN LOOP ─────────────────────────────────────────────────
+const TYPES = [RCLowpass, RLCResonator, Astable555, RCHighpass];
+
+let circuit, waveform, verse, lastTs, rafId, frameN = 0;
+
+function init() {
+  circuit  = new (pick(TYPES))();
+  waveform = new Waveform();
+  verse    = pick(VERSOS);
+  lastTs   = null;
+}
+
+function loop(ts) {
+  if (lastTs === null) lastTs = ts;
+  const dt = Math.min((ts - lastTs) / 1000, 0.04);
+  lastTs = ts;
+
+  circuit.step(dt);
+  if (++frameN % 4 === 0) waveform.push(circuit.displayV);
+
+  const tout = xfText(verse, circuit);
+  const inFmt  = verse.replace(/\n/g, '\n        ');
+  const outFmt = tout.replace(/\n/g, '\n        ');
+
+  document.getElementById('out').textContent =
+    `> CIRCUITO VIVO — TRANSFORMADOR DE SEÑAL POÉTICA\n\n` +
+    `╔══════════════════════════════════════════════════╗\n` +
+    `║  ${circuit.name.padEnd(46)}║\n` +
+    `╚══════════════════════════════════════════════════╝\n\n` +
+    circuit.diagram() + `\n\n` +
+    waveform.render() + `\n\n` +
+    `  ┄┄┄┄┄┄ SEÑAL DE TEXTO ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\n` +
+    `  IN:   ${inFmt}\n\n` +
+    `  OUT:  ${outFmt}\n\n` +
+    `  ${circuit.poem()}\n\n` +
+    `  ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄\n` +
+    `  [click · space · enter]  →  nuevo circuito`;
+
+  rafId = requestAnimationFrame(loop);
+}
+
+function start() {
+  if (rafId) cancelAnimationFrame(rafId);
+  frameN = 0;
+  init();
+  rafId = requestAnimationFrame(loop);
+}
+
+window.onload = start;
+document.addEventListener('click',   start);
+document.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') start(); });
+</script>
+</body>
+</html>
