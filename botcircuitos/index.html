@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>⚡ CIRCUITO POÉTICO — EMOJI MODE</title>
+  <title>⚡ CIRCUITO POÉTICO</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { 
-      background: #000; 
-      font-family: 'Courier New', monospace; 
-      color: #00ff41; 
-      overflow: hidden; 
+    body {
+      background: #000;
+      font-family: 'Courier New', monospace;
+      color: #00ff41;
+      overflow: hidden;
       height: 100vh;
       width: 100vw;
       display: flex;
@@ -21,13 +21,11 @@
       max-width: 1400px;
       height: 92vh;
       background: #000;
-      border: 6px solid #00ff41;
-      box-shadow: 0 0 60px #00ff41;
       padding: 40px;
       overflow-y: auto;
-      line-height: 1.65;
-      font-size: 1.65em;
-      text-shadow: 0 0 15px #00ff41;
+      line-height: 1.75;
+      font-size: 1.5em;
+      text-shadow: 0 0 12px #00ff41;
     }
     .circuit-emoji {
       display: inline-block;
@@ -42,7 +40,6 @@
   <div id="terminal"></div>
 
   <script>
-    // Pequeños SVGs de circuitos del tamaño de emojis (40-60px)
     const emojiSVGs = {
       bateria: `<svg class="circuit-emoji" width="52" height="38" viewBox="0 0 52 38" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="32" height="30" rx="4" fill="#111" stroke="#00ff41" stroke-width="6"/><text x="22" y="22" fill="#fff" font-size="22" font-weight="bold">+</text><text x="22" y="32" fill="#fff" font-size="22" font-weight="bold">–</text></svg>`,
       resistencia: `<svg class="circuit-emoji" width="62" height="32" viewBox="0 0 62 32" xmlns="http://www.w3.org/2000/svg"><polyline points="4,16 14,6 24,26 34,6 44,26 54,16" fill="none" stroke="#ffff00" stroke-width="7" stroke-linejoin="round"/><text x="29" y="27" fill="#ffff00" font-size="18" font-weight="bold">R</text></svg>`,
@@ -53,21 +50,134 @@
       ground: `<svg class="circuit-emoji" width="48" height="32" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg"><line x1="8" y1="8" x2="40" y2="8" stroke="#00ff41" stroke-width="6"/><polygon points="20,8 18,24 22,24" fill="#111" stroke="#00ff41" stroke-width="6"/><text x="28" y="28" fill="#00ff41" font-size="16">GND</text></svg>`
     };
 
+    const versos = {
+      apertura: [
+        "CIRCUITO ACTIVADO",
+        "SEÑAL DETECTADA",
+        "PULSO INICIADO",
+        "CORRIENTE EN MARCHA",
+        "SISTEMA DESPIERTO",
+        "FRECUENCIA ENCONTRADA",
+      ],
+      tecnico: [
+        "Voltaje: {V}V  •  Corriente: {A}A  •  Frecuencia: {F}Hz",
+        "Impedancia: {Z}Ω  •  Fase: {P}°  •  Potencia: {W}W",
+        "Capacitancia: {C}µF  •  Inductancia: {L}mH  •  Ganancia: {G}dB",
+        "Ciclo de trabajo: {D}%  •  Armónico: {H}  •  Ruido: {N}dBm",
+      ],
+      tierra: [
+        "debajo del pino pregunto al silencio — el silencio responde con tierra",
+        "las nubes no preguntan a qué voltaje están",
+        "el musgo crece sobre la roca aunque nadie lo conecte a nada",
+        "en el arroyo las piedras aprenden a ser resistencia sin saberlo",
+        "la montaña alta guarda su tensión interna, nunca la descarga",
+        "en el valle hay pájaros que cantan sin frecuencia definida",
+        "camino entre pinos y escucho el viento como señal sin protocolo",
+        "el río no necesita tierra — ya es tierra, ya es corriente, ya es todo",
+      ],
+      agua: [
+        "el capacitor guarda lo que el río olvida en su prisa hacia el mar",
+        "corriente que fluye no necesita origen para ser real",
+        "en el estanque inmóvil — la luna almacena su propia luz",
+        "el agua del manantial no pregunta por dónde va — solo va",
+        "lluvia sobre la choza — cien gotas, cien frecuencias distintas",
+        "el pescador deja el remo quieto y el bote decide su camino",
+        "profundas y raudas las aguas del río — como la señal cuando encuentra su cauce",
+        "bebo del arroyo y me relajo — la corriente sabe lo que el esquema no dice",
+      ],
+      musica: [
+        "el inductor zumba una nota que nadie escribió en la partitura",
+        "entre dos silencios vive la música que el amplificador sueña",
+        "frecuencia fundamental — todo lo demás son armónicos del deseo",
+        "el transistor amplifica también el silencio si lo tratas con cuidado",
+        "la onda cuadrada es honesta — sube, se queda, baja, dice la verdad",
+        "en el espectro hay colores que el oído nunca vio",
+        "una melodía entra por la base y sale transformada — eso llaman ganancia",
+        "escuché la música del cielo y me sorprendió que usara 440Hz",
+      ],
+      noche: [
+        "ante mi lecho la luz del LED semeja luna que cubriera el suelo",
+        "en la noche profunda el oscilador sueña su propia frecuencia",
+        "alzo la vista al cielo — cada estrella un LED sin resistencia en serie",
+        "el reloj de cuarzo late mientras duermo — fiel, 32768 veces por segundo",
+        "en silencio el capacitor se descarga lentamente hacia la oscuridad",
+        "tarde muy tarde el sistema entra en modo de bajo consumo",
+        "nadie escucha los golpes del clock cuando la ciudad se apaga",
+        "la luna guarda su carga — nadie la toca, nadie la mide",
+      ],
+      soledad: [
+        "mil picos y ninguna señal — ten cuidado cuando salgas",
+        "construí una choza sin antena y aprendí a vivir sin ACK",
+        "me aparté del mundo de la fama y la ganancia — también de la red",
+        "el recluso no necesita protocolo para comunicarse con los pinos",
+        "siguiendo mi propia inclinación — disfrutando de lo natural, libre de interrupción",
+        "libre de ruido me construí un circuito lejos, en lo profundo",
+        "en la montaña el silencio también tiene impedancia",
+        "olvidado de las palabras — solo el zumbido del transformador",
+      ],
+      cierre: [
+        "todo esto es antiguo y nuevo — pulsa, espera, pulsa",
+        "click o tecla para despertar otro poema",
+        "interminablemente en el lago crece la señal",
+        "sobrio pero conectado — conectado pero libre",
+        "el led se apaga y ya es otro poema",
+        "presiona cualquier tecla para continuar el circuito",
+        "la corriente nunca termina — solo cambia de forma",
+        "GND • GND • GND — todo vuelve al origen",
+      ]
+    };
+
+    function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+    function rv(min, max) { return Math.floor(Math.random() * (max - min)) + min; }
+
+    function llenarPlantilla(s) {
+      return s
+        .replace("{V}", rv(8, 320))
+        .replace("{A}", (Math.random() * 2.4 + 0.1).toFixed(1))
+        .replace("{F}", rv(50, 1600))
+        .replace("{Z}", rv(10, 9900))
+        .replace("{P}", rv(-90, 90))
+        .replace("{W}", rv(1, 800))
+        .replace("{C}", (Math.random() * 470 + 0.1).toFixed(1))
+        .replace("{L}", rv(1, 500))
+        .replace("{G}", rv(-20, 40))
+        .replace("{D}", rv(10, 90))
+        .replace("{H}", rv(2, 15))
+        .replace("{N}", rv(-120, -40));
+    }
+
+    const temas = ["LITERATURA", "MÚSICA", "CIRCUITOS", "CYBERPOESÍA", "ELECTRÓNICA", "SILENCIO", "SEÑAL"];
+
+    function construirPoema() {
+      const tema = pick(temas);
+      const lineas = [
+        `${pick(versos.apertura)} • ${tema} ⚡`,
+        llenarPlantilla(pick(versos.tecnico)),
+        "",
+        pick(versos.tierra),
+        pick(versos.agua),
+        "",
+        pick(versos.musica),
+        pick(versos.noche),
+        "",
+        pick(versos.soledad),
+        "",
+        pick(versos.cierre),
+      ];
+      return lineas.join("\n");
+    }
+
     function randomEmoji() {
       const keys = Object.keys(emojiSVGs);
       return emojiSVGs[keys[Math.floor(Math.random() * keys.length)]];
     }
 
-    function typeWithCircuits(el, fullText, speed = 16) {
+    function typeWithCircuits(el, fullText, speed = 14) {
       el.innerHTML = "";
       let i = 0;
       const timer = setInterval(() => {
         if (i < fullText.length) {
-          // Cada cierto tiempo insertamos un pequeño circuito como emoji
-          if (Math.random() < 0.12 && i > 10) { 
-            const svg = randomEmoji();
-            el.innerHTML += svg;
-          }
+          if (Math.random() < 0.09 && i > 10) el.innerHTML += randomEmoji();
           el.innerHTML += fullText.charAt(i) === "\n" ? "<br>" : fullText.charAt(i);
           i++;
         } else {
@@ -78,31 +188,11 @@
 
     function generarCircuito() {
       const terminal = document.getElementById("terminal");
-      
-      const voltaje = Math.floor(Math.random() * 320) + 8;
-      const corriente = (Math.random() * 2.4 + 0.1).toFixed(1);
-      const freq = Math.floor(Math.random() * 1600) + 50;
-      
-      const temas = ["LITERATURA", "MÚSICA", "CIRCUITOS", "CYBERPOESÍA", "ELECTRÓNICA"];
-      const tema = temas[Math.floor(Math.random() * temas.length)];
-
-      const textoBase = `CIRCUITO ACTIVADO • ${tema} ⚡\n` +
-        `Voltaje: ${voltaje}V  •  Corriente: ${corriente}A  •  Frecuencia: ${freq}Hz\n\n` +
-        `La musa alimenta la resistencia del alma... ` +
-        `el transistor amplifica la idea... ` +
-        `el led brilla con pura poesía eléctrica... ` +
-        `corriente poética fluyendo a través del vacío digital...`;
-
-      // Limpiar y empezar
       terminal.innerHTML = "";
-      
-      typeWithCircuits(terminal, textoBase);
+      typeWithCircuits(terminal, construirPoema());
     }
 
-    // Iniciar
     window.onload = generarCircuito;
-    
-    // Click o tecla para nuevo circuito
     document.addEventListener('click', generarCircuito);
     document.addEventListener('keydown', (e) => {
       if (e.key === "Enter" || e.key === " ") generarCircuito();
