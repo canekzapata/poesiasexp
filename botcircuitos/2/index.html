@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GENERADOR DE CIRCUITOS</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      font-family: 'Courier New', monospace;
+      color: #00ff41;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #terminal {
+      width: 96vw;
+      max-width: 1200px;
+      height: 94vh;
+      padding: 36px 48px;
+      overflow-y: auto;
+    }
+    pre {
+      font-family: 'Courier New', monospace;
+      font-size: 1.05em;
+      line-height: 1.6;
+      text-shadow: 0 0 8px #00ff41;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+<div id="terminal"><pre id="out"></pre></div>
+<script>
+
+  function rv(a, b) { return Math.floor(Math.random() * (b - a + 1)) + a; }
+  function rf(a, b, d=2) { return (Math.random() * (b - a) + a).toFixed(d); }
+  function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+  function pad(s, n) { return String(s).padEnd(n); }
+
+  function divisorVoltaje() {
+    const V  = rv(5, 48);
+    const R1 = rv(1, 220);
+    const R2 = rv(1, 220);
+    const Vo = +(V * R2 / (R1 + R2)).toFixed(2);
+    const I  = +(V / (R1 + R2)).toFixed(3);
+    const P  = +(V * I).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  DIVISOR DE VOLTAJE                              ║
+╚══════════════════════════════════════════════════╝
+
+          +${V}V
+           │
+        ┌──┴──┐
+        │ R1  │   ${R1} kΩ
+        └──┬──┘
+           │
+           ├─────────────────── Vout = ${Vo} V
+           │
+        ┌──┴──┐
+        │ R2  │   ${R2} kΩ
+        └──┬──┘
+           │
+          GND
+
+  ───────────────────────────────────────────────
+  ANÁLISIS DC
+    Vout  =  ${Vo} V
+    I     =  ${I} mA
+    P     =  ${P} mW
+    ratio =  R2/(R1+R2) = ${(R2/(R1+R2)).toFixed(4)}
+  ───────────────────────────────────────────────
+  ∿ la tensión se divide — como la luz entre dos piedras
+`;
+  }
+
+  function filtroPasaBajas() {
+    const R  = rv(1, 100);
+    const C  = rv(10, 1000);
+    const f3 = +(1000 / (2 * Math.PI * R * C)).toFixed(2);
+    const tau = +(R * C / 1000).toFixed(3);
+    return `
+╔══════════════════════════════════════════════════╗
+║  FILTRO RC  —  PASO-BAJAS                        ║
+╚══════════════════════════════════════════════════╝
+
+                   R = ${R} kΩ
+  in ──────────[${pad(R+'kΩ',6)}]──────┬──── out
+                                  │
+                               ┌──┴──┐
+                               │  C  │   ${C} nF
+                               └──┬──┘
+                                  │
+                                 GND
+
+  ───────────────────────────────────────────────
+  ANÁLISIS AC
+    f-3dB  =  ${f3} Hz
+    τ      =  ${tau} ms
+    |H(f)| =  1 / √(1 + (f/${f3})²)
+    φ(f)   =  −arctan(f/${f3})
+  ───────────────────────────────────────────────
+  → el filtro no detiene la señal — la recuerda más despacio
+`;
+  }
+
+  function resonadorRLC() {
+    const R  = rv(10, 500);
+    const L  = rv(1, 100);
+    const C  = rv(10, 470);
+    const f0 = +(1000 / (2 * Math.PI * Math.sqrt(L * C))).toFixed(1);
+    const Q  = +(1/R * Math.sqrt(L*1000/C)).toFixed(2);
+    const Z0 = +(Math.sqrt(L*1000/C)).toFixed(1);
+    return `
+╔══════════════════════════════════════════════════╗
+║  RESONADOR SERIE  RLC                            ║
+╚══════════════════════════════════════════════════╝
+
+                R=${R}Ω        L=${L}mH       C=${C}µF
+  +V ──────[${pad(R+'Ω',5)}]──[${pad(L+'mH',5)}]──[${pad(C+'µF',5)}]──── GND
+
+  ───────────────────────────────────────────────
+  ANÁLISIS FRECUENCIAL
+    f₀  =  ${f0} Hz          ← resonancia
+    Q   =  ${Q}              ← factor de calidad
+    Z₀  =  ${Z0} Ω           ← impedancia característica
+    BW  =  ${+(f0/Q).toFixed(1)} Hz      ← ancho de banda
+    Xl  =  2π·${f0}·${L}m = ${+(2*Math.PI*f0*L/1000).toFixed(1)} Ω
+    Xc  =  1/(2π·${f0}·${C}µ) = ${+(1/(2*Math.PI*f0*C/1000000)).toFixed(1)} Ω
+  ───────────────────────────────────────────────
+  ∅ en la resonancia todo coincide — f₀ no se busca, se encuentra
+`;
+  }
+
+  function amplificadorNPN() {
+    const Vcc = rv(9, 24);
+    const Rc  = rv(1, 10);
+    const Re  = rv(100, 1000);
+    const beta = rv(80, 400);
+    const Ic  = +((Vcc - 0.7) / (Rc*1000 + Re)).toFixed(3);
+    const Av  = +(Rc*1000 / Re).toFixed(1);
+    const Rin = +(beta * Re / 1000).toFixed(1);
+    const Vce = +(Vcc - Ic*(Rc*1000 + Re)/1000).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  AMPLIFICADOR  NPN  —  EMISOR COMÚN              ║
+╚══════════════════════════════════════════════════╝
+
+          +Vcc = ${Vcc}V
+               │
+            ┌──┴──┐
+            │ Rc  │   ${Rc} kΩ
+            └──┬──┘
+               │
+               ├──────────────────────── Vout
+               │
+        B ─────┤  Q1 (β=${beta})
+               │
+            ┌──┴──┐
+            │ Re  │   ${Re} Ω
+            └──┬──┘
+               │
+              GND
+
+  ───────────────────────────────────────────────
+  PUNTO DE OPERACIÓN
+    Ic    =  ${Ic} mA
+    Vce   =  ${Vce} V
+    Av    ≈  −${Av}           ← ganancia de voltaje
+    Rin   ≈  ${Rin} kΩ
+  ───────────────────────────────────────────────
+  × el transistor amplifica también lo que no debería escucharse
+`;
+  }
+
+  function opAmpInversor() {
+    const R1 = rv(1, 47);
+    const Rf = rv(10, 470);
+    const Av = +(Rf / R1).toFixed(1);
+    const BW = rv(100, 5000);
+    const GBW = +(Av * BW / 1000).toFixed(1);
+    return `
+╔══════════════════════════════════════════════════╗
+║  AMPLIFICADOR INVERSOR  —  OP-AMP                ║
+╚══════════════════════════════════════════════════╝
+
+                    Rf = ${Rf} kΩ
+           ┌──────[${pad(Rf+'kΩ',6)}]──────┐
+           │                        │
+  in ──[${pad(R1+'kΩ',5)}]──┬──(−)          │
+          R1=${R1}kΩ  │   [  A  ]──┴── out
+                    GND (+ )
+                        │
+                       GND
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    Av    =  −Rf/R1  =  −${Av}
+    Rin   =  R1  =  ${R1} kΩ
+    BW    ≈  ${BW} Hz
+    GBW   ≈  ${GBW} MHz
+    Vout  =  −${Av} × Vin
+  ───────────────────────────────────────────────
+  ⊕ la señal entra negada y sale mayor — eso es el pensamiento
+`;
+  }
+
+  function astable555() {
+    const Vcc = pick([5, 9, 12, 15]);
+    const Ra  = rv(1, 100);
+    const Rb  = rv(1, 100);
+    const C   = rv(1, 100);
+    const f   = +(1000 / (0.693 * (Ra + 2*Rb) * C)).toFixed(2);
+    const D   = +((Ra + Rb) / (Ra + 2*Rb) * 100).toFixed(1);
+    const T   = +(1/f * 1000).toFixed(2);
+    const Th  = +(0.693 * (Ra + Rb) * C / 1000).toFixed(3);
+    const Tl  = +(0.693 * Rb * C / 1000).toFixed(3);
+    return `
+╔══════════════════════════════════════════════════╗
+║  OSCILADOR ASTABLE  —  555                       ║
+╚══════════════════════════════════════════════════╝
+
+  +${Vcc}V ──┬────────────────────────┐
+            │                        │ 8 (Vcc)
+          [Ra]  ${Ra}kΩ             ┌─┴──────┐
+            │                  7 ───┤ DIS    │
+          [Rb]  ${Rb}kΩ         6 ───┤ THR   NE555
+            │              ┌───┤        │
+          [C]   ${C}µF     │   2 ───┤ TRG    │
+            │              │        │        │
+           GND             └────────┘  3 ────┴──── out
+                                    │
+                                   GND
+
+  ───────────────────────────────────────────────
+  PARÁMETROS
+    f    =  ${f} Hz
+    T    =  ${T} ms
+    Th   =  ${Th} ms   (salida HIGH)
+    Tl   =  ${Tl} ms   (salida LOW)
+    D    =  ${D}%      (duty cycle)
+  ───────────────────────────────────────────────
+  ■ el oscilador no pregunta por qué — solo pulsa, siempre pulsa
+`;
+  }
+
+  function puente() {
+    const V   = rv(5, 24);
+    const R1  = rv(10, 100);
+    const R2  = rv(10, 100);
+    const R3  = rv(10, 100);
+    const Rx  = rv(10, 100);
+    const bal = Math.abs(R1*Rx - R2*R3) < 500 ? "BALANCEADO" : "DESBALANCEADO";
+    const Vg  = +(V * (R3/(R1+R3) - Rx/(R2+Rx))).toFixed(3);
+    return `
+╔══════════════════════════════════════════════════╗
+║  PUENTE DE WHEATSTONE                            ║
+╚══════════════════════════════════════════════════╝
+
+              +${V}V
+               │
+         ┌─────┴─────┐
+      [R1=${R1}kΩ] [R2=${R2}kΩ]
+         │           │
+         ├─────G─────┤    Vg = ${Vg} V
+         │           │
+      [R3=${R3}kΩ] [Rx=${Rx}kΩ]
+         │           │
+         └─────┬─────┘
+              GND
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    Condición de balance:  R1/R2 = R3/Rx
+    R1·Rx = ${R1*Rx}    R2·R3 = ${R2*R3}
+    Estado: ${bal}
+    Vg    = ${Vg} V
+  ───────────────────────────────────────────────
+  ≈ el puente mide lo desconocido comparándolo con lo conocido
+`;
+  }
+
+  const encabezados = [
+    `> GENERADOR DE ESQUEMAS v0.${rv(1,9)}  —  CIRCUITO POÉTICO`,
+    `> CIRCUIT DIAGRAM GEN  —  SEÑAL ACTIVA`,
+    `> ESQUEMA #{n}  —  PULSO DETECTADO`,
+    `> MODO: DIAGRAMA  —  f={f}Hz  T={t}ms`,
+  ];
+
+  const generadores = [
+    divisorVoltaje, filtroPasaBajas, resonadorRLC,
+    amplificadorNPN, opAmpInversor, astable555, puente,
+  ];
+
+  let count = 0;
+
+  function encabezado() {
+    const f = rv(50, 9999);
+    return pick(encabezados)
+      .replace('{n}', String(++count).padStart(4,'0'))
+      .replace('{f}', f)
+      .replace('{t}', +(1000/f).toFixed(2));
+  }
+
+  let timer = null;
+
+  function render() {
+    if (timer) clearInterval(timer);
+    const out = document.getElementById('out');
+    out.textContent = '';
+    const texto = encabezado() + '\n' + pick(generadores)();
+    let i = 0;
+    timer = setInterval(() => {
+      if (i < texto.length) {
+        out.textContent += texto[i++];
+        out.parentElement.scrollTop = out.parentElement.scrollHeight;
+      } else {
+        clearInterval(timer);
+        timer = null;
+      }
+    }, 9);
+  }
+
+  window.onload = render;
+  document.addEventListener('click', render);
+  document.addEventListener('keydown', e => {
+    if (e.key === ' ' || e.key === 'Enter') render();
+  });
+
+</script>
+</body>
+</html>
