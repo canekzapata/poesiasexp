@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CIRCUITO VIVO</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      font-family: 'Courier New', monospace;
+      color: #00ff41;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #terminal {
+      width: 96vw;
+      max-width: 1080px;
+      height: 94vh;
+      padding: 28px 40px;
+      overflow-y: auto;
+    }
+    pre {
+      font-size: 0.93em;
+      line-height: 1.54;
+      text-shadow: 0 0 7px #00ff41;
+    }
+  </style>
+</head>
+<body>
+<div id="terminal"><pre id="out"></pre></div>
+<script>
+'use strict';
+
+// ── VERSOS ── input signal pool ───────────────────────────────
+const VERSOS = [
+  "debajo del pino pregunto al silencio\nel silencio responde: Vout = 0V",
+  "el capacitor guarda lo que el rio olvida\nen su prisa hacia el mar",
+  "en la resonancia todo coincide\nf0 no se busca — se encuentra sola",
+  "nadie escucha los golpes del clock\ncuando la ciudad se apaga",
+  "corriente que fluye no necesita origen\npara ser real: I = dq/dt",
+  "la luna guarda su carga\nnadie la toca  nadie la mide  C = inf",
+  "el transistor amplifica tambien el silencio\nsi lo polarizas con cuidado",
+  "libre de ruido me construi un filtro\npaso-bajas lejos en lo profundo",
+];
+
+function pick(a) { return a[Math.random() * a.length | 0]; }
+function rv(a, b) { return (Math.random() * (b - a) + a) | 0; }
+function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+function fmt(v, d) { return v.toFixed(d); }
+
+// ── RC PASO-BAJAS ─────────────────────────────────────────────
+class RCLowpass {
+  constructor() {
+    this.R   = rv(10, 80);          // kΩ
+    this.C   = rv(20, 150);         // µF
+    this.tau = this.R * this.C / 1000;  // s
+    this.Vcc = rv(6, 15);
+    this.Vc  = 0;
+    this.t   = 0;
+    this.name = 'FILTRO RC — PASO-BAJAS';
+  }
+  step(dt) {
+    this.Vc += (this.Vcc - this.Vc) / this.tau * dt;
+    this.t  += dt;
+  }
+  get displayV() { return this.Vc; }
+  get vNorm()    { return clamp(this.Vc / this.Vcc, 0, 1); }
+  diagram() {
+    return [
+      `  +${this.Vcc}V`,
+      `   |`,
+      `  in --[${this.R}kΩ]------------------+---- Vout = ${fmt(this.Vc,3)}V`,
+      `                               |`,
+      `                            +--+--+`,
+      `                            |  C  |  ${this.C}µF`,
+      `                            +--+--+`,
+      `                               |`,
+      `                              GND`,
+      ``,
+      `  τ = RC = ${fmt(this.tau,3)}s     t = ${fmt(this.t,3)}s`,
+      `  V(t) = ${this.Vcc}·(1 − e^(−t/${fmt(this.tau,2)}))`,
+    ].join('\n');
+  }
+  // Text reveals left→right as capacitor charges
+  xfChar(ch, pos, len) {
+    if (ch === ' ' || ch === '\n') return ch;
+    const thr = pos / len;
+    if (this.vNorm >= thr)         return ch;
+    if (this.vNorm >= thr - 0.12)  return '·';
+    return '_';
+  }
+  poem() {
+    const p = Math.round(this.vNorm * 100);
+    return p >= 99
+      ? '→ el filtro no detiene la señal — la recuerda mas despacio'
+      : `→ cargando ${p}%   Vc = ${fmt(this.Vc,2)}V / ${this.Vcc}V`;
+  }
