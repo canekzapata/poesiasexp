@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>⚡ CIRCUITO POÉTICO — EMOJI MODE</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      background: #000; 
+      font-family: 'Courier New', monospace; 
+      color: #00ff41; 
+      overflow: hidden; 
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #terminal {
+      width: 96vw;
+      max-width: 1400px;
+      height: 92vh;
+      background: #000;
+      border: 6px solid #00ff41;
+      box-shadow: 0 0 60px #00ff41;
+      padding: 40px;
+      overflow-y: auto;
+      line-height: 1.65;
+      font-size: 1.65em;
+      text-shadow: 0 0 15px #00ff41;
+    }
+    .circuit-emoji {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 4px;
+      filter: drop-shadow(0 0 8px currentColor);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="terminal"></div>
+
+  <script>
+    // Pequeños SVGs de circuitos del tamaño de emojis (40-60px)
+    const emojiSVGs = {
+      bateria: `<svg class="circuit-emoji" width="52" height="38" viewBox="0 0 52 38" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="32" height="30" rx="4" fill="#111" stroke="#00ff41" stroke-width="6"/><text x="22" y="22" fill="#fff" font-size="22" font-weight="bold">+</text><text x="22" y="32" fill="#fff" font-size="22" font-weight="bold">–</text></svg>`,
+      resistencia: `<svg class="circuit-emoji" width="62" height="32" viewBox="0 0 62 32" xmlns="http://www.w3.org/2000/svg"><polyline points="4,16 14,6 24,26 34,6 44,26 54,16" fill="none" stroke="#ffff00" stroke-width="7" stroke-linejoin="round"/><text x="29" y="27" fill="#ffff00" font-size="18" font-weight="bold">R</text></svg>`,
+      capacitor: `<svg class="circuit-emoji" width="48" height="38" viewBox="0 0 48 38" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="4" width="12" height="30" rx="2" fill="#111" stroke="#00ffff" stroke-width="6"/><line x1="28" y1="4" x2="28" y2="34" stroke="#00ffff" stroke-width="6"/><text x="36" y="24" fill="#00ffff" font-size="22">C</text></svg>`,
+      transistor: `<svg class="circuit-emoji" width="52" height="38" viewBox="0 0 52 38" xmlns="http://www.w3.org/2000/svg"><polygon points="8,6 8,32 42,19" fill="#111" stroke="#00ff41" stroke-width="6"/><text x="22" y="26" fill="#00ff41" font-size="22" font-weight="bold">Q</text></svg>`,
+      inductor: `<svg class="circuit-emoji" width="68" height="32" viewBox="0 0 68 32" xmlns="http://www.w3.org/2000/svg"><path d="M8 16 Q18 4 28 16 Q38 28 48 16 Q58 4 68 16" fill="none" stroke="#ff00ff" stroke-width="7"/><text x="32" y="28" fill="#ff00ff" font-size="18">L</text></svg>`,
+      led: `<svg class="circuit-emoji" width="48" height="38" viewBox="0 0 48 38" xmlns="http://www.w3.org/2000/svg"><polygon points="8,8 8,30 38,19" fill="#111" stroke="#ff0044" stroke-width="6"/><circle cx="30" cy="19" r="9" fill="#ff0044"><animate attributeName="opacity" values="0.6;1;0.6" dur="0.4s" repeatCount="indefinite"/></circle><text x="12" y="26" fill="#fff" font-size="18">LED</text></svg>`,
+      ground: `<svg class="circuit-emoji" width="48" height="32" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg"><line x1="8" y1="8" x2="40" y2="8" stroke="#00ff41" stroke-width="6"/><polygon points="20,8 18,24 22,24" fill="#111" stroke="#00ff41" stroke-width="6"/><text x="28" y="28" fill="#00ff41" font-size="16">GND</text></svg>`
+    };
+
+    function randomEmoji() {
+      const keys = Object.keys(emojiSVGs);
+      return emojiSVGs[keys[Math.floor(Math.random() * keys.length)]];
+    }
+
+    function typeWithCircuits(el, fullText, speed = 16) {
+      el.innerHTML = "";
+      let i = 0;
+      const timer = setInterval(() => {
+        if (i < fullText.length) {
+          // Cada cierto tiempo insertamos un pequeño circuito como emoji
+          if (Math.random() < 0.12 && i > 10) { 
+            const svg = randomEmoji();
+            el.innerHTML += svg;
+          }
+          el.innerHTML += fullText.charAt(i) === "\n" ? "<br>" : fullText.charAt(i);
+          i++;
+        } else {
+          clearInterval(timer);
+        }
+      }, speed);
+    }
+
+    function generarCircuito() {
+      const terminal = document.getElementById("terminal");
+      
+      const voltaje = Math.floor(Math.random() * 320) + 8;
+      const corriente = (Math.random() * 2.4 + 0.1).toFixed(1);
+      const freq = Math.floor(Math.random() * 1600) + 50;
+      
+      const temas = ["LITERATURA", "MÚSICA", "CIRCUITOS", "CYBERPOESÍA", "ELECTRÓNICA"];
+      const tema = temas[Math.floor(Math.random() * temas.length)];
+
+      const textoBase = `CIRCUITO ACTIVADO • ${tema} ⚡\n` +
+        `Voltaje: ${voltaje}V  •  Corriente: ${corriente}A  •  Frecuencia: ${freq}Hz\n\n` +
+        `La musa alimenta la resistencia del alma... ` +
+        `el transistor amplifica la idea... ` +
+        `el led brilla con pura poesía eléctrica... ` +
+        `corriente poética fluyendo a través del vacío digital...`;
+
+      // Limpiar y empezar
+      terminal.innerHTML = "";
+      
+      typeWithCircuits(terminal, textoBase);
+    }
+
+    // Iniciar
+    window.onload = generarCircuito;
+    
+    // Click o tecla para nuevo circuito
+    document.addEventListener('click', generarCircuito);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Enter" || e.key === " ") generarCircuito();
+    });
+  </script>
+</body>
+</html>
