@@ -5,7 +5,7 @@
   <title>circuito</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #000; overflow: hidden; }
+    html, body { background: #000; overflow: hidden; height: 100%; cursor: crosshair; }
     canvas { display: block; }
   </style>
 </head>
@@ -28,69 +28,83 @@ function resize() {
   H = canvas.height = window.innerHeight;
   COLS = Math.floor(W / CW) + 1;
   ROWS = Math.floor(H / LH) + 1;
+  buildTopology();
 }
-resize();
-window.addEventListener('resize', resize);
+
+// ─── piezas + modos ────────────────────────────────────────────
 
 const PIEZAS = [
-  [
-    "debajo del pino",
-    "pregunto al silencio",
-    "",
-    "Vout = 0V",
-  ],
-  [
-    "el capacitor guarda",
-    "lo que el rio olvida",
-    "",
-    "──┤├──",
-    "",
-    "C = Q/V",
-  ],
-  [
-    "en la resonancia",
-    "todo coincide",
-    "",
-    "f0 = 1 / 2π√LC",
-  ],
-  [
-    "el transistor amplifica",
-    "tambien el silencio",
-    "",
-    "Ic = β · Ib",
-  ],
-  [
-    "libre de ruido",
-    "me construi un filtro",
-    "",
-    "τ = RC",
-  ],
-  [
-    "nadie escucha el clock",
-    "",
-    "■ □ ■ □ ■ □",
-    "",
-    "32 768 Hz",
-  ],
+  { lines:["debajo del pino","pregunto al silencio","","Vout = 0V"],                    mode:'silence' },
+  { lines:["el capacitor guarda","lo que el rio olvida","","──┤├──","","C = Q/V"],       mode:'cap' },
+  { lines:["en la resonancia","todo coincide","","f0 = 1 / 2π√LC"],                      mode:'resonance' },
+  { lines:["el transistor amplifica","tambien el silencio","","Ic = β · Ib"],            mode:'amp' },
+  { lines:["libre de ruido","me construi un filtro","","τ = RC"],                        mode:'filter' },
+  { lines:["nadie escucha el clock","","■ □ ■ □ ■ □","","32 768 Hz"],                    mode:'clock' },
 ];
 
-const LET  = "abcdefghijklmnopqrstuvwxyz";
-const CIRC = "─│┤├┬┴┼┐┘└┌┤├■□·•";
+// cada modo re-cablea la fisica del campo
+const MODES = {
+  silence:   { pulseSpeed: 0.5,  noiseGain: 0.6,  pulseTrail: 4,  sync: false, square: false, gain: 1   },
+  cap:       { pulseSpeed: 3.2,  noiseGain: 0.9,  pulseTrail: 9,  sync: false, square: false, gain: 1   },
+  resonance: { pulseSpeed: 5.5,  noiseGain: 1.0,  pulseTrail: 10, sync: true,  square: false, gain: 1   },
+  amp:       { pulseSpeed: 4.5,  noiseGain: 0.9,  pulseTrail: 10, sync: false, square: false, gain: 2.4 },
+  filter:    { pulseSpeed: 4.0,  noiseGain: 0.18, pulseTrail: 8,  sync: false, square: false, gain: 1   },
+  clock:     { pulseSpeed: 7.5,  noiseGain: 0.8,  pulseTrail: 2,  sync: false, square: true,  gain: 1   },
+};
 
-let pieza, maxLen, startCol, startRow;
+// ─── topologia ──────────────────────────────────────────────────
+
+let RAILS = [], DROPS = [], COMPS = [];
+const COMP_GLYPH = {
+  R: '─[R]─',
+  C: '─┤├─',
+  L: '─[L]─',
+  D: '─[D]─',
+};
+const COMP_TYPES = ['R','C','L','D'];
+
+function buildTopology() {
+  RAILS = [];
+  for (let r = 3; r < ROWS - 2; r += 5) RAILS.push(r);
+  DROPS = [];
+  for (let c = 6; c < COLS - 4; c += 14) DROPS.push(c);
+  COMPS = [];
+  for (let i = 0; i < RAILS.length; i++) {
+    for (let j = 0; j < DROPS.length - 1; j++) {
+      if ((i + j) % 3 === 0) continue;
+      const cc = Math.floor((DROPS[j] + DROPS[j+1]) / 2);
+      const t  = COMP_TYPES[(i * 7 + j * 13) % COMP_TYPES.length];
+      COMPS.push({ rail: RAILS[i], col: cc, type: t });
+    }
+  }
+}
+
+// ─── estado poema ──────────────────────────────────────────────
+
+let pieza, lines, mode, modeCfg, maxLen, startCol, startRow;
 let waveX = 0, hideX = 0, phase = 'reveal', holdT = 0;
-
-const WAVE_SPEED = 3.5, HIDE_SPEED = 7, HOLD_DUR = 5.5, FADE_COLS = 5;
+const WAVE_SPEED = 4, HIDE_SPEED = 8, HOLD_DUR = 6.2, FADE_COLS = 5;
 
 function init() {
   pieza    = PIEZAS[Math.random() * PIEZAS.length | 0];
-  maxLen   = Math.max(...pieza.map(l => l.length));
+  lines    = pieza.lines;
+  mode     = pieza.mode;
+  modeCfg  = MODES[mode];
+  maxLen   = Math.max(...lines.map(l => l.length));
   startCol = Math.floor((COLS - maxLen) / 2);
-  startRow = Math.floor((ROWS - pieza.length) / 2);
-  waveX    = startCol - 2;
-  hideX    = startCol - 2;
-  phase    = 'reveal';
-  holdT    = 0;
+  startRow = Math.floor((ROWS - lines.length) / 2);
+  // empujar a una franja lejos de los rieles
+  let bestRow = startRow, bestDist = -Infinity;
+  for (let r = startRow - 2; r <= startRow + 2; r++) {
+    let d = Infinity;
+    for (const rr of RAILS) d = Math.min(d, Math.abs(r - rr));
+    if (d > bestDist) { bestDist = d; bestRow = r; }
+  }
+  startRow = bestRow;
+  waveX = startCol - 2;
+  hideX = startCol - 2;
+  phase = 'reveal';
+  holdT = 0;
 }
 
 function grey(v) {
@@ -98,52 +112,177 @@ function grey(v) {
   return `rgb(${b},${b},${b})`;
 }
 
+// ─── halo y consultas de topologia ─────────────────────────────
+
 function poemHalo(c, r) {
-  const padX = 3, padY = 1;
-  const dx = Math.max(0, Math.max((startCol - padX) - c, c - (startCol + maxLen + padX)));
-  const dy = Math.max(0, Math.max((startRow - padY) - r, r - (startRow + pieza.length - 1 + padY)));
-  const d  = Math.hypot(dx, dy);
-  const HALO = 7;
-  return Math.min(1, d / HALO);
+  const padX = 4, padY = 1;
+  const dx = Math.max(0, Math.max((startCol - padX) - c, c - (startCol + maxLen + padX - 1)));
+  const dy = Math.max(0, Math.max((startRow - padY) - r, r - (startRow + lines.length - 1 + padY)));
+  const d  = Math.hypot(dx * 0.6, dy);
+  return Math.min(1, d / 5);
 }
 
-function drawBackground(frame) {
-  const t  = frame * 0.012;
-  const t2 = frame * 0.004;
+function compAt(c, r) {
+  for (let i = 0; i < COMPS.length; i++) {
+    const cp = COMPS[i];
+    if (cp.rail !== r) continue;
+    const g    = COMP_GLYPH[cp.type];
+    const half = (g.length / 2) | 0;
+    if (c >= cp.col - half && c < cp.col - half + g.length) {
+      return { ch: g[c - (cp.col - half)], type: cp.type };
+    }
+  }
+  return null;
+}
+
+function junctionAt(c, r) {
+  const ri = RAILS.indexOf(r);
+  if (ri < 0) return null;
+  if (DROPS.indexOf(c) < 0) return null;
+  const top = ri > 0;
+  const bot = ri < RAILS.length - 1;
+  if (top && bot) return '┼';
+  if (top) return '┴';
+  if (bot) return '┬';
+  return null;
+}
+
+// ─── pulsos ────────────────────────────────────────────────────
+
+function pulseAt(c, r, t) {
+  const idx = RAILS.indexOf(r);
+  if (idx < 0) return 0;
+  const speed   = modeCfg.sync ? modeCfg.pulseSpeed : modeCfg.pulseSpeed * (0.8 + 0.18 * idx);
+  const phaseOff= modeCfg.sync ? 0 : idx * 7;
+  const period  = COLS + 30;
+  const pos     = ((t * speed + phaseOff) % period + period) % period - 15;
+  const dx      = c - pos;
+
+  let v = 0;
+  if (modeCfg.square) {
+    v = (dx > -1.5 && dx < 0.5) ? 1 : 0;
+  } else {
+    if (dx > 1) return 0;
+    v = Math.max(0, 1 + dx / modeCfg.pulseTrail);
+  }
+  if (modeCfg.gain > 1) {
+    const f = 0.3 + 0.7 * (c / COLS);
+    v *= Math.min(modeCfg.gain, 1 + (modeCfg.gain - 1) * f);
+  }
+  return v;
+}
+
+// ─── cursor ────────────────────────────────────────────────────
+
+let mx = -1, my = -1;
+canvas.addEventListener('mousemove', e => {
+  mx = Math.floor(e.clientX / CW);
+  my = Math.floor(e.clientY / LH);
+});
+canvas.addEventListener('mouseleave', () => { mx = -1; my = -1; });
+
+// ─── ruido ambient ─────────────────────────────────────────────
+
+const LET = "abcdefghijklmnopqrstuvwxyz";
+
+function noiseSample(c, r, t) {
+  let cc = c, rr = r;
+  if (mx >= 0) {
+    const dx = c - mx, dy = r - my;
+    const d2 = dx*dx + dy*dy;
+    if (d2 < 400) {
+      const w = (1 - d2 / 400) * 0.6;
+      cc += dx * w;
+      rr += dy * w;
+    }
+  }
+  return (Math.sin(cc * 0.21 + rr * 0.13 + t * 0.4) *
+          Math.cos(cc * 0.09 - rr * 0.17 + t * 0.27) + 1) / 2;
+}
+
+// ─── render ────────────────────────────────────────────────────
+
+function drawNoise(t) {
+  const gain = modeCfg.noiseGain;
   for (let r = 0; r < ROWS; r++) {
     for (let c = 0; c < COLS; c++) {
-      const a = Math.sin(c * 0.18 + r * 0.11 + t);
-      const b = Math.cos(c * 0.07 - r * 0.13 - t * 0.6);
-      const v = (a * b + 1) / 2;
-
-      if (v < 0.18) continue;
-
-      const region = Math.sin(c * 0.045 + r * 0.07 + t2)
-                   + Math.cos(c * 0.031 - r * 0.052 - t2 * 0.8);
-
-      let ch;
-      if (region > 0.85) {
-        const idx = ((c * 5 + r * 3 + (frame * 0.05 | 0)) % CIRC.length + CIRC.length) % CIRC.length;
-        ch = CIRC[idx];
-      } else {
-        const idx = ((c * 2 + r * 7 + (frame * 0.03 | 0) + (v * 26 | 0)) % LET.length + LET.length) % LET.length;
-        ch = LET[idx];
-      }
-
-      const bright = 0.10 + 0.45 * v;
-      const halo   = poemHalo(c, r);
-      const alpha  = bright * (0.04 + 0.96 * halo);
-
-      if (alpha < 0.04) continue;
-      ctx.fillStyle = grey(alpha);
-      ctx.fillText(ch, c * CW, r * LH);
+      const v = noiseSample(c, r, t);
+      if (v < 0.55) continue;
+      const halo = poemHalo(c, r);
+      const a    = 0.10 * gain * ((v - 0.55) / 0.45) * halo;
+      if (a < 0.02) continue;
+      const idx = ((c * 3 + r * 7 + (t * 4 | 0)) % 26 + 26) % 26;
+      ctx.fillStyle = grey(a);
+      ctx.fillText(LET[idx], c * CW, r * LH);
     }
   }
 }
 
-function drawPoema() {
-  for (let r = 0; r < pieza.length; r++) {
-    const line = pieza[r];
+function drawTraces(t) {
+  for (let i = 0; i < RAILS.length; i++) {
+    const railR = RAILS[i];
+    for (let c = 0; c < COLS; c++) {
+      const halo = poemHalo(c, railR);
+      if (halo < 0.05) continue;
+      let ch = '─', base = 0.20;
+      const j  = junctionAt(c, railR);
+      const cp = compAt(c, railR);
+      if (j)       { ch = j;     base = 0.32; }
+      else if (cp) { ch = cp.ch; base = 0.50; }
+      const p = pulseAt(c, railR, t);
+      let a   = (base + 0.60 * p) * halo;
+      if (mx >= 0) {
+        const d = Math.hypot((c - mx) * 0.8, (railR - my));
+        if (d < 6) a += (1 - d/6) * 0.22 * halo;
+      }
+      if (a < 0.04) continue;
+      ctx.fillStyle = grey(Math.min(1, a));
+      ctx.fillText(ch, c * CW, railR * LH);
+    }
+  }
+  for (let i = 0; i < DROPS.length; i++) {
+    const dc = DROPS[i];
+    for (let r = RAILS[0]; r <= RAILS[RAILS.length - 1]; r++) {
+      if (RAILS.indexOf(r) >= 0) continue;
+      const halo = poemHalo(dc, r);
+      if (halo < 0.05) continue;
+      const a = 0.18 * halo;
+      ctx.fillStyle = grey(a);
+      ctx.fillText('│', dc * CW, r * LH);
+    }
+  }
+}
+
+function poemCellAlpha(lineIdx, colInLine, base, t) {
+  const ln = lines[lineIdx];
+  switch (mode) {
+    case 'clock': {
+      const ch = ln[colInLine];
+      if (ch === '■' || ch === '□') {
+        const flip = (Math.floor(t * 4) + colInLine) % 2 === 0;
+        return base * (flip ? 1.0 : 0.25);
+      }
+      break;
+    }
+    case 'cap':
+      if (ln.indexOf('┤├') >= 0) {
+        const pulse = (Math.sin(t * 4) + 1) / 2;
+        return base * (0.45 + 0.55 * pulse);
+      }
+      break;
+    case 'resonance':
+      return base * (0.55 + 0.45 * Math.sin(t * 2.8));
+    case 'amp':
+      return base * (0.7 + 0.3 * Math.sin(t * 1.5 + lineIdx));
+    case 'silence':
+      return base * 0.78;
+  }
+  return base;
+}
+
+function drawPoem(t) {
+  for (let r = 0; r < lines.length; r++) {
+    const line = lines[r];
     for (let c = 0; c < line.length; c++) {
       const ch = line[c];
       if (ch === ' ') continue;
@@ -154,21 +293,39 @@ function drawPoema() {
       if (phase === 'reveal') {
         const d = waveX - gc;
         if (d < 0) continue;
-        alpha = d >= FADE_COLS ? 1.0 : 1.0 * (d / FADE_COLS);
+        alpha = d >= FADE_COLS ? 1.0 : (d / FADE_COLS);
       } else if (phase === 'hold') {
         alpha = 1.0;
       } else {
         const d = gc - hideX;
         if (d < 0) continue;
-        alpha = d >= FADE_COLS ? 1.0 : 1.0 * (d / FADE_COLS);
+        alpha = d >= FADE_COLS ? 1.0 : (d / FADE_COLS);
       }
+      alpha = poemCellAlpha(r, c, alpha, t);
       ctx.fillStyle = grey(alpha);
       ctx.fillText(ch, x, y);
     }
   }
 }
 
-function draw(dt, frame) {
+function drawProbe(t) {
+  if (mx < 0) return;
+  const v  = noiseSample(mx, my, t);
+  const mv = (v * 12.34).toFixed(2);
+  ctx.fillStyle = grey(0.75);
+  ctx.fillText('┼', mx * CW, my * LH);
+  ctx.fillStyle = grey(0.55);
+  ctx.fillText(`${mv} mV`, (mx + 2) * CW, Math.max(0, my - 1) * LH);
+}
+
+function drawStatusBar(t) {
+  ctx.fillStyle = grey(0.30);
+  ctx.fillText(`[ ${mode} ]   t = ${t.toFixed(1)}s`, CW, (ROWS - 2) * LH);
+}
+
+// ─── loop ──────────────────────────────────────────────────────
+
+function draw(dt, t) {
   const endCol = startCol + maxLen + 2;
   if (phase === 'reveal') {
     waveX += WAVE_SPEED * dt;
@@ -180,28 +337,35 @@ function draw(dt, frame) {
     hideX += HIDE_SPEED * dt;
     if (hideX >= endCol) init();
   }
+
   ctx.fillStyle = '#000';
   ctx.fillRect(0, 0, W, H);
   ctx.font = `${FS}px 'Courier New', monospace`;
   ctx.textBaseline = 'top';
-  drawBackground(frame);
-  drawPoema();
+
+  drawNoise(t);
+  drawTraces(t);
+  drawPoem(t);
+  drawProbe(t);
+  drawStatusBar(t);
 }
 
-let lastTs = null, frame = 0;
+let lastTs = null, T = 0;
 function loop(ts) {
   if (!lastTs) lastTs = ts;
   const dt = Math.min((ts - lastTs) / 1000, 0.05);
   lastTs = ts;
-  frame++;
-  draw(dt, frame);
+  T += dt;
+  draw(dt, T);
   requestAnimationFrame(loop);
 }
 
+resize();
+window.addEventListener('resize', resize);
 init();
 requestAnimationFrame(loop);
 
-document.addEventListener('click',   init);
+document.addEventListener('click', init);
 document.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') init(); });
 </script>
 </body>
