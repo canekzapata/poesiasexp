@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>GRAMÁTICA DE CIRCUITOS</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      font-family: 'Courier New', monospace;
+      color: #00ff41;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #terminal {
+      width: 96vw;
+      max-width: 1080px;
+      height: 94vh;
+      padding: 28px 42px;
+      overflow-y: auto;
+    }
+    pre {
+      font-size: 0.94em;
+      line-height: 1.6;
+      text-shadow: 0 0 7px #00ff41;
+    }
+  </style>
+</head>
+<body>
+<div id="terminal"><pre id="out"></pre></div>
+<script>
+'use strict';
+
+function pick(a)   { return a[Math.random() * a.length | 0]; }
+function rv(a, b)  { return (Math.random() * (b - a) + a) | 0; }
+function rf(a, b)  { return +(Math.random() * (b - a) + a).toFixed(1); }
+
+function resistor() {
+  const v = rv(1, 9900);
+  const u = v < 1000 ? `${v}Ω` : `${(v/1000).toFixed(1)}kΩ`;
+  return { sym:'R', label:`R=${u}`, valor:v, unidad:'Ω', fn:'V=IR',
+    poema:'la resistencia no detiene — convierte el movimiento en calor' };
+}
+function capacitor() {
+  const v = rv(1, 470);
+  const u = v < 10 ? `${v}nF` : `${v}µF`;
+  return { sym:'C', label:`C=${u}`, valor:v, unidad:'F', fn:'I=C·dV/dt',
+    poema:'el capacitor guarda lo que el río olvida en su prisa' };
+}
+function inductor() {
+  const v = rv(1, 500);
+  return { sym:'L', label:`L=${v}mH`, valor:v, unidad:'H', fn:'V=L·dI/dt',
+    poema:'el inductor resiste el cambio — memoria de la corriente pasada' };
+}
+function led() {
+  const cs = [
+    {color:'ROJO',vf:1.8,nm:625},{color:'VERDE',vf:2.1,nm:520},
+    {color:'AZUL',vf:3.2,nm:470},{color:'BLANCO',vf:3.4,nm:450},{color:'AMBAR',vf:2.0,nm:590}
+  ];
+  const c = pick(cs);
+  return { sym:'D', label:`LED ${c.color} Vf=${c.vf}V`, valor:c.vf, unidad:'V', fn:`λ=${c.nm}nm`,
+    poema:`la luz a ${c.nm}nm — color que el circuito eligió sin saberlo` };
+}
+function transistorNPN() {
+  const beta = rv(80, 400);
+  return { sym:'Q', label:`Q1 β=${beta} Vbe=0.7V`, valor:beta, unidad:'β', fn:'Ic=β·Ib',
+    poema:'el transistor amplifica también lo que no debería escucharse' };
+}
+function diode() {
+  const vf = rf(0.3, 0.7);
+  return { sym:'D', label:`D1 Vf=${vf}V`, valor:vf, unidad:'V', fn:'I=Is·(e^V/Vt−1)',
+    poema:'la corriente solo fluye en una dirección — eso es decisión' };
+}
+function ground() {
+  return { sym:'⏚', label:'GND=0V', valor:0, unidad:'V', fn:'V=0',
+    poema:'la tierra no es el final — es la referencia de todo' };
+}
+function vSource(v) {
+  const val = v || rv(3,24);
+  return { sym:'+', label:`Vcc=${val}V`, valor:val, unidad:'V', fn:'fuente ideal',
+    poema:'la fuente no pregunta qué alimenta — solo da' };
+}
+
+const COMP_POOL = [resistor, capacitor, inductor, led, transistorNPN, diode];
+
+function nodoSerie(hijos)  { return { tipo:'serie', hijos }; }
+function nodoParalelo(ramas) { return { tipo:'paralelo', ramas }; }
+function nodoComponente(comp) { return { tipo:'comp', comp }; }
+
+function genTopologia(prof) {
+  if (prof <= 0 || Math.random() < 0.35) return nodoComponente(pick(COMP_POOL)());
+  if (Math.random() < 0.55) {
+    return nodoSerie(Array.from({length:rv(2,4)}, () => genTopologia(prof-1)));
+  } else {
+    return nodoParalelo(Array.from({length:rv(2,3)}, () => genTopologia(prof-1)));
+  }
+}
+
+function renderNodo(nodo) {
+  if (nodo.tipo === 'comp') {
+    const w = `──[${nodo.comp.label}]──`;
+    return { lineas:[w], ancho:w.length, alto:1, comps:[nodo.comp] };
+  }
+  if (nodo.tipo === 'serie') {
+    const partes = nodo.hijos.map(renderNodo);
+    const alto = Math.max(...partes.map(p => p.alto));
+    const comps = partes.flatMap(p => p.comps||[]);
+    const cols = partes.map(p => {
+      const pt = Math.floor((alto-p.alto)/2);
+      const pb = alto-p.alto-pt;
+      return [...Array(pt).fill('─'.repeat(p.ancho)), ...p.lineas, ...Array(pb).fill('─'.repeat(p.ancho))];
+    });
+    const lineas = Array.from({length:alto}, (_,r) => cols.map(c=>c[r]||'').join(''));
+    return { lineas, ancho:lineas[0]?.length||0, alto, comps };
+  }
+  if (nodo.tipo === 'paralelo') {
+    const partes = nodo.ramas.map(renderNodo);
+    const ancho = Math.max(...partes.map(p => p.ancho));
+    const comps = partes.flatMap(p => p.comps||[]);
+    const lineas = ['┌'+'─'.repeat(ancho)+'┐'];
+    partes.forEach((p,i) => {
+      const pl = Math.floor((ancho-p.ancho)/2);
+      const pr = ancho-p.ancho-pl;
+      p.lineas.forEach(l => lineas.push('│'+' '.repeat(pl)+l+' '.repeat(pr)+'│'));
+      if (i < partes.length-1) lineas.push('├'+'─'.repeat(ancho)+'┤');
+    });
+    lineas.push('└'+'─'.repeat(ancho)+'┘');
+    return { lineas, ancho:ancho+2, alto:lineas.length, comps };
+  }
+}
+
+function analizarCircuito(comps, vcc) {
+  const Rs   = comps.filter(c => c.sym==='R');
+  const Cs   = comps.filter(c => c.sym==='C');
+  const Ls   = comps.filter(c => c.sym==='L');
+  const leds = comps.filter(c => c.fn&&c.fn.includes('nm'));
+  const out  = [`  FUENTE:  Vcc = ${vcc}V`];
+  if (Rs.length) {
+    const Rt = Rs.reduce((s,r)=>s+r.valor,0);
+    out.push(`  R total = ${Rt}Ω   I = ${(vcc/Rt*1000).toFixed(2)}mA   P = ${(vcc*vcc/Rt*1000).toFixed(1)}mW`);
+  }
+  if (Cs.length && Rs.length) {
+    const R=Rs[0].valor, C=Cs[0].valor;
+    out.push(`  τ = RC = ${(R*C/1e9).toFixed(4)}s   f-3dB = ${(1/(2*Math.PI*R*C/1e9)).toFixed(1)}Hz`);
+  }
+  if (Ls.length && Cs.length) {
+    const L=Ls[0].valor/1000, C=Cs[0].valor/1e6;
+    out.push(`  f₀ = 1/2π√LC = ${(1/(2*Math.PI*Math.sqrt(L*C))).toFixed(2)}Hz   ← resonancia`);
+  }
+  leds.forEach(led => {
+    const R=Rs[0]?.valor||220;
+    out.push(`  ${led.fn}   If = ${((vcc-led.valor)/R*1000).toFixed(1)}mA`);
+  });
+  out.push(`  nodos: ${comps.length}   ramas: ${Math.ceil(comps.length/2)}`);
+  return out.join('\n');
+}
+
+const CONECTORES = ['—','→','∿','∥','⊕','·'];
+
+function poetaCircuito(comps) {
+  return [...comps].sort(()=>Math.random()-0.5)
+    .slice(0, Math.min(3,comps.length))
+    .map(c=>c.poema)
+    .join('\n  '+pick(CONECTORES)+' ');
+}
+
+function generar() {
+  const vcc    = pick([3.3,5,9,12,15,24]);
+  const prof   = rv(1,3);
+  const arbol  = genTopologia(prof);
+  const render = renderNodo(arbol);
+  const comps  = render.comps || [];
+  const id     = Math.random().toString(36).slice(2,7).toUpperCase();
+  const ts     = new Date().toISOString().slice(11,19);
+
+  const out = [
+    `> GRAMÁTICA DE CIRCUITOS — GEN #${id}   ${ts}`,
+    `  profundidad=${prof}   nodos=${comps.length}   Vcc=${vcc}V`,
+    ``,
+    `╔══════════════════════════════════════════════════╗`,
+    `║  TOPOLOGÍA GENERADA                              ║`,
+    `╚══════════════════════════════════════════════════╝`,
+    ``,
+    `  (+${vcc}V)`,
+    `   │`,
+    ...render.lineas.map(l=>`  ${l}`),
+    `   │`,
+    `  GND`,
+    ``,
+    `  ───────────────────────────────────────────────`,
+    `  ANÁLISIS`,
+    analizarCircuito(comps, vcc),
+    `  ───────────────────────────────────────────────`,
+    ``,
+    `  `+poetaCircuito(comps.length>0?comps:[resistor()]),
+    ``,
+    ...(comps.length>0?[
+      `  COMPONENTES:`,
+      ...comps.map(c=>`    ${c.sym}  ${c.label.padEnd(24)}  ${c.fn}`),
+    ]:[]),
+    ``,
+    `  ─────────────────────────────────────────────`,
+    `  [click · space · enter]  →  nuevo circuito`,
+  ].join('\n');
+
+  return out;
+}
+
+let rafId = null;
+let targetText='', displayText='', charIdx=0;
+
+function typewrite(text) {
+  if (rafId) cancelAnimationFrame(rafId);
+  targetText=text; displayText=''; charIdx=0;
+  function step() {
+    for(let i=0;i<4&&charIdx<targetText.length;i++) displayText+=targetText[charIdx++];
+    document.getElementById('out').textContent=displayText;
+    if(charIdx<targetText.length) rafId=requestAnimationFrame(step);
+  }
+  rafId=requestAnimationFrame(step);
+}
+
+function start() { typewrite(generar()); }
+window.onload=start;
+document.addEventListener('click',start);
+document.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter')start();});
+</script>
+</body>
+</html>
