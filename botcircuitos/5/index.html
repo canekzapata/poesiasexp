@@ -28,10 +28,10 @@ function resize() {
   H = canvas.height = window.innerHeight;
   COLS = Math.floor(W / CW) + 1;
   ROWS = Math.floor(H / LH) + 1;
-  buildTopology();
+  if (pieza) buildSchematic();
 }
 
-// ─── piezas + modos ────────────────────────────────────────────
+// ─── piezas + modos ─────────────────────────────────────────────
 
 const PIEZAS = [
   { lines:["debajo del pino","pregunto al silencio","","Vout = 0V"],                    mode:'silence' },
@@ -42,122 +42,179 @@ const PIEZAS = [
   { lines:["nadie escucha el clock","","■ □ ■ □ ■ □","","32 768 Hz"],                    mode:'clock' },
 ];
 
-// cada modo re-cablea la fisica del campo
 const MODES = {
-  silence:   { pulseSpeed: 0.5,  noiseGain: 0.6,  pulseTrail: 4,  sync: false, square: false, gain: 1   },
-  cap:       { pulseSpeed: 3.2,  noiseGain: 0.9,  pulseTrail: 9,  sync: false, square: false, gain: 1   },
-  resonance: { pulseSpeed: 5.5,  noiseGain: 1.0,  pulseTrail: 10, sync: true,  square: false, gain: 1   },
-  amp:       { pulseSpeed: 4.5,  noiseGain: 0.9,  pulseTrail: 10, sync: false, square: false, gain: 2.4 },
-  filter:    { pulseSpeed: 4.0,  noiseGain: 0.18, pulseTrail: 8,  sync: false, square: false, gain: 1   },
-  clock:     { pulseSpeed: 7.5,  noiseGain: 0.8,  pulseTrail: 2,  sync: false, square: true,  gain: 1   },
+  silence:   { pulseSpeed: 0.6, noiseGain: 0.6, pulseTrail: 5,  sync:false, square:false, gain:1   },
+  cap:       { pulseSpeed: 3.5, noiseGain: 0.9, pulseTrail: 10, sync:false, square:false, gain:1   },
+  resonance: { pulseSpeed: 6.0, noiseGain: 1.0, pulseTrail: 11, sync:true,  square:false, gain:1   },
+  amp:       { pulseSpeed: 5.0, noiseGain: 0.9, pulseTrail: 11, sync:false, square:false, gain:2.4 },
+  filter:    { pulseSpeed: 4.5, noiseGain: 0.18,pulseTrail: 9,  sync:false, square:false, gain:1   },
+  clock:     { pulseSpeed: 8.0, noiseGain: 0.8, pulseTrail: 2,  sync:false, square:true,  gain:1   },
 };
 
-// ─── topologia ──────────────────────────────────────────────────
+const COMP_GLYPHS = { R:'─[R]─', C:'─┤├─', L:'─[L]─', D:'─[D]─' };
+const COMP_VALUES = { R:'10 kΩ', C:'47 nF', L:'4.7 mH', D:'1N4148' };
+const COMP_TYPES  = ['R','C','L','D'];
 
-let RAILS = [], DROPS = [], COMPS = [];
-const COMP_GLYPH = {
-  R: '─[R]─',
-  C: '─┤├─',
-  L: '─[L]─',
-  D: '─[D]─',
-};
-const COMP_TYPES = ['R','C','L','D'];
+// ─── estado global ──────────────────────────────────────────────
 
-function buildTopology() {
-  RAILS = [];
-  for (let r = 3; r < ROWS - 2; r += 5) RAILS.push(r);
-  DROPS = [];
-  for (let c = 6; c < COLS - 4; c += 14) DROPS.push(c);
-  COMPS = [];
-  for (let i = 0; i < RAILS.length; i++) {
-    for (let j = 0; j < DROPS.length - 1; j++) {
-      if ((i + j) % 3 === 0) continue;
-      const cc = Math.floor((DROPS[j] + DROPS[j+1]) / 2);
-      const t  = COMP_TYPES[(i * 7 + j * 13) % COMP_TYPES.length];
-      COMPS.push({ rail: RAILS[i], col: cc, type: t });
+let pieza, lines, mode, modeCfg;
+let boxL, boxR;
+let lineInfo = [];   // [{ r, cStart, cEnd, text, isEmpty, comps[], up?, down? }]
+let SCH = null;      // SCH[r][c] = { ch, kind, lineIdx?, type? } | null
+
+let phase = 'reveal', waveX = 0, hideX = 0, holdT = 0;
+const WAVE_SPEED = 5, HIDE_SPEED = 9, HOLD_DUR = 6.5, FADE_COLS = 5;
+
+// ─── construccion del esquematico ────────────────────────────────
+
+function init() {
+  pieza   = PIEZAS[Math.random() * PIEZAS.length | 0];
+  lines   = pieza.lines;
+  mode    = pieza.mode;
+  modeCfg = MODES[mode];
+  buildSchematic();
+  waveX = boxL - 1;
+  hideX = boxL - 1;
+  phase = 'reveal';
+  holdT = 0;
+}
+
+function buildSchematic() {
+  const padX = 3;
+  const maxLen = Math.max(...lines.map(l => l.length));
+  boxL = Math.max(2,        Math.floor((COLS - maxLen) / 2) - padX);
+  boxR = Math.min(COLS - 3, boxL + maxLen + 2 * padX);
+
+  const padY = 1;
+  const totalRows = lines.length;
+  const startRow = Math.max(2, Math.floor((ROWS - totalRows) / 2));
+
+  lineInfo = [];
+  for (let i = 0; i < lines.length; i++) {
+    const r = startRow + i;
+    const text = lines[i];
+    const isEmpty = text.length === 0;
+    const cStart = Math.floor((COLS - text.length) / 2);
+    const cEnd   = cStart + text.length - 1;
+    const li = { r, cStart, cEnd, text, isEmpty, comps: [] };
+
+    if (!isEmpty) {
+      // un componente al fondo del extension izquierdo
+      const leftEnd = boxL - 1;
+      if (leftEnd > 8) {
+        const t  = COMP_TYPES[(i * 5 + 1) % 4];
+        const g  = COMP_GLYPHS[t];
+        const cs = Math.max(2, Math.floor(leftEnd * 0.45) - (g.length >> 1));
+        if (cs + g.length <= cStart - 1) li.comps.push({ cStart: cs, glyph: g, type: t });
+      }
+      // y otro al fondo derecho
+      const rightBeg = boxR + 1;
+      if (COLS - rightBeg > 8) {
+        const t  = COMP_TYPES[(i * 7 + 3) % 4];
+        const g  = COMP_GLYPHS[t];
+        const cs = Math.min(COLS - g.length - 2, rightBeg + Math.floor((COLS - rightBeg) * 0.55) - (g.length >> 1));
+        if (cs >= cEnd + 2) li.comps.push({ cStart: cs, glyph: g, type: t });
+      }
+    }
+    lineInfo.push(li);
+  }
+
+  // bajantes: para cada linea no-vacia, marcar si tiene vecina arriba/abajo
+  for (let i = 0; i < lineInfo.length; i++) {
+    if (lineInfo[i].isEmpty) continue;
+    lineInfo[i].up = false; lineInfo[i].down = false;
+    for (let j = i - 1; j >= 0; j--)            if (!lineInfo[j].isEmpty) { lineInfo[i].up = true; break; }
+    for (let j = i + 1; j < lineInfo.length; j++) if (!lineInfo[j].isEmpty) { lineInfo[i].down = true; break; }
+  }
+
+  // construir el grid SCH
+  SCH = new Array(ROWS);
+  for (let r = 0; r < ROWS; r++) SCH[r] = new Array(COLS).fill(null);
+
+  for (let i = 0; i < lineInfo.length; i++) {
+    const li = lineInfo[i];
+    if (li.isEmpty) continue;
+    if (li.r < 0 || li.r >= ROWS) continue;
+
+    // rail completo en la fila
+    for (let c = 0; c < COLS; c++) SCH[li.r][c] = { ch:'─', kind:'rail', lineIdx:i };
+
+    // texto del verso
+    for (let k = 0; k < li.text.length; k++) {
+      const c = li.cStart + k;
+      if (c < 0 || c >= COLS) continue;
+      const ch = li.text[k];
+      if (ch === ' ') SCH[li.r][c] = { ch:'─', kind:'verse-space', lineIdx:i };
+      else            SCH[li.r][c] = { ch,    kind:'verse',       lineIdx:i };
+    }
+
+    // componentes
+    for (const cp of li.comps) {
+      for (let k = 0; k < cp.glyph.length; k++) {
+        const c = cp.cStart + k;
+        if (c < 0 || c >= COLS) continue;
+        SCH[li.r][c] = { ch: cp.glyph[k], kind:'comp', lineIdx:i, type: cp.type };
+      }
+    }
+
+    // junctures en boxL/boxR
+    const u = li.up, d = li.down;
+    for (const c of [boxL, boxR]) {
+      if (c < 0 || c >= COLS) continue;
+      const isL = (c === boxL);
+      let jch = null;
+      if (u && d) jch = isL ? '├' : '┤';
+      else if (d) jch = isL ? '┌' : '┐';
+      else if (u) jch = isL ? '└' : '┘';
+      if (jch) SCH[li.r][c] = { ch: jch, kind:'junction', lineIdx:i };
+    }
+
+    // bajantes verticales hasta la siguiente linea no-vacia
+    let next = -1;
+    for (let j = i + 1; j < lineInfo.length; j++) if (!lineInfo[j].isEmpty) { next = j; break; }
+    if (next >= 0) {
+      for (let r = li.r + 1; r < lineInfo[next].r; r++) {
+        if (r < 0 || r >= ROWS) continue;
+        if (boxL >= 0 && boxL < COLS) SCH[r][boxL] = { ch:'│', kind:'bajante' };
+        if (boxR >= 0 && boxR < COLS) SCH[r][boxR] = { ch:'│', kind:'bajante' };
+      }
     }
   }
 }
 
-// ─── estado poema ──────────────────────────────────────────────
-
-let pieza, lines, mode, modeCfg, maxLen, startCol, startRow;
-let waveX = 0, hideX = 0, phase = 'reveal', holdT = 0;
-const WAVE_SPEED = 4, HIDE_SPEED = 8, HOLD_DUR = 6.2, FADE_COLS = 5;
-
-function init() {
-  pieza    = PIEZAS[Math.random() * PIEZAS.length | 0];
-  lines    = pieza.lines;
-  mode     = pieza.mode;
-  modeCfg  = MODES[mode];
-  maxLen   = Math.max(...lines.map(l => l.length));
-  startCol = Math.floor((COLS - maxLen) / 2);
-  startRow = Math.floor((ROWS - lines.length) / 2);
-  // empujar a una franja lejos de los rieles
-  let bestRow = startRow, bestDist = -Infinity;
-  for (let r = startRow - 2; r <= startRow + 2; r++) {
-    let d = Infinity;
-    for (const rr of RAILS) d = Math.min(d, Math.abs(r - rr));
-    if (d > bestDist) { bestDist = d; bestRow = r; }
-  }
-  startRow = bestRow;
-  waveX = startCol - 2;
-  hideX = startCol - 2;
-  phase = 'reveal';
-  holdT = 0;
-}
+// ─── helpers ────────────────────────────────────────────────────
 
 function grey(v) {
   const b = Math.round(Math.max(0, Math.min(1, v)) * 255);
   return `rgb(${b},${b},${b})`;
 }
 
-// ─── halo y consultas de topologia ─────────────────────────────
-
-function poemHalo(c, r) {
-  const padX = 4, padY = 1;
-  const dx = Math.max(0, Math.max((startCol - padX) - c, c - (startCol + maxLen + padX - 1)));
-  const dy = Math.max(0, Math.max((startRow - padY) - r, r - (startRow + lines.length - 1 + padY)));
-  const d  = Math.hypot(dx * 0.6, dy);
-  return Math.min(1, d / 5);
-}
-
-function compAt(c, r) {
-  for (let i = 0; i < COMPS.length; i++) {
-    const cp = COMPS[i];
-    if (cp.rail !== r) continue;
-    const g    = COMP_GLYPH[cp.type];
-    const half = (g.length / 2) | 0;
-    if (c >= cp.col - half && c < cp.col - half + g.length) {
-      return { ch: g[c - (cp.col - half)], type: cp.type };
-    }
+// energy 0..1: 0 = cable (─), 1 = letra del verso. la onda barre boxL → boxR.
+function energyAt(c) {
+  if (phase === 'reveal') {
+    const d = waveX - c;
+    if (d < 0)          return 0;
+    if (d > FADE_COLS)  return 1;
+    return d / FADE_COLS;
+  } else if (phase === 'hold') {
+    return 1;
+  } else {
+    const d = hideX - c;
+    if (d < 0)          return 1;
+    if (d > FADE_COLS)  return 0;
+    return 1 - d / FADE_COLS;
   }
-  return null;
 }
 
-function junctionAt(c, r) {
-  const ri = RAILS.indexOf(r);
-  if (ri < 0) return null;
-  if (DROPS.indexOf(c) < 0) return null;
-  const top = ri > 0;
-  const bot = ri < RAILS.length - 1;
-  if (top && bot) return '┼';
-  if (top) return '┴';
-  if (bot) return '┬';
-  return null;
-}
-
-// ─── pulsos ────────────────────────────────────────────────────
-
-function pulseAt(c, r, t) {
-  const idx = RAILS.indexOf(r);
-  if (idx < 0) return 0;
-  const speed   = modeCfg.sync ? modeCfg.pulseSpeed : modeCfg.pulseSpeed * (0.8 + 0.18 * idx);
-  const phaseOff= modeCfg.sync ? 0 : idx * 7;
-  const period  = COLS + 30;
-  const pos     = ((t * speed + phaseOff) % period + period) % period - 15;
-  const dx      = c - pos;
-
+// pulso continuo a lo largo de una linea (horizontal)
+function pulseAt(c, lineIdx, t) {
+  const li = lineInfo[lineIdx];
+  if (!li || li.isEmpty) return 0;
+  const speed    = modeCfg.sync ? modeCfg.pulseSpeed : modeCfg.pulseSpeed * (0.85 + 0.12 * lineIdx);
+  const phaseOff = modeCfg.sync ? 0 : lineIdx * 7;
+  const period   = COLS + 40;
+  const pos      = ((t * speed + phaseOff) % period + period) % period - 20;
+  const dx       = c - pos;
   let v = 0;
   if (modeCfg.square) {
     v = (dx > -1.5 && dx < 0.5) ? 1 : 0;
@@ -172,7 +229,40 @@ function pulseAt(c, r, t) {
   return v;
 }
 
-// ─── cursor ────────────────────────────────────────────────────
+// pulso vertical para los bajantes
+function vPulseAt(r, t) {
+  const speed  = modeCfg.pulseSpeed * 0.7;
+  const period = ROWS + 20;
+  const pos    = ((t * speed) % period + period) % period - 10;
+  const dy     = r - pos;
+  if (dy > 1) return 0;
+  return Math.max(0, 1 + dy / Math.max(3, modeCfg.pulseTrail));
+}
+
+// ─── modulaciones por modo en celdas del verso ──────────────────
+
+function modeModulate(ch, baseA, lineIdx, t) {
+  if (mode === 'clock' && (ch === '■' || ch === '□')) {
+    const li = lineInfo[lineIdx];
+    if (li) {
+      const k    = (Math.floor(t * 4) + (ch.charCodeAt(0))) % 2 === 0;
+      return baseA * (k ? 1.0 : 0.30);
+    }
+  }
+  if (mode === 'cap') {
+    const li = lineInfo[lineIdx];
+    if (li && li.text.indexOf('┤├') >= 0) {
+      const pulse = (Math.sin(t * 4) + 1) / 2;
+      return baseA * (0.55 + 0.45 * pulse);
+    }
+  }
+  if (mode === 'resonance') return baseA * (0.6 + 0.4 * Math.sin(t * 2.8));
+  if (mode === 'amp')       return baseA * (0.75 + 0.25 * Math.sin(t * 1.5 + lineIdx));
+  if (mode === 'silence')   return baseA * 0.78;
+  return baseA;
+}
+
+// ─── cursor ─────────────────────────────────────────────────────
 
 let mx = -1, my = -1;
 canvas.addEventListener('mousemove', e => {
@@ -181,35 +271,32 @@ canvas.addEventListener('mousemove', e => {
 });
 canvas.addEventListener('mouseleave', () => { mx = -1; my = -1; });
 
-// ─── ruido ambient ─────────────────────────────────────────────
+// ─── ruido ambient ──────────────────────────────────────────────
 
 const LET = "abcdefghijklmnopqrstuvwxyz";
 
-function noiseSample(c, r, t) {
+function noiseValue(c, r, t) {
   let cc = c, rr = r;
   if (mx >= 0) {
     const dx = c - mx, dy = r - my;
     const d2 = dx*dx + dy*dy;
     if (d2 < 400) {
-      const w = (1 - d2 / 400) * 0.6;
-      cc += dx * w;
-      rr += dy * w;
+      const w = (1 - d2 / 400) * 0.5;
+      cc += dx * w; rr += dy * w;
     }
   }
   return (Math.sin(cc * 0.21 + rr * 0.13 + t * 0.4) *
           Math.cos(cc * 0.09 - rr * 0.17 + t * 0.27) + 1) / 2;
 }
 
-// ─── render ────────────────────────────────────────────────────
-
 function drawNoise(t) {
   const gain = modeCfg.noiseGain;
   for (let r = 0; r < ROWS; r++) {
     for (let c = 0; c < COLS; c++) {
-      const v = noiseSample(c, r, t);
+      if (SCH[r][c]) continue;
+      const v = noiseValue(c, r, t);
       if (v < 0.55) continue;
-      const halo = poemHalo(c, r);
-      const a    = 0.10 * gain * ((v - 0.55) / 0.45) * halo;
+      const a = 0.10 * gain * ((v - 0.55) / 0.45);
       if (a < 0.02) continue;
       const idx = ((c * 3 + r * 7 + (t * 4 | 0)) % 26 + 26) % 26;
       ctx.fillStyle = grey(a);
@@ -218,104 +305,89 @@ function drawNoise(t) {
   }
 }
 
-function drawTraces(t) {
-  for (let i = 0; i < RAILS.length; i++) {
-    const railR = RAILS[i];
+// ─── render del esquematico ─────────────────────────────────────
+
+function drawSchematic(t) {
+  for (let r = 0; r < ROWS; r++) {
+    const row = SCH[r];
     for (let c = 0; c < COLS; c++) {
-      const halo = poemHalo(c, railR);
-      if (halo < 0.05) continue;
-      let ch = '─', base = 0.20;
-      const j  = junctionAt(c, railR);
-      const cp = compAt(c, railR);
-      if (j)       { ch = j;     base = 0.32; }
-      else if (cp) { ch = cp.ch; base = 0.50; }
-      const p = pulseAt(c, railR, t);
-      let a   = (base + 0.60 * p) * halo;
+      const sc = row[c];
+      if (!sc) continue;
+
+      let ch = sc.ch;
+      let baseA = 0.20;
+      let pulseScale = 0.55;
+
+      switch (sc.kind) {
+        case 'verse': {
+          const e = energyAt(c);
+          if (e >= 0.5) {
+            ch = sc.ch;
+            baseA = 0.88;
+            pulseScale = 0.14;
+          } else {
+            ch = '─';
+            baseA = 0.20 + 0.40 * e;
+            pulseScale = 0.60;
+          }
+          break;
+        }
+        case 'verse-space': {
+          ch = '─';
+          const e = energyAt(c);
+          baseA = 0.20 + 0.22 * e;
+          pulseScale = 0.55;
+          break;
+        }
+        case 'comp':     baseA = 0.55; pulseScale = 0.45; break;
+        case 'rail':     baseA = 0.22; pulseScale = 0.60; break;
+        case 'junction': baseA = 0.36; pulseScale = 0.45; break;
+        case 'bajante':  baseA = 0.20; pulseScale = 0;    break;
+      }
+
+      let pulseBoost = 0;
+      if (sc.kind === 'bajante') {
+        pulseBoost = vPulseAt(r, t) * 0.45;
+      } else if (sc.lineIdx !== undefined) {
+        pulseBoost = pulseAt(c, sc.lineIdx, t) * pulseScale;
+      }
+
+      let a = baseA + pulseBoost;
+
+      // celdas del verso reciben modulacion del modo durante hold/reveal
+      if ((sc.kind === 'verse') && energyAt(c) >= 0.5) {
+        a = modeModulate(sc.ch, a, sc.lineIdx, t);
+      }
+
+      // proximidad del cursor ilumina
       if (mx >= 0) {
-        const d = Math.hypot((c - mx) * 0.8, (railR - my));
-        if (d < 6) a += (1 - d/6) * 0.22 * halo;
+        const d = Math.hypot((c - mx) * 0.7, (r - my));
+        if (d < 7) a += (1 - d/7) * 0.22;
       }
-      if (a < 0.04) continue;
+
+      if (a < 0.03) continue;
       ctx.fillStyle = grey(Math.min(1, a));
-      ctx.fillText(ch, c * CW, railR * LH);
-    }
-  }
-  for (let i = 0; i < DROPS.length; i++) {
-    const dc = DROPS[i];
-    for (let r = RAILS[0]; r <= RAILS[RAILS.length - 1]; r++) {
-      if (RAILS.indexOf(r) >= 0) continue;
-      const halo = poemHalo(dc, r);
-      if (halo < 0.05) continue;
-      const a = 0.18 * halo;
-      ctx.fillStyle = grey(a);
-      ctx.fillText('│', dc * CW, r * LH);
+      ctx.fillText(ch, c * CW, r * LH);
     }
   }
 }
 
-function poemCellAlpha(lineIdx, colInLine, base, t) {
-  const ln = lines[lineIdx];
-  switch (mode) {
-    case 'clock': {
-      const ch = ln[colInLine];
-      if (ch === '■' || ch === '□') {
-        const flip = (Math.floor(t * 4) + colInLine) % 2 === 0;
-        return base * (flip ? 1.0 : 0.25);
-      }
-      break;
-    }
-    case 'cap':
-      if (ln.indexOf('┤├') >= 0) {
-        const pulse = (Math.sin(t * 4) + 1) / 2;
-        return base * (0.45 + 0.55 * pulse);
-      }
-      break;
-    case 'resonance':
-      return base * (0.55 + 0.45 * Math.sin(t * 2.8));
-    case 'amp':
-      return base * (0.7 + 0.3 * Math.sin(t * 1.5 + lineIdx));
-    case 'silence':
-      return base * 0.78;
-  }
-  return base;
-}
-
-function drawPoem(t) {
-  for (let r = 0; r < lines.length; r++) {
-    const line = lines[r];
-    for (let c = 0; c < line.length; c++) {
-      const ch = line[c];
-      if (ch === ' ') continue;
-      const gc = startCol + c;
-      const x  = gc * CW;
-      const y  = (startRow + r) * LH;
-      let alpha = 0;
-      if (phase === 'reveal') {
-        const d = waveX - gc;
-        if (d < 0) continue;
-        alpha = d >= FADE_COLS ? 1.0 : (d / FADE_COLS);
-      } else if (phase === 'hold') {
-        alpha = 1.0;
-      } else {
-        const d = gc - hideX;
-        if (d < 0) continue;
-        alpha = d >= FADE_COLS ? 1.0 : (d / FADE_COLS);
-      }
-      alpha = poemCellAlpha(r, c, alpha, t);
-      ctx.fillStyle = grey(alpha);
-      ctx.fillText(ch, x, y);
-    }
-  }
-}
+// ─── probe ──────────────────────────────────────────────────────
 
 function drawProbe(t) {
   if (mx < 0) return;
-  const v  = noiseSample(mx, my, t);
-  const mv = (v * 12.34).toFixed(2);
-  ctx.fillStyle = grey(0.75);
+  let label;
+  const sc = (mx >= 0 && my >= 0 && my < ROWS && mx < COLS) ? SCH[my][mx] : null;
+  if (sc && sc.kind === 'comp') {
+    label = `${sc.type} = ${COMP_VALUES[sc.type]}`;
+  } else {
+    const v = noiseValue(mx, my, t);
+    label = `${(v * 12.34).toFixed(2)} mV`;
+  }
+  ctx.fillStyle = grey(0.78);
   ctx.fillText('┼', mx * CW, my * LH);
-  ctx.fillStyle = grey(0.55);
-  ctx.fillText(`${mv} mV`, (mx + 2) * CW, Math.max(0, my - 1) * LH);
+  ctx.fillStyle = grey(0.58);
+  ctx.fillText(label, (mx + 2) * CW, Math.max(0, my - 1) * LH);
 }
 
 function drawStatusBar(t) {
@@ -323,19 +395,19 @@ function drawStatusBar(t) {
   ctx.fillText(`[ ${mode} ]   t = ${t.toFixed(1)}s`, CW, (ROWS - 2) * LH);
 }
 
-// ─── loop ──────────────────────────────────────────────────────
+// ─── loop ───────────────────────────────────────────────────────
 
 function draw(dt, t) {
-  const endCol = startCol + maxLen + 2;
+  const endX = boxR + 1;
   if (phase === 'reveal') {
     waveX += WAVE_SPEED * dt;
-    if (waveX >= endCol) { phase = 'hold'; holdT = 0; }
+    if (waveX >= endX) { phase = 'hold'; holdT = 0; }
   } else if (phase === 'hold') {
     holdT += dt;
-    if (holdT >= HOLD_DUR) { phase = 'hide'; hideX = startCol - 2; }
+    if (holdT >= HOLD_DUR) { phase = 'hide'; hideX = boxL - 1; }
   } else {
     hideX += HIDE_SPEED * dt;
-    if (hideX >= endCol) init();
+    if (hideX >= endX) init();
   }
 
   ctx.fillStyle = '#000';
@@ -344,8 +416,7 @@ function draw(dt, t) {
   ctx.textBaseline = 'top';
 
   drawNoise(t);
-  drawTraces(t);
-  drawPoem(t);
+  drawSchematic(t);
   drawProbe(t);
   drawStatusBar(t);
 }
@@ -365,7 +436,7 @@ window.addEventListener('resize', resize);
 init();
 requestAnimationFrame(loop);
 
-document.addEventListener('click', init);
+document.addEventListener('click',   init);
 document.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') init(); });
 </script>
 </body>
