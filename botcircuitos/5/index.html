@@ -74,6 +74,9 @@ const PIEZAS = [
   ],
 ];
 
+const LET  = "abcdefghijklmnopqrstuvwxyz";
+const CIRC = "─│┤├┬┴┼┐┘└┌┤├■□·•";
+
 let pieza, maxLen, startCol, startRow;
 let waveX = 0, hideX = 0, phase = 'reveal', holdT = 0;
 
@@ -95,16 +98,45 @@ function grey(v) {
   return `rgb(${b},${b},${b})`;
 }
 
+function poemHalo(c, r) {
+  const padX = 3, padY = 1;
+  const dx = Math.max(0, Math.max((startCol - padX) - c, c - (startCol + maxLen + padX)));
+  const dy = Math.max(0, Math.max((startRow - padY) - r, r - (startRow + pieza.length - 1 + padY)));
+  const d  = Math.hypot(dx, dy);
+  const HALO = 7;
+  return Math.min(1, d / HALO);
+}
+
 function drawBackground(frame) {
+  const t  = frame * 0.012;
+  const t2 = frame * 0.004;
   for (let r = 0; r < ROWS; r++) {
     for (let c = 0; c < COLS; c++) {
-      const s = Math.sin(c * 0.27 + r * 0.44 + frame * 0.014)
-              * Math.cos(c * 0.12 - r * 0.19 + frame * 0.007);
-      if (s > 0.80) {
-        const ch = ((c * 3 + r * 7) % 4) === 0 ? '.' : '·';
-        ctx.fillStyle = grey(0.10 + 0.05 * s);
-        ctx.fillText(ch, c * CW, r * LH);
+      const a = Math.sin(c * 0.18 + r * 0.11 + t);
+      const b = Math.cos(c * 0.07 - r * 0.13 - t * 0.6);
+      const v = (a * b + 1) / 2;
+
+      if (v < 0.18) continue;
+
+      const region = Math.sin(c * 0.045 + r * 0.07 + t2)
+                   + Math.cos(c * 0.031 - r * 0.052 - t2 * 0.8);
+
+      let ch;
+      if (region > 0.85) {
+        const idx = ((c * 5 + r * 3 + (frame * 0.05 | 0)) % CIRC.length + CIRC.length) % CIRC.length;
+        ch = CIRC[idx];
+      } else {
+        const idx = ((c * 2 + r * 7 + (frame * 0.03 | 0) + (v * 26 | 0)) % LET.length + LET.length) % LET.length;
+        ch = LET[idx];
       }
+
+      const bright = 0.10 + 0.45 * v;
+      const halo   = poemHalo(c, r);
+      const alpha  = bright * (0.04 + 0.96 * halo);
+
+      if (alpha < 0.04) continue;
+      ctx.fillStyle = grey(alpha);
+      ctx.fillText(ch, c * CW, r * LH);
     }
   }
 }
@@ -122,13 +154,13 @@ function drawPoema() {
       if (phase === 'reveal') {
         const d = waveX - gc;
         if (d < 0) continue;
-        alpha = d >= FADE_COLS ? 0.82 : 0.82 * (d / FADE_COLS);
+        alpha = d >= FADE_COLS ? 1.0 : 1.0 * (d / FADE_COLS);
       } else if (phase === 'hold') {
-        alpha = 0.82;
+        alpha = 1.0;
       } else {
         const d = gc - hideX;
         if (d < 0) continue;
-        alpha = d >= FADE_COLS ? 0.82 : 0.82 * (d / FADE_COLS);
+        alpha = d >= FADE_COLS ? 1.0 : 1.0 * (d / FADE_COLS);
       }
       ctx.fillStyle = grey(alpha);
       ctx.fillText(ch, x, y);
