@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SEÑAL EN EL RUIDO</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #000; overflow: hidden; }
+    canvas {
+      display: block;
+      filter: brightness(1.1) saturate(1.4) contrast(1.1);
+    }
+  </style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+'use strict';
+
+const canvas = document.getElementById('c');
+const ctx    = canvas.getContext('2d');
+
+function resize() {
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', () => { resize(); layout(); });
+
+// ── TIPOGRAFÍA ────────────────────────────────────────────────
+const FS = 17;
+const FN = `bold ${FS}px 'Courier New', monospace`;
+ctx.font = FN;
+const CW = ctx.measureText('M').width;
+const LH = FS * 1.55;
+
+// ── POOL DE RUIDO ─────────────────────────────────────────────
+const RUIDO = [
+  // Bloques de densidad
+  '░','▒','▓','█','▄','▀','▌','▐','▜','▛','▟','▙','▚','▞','▃','▆','▇','▉','▊','▋',
+  // Caja
+  '─','│','┼','╔','╗','╚','╝','═','║','╠','╣','╦','╩','╬','├','┤','┬','┴','┌','┐','└','┘',
+  // Circuito / señal
+  '∿','∥','⊕','⊥','∫','∑','∂','∞','λ','φ','τ','ω','Ω','µ','∆','∇','≡','≠','≈','→','←','↑','↓',
+  // Geométrico
+  '◉','◎','●','○','◆','◇','■','□','▲','△','▼','▽','◀','▶','◈','◉','⬡','⬢',
+  // Técnico
+  '⊞','⊟','⊠','⊡','⊢','⊣','⊤','⊥','⊦','⊧','⊨','⊩',
+  // Numérico / código
+  '0','1','2','3','4','5','6','7','8','9','F','E','A','B','C','D',
+  // Braille (densidad variable)
+  '⠿','⠾','⠽','⠻','⠷','⠯','⠟','⠿','⡿','⢿','⣿','⣾','⣽','⣻','⣷',
+  // Miscelánea
+  '@','#','$','%','&','*','!','?','~','±','×','÷','√','∛','∜',
+];
+
+// Colores vibrantes — paleta de ruido
+const NC = [
+  '#00ff41',  // verde matrix
+  '#ff00ff',  // magenta
+  '#00ffff',  // cian
+  '#ffff00',  // amarillo
+  '#ff3300',  // rojo
+  '#ff0099',  // rosa
+  '#00ff99',  // menta
+  '#9900ff',  // violeta
+  '#ff9900',  // ámbar
+  '#00aaff',  // azul cielo
+  '#ff6600',  // naranja
+  '#33ff00',  // lima
+];
+
+// Color de señal
+const SC_BASE  = '#ffffff';
+const SC_GLOW  = '#00ff88';
+const SC_DIM   = '#99ffcc';
+
+// ── VERSOS ────────────────────────────────────────────────────
+const VERSOS = [
+  [
+    "debajo del pino pregunto al silencio",
+    "el silencio responde: Vout = 0V",
+    "",
+    "la corriente no necesita origen",
+    "para ser real:  I = dq/dt",
+    "",
+    "∿ GND • GND • GND",
+    "todo vuelve al origen",
+  ],
+  [
+    "el capacitor guarda lo que el rio olvida",
+    "en su prisa hacia el mar",
+    "",
+    "C = Q/V",
+    "",
+    "en el estanque inmovil",
+    "la luna almacena su propia luz",
+  ],
+  [
+    "en la resonancia todo coincide",
+    "f0 no se busca — se encuentra sola",
+    "",
+    "f0 = 1 / 2π√LC",
+    "",
+    "el inductor zumba",
+    "la nota que nadie escribio en la partitura",
+  ],
+  [
+    "libre de ruido me construi un filtro",
+    "paso-bajas  lejos  en lo profundo",
+    "",
+    "τ = RC",
+    "",
+    "el filtro no detiene la señal",
+    "la recuerda mas despacio",
+  ],
+  [
+    "el transistor amplifica",
+    "tambien lo que no deberia escucharse",
+    "",
+    "Ic = β · Ib",
+    "",
+    "× el silencio polarizado",
+    "con cuidado",
+  ],
+  [
+    "nadie escucha los golpes del clock",
+    "cuando la ciudad se apaga",
+    "",
+    "■ 32 768 veces por segundo",
+    "",
+    "el reloj de cuarzo late",
+    "fiel — mientras duermo",
+  ],
+];
+
+// ── UTILIDADES ────────────────────────────────────────────────
+function pick(a)  { return a[Math.random() * a.length | 0]; }
+function rv(a, b) { return Math.random() * (b - a) + a; }
+
+// ── ESTADO ────────────────────────────────────────────────────
+let lines    = [];
+let maxLen   = 0;
+let snr      = -9;
+let phase    = 'rising';
+let holdT    = 0;
+let startCol = 0;
+let startRow = 0;
+let cols0    = 0;
+let rows0    = 0;
+
+const SNR_MIN   = -9;
+const SNR_MAX   =  9;
+const SNR_SPEED =  0.7;
+const HOLD_DUR  =  4.0;
+const FADE_MULT =  1.8;
+
+function layout() {
+  cols0    = Math.floor(canvas.width  / CW)  + 1;
+  rows0    = Math.floor(canvas.height / LH)  + 1;
+  startCol = Math.floor((cols0 - maxLen) / 2);
+  startRow = Math.floor((rows0 - lines.length) / 2);
+}
+
+function initVerso() {
+  lines   = pick(VERSOS);
+  maxLen  = Math.max(...lines.map(l => l.length));
+  snr     = SNR_MIN;
+  phase   = 'rising';
+  holdT   = 0;
+  layout();
+}
+
+// ── RENDER ────────────────────────────────────────────────────
+function sigmoid(x) { return 1 / (1 + Math.exp(-x)); }
+
+function draw(dt, frame) {
+  const W = canvas.width;
+  const H = canvas.height;
+
+  if (phase === 'rising') {
+    snr += SNR_SPEED * dt;
+    if (snr >= SNR_MAX) { snr = SNR_MAX; phase = 'hold'; holdT = 0; }
+  } else if (phase === 'hold') {
+    holdT += dt;
+    if (holdT > HOLD_DUR) phase = 'fade';
+  } else {
+    snr -= SNR_SPEED * FADE_MULT * dt;
+    if (snr <= SNR_MIN) initVerso();
+  }
+
+  const p    = sigmoid(snr);
+  const nd   = 0.72 - 0.38 * p;
+  const nd2  = 0.85 - 0.20 * p;
+
+  ctx.fillStyle = '#000000';
+  ctx.fillRect(0, 0, W, H);
+
+  if (p > 0.3) {
+    const gx = startCol * CW;
+    const gy = startRow * LH;
+    const gw = maxLen   * CW;
+    const gh = lines.length * LH;
+    const alpha = Math.min(p * 0.12, 0.10);
+    ctx.fillStyle = `rgba(0,255,136,${alpha.toFixed(3)})`;
+    ctx.fillRect(gx - CW, gy - LH * 0.5, gw + CW * 2, gh + LH);
+  }
+
+  ctx.font         = FN;
+  ctx.textBaseline = 'top';
+
+  for (let r = 0; r < rows0; r++) {
+    for (let c = 0; c < cols0; c++) {
+
+      const x  = c * CW;
+      const y  = r * LH;
+      const pr = r - startRow;
+      const pc = c - startCol;
+
+      const inPoem = pr >= 0 && pr < lines.length &&
+                     pc >= 0 && pc < maxLen;
+
+      if (inPoem && lines[pr] && pc < lines[pr].length && lines[pr][pc] !== ' ') {
+        if (Math.random() < p) {
+          if (phase === 'hold') {
+            ctx.shadowColor = SC_GLOW;
+            ctx.shadowBlur  = 14;
+            ctx.fillStyle   = SC_BASE;
+          } else if (phase === 'fade') {
+            ctx.shadowBlur  = 0;
+            ctx.fillStyle   = SC_DIM;
+          } else {
+            ctx.shadowBlur  = p > 0.7 ? 8 : 0;
+            ctx.fillStyle   = p > 0.7 ? SC_BASE : SC_DIM;
+          }
+          ctx.fillText(lines[pr][pc], x, y);
+          ctx.shadowBlur = 0;
+        } else {
+          ctx.fillStyle = pick(NC);
+          ctx.fillText(pick(RUIDO), x, y);
+        }
+
+      } else if (!inPoem) {
+        if (Math.random() < nd) {
+          const wave = 0.5 + 0.5 * Math.sin(r * 0.4 + frame * 0.07)
+                            * Math.cos(c * 0.3 + frame * 0.05);
+          if (Math.random() < wave) {
+            ctx.fillStyle = pick(NC);
+            ctx.fillText(pick(RUIDO), x, y);
+          }
+        }
+
+      } else if (inPoem && (!lines[pr] || lines[pr][pc] === ' ')) {
+        if (Math.random() < nd2 * 0.4) {
+          ctx.globalAlpha = 0.35;
+          ctx.fillStyle   = pick(NC);
+          ctx.fillText(pick(RUIDO), x, y);
+          ctx.globalAlpha = 1.0;
+        }
+      }
+    }
+  }
+
+  ctx.shadowBlur = 0;
+  ctx.font       = `11px 'Courier New', monospace`;
+  const snrStr   = (snr >= 0 ? '+' : '') + snr.toFixed(1);
+  const pStr     = (p * 100).toFixed(1);
+  const hudTxt   = `SNR ${snrStr}dB  P(señal)=${pStr}%  [${phase.toUpperCase()}]   click·space·enter → nuevo`;
+  ctx.fillStyle  = 'rgba(0,255,65,0.45)';
+  ctx.fillText(hudTxt, 14, canvas.height - 18);
+}
+
+// ── LOOP ─────────────────────────────────────────────────────
+let lastTs = null;
+let frame  = 0;
+
+function loop(ts) {
+  if (lastTs === null) lastTs = ts;
+  const dt = Math.min((ts - lastTs) / 1000, 0.05);
+  lastTs = ts;
+  frame++;
+  draw(dt, frame);
+  requestAnimationFrame(loop);
+}
+
+initVerso();
+requestAnimationFrame(loop);
+
+document.addEventListener('click',   initVerso);
+document.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') initVerso(); });
+</script>
+</body>
+</html>
