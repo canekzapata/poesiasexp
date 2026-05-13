@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,49 +24,71 @@ const CW = ctx.measureText('M').width;
 const LH = FS * 1.65;
 
 let W, H, COLS, ROWS;
+let VCC_ROW, GND_ROW;
+let VBUSES = [];
+
 function resize() {
   W = canvas.width  = window.innerWidth;
   H = canvas.height = window.innerHeight;
   COLS = Math.floor(W / CW) + 1;
   ROWS = Math.floor(H / LH) + 1;
+  VCC_ROW = 2;
+  GND_ROW = ROWS - 5;
+  VBUSES = [];
+  const N = 5;
+  for (let i = 1; i <= N; i++) VBUSES.push(Math.floor(COLS * i / (N + 1)));
   if (pieza) buildSchematic();
 }
 
-// ─── piezas + modos ─────────────────────────────────────────────
+// ─── piezas + modos ───────────────────────────────────────────────
 
 const PIEZAS = [
-  { lines:["debajo del pino","pregunto al silencio","","Vout = 0V"],                    mode:'silence' },
-  { lines:["el capacitor guarda","lo que el rio olvida","","──┤├──","","C = Q/V"],       mode:'cap' },
-  { lines:["en la resonancia","todo coincide","","f0 = 1 / 2π√LC"],                      mode:'resonance' },
-  { lines:["el transistor amplifica","tambien el silencio","","Ic = β · Ib"],            mode:'amp' },
-  { lines:["libre de ruido","me construi un filtro","","τ = RC"],                        mode:'filter' },
-  { lines:["nadie escucha el clock","","■ □ ■ □ ■ □","","32 768 Hz"],                    mode:'clock' },
+  { lines:["debajo del pino","pregunto al silencio","","Vout = 0V"],
+    mode:'silence', equations:['V = IR','P = V·I','δ → 0'] },
+  { lines:["el capacitor guarda","lo que el rio olvida","","──┤├──","","C = Q/V"],
+    mode:'cap',     equations:['Q = CV','i = C·dV/dt','Xc = 1/jωC'] },
+  { lines:["en la resonancia","todo coincide","","f0 = 1 / 2π√LC"],
+    mode:'resonance', equations:['ω₀ = 1/√LC','Q = ωL/R','Z(jω₀) = R'] },
+  { lines:["el transistor amplifica","tambien el silencio","","Ic = β · Ib"],
+    mode:'amp',     equations:['gm = Ic/Vt','Av = -gm·RC','re = 26mV/Ie'] },
+  { lines:["libre de ruido","me construi un filtro","","τ = RC"],
+    mode:'filter',  equations:['fc = 1/2πRC','H(s) = 1/(1+sτ)','σ² ↓'] },
+  { lines:["nadie escucha el clock","","■ □ ■ □ ■ □","","32 768 Hz"],
+    mode:'clock',   equations:['f = 1/T','T = 2¹⁵ dt','Δφ = 2πf·t'] },
 ];
 
 const MODES = {
-  silence:   { pulseSpeed: 0.6, noiseGain: 0.6, pulseTrail: 5,  sync:false, square:false, gain:1   },
-  cap:       { pulseSpeed: 3.5, noiseGain: 0.9, pulseTrail: 10, sync:false, square:false, gain:1   },
-  resonance: { pulseSpeed: 6.0, noiseGain: 1.0, pulseTrail: 11, sync:true,  square:false, gain:1   },
-  amp:       { pulseSpeed: 5.0, noiseGain: 0.9, pulseTrail: 11, sync:false, square:false, gain:2.4 },
-  filter:    { pulseSpeed: 4.5, noiseGain: 0.18,pulseTrail: 9,  sync:false, square:false, gain:1   },
-  clock:     { pulseSpeed: 8.0, noiseGain: 0.8, pulseTrail: 2,  sync:false, square:true,  gain:1   },
+  silence:   { pulseSpeed:0.6, noiseGain:0.6, pulseTrail:5,  sync:false, square:false, gain:1,   busSpeed:0.6 },
+  cap:       { pulseSpeed:3.5, noiseGain:0.9, pulseTrail:10, sync:false, square:false, gain:1,   busSpeed:2.0 },
+  resonance: { pulseSpeed:6.0, noiseGain:1.0, pulseTrail:11, sync:true,  square:false, gain:1,   busSpeed:6.0 },
+  amp:       { pulseSpeed:5.0, noiseGain:0.9, pulseTrail:11, sync:false, square:false, gain:2.4, busSpeed:3.0 },
+  filter:    { pulseSpeed:4.5, noiseGain:0.18,pulseTrail:9,  sync:false, square:false, gain:1,   busSpeed:2.5 },
+  clock:     { pulseSpeed:8.0, noiseGain:0.8, pulseTrail:2,  sync:false, square:true,  gain:1,   busSpeed:8.0 },
 };
 
 const COMP_GLYPHS = { R:'─[R]─', C:'─┤├─', L:'─[L]─', D:'─[D]─' };
 const COMP_VALUES = { R:'10 kΩ', C:'47 nF', L:'4.7 mH', D:'1N4148' };
 const COMP_TYPES  = ['R','C','L','D'];
 
-// ─── estado global ──────────────────────────────────────────────
+// ─── estado ───────────────────────────────────────────────────────
 
 let pieza, lines, mode, modeCfg;
 let boxL, boxR;
-let lineInfo = [];   // [{ r, cStart, cEnd, text, isEmpty, comps[], up?, down? }]
-let SCH = null;      // SCH[r][c] = { ch, kind, lineIdx?, type? } | null
+let lineInfo = [];
+let SCH = null;
 
 let phase = 'reveal', waveX = 0, hideX = 0, holdT = 0;
-const WAVE_SPEED = 5, HIDE_SPEED = 9, HOLD_DUR = 6.5, FADE_COLS = 5;
+const WAVE_SPEED = 6, HIDE_SPEED = 10, HOLD_DUR = 7.5, FADE_COLS = 5;
 
-// ─── construccion del esquematico ────────────────────────────────
+let sparkEvents    = [];
+let equationLabels = [];
+
+let mx = -1, my = -1;
+let probeHistory = [];
+
+let T = 0, frame = 0, lastDt = 0.016;
+
+// ─── init / build ─────────────────────────────────────────────────
 
 function init() {
   pieza   = PIEZAS[Math.random() * PIEZAS.length | 0];
@@ -77,6 +100,15 @@ function init() {
   hideX = boxL - 1;
   phase = 'reveal';
   holdT = 0;
+  spawnEquations();
+}
+
+function putLabel(c, r, text, kind) {
+  for (let k = 0; k < text.length; k++) {
+    const cc = c + k;
+    if (cc < 0 || cc >= COLS) continue;
+    SCH[r][cc] = { ch: text[k], kind };
+  }
 }
 
 function buildSchematic() {
@@ -85,9 +117,7 @@ function buildSchematic() {
   boxL = Math.max(2,        Math.floor((COLS - maxLen) / 2) - padX);
   boxR = Math.min(COLS - 3, boxL + maxLen + 2 * padX);
 
-  const padY = 1;
-  const totalRows = lines.length;
-  const startRow = Math.max(2, Math.floor((ROWS - totalRows) / 2));
+  const startRow = Math.max(VCC_ROW + 3, Math.floor((ROWS - lines.length) / 2));
 
   lineInfo = [];
   for (let i = 0; i < lines.length; i++) {
@@ -97,9 +127,7 @@ function buildSchematic() {
     const cStart = Math.floor((COLS - text.length) / 2);
     const cEnd   = cStart + text.length - 1;
     const li = { r, cStart, cEnd, text, isEmpty, comps: [] };
-
     if (!isEmpty) {
-      // un componente al fondo del extension izquierdo
       const leftEnd = boxL - 1;
       if (leftEnd > 8) {
         const t  = COMP_TYPES[(i * 5 + 1) % 4];
@@ -107,7 +135,6 @@ function buildSchematic() {
         const cs = Math.max(2, Math.floor(leftEnd * 0.45) - (g.length >> 1));
         if (cs + g.length <= cStart - 1) li.comps.push({ cStart: cs, glyph: g, type: t });
       }
-      // y otro al fondo derecho
       const rightBeg = boxR + 1;
       if (COLS - rightBeg > 8) {
         const t  = COMP_TYPES[(i * 7 + 3) % 4];
@@ -118,28 +145,50 @@ function buildSchematic() {
     }
     lineInfo.push(li);
   }
-
-  // bajantes: para cada linea no-vacia, marcar si tiene vecina arriba/abajo
   for (let i = 0; i < lineInfo.length; i++) {
     if (lineInfo[i].isEmpty) continue;
     lineInfo[i].up = false; lineInfo[i].down = false;
-    for (let j = i - 1; j >= 0; j--)            if (!lineInfo[j].isEmpty) { lineInfo[i].up = true; break; }
+    for (let j = i - 1; j >= 0; j--)              if (!lineInfo[j].isEmpty) { lineInfo[i].up = true;   break; }
     for (let j = i + 1; j < lineInfo.length; j++) if (!lineInfo[j].isEmpty) { lineInfo[i].down = true; break; }
   }
 
-  // construir el grid SCH
   SCH = new Array(ROWS);
   for (let r = 0; r < ROWS; r++) SCH[r] = new Array(COLS).fill(null);
 
+  // vertical buses
+  for (let bi = 0; bi < VBUSES.length; bi++) {
+    const c = VBUSES[bi];
+    for (let r = VCC_ROW + 1; r < GND_ROW; r++) {
+      SCH[r][c] = { ch:'│', kind:'vbus', busIdx:bi };
+    }
+  }
+  // VCC and GND horizontal rails
+  for (let c = 0; c < COLS; c++) {
+    SCH[VCC_ROW][c] = { ch:'─', kind:'vcc' };
+    SCH[GND_ROW][c] = { ch:'═', kind:'gnd' };
+  }
+  // junctions at bus / rail crossings
+  for (let bi = 0; bi < VBUSES.length; bi++) {
+    SCH[VCC_ROW][VBUSES[bi]] = { ch:'┬', kind:'bus-junction' };
+    SCH[GND_ROW][VBUSES[bi]] = { ch:'┴', kind:'bus-junction' };
+  }
+  // labels
+  putLabel(2, VCC_ROW, '+Vcc',  'label');
+  putLabel(2, GND_ROW, ' GND ', 'label');
+
+  // verse module overrides previous geometry
   for (let i = 0; i < lineInfo.length; i++) {
     const li = lineInfo[i];
     if (li.isEmpty) continue;
     if (li.r < 0 || li.r >= ROWS) continue;
 
-    // rail completo en la fila
-    for (let c = 0; c < COLS; c++) SCH[li.r][c] = { ch:'─', kind:'rail', lineIdx:i };
-
-    // texto del verso
+    // line rail across the row, with crossings at vbuses
+    for (let c = 0; c < COLS; c++) {
+      const ex = SCH[li.r][c];
+      if (ex && ex.kind === 'vbus') SCH[li.r][c] = { ch:'┼', kind:'cross', lineIdx:i, busIdx:ex.busIdx };
+      else                          SCH[li.r][c] = { ch:'─', kind:'rail',  lineIdx:i };
+    }
+    // verse text overrides
     for (let k = 0; k < li.text.length; k++) {
       const c = li.cStart + k;
       if (c < 0 || c >= COLS) continue;
@@ -147,8 +196,7 @@ function buildSchematic() {
       if (ch === ' ') SCH[li.r][c] = { ch:'─', kind:'verse-space', lineIdx:i };
       else            SCH[li.r][c] = { ch,    kind:'verse',       lineIdx:i };
     }
-
-    // componentes
+    // line components
     for (const cp of li.comps) {
       for (let k = 0; k < cp.glyph.length; k++) {
         const c = cp.cStart + k;
@@ -156,8 +204,7 @@ function buildSchematic() {
         SCH[li.r][c] = { ch: cp.glyph[k], kind:'comp', lineIdx:i, type: cp.type };
       }
     }
-
-    // junctures en boxL/boxR
+    // module corner junctions
     const u = li.up, d = li.down;
     for (const c of [boxL, boxR]) {
       if (c < 0 || c >= COLS) continue;
@@ -168,45 +215,86 @@ function buildSchematic() {
       else if (u) jch = isL ? '└' : '┘';
       if (jch) SCH[li.r][c] = { ch: jch, kind:'junction', lineIdx:i };
     }
-
-    // bajantes verticales hasta la siguiente linea no-vacia
+    // module bajantes
     let next = -1;
     for (let j = i + 1; j < lineInfo.length; j++) if (!lineInfo[j].isEmpty) { next = j; break; }
     if (next >= 0) {
       for (let r = li.r + 1; r < lineInfo[next].r; r++) {
         if (r < 0 || r >= ROWS) continue;
-        if (boxL >= 0 && boxL < COLS) SCH[r][boxL] = { ch:'│', kind:'bajante' };
-        if (boxR >= 0 && boxR < COLS) SCH[r][boxR] = { ch:'│', kind:'bajante' };
+        for (const c of [boxL, boxR]) {
+          if (c < 0 || c >= COLS) continue;
+          const ex = SCH[r][c];
+          if (ex && ex.kind === 'vbus') SCH[r][c] = { ch:'┼', kind:'cross-bajante', busIdx:ex.busIdx };
+          else SCH[r][c] = { ch:'│', kind:'bajante' };
+        }
       }
+    }
+  }
+  // vias on top of bus-junctions for extra visual weight
+  for (let bi = 0; bi < VBUSES.length; bi++) {
+    SCH[VCC_ROW][VBUSES[bi]] = { ch:'●', kind:'via' };
+    SCH[GND_ROW][VBUSES[bi]] = { ch:'●', kind:'via' };
+  }
+}
+
+// ─── equations ────────────────────────────────────────────────────
+
+function findFreeSpot(textLen) {
+  for (let tries = 0; tries < 50; tries++) {
+    const r = Math.floor(Math.random() * (ROWS - 10)) + 4;
+    const c = Math.floor(Math.random() * (COLS - textLen - 4)) + 2;
+    let ok = true;
+    for (let k = -1; k <= textLen; k++) {
+      const cc = c + k;
+      if (cc < 0 || cc >= COLS) { ok = false; break; }
+      if (SCH[r] && SCH[r][cc]) { ok = false; break; }
+      if (SCH[r-1] && SCH[r-1][cc]) { ok = false; break; }
+      if (SCH[r+1] && SCH[r+1][cc]) { ok = false; break; }
+    }
+    if (lineInfo.some(li => !li.isEmpty && Math.abs(r - li.r) <= 1)) ok = false;
+    if (ok) return { c, r };
+  }
+  return null;
+}
+
+function spawnEquations() {
+  equationLabels = [];
+  const eqs = pieza.equations || [];
+  for (const text of eqs) {
+    const spot = findFreeSpot(text.length);
+    if (spot) {
+      equationLabels.push({
+        text, c: spot.c, r: spot.r,
+        t0: T - Math.random() * 2,
+        life: 6 + Math.random() * 5,
+      });
     }
   }
 }
 
-// ─── helpers ────────────────────────────────────────────────────
+// ─── physics helpers ──────────────────────────────────────────────
 
 function grey(v) {
   const b = Math.round(Math.max(0, Math.min(1, v)) * 255);
   return `rgb(${b},${b},${b})`;
 }
 
-// energy 0..1: 0 = cable (─), 1 = letra del verso. la onda barre boxL → boxR.
 function energyAt(c) {
   if (phase === 'reveal') {
     const d = waveX - c;
-    if (d < 0)          return 0;
-    if (d > FADE_COLS)  return 1;
+    if (d < 0) return 0;
+    if (d > FADE_COLS) return 1;
     return d / FADE_COLS;
   } else if (phase === 'hold') {
     return 1;
   } else {
     const d = hideX - c;
-    if (d < 0)          return 1;
-    if (d > FADE_COLS)  return 0;
+    if (d < 0) return 1;
+    if (d > FADE_COLS) return 0;
     return 1 - d / FADE_COLS;
   }
 }
 
-// pulso continuo a lo largo de una linea (horizontal)
 function pulseAt(c, lineIdx, t) {
   const li = lineInfo[lineIdx];
   if (!li || li.isEmpty) return 0;
@@ -216,12 +304,8 @@ function pulseAt(c, lineIdx, t) {
   const pos      = ((t * speed + phaseOff) % period + period) % period - 20;
   const dx       = c - pos;
   let v = 0;
-  if (modeCfg.square) {
-    v = (dx > -1.5 && dx < 0.5) ? 1 : 0;
-  } else {
-    if (dx > 1) return 0;
-    v = Math.max(0, 1 + dx / modeCfg.pulseTrail);
-  }
+  if (modeCfg.square)              v = (dx > -1.5 && dx < 0.5) ? 1 : 0;
+  else if (dx <= 1)                v = Math.max(0, 1 + dx / modeCfg.pulseTrail);
   if (modeCfg.gain > 1) {
     const f = 0.3 + 0.7 * (c / COLS);
     v *= Math.min(modeCfg.gain, 1 + (modeCfg.gain - 1) * f);
@@ -229,31 +313,37 @@ function pulseAt(c, lineIdx, t) {
   return v;
 }
 
-// pulso vertical para los bajantes
-function vPulseAt(r, t) {
-  const speed  = modeCfg.pulseSpeed * 0.7;
-  const period = ROWS + 20;
-  const pos    = ((t * speed) % period + period) % period - 10;
-  const dy     = r - pos;
-  if (dy > 1) return 0;
-  return Math.max(0, 1 + dy / Math.max(3, modeCfg.pulseTrail));
+function busPulseH(c, t, rowIdx) {
+  const speed  = modeCfg.busSpeed * (rowIdx === 0 ? 1 : -1);
+  const period = COLS + 40;
+  const flow   = ((t * speed) % period + period * 2) % period;
+  const pos    = flow - 20;
+  const dx     = c - pos;
+  if (Math.abs(dx) > 16) return 0;
+  if (dx > 1) return 0;
+  return Math.max(0, 1 + dx / 10);
 }
 
-// ─── modulaciones por modo en celdas del verso ──────────────────
+function busPulseV(r, t, busIdx) {
+  const speed  = modeCfg.busSpeed * 0.7 * (busIdx % 2 === 0 ? 1 : -1);
+  const period = ROWS + 24;
+  const flow   = ((t * speed + busIdx * 9) % period + period * 2) % period;
+  const pos    = flow - 12;
+  const dy     = r - pos;
+  if (dy > 1) return 0;
+  return Math.max(0, 1 + dy / 8);
+}
 
 function modeModulate(ch, baseA, lineIdx, t) {
   if (mode === 'clock' && (ch === '■' || ch === '□')) {
-    const li = lineInfo[lineIdx];
-    if (li) {
-      const k    = (Math.floor(t * 4) + (ch.charCodeAt(0))) % 2 === 0;
-      return baseA * (k ? 1.0 : 0.30);
-    }
+    const k = (Math.floor(t * 4) + ch.charCodeAt(0)) % 2 === 0;
+    return baseA * (k ? 1.0 : 0.30);
   }
   if (mode === 'cap') {
     const li = lineInfo[lineIdx];
     if (li && li.text.indexOf('┤├') >= 0) {
-      const pulse = (Math.sin(t * 4) + 1) / 2;
-      return baseA * (0.55 + 0.45 * pulse);
+      const p = (Math.sin(t * 4) + 1) / 2;
+      return baseA * (0.55 + 0.45 * p);
     }
   }
   if (mode === 'resonance') return baseA * (0.6 + 0.4 * Math.sin(t * 2.8));
@@ -262,16 +352,27 @@ function modeModulate(ch, baseA, lineIdx, t) {
   return baseA;
 }
 
-// ─── cursor ─────────────────────────────────────────────────────
+// ─── cursor ───────────────────────────────────────────────────────
 
-let mx = -1, my = -1;
 canvas.addEventListener('mousemove', e => {
   mx = Math.floor(e.clientX / CW);
   my = Math.floor(e.clientY / LH);
 });
 canvas.addEventListener('mouseleave', () => { mx = -1; my = -1; });
 
-// ─── ruido ambient ──────────────────────────────────────────────
+canvas.addEventListener('click', e => {
+  const cx = Math.floor(e.clientX / CW);
+  const cy = Math.floor(e.clientY / LH);
+  for (let i = 0; i < 18; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const dist  = Math.random() * 10;
+    const dc = (Math.cos(angle) * dist) | 0;
+    const dr = (Math.sin(angle) * dist * 0.5) | 0;
+    sparkEvents.push({ c: cx + dc, r: cy + dr, t0: T, life: 0.4 + Math.random() * 0.8 });
+  }
+});
+
+// ─── ruido ambient ────────────────────────────────────────────────
 
 const LET = "abcdefghijklmnopqrstuvwxyz";
 
@@ -289,14 +390,24 @@ function noiseValue(c, r, t) {
           Math.cos(cc * 0.09 - rr * 0.17 + t * 0.27) + 1) / 2;
 }
 
+function drawSubstrate() {
+  ctx.fillStyle = grey(0.07);
+  for (let r = VCC_ROW + 2; r < GND_ROW - 1; r += 2) {
+    for (let c = 2; c < COLS - 2; c += 3) {
+      if (SCH[r] && SCH[r][c]) continue;
+      ctx.fillText('·', c * CW, r * LH);
+    }
+  }
+}
+
 function drawNoise(t) {
   const gain = modeCfg.noiseGain;
   for (let r = 0; r < ROWS; r++) {
     for (let c = 0; c < COLS; c++) {
       if (SCH[r][c]) continue;
       const v = noiseValue(c, r, t);
-      if (v < 0.55) continue;
-      const a = 0.10 * gain * ((v - 0.55) / 0.45);
+      if (v < 0.62) continue;
+      const a = 0.08 * gain * ((v - 0.62) / 0.38);
       if (a < 0.02) continue;
       const idx = ((c * 3 + r * 7 + (t * 4 | 0)) % 26 + 26) % 26;
       ctx.fillStyle = grey(a);
@@ -305,7 +416,7 @@ function drawNoise(t) {
   }
 }
 
-// ─── render del esquematico ─────────────────────────────────────
+// ─── schematic render ─────────────────────────────────────────────
 
 function drawSchematic(t) {
   for (let r = 0; r < ROWS; r++) {
@@ -315,56 +426,53 @@ function drawSchematic(t) {
       if (!sc) continue;
 
       let ch = sc.ch;
-      let baseA = 0.20;
+      let baseA = 0.22;
       let pulseScale = 0.55;
 
       switch (sc.kind) {
         case 'verse': {
           const e = energyAt(c);
-          if (e >= 0.5) {
-            ch = sc.ch;
-            baseA = 0.88;
-            pulseScale = 0.14;
-          } else {
-            ch = '─';
-            baseA = 0.20 + 0.40 * e;
-            pulseScale = 0.60;
-          }
+          if (e >= 0.5) { ch = sc.ch; baseA = 0.92; pulseScale = 0.12; }
+          else          { ch = '─';    baseA = 0.22 + 0.40 * e; pulseScale = 0.60; }
           break;
         }
-        case 'verse-space': {
-          ch = '─';
-          const e = energyAt(c);
-          baseA = 0.20 + 0.22 * e;
-          pulseScale = 0.55;
-          break;
-        }
-        case 'comp':     baseA = 0.55; pulseScale = 0.45; break;
-        case 'rail':     baseA = 0.22; pulseScale = 0.60; break;
-        case 'junction': baseA = 0.36; pulseScale = 0.45; break;
-        case 'bajante':  baseA = 0.20; pulseScale = 0;    break;
+        case 'verse-space':  ch = '─'; baseA = 0.22 + 0.22 * energyAt(c); break;
+        case 'comp':         baseA = 0.55; pulseScale = 0.45; break;
+        case 'rail':         baseA = 0.24; pulseScale = 0.60; break;
+        case 'junction':     baseA = 0.40; pulseScale = 0.45; break;
+        case 'bajante':      baseA = 0.24; break;
+        case 'cross':        baseA = 0.42; pulseScale = 0.50; break;
+        case 'cross-bajante':baseA = 0.32; break;
+        case 'vcc':          baseA = 0.34; break;
+        case 'gnd':          baseA = 0.34; break;
+        case 'vbus':         baseA = 0.24; break;
+        case 'via':          baseA = 0.65; break;
+        case 'bus-junction': baseA = 0.42; break;
+        case 'label':        baseA = 0.62; break;
       }
 
       let pulseBoost = 0;
-      if (sc.kind === 'bajante') {
-        pulseBoost = vPulseAt(r, t) * 0.45;
-      } else if (sc.lineIdx !== undefined) {
-        pulseBoost = pulseAt(c, sc.lineIdx, t) * pulseScale;
+      if (sc.kind === 'vcc')                              pulseBoost = busPulseH(c, t, 0) * 0.55;
+      else if (sc.kind === 'gnd')                         pulseBoost = busPulseH(c, t, 1) * 0.55;
+      else if (sc.kind === 'vbus' || sc.kind === 'cross-bajante' || sc.kind === 'cross') {
+        pulseBoost = busPulseV(r, t, sc.busIdx ?? 0) * 0.45;
+        if (sc.kind === 'cross' && sc.lineIdx !== undefined) {
+          pulseBoost = Math.max(pulseBoost, pulseAt(c, sc.lineIdx, t) * 0.50);
+        }
       }
+      else if (sc.kind === 'bajante')                     pulseBoost = busPulseV(r, t, 9) * 0.35;
+      else if (sc.kind === 'via' || sc.kind === 'bus-junction')
+        pulseBoost = Math.max(busPulseH(c, t, r === VCC_ROW ? 0 : 1), busPulseV(r, t, VBUSES.indexOf(c))) * 0.35;
+      else if (sc.lineIdx !== undefined)                  pulseBoost = pulseAt(c, sc.lineIdx, t) * pulseScale;
 
       let a = baseA + pulseBoost;
-
-      // celdas del verso reciben modulacion del modo durante hold/reveal
-      if ((sc.kind === 'verse') && energyAt(c) >= 0.5) {
+      if (sc.kind === 'verse' && energyAt(c) >= 0.5) {
         a = modeModulate(sc.ch, a, sc.lineIdx, t);
       }
-
-      // proximidad del cursor ilumina
       if (mx >= 0) {
         const d = Math.hypot((c - mx) * 0.7, (r - my));
         if (d < 7) a += (1 - d/7) * 0.22;
       }
-
       if (a < 0.03) continue;
       ctx.fillStyle = grey(Math.min(1, a));
       ctx.fillText(ch, c * CW, r * LH);
@@ -372,30 +480,225 @@ function drawSchematic(t) {
   }
 }
 
-// ─── probe ──────────────────────────────────────────────────────
+// ─── equations ────────────────────────────────────────────────────
 
-function drawProbe(t) {
+function drawEquations(t) {
+  for (const eq of equationLabels) {
+    const age = t - eq.t0;
+    if (age < 0) continue;
+    if (age > eq.life) {
+      const spot = findFreeSpot(eq.text.length);
+      if (spot) { eq.c = spot.c; eq.r = spot.r; }
+      eq.t0 = t + Math.random() * 2;
+      eq.life = 5 + Math.random() * 5;
+      continue;
+    }
+    let alpha;
+    if (age < 0.7)            alpha = age / 0.7;
+    else if (age > eq.life-1) alpha = Math.max(0, (eq.life - age));
+    else                       alpha = 1;
+    alpha *= 0.5;
+    ctx.fillStyle = grey(alpha);
+    for (let k = 0; k < eq.text.length; k++) {
+      const cc = eq.c + k;
+      if (cc < 0 || cc >= COLS) continue;
+      ctx.fillText(eq.text[k], cc * CW, eq.r * LH);
+    }
+  }
+}
+
+// ─── sparks ──────────────────────────────────────────────────────
+
+const SPARK_CHARS = '*+×•·';
+
+function drawSparks(t) {
+  if (Math.random() < 0.035) {
+    sparkEvents.push({
+      c: Math.floor(Math.random() * COLS),
+      r: Math.floor(Math.random() * ROWS),
+      t0: t,
+      life: 0.18 + Math.random() * 0.35,
+    });
+  }
+  const kept = [];
+  for (const sp of sparkEvents) {
+    const age = t - sp.t0;
+    if (age > sp.life) continue;
+    const a = 1 - age / sp.life;
+    ctx.fillStyle = grey(a * 0.85);
+    const ch = SPARK_CHARS[Math.floor(t * 60 + sp.c + sp.r) % SPARK_CHARS.length];
+    if (sp.c >= 0 && sp.c < COLS && sp.r >= 0 && sp.r < ROWS) {
+      ctx.fillText(ch, sp.c * CW, sp.r * LH);
+    }
+    kept.push(sp);
+  }
+  sparkEvents = kept;
+}
+
+// ─── HUD: clear helper ───────────────────────────────────────────
+
+function clearRect(c0, r0, w, h) {
+  ctx.fillStyle = '#000';
+  ctx.fillRect(c0 * CW, r0 * LH, w * CW, h * LH);
+}
+
+function drawBox(c0, r0, w, h, alpha) {
+  ctx.fillStyle = grey(alpha);
+  ctx.fillText('┌' + '─'.repeat(w - 2) + '┐', c0 * CW, r0 * LH);
+  ctx.fillText('└' + '─'.repeat(w - 2) + '┘', c0 * CW, (r0 + h - 1) * LH);
+  for (let r = r0 + 1; r < r0 + h - 1; r++) {
+    ctx.fillText('│', c0 * CW, r * LH);
+    ctx.fillText('│', (c0 + w - 1) * CW, r * LH);
+  }
+}
+
+// ─── HUD: oscilloscope ───────────────────────────────────────────
+
+const SCOPE_W = 34, SCOPE_H = 7;
+
+function drawOscilloscope(t) {
+  const ox = COLS - SCOPE_W - 2;
+  const oy = ROWS - SCOPE_H - 2;
+  if (ox < 2 || oy < 2) return;
+  clearRect(ox, oy, SCOPE_W, SCOPE_H);
+  drawBox(ox, oy, SCOPE_W, SCOPE_H, 0.42);
+
+  ctx.fillStyle = grey(0.45);
+  ctx.fillText('scope', (ox + 2) * CW, oy * LH);
+
+  const innerW = SCOPE_W - 4;
+  const innerH = SCOPE_H - 3;
+  // axis
+  const midR = oy + 1 + Math.floor(innerH / 2);
+  ctx.fillStyle = grey(0.15);
+  for (let i = 0; i < innerW; i++) ctx.fillText('·', (ox + 2 + i) * CW, midR * LH);
+
+  ctx.fillStyle = grey(0.78);
+  for (let i = 0; i < innerW; i++) {
+    const x = i / innerW;
+    const ph = t * modeCfg.pulseSpeed * 0.5 - x * 6.28 * 2;
+    let y = modeCfg.square ? (Math.sin(ph) > 0 ? -1 : 1) : -Math.sin(ph);
+    if (mode === 'amp')     y *= (0.3 + (i / innerW) * 0.7);
+    if (mode === 'filter')  y *= 0.5;
+    if (mode === 'silence') y *= 0.1;
+    const yIdx = Math.max(0, Math.min(innerH - 1, Math.floor((y + 1) / 2 * (innerH - 1))));
+    ctx.fillText('•', (ox + 2 + i) * CW, (oy + 1 + yIdx) * LH);
+  }
+
+  ctx.fillStyle = grey(0.40);
+  const f = (modeCfg.pulseSpeed * 100).toFixed(1);
+  ctx.fillText(`${f} Hz`, (ox + SCOPE_W - 9) * CW, (oy + SCOPE_H - 1) * LH);
+}
+
+// ─── HUD: probe panel ────────────────────────────────────────────
+
+const PROBE_W = 22, PROBE_H = 7;
+
+function drawProbePanel(t) {
+  const ox = COLS - PROBE_W - 2;
+  const oy = 4;
+  if (ox < 2 || oy + PROBE_H >= ROWS) return;
+  clearRect(ox, oy, PROBE_W, PROBE_H);
+  drawBox(ox, oy, PROBE_W, PROBE_H, 0.42);
+
+  ctx.fillStyle = grey(0.45);
+  ctx.fillText('probe', (ox + 2) * CW, oy * LH);
+
+  const sampC = mx >= 0 ? mx : Math.floor(COLS / 2);
+  const sampR = my >= 0 ? my : Math.floor(ROWS / 2);
+  const v = noiseValue(sampC, sampR, t);
+  const V = (v * 12.34).toFixed(2);
+  const I = (v * 0.45 + 0.05).toFixed(2);
+  const Z = (10 + v * 8).toFixed(1);
+  const phi = Math.floor(v * 360 - 180);
+
+  ctx.fillStyle = grey(0.70);
+  ctx.fillText(`V = ${V} mV`, (ox + 2) * CW, (oy + 1) * LH);
+  ctx.fillText(`I = ${I} mA`, (ox + 2) * CW, (oy + 2) * LH);
+  ctx.fillText(`Z = ${Z} kΩ`, (ox + 2) * CW, (oy + 3) * LH);
+  ctx.fillText(`φ = ${phi}°`,  (ox + 2) * CW, (oy + 4) * LH);
+  ctx.fillStyle = grey(0.35);
+  ctx.fillText(`[ ${mode} ]`, (ox + 2) * CW, (oy + 5) * LH);
+}
+
+// ─── HUD: spectrum ───────────────────────────────────────────────
+
+const SPEC_BARS = 5;
+const SPEC_H    = 14;
+function drawSpectrum(t) {
+  const ox = 2;
+  const oy = 5;
+  if (oy + SPEC_H >= ROWS - 6) return;
+  clearRect(ox - 1, oy - 1, SPEC_BARS * 2 + 2, SPEC_H + 2);
+
+  ctx.fillStyle = grey(0.30);
+  ctx.fillText('spec', ox * CW, (oy - 1) * LH);
+
+  for (let i = 0; i < SPEC_BARS; i++) {
+    const f = (i + 1) / SPEC_BARS;
+    const a = (Math.sin(t * (1 + i * 0.55) + i * 1.3) + 1) / 2;
+    const b = (Math.cos(t * (0.7 + i * 0.4) + i * 2.1) + 1) / 2;
+    const h = Math.max(1, Math.floor((a * 0.65 + b * 0.35) * SPEC_H));
+    for (let j = 0; j < SPEC_H; j++) {
+      const rr = oy + SPEC_H - 1 - j;
+      const cc = ox + i * 2;
+      if (j < h) {
+        const alpha = 0.20 + 0.45 * (j / h);
+        ctx.fillStyle = grey(alpha);
+        ctx.fillText('█', cc * CW, rr * LH);
+      } else {
+        ctx.fillStyle = grey(0.08);
+        ctx.fillText('░', cc * CW, rr * LH);
+      }
+    }
+  }
+}
+
+// ─── cursor probe overlay ────────────────────────────────────────
+
+const HEIGHT_CHARS = '▁▂▃▄▅▆▇█';
+function drawCursorProbe(t) {
   if (mx < 0) return;
   let label;
-  const sc = (mx >= 0 && my >= 0 && my < ROWS && mx < COLS) ? SCH[my][mx] : null;
-  if (sc && sc.kind === 'comp') {
-    label = `${sc.type} = ${COMP_VALUES[sc.type]}`;
-  } else {
+  const sc = (my >= 0 && my < ROWS && mx >= 0 && mx < COLS) ? SCH[my][mx] : null;
+  if (sc && sc.kind === 'comp')      label = `${sc.type} = ${COMP_VALUES[sc.type]}`;
+  else if (sc && sc.kind === 'via')  label = `via ●`;
+  else if (sc && sc.kind === 'vcc')  label = `Vcc = +5.00 V`;
+  else if (sc && sc.kind === 'gnd')  label = `GND = 0.00 V`;
+  else if (sc && sc.kind === 'verse')label = `node "${sc.ch}"`;
+  else {
     const v = noiseValue(mx, my, t);
     label = `${(v * 12.34).toFixed(2)} mV`;
   }
-  ctx.fillStyle = grey(0.78);
+
+  ctx.fillStyle = grey(0.92);
   ctx.fillText('┼', mx * CW, my * LH);
-  ctx.fillStyle = grey(0.58);
+  ctx.fillStyle = grey(0.68);
   ctx.fillText(label, (mx + 2) * CW, Math.max(0, my - 1) * LH);
+
+  probeHistory.push(noiseValue(mx, my, t));
+  if (probeHistory.length > 22) probeHistory.shift();
+  const trc = (my + 1 < ROWS - 1) ? my + 1 : my - 2;
+  ctx.fillStyle = grey(0.55);
+  for (let i = 0; i < probeHistory.length; i++) {
+    const cc = mx + 2 + i;
+    if (cc < 0 || cc >= COLS) continue;
+    const idx = Math.min(7, Math.floor(probeHistory[i] * 8));
+    ctx.fillText(HEIGHT_CHARS[idx], cc * CW, trc * LH);
+  }
 }
 
-function drawStatusBar(t) {
-  ctx.fillStyle = grey(0.30);
-  ctx.fillText(`[ ${mode} ]   t = ${t.toFixed(1)}s`, CW, (ROWS - 2) * LH);
+// ─── status ──────────────────────────────────────────────────────
+
+function drawStatus(t) {
+  ctx.fillStyle = grey(0.40);
+  const fps = (1 / Math.max(0.001, lastDt)).toFixed(0);
+  const eq  = (pieza.equations && pieza.equations[0]) || '';
+  const line = `[ ${mode.padEnd(9)} ]  ${eq.padEnd(18)}  t=${t.toFixed(1)}s  frame=${frame}  ${fps}fps   ·   click=spark · space=skip`;
+  ctx.fillText(line.slice(0, COLS - 2), CW, (ROWS - 2) * LH);
 }
 
-// ─── loop ───────────────────────────────────────────────────────
+// ─── main loop ───────────────────────────────────────────────────
 
 function draw(dt, t) {
   const endX = boxR + 1;
@@ -415,18 +718,26 @@ function draw(dt, t) {
   ctx.font = `${FS}px 'Courier New', monospace`;
   ctx.textBaseline = 'top';
 
+  drawSubstrate();
   drawNoise(t);
   drawSchematic(t);
-  drawProbe(t);
-  drawStatusBar(t);
+  drawEquations(t);
+  drawSparks(t);
+  drawSpectrum(t);
+  drawOscilloscope(t);
+  drawProbePanel(t);
+  drawCursorProbe(t);
+  drawStatus(t);
 }
 
-let lastTs = null, T = 0;
+let lastTs = null;
 function loop(ts) {
   if (!lastTs) lastTs = ts;
   const dt = Math.min((ts - lastTs) / 1000, 0.05);
   lastTs = ts;
+  lastDt = dt;
   T += dt;
+  frame++;
   draw(dt, T);
   requestAnimationFrame(loop);
 }
@@ -436,7 +747,6 @@ window.addEventListener('resize', resize);
 init();
 requestAnimationFrame(loop);
 
-document.addEventListener('click',   init);
 document.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') init(); });
 </script>
 </body>
