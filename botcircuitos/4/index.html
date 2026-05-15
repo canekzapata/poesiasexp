@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>GRAMÁTICA DE CIRCUITOS</title>
+  <title>GRAMÁTICA DE CIRCUITOS — v4 ampliada</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -37,23 +37,40 @@
 function pick(a)   { return a[Math.random() * a.length | 0]; }
 function rv(a, b)  { return (Math.random() * (b - a) + a) | 0; }
 function rf(a, b)  { return +(Math.random() * (b - a) + a).toFixed(1); }
+function maybe(p)  { return Math.random() < p; }
 
+// ── COMPONENTES ───────────────────────────────────────────────
 function resistor() {
   const v = rv(1, 9900);
   const u = v < 1000 ? `${v}Ω` : `${(v/1000).toFixed(1)}kΩ`;
   return { sym:'R', label:`R=${u}`, valor:v, unidad:'Ω', fn:'V=IR',
-    poema:'la resistencia no detiene — convierte el movimiento en calor' };
+    poemas: [
+      'la resistencia no detiene — convierte el movimiento en calor',
+      '(¬_¬) cada Ω es un pequeño impuesto al deseo de fluir',
+      'Joule heating ≈ ego friction · honest dissipation',
+      'mood: termodinámicamente sincero',
+    ]};
 }
 function capacitor() {
   const v = rv(1, 470);
   const u = v < 10 ? `${v}nF` : `${v}µF`;
   return { sym:'C', label:`C=${u}`, valor:v, unidad:'F', fn:'I=C·dV/dt',
-    poema:'el capacitor guarda lo que el río olvida en su prisa' };
+    poemas: [
+      'el capacitor guarda lo que el río olvida en su prisa',
+      '[memory leak: 0.1µF → ∞ s]   ((Vc se resiste a soltar))',
+      'mood: dielectric · slowly charging · slowly forgetting',
+      'tfw RC > attention span ¯\\_(ツ)_/¯',
+    ]};
 }
 function inductor() {
   const v = rv(1, 500);
   return { sym:'L', label:`L=${v}mH`, valor:v, unidad:'H', fn:'V=L·dI/dt',
-    poema:'el inductor resiste el cambio — memoria de la corriente pasada' };
+    poemas: [
+      'el inductor resiste el cambio — memoria de la corriente pasada',
+      'back-EMF = ghost of currents past · Faraday haunting',
+      'L = trauma · self-inductance · (◉_◉) flux linkage detected',
+      'campo magnético almacenado: no es nostalgia, es física',
+    ]};
 }
 function led() {
   const cs = [
@@ -62,32 +79,176 @@ function led() {
   ];
   const c = pick(cs);
   return { sym:'D', label:`LED ${c.color} Vf=${c.vf}V`, valor:c.vf, unidad:'V', fn:`λ=${c.nm}nm`,
-    poema:`la luz a ${c.nm}nm — color que el circuito eligió sin saberlo` };
+    poemas: [
+      `la luz a ${c.nm}nm — color que el circuito eligió sin saberlo`,
+      'photon released · no questions asked · zero refund',
+      `ʕ•ᴥ•ʔ vibe @ ${c.nm}nm — el ${c.color.toLowerCase()} no es metáfora, es física`,
+      'indicator: ON — pls do not perceive · pero te vamos a iluminar igual',
+    ]};
 }
 function transistorNPN() {
   const beta = rv(80, 400);
   return { sym:'Q', label:`Q1 β=${beta} Vbe=0.7V`, valor:beta, unidad:'β', fn:'Ic=β·Ib',
-    poema:'el transistor amplifica también lo que no debería escucharse' };
+    poemas: [
+      'el transistor amplifica también lo que no debería escucharse',
+      '(◉_◉) base · emisor · colector — la santa trinidad del silicio',
+      `β=${beta} ::: amplifying vibes since '47 ::: Bell Labs eterno`,
+      'kT/q ≈ 25.85 mV · la voz mínima de la materia · y la amplificamos',
+    ]};
 }
 function diode() {
   const vf = rf(0.3, 0.7);
   return { sym:'D', label:`D1 Vf=${vf}V`, valor:vf, unidad:'V', fn:'I=Is·(e^V/Vt−1)',
-    poema:'la corriente solo fluye en una dirección — eso es decisión' };
+    poemas: [
+      'la corriente solo fluye en una dirección — eso es decisión',
+      'p · n · junction · trauma · one-way street',
+      '→→→ no refunds · no rewinds · no apologies',
+      'el diodo no piensa: corta. la palabra cortar viene del corazón.',
+    ]};
+}
+
+// ── NUEVOS COMPONENTES ────────────────────────────────────────
+function opamp() {
+  const Aol = rv(80, 130);
+  return { sym:'A', label:`A1 Aol=${Aol}dB`, valor:Aol, unidad:'dB', fn:'Vout=A·(V+−V−)',
+    poemas: [
+      '(∞ gain, ∞ doubt) — virtual ground es un cero que cree en sí mismo',
+      'op-amp.mood: ALWAYS HUNGRY FOR FEEDBACK',
+      `Aol = ${Aol}dB → ∞   reality → ←   ((hegel.exe still running))`,
+      'feedback loop: thought thinking thought thinking thought · recursive',
+    ]};
+}
+function mosfet() {
+  const Vgs = rf(1, 5);
+  return { sym:'Z', label:`M1 Vgs=${Vgs}V`, valor:Vgs, unidad:'V', fn:'Id≈½·μCox·W/L·(Vgs−Vth)²',
+    poemas: [
+      'GATE · DRAIN · SOURCE — toda decisión es un canal o un valle',
+      '(._.) → (⌐■_■)   switch transition complete',
+      'boolean materialism · un electrón a la vez · 14nm de fe',
+      'el MOSFET no fluye: deja fluir o se cierra · ese es su credo',
+    ]};
+}
+function crystal() {
+  const f = pick([32768, 1000000, 4194304, 7372800, 10000000, 16000000]);
+  const fStr = f >= 1000000 ? `${f/1000000}MHz` : `${f/1000}kHz`;
+  return { sym:'X', label:`X1 ${fStr}`, valor:f, unidad:'Hz', fn:`f₀=${fStr}`,
+    poemas: [
+      'el cuarzo no cuenta segundos — los hace',
+      `${fStr} · loyal · always · piezoelectric mood: stable`,
+      'horologio mineral · Curie hermanos · 1880 · still on duty',
+      '(◔‿◔) tick · tock · tick · tock · átomos sincronizados sin permiso',
+    ]};
+}
+function piezo() {
+  const f = rv(500, 4000);
+  return { sym:'P', label:`PZ ${f}Hz`, valor:f, unidad:'Hz', fn:'V↔Δχ (presión)',
+    poemas: [
+      'convierte voltaje en aire — Hertz portátil de bolsillo',
+      `♪♪♪ → ${f}Hz → ondas mecánicas → órbita de tu tímpano`,
+      'sound is just air with intentions and an envelope',
+      '(˃ᴗ˂) acoustic emission · please clap · also: oír es traducir',
+    ]};
+}
+function ldr() {
+  const lux = rv(10, 5000);
+  const R = Math.round(50000 / Math.sqrt(lux));
+  return { sym:'F', label:`LDR ${R}Ω @${lux}lx`, valor:R, unidad:'Ω', fn:'R↓ ⇐ luz↑',
+    poemas: [
+      'resistencia que escucha la luz — sinestesia eléctrica',
+      `CdS · 1940s · still hates darkness · ${lux}lx detectados`,
+      'fotones → conductividad — confianza progresiva en lo visible',
+      '(☀_☀) light input ↑ → resistance ↓ → mood stabilizes',
+    ]};
+}
+function ntc() {
+  const T = rv(0, 100);
+  const R = Math.round(10000 * Math.exp(3950 * (1/(T+273.15) - 1/298.15)));
+  return { sym:'T', label:`NTC ${R}Ω @${T}°C`, valor:R, unidad:'Ω', fn:'R↓ ⇐ T↑',
+    poemas: [
+      'el NTC siente el frío más que tú',
+      'Steinhart-Hart approximation = empatía termodinámica',
+      `((${T}°C → ${R}Ω · feels electric · feels honest))`,
+      'termómetro óhmico de la decepción ambiente',
+    ]};
+}
+function solarCell() {
+  const Voc = rf(0.4, 0.7);
+  const Isc = rv(10, 500);
+  return { sym:'S', label:`SC Voc=${Voc}V Isc=${Isc}mA`, valor:Voc, unidad:'V', fn:'P=Voc·Isc·FF',
+    poemas: [
+      'el sol no factura — solo emite · Becquerel 1839 firmó el contrato',
+      'efecto fotovoltaico · still on payroll · η ≈ 20% · honesto',
+      '(☀_☀) free energy mode (con asterisco · siempre con asterisco)',
+      'el panel piensa: ¿quién paga la factura del sol? ((nadie · todo))',
+    ]};
+}
+function antenna() {
+  const f = rv(50, 2500);
+  const lambda = +(300 / f).toFixed(2);
+  return { sym:'Y', label:`ANT λ/2=${(lambda/2).toFixed(2)}m`, valor:f, unidad:'MHz', fn:`λ=${lambda}m`,
+    poemas: [
+      'la antena no emite — convierte corriente en geometría',
+      `FM mood @ ${f}MHz · (((((vibe)))))`,
+      'Hertz · 1886 · accidentally inventing the future',
+      'estamos dentro del patrón de radiación de alguien — siempre',
+    ]};
+}
+function memristor() {
+  const M = rv(100, 100000);
+  return { sym:'M', label:`MR M=${M}Ω`, valor:M, unidad:'Ω', fn:'M(q)=dφ/dq',
+    poemas: [
+      'memristor: recuerda dónde fluyó la corriente',
+      'Chua 1971 → HP 2008 → la materia con biografía propia',
+      'M(q) ← el cuarto componente · el que dudaba de existir',
+      '((memoria sin programa)) ((escritura sin escriba))',
+    ]};
+}
+function battery() {
+  const v = pick([1.5, 3, 3.7, 9, 12]);
+  const Ah = rf(0.5, 10);
+  const pct = rv(20, 99);
+  return { sym:'B', label:`BAT ${v}V ${Ah}Ah`, valor:v, unidad:'V', fn:'E=V·Q',
+    poemas: [
+      'Volta · 1800 · dos metales y una salmuera · y el mundo cambió',
+      '((energía química → eléctrica · sin preguntas · sin pausa))',
+      `[BAT ${pct}%] mood: cumplidora · pero todo se descarga al final`,
+      'batería = paciencia comprimida en un envase metálico',
+    ]};
+}
+function microphone() {
+  const Z = pick([200, 600, 2200]);
+  return { sym:'U', label:`MIC ${Z}Ω electret`, valor:Z, unidad:'Ω', fn:'p→V',
+    poemas: [
+      'el micrófono no escucha — convierte presión en voltaje',
+      '(◔_◔) listening · always · sin firmar consentimiento',
+      'todo audio es trauma traducido a impedancia',
+      'Wente · 1916 · condensador-oreja · still goes hard',
+    ]};
+}
+function chip555() {
+  const f = rf(0.5, 1000);
+  return { sym:'N', label:`IC 555 f=${f}Hz`, valor:f, unidad:'Hz', fn:'T≈0.693(Ra+2Rb)C',
+    poemas: [
+      '555 · Hans Camenzind · Signetics 1972 · sólo sabía pulsar',
+      '■ HIGH ■ low ■ HIGH ■ low ■   (no preguntas autorizadas)',
+      'el reloj que olvida en cada periodo · chronos en chip',
+      '8 pines · 23 transistores · décadas de relojes baratos y honestos',
+    ]};
 }
 function ground() {
   return { sym:'⏚', label:'GND=0V', valor:0, unidad:'V', fn:'V=0',
-    poema:'la tierra no es el final — es la referencia de todo' };
-}
-function vSource(v) {
-  const val = v || rv(3,24);
-  return { sym:'+', label:`Vcc=${val}V`, valor:val, unidad:'V', fn:'fuente ideal',
-    poema:'la fuente no pregunta qué alimenta — solo da' };
+    poemas: ['la tierra no es el final — es la referencia de todo'] };
 }
 
-const COMP_POOL = [resistor, capacitor, inductor, led, transistorNPN, diode];
+const COMP_POOL = [
+  resistor, capacitor, inductor, led, transistorNPN, diode,
+  opamp, mosfet, crystal, piezo, ldr, ntc,
+  solarCell, antenna, memristor, battery, microphone, chip555,
+];
 
-function nodoSerie(hijos)  { return { tipo:'serie', hijos }; }
-function nodoParalelo(ramas) { return { tipo:'paralelo', ramas }; }
+// ── GRAMÁTICA DE TOPOLOGÍAS ───────────────────────────────────
+function nodoSerie(hijos)     { return { tipo:'serie', hijos }; }
+function nodoParalelo(ramas)  { return { tipo:'paralelo', ramas }; }
 function nodoComponente(comp) { return { tipo:'comp', comp }; }
 
 function genTopologia(prof) {
@@ -132,53 +293,233 @@ function renderNodo(nodo) {
   }
 }
 
+// ── ANÁLISIS ──────────────────────────────────────────────────
 function analizarCircuito(comps, vcc) {
-  const Rs   = comps.filter(c => c.sym==='R');
-  const Cs   = comps.filter(c => c.sym==='C');
-  const Ls   = comps.filter(c => c.sym==='L');
-  const leds = comps.filter(c => c.fn&&c.fn.includes('nm'));
-  const out  = [`  FUENTE:  Vcc = ${vcc}V`];
+  const filt = sym => comps.filter(c => c.sym === sym);
+  const Rs = filt('R'), Cs = filt('C'), Ls = filt('L');
+  const Ms = filt('M'), Xs = filt('X'), Ss = filt('S'), Ns = filt('N');
+  const Bs = filt('B'), Ys = filt('Y'), As = filt('A');
+  const leds = comps.filter(c => c.fn && c.fn.includes('nm'));
+  const out  = [`  FUENTE     :  Vcc = ${vcc}V`];
+  if (Bs.length) out.push(`  BATERÍA    :  ${Bs[0].label}  (paralela a Vcc)`);
+  if (Ss.length) {
+    const p = (Ss[0].valor * 200 / 1000).toFixed(2);
+    out.push(`  SOLAR      :  Voc=${Ss[0].valor}V   P_max ≈ ${p}W   η ≈ 20%`);
+  }
   if (Rs.length) {
     const Rt = Rs.reduce((s,r)=>s+r.valor,0);
-    out.push(`  R total = ${Rt}Ω   I = ${(vcc/Rt*1000).toFixed(2)}mA   P = ${(vcc*vcc/Rt*1000).toFixed(1)}mW`);
+    out.push(`  R total    =  ${Rt}Ω   I = ${(vcc/Rt*1000).toFixed(2)}mA   P = ${(vcc*vcc/Rt*1000).toFixed(1)}mW`);
   }
   if (Cs.length && Rs.length) {
     const R=Rs[0].valor, C=Cs[0].valor;
-    out.push(`  τ = RC = ${(R*C/1e9).toFixed(4)}s   f-3dB = ${(1/(2*Math.PI*R*C/1e9)).toFixed(1)}Hz`);
+    out.push(`  τ = RC     =  ${(R*C/1e9).toFixed(4)}s   f-3dB = ${(1/(2*Math.PI*R*C/1e9)).toFixed(1)}Hz`);
   }
   if (Ls.length && Cs.length) {
     const L=Ls[0].valor/1000, C=Cs[0].valor/1e6;
-    out.push(`  f₀ = 1/2π√LC = ${(1/(2*Math.PI*Math.sqrt(L*C))).toFixed(2)}Hz   ← resonancia`);
+    out.push(`  f₀ LC      =  ${(1/(2*Math.PI*Math.sqrt(L*C))).toFixed(2)}Hz   ← resonancia`);
   }
-  leds.forEach(led => {
-    const R=Rs[0]?.valor||220;
-    out.push(`  ${led.fn}   If = ${((vcc-led.valor)/R*1000).toFixed(1)}mA`);
+  if (Xs.length) {
+    out.push(`  RELOJ      :  f₀ = ${Xs[0].valor}Hz   jitter ≈ 10 ppm   (cuarzo)`);
+  }
+  if (Ns.length) {
+    out.push(`  555 ASTABLE:  f ≈ ${Ns[0].valor}Hz   duty ≈ 50-66%   chronos puro`);
+  }
+  if (Ms.length) {
+    out.push(`  MEMRISTOR  :  M = ${Ms[0].valor}Ω   ((la materia recuerda))`);
+  }
+  if (As.length) {
+    out.push(`  OP-AMP     :  Aol = ${As[0].valor}dB   ((virtual ground habita aquí))`);
+  }
+  if (Ys.length) {
+    out.push(`  ANTENA     :  f = ${Ys[0].valor}MHz   λ/2 disponible   R_rad ≈ 73Ω`);
+  }
+  leds.forEach(l => {
+    const R = Rs[0]?.valor || 220;
+    out.push(`  LED        :  ${l.fn}   If ≈ ${((vcc-l.valor)/R*1000).toFixed(1)}mA`);
   });
-  out.push(`  nodos: ${comps.length}   ramas: ${Math.ceil(comps.length/2)}`);
+  out.push(`  nodos      =  ${comps.length}   ramas ≈ ${Math.ceil(comps.length/2)}`);
   return out.join('\n');
 }
 
-const CONECTORES = ['—','→','∿','∥','⊕','·'];
+// ── CONECTORES Y POEMA ───────────────────────────────────────
+const CONECTORES = [
+  '—', '→', '∿', '∥', '⊕', '·',
+  '≈', '//', '>>>', '∴', '⨂', '↯', '⇌', '◇', '╳', ':::', '⋯',
+];
 
 function poetaCircuito(comps) {
-  return [...comps].sort(()=>Math.random()-0.5)
-    .slice(0, Math.min(3,comps.length))
-    .map(c=>c.poema)
-    .join('\n  '+pick(CONECTORES)+' ');
+  if (!comps.length) comps = [resistor()];
+  const picks = [...comps].sort(()=>Math.random()-0.5).slice(0, Math.min(3, comps.length));
+  return picks.map(c => pick(c.poemas)).join('\n    '+pick(CONECTORES)+' ');
 }
 
+// ── STATUS-LINES (estilo syslog / memético) ─────────────────
+const STATUS_LINES = [
+  () => `[STATUS] flux: ${pick(['locked','searching','glitching','recursive'])}  ·  S/N: ${pick(['solid','¯\\_(ツ)_/¯','crispy','elusive'])}  ·  vibe: ${rf(0.5,99.9)}Hz`,
+  () => `[NET]    routing through ${rv(2,12)} nodes  ·  protocol: undefined  ·  handshake: ${pick(['ok','meh','tbd','none'])}`,
+  () => `[CACHE]  miss · miss · hit · meditation  ·  retention: ${rv(10,99)}%`,
+  () => `[HOOK]   on_resonance: emit(meaning)  ·  on_noise: ignore()  ·  on_silence: panic()`,
+  () => `[ERR]    deseo over impedance — match failed  ·  retry in ${rv(1,99)}ms`,
+  () => `[OK]     gramática parseada  ·  sintaxis exenta de futuro  ·  semántica TBD`,
+  () => `[ECHO]   VSWR = ${pick(['∞','1.0','1.4','2.3'])}  ·  la fuente recibe su propia voz`,
+  () => `[META]   esta señal es leída por una entidad indeterminada  ·  hola`,
+  () => `[FLUX]   dq/dt ≠ 0  ·  algo se está moviendo  ·  algo siempre se está moviendo`,
+  () => `[KITTLER] hardware = lenguaje · lenguaje = hardware · todo es transmisión`,
+  () => `[CHUA]   M(q) updated  ·  la materia anotó algo en su libreta`,
+  () => `[BERGSON] chronos: ${rv(0,9999)}ms  ·  durée: incuantificable · seguimos`,
+  () => `[VIBE]   ((((((((((  ${pick(['ok','off','???','yes'])}  ))))))))))`,
+];
+
+// ── STICKERS (ASCII art memético, ocasional) ─────────────────
+const STICKERS = [
+  '  ░░░ feedback en curso ░░░',
+  '  ▒▒▒ entropy + 1 ▒▒▒',
+  '  · · · sin futuro garantizado · · ·',
+  '  >>> tap tap tap <<<',
+  '  ((( ground common: yes )))',
+  '  ┌─[ ◉ ◉ ]─┐  glitch nominal',
+  '  ╠══ STATUS: parseado pero no comprendido ══╣',
+  '  ▓▓▓ this signal passed through ▓▓▓',
+  '  ═══  Kittler approved  ═══',
+  '  ⌁⌁⌁ chispa registrada @ '+new Date().toISOString().slice(11,19)+' ⌁⌁⌁',
+];
+
+// ── GLOSAS CONTEXTUALES (memético-filosóficas, 5 líneas) ────
+const GLOSAS = {
+  gramatica: { topic: 'TODO ES GRAMÁTICA', lines: [
+    '((todo circuito es una frase que se electrocuta a sí misma))',
+    'Kittler: hay hardware en el lenguaje, hay lenguaje en el hardware.',
+    'cada nodo · una palabra · cada rama · una sintaxis posible',
+    '>> sintáctico OK   //   semántico ¯\\_(ツ)_/¯',
+    '⊕ generar un circuito es agotar una manera de decir.',
+  ]},
+  resonancia: { topic: 'RESONANCIA', lines: [
+    'cada cuerpo tiene su f₀ ·· la Tierra a 7.83 Hz · vos a ¿?',
+    'XL = XC → el sistema deja de oponerse y se vuelve la señal',
+    'Xenakis: la música = nubes que condensan en resonancias',
+    'mood : ∞ Q · cero amortiguamiento · siempre vibrante',
+    '∅ f₀ no se busca · se encuentra · y entonces no se le dice que no',
+  ]},
+  memoria: { topic: 'MEMORIA MATERIAL', lines: [
+    'Leon Chua, 1971: predijo un componente que recordara.',
+    'HP Labs, 2008: la materia, por fin, con biografía propia.',
+    '>> memristor.M(q) ← toda corriente deja una marca',
+    'Stiegler: tertiary retention = la técnica recordando por nosotros',
+    '((cuando la materia escribe sin programa, eso es escritura))',
+  ]},
+  amplificacion: { topic: 'AMPLIFICACIÓN', lines: [
+    'Bell Labs · diciembre · 1947 · tres hombres · un cristal',
+    'el transistor: la primera materia que escucha',
+    'Kittler: no hay medios sin amplificación · kT/q ≈ 25.85 mV',
+    '(◉_◉) la radio, el teléfono, la grabación, vos escuchando',
+    '× amplificar lo que no debería escucharse → arte',
+  ]},
+  disipacion: { topic: 'DISIPACIÓN', lines: [
+    'Joule, 1841: la corriente cobra peaje en calor.',
+    'Prigogine: estructuras disipativas = orden lejos del equilibrio',
+    'R no detiene — convierte movimiento en fonones',
+    'mood : termodinámicamente honesto',
+    '⊗ todo lo que existe está pagando un Ω al universo.',
+  ]},
+  onda: { topic: 'ONDA / SEÑAL', lines: [
+    'Hertz · Karlsruhe · 1886 → chispa sin hilo ← futuro accidental',
+    'Marconi mandó la chispa al Atlántico; nosotros vivimos en ella',
+    'Haraway: ya somos infraestructura electromagnética densa',
+    '>> patrón de radiación // tu wifi // CMB a 2.725 K',
+    '∿ el espacio entero es una sola antena · estás dentro.',
+  ]},
+  decision: { topic: 'DECISIÓN / DIODO', lines: [
+    'el diodo no piensa: corta · una dirección · sin debate',
+    '(┛◉Д◉)┛彡┻━┻   energy band gap · doping · pn-junction',
+    'Schmitt + Otto + 1934 + calamar: histéresis como ética',
+    '>> sí / no · una cosa para entrar · otra para salir',
+    '▲ entre umbrales habita la duda — y la duda es memoria',
+  ]},
+  tiempo: { topic: 'TIEMPO', lines: [
+    'cada τ = RC es un pequeño ritmo doméstico',
+    'Bergson: chronos medido · durée vivido · el 555 fabrica chronos',
+    '>> tick · tock · tick · tock · (no questions asked)',
+    'Bashō habría amado al cuarzo a 32 768 Hz: presente puro',
+    '■ el oscilador no pregunta · solo pulsa · siempre pulsa',
+  ]},
+  fuente: { topic: 'FUENTE / ORIGEN', lines: [
+    'Vcc: el axioma del circuito · sin demostración · sólo da',
+    'Volta, 1800: dos metales · una salmuera · electricidad',
+    '>> energy budget per node // negotiated // accepted',
+    'Spinoza: causa sui · la fuente es su propia explicación',
+    '+ la fuente no pregunta qué alimenta — sólo alimenta.',
+  ]},
+  tierra: { topic: 'REFERENCIA / TIERRA', lines: [
+    'GND no es el final · es la referencia · el cero compartido',
+    '(○_○) toda señal mide en relación a alguien que no se mueve',
+    'Bruno Latour: todo dato es un montaje · GND es el primero',
+    '>> common reference // social contract // 0V',
+    '⏚ la tierra es donde acordamos no preguntar más.',
+  ]},
+  luz: { topic: 'FOTÓN / LUZ', lines: [
+    'Maxwell · 1865: ondas electromagnéticas · la luz como una de ellas',
+    '(☀_☀) E = h·f · cada fotón es un quantum de presencia',
+    'el LED no se enciende: emite — un sustantivo se vuelve verbo',
+    '>> 625nm rojo · 520nm verde · 470nm azul · todos juntos: blanco',
+    '∿ ver es recibir señales que partieron sin destinatario',
+  ]},
+  sonido: { topic: 'SONIDO / TRANSDUCCIÓN', lines: [
+    'el piezo · el micrófono: dos formas de traducir entre dominios',
+    'Pauline Oliveros: deep listening = saber qué dejar pasar',
+    '(˃ᴗ˂) presión → voltaje → presión → tímpano → memoria',
+    '>> todo audio es trauma traducido en impedancia',
+    '♪ Hertz portátil · el aire como soporte temporal del sentido',
+  ]},
+};
+
+function pickGlosa(comps) {
+  const has = sym => comps.some(c => c.sym === sym);
+  const hasNm = comps.some(c => c.fn && c.fn.includes('nm'));
+
+  if (has('L') && has('C')) return GLOSAS.resonancia;
+  if (has('M')) return GLOSAS.memoria;
+  if (has('Y')) return GLOSAS.onda;
+  if (has('X') || has('N')) return GLOSAS.tiempo;
+  if (has('Q') || has('A') || has('Z')) return GLOSAS.amplificacion;
+  if (hasNm) return GLOSAS.luz;
+  if (has('P') || has('U')) return GLOSAS.sonido;
+  if (has('D') && !has('Q')) return GLOSAS.decision;
+  if (has('B') || has('S')) return GLOSAS.fuente;
+  if (has('R') && !has('C') && !has('L')) return GLOSAS.disipacion;
+  return pick([GLOSAS.gramatica, GLOSAS.tierra, GLOSAS.gramatica]);
+}
+
+// ── TAGS ────────────────────────────────────────────────────
+const TAG_POOL = [
+  'circuito', 'señal', 'vibe', 'ruido', 'silencio', 'fase',
+  'kittler', 'bergson', 'chua', 'oliveros', 'flusser',
+  'analog', 'digital', 'biestable', 'asintótico', 'estocástico',
+  'medios', 'gramática', 'glitch', 'feedback', 'impedancia',
+];
+
+function hashtags(vcc) {
+  const n = rv(3, 5);
+  const sel = [...TAG_POOL].sort(()=>Math.random()-0.5).slice(0, n);
+  return [`#circuito`, `#${vcc}v`, ...sel.map(t=>'#'+t)].slice(0, 5).join(' ');
+}
+
+// ── GENERADOR PRINCIPAL ─────────────────────────────────────
 function generar() {
-  const vcc    = pick([3.3,5,9,12,15,24]);
-  const prof   = rv(1,3);
+  const vcc    = pick([3.3, 5, 9, 12, 15, 24]);
+  const prof   = rv(1, 3);
   const arbol  = genTopologia(prof);
   const render = renderNodo(arbol);
   const comps  = render.comps || [];
   const id     = Math.random().toString(36).slice(2,7).toUpperCase();
   const ts     = new Date().toISOString().slice(11,19);
+  const glosa  = pickGlosa(comps);
+  const status = pick(STATUS_LINES)();
+  const tags   = hashtags(vcc);
 
   const out = [
     `> GRAMÁTICA DE CIRCUITOS — GEN #${id}   ${ts}`,
     `  profundidad=${prof}   nodos=${comps.length}   Vcc=${vcc}V`,
+    `  tags: ${tags}`,
     ``,
     `╔══════════════════════════════════════════════════╗`,
     `║  TOPOLOGÍA GENERADA                              ║`,
@@ -186,7 +527,7 @@ function generar() {
     ``,
     `  (+${vcc}V)`,
     `   │`,
-    ...render.lineas.map(l=>`  ${l}`),
+    ...render.lineas.map(l => `  ${l}`),
     `   │`,
     `  GND`,
     ``,
@@ -195,38 +536,47 @@ function generar() {
     analizarCircuito(comps, vcc),
     `  ───────────────────────────────────────────────`,
     ``,
-    `  `+poetaCircuito(comps.length>0?comps:[resistor()]),
+    `  POEMA  ▶  versos cruzados`,
+    `    ` + poetaCircuito(comps.length > 0 ? comps : [resistor()]),
     ``,
-    ...(comps.length>0?[
+    `  ${status}`,
+    ...(maybe(0.55) ? ['', pick(STICKERS)] : []),
+    ``,
+    `  ───────────────────────────────────────────────`,
+    `  GLOSA  ▶  ${glosa.topic}`,
+    ...glosa.lines.map(l => '    ' + l),
+    `  ───────────────────────────────────────────────`,
+    ``,
+    ...(comps.length > 0 ? [
       `  COMPONENTES:`,
-      ...comps.map(c=>`    ${c.sym}  ${c.label.padEnd(24)}  ${c.fn}`),
-    ]:[]),
+      ...comps.map(c => `    ${c.sym}  ${c.label.padEnd(26)}  ${c.fn}`),
+    ] : []),
     ``,
-    `  ─────────────────────────────────────────────`,
     `  [click · space · enter]  →  nuevo circuito`,
   ].join('\n');
 
   return out;
 }
 
+// ── TYPEWRITER ──────────────────────────────────────────────
 let rafId = null;
-let targetText='', displayText='', charIdx=0;
+let targetText = '', displayText = '', charIdx = 0;
 
 function typewrite(text) {
   if (rafId) cancelAnimationFrame(rafId);
-  targetText=text; displayText=''; charIdx=0;
+  targetText = text; displayText = ''; charIdx = 0;
   function step() {
-    for(let i=0;i<4&&charIdx<targetText.length;i++) displayText+=targetText[charIdx++];
-    document.getElementById('out').textContent=displayText;
-    if(charIdx<targetText.length) rafId=requestAnimationFrame(step);
+    for (let i = 0; i < 6 && charIdx < targetText.length; i++) displayText += targetText[charIdx++];
+    document.getElementById('out').textContent = displayText;
+    if (charIdx < targetText.length) rafId = requestAnimationFrame(step);
   }
-  rafId=requestAnimationFrame(step);
+  rafId = requestAnimationFrame(step);
 }
 
 function start() { typewrite(generar()); }
-window.onload=start;
-document.addEventListener('click',start);
-document.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter')start();});
+window.onload = start;
+document.addEventListener('click', start);
+document.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') start(); });
 </script>
 </body>
 </html>
