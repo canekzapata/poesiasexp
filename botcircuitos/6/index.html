@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>circuito.live — v6</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { background: #000; overflow: hidden; height: 100%; cursor: crosshair; }
+    canvas { display: block; }
+    #hint {
+      position: fixed; bottom: 8px; left: 12px;
+      color: rgba(0, 200, 60, 0.40);
+      font: 11px/1.4 'Courier New', monospace;
+      letter-spacing: 0.5px;
+      pointer-events: none;
+      text-shadow: 0 0 6px rgba(0, 255, 65, 0.4);
+    }
+    #hint kbd {
+      display: inline-block; padding: 1px 5px;
+      border: 1px solid rgba(0, 200, 60, 0.4);
+      border-radius: 2px;
+      margin: 0 1px;
+    }
+  </style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hint">
+  <kbd>SPACE</kbd> drop · <kbd>1-6</kbd> escena · <kbd>+/-</kbd> tempo · <kbd>M</kbd> pausa · <kbd>R</kbd> reset
+</div>
+<script>
+'use strict';
+
+// =============================================================
+//   POOLS  ::  todo el contenido vive acá — extensible sin tocar motor
+// =============================================================
+
+const POOLS = {
+  // adjetivos poéticos que califican componentes
+  adj: [
+    'lírico','de duelo','abierto','imposible','tibio','recursivo',
+    'memorioso','sin permiso','autoreferente','futuro','pendiente',
+    'no firmado','huérfano','desbordado','silente','ansioso',
+    'paciente','sin envío','al revés','herido','desclasado',
+    'cómplice','pre-verbal','crepuscular','sin retorno','sostenido',
+    'que olvida','que insiste','del padre','del pueblo','del cuerpo',
+  ],
+
+  // unidades — algunas reales, algunas imposibles
+  unit: [
+    'Ω','kΩ','MΩ','µF','nF','pF','mH','µH',
+    'Hz','kHz','MHz','V','mV','dB','β','ε₀',
+    'ms','µs','mV/°C','Np','Wb','S','dBm','π',
+  ],
+
+  // tipos de componente — reales + mutaciones
+  compType: [
+    'R','C','L','D','Q','A','X','M','Y','Z','N','B','S','F','T','U','P',
+    'R*','C∞','L?','Mφ','Qβ','Aₒ','Xπ',
+  ],
+
+  source: [
+    'el deseo','la pregunta','la noche','el insomnio',
+    'la voz primera','el pulso','una corriente sin nombre',
+    'la chispa antes del nombre','aquello que late en lo oscuro',
+    'la fuente que no se nombra','el sol de la tarde',
+    'el deseo alterno (ir y venir)','lo que despierta antes de mí',
+    'la energía sin factura','la chispa en el dieléctrico',
+  ],
+
+  load: [
+    'el silencio','la tierra','la madrugada','el cauce final',
+    'el cero compartido','la cama vacía','la página en blanco',
+    'el reposo del cuerpo','donde acordamos no preguntar',
+    'el mar al amanecer','el punto que cierra el verso',
+    'la GND donde todo descarga',
+  ],
+
+  ticker: [
+    '[STATUS] flux: locked  ·  S/N: solid',
+    '[NET]    handshake: meh  ·  protocol: undefined',
+    '[CACHE]  miss · miss · hit · meditation',
+    '[KITTLER] hardware = lenguaje',
+    '[CHUA]   M(q) updated  ·  q += ∫i dt',
+    '[BERGSON] durée: incuantificable',
+    '[ERR]    deseo over impedance — match failed',
+    '[OK]     gramática parseada  ·  semántica TBD',
+    '[ECHO]   VSWR = ∞ — la fuente recibe su propia voz',
+    '[VIBE]   (((((( ok ))))))',
+    '[META]   esta señal es leída por una entidad indeterminada',
+    '[FLUX]   dq/dt ≠ 0 — algo se está moviendo',
+    '[HUYGENS] dos péndulos enganchados',
+    '[STIEGLER] tertiary retention engaged',
+    '[OLIVEROS] qué dejar pasar  ·  qué dejar caer',
+    '[FESSENDEN] portadora estable  ·  1906',
+    '[PRIGOGINE] estructura disipativa OK',
+    '[HOOK]   on_resonance: emit(meaning)',
+    '[BUF]    78%  ·  ·  ·  derramando',
+    '[SCAN]   ventana [0.3 .. 0.7]  ·  fuera',
+    '[MEM]    huella iónica detectada',
+    '[CLK]    tick · tock · tick · tock',
+    '[Δφ]     0.85 → 0.42 → 0.10 → LOCKED',
+    '[BAT]    73%  ·  paciencia comprimida',
+    '[WARN]   sobremodulación m > 1',
+    '[FERMI]  paradoja en buffer secundario',
+    '[SIM]    onda estacionaria en ventana 3',
+    '[GAIN]   Av = -gm·Rc  ·  un susurro mueve un grito',
+    '[ANT]    radiando broadside  ·  CMB always there',
+    '[BOOT]   Vcc estable a los 47ms',
+  ],
+
+  cita: [
+    'antes del mensaje, la fase.',
+    'amplificar lo que no debería escucharse.',
+    'el oscilador no pregunta — sólo pulsa.',
+    'cuando el balance se cumple, callamos.',
+    'la materia escribe sin programa.',
+    'todo lo continuo es PWM bien filtrado.',
+    'rectificar es enderezar la fuerza.',
+    'el espacio entero es una sola antena.',
+    'la duda, eléctricamente, también es memoria.',
+    'f₀ no se busca — se encuentra.',
+    'la copia pierde aura pero gana circulación.',
+    'el integrador no responde — acumula.',
+    'una cosa para entrar, otra para salir.',
+    'GND es donde acordamos no preguntar.',
+    'el filtro no censura — pondera.',
+    'adaptar la impedancia es un acto amoroso.',
+    'antes de la fase, el querer.',
+    'el transistor es la primera materia que escucha.',
+    'cada cuerpo tiene su f₀.',
+    'kT/q ≈ 25.85 mV — la voz mínima.',
+  ],
+
+  glosa: [
+    'Kittler: hay hardware en el lenguaje.',
+    'Stiegler: tertiary retention.',
+    'Maturana: autopoiesis eléctrica.',
+    'Prigogine: estructura disipativa.',
+    'Spinoza: omnis determinatio est negatio.',
+    'Latour: dato como montaje.',
+    'Bergson: chronos vs durée.',
+    'Cage 4\'33"  el silencio ya oscila.',
+    'Oliveros: deep listening.',
+    'Haraway: infraestructura electromagnética.',
+    'Bashō habría amado el cuarzo a 32 768 Hz.',
+    'Penzias-Wilson: el universo a 2.725 K.',
+    'Hertz 1886: la primera onda sin hilo.',
+    'Chua 1971: la materia con biografía.',
+    'Bell Labs 1947: la materia que escucha.',
+    'Flusser: el aparato reescribe el código.',
+    'Fessenden 1906: una voz sobre la onda.',
+    'Whitehead: presente = prensión de lo pasado.',
+  ],
+
+  formula: [
+    'V = IR','i = C·dV/dt','V = L·dI/dt',
+    'f₀ = 1/(2π√LC)','τ = RC','Q = ω·L/R',
+    'Av = −gm·Rc','BW = 2·fm','VSWR = (1+|Γ|)/(1−|Γ|)',
+    'E = h·f','λ = c/f','kT/q ≈ 25.85 mV',
+    'Vout = D·Vin','M(q) = dφ/dq','σ² = 4kTRΔf',
+    '|A·β| ≥ 1','Δφ → 0','I·R = V (siempre)',
+    'V(t) = V₀·e^(−t/τ)','f = 1/T','duty = Th/T',
+    'Γ = (ZL−Z₀)/(ZL+Z₀)','R_rad ≈ 73Ω','G ≈ 2.15 dBi',
+  ],
+
+  kaomoji: [
+    '(◉_◉)','(○_○)','(¬_¬)','¯\\_(ツ)_/¯',
+    '(˃ᴗ˂)','(☀_☀)','(◔‿◔)','(._.)','(⌐■_■)',
+    '(((vibe)))','((( ok )))','(┛◉Д◉)┛彡┻━┻','(◕‿◕)',
+  ],
+
+  conector: [
+    'y','hacia','entonces','porque','como si',
+    'después','al fin','a través de','contra',
+    'atravesando','hasta','al pasar por','cuando',
+    'mientras','tras','que cae sobre','sin saber por qué',
+  ],
+};
+
+// =============================================================
+//   GENERATOR  ::  produce fragmentos visuales y textuales
+// =============================================================
+
+function pick(a) { return a[Math.random() * a.length | 0]; }
+function rv(a, b) { return Math.floor(Math.random() * (b - a + 1)) + a; }
+function rf(a, b, d=1) { return +(Math.random() * (b - a) + a).toFixed(d); }
+function maybe(p) { return Math.random() < p; }
+
+// valor numérico "irreal pero posible"
+function val() {
+  const styles = [
+    () => `${rv(1, 999)}`,
+    () => `${rf(0.1, 9.9, 1)}`,
+    () => `∞`,
+    () => `π·${rv(1, 99)}`,
+    () => `?`,
+    () => `${rv(2, 99)}·dt`,
+    () => `aprendido`,
+    () => `${rv(1, 99)}β`,
+    () => `e^${rv(1, 7)}`,
+    () => `~${rv(1, 9)}k`,
+    () => `${rv(1,9)}.${rv(0,9)}·10^${rv(-9, 6)}`,
+  ];
+  return pick(styles)();
+}
+
+function compLabel() {
+  const t = pick(POOLS.compType);
+  const v = val();
+  const u = pick(POOLS.unit);
+  const adj = pick(POOLS.adj);
+  return `${t} = ${v} ${u} :: ${adj}`;
+}
+
+// catálogo de fragmentos de diagrama — cada uno devuelve array de líneas ASCII
+const FRAGMENTS = [
+  // 0. serie 3 etapas con labels al lado
+  () => [
+    `   +Vcc :: ${pick(POOLS.source)}`,
+    `      │`,
+    `   ┌──┴──┐    ${compLabel()}`,
+    `   │  ${pick(POOLS.compType).padEnd(2)} │`,
+    `   └──┬──┘`,
+    `      │`,
+    `   ┌──┴──┐    ${compLabel()}`,
+    `   │  ${pick(POOLS.compType).padEnd(2)} │`,
+    `   └──┬──┘`,
+    `      │`,
+    `   ┌──┴──┐    ${compLabel()}`,
+    `   │  ${pick(POOLS.compType).padEnd(2)} │`,
+    `   └──┬──┘`,
+    `      │`,
+    `     GND :: ${pick(POOLS.load)}`,
+  ],
+
+  // 1. paralelo 2 ramas
+  () => [
+    `       +Vcc :: ${pick(POOLS.source)}`,
+    `          │`,
+    `     ┌────┴────┐`,
+    `     │         │`,
+    `  ┌──┴──┐   ┌──┴──┐`,
+    `  │ ${pick(POOLS.compType).padEnd(2)}  │   │ ${pick(POOLS.compType).padEnd(2)}  │`,
+    `  └──┬──┘   └──┬──┘`,
+    `  ${pick(POOLS.adj).padEnd(11)}   ${pick(POOLS.adj)}`,
+    `     │         │`,
+    `     └────┬────┘`,
+    `          │`,
+    `         GND :: ${pick(POOLS.load)}`,
+  ],
+
+  // 2. filtro RC paso-bajas
+  () => [
+    `   in ──[${pick(POOLS.compType)}=${val()}${pick(POOLS.unit)}]──┬─── ${pick(POOLS.adj)}`,
+    `                          │`,
+    `                       ┌──┴──┐`,
+    `                       │  ${pick(POOLS.compType).padEnd(2)} │   ${val()}${pick(POOLS.unit)}`,
+    `                       └──┬──┘`,
+    `                          │`,
+    `                         GND`,
+    `   τ = ${val()} ${pick(['ms','µs','s'])}   ::  ${pick(POOLS.cita)}`,
+  ],
+
+  // 3. op-amp con realimentación
+  () => [
+    `              ${pick(POOLS.formula)}`,
+    `       ┌──[Rf=${val()}${pick(POOLS.unit)} ${pick(POOLS.adj)}]──┐`,
+    `       │                              │`,
+    `   in ─┤(−)                           │`,
+    `       │   ${pick(['A','A₁','Aₒ','TL072','op-afecto','op-duelo'])}   ├──┴── ${pick(POOLS.adj)}`,
+    `   ───┤(+)`,
+    `       │`,
+    `      GND :: ${pick(POOLS.load)}`,
+  ],
+
+  // 4. 555 black-box
+  () => {
+    const f = val(), pf = pick(['Hz','kHz','π·Hz']);
+    return [
+      `   +Vcc ─┬─────┐ 8`,
+      `         │  ┌──┴──┐`,
+      `         │  │ NE  │`,
+      `       7 ┤  │ 555 │ 3 ├── ${pick(POOLS.adj)}`,
+      `       6 ┤  │     │`,
+      `       2 ┤  └──┬──┘`,
+      `              GND`,
+      `   f ≈ ${f} ${pf}    duty :: ${pick(POOLS.adj)}`,
+    ];
+  },
+
+  // 5. antena dipolo + patrón
+  () => [
+    `       ┄┄┄  λ/4  ┄┄┄`,
+    `   ╔═══════════════╗`,
+    `   ║      ${pick(POOLS.adj).padEnd(8)}  ║`,
+    `   ╚══(alim.)══════╝`,
+    `       ┄┄┄  λ/4  ┄┄┄`,
+    ``,
+    `      .─────────.    ← broadside`,
+    `    .'           '.`,
+    `   ╞══ DIPOLO  ══╡   ${pick(POOLS.cita)}`,
+    `    '.           .'`,
+    `      '─────────'`,
+  ],
+
+  // 6. memristor + glosa
+  () => [
+    `   ─[M = ${val()} ${pick(['Ω','kΩ','Mφ'])}  ${pick(POOLS.adj)}]─`,
+    `   M(q) = dφ/dq    ${pick(POOLS.glosa)}`,
+  ],
+
+  // 7. bridge wheatstone
+  () => [
+    `        +Vcc :: ${pick(POOLS.source)}`,
+    `           │`,
+    `      ┌────┴────┐`,
+    `      │         │`,
+    `   ┌──┴──┐   ┌──┴──┐`,
+    `   │ R1  │   │ R2  │`,
+    `   └──┬──┘   └──┬──┘`,
+    `      │         │`,
+    `      ├── G ────┤    galvanómetro escucha`,
+    `      │         │`,
+    `   ┌──┴──┐   ┌──┴──┐`,
+    `   │ R3  │   │ R4  │`,
+    `   └──┬──┘   └──┬──┘`,
+    `      │         │`,
+    `      └────┬────┘`,
+    `          GND`,
+    `   R₁·R₄ = R₂·R₃  →  ${pick(POOLS.cita)}`,
+  ],
+
+  // 8. oscilador realimentado
+  () => [
+    `   ┌─────────  feedback  ──────────┐`,
+    `   │                               │`,
+    `   ▼                               │`,
+    `  ┌──── ${pick(POOLS.adj).padEnd(12)} ────┐    │`,
+    `  │  ${pick(['A','A·β','op','amp']).padEnd(4)}  ${pick(POOLS.formula).padEnd(18)} │────┤`,
+    `  └──────────────────────────────┘    │`,
+    `   │                                  │`,
+    `   └────── ${pick(['C','L','RC','LC'])} = ${val()} ───────────┘`,
+    `   |A·β| ≥ 1  ::  ${pick(POOLS.cita)}`,
+  ],
+
+  // 9. rectificador puente
+  () => [
+    `     AC ~  ::  ${pick(POOLS.source)}`,
+    `       │`,
+    `  ┌────┴────┐`,
+    `  │         │`,
+    `  ▼D1      ▲D2`,
+    `  ├── + ────┤    voltaje rectificado`,
+    `  ▲D4      ▼D3`,
+    `  │         │`,
+    `  └────┬────┘`,
+    `       │`,
+    `    ┌──┴──┐    ${pick(POOLS.adj)}`,
+    `    │  C  │    ${val()}${pick(POOLS.unit)}`,
+    `    └──┬──┘`,
+    `       │`,
+    `      GND :: ${pick(POOLS.load)}`,
+  ],
+
+  // 10. transistor NPN amp corto
+  () => [
+    `   +Vcc :: ${pick(POOLS.source)}`,
+    `      │`,
+    `   [Rc=${val()}${pick(POOLS.unit)}]  ${pick(POOLS.adj)}`,
+    `      │`,
+    `      ├──── out  ::  ${pick(POOLS.adj)}`,
+    `      │`,
+    `   b ─┤Q  β=${rv(80,400)}`,
+    `      │`,
+    `   [Re=${val()}${pick(POOLS.unit)}]  ${pick(POOLS.adj)}`,
+    `      │`,
+    `     GND`,
+  ],
+
+  // 11. comparador con histéresis
+  () => [
+    `   Vin ──┤(−)`,
+    `         │   ┌─────┐`,
+    `         │   │  A  ├──── Vout (±${rv(5,15)}V)`,
+    `   ┌────(+)  └─────┘`,
+    `   │     │`,
+    `   ├──[R1=${val()}${pick(POOLS.unit)}]── GND`,
+    `   │`,
+    `   └──[R2=${val()}${pick(POOLS.unit)}]── feedback`,
+    `   V_H = +${rv(1,9)}.${rv(0,9)} V    V_L = -${rv(1,9)}.${rv(0,9)} V`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 12. línea con onda estacionaria
+  () => [
+    `   ────[Z₀=${pick([50,75,300])}Ω]══════════[ZL=${val()}Ω]`,
+    ``,
+    `   ∿∿∿|nodo|∿∿∿∿|antinodo|∿∿∿∿|nodo|∿∿∿`,
+    `   0      λ/4       λ/2      3λ/4     λ`,
+    ``,
+    `   Γ = ${rf(-0.9, 0.9, 2)}    VSWR = ${rf(1.1, 9.9, 1)}`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 13. PLL block diagram
+  () => [
+    `   ref(${rv(100,9999)}Hz) ──┐`,
+    `                       │   ┌────┐   ┌────┐   ┌────┐`,
+    `                       ├─▶ │PFD │─▶ │LPF │─▶ │VCO │─┬─ out`,
+    `                       │   └────┘   └────┘   └────┘ │`,
+    `                       │                            │`,
+    `                       └────────┤ ÷ N=${rv(2,256)} │◀─┘`,
+    `   Δφ → 0    ::    ${pick(POOLS.cita)}`,
+  ],
+
+  // 14. fragmento mínimo — un componente solo, gigante
+  () => [
+    `   ─[${compLabel()}]─`,
+  ],
+];
+
+function genDiagram()    { return pick(FRAGMENTS)(); }
+function genTicker()     { return pick(POOLS.ticker); }
+function genCita()       { return pick(POOLS.cita); }
+function genFormula()    { return pick(POOLS.formula); }
+function genKaomoji()    { return pick(POOLS.kaomoji); }
+
+function genGlosa() {
+  const lines = [];
+  lines.push(pick(POOLS.glosa));
+  lines.push(pick(POOLS.glosa));
+  if (maybe(0.5)) lines.push(pick(POOLS.kaomoji) + '  ' + pick(POOLS.cita));
+  else lines.push(pick(POOLS.formula) + '   ::   ' + pick(POOLS.adj));
+  lines.push(pick(POOLS.glosa));
+  lines.push(pick(['∿','⊕','∅','▲','■','×','∫','⊥','≈','→']) + '  ' + pick(POOLS.cita));
+  return lines;
+}
+
+function genStatusBurst() {
+  const n = rv(2, 5);
+  const out = [];
+  for (let i = 0; i < n; i++) out.push(pick(POOLS.ticker));
+  return out;
+}
+
+// =============================================================
+//   CANVAS + FONTS
+// =============================================================
+
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H;
+
+const FONTS = {
+  micro:  "10px 'Courier New', monospace",
+  small:  "12px 'Courier New', monospace",
+  medium: "15px 'Courier New', monospace",
+  large:  "22px 'Courier New', monospace",
+  drop:   "34px 'Courier New', monospace",
+};
+const LH = {
+  micro: 12, small: 16, medium: 20, large: 28, drop: 44,
+};
+const CW = { micro: 6, small: 7.2, medium: 9, large: 13.2, drop: 20.4 };
+
+function measureFonts() {
+  for (const k in FONTS) {
+    ctx.font = FONTS[k];
+    CW[k] = ctx.measureText('M').width;
+  }
+}
+
+function resize() {
+  W = canvas.width  = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+  measureFonts();
+}
+resize();
+window.addEventListener('resize', resize);
+
+function colorFor(name, alpha) {
+  const a = Math.max(0, Math.min(1, alpha));
+  switch (name) {
+    case 'green': return `rgba(0, ${Math.round(255*a)}, ${Math.round(65*a)}, 1)`;
+    case 'dim':   return `rgba(0, ${Math.round(135*a)}, ${Math.round(35*a)}, 1)`;
+    case 'ghost': return `rgba(0, ${Math.round(85*a)}, ${Math.round(22*a)}, 1)`;
+    case 'red':   return `rgba(255, ${Math.round(60*a)}, ${Math.round(50*a)}, ${a})`;
+    case 'amber': return `rgba(255, ${Math.round(170*a)}, ${Math.round(20*a)}, ${a})`;
+    case 'white': return `rgba(${Math.round(200*a)}, ${Math.round(225*a)}, 255, ${a})`;
+    default:      return `rgba(0, ${Math.round(255*a)}, ${Math.round(65*a)}, 1)`;
+  }
+}
+
+// =============================================================
+//   BLOCK  ::  unidad de display
+// =============================================================
+
+class Block {
+  constructor(opts) {
+    this.lines    = opts.lines || [];
+    this.x        = opts.x;
+    this.y        = opts.y;
+    this.font     = opts.font || 'medium';
+    this.color    = opts.color || 'green';
+    this.born     = T;
+    this.life     = opts.life || 8;
+    this.typed    = 0;
+    this.typeSpeed= opts.typeSpeed || 80;
+    this.text     = this.lines.join('\n');
+    this.glitch   = opts.glitch || 0;
+    this.kind     = opts.kind || 'diag';
+    this.drift    = opts.drift || { x: 0, y: 0 };
+  }
+
+  update(dt) {
+    this.typed = Math.min(this.text.length, this.typed + this.typeSpeed * dt);
+    this.x += this.drift.x * dt;
+    this.y += this.drift.y * dt;
+  }
+
+  get age()   { return T - this.born; }
+  get alive() {
+    if (this.age >= this.life) return false;
+    // ticker dies when fully off-screen
+    if (this.kind === 'ticker' && this.x + (this.text.length * CW[this.font]) < -50) return false;
+    return true;
+  }
+
+  get alpha() {
+    const a = this.age;
+    const fadeIn = 0.4;
+    if (a < fadeIn) return a / fadeIn;
+    if (a > this.life - 1.2) return Math.max(0, (this.life - a) / 1.2);
+    return 1;
+  }
+
+  draw() {
+    ctx.font = FONTS[this.font];
+    const lh = LH[this.font];
+    let alpha = this.alpha;
+    if (this.kind === 'ghost') alpha *= 0.35;
+
+    const slice = this.text.slice(0, Math.floor(this.typed));
+    const visLines = slice.split('\n');
+
+    // glitch ocasional: una línea, un char reemplazado por bloque
+    if (this.glitch > 0 && visLines.length > 0 && Math.random() < this.glitch * 0.18) {
+      const li = Math.floor(Math.random() * visLines.length);
+      const line = visLines[li];
+      if (line.length > 0) {
+        const ci = Math.floor(Math.random() * line.length);
+        const gc = '▓░▒█▌▐'[Math.floor(Math.random() * 6)];
+        visLines[li] = line.slice(0, ci) + gc + line.slice(ci + 1);
+      }
+    }
+
+    for (let i = 0; i < visLines.length; i++) {
+      ctx.fillStyle = colorFor(this.color, alpha);
+      ctx.fillText(visLines[i], this.x, this.y + i * lh);
+    }
+
+    // cursor de typewriter parpadeante mientras se está escribiendo
+    if (this.typed < this.text.length && Math.floor(T * 4) % 2 === 0) {
+      const charsInLastLine = (this.text.slice(0, Math.floor(this.typed)).split('\n').pop() || '').length;
+      const cx = this.x + charsInLastLine * CW[this.font];
+      const cy = this.y + (visLines.length - 1) * lh;
+      ctx.fillStyle = colorFor(this.color, alpha);
+      ctx.fillText('█', cx, cy);
+    }
+  }
+}
+
+// =============================================================
+//   ESCENAS
+// =============================================================
+
+const SCENES = {
+  terminal: {
+    name: 'terminal',
+    dur: [22, 38],
+    diagRate: 0.30, tickerRate: 0.6, citaRate: 0.05, bigDropRate: 0.04,
+    maxDiag: 3, glitch: 0, ghostBg: true,
+    diagFonts: ['medium','medium','large'],
+    palette: ['green','green','green','dim'],
+  },
+  mosaico: {
+    name: 'mosaico',
+    dur: [18, 32],
+    diagRate: 0.95, tickerRate: 0.5, citaRate: 0.08, bigDropRate: 0,
+    maxDiag: 6, glitch: 0.05, ghostBg: false,
+    diagFonts: ['small','medium','small','medium'],
+    palette: ['green','green','dim','green'],
+  },
+  glitch: {
+    name: 'glitch',
+    dur: [10, 18],
+    diagRate: 0.55, tickerRate: 1.6, citaRate: 0.22, bigDropRate: 0.20,
+    maxDiag: 4, glitch: 0.55, ghostBg: false,
+    diagFonts: ['small','medium','large'],
+    palette: ['green','red','amber','green','green','red'],
+  },
+  drone: {
+    name: 'drone',
+    dur: [35, 55],
+    diagRate: 0.06, tickerRate: 0.15, citaRate: 0.04, bigDropRate: 0,
+    maxDiag: 2, glitch: 0, ghostBg: true,
+    diagFonts: ['large'],
+    palette: ['green','dim','green'],
+  },
+  cita: {
+    name: 'cita',
+    dur: [16, 26],
+    diagRate: 0.12, tickerRate: 0.4, citaRate: 0.55, bigDropRate: 0.20,
+    maxDiag: 2, glitch: 0, ghostBg: true,
+    diagFonts: ['medium','medium'],
+    palette: ['green','white','green','white'],
+  },
+  ticker: {
+    name: 'ticker',
+    dur: [14, 22],
+    diagRate: 0.04, tickerRate: 2.6, citaRate: 0, bigDropRate: 0,
+    maxDiag: 1, glitch: 0.08, ghostBg: false,
+    diagFonts: ['micro','small'],
+    palette: ['green','dim','amber'],
+  },
+};
+const SCENE_LIST = Object.keys(SCENES);
+
+// =============================================================
+//   ESTADO GLOBAL
+// =============================================================
+
+let T = 0, lastTs = null, lastDt = 0.016;
+let blocks = [];
+let scene = SCENES.terminal;
+let sceneT = 0, sceneDur = 30;
+let tempo = 1;
+let muted = false;
+let acc = { diag: 0, tick: 0, cita: 0, drop: 0 };
+
+// =============================================================
+//   SPAWNERS
+// =============================================================
+
+function pickPos(estW, estH) {
+  for (let i = 0; i < 30; i++) {
+    const x = rv(20, Math.max(20, W - estW - 20));
+    const y = rv(40, Math.max(40, H - estH - 60));
+    let coll = 0;
+    for (const b of blocks) {
+      const bw = (b.lines[0]?.length || 0) * CW[b.font];
+      const bh = b.lines.length * LH[b.font];
+      if (x < b.x + bw && x + estW > b.x && y < b.y + bh && y + estH > b.y) coll++;
+    }
+    if (coll <= 1) return { x, y };
+  }
+  return { x: rv(40, Math.max(40, W - 200)), y: rv(40, Math.max(40, H - 100)) };
+}
+
+function spawnDiagram() {
+  const lines = genDiagram();
+  const font  = pick(scene.diagFonts);
+  const cw    = CW[font], lh = LH[font];
+  const estW  = Math.max(...lines.map(l => l.length)) * cw + 10;
+  const estH  = lines.length * lh + 10;
+  const pos   = pickPos(estW, estH);
+  blocks.push(new Block({
+    lines, x: pos.x, y: pos.y,
+    font, color: pick(scene.palette),
+    life: 6 + Math.random() * 8,
+    typeSpeed: 60 + Math.random() * 100,
+    glitch: scene.glitch,
+    kind: 'diag',
+  }));
+}
+
+function spawnTicker() {
+  const text = genTicker();
+  const font = maybe(0.45) ? 'small' : 'micro';
+  const top  = maybe(0.5);
+  const lh   = LH[font];
+  const y    = top ? 12 + rv(0, 3) * lh : H - 36 - rv(0, 3) * lh;
+  const x    = W;
+  blocks.push(new Block({
+    lines: [text], x, y,
+    font,
+    color: maybe(0.06) ? 'amber' : maybe(0.05) ? 'red' : 'dim',
+    life: 6 + Math.random() * 3,
+    typeSpeed: 280,
+    drift: { x: -75 * tempo, y: 0 },
+    kind: 'ticker',
+    glitch: scene.glitch * 0.5,
+  }));
+}
+
+function spawnCita() {
+  if (maybe(0.30)) return spawnGlosa();
+  const lines = [genCita()];
+  const font  = maybe(0.5) ? 'large' : 'drop';
+  const cw    = CW[font];
+  const estW  = lines[0].length * cw + 20;
+  const x     = rv(20, Math.max(20, W - estW - 20));
+  const y     = rv(80, Math.max(80, H - 200));
+  blocks.push(new Block({
+    lines, x, y,
+    font, color: pick(scene.palette),
+    life: 5 + Math.random() * 4,
+    typeSpeed: 30 + Math.random() * 30,
+    kind: 'cita',
+  }));
+}
+
+function spawnGlosa() {
+  const lines = genGlosa();
+  const font  = 'medium';
+  const cw    = CW[font], lh = LH[font];
+  const estW  = Math.max(...lines.map(l => l.length)) * cw;
+  const pos   = pickPos(estW, lines.length * lh);
+  blocks.push(new Block({
+    lines, x: pos.x, y: pos.y,
+    font,
+    color: maybe(0.4) ? 'white' : 'green',
+    life: 8 + Math.random() * 4,
+    typeSpeed: 40 + Math.random() * 30,
+    kind: 'glosa',
+  }));
+}
+
+function spawnDrop() {
+  const cita = pick(POOLS.cita);
+  const font = 'drop';
+  const cw   = CW[font];
+  const estW = cita.length * cw;
+  const x    = Math.max(20, (W - estW) / 2);
+  const y    = H / 2 - 22;
+  blocks.push(new Block({
+    lines: [cita], x, y,
+    font, color: maybe(0.3) ? 'white' : 'green',
+    life: 4 + Math.random() * 1.5,
+    typeSpeed: 90,
+    kind: 'drop',
+  }));
+  for (let i = 0; i < 3; i++) {
+    spawnStatusBurstAt(rv(30, Math.max(30, W - 250)), rv(30, Math.max(30, H - 150)));
+  }
+}
+
+function spawnStatusBurstAt(x, y) {
+  const lines = genStatusBurst();
+  blocks.push(new Block({
+    lines, x, y,
+    font: 'small',
+    color: maybe(0.5) ? 'amber' : 'dim',
+    life: 2.5 + Math.random() * 1.5,
+    typeSpeed: 280,
+    kind: 'burst',
+    glitch: 0.12,
+  }));
+}
+
+function spawnGhostBackground() {
+  const lines = genDiagram();
+  const font  = maybe(0.4) ? 'large' : 'medium';
+  const cw    = CW[font], lh = LH[font];
+  const estW  = Math.max(...lines.map(l => l.length)) * cw;
+  const x     = Math.max(20, (W - estW) / 2 + rv(-100, 100));
+  const y     = Math.max(40, (H - lines.length * lh) / 2 + rv(-80, 80));
+  blocks.push(new Block({
+    lines, x, y,
+    font, color: 'ghost',
+    life: 18 + Math.random() * 10,
+    typeSpeed: 25,
+    kind: 'ghost',
+  }));
+}
+
+// =============================================================
+//   SCHEDULER + LOOP
+// =============================================================
+
+function startScene(name) {
+  scene = SCENES[name] || SCENES.terminal;
+  sceneT = 0;
+  sceneDur = scene.dur[0] + Math.random() * (scene.dur[1] - scene.dur[0]);
+  acc.diag = acc.tick = acc.cita = acc.drop = 0;
+  if (scene.ghostBg && Math.random() < 0.65) spawnGhostBackground();
+}
+
+function tickScheduler(dt) {
+  if (muted) return;
+  const t = dt * tempo;
+  sceneT += dt;
+  if (sceneT >= sceneDur) {
+    const others = SCENE_LIST.filter(s => s !== scene.name);
+    startScene(pick(others));
+  }
+  const aliveDiag = blocks.filter(b => b.kind === 'diag').length;
+  acc.diag += t;
+  if (acc.diag >= 1 / Math.max(0.01, scene.diagRate) && aliveDiag < scene.maxDiag) {
+    acc.diag = 0;
+    spawnDiagram();
+  }
+  acc.tick += t;
+  if (acc.tick >= 1 / Math.max(0.01, scene.tickerRate)) {
+    acc.tick = 0;
+    spawnTicker();
+  }
+  acc.cita += t;
+  if (scene.citaRate > 0 && acc.cita >= 1 / scene.citaRate) {
+    acc.cita = 0;
+    spawnCita();
+  }
+  acc.drop += t;
+  if (scene.bigDropRate > 0 && acc.drop >= 1 / scene.bigDropRate) {
+    acc.drop = 0;
+    spawnDrop();
+  }
+  if (scene.ghostBg && Math.random() < 0.0008 * tempo) spawnGhostBackground();
+}
+
+function render() {
+  // fade-trail: rastros decaen suaves frame a frame
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+  ctx.fillRect(0, 0, W, H);
+
+  // ordenar para que ghost vaya al fondo
+  blocks.sort((a, b) => {
+    const order = { ghost: 0, burst: 1, ticker: 2, diag: 3, glosa: 4, cita: 5, drop: 6 };
+    return (order[a.kind] || 3) - (order[b.kind] || 3);
+  });
+  for (const b of blocks) b.draw();
+
+  // HUD inferior derecha
+  ctx.font = FONTS.micro;
+  ctx.fillStyle = colorFor('dim', 0.85);
+  const fps = (1 / Math.max(0.001, lastDt)).toFixed(0);
+  const hud = `[${scene.name}]  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  t=${T.toFixed(1)}s${muted ? '  ·  MUTED' : ''}`;
+  ctx.fillText(hud, W - hud.length * CW.micro - 14, H - 12);
+}
+
+function update(dt) {
+  for (const b of blocks) b.update(dt);
+  blocks = blocks.filter(b => b.alive);
+}
+
+function loop(ts) {
+  if (lastTs === null) lastTs = ts;
+  const dt = Math.min((ts - lastTs) / 1000, 0.06);
+  lastTs = ts;
+  lastDt = dt;
+  T += dt;
+
+  tickScheduler(dt);
+  update(dt);
+  render();
+
+  requestAnimationFrame(loop);
+}
+
+// =============================================================
+//   VJ CONTROLS
+// =============================================================
+
+window.addEventListener('keydown', e => {
+  if (e.key === ' ')      { e.preventDefault(); spawnDrop(); return; }
+  if (e.key === 'm' || e.key === 'M') { muted = !muted; return; }
+  if (e.key === 'r' || e.key === 'R') { blocks = []; return; }
+  if (e.key === '+' || e.key === '=') { tempo = Math.min(4, tempo * 1.25); return; }
+  if (e.key === '-' || e.key === '_') { tempo = Math.max(0.1, tempo / 1.25); return; }
+  if (e.key >= '1' && e.key <= '9') {
+    const idx = parseInt(e.key, 10) - 1;
+    if (idx < SCENE_LIST.length) startScene(SCENE_LIST[idx]);
+    return;
+  }
+});
+
+canvas.addEventListener('click', () => spawnDrop());
+
+// =============================================================
+//   ARRANQUE
+// =============================================================
+
+startScene('terminal');
+requestAnimationFrame(loop);
+
+</script>
+</body>
+</html>
