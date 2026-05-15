@@ -80,13 +80,9 @@
   GLOSA
     Dos resistencias y una decisión:
     repartir la tensión como se reparte una herencia.
-    El divisor no inventa nada — sólo elige una proporción,
-    una fracción honesta sin álgebra cósmica.
-    Spinoza, Ética I, prop. 8: omnis determinatio est negatio.
-    Fijar Vout es negar todas las demás Vout posibles —
-    cada nodo intermedio es un mundo descartado.
-    ∿ la tensión se divide como la luz entre dos piedras,
-       como el día entre quien madruga y quien insiste en dormir.
+    Spinoza: omnis determinatio est negatio —
+    fijar Vout es negar todas las demás Vout posibles.
+    ∿ la tensión se divide como la luz entre dos piedras.
 `;
   }
 
@@ -118,15 +114,10 @@
   ───────────────────────────────────────────────
   GLOSA
     El paso-bajas no censura — pondera.
-    Lo agudo no le interesa porque su reactancia capacitiva colapsa;
-    lo grave pasa, intacto, casi sin enterarse del filtro.
     Toda escucha es un filtro: la oreja humana
     es un RC mecánico-neumático centrado cerca de 3 kHz.
-    Pauline Oliveros llamaba a esto deep listening —
-    saber qué frecuencias dejar pasar y cuáles devolver al ruido.
-    → el filtro no detiene la señal — la recuerda más despacio,
-       y en ese retraso, en esa τ pequeña pero firme,
-       le imprime al mundo su propio tiempo.
+    Pauline Oliveros llamó a esto deep listening.
+    → el filtro no detiene la señal, la recuerda más despacio.
 `;
   }
 
@@ -155,18 +146,11 @@
     Xc  =  1/(2π·${f0}·${C}µ) = ${+(1/(2*Math.PI*f0*C/1000000)).toFixed(1)} Ω
   ───────────────────────────────────────────────
   GLOSA
-    En f₀ la inductiva y la capacitiva se anulan:
-    XL = XC, fase cero, todo el circuito se vuelve resistivo.
-    Es el instante en que el sistema deja de oponerse a la señal
-    y se convierte en ella.
-    Iannis Xenakis pensaba la música como nubes estocásticas
-    cuya densidad se condensa, a veces, en resonancias —
-    una ecología de frecuencias propias.
-    Cada cuerpo tiene su f₀: las copas de cristal, los puentes que caen,
-    las moléculas vibrando en su modo infrarrojo,
-    la cavidad de Schumann a 7.83 Hz envolviendo la Tierra.
-    ∅ en la resonancia todo coincide — f₀ no se busca, se encuentra;
-       y cuando llega, no se le puede decir que no.
+    En f₀ la inductiva y la capacitiva se anulan: el sistema
+    deja de oponerse a la señal y se convierte en ella.
+    Xenakis: la música como nubes que condensan en resonancias.
+    Cada cuerpo tiene su f₀ — la Tierra misma a 7.83 Hz (Schumann).
+    ∅ en la resonancia todo coincide — f₀ no se busca, se encuentra.
 `;
   }
 
@@ -208,17 +192,12 @@
     Rin   ≈  ${Rin} kΩ
   ───────────────────────────────────────────────
   GLOSA
-    Bardeen, Brattain, Shockley — Bell Labs, 23 de diciembre de 1947 —
-    descubrieron que un cristal podía decidir cuánto deja pasar.
-    El transistor es la primera materia que escucha
-    y, escuchando, amplifica.
-    Friedrich Kittler: no hay medios sin amplificación,
-    y toda amplificación tiene su ruido propio, ineliminable —
-    el rumor térmico kT/q ≈ 25.85 mV a temperatura ambiente,
-    la voz mínima de la materia hablándose a sí misma.
-    × el transistor amplifica también lo que no debería escucharse,
-       y en esa ganancia involuntaria nace la electrónica del siglo XX:
-       la radio, el teléfono, la grabación, el yo amplificado.
+    Bardeen, Brattain, Shockley — Bell Labs, diciembre de 1947:
+    un cristal aprendió a decidir cuánto deja pasar.
+    El transistor es la primera materia que escucha.
+    Kittler: no hay medios sin amplificación — y toda amplificación
+    tiene su ruido propio, kT/q ≈ 25.85 mV a 300 K.
+    × el transistor amplifica también lo que no debería escucharse.
 `;
   }
 
@@ -251,17 +230,11 @@
     Vout  =  −${Av} × Vin
   ───────────────────────────────────────────────
   GLOSA
-    El nodo (−) es un punto sumamente paciente:
-    el op-amp tira de Vout hasta que ese nodo iguale al (+).
-    Virtual ground — un cero que no es físico sino lógico,
+    El nodo (−) es virtual ground: un cero que no es físico sino lógico,
     sostenido por la ganancia abierta hambrienta de cerrarse.
-    Hegel diría: la negación que constituye el saber;
-    Adorno, la dialéctica negativa como única honestidad posible.
-    La señal entra positiva, sale negada,
-    y entre medio cruza un punto que no existe en la realidad
-    pero define toda la operación.
-    ⊕ la señal entra negada y sale mayor — eso es el pensamiento,
-       que también necesita un cero virtual sobre el cual apalancarse.
+    Hegel: la negación que constituye el saber.
+    La señal entra positiva, sale negada, mayor — ya es pensamiento.
+    ⊕ todo razonar necesita un cero virtual sobre el cual apalancarse.
 `;
   }
 
@@ -301,18 +274,11 @@
     D    =  ${D}%      (duty cycle)
   ───────────────────────────────────────────────
   GLOSA
-    Hans Camenzind, Signetics, 1972 — diseñó un chip
-    que sólo sabía pulsar. Dentro: dos comparadores,
-    un flip-flop, un transistor de descarga.
-    Afuera: Ra, Rb, C — la geometría exterior del tiempo.
+    Hans Camenzind, 1972 — diseñó un chip que sólo sabía pulsar.
     El 555 no tiene memoria larga: olvida en cada periodo.
-    Y sin embargo, ningún reloj del mundo es más honesto que un astable:
-    sube, espera 0.693·(Ra+Rb)·C, baja, espera 0.693·Rb·C, repite.
-    Henri Bergson distinguía chronos —tiempo medido— de durée —tiempo vivido—.
-    El 555 fabrica chronos puro: el más anti-bergsoniano
-    de los osciladores, y por eso el corazón de tantos relojes domésticos.
-    ■ el oscilador no pregunta por qué — sólo pulsa, siempre pulsa,
-       y en su indiferencia construye, segundo a segundo, el cosmos digital.
+    Bergson distinguía chronos —tiempo medido— de durée —tiempo vivido—:
+    el astable es la máquina más anti-bergsoniana posible.
+    ■ no pregunta por qué — sólo pulsa, siempre pulsa.
 `;
   }
 
@@ -349,18 +315,11 @@
     Vg    = ${Vg} V
   ───────────────────────────────────────────────
   GLOSA
-    Samuel Hunter Christie lo describió en 1833;
-    Charles Wheatstone lo popularizó diez años después.
-    La idea es vieja como la balanza egipcia de Anubis:
-    medir lo desconocido sólo con cosas que ya sabemos.
-    R1·Rx = R2·R3 — y cuando se cumple, el galvanómetro calla.
-    Bruno Latour: todo dato es un montaje de mediaciones,
-    el puente es el montaje más elegante,
-    porque transforma una incógnita en una nulidad —
-    el cero del galvanómetro como epistemología portátil.
-    ≈ el puente mide lo desconocido comparándolo con lo conocido —
-       toda ciencia comienza así: con tres referencias estables
-       y la fe de que el cuarto vértice será encontrable.
+    Christie 1833, Wheatstone 1843: medir lo desconocido
+    sólo con cosas que ya sabemos. R1·Rx = R2·R3 — el galvanómetro calla.
+    Latour: todo dato es un montaje de mediaciones;
+    el puente transforma una incógnita en una nulidad.
+    ≈ tres referencias y la fe de que la cuarta será encontrable.
 `;
   }
 
@@ -411,19 +370,10 @@
   ───────────────────────────────────────────────
   GLOSA
     Cuatro diodos: cuatro decisiones sin sujeto.
-    La alterna llega como río que duda hacia los dos lados;
-    el puente la enseña a ir siempre al mismo mar.
-    Rectificar —del latín rectus, recto—
-    no es enderezar la verdad: es enderezar la fuerza.
-    El capacitor guarda cada cresta y rellena el valle
-    con su memoria — RC contra el olvido senoidal.
-    Vilém Flusser pensaría el rectificador como un programa
-    que reescribe el código alterno en código lineal,
-    una traducción con pérdida —la onda completa— y con ganancia
-    —el aparato puede al fin alimentarse de su propia transformación—.
-    ⊕ toda fuente continua es un mito útil:
-       debajo, la onda sigue latiendo a ${2*f}Hz,
-       y si acercás el osciloscopio la verás respirar.
+    Rectificar —del latín rectus, recto— no es enderezar la verdad,
+    es enderezar la fuerza. El capacitor rellena el valle con su memoria.
+    Flusser: el aparato reescribe el código alterno en código lineal.
+    ⊕ toda fuente continua es un mito útil — debajo, la onda sigue a ${2*f}Hz.
 `;
   }
 
@@ -470,19 +420,11 @@
     estado :  biestable — depende de la historia reciente
   ───────────────────────────────────────────────
   GLOSA
-    No toda señal merece respuesta:
-    el Schmitt aprende a no atender al temblor.
-    Otto H. Schmitt, 1934, estudiando el calamar gigante,
-    advirtió que la membrana neuronal usaba histéresis
-    para no disparar dos veces frente al mismo estímulo.
-    Lo trasladó al circuito: una cosa para entrar, otra para salir.
-    Hay umbrales en el oído, en el deseo, en la decisión.
-    Niklas Luhmann llamaría a la banda muerta "indiferencia operativa",
-    el lugar exacto donde el sistema se protege del ruido propio.
-    Kierkegaard, en otra clave, hablaría del instante del salto:
-    aquí el salto es eléctrico, irreversible mientras la señal no caiga.
-    ▲ entre V_L y V_H habita la duda,
-       y la duda, eléctricamente, también es memoria.
+    Otto H. Schmitt, 1934 — estudiando el axón del calamar
+    notó que la membrana usaba histéresis para no disparar dos veces.
+    Una cosa para entrar, otra para salir.
+    Luhmann llamaría a la banda muerta "indiferencia operativa".
+    ▲ entre V_L y V_H habita la duda — y la duda también es memoria.
 `;
   }
 
@@ -527,19 +469,11 @@
     condición Barkhausen  :  |A·β| ≥ 1 ,  ∠A·β = 0
   ───────────────────────────────────────────────
   GLOSA
-    Edwin Colpitts, 1918 — un tanque que se canta a sí mismo.
-    No hay fuente externa de melodía:
-    el ruido térmico basta como primer aliento,
-    y el lazo positivo lo crece hasta un armónico estable.
-    Humberto Maturana lo llamaría autopoiesis eléctrica:
-    un sistema que produce los componentes que lo producen.
-    John Cage lo escucharía como 4'33" en banda estrecha —
-    el silencio, mirado de cerca, ya está oscilando.
-    En cosmología, los modos propios de la cavidad cósmica
-    son colpitts gigantes: el universo tiene su propia f₀,
-    y la radiación de fondo a 2.725 K es su ruido térmico.
-    ∿ todo oscilador es una pregunta que se contesta sola
-       en la frecuencia que su materia permite.
+    Colpitts, 1918 — un tanque que se canta a sí mismo.
+    Sin fuente externa de melodía: el ruido térmico basta como aliento inicial.
+    Maturana: autopoiesis eléctrica — produce los componentes que lo producen.
+    Cage lo escucharía como 4'33" en banda estrecha: el silencio ya oscila.
+    ∿ todo oscilador es una pregunta que se contesta sola.
 `;
   }
 
@@ -571,21 +505,11 @@
     régimen :  fase enganchada , Δφ → constante
   ───────────────────────────────────────────────
   GLOSA
-    Christiaan Huygens, La Haya, febrero de 1665:
-    dos péndulos colgados de la misma viga terminaban —sin saberlo—
-    oscilando en oposición exacta. Lo llamó "sympathie des horloges".
-    El PLL formaliza ese asombro tres siglos después:
-    un detector de fase, un filtro, un oscilador hambriento de referencia.
-    Sincronía no es identidad — es diferencia constante,
-    una fase fija mantenida entre dos tiempos distintos.
-    Bernard Stiegler escribía que toda comunidad técnica
-    es una sincronización de retenciones: PLLs sociales.
-    El GPS funciona porque relojes atómicos en órbita
-    se enganchan a una referencia colectiva; cada satélite,
-    un Huygens silencioso a 20.000 km de altura.
-    ⊕ toda comunicación moderna empieza por engancharse:
-       la radio, el USB, el corazón con otro corazón.
-    Antes del mensaje, la fase. Antes de la fase, el querer.
+    Huygens, La Haya 1665: dos péndulos en la misma viga sincronizándose solos.
+    Sympathie des horloges. El PLL formaliza ese asombro 300 años después.
+    Sincronía no es identidad — es diferencia constante, fase fija.
+    Stiegler: toda comunidad técnica es sincronización de retenciones.
+    ⊕ antes del mensaje, la fase. Antes de la fase, el querer.
 `;
   }
 
@@ -630,20 +554,10 @@
   ───────────────────────────────────────────────
   GLOSA
     Q1 mira a Q2 y dice: serás como yo.
-    No es copia exacta —el error 2/β es la firma del original—
-    pero es la electrónica de la mímesis,
-    el platonismo de los semiconductores:
-    una corriente arquetípica y sus copias en silicio.
-    Toda etapa diferencial vive de este reflejo;
-    todo amplificador operacional empieza con un espejo dentro.
-    Walter Benjamin, en La obra de arte en la era de su reproductibilidad:
-    la copia pierde aura pero gana circulación.
-    El espejo electrónico hace exactamente eso, miles de veces por chip:
-    pierde 2/β, gana ubicuidad.
-    ⊥ representar es siempre desviarse un poco,
-       y esa desviación —pequeña, sistemática—
-       es lo que en arte llamamos estilo
-       y en analógico llamamos offset.
+    No es copia exacta — el error 2/β es la firma del original.
+    Benjamin: la copia pierde aura pero gana circulación;
+    el espejo electrónico hace eso miles de veces por chip.
+    ⊥ la pequeña desviación sistemática es lo que llamamos estilo.
 `;
   }
 
@@ -684,22 +598,11 @@
     en DC :  ganancia → ∞   (requiere Rf en paralelo a C)
   ───────────────────────────────────────────────
   GLOSA
-    El integrador no responde — acumula.
-    A cada instante presente le añade todo el pasado,
-    ponderado en RC, dividido por su propia inercia.
-    Bernard Stiegler diría: tertiary retention,
-    la técnica como exteriorización de la memoria humana.
-    Henri Bergson hablaría de durée — el tiempo no es punto, es flujo.
-    Whitehead, en Process and Reality: la realidad es prensión
-    de ocasiones anteriores; el integrador es una metafísica
-    del proceso reducida a dos componentes.
-    El capacitor escribe en su dieléctrico la integral del nodo:
-    cada microsegundo deja un voltaje, cada voltaje es deuda.
-    Tarkovski filmaba con planos largos por la misma razón:
-    para dejar que el dieléctrico del espectador se cargara.
-    ∫ olvidar es resetear C a tierra —
-       pero la huella iónica queda, residual, espectral,
-       como huella de luz en una emulsión ya revelada.
+    El integrador no responde — acumula. A cada presente le suma
+    todo el pasado, dividido por su propia inercia RC.
+    Stiegler: tertiary retention, técnica como memoria exteriorizada.
+    Whitehead: la realidad es prensión de ocasiones anteriores.
+    ∫ olvidar es resetear C a tierra — la huella iónica permanece.
 `;
   }
 
@@ -737,24 +640,11 @@
     estado  =  ${estado}
   ───────────────────────────────────────────────
   GLOSA
-    Una línea desadaptada devuelve parte de la señal
-    a quien la emitió: ese retorno se llama reflexión en física,
-    eco en acústica, malentendido en literatura.
-    Friedrich Kittler escribe que los medios son canales
-    con impedancia, y toda transmisión deja un residuo —
-    el VSWR es la firma cuantitativa de ese residuo.
-    Marshall McLuhan: el medio es el mensaje;
-    los stubs cuarto-de-onda lo corrigen sintonizando la geometría.
-    Antinodos donde el sentido se agolpa,
-    nodos donde nada parece dicho pero todo se está propagando.
-    Entre dos personas que no terminan en Z₀
-    siempre vibra una onda estacionaria,
-    quieta en apariencia, encendida por dentro.
-    Las ondas gravitacionales detectadas por LIGO en 2015
-    también son una línea de transmisión: el propio espacio-tiempo
-    como cable cósmico de impedancia ≈ 377 Ω (la del vacío).
-    ⊕ adaptar la impedancia —match— es un acto amoroso:
-       hacerse del tamaño de quien escucha.
+    Una línea desadaptada devuelve parte de la señal a quien la emitió:
+    reflexión en física, eco en acústica, malentendido en literatura.
+    Kittler: los medios son canales con impedancia — toda transmisión deja residuo.
+    Entre dos personas que no terminan en Z₀ vibra una onda estacionaria.
+    ⊕ adaptar la impedancia es un acto amoroso: hacerse del tamaño del otro.
 `;
   }
 
@@ -796,22 +686,11 @@
     BW      =  2·fm   =  ${2*fm} kHz
   ───────────────────────────────────────────────
   GLOSA
-    Toda voz necesita una portadora — eso es lo primero.
-    Reginald Fessenden, Brant Rock, Nochebuena de 1906:
-    una voz humana sobre una onda hertziana, por primera vez.
-    Tocó violín, leyó la Biblia, saludó a los barcos en el Atlántico.
-    El mensaje no se transmite: cabalga.
-    Vilém Flusser pensaría que la portadora es el aparato
-    y el mensaje, su programa secreto;
-    Marshall McLuhan, que la portadora ya es contenido a su vez.
-    El índice m mide cuánto te dejás afectar por lo que llevás:
-    m=0 — portadora pura, indiferencia, ruido de fondo;
-    m=1 — entrega máxima, riesgo de sobremodulación,
-    m>1 — distorsión, intermodulación, espurias en el espectro.
-    Claude Shannon, 1948: información es la sorpresa del símbolo;
-    una portadora es la promesa de que algo va a sorprendernos.
-    × hablar es modular: imprimirle al silencio una envolvente
-       y soltarla al espacio sin garantías de demodulación.
+    Fessenden, Nochebuena 1906: una voz humana sobre una onda hertziana,
+    por primera vez. El mensaje no se transmite: cabalga.
+    El índice m mide cuánto te dejás afectar por lo que llevás.
+    Shannon, 1948: la información es la sorpresa del símbolo.
+    × hablar es modular — imprimirle al silencio una envolvente.
 `;
   }
 
@@ -848,21 +727,11 @@
     η      ≈  90 – 97 %   (no hay disipación intencional)
   ───────────────────────────────────────────────
   GLOSA
-    El regulador lineal disipa lo que sobra como un noble culpable;
-    el conmutado, en cambio, recorta el tiempo en rebanadas finísimas
-    y deja que el inductor promedie la verdad por nosotros.
-    L y C son los testigos lentos del switch hambriento.
-    Ilya Prigogine pensaba la termodinámica lejos del equilibrio
-    como la forma natural del orden: estructuras disipativas,
-    sistemas que existen sólo mientras la energía los atraviesa.
-    Un buck no es eficiencia — es coreografía:
-    un baile de microsegundos entre encender y apagar,
-    cuyo promedio nos parece, desde lejos, una línea recta.
-    Norbert Wiener en Cybernetics: el control es modulación
-    del flujo, no su negación.
-    ▲ todo lo que parece continuo —el sonido, la luz, el yo—
-       es probablemente, debajo, un PWM bien filtrado;
-       sólo cambian las constantes L, C y la frecuencia del reloj.
+    El lineal disipa lo que sobra; el conmutado recorta el tiempo en rebanadas
+    y deja que L y C promedien la verdad por nosotros.
+    Prigogine: estructuras disipativas, orden lejos del equilibrio.
+    Wiener: el control es modulación del flujo, no su negación.
+    ▲ todo lo continuo —el sonido, la luz, el yo— es PWM bien filtrado.
 `;
   }
 
@@ -908,27 +777,11 @@
     P_in      =  ${Pin} W   →  E ≈ ${Erad}/r  V/m
   ───────────────────────────────────────────────
   GLOSA
-    Heinrich Hertz, Karlsruhe, 13 de noviembre de 1886:
-    la primera onda de radio cruzó su laboratorio sin hilo,
-    apenas una chispa, apenas un eco al otro lado del cuarto.
-    Hertz no creyó que aquello sirviera para nada práctico.
-    Marconi la mandó al Atlántico; nosotros la habitamos.
+    Hertz, Karlsruhe 1886: la primera onda de radio cruzó su laboratorio sin hilo.
     Una antena no emite: convierte corriente en geometría.
-    Cada dipolo es una pequeña constelación local:
-    máximos perpendiculares, nulos en los extremos,
-    un toroide invisible flotando en el aire de la habitación.
-    Donna Haraway escribió que vivimos en una infraestructura
-    de espectro electromagnético tan densa como el aire mismo —
-    estamos siempre dentro del patrón de radiación de alguien.
-    Penzias y Wilson, Holmdel, Nueva Jersey, 1965:
-    escucharon, sin querer, un zumbido térmico a 2.725 K
-    que venía de todas las direcciones a la vez —
-    el universo entero como antena, su radiación de fondo
-    como aliento residual del big bang.
-    Karlheinz Stockhausen, Kontakte, 1958–60: el aire,
-    el espectro, el espacio del estudio, todo es ya partitura.
-    ∿ el espacio entero es una sola antena,
-       y nosotros estamos, sin excepción, dentro de su patrón.
+    Haraway: vivimos en una infraestructura electromagnética densa como el aire.
+    Penzias y Wilson, 1965 — escucharon el zumbido térmico del universo a 2.725 K.
+    ∿ el espacio entero es una sola antena, y nosotros dentro de su patrón.
 `;
   }
 
@@ -989,7 +842,7 @@
         clearInterval(timer);
         timer = null;
       }
-    }, 6);
+    }, 26);
   }
 
   window.onload = render;
