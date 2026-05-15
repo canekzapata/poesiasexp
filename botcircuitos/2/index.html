@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>GENERADOR DE CIRCUITOS</title>
+  <title>GENERADOR DE CIRCUITOS — v2 ampliada</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -40,6 +40,10 @@
   function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
   function pad(s, n) { return String(s).padEnd(n); }
 
+  // ─────────────────────────────────────────────────────────────────
+  //   CIRCUITOS ORIGINALES (con glosa filosófica ampliada)
+  // ─────────────────────────────────────────────────────────────────
+
   function divisorVoltaje() {
     const V  = rv(5, 48);
     const R1 = rv(1, 220);
@@ -73,7 +77,16 @@
     P     =  ${P} mW
     ratio =  R2/(R1+R2) = ${(R2/(R1+R2)).toFixed(4)}
   ───────────────────────────────────────────────
-  ∿ la tensión se divide — como la luz entre dos piedras
+  GLOSA
+    Dos resistencias y una decisión:
+    repartir la tensión como se reparte una herencia.
+    El divisor no inventa nada — sólo elige una proporción,
+    una fracción honesta sin álgebra cósmica.
+    Spinoza, Ética I, prop. 8: omnis determinatio est negatio.
+    Fijar Vout es negar todas las demás Vout posibles —
+    cada nodo intermedio es un mundo descartado.
+    ∿ la tensión se divide como la luz entre dos piedras,
+       como el día entre quien madruga y quien insiste en dormir.
 `;
   }
 
@@ -103,7 +116,17 @@
     |H(f)| =  1 / √(1 + (f/${f3})²)
     φ(f)   =  −arctan(f/${f3})
   ───────────────────────────────────────────────
-  → el filtro no detiene la señal — la recuerda más despacio
+  GLOSA
+    El paso-bajas no censura — pondera.
+    Lo agudo no le interesa porque su reactancia capacitiva colapsa;
+    lo grave pasa, intacto, casi sin enterarse del filtro.
+    Toda escucha es un filtro: la oreja humana
+    es un RC mecánico-neumático centrado cerca de 3 kHz.
+    Pauline Oliveros llamaba a esto deep listening —
+    saber qué frecuencias dejar pasar y cuáles devolver al ruido.
+    → el filtro no detiene la señal — la recuerda más despacio,
+       y en ese retraso, en esa τ pequeña pero firme,
+       le imprime al mundo su propio tiempo.
 `;
   }
 
@@ -131,7 +154,19 @@
     Xl  =  2π·${f0}·${L}m = ${+(2*Math.PI*f0*L/1000).toFixed(1)} Ω
     Xc  =  1/(2π·${f0}·${C}µ) = ${+(1/(2*Math.PI*f0*C/1000000)).toFixed(1)} Ω
   ───────────────────────────────────────────────
-  ∅ en la resonancia todo coincide — f₀ no se busca, se encuentra
+  GLOSA
+    En f₀ la inductiva y la capacitiva se anulan:
+    XL = XC, fase cero, todo el circuito se vuelve resistivo.
+    Es el instante en que el sistema deja de oponerse a la señal
+    y se convierte en ella.
+    Iannis Xenakis pensaba la música como nubes estocásticas
+    cuya densidad se condensa, a veces, en resonancias —
+    una ecología de frecuencias propias.
+    Cada cuerpo tiene su f₀: las copas de cristal, los puentes que caen,
+    las moléculas vibrando en su modo infrarrojo,
+    la cavidad de Schumann a 7.83 Hz envolviendo la Tierra.
+    ∅ en la resonancia todo coincide — f₀ no se busca, se encuentra;
+       y cuando llega, no se le puede decir que no.
 `;
   }
 
@@ -172,7 +207,18 @@
     Av    ≈  −${Av}           ← ganancia de voltaje
     Rin   ≈  ${Rin} kΩ
   ───────────────────────────────────────────────
-  × el transistor amplifica también lo que no debería escucharse
+  GLOSA
+    Bardeen, Brattain, Shockley — Bell Labs, 23 de diciembre de 1947 —
+    descubrieron que un cristal podía decidir cuánto deja pasar.
+    El transistor es la primera materia que escucha
+    y, escuchando, amplifica.
+    Friedrich Kittler: no hay medios sin amplificación,
+    y toda amplificación tiene su ruido propio, ineliminable —
+    el rumor térmico kT/q ≈ 25.85 mV a temperatura ambiente,
+    la voz mínima de la materia hablándose a sí misma.
+    × el transistor amplifica también lo que no debería escucharse,
+       y en esa ganancia involuntaria nace la electrónica del siglo XX:
+       la radio, el teléfono, la grabación, el yo amplificado.
 `;
   }
 
@@ -204,7 +250,18 @@
     GBW   ≈  ${GBW} MHz
     Vout  =  −${Av} × Vin
   ───────────────────────────────────────────────
-  ⊕ la señal entra negada y sale mayor — eso es el pensamiento
+  GLOSA
+    El nodo (−) es un punto sumamente paciente:
+    el op-amp tira de Vout hasta que ese nodo iguale al (+).
+    Virtual ground — un cero que no es físico sino lógico,
+    sostenido por la ganancia abierta hambrienta de cerrarse.
+    Hegel diría: la negación que constituye el saber;
+    Adorno, la dialéctica negativa como única honestidad posible.
+    La señal entra positiva, sale negada,
+    y entre medio cruza un punto que no existe en la realidad
+    pero define toda la operación.
+    ⊕ la señal entra negada y sale mayor — eso es el pensamiento,
+       que también necesita un cero virtual sobre el cual apalancarse.
 `;
   }
 
@@ -243,7 +300,19 @@
     Tl   =  ${Tl} ms   (salida LOW)
     D    =  ${D}%      (duty cycle)
   ───────────────────────────────────────────────
-  ■ el oscilador no pregunta por qué — solo pulsa, siempre pulsa
+  GLOSA
+    Hans Camenzind, Signetics, 1972 — diseñó un chip
+    que sólo sabía pulsar. Dentro: dos comparadores,
+    un flip-flop, un transistor de descarga.
+    Afuera: Ra, Rb, C — la geometría exterior del tiempo.
+    El 555 no tiene memoria larga: olvida en cada periodo.
+    Y sin embargo, ningún reloj del mundo es más honesto que un astable:
+    sube, espera 0.693·(Ra+Rb)·C, baja, espera 0.693·Rb·C, repite.
+    Henri Bergson distinguía chronos —tiempo medido— de durée —tiempo vivido—.
+    El 555 fabrica chronos puro: el más anti-bergsoniano
+    de los osciladores, y por eso el corazón de tantos relojes domésticos.
+    ■ el oscilador no pregunta por qué — sólo pulsa, siempre pulsa,
+       y en su indiferencia construye, segundo a segundo, el cosmos digital.
 `;
   }
 
@@ -279,20 +348,617 @@
     Estado: ${bal}
     Vg    = ${Vg} V
   ───────────────────────────────────────────────
-  ≈ el puente mide lo desconocido comparándolo con lo conocido
+  GLOSA
+    Samuel Hunter Christie lo describió en 1833;
+    Charles Wheatstone lo popularizó diez años después.
+    La idea es vieja como la balanza egipcia de Anubis:
+    medir lo desconocido sólo con cosas que ya sabemos.
+    R1·Rx = R2·R3 — y cuando se cumple, el galvanómetro calla.
+    Bruno Latour: todo dato es un montaje de mediaciones,
+    el puente es el montaje más elegante,
+    porque transforma una incógnita en una nulidad —
+    el cero del galvanómetro como epistemología portátil.
+    ≈ el puente mide lo desconocido comparándolo con lo conocido —
+       toda ciencia comienza así: con tres referencias estables
+       y la fe de que el cuarto vértice será encontrable.
 `;
   }
+
+  // ─────────────────────────────────────────────────────────────────
+  //   CIRCUITOS NUEVOS — versión 2 ampliada
+  // ─────────────────────────────────────────────────────────────────
+
+  function rectificadorPuente() {
+    const Vac    = rv(6, 24);
+    const C      = rv(100, 4700);
+    const Iload  = rv(20, 500);
+    const f      = pick([50, 60]);
+    const Vpk    = +(Vac * Math.sqrt(2) - 1.4).toFixed(2);
+    const Vripple= +(Iload / (2 * f * C / 1000)).toFixed(2);
+    const Vdc    = +(Vpk - Vripple/2000).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  RECTIFICADOR PUENTE  +  FILTRO CAPACITIVO       ║
+╚══════════════════════════════════════════════════╝
+
+           AC ~ ${Vac}Vrms  @ ${f}Hz
+                    │
+            ┌───────┴───────┐
+            │               │
+           ─┼─ D1          ─┼─ D2
+            ▼               ▲
+            │               │
+            ├───────┬───────┤────── +Vdc
+            │       │       │
+            ▲       │       ▼
+           ─┼─ D4   │      ─┼─ D3
+            │       │       │
+            └───────┴───────┘
+                    │
+                    │     ┌─────┐
+                    ├─────┤  C  │  ${C}µF
+                    │     └──┬──┘
+                              │
+                             GND
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    Vpk      =  ${Vpk} V          (cresta tras dos caídas Vd)
+    Vripple  ≈  ${Vripple} mVpp
+    Vdc      ≈  ${Vdc} V
+    Iload    =  ${Iload} mA
+    fripple  =  ${2*f} Hz         (rectificación de onda completa)
+  ───────────────────────────────────────────────
+  GLOSA
+    Cuatro diodos: cuatro decisiones sin sujeto.
+    La alterna llega como río que duda hacia los dos lados;
+    el puente la enseña a ir siempre al mismo mar.
+    Rectificar —del latín rectus, recto—
+    no es enderezar la verdad: es enderezar la fuerza.
+    El capacitor guarda cada cresta y rellena el valle
+    con su memoria — RC contra el olvido senoidal.
+    Vilém Flusser pensaría el rectificador como un programa
+    que reescribe el código alterno en código lineal,
+    una traducción con pérdida —la onda completa— y con ganancia
+    —el aparato puede al fin alimentarse de su propia transformación—.
+    ⊕ toda fuente continua es un mito útil:
+       debajo, la onda sigue latiendo a ${2*f}Hz,
+       y si acercás el osciloscopio la verás respirar.
+`;
+  }
+
+  function schmittTrigger() {
+    const Vcc = pick([5, 9, 12, 15]);
+    const R1  = rv(10, 100);
+    const R2  = rv(10, 100);
+    const Vh  = +(Vcc * R1 / (R1 + R2)).toFixed(2);
+    const Vl  = +(-Vh).toFixed(2);
+    const Hys = +(Vh - Vl).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  SCHMITT TRIGGER  —  COMPARADOR CON HISTÉRESIS   ║
+╚══════════════════════════════════════════════════╝
+
+                                +Vcc=${Vcc}V
+                                     │
+   Vin ────────────────────────────(−)
+                                ┌────┴────┐
+                                │    A    ├──┬──── Vout (±${Vcc}V)
+   ┌───────────────────────────(+)        │  │
+   │                            └─────────┘  │
+   │                                         │
+   ├──[R1=${R1}kΩ]── GND                     │
+   │                                         │
+   └──[R2=${R2}kΩ]──────────────────────────┘
+
+   transferencia:    Vout
+                      ▲
+                +Vcc ─┤────────┐
+                      │        │
+                      │        │
+                  ────┼────────┼────▶ Vin
+                      │        │
+                      │        │
+                -Vcc ─┤────────┘
+                      │  V_L  V_H
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    V_H    =  +${Vh} V          (umbral de subida)
+    V_L    =   ${Vl} V          (umbral de bajada)
+    ΔHys   =  ${Hys} V          (banda muerta)
+    estado :  biestable — depende de la historia reciente
+  ───────────────────────────────────────────────
+  GLOSA
+    No toda señal merece respuesta:
+    el Schmitt aprende a no atender al temblor.
+    Otto H. Schmitt, 1934, estudiando el calamar gigante,
+    advirtió que la membrana neuronal usaba histéresis
+    para no disparar dos veces frente al mismo estímulo.
+    Lo trasladó al circuito: una cosa para entrar, otra para salir.
+    Hay umbrales en el oído, en el deseo, en la decisión.
+    Niklas Luhmann llamaría a la banda muerta "indiferencia operativa",
+    el lugar exacto donde el sistema se protege del ruido propio.
+    Kierkegaard, en otra clave, hablaría del instante del salto:
+    aquí el salto es eléctrico, irreversible mientras la señal no caiga.
+    ▲ entre V_L y V_H habita la duda,
+       y la duda, eléctricamente, también es memoria.
+`;
+  }
+
+  function colpittsOsc() {
+    const L  = rv(1, 100);
+    const C1 = rv(10, 470);
+    const C2 = rv(10, 470);
+    const Cs = +((C1*C2)/(C1+C2)).toFixed(2);
+    const f0 = +(1000000 / (2 * Math.PI * Math.sqrt(L * Cs))).toFixed(1);
+    return `
+╔══════════════════════════════════════════════════╗
+║  OSCILADOR COLPITTS  —  TANQUE LC CON TAP        ║
+╚══════════════════════════════════════════════════╝
+
+       +Vcc
+         │
+       [Rc]
+         │
+         ├─────────────────── out
+         │
+       ┌─┴─┐
+       │ Q │
+       └─┬─┘
+         │
+   ┌─────┼─────┐
+   │     │     │
+  [L=${pad(L+'mH',5)}] │     │
+   │     │     │
+   ├─────┤     │   tanque resonante
+   │     │     │
+   ├──[C1=${C1}pF]──┤  ← tap
+   │           │
+   ├──[C2=${C2}pF]──┘
+   │
+  GND
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    Cs = C1·C2/(C1+C2) = ${Cs} pF
+    f₀ = 1/(2π√(L·Cs))  =  ${f0} Hz
+    realimentación  :  divisor capacitivo  C1/C2
+    condición Barkhausen  :  |A·β| ≥ 1 ,  ∠A·β = 0
+  ───────────────────────────────────────────────
+  GLOSA
+    Edwin Colpitts, 1918 — un tanque que se canta a sí mismo.
+    No hay fuente externa de melodía:
+    el ruido térmico basta como primer aliento,
+    y el lazo positivo lo crece hasta un armónico estable.
+    Humberto Maturana lo llamaría autopoiesis eléctrica:
+    un sistema que produce los componentes que lo producen.
+    John Cage lo escucharía como 4'33" en banda estrecha —
+    el silencio, mirado de cerca, ya está oscilando.
+    En cosmología, los modos propios de la cavidad cósmica
+    son colpitts gigantes: el universo tiene su propia f₀,
+    y la radiación de fondo a 2.725 K es su ruido térmico.
+    ∿ todo oscilador es una pregunta que se contesta sola
+       en la frecuencia que su materia permite.
+`;
+  }
+
+  function pllLoop() {
+    const fref = rv(100, 9999);
+    const N    = rv(2, 256);
+    const fvco = fref * N;
+    const Kpd  = rf(0.1, 2, 2);
+    const Kvco = rv(100, 9999);
+    return `
+╔══════════════════════════════════════════════════╗
+║  PHASE-LOCKED LOOP  —  PLL                       ║
+╚══════════════════════════════════════════════════╝
+
+   ref(${fref}Hz) ──┐
+                   │   ┌─────┐   ┌─────┐   ┌─────┐
+                   ├──▶│ PFD │──▶│ LPF │──▶│ VCO │──┬── out (${fvco}Hz)
+                   │   └─────┘   └─────┘   └─────┘  │
+                   │                                │
+                   │           ┌───────────┐        │
+                   └───────────┤  ÷ N=${pad(N,3)} ◀──────┘
+                               └───────────┘
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    f_out  =  N · f_ref   =  ${fvco} Hz
+    K_PD   =  ${Kpd} V/rad
+    K_VCO  =  ${Kvco} Hz/V
+    régimen :  fase enganchada , Δφ → constante
+  ───────────────────────────────────────────────
+  GLOSA
+    Christiaan Huygens, La Haya, febrero de 1665:
+    dos péndulos colgados de la misma viga terminaban —sin saberlo—
+    oscilando en oposición exacta. Lo llamó "sympathie des horloges".
+    El PLL formaliza ese asombro tres siglos después:
+    un detector de fase, un filtro, un oscilador hambriento de referencia.
+    Sincronía no es identidad — es diferencia constante,
+    una fase fija mantenida entre dos tiempos distintos.
+    Bernard Stiegler escribía que toda comunidad técnica
+    es una sincronización de retenciones: PLLs sociales.
+    El GPS funciona porque relojes atómicos en órbita
+    se enganchan a una referencia colectiva; cada satélite,
+    un Huygens silencioso a 20.000 km de altura.
+    ⊕ toda comunicación moderna empieza por engancharse:
+       la radio, el USB, el corazón con otro corazón.
+    Antes del mensaje, la fase. Antes de la fase, el querer.
+`;
+  }
+
+  function espejoCorriente() {
+    const Vcc = pick([5, 9, 12, 15]);
+    const Rref= rv(1, 47);
+    const Iref= +((Vcc - 0.7) / Rref).toFixed(3);
+    const beta= rv(80, 400);
+    const Iout= +(Iref * (1 - 2/beta)).toFixed(3);
+    const err = +((Iref - Iout)/Iref * 100).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  ESPEJO DE CORRIENTE  —  PAR NPN                 ║
+╚══════════════════════════════════════════════════╝
+
+           +Vcc = ${Vcc}V
+               │
+           [Rref = ${Rref}kΩ]              [carga]
+               │                              │
+               ├──────────┬───────────────┐   │
+               │          │               │   │
+               ▼          ▼               ▼   │
+             ┌───┐      ┌───┐           ┌───┐ │
+             │ Q1│      │   │           │ Q2│ │
+             └─┬─┘      │   │           └─┬─┘ │
+               │ ───────┘   │             │   │
+               │            │             │   │
+               │            └─────────────┤   │
+               │                          │   │
+               └──────────┬───────────────┘   │
+                          │                   │
+                         GND                  ▼
+                                          a la carga
+
+   (bases comunes — Q1 "diodo-conectado" — β = ${beta})
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    I_ref  ≈  (Vcc − Vbe) / Rref   =  ${Iref} mA
+    I_out  ≈  ${Iout} mA            (error ≈ 2/β ≈ ${err}%)
+    Z_out  alta — la salida fija I, no V
+  ───────────────────────────────────────────────
+  GLOSA
+    Q1 mira a Q2 y dice: serás como yo.
+    No es copia exacta —el error 2/β es la firma del original—
+    pero es la electrónica de la mímesis,
+    el platonismo de los semiconductores:
+    una corriente arquetípica y sus copias en silicio.
+    Toda etapa diferencial vive de este reflejo;
+    todo amplificador operacional empieza con un espejo dentro.
+    Walter Benjamin, en La obra de arte en la era de su reproductibilidad:
+    la copia pierde aura pero gana circulación.
+    El espejo electrónico hace exactamente eso, miles de veces por chip:
+    pierde 2/β, gana ubicuidad.
+    ⊥ representar es siempre desviarse un poco,
+       y esa desviación —pequeña, sistemática—
+       es lo que en arte llamamos estilo
+       y en analógico llamamos offset.
+`;
+  }
+
+  function integradorOpAmp() {
+    const R  = rv(1, 100);
+    const C  = rv(1, 470);
+    const tau= +(R * C / 1000).toFixed(3);
+    const fcorte = +(1000000 / (2*Math.PI*R*C)).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  INTEGRADOR  —  OP-AMP                           ║
+╚══════════════════════════════════════════════════╝
+
+                          C = ${C} nF
+              ┌──────[ ═══════ ]──────┐
+              │                       │
+   in ──[${pad(R+'kΩ',5)}]───────┬──(−)             │
+                            │   ┌─────┐    │
+                            │   │  A  ├────┴── out
+                           GND  └─(+)─┘
+                                  │
+                                 GND
+
+   respuesta a escalón:
+       Vin ──┐
+             │_________________
+       Vout
+             ╲
+              ╲___ pendiente = −Vin/(RC)
+                  ╲___
+                      ╲___
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    Vout(t) = − 1/(R·C) · ∫ Vin(t) dt
+    τ        =  R·C    =  ${tau} ms
+    f_corte ≈  1/(2π·R·C)  =  ${fcorte} Hz
+    en DC :  ganancia → ∞   (requiere Rf en paralelo a C)
+  ───────────────────────────────────────────────
+  GLOSA
+    El integrador no responde — acumula.
+    A cada instante presente le añade todo el pasado,
+    ponderado en RC, dividido por su propia inercia.
+    Bernard Stiegler diría: tertiary retention,
+    la técnica como exteriorización de la memoria humana.
+    Henri Bergson hablaría de durée — el tiempo no es punto, es flujo.
+    Whitehead, en Process and Reality: la realidad es prensión
+    de ocasiones anteriores; el integrador es una metafísica
+    del proceso reducida a dos componentes.
+    El capacitor escribe en su dieléctrico la integral del nodo:
+    cada microsegundo deja un voltaje, cada voltaje es deuda.
+    Tarkovski filmaba con planos largos por la misma razón:
+    para dejar que el dieléctrico del espectador se cargara.
+    ∫ olvidar es resetear C a tierra —
+       pero la huella iónica queda, residual, espectral,
+       como huella de luz en una emulsión ya revelada.
+`;
+  }
+
+  function lineaTransmision() {
+    const Z0 = pick([50, 75, 300, 600]);
+    const ZL = rv(10, 1200);
+    const f  = rv(1, 3000);
+    const eps= +rf(1.0, 2.5, 2);
+    const v  = +(3e8 / Math.sqrt(eps) / 1e6).toFixed(1);
+    const lambda = +(v / f).toFixed(2);
+    const G  = (ZL - Z0)/(ZL + Z0);
+    const VSWR = +((1 + Math.abs(G))/(1 - Math.abs(G))).toFixed(2);
+    const estado = Math.abs(G) < 0.1 ? 'adaptada — sin eco' : 'desadaptada — eco hacia la fuente';
+    return `
+╔══════════════════════════════════════════════════╗
+║  LÍNEA DE TRANSMISIÓN  —  ONDA ESTACIONARIA      ║
+╚══════════════════════════════════════════════════╝
+
+   fuente ───[Z₀=${Z0}Ω]══════════════════[ZL=${ZL}Ω]
+                       ↑          ↑          ↑
+                     nodo     antinodo     nodo
+                     |V|min     |V|max     |V|min
+
+   │∿∿∿│       │∿∿∿│       │∿∿∿│       │∿∿∿│
+   ────────────────────────────────────────────────▶ x
+   0          λ/4         λ/2         3λ/4         λ
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    f       =  ${f} MHz
+    εr      =  ${eps}        v = c/√εr = ${v}·10⁶ m/s
+    λ       =  ${lambda} m
+    Γ       =  (ZL − Z₀)/(ZL + Z₀)  =  ${G.toFixed(3)}
+    VSWR    =  ${VSWR}
+    estado  =  ${estado}
+  ───────────────────────────────────────────────
+  GLOSA
+    Una línea desadaptada devuelve parte de la señal
+    a quien la emitió: ese retorno se llama reflexión en física,
+    eco en acústica, malentendido en literatura.
+    Friedrich Kittler escribe que los medios son canales
+    con impedancia, y toda transmisión deja un residuo —
+    el VSWR es la firma cuantitativa de ese residuo.
+    Marshall McLuhan: el medio es el mensaje;
+    los stubs cuarto-de-onda lo corrigen sintonizando la geometría.
+    Antinodos donde el sentido se agolpa,
+    nodos donde nada parece dicho pero todo se está propagando.
+    Entre dos personas que no terminan en Z₀
+    siempre vibra una onda estacionaria,
+    quieta en apariencia, encendida por dentro.
+    Las ondas gravitacionales detectadas por LIGO en 2015
+    también son una línea de transmisión: el propio espacio-tiempo
+    como cable cósmico de impedancia ≈ 377 Ω (la del vacío).
+    ⊕ adaptar la impedancia —match— es un acto amoroso:
+       hacerse del tamaño de quien escucha.
+`;
+  }
+
+  function moduladorAM() {
+    const fc = rv(500, 1600);
+    const fm = rv(1, 15);
+    const m  = +rf(0.1, 0.95, 2);
+    const Pc = rv(50, 500);
+    const Pt = +(Pc * (1 + m*m/2)).toFixed(1);
+    return `
+╔══════════════════════════════════════════════════╗
+║  MODULADOR AM  —  PORTADORA + MENSAJE            ║
+╚══════════════════════════════════════════════════╝
+
+   mensaje μ(t) ──┐
+   (audio)        │
+                  ▼
+              ┌───────┐
+              │   ×   │────── s(t) = [1 + m·μ(t)] · cos(2π·fc·t)
+              │       │
+              └───────┘
+                  ▲
+   portadora cos(2π·fc·t) ──┘
+   (RF)
+
+   espectro:
+        fc−fm        fc        fc+fm
+          ▼          ▼           ▼
+   ───────┃──────────╋───────────┃──────── f
+         LSB     portadora      USB
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    fc      =  ${fc} kHz       (portadora)
+    fm      =  ${fm} kHz        (mensaje)
+    m       =  ${m}            (índice de modulación)
+    Pc      =  ${Pc} W          (potencia de portadora)
+    Pt      =  ${Pt} W         (total con bandas laterales)
+    BW      =  2·fm   =  ${2*fm} kHz
+  ───────────────────────────────────────────────
+  GLOSA
+    Toda voz necesita una portadora — eso es lo primero.
+    Reginald Fessenden, Brant Rock, Nochebuena de 1906:
+    una voz humana sobre una onda hertziana, por primera vez.
+    Tocó violín, leyó la Biblia, saludó a los barcos en el Atlántico.
+    El mensaje no se transmite: cabalga.
+    Vilém Flusser pensaría que la portadora es el aparato
+    y el mensaje, su programa secreto;
+    Marshall McLuhan, que la portadora ya es contenido a su vez.
+    El índice m mide cuánto te dejás afectar por lo que llevás:
+    m=0 — portadora pura, indiferencia, ruido de fondo;
+    m=1 — entrega máxima, riesgo de sobremodulación,
+    m>1 — distorsión, intermodulación, espurias en el espectro.
+    Claude Shannon, 1948: información es la sorpresa del símbolo;
+    una portadora es la promesa de que algo va a sorprendernos.
+    × hablar es modular: imprimirle al silencio una envolvente
+       y soltarla al espacio sin garantías de demodulación.
+`;
+  }
+
+  function buckConverter() {
+    const Vin = pick([12, 24, 48]);
+    const D   = +rf(0.1, 0.9, 2);
+    const fsw = rv(50, 1000);
+    const L   = rv(10, 470);
+    const C   = rv(10, 470);
+    const Vout= +(D * Vin).toFixed(2);
+    const Iout= rv(100, 3000);
+    const dIL = +(Vout*(1-D)/(fsw*L) * 1000).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  BUCK CONVERTER  —  REDUCTOR DC-DC               ║
+╚══════════════════════════════════════════════════╝
+
+   Vin=${Vin}V ──[ SW ]──┬───[L=${L}µH]───┬───── Vout=${Vout}V
+                        │                │
+                       ─┴─ D            ─┴─
+                        ▲              [C=${C}µF]
+                        │                │
+                       GND              GND
+
+           PWM @ ${fsw} kHz ,  D = ${D}
+           ▓▓▓▓▓░░░░░▓▓▓▓▓░░░░░▓▓▓▓▓░░░░░▓▓▓▓▓
+           on  off    on  off    on  off    on
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    Vout   =  D · Vin     =  ${Vout} V
+    Iout   ≈  ${Iout} mA
+    ΔIL    ≈  ${dIL} mA   (ripple en el inductor)
+    η      ≈  90 – 97 %   (no hay disipación intencional)
+  ───────────────────────────────────────────────
+  GLOSA
+    El regulador lineal disipa lo que sobra como un noble culpable;
+    el conmutado, en cambio, recorta el tiempo en rebanadas finísimas
+    y deja que el inductor promedie la verdad por nosotros.
+    L y C son los testigos lentos del switch hambriento.
+    Ilya Prigogine pensaba la termodinámica lejos del equilibrio
+    como la forma natural del orden: estructuras disipativas,
+    sistemas que existen sólo mientras la energía los atraviesa.
+    Un buck no es eficiencia — es coreografía:
+    un baile de microsegundos entre encender y apagar,
+    cuyo promedio nos parece, desde lejos, una línea recta.
+    Norbert Wiener en Cybernetics: el control es modulación
+    del flujo, no su negación.
+    ▲ todo lo que parece continuo —el sonido, la luz, el yo—
+       es probablemente, debajo, un PWM bien filtrado;
+       sólo cambian las constantes L, C y la frecuencia del reloj.
+`;
+  }
+
+  function antenaDipolo() {
+    const f   = rv(50, 2500);
+    const lambda = +(300 / f).toFixed(2);
+    const L   = +(lambda / 2).toFixed(2);
+    const Rrad= 73;
+    const Pin = rv(1, 500);
+    const Erad= +(Math.sqrt(30*Pin)).toFixed(2);
+    return `
+╔══════════════════════════════════════════════════╗
+║  ANTENA DIPOLO  λ/2  —  PATRÓN DE RADIACIÓN      ║
+╚══════════════════════════════════════════════════╝
+
+              ┄┄┄  λ/4 = ${(L/2).toFixed(2)}m  ┄┄┄
+        ╔════════════════════════╗
+        ║                        ║
+   ═════╝       (alimentación)   ╚═════
+              ↑              ↑
+              │              │
+              ─── coaxial ───
+              ┄┄┄  λ/4 = ${(L/2).toFixed(2)}m  ┄┄┄
+
+   patrón en plano E  (toroide visto de perfil):
+                       ▲
+                  .─────────.
+                .'           '.
+               /     ●●●●●     \\        ← máx. broadside
+              ╞═════ DIPOLO ════╡        ← nulo en los extremos
+               \\     ●●●●●     /
+                '.           .'
+                  '─────────'
+                       ▼
+
+  ───────────────────────────────────────────────
+  ANÁLISIS
+    f         =  ${f} MHz
+    λ         =  ${lambda} m
+    L total   =  λ/2   =  ${L} m
+    R_rad     ≈  ${Rrad} Ω    (resistencia de radiación ideal)
+    G         ≈  2.15 dBi
+    P_in      =  ${Pin} W   →  E ≈ ${Erad}/r  V/m
+  ───────────────────────────────────────────────
+  GLOSA
+    Heinrich Hertz, Karlsruhe, 13 de noviembre de 1886:
+    la primera onda de radio cruzó su laboratorio sin hilo,
+    apenas una chispa, apenas un eco al otro lado del cuarto.
+    Hertz no creyó que aquello sirviera para nada práctico.
+    Marconi la mandó al Atlántico; nosotros la habitamos.
+    Una antena no emite: convierte corriente en geometría.
+    Cada dipolo es una pequeña constelación local:
+    máximos perpendiculares, nulos en los extremos,
+    un toroide invisible flotando en el aire de la habitación.
+    Donna Haraway escribió que vivimos en una infraestructura
+    de espectro electromagnético tan densa como el aire mismo —
+    estamos siempre dentro del patrón de radiación de alguien.
+    Penzias y Wilson, Holmdel, Nueva Jersey, 1965:
+    escucharon, sin querer, un zumbido térmico a 2.725 K
+    que venía de todas las direcciones a la vez —
+    el universo entero como antena, su radiación de fondo
+    como aliento residual del big bang.
+    Karlheinz Stockhausen, Kontakte, 1958–60: el aire,
+    el espectro, el espacio del estudio, todo es ya partitura.
+    ∿ el espacio entero es una sola antena,
+       y nosotros estamos, sin excepción, dentro de su patrón.
+`;
+  }
+
+  // ─────────────────────────────────────────────────────────────────
+  //   ORQUESTACIÓN
+  // ─────────────────────────────────────────────────────────────────
 
   const encabezados = [
     `> GENERADOR DE ESQUEMAS v0.${rv(1,9)}  —  CIRCUITO POÉTICO`,
     `> CIRCUIT DIAGRAM GEN  —  SEÑAL ACTIVA`,
     `> ESQUEMA #{n}  —  PULSO DETECTADO`,
     `> MODO: DIAGRAMA  —  f={f}Hz  T={t}ms`,
+    `> NODO ACTIVO #{n}  —  GLOSA EN ESPERA`,
+    `> CIRCUITO COMO ESCRITURA  —  v0.{n}`,
+    `> ESQUEMA #{n}  —  MATERIA SEÑALADA`,
+    `> KITTLER MODE  —  canal abierto @ {f}Hz`,
+    `> DEEP LISTENING  —  S/N por calcular`,
+    `> ESTRUCTURA DISIPATIVA #{n}  —  Prigogine ON`,
+    `> SIMONDON LOOP  —  individuación técnica en curso`,
+    `> BERGSON CLOCK  —  durée @ {t}ms`,
   ];
 
   const generadores = [
+    // originales
     divisorVoltaje, filtroPasaBajas, resonadorRLC,
     amplificadorNPN, opAmpInversor, astable555, puente,
+    // nuevos
+    rectificadorPuente, schmittTrigger, colpittsOsc, pllLoop,
+    espejoCorriente, integradorOpAmp, lineaTransmision,
+    moduladorAM, buckConverter, antenaDipolo,
   ];
 
   let count = 0;
@@ -314,14 +980,16 @@
     const texto = encabezado() + '\n' + pick(generadores)();
     let i = 0;
     timer = setInterval(() => {
-      if (i < texto.length) {
+      // dos chars por tick — texto más largo, ritmo de máquina de escribir mantenido
+      for (let k = 0; k < 2 && i < texto.length; k++) {
         out.textContent += texto[i++];
-        out.parentElement.scrollTop = out.parentElement.scrollHeight;
-      } else {
+      }
+      out.parentElement.scrollTop = out.parentElement.scrollHeight;
+      if (i >= texto.length) {
         clearInterval(timer);
         timer = null;
       }
-    }, 9);
+    }, 6);
   }
 
   window.onload = render;
