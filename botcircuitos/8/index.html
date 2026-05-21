@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>circuito.live — v6</title>
+  <title>circuito.live — v7</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { background: #000; overflow: hidden; height: 100%; cursor: crosshair; }
@@ -21,12 +21,25 @@
       border-radius: 2px;
       margin: 0 1px;
     }
+    /* tipografías oldschool CP437 — viven en aisentencesondigitalart/ */
+    @font-face { font-family:'SperryPC';        src:url(../../aisentencesondigitalart/Px437_SperryPC_8x16.ttf);    font-display:swap; }
+    @font-face { font-family:'Robotron';        src:url(../../aisentencesondigitalart/Px437_Robotron_A7100.ttf);   font-display:swap; }
+    @font-face { font-family:'OlivettiThin';    src:url(../../aisentencesondigitalart/Px437_OlivettiThin_8x16.ttf);font-display:swap; }
+    @font-face { font-family:'SiemensPCD';      src:url(../../aisentencesondigitalart/Px437_Siemens_PC-D.ttf);     font-display:swap; }
+    @font-face { font-family:'ApricotPortable'; src:url(../../aisentencesondigitalart/Px437_ApricotPortable.ttf);  font-display:swap; }
+    @font-face { font-family:'Compis';          src:url(../../aisentencesondigitalart/Px437_Compis.ttf);           font-display:swap; }
+    @font-face { font-family:'IBM_Model3x';     src:url(../../aisentencesondigitalart/Px437_IBM_Model3x_Alt3.ttf); font-display:swap; }
+    @font-face { font-family:'IBM_PS55';        src:url(../../aisentencesondigitalart/Px437_IBM_PS-55_re.ttf);     font-display:swap; }
+    @font-face { font-family:'Stingray';        src:url(../../aisentencesondigitalart/Px437_CL_Stingray_8x19.ttf); font-display:swap; }
+    @font-face { font-family:'ToshibaSat';      src:url(../../aisentencesondigitalart/PxPlus_ToshibaSat_8x14.ttf); font-display:swap; }
+    @font-face { font-family:'HP150';           src:url(../../aisentencesondigitalart/PxPlus_HP_150_re.ttf);       font-display:swap; }
+    @font-face { font-family:'Paradise132';     src:url(../../aisentencesondigitalart/Px437_Paradise132_7x9.ttf);  font-display:swap; }
   </style>
 </head>
 <body>
 <canvas id="c"></canvas>
 <div id="hint">
-  <kbd>SPACE</kbd> drop · <kbd>1-9</kbd> escena · <kbd>+/-</kbd> tempo · <kbd>M</kbd> pausa · <kbd>R</kbd> reset · <kbd>F</kbd> floater · <kbd>S</kbd> sonido
+  <kbd>SPACE</kbd> drop · <kbd>1-9</kbd> escena · <kbd>+/-</kbd> tempo · <kbd>M</kbd> pausa · <kbd>R</kbd> reset · <kbd>F</kbd> floater · <kbd>S</kbd> sonido · <kbd>P</kbd> perc · <kbd>T</kbd> tipo
 </div>
 <script src="tone.js"></script>
 <script>
@@ -326,6 +339,98 @@ const POOLS = {
     '∿','⊕','∅','▲','■','×','∫','⊥','≈','→',
   ],
 };
+
+// ── expansión v7 :: sonido, ritmo, síntesis ──────────────────
+POOLS.adj.push(
+  'sincopado','a contratiempo','en bucle','desafinado','cuantizado',
+  'sin cuantizar','de cinta magnética','modular','de baja frecuencia',
+  'saturado','con reverb larga','en mute','de la caja de ritmos',
+  'filtrado','con eco','en fase','fuera de fase','de onda cuadrada',
+  'que repica','metronómico','arrítmico','del compás perdido',
+);
+POOLS.verbo.push(
+  'sincroniza','cuantiza','satura','modula','barre','pulsa',
+  'repite','samplea','distorsiona','secuencia','enclava','deriva',
+);
+POOLS.compType.push('VCO','VCF','VCA','LFO','SEQ','ENV','DLY','VOX','CLK','MIX');
+POOLS.unit.push('cents','steps','LFO/s','dB SPL','semitonos','compases');
+POOLS.source.push(
+  'el primer golpe del compás','la cinta que gira sin fin',
+  'el oscilador recién encendido','un metrónomo en otra pieza',
+  'el zumbido de 50 Hz de la pared','la nota pedal que no cesa',
+);
+POOLS.load.push(
+  'el silencio entre dos golpes','la cola de un reverb que se apaga',
+  'el último step del secuenciador','la cinta llegando a su final',
+  'el fundido a negro del sonido',
+);
+POOLS.ticker.push(
+  '[SEQ]    16 pasos · compás cerrado',
+  '[VCO]    sawtooth caliente · sin afinar',
+  '[VCF]    cutoff barriendo el deseo',
+  '[ADSR]   release tendiendo a infinito',
+  '[GATE]   on · off · on · duda',
+  '[CLAP]   reverb de gimnasio vacío',
+  '[MOOG]   resonancia al borde de aullar',
+  '[TR-808] cassette del conurbano',
+  '[PATCH]  cable suelto · hum @ 50 Hz',
+  '[VOCODER] la voz pasa por el peine de bandas',
+  '[SIDECHAIN] el kick respira por todos',
+  '[BPM]    pulso del compás: estable',
+  '[DRUM]   máquina sin baterista',
+  '[TAPE]   wow & flutter dentro de norma',
+  '[QUANTIZE] el error rítmico, perdonado',
+  '[MUTE]   canal 3 en silencio voluntario',
+  '[REICH]  fase deslizándose · +2 ms',
+  '[ENO]    sistema que se cuida solo',
+);
+POOLS.cita.push(
+  'la percusión es el reloj que sí confiesa.',
+  'todo beat es una decisión que se repite.',
+  'el silencio entre dos golpes también suena.',
+  'el oscilador no miente: oscila.',
+  'sincronizar dos cuerpos es ajustar el tempo.',
+  'un loop es una memoria que aceptó repetirse.',
+  'el ruido blanco contiene todas las palabras.',
+  'afinar es perdonar a la cuerda.',
+  'el delay es la nostalgia del sonido.',
+  'cuantizar es decidir cuándo dejó de importar el error.',
+  'el filtro pasa-altos deja ir lo grave del recuerdo.',
+  'el compás es una jaula que elegimos habitar.',
+  'una caja de ritmos sueña con tener manos.',
+  'el sostenido es una pregunta que no baja.',
+);
+POOLS.glosa.push(
+  'Russolo: el arte de los ruidos, 1913.',
+  'Schaeffer: el objeto sonoro existe sin su causa.',
+  'Eno: música como sistema que se cuida solo.',
+  'Reich: la fase se desliza y nace la forma.',
+  'Xenakis: la arquitectura también es partitura.',
+  'Daphne Oram: dibujar el sonido sobre la cinta.',
+  'Delia Derbyshire: cinta cortada con bisturí.',
+  'Wendy Carlos: el sintetizador como voz interior.',
+  'Halim El-Dabh: la primera música de cinta, 1944.',
+  'Suzanne Ciani: el Buchla como criatura viva.',
+  'Éliane Radigue: el drone como paciencia hecha onda.',
+);
+POOLS.formula.push(
+  'f = 440·2^(n/12)','BPM = 60 / T_beat','pitch = log₂(f/f_ref)',
+  'cutoff = f₀·2^(env)','T_loop = pasos / (BPM/60)',
+  'φ_kick = 0 en el downbeat','duty → timbre','Δt_swing = ±ε',
+);
+POOLS.epoch.push(
+  'Colonia 1951','París 1948','Londres 1958','Nueva York 1965',
+  'Detroit 1985','Berlín 1975','el galpón','la pieza con eco',
+  'el estudio de cinta','la sala de máquinas',
+);
+POOLS.ping.push(
+  'kick','hat','snare','clap','seq','bpm','loop','gate',
+  'cue','tap','swing','♪','♩','█','░',
+);
+POOLS.kaomoji.push(
+  '♪(◔◡◔)','(っ◔◡◔)っ ♬','[ ▮▮▯▮ ]','((( bpm )))',
+  '(•_•)>⌐■-■','{ loop }','<<< seq >>>','¬_¬ tic-tac',
+);
 
 // =============================================================
 //   GENERATOR  ::  produce fragmentos visuales y textuales
@@ -706,6 +811,128 @@ const FRAGMENTS = [
   ],
 ];
 
+// ── fragmentos NUEVOS v7 :: síntesis, ritmo, sonido (29-39) ───
+FRAGMENTS.push(
+  // 29. envolvente ADSR
+  () => [
+    `   amp`,
+    `    |   /\\`,
+    `    |  /  \\_______`,
+    `    | /          \\___`,
+    `    |/               \\`,
+    `    +------------------- t`,
+    `     A   D    S       R`,
+    `   envolvente :: ${pick(POOLS.adj)}`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 30. cadena de síntesis VCO → VCF → VCA
+  () => [
+    `   ┌─────┐   ┌─────┐   ┌─────┐`,
+    `   │ VCO ├──▶│ VCF ├──▶│ VCA ├──▶ ${pick(POOLS.load)}`,
+    `   └─────┘   └──┬──┘   └──┬──┘`,
+    `              cutoff      │`,
+    `   LFO ∿∿∿∿∿∿∿∿∿┘         │`,
+    `   ENV /\\______________┘`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 31. secuenciador 16 pasos
+  () => {
+    let row = '';
+    for (let i = 0; i < 16; i++) row += Math.random() < 0.4 ? '█' : '░';
+    return [
+      `   SEQ  ${row}`,
+      `        paso ${rv(1, 16)} activo`,
+      `   ${rv(60, 160)} bpm   ::   ${pick(POOLS.adj)}`,
+      `   ${pick(POOLS.cita)}`,
+    ];
+  },
+
+  // 32. grilla de caja de ritmos
+  () => {
+    const line = () => { let s = ''; for (let i = 0; i < 16; i++) s += Math.random() < 0.35 ? 'x' : '·'; return s; };
+    return [
+      `   K  ${line()}`,
+      `   H  ${line()}`,
+      `   S  ${line()}`,
+      `   Z  ${line()}`,
+      `   ${rv(70, 150)} bpm  ::  ${pick(POOLS.adj)}`,
+    ];
+  },
+
+  // 33. LFO
+  () => [
+    `   LFO  ∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿`,
+    `   f = ${rf(0.1, 12, 1)} Hz    forma :: ${pick(POOLS.adj)}`,
+    `   modula → ${pick(['cutoff','pitch','amp','fase','pan'])}`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 34. vocoder (meta)
+  () => [
+    `   voz ─────▶┌───────────────┐`,
+    `             │   análisis     │  ${rv(8, 32)} bandas`,
+    `   carrier ─▶│  · vocoder ·   ├──▶ ${pick(POOLS.adj)}`,
+    `             └───────────────┘`,
+    `   la voz se reparte en el peine`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 35. loop de cinta
+  () => [
+    `   ┌────────────────────────┐`,
+    `   │   ((( cinta )))         │`,
+    `   └──▶═══[ cabezal ]════════┘`,
+    `   loop = ${rf(0.4, 9.9, 1)} s   wow ≈ ${rf(0.1, 2, 1)}%`,
+    `   ${pick(POOLS.glosa)}`,
+  ],
+
+  // 36. consola de mezcla — faders
+  () => {
+    const fader = () => '▓░'[Math.random() < 0.5 ? 0 : 1];
+    const rows = [];
+    for (let r = 0; r < 3; r++) {
+      let s = '   │';
+      for (let c = 0; c < 6; c++) s += ' ' + fader() + ' │';
+      rows.push(s);
+    }
+    return [
+      `   ┌──┬──┬──┬──┬──┬──┐`,
+      ...rows,
+      `   └──┴──┴──┴──┴──┴──┘`,
+      `    ch1  ..  ..  ..  ch6   ${pick(POOLS.cita)}`,
+    ];
+  },
+
+  // 37. divisor de reloj
+  () => [
+    `   clk ──┬───────┬───────┬─────── ÷1`,
+    `         └─ ÷2 ──┴─ ÷4 ──┴─ ÷8`,
+    `   ${pick(POOLS.formula)}`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 38. formas de onda
+  () => [
+    `   ∿∿∿∿       seno`,
+    `   ⌐¬⌐¬⌐¬     cuadrada · duty ${rv(10, 90)}%`,
+    `   /|/|/|/|   sierra`,
+    `   /\\/\\/\\    triángulo`,
+    `   osc :: ${pick(POOLS.adj)}   f ≈ ${rf(20, 8000, 0)} Hz`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+
+  // 39. metrónomo / pulso del cuerpo
+  () => [
+    `   tic ───── tac ───── tic ───── tac`,
+    `    │         │         │         │`,
+    `   ${rv(48, 180)} bpm    ::    ${pick(POOLS.adj)}`,
+    `   el cuerpo lleva su propio compás`,
+    `   ${pick(POOLS.cita)}`,
+  ],
+);
+
 function genDiagram()    { return pick(FRAGMENTS)(); }
 function genTicker()     { return pick(POOLS.ticker); }
 function genCita()       { return pick(POOLS.cita); }
@@ -738,24 +965,38 @@ const canvas = document.getElementById('c');
 const ctx = canvas.getContext('2d');
 let W, H;
 
-const FONTS = {
-  micro:  "10px 'Courier New', monospace",
-  small:  "12px 'Courier New', monospace",
-  medium: "15px 'Courier New', monospace",
-  large:  "22px 'Courier New', monospace",
-  drop:   "34px 'Courier New', monospace",
-};
-const LH = {
-  micro: 12, small: 16, medium: 20, large: 28, drop: 44,
-};
+// tipografías oldschool CP437 — todas monoespaciadas, alinean el ASCII;
+// los glifos ausentes (kaomoji, ∿, subíndices) caen a Courier New
+const TYPEFACES = [
+  'SperryPC','Robotron','OlivettiThin','SiemensPCD','ApricotPortable',
+  'Compis','IBM_Model3x','IBM_PS55','Stingray','ToshibaSat','HP150','Paradise132',
+];
+const FONT_SIZE = { micro: 10, small: 12, medium: 15, large: 22, drop: 34 };
+const FONTS = { micro: '', small: '', medium: '', large: '', drop: '' };
+const LH = { micro: 12, small: 16, medium: 20, large: 28, drop: 44 };
 const CW = { micro: 6, small: 7.2, medium: 9, large: 13.2, drop: 20.4 };
+let typeIdx = 0;
 
 function measureFonts() {
   for (const k in FONTS) {
     ctx.font = FONTS[k];
-    CW[k] = ctx.measureText('M').width;
+    CW[k] = ctx.measureText('M').width || CW[k];
   }
 }
+
+// aplica una tipografía a todos los tamaños y re-mide al cargar la fuente
+function applyTypeface(idx) {
+  typeIdx = ((idx % TYPEFACES.length) + TYPEFACES.length) % TYPEFACES.length;
+  const fam = TYPEFACES[typeIdx];
+  for (const k in FONT_SIZE) {
+    FONTS[k] = `${FONT_SIZE[k]}px '${fam}', 'Courier New', monospace`;
+  }
+  measureFonts();
+  if (document.fonts && document.fonts.load) {
+    document.fonts.load(`16px '${fam}'`).then(measureFonts).catch(() => {});
+  }
+}
+applyTypeface(0);
 
 function resize() {
   W = canvas.width  = window.innerWidth;
@@ -961,11 +1202,37 @@ const AUDIO = {
   ready: false,
   initing: false,
   enabled: true,
+  perc: true,
   scale: ['A2','C3','D3','E3','G3','A3','C4','D4','E4','G4','A4','C5'],
   last: { diag: 0, speakEnd: 0 },
   speakTimer: null,
   n: {},
 };
+
+// percusión :: 'x' = golpe, '.' = silencio — 16 pasos por compás
+function patBeats(s) { return [...s].map(c => c === 'x' || c === 'X'); }
+
+const PERC_PATTERNS = {
+  terminal: { bpm: 96,  kick: patBeats('x.......x.......'), hat: patBeats('..x...x...x...x.'), rim: patBeats('....x.......x...'), zap: patBeats('................') },
+  mosaico:  { bpm: 112, kick: patBeats('x...x...x...x...'), hat: patBeats('x.x.x.x.x.x.x.x.'), rim: patBeats('....x.......x...'), zap: patBeats('........x.......') },
+  glitch:   { bpm: 134, kick: patBeats('x..x..x.x..x..x.'), hat: patBeats('xxxxxxxxxxxxxxxx'), rim: patBeats('..x..x..x..x..x.'), zap: patBeats('x...x...x...x..x') },
+  drone:    { bpm: 60,  kick: patBeats('x...............'), hat: patBeats('........x.......'), rim: patBeats('................'), zap: patBeats('................') },
+  cita:     { bpm: 82,  kick: patBeats('x.......x.......'), hat: patBeats('....x.......x...'), rim: patBeats('................'), zap: patBeats('................') },
+  ticker:   { bpm: 126, kick: patBeats('x...x...x...x...'), hat: patBeats('x.x.x.x.x.x.x.x.'), rim: patBeats('..x...x...x...x.'), zap: patBeats('................') },
+  feedback: { bpm: 104, kick: patBeats('x...x.....x...x.'), hat: patBeats('..x.x...x.x...x.'), rim: patBeats('x.......x.......'), zap: patBeats('............x...') },
+  memoria:  { bpm: 68,  kick: patBeats('x.............x.'), hat: patBeats('....x.......x...'), rim: patBeats('................'), zap: patBeats('................') },
+  burst:    { bpm: 152, kick: patBeats('x.xx..x.x.xx.x.x'), hat: patBeats('xxxxxxxxxxxxxxxx'), rim: patBeats('x.x.x.x.x.x.x.x.'), zap: patBeats('..x..x..x..x..x.') },
+};
+
+// bpm efectivo :: base de la escena modulada por el tempo del VJ
+function percBpm() {
+  const base = (PERC_PATTERNS[scene.name] || PERC_PATTERNS.terminal).bpm;
+  return Math.max(48, Math.min(200, base * (0.7 + 0.3 * tempo)));
+}
+
+function syncPercTempo() {
+  if (AUDIO.ready && typeof Tone !== 'undefined') Tone.Transport.bpm.rampTo(percBpm(), 0.4);
+}
 
 // el contexto de audio sólo arranca tras un gesto del usuario
 async function initAudio() {
@@ -1009,7 +1276,50 @@ async function initAudio() {
   }
   carrier.start();
 
-  AUDIO.n = { limiter, reverb, masterBus, delay, bleepFilter, bleep, blip, vocMaster, carrier, bands };
+  // — percusión :: caja de ritmos eléctrica sobre Tone.Transport —
+  const percBus = new Tone.Gain(0.8).connect(masterBus);
+  const kick = new Tone.MembraneSynth({
+    volume: -7, pitchDecay: 0.045, octaves: 5,
+    envelope: { attack: 0.001, decay: 0.34, sustain: 0, release: 0.35 },
+  }).connect(percBus);
+  const hatFilter = new Tone.Filter({ type: 'highpass', frequency: 7000 }).connect(percBus);
+  const hat = new Tone.NoiseSynth({
+    volume: -25, noise: { type: 'white' },
+    envelope: { attack: 0.001, decay: 0.035, sustain: 0 },
+  }).connect(hatFilter);
+  const rim = new Tone.MetalSynth({
+    volume: -28, frequency: 240, harmonicity: 5.1, modulationIndex: 32,
+    resonance: 3200, octaves: 1.3,
+    envelope: { attack: 0.001, decay: 0.07, release: 0.02 },
+  }).connect(percBus);
+  const zapFilter = new Tone.Filter({ type: 'bandpass', frequency: 1200, Q: 3 }).connect(percBus);
+  const zap = new Tone.NoiseSynth({
+    volume: -20, noise: { type: 'pink' },
+    envelope: { attack: 0.001, decay: 0.14, sustain: 0 },
+  }).connect(zapFilter);
+
+  // un paso por '16n'; el patrón sigue a la escena viva
+  const percSeq = new Tone.Sequence((time, step) => {
+    if (!AUDIO.enabled || !AUDIO.perc) return;
+    const p = PERC_PATTERNS[scene.name] || PERC_PATTERNS.terminal;
+    if (p.kick[step]) kick.triggerAttackRelease('C1', '8n', time);
+    if (p.hat[step])  hat.triggerAttackRelease('16n', time, 0.6 + Math.random() * 0.4);
+    if (p.rim[step])  rim.triggerAttackRelease('32n', time, 0.8);
+    if (p.zap[step]) {
+      zapFilter.frequency.cancelScheduledValues(time);
+      zapFilter.frequency.setValueAtTime(2600, time);
+      zapFilter.frequency.exponentialRampToValueAtTime(220, time + 0.13);
+      zap.triggerAttackRelease('16n', time);
+    }
+  }, [...Array(16).keys()], '16n');
+  percSeq.start(0);
+  Tone.Transport.bpm.value = percBpm();
+  Tone.Transport.start();
+
+  AUDIO.n = {
+    limiter, reverb, masterBus, delay, bleepFilter, bleep, blip,
+    vocMaster, carrier, bands, percBus, kick, hat, rim, zap, percSeq,
+  };
   AUDIO.ready = true;
   AUDIO.initing = false;
 }
@@ -1279,6 +1589,7 @@ function startScene(name) {
   sceneT = 0;
   sceneDur = scene.dur[0] + Math.random() * (scene.dur[1] - scene.dur[0]);
   acc.diag = acc.tick = acc.cita = acc.drop = 0;
+  if (AUDIO.ready) Tone.Transport.bpm.rampTo(percBpm(), 0.8);
   if (scene.ghostBg && Math.random() < 0.65) spawnGhostBackground();
 }
 
@@ -1336,8 +1647,10 @@ function render() {
   ctx.font = FONTS.micro;
   ctx.fillStyle = colorFor('dim', 0.85);
   const fps = (1 / Math.max(0.001, lastDt)).toFixed(0);
-  const snd = AUDIO.ready ? (AUDIO.enabled ? '  ·  ♪' : '  ·  ♪ off') : '  ·  ♪ —';
-  const hud = `[${scene.name}]  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  t=${T.toFixed(1)}s${snd}${muted ? '  ·  MUTED' : ''}`;
+  const snd = !AUDIO.ready ? '♪ —'
+            : !AUDIO.enabled ? '♪ off'
+            : (AUDIO.perc ? '♪+perc' : '♪');
+  const hud = `[${scene.name}]  ${TYPEFACES[typeIdx]}  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  ·  ${snd}${muted ? '  ·  MUTED' : ''}`;
   ctx.fillText(hud, W - hud.length * CW.micro - 14, H - 12);
 }
 
@@ -1368,11 +1681,13 @@ window.addEventListener('keydown', e => {
   initAudio();
   if (e.key === ' ')      { e.preventDefault(); spawnDrop(); return; }
   if (e.key === 's' || e.key === 'S') { toggleSound(); return; }
+  if (e.key === 'p' || e.key === 'P') { AUDIO.perc = !AUDIO.perc; return; }
+  if (e.key === 't' || e.key === 'T') { applyTypeface(typeIdx + 1); return; }
   if (e.key === 'm' || e.key === 'M') { muted = !muted; return; }
   if (e.key === 'r' || e.key === 'R') { blocks = []; return; }
   if (e.key === 'f' || e.key === 'F') { for (let i = 0; i < 6; i++) spawnFloater(); return; }
-  if (e.key === '+' || e.key === '=') { tempo = Math.min(4, tempo * 1.25); return; }
-  if (e.key === '-' || e.key === '_') { tempo = Math.max(0.1, tempo / 1.25); return; }
+  if (e.key === '+' || e.key === '=') { tempo = Math.min(4, tempo * 1.25); syncPercTempo(); return; }
+  if (e.key === '-' || e.key === '_') { tempo = Math.max(0.1, tempo / 1.25); syncPercTempo(); return; }
   if (e.key >= '1' && e.key <= '9') {
     const idx = parseInt(e.key, 10) - 1;
     if (idx < SCENE_LIST.length) startScene(SCENE_LIST[idx]);
