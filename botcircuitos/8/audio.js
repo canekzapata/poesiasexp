@@ -1,25 +1,12 @@
-
 'use strict';
 
 // =============================================================
 //   AUDIO  ::  motor sónico de circuito.live v8
-//
-//   Capas (cada una conmutable):
-//     1. circuito        — bleeps cortos, ping de cita
-//     2. percusión       — caja de ritmos eléctrica (Tone.Transport)
-//     3. melódico        — pad armónico, arpegio, bajo
-//     4. textural        — drone, ruido con S&H LFO
-//     5. voz híbrida     — Web Speech + vocoder + ring mod + eco
-//
-//   Cada escena visual define su propio modo musical, progresión,
-//   color de drone y estilo de arpegio en SCENE_AUDIO; el cambio de
-//   escena dispara un sweep/riser y reasigna toda la armonía.
-//
-//   Contrato público (lo que llama engine.js):
-//     initAudio(), toggleSound(), syncPercTempo(),
-//     audioDiagram(), audioCita(), audioSceneChange(name), speak(text)
-//     AUDIO.ready / .enabled / .perc / .melody / .voice
 // =============================================================
+
+// logging timestampeado — útil para diagnóstico de trabadas
+const LOG = (...args) => console.log(`[BC8 ${(performance.now()/1000).toFixed(2)}s]`, ...args);
+const AUDIO_LOG = true;  // poner false para silenciar
 
 const AUDIO = {
   ready: false,
@@ -154,8 +141,9 @@ function scaleNotes(rootMidi, modeSemis, octaves = 2) {
 async function initAudio() {
   if (AUDIO.ready || AUDIO.initing || typeof Tone === 'undefined') return;
   AUDIO.initing = true;
+  if (AUDIO_LOG) LOG('initAudio start');
   try { await Tone.start(); }
-  catch (e) { AUDIO.initing = false; return; }
+  catch (e) { AUDIO.initing = false; if (AUDIO_LOG) LOG('Tone.start FAILED', e); return; }
 
   // ── MASTER CHAIN ──────────────────────────────────────────
   // chorus removido :: consumía CPU sin aporte audible suficiente
@@ -314,6 +302,7 @@ async function initAudio() {
   percSeq.start(0);
 
   // chordSeq :: cambia el acorde cada 2 compases ('1m' = 1 measure)
+  let _chordCount = 0;
   const chordSeq = new Tone.Loop((time) => {
     if (!AUDIO.enabled || !AUDIO.melody) return;
     const cfg = SCENE_AUDIO[scene.name] || SCENE_AUDIO.terminal;
@@ -321,11 +310,14 @@ async function initAudio() {
     AUDIO.mus.progStep++;
     AUDIO.mus.chord = buildChord(AUDIO.mus.rootMidi, AUDIO.mus.modeSemis, degree, cfg.padQuality);
     const chordNames = AUDIO.mus.chord.map(midiToName);
-    pad.releaseAll(time);
-    pad.triggerAttackRelease(chordNames, '2m', time, 0.7);
-    // bajo en la fundamental, octava abajo
-    const bassMidi = AUDIO.mus.chord[0] - 12;
-    bass.triggerAttackRelease(midiToName(bassMidi), '2m', time, 0.85);
+    try {
+      pad.releaseAll(time);
+      pad.triggerAttackRelease(chordNames, '2m', time, 0.7);
+      const bassMidi = AUDIO.mus.chord[0] - 12;
+      bass.triggerAttackRelease(midiToName(bassMidi), '2m', time, 0.85);
+    } catch (e) { if (AUDIO_LOG) LOG('chordSeq ERROR', e); }
+    _chordCount++;
+    if (AUDIO_LOG && _chordCount <= 6) LOG('chord #' + _chordCount, chordNames.join(','), 'scene=' + scene.name);
   }, '2m');
   chordSeq.start(0);
 
@@ -400,6 +392,7 @@ async function initAudio() {
   };
   AUDIO.ready = true;
   AUDIO.initing = false;
+  if (AUDIO_LOG) LOG('initAudio done — context.state =', Tone.context.state, 'sampleRate =', Tone.context.sampleRate);
 
   // arrancar con la escena actual ya configurada
   audioSceneChange(scene.name);
@@ -442,12 +435,13 @@ function audioCita() {
   }
 }
 
-// cambio de escena :: actualiza armonía, BPM, chorus, arpRate, drone, sweep
+// cambio de escena :: actualiza armonía, BPM, arpRate, sweep
 function audioSceneChange(name) {
   if (!AUDIO.ready) return;
   const t = Tone.now();
   if (t - AUDIO.last.sceneChange < 0.3) return;
   AUDIO.last.sceneChange = t;
+  if (AUDIO_LOG) LOG('audioSceneChange ->', name);
 
   const cfg = SCENE_AUDIO[name] || SCENE_AUDIO.terminal;
   AUDIO.mus.sceneName = name;
@@ -458,23 +452,20 @@ function audioSceneChange(name) {
   AUDIO.mus.arpStyle  = cfg.arpStyle;
   AUDIO.mus.arpRate   = cfg.arpRate;
 
-  // tempo y chorus
-  Tone.Transport.bpm.rampTo(percBpm(), 0.8);
-  AUDIO.n.masterChor.wet.rampTo(cfg.chorus, 1.2);
-
-  // re-intervalar arpSeq
-  AUDIO.n.arpSeq.interval = cfg.arpRate;
-
-  // sweep transicional :: filtro del pad abre rápido
-  AUDIO.n.padFilter.frequency.cancelScheduledValues(t);
-  AUDIO.n.padFilter.frequency.setValueAtTime(400, t);
-  AUDIO.n.padFilter.frequency.exponentialRampToValueAtTime(1800, t + 1.4);
-
-  // riser breve de noise
-  AUDIO.n.noiseBus.gain.cancelScheduledValues(t);
-  AUDIO.n.noiseBus.gain.setValueAtTime(0.05, t);
-  AUDIO.n.noiseBus.gain.linearRampToValueAtTime(0.5, t + 0.6);
-  AUDIO.n.noiseBus.gain.exponentialRampToValueAtTime(0.35, t + 1.4);
+  try {
+    Tone.Transport.bpm.rampTo(percBpm(), 0.8);
+    AUDIO.n.masterChor.wet.rampTo(cfg.chorus, 1.2);  // stub no-op si chorus eliminado
+    AUDIO.n.arpSeq.interval = cfg.arpRate;
+    AUDIO.n.padFilter.frequency.cancelScheduledValues(t);
+    AUDIO.n.padFilter.frequency.setValueAtTime(400, t);
+    AUDIO.n.padFilter.frequency.exponentialRampToValueAtTime(1800, t + 1.4);
+    AUDIO.n.noiseBus.gain.cancelScheduledValues(t);
+    AUDIO.n.noiseBus.gain.setValueAtTime(0.05, t);
+    AUDIO.n.noiseBus.gain.linearRampToValueAtTime(0.5, t + 0.6);
+    AUDIO.n.noiseBus.gain.exponentialRampToValueAtTime(0.35, t + 1.4);
+  } catch (e) {
+    if (AUDIO_LOG) LOG('audioSceneChange ERROR', e);
+  }
 }
 
 // ────────────────────────────────────────────────────────────
@@ -547,10 +538,11 @@ function speak(text) {
       u.volume = 0.9;
   }
 
-  u.onstart    = () => vocoderStart(mode);
+  u.onstart    = () => { if (AUDIO_LOG) LOG('speak START mode=' + mode + ' len=' + text.length); vocoderStart(mode); };
   u.onboundary = () => vocoderPulse(mode);
-  u.onend      = vocoderStop;
-  u.onerror    = vocoderStop;
+  u.onend      = () => { if (AUDIO_LOG) LOG('speak END'); vocoderStop(); };
+  u.onerror    = (e) => { if (AUDIO_LOG) LOG('speak ERROR', e.error); vocoderStop(); };
+  if (AUDIO_LOG) LOG('speak QUEUE mode=' + mode + ' text=' + text.slice(0, 40));
   speechSynthesis.speak(u);
 
   // double :: segunda voz desfasada — sólo si el original sigue hablando
