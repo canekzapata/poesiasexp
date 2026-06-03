@@ -665,35 +665,38 @@ let _freezeReportT = 0;
 let _frameCount = 0;
 
 function loop(ts) {
-  if (lastTs === null) lastTs = ts;
-  const rawDt = (ts - lastTs) / 1000;
-  const dt = Math.min(rawDt, 0.06);
-  lastTs = ts;
-  lastDt = dt;
-  T += dt;
-  _frameCount++;
+  try {
+    if (lastTs === null) lastTs = ts;
+    const rawDt = (ts - lastTs) / 1000;
+    const dt = Math.min(rawDt, 0.06);
+    lastTs = ts;
+    lastDt = dt;
+    T += dt;
+    _frameCount++;
 
-  // ── DETECTOR DE FREEZE ─────────────────────────────────────
-  // gap > 200ms entre frames = el thread estuvo bloqueado
-  if (rawDt > 0.2) {
-    ENG_LOG('!! FREEZE !!  gap=' + (rawDt * 1000 | 0) + 'ms  blocks=' + blocks.length + '  scene=' + scene.name + '  speakingTTS=' + (window.speechSynthesis ? speechSynthesis.speaking : '?'));
-    if (rawDt > _freezeMaxGap) _freezeMaxGap = rawDt;
+    // ── DETECTOR DE FREEZE ─────────────────────────────────────
+    if (rawDt > 0.2) {
+      ENG_LOG('!! FREEZE !!  gap=' + (rawDt * 1000 | 0) + 'ms  blocks=' + blocks.length + '  scene=' + scene.name + '  speakingTTS=' + (window.speechSynthesis ? speechSynthesis.speaking : '?'));
+      if (rawDt > _freezeMaxGap) _freezeMaxGap = rawDt;
+    }
+    if (T - _freezeReportT > 5) {
+      const fps = (_frameCount / (T - _freezeReportT)) | 0;
+      ENG_LOG('5s report: fps=' + fps + ' blocks=' + blocks.length + ' scene=' + scene.name +
+        ' maxFreeze=' + (_freezeMaxGap * 1000 | 0) + 'ms  TTSspeaking=' + (window.speechSynthesis ? speechSynthesis.speaking : '?'));
+      _freezeReportT = T;
+      _frameCount = 0;
+      _freezeMaxGap = 0;
+    }
+
+    ensureAudioHooks();
+    tickScheduler(dt);
+    update(dt);
+    render();
+  } catch (err) {
+    // ESCUDO FINAL :: una excepción aquí mataba el rAF y congelaba la pantalla
+    // para siempre. Loggeamos y seguimos en el próximo frame.
+    ENG_LOG('!! LOOP ERROR (recovered) !!', err.message, err.stack);
   }
-  // reporte cada 5s :: FPS, blocks, max freeze
-  if (T - _freezeReportT > 5) {
-    const fps = (_frameCount / (T - _freezeReportT)) | 0;
-    ENG_LOG('5s report: fps=' + fps + ' blocks=' + blocks.length + ' scene=' + scene.name +
-      ' maxFreeze=' + (_freezeMaxGap * 1000 | 0) + 'ms  TTSspeaking=' + (window.speechSynthesis ? speechSynthesis.speaking : '?'));
-    _freezeReportT = T;
-    _frameCount = 0;
-    _freezeMaxGap = 0;
-  }
-
-  ensureAudioHooks();
-  tickScheduler(dt);
-  update(dt);
-  render();
-
   requestAnimationFrame(loop);
 }
 
