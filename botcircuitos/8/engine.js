@@ -1,4 +1,5 @@
 
+
   
 
 // =============================================================
@@ -483,25 +484,47 @@ function ensureAudioHooks() {
   }
 }
 
-// cada negra :: spawns frecuentes (diag, ticker, cita, drop)
+let _lastBeatT = 0, _lastMeasureT = 0;
+
+// cada negra :: como mucho UN spawn por beat — elegimos por ruleta ponderada
+// para no saturar el render con varios eventos simultáneos
 function onBeatTick() {
+  // si el thread estuvo bloqueado y Tone.Draw acumuló callbacks, ignoramos
+  // los que vienen demasiado pegados para evitar spawn-storm al descongelar
+  const now = performance.now();
+  if (now - _lastBeatT < 80) return;
+  _lastBeatT = now;
   if (muted) return;
+  if (blocks.length > 140) return;           // cap duro de seguridad
   const bpm = Math.max(40, Tone.Transport.bpm.value);
-  const beatDur = 60 / bpm;                  // segundos por beat
-  const k = beatDur * tempo;                 // prob de un evento a-rate-1 por beat
+  const beatDur = 60 / bpm;
+  const k = beatDur * tempo;
   const mudo = RARE === 'mudo';
-  if (!mudo) {
+  // ruleta :: las rates de la escena se vuelven pesos
+  const diagW = mudo ? 0 : scene.diagRate;
+  const tickW = scene.tickerRate;
+  const citaW = scene.citaRate || 0;
+  const dropW = scene.bigDropRate || 0;
+  const total = (diagW + tickW + citaW + dropW) * k;
+  if (total <= 0 || Math.random() > Math.min(1, total)) return;
+  let r = Math.random() * (diagW + tickW + citaW + dropW);
+  if ((r -= diagW) < 0) {
     const aliveDiag = blocks.filter(b => b.kind === 'diag').length;
-    if (Math.random() < scene.diagRate * k && aliveDiag < scene.maxDiag) spawnDiagram();
+    if (aliveDiag < scene.maxDiag) spawnDiagram();
+    return;
   }
-  if (Math.random() < scene.tickerRate * k) spawnTicker();
-  if ((scene.citaRate || 0) > 0 && Math.random() < scene.citaRate * k) spawnCita();
-  if ((scene.bigDropRate || 0) > 0 && Math.random() < scene.bigDropRate * k) spawnDrop();
+  if ((r -= tickW) < 0) { spawnTicker(); return; }
+  if ((r -= citaW) < 0) { spawnCita();   return; }
+  spawnDrop();
 }
 
 // cada compás :: spawns lentos (floater, ghost)
 function onMeasureTick() {
+  const now = performance.now();
+  if (now - _lastMeasureT < 300) return;
+  _lastMeasureT = now;
   if (muted) return;
+  if (blocks.length > 140) return;
   const bpm = Math.max(40, Tone.Transport.bpm.value);
   const measureDur = (60 / bpm) * 4;
   const fRate = scene.floaterRate ?? 0.20;
@@ -616,6 +639,9 @@ function render() {
 function update(dt) {
   for (const b of blocks) b.update(dt);
   blocks = blocks.filter(b => b.alive);
+  // cap absoluto :: si tras un freeze del thread quedaron muchos en cola,
+  // mantenemos sólo los 160 más recientes para evitar render-storm
+  if (blocks.length > 160) blocks = blocks.slice(-160);
 }
 
 function loop(ts) {
