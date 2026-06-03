@@ -30,6 +30,11 @@ const AUDIO = {
   // contadores de tiempo para throttling
   last: { diag: 0, cita: 0, speakEnd: 0, sceneChange: 0 },
   speakTimer: null,
+  // callbacks que el engine puede registrar para spawns cuantizados al beat
+  onBeat: null,
+  onMeasure: null,
+  speakingNow: false,
+  currentVoiceMode: 'normal',
   // sub-objetos asignados en initAudio()
   n: {},
   // estado armónico vivo — lo mantiene chordSeq
@@ -155,12 +160,12 @@ async function initAudio() {
   catch (e) { AUDIO.initing = false; return; }
 
   // ── MASTER CHAIN ──────────────────────────────────────────
-  const limiter    = new Tone.Limiter(-1).toDestination();
-  const masterComp = new Tone.Compressor({ threshold: -16, ratio: 3, attack: 0.005, release: 0.18 }).connect(limiter);
-  const masterRev  = new Tone.Reverb({ decay: 3.8, wet: 0.22 }).connect(masterComp);
+  const limiter    = new Tone.Limiter(-3).toDestination();
+  const masterComp = new Tone.Compressor({ threshold: -18, ratio: 2.5, attack: 0.005, release: 0.18 }).connect(limiter);
+  const masterRev  = new Tone.Reverb({ decay: 2.4, wet: 0.20 }).connect(masterComp);
   masterRev.generate().catch(() => {});
-  const masterChor = new Tone.Chorus({ frequency: 0.6, delayTime: 3.5, depth: 0.45, wet: 0 }).connect(masterRev).start();
-  const masterBus  = new Tone.Gain(0.78).connect(masterChor);
+  const masterChor = new Tone.Chorus({ frequency: 0.6, delayTime: 3.5, depth: 0.35, wet: 0 }).connect(masterRev).start();
+  const masterBus  = new Tone.Gain(0.72).connect(masterChor);
 
   // ── CIRCUITO :: bleep + blip + delay ──────────────────────
   const delay       = new Tone.FeedbackDelay({ delayTime: 0.165, feedback: 0.30, wet: 0.18 }).connect(masterBus);
@@ -182,12 +187,13 @@ async function initAudio() {
   const sidechainGain = new Tone.Gain(1).connect(masterBus);
   const padFilter = new Tone.Filter({ type: 'lowpass', frequency: 1800, Q: 0.5 }).connect(sidechainGain);
   const pad = new Tone.PolySynth(Tone.AMSynth, {
+    maxPolyphony: 6,
     volume: -22,
     harmonicity: 1.5,
     oscillator: { type: 'sine' },
     modulation: { type: 'sawtooth' },
-    envelope:        { attack: 1.4, decay: 0.6, sustain: 0.55, release: 3.0 },
-    modulationEnvelope: { attack: 1.8, decay: 0.4, sustain: 0.7, release: 2.0 },
+    envelope:        { attack: 1.2, decay: 0.4, sustain: 0.5, release: 1.4 },
+    modulationEnvelope: { attack: 1.5, decay: 0.3, sustain: 0.6, release: 1.0 },
   }).connect(padFilter);
   // LFO lento sobre el cutoff del pad
   const padLfo = new Tone.LFO({ frequency: 0.07, min: 900, max: 2600, type: 'sine' });
@@ -329,6 +335,9 @@ async function initAudio() {
     if (!AUDIO.enabled || !AUDIO.melody) return;
     const cfg = SCENE_AUDIO[scene.name] || SCENE_AUDIO.terminal;
     if (cfg.arpStyle === 'static') return;
+    // throttle :: en escenas rápidas (32n a alto BPM) saltamos pulsos para no saturar
+    const dense = (cfg.arpRate === '32n' && Tone.Transport.bpm.value > 125);
+    if (dense && Math.random() < 0.45) { arpStep++; return; }
     const notes = scaleNotes(AUDIO.mus.rootMidi + 12, AUDIO.mus.modeSemis, 2);
     let idx;
     switch (cfg.arpStyle) {
@@ -345,12 +354,20 @@ async function initAudio() {
       default:        idx = arpStep % notes.length;
     }
     arpStep++;
-    // sólo dispara si hay densidad — silencios aleatorios
-    if (Math.random() > 0.18) {
+    if (Math.random() > 0.22) {
       arp.triggerAttackRelease(midiToName(notes[idx]), '32n', time, 0.55 + Math.random() * 0.3);
     }
   }, '8n');  // el rate base se ajusta en audioSceneChange
   arpSeq.start(0);
+
+  // beatLoop / measureLoop :: callbacks expuestos al engine para cuantizar spawns
+  // se programan en el thread visual con Tone.Draw para evitar drift
+  const beatLoop = new Tone.Loop((time) => {
+    if (AUDIO.onBeat) Tone.Draw.schedule(() => { try { AUDIO.onBeat(); } catch (e) {} }, time);
+  }, '4n').start(0);
+  const measureLoop = new Tone.Loop((time) => {
+    if (AUDIO.onMeasure) Tone.Draw.schedule(() => { try { AUDIO.onMeasure(); } catch (e) {} }, time);
+  }, '1m').start(0);
 
   // droneSeq :: mueve la fundamental del drone cada 8 compases
   const droneSeq = new Tone.Loop((time) => {
@@ -379,7 +396,7 @@ async function initAudio() {
     noiseBus, noiseFilter, noise, shTimer,
     percBus, kick, hatFilter, hat, rim, zapFilter, zap,
     vocMaster, vocEcho, carrier, bands,
-    percSeq, chordSeq, arpSeq, droneSeq,
+    percSeq, chordSeq, arpSeq, droneSeq, beatLoop, measureLoop,
   };
   AUDIO.ready = true;
   AUDIO.initing = false;
@@ -491,9 +508,13 @@ function speak(text) {
   if (!AUDIO.enabled || !AUDIO.voice || !window.speechSynthesis || !text) return;
   if (speechSynthesis.speaking || speechSynthesis.pending) return;
   if (AUDIO.ready && Tone.now() - AUDIO.last.speakEnd < 1.4) return;
+  // navegadores sin voces cargadas a tiempo se traban; abortar
+  if (!_voices.length) loadVoices();
+  if (!_voices.length) return;
 
   const mode = pickVoiceMode();
   AUDIO.currentVoiceMode = mode;
+  AUDIO.speakingNow = true;
 
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'es-ES';
@@ -529,18 +550,18 @@ function speak(text) {
   u.onerror    = vocoderStop;
   speechSynthesis.speak(u);
 
-  // double :: lanza una segunda voz un poco después, pitch desfasado
-  if (mode === 'double' && Math.random() < 0.85) {
+  // double :: segunda voz desfasada — sólo si el original sigue hablando
+  if (mode === 'double' && Math.random() < 0.7) {
     setTimeout(() => {
-      if (!speechSynthesis.speaking) return;
+      if (!AUDIO.speakingNow || !speechSynthesis.speaking) return;
       const u2 = new SpeechSynthesisUtterance(text);
       u2.lang = 'es-ES';
       if (v) u2.voice = v;
-      u2.pitch = Math.max(0.05, u.pitch - 0.15);
-      u2.rate  = u.rate * (0.96 + Math.random() * 0.05);
-      u2.volume = 0.35;
+      u2.pitch  = Math.max(0.05, u.pitch - 0.15);
+      u2.rate   = u.rate * (0.96 + Math.random() * 0.05);
+      u2.volume = 0.32;
       try { speechSynthesis.speak(u2); } catch (e) {}
-    }, 160 + Math.random() * 220);
+    }, 180 + Math.random() * 200);
   }
 }
 
@@ -592,6 +613,7 @@ function vocoderPulse(mode) {
 function vocoderStop() {
   clearInterval(AUDIO.speakTimer);
   AUDIO.speakTimer = null;
+  AUDIO.speakingNow = false;
   if (!AUDIO.ready) return;
   AUDIO.n.vocMaster.gain.rampTo(0, 0.45);
   AUDIO.n.carrier.harmonicity.rampTo(1.5, 0.6);
