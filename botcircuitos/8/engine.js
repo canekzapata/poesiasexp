@@ -2,6 +2,45 @@
   
 
 // =============================================================
+//   CONFIG GLOBAL DE LA SESIÓN
+//   - RARE :: cada carga tira el dado; ~5% sale un modo raro
+//   - performance :: arco cerrado (setlist + fade out), tecla O
+// =============================================================
+
+const RARE = (() => {
+  const r = Math.random();
+  if (r < 0.005)  return 'silent';   // 0.5% sin sonido
+  if (r < 0.015)  return 'mudo';     // 1%   sin diagramas
+  if (r < 0.030)  return 'morse';    // 1.5% todo el texto en binario
+  if (r < 0.050)  return 'ghost';    // 2%   todos los colores en ghost
+  return null;
+})();
+
+// helper :: convierte texto a 0/1 ASCII (8 bits por carácter, espacios entre)
+// trunca a 28 chars para que quepa en pantalla — la idea es que sea legible
+// como bloque binario, no como wall of bits
+function textToBinary(s) {
+  const t = String(s || '').slice(0, 28);
+  return t.split('').map(c => c.charCodeAt(0).toString(2).padStart(8, '0')).join(' ');
+}
+
+// ── PERFORMANCE :: arco cerrado con setlist y final ─────────
+let isPerformance = false;
+let performanceEnded = false;
+let setlistIdx = 0;
+const SETLIST = [
+  { name: 'terminal', dur: 28 },
+  { name: 'mosaico',  dur: 38 },
+  { name: 'glitch',   dur: 26 },
+  { name: 'feedback', dur: 36 },
+  { name: 'cita',     dur: 44 },
+  { name: 'drone',    dur: 56 },
+  { name: 'memoria',  dur: 34 },
+  { name: 'ticker',   dur: 24 },
+  { name: 'burst',    dur: 22 },
+];
+
+// =============================================================
 //   CANVAS + FONTS
 // =============================================================
 
@@ -52,6 +91,7 @@ window.addEventListener('resize', resize);
 
 function colorFor(name, alpha) {
   const a = Math.max(0, Math.min(1, alpha));
+  if (RARE === 'ghost' && name !== 'ghost') name = 'ghost';
   switch (name) {
     case 'green': return `rgba(0, ${Math.round(255*a)}, ${Math.round(65*a)}, 1)`;
     case 'dim':   return `rgba(0, ${Math.round(135*a)}, ${Math.round(35*a)}, 1)`;
@@ -298,8 +338,9 @@ function spawnTicker() {
 
 function spawnCita() {
   if (maybe(0.30)) return spawnGlosa();
-  const lines = [genCita()];
-  const font  = maybe(0.5) ? 'large' : 'drop';
+  const original = genCita();
+  const lines = [RARE === 'morse' ? textToBinary(original) : original];
+  const font  = maybe(0.5) ? 'large' : (RARE === 'morse' ? 'small' : 'drop');
   const cw    = CW[font];
   const estW  = lines[0].length * cw + 20;
   const x     = rv(20, Math.max(20, W - estW - 20));
@@ -312,12 +353,13 @@ function spawnCita() {
     kind: 'cita',
   }));
   audioCita();
-  speak(lines[0]);
+  speak(original);
 }
 
 function spawnGlosa() {
-  const lines = genGlosa();
-  const font  = 'medium';
+  const original = genGlosa();
+  const lines = RARE === 'morse' ? original.map(textToBinary) : original;
+  const font  = RARE === 'morse' ? 'small' : 'medium';
   const cw    = CW[font], lh = LH[font];
   const estW  = Math.max(...lines.map(l => l.length)) * cw;
   const pos   = pickPos(estW, lines.length * lh);
@@ -330,7 +372,7 @@ function spawnGlosa() {
     kind: 'glosa',
   }));
   audioCita();
-  speak(lines[0]);
+  speak(original[0]);
 }
 
 function spawnDrop() {
@@ -413,23 +455,111 @@ function spawnGhostBackground() {
 function startScene(name) {
   scene = SCENES[name] || SCENES.terminal;
   sceneT = 0;
-  sceneDur = scene.dur[0] + Math.random() * (scene.dur[1] - scene.dur[0]);
+  if (isPerformance && SETLIST[setlistIdx]) {
+    sceneDur = SETLIST[setlistIdx].dur;
+  } else {
+    sceneDur = scene.dur[0] + Math.random() * (scene.dur[1] - scene.dur[0]);
+  }
   acc.diag = acc.tick = acc.cita = acc.drop = 0;
   if (AUDIO.ready) audioSceneChange(scene.name);
   if (scene.ghostBg && Math.random() < 0.65) spawnGhostBackground();
 }
 
+// ── HOOKS DE AUDIO ────────────────────────────────────────────
+// Cuando Tone.Transport corre, los spawns se cuantizan al beat/compás
+// vía callbacks que registramos en AUDIO. El fallback (timers libres)
+// sólo aplica cuando el audio aún no ha arrancado.
+
+let _rareApplied = false;
+function ensureAudioHooks() {
+  if (AUDIO.ready && !AUDIO.onBeat) {
+    AUDIO.onBeat = onBeatTick;
+    AUDIO.onMeasure = onMeasureTick;
+  }
+  // silent mode :: aplicar una sola vez cuando el audio esté listo
+  if (RARE === 'silent' && AUDIO.ready && !_rareApplied) {
+    AUDIO.enabled = false;
+    _rareApplied = true;
+  }
+}
+
+// cada negra :: spawns frecuentes (diag, ticker, cita, drop)
+function onBeatTick() {
+  if (muted) return;
+  const bpm = Math.max(40, Tone.Transport.bpm.value);
+  const beatDur = 60 / bpm;                  // segundos por beat
+  const k = beatDur * tempo;                 // prob de un evento a-rate-1 por beat
+  const mudo = RARE === 'mudo';
+  if (!mudo) {
+    const aliveDiag = blocks.filter(b => b.kind === 'diag').length;
+    if (Math.random() < scene.diagRate * k && aliveDiag < scene.maxDiag) spawnDiagram();
+  }
+  if (Math.random() < scene.tickerRate * k) spawnTicker();
+  if ((scene.citaRate || 0) > 0 && Math.random() < scene.citaRate * k) spawnCita();
+  if ((scene.bigDropRate || 0) > 0 && Math.random() < scene.bigDropRate * k) spawnDrop();
+}
+
+// cada compás :: spawns lentos (floater, ghost)
+function onMeasureTick() {
+  if (muted) return;
+  const bpm = Math.max(40, Tone.Transport.bpm.value);
+  const measureDur = (60 / bpm) * 4;
+  const fRate = scene.floaterRate ?? 0.20;
+  if (fRate > 0 && Math.random() < fRate * measureDur * tempo) spawnFloater();
+  if (scene.ghostBg && Math.random() < 0.08) spawnGhostBackground();
+}
+
+// ── PERFORMANCE :: control del arco ───────────────────────────
+
+function startPerformance() {
+  isPerformance = true;
+  performanceEnded = false;
+  setlistIdx = 0;
+  blocks = [];
+  if (AUDIO.ready && !AUDIO.enabled) AUDIO.enabled = true;
+  startScene(SETLIST[0].name);
+}
+
+function nextInSetlist() {
+  setlistIdx++;
+  if (setlistIdx >= SETLIST.length) { endPerformance(); return; }
+  startScene(SETLIST[setlistIdx].name);
+}
+
+function endPerformance() {
+  isPerformance = false;
+  performanceEnded = true;
+  if (AUDIO.ready) {
+    AUDIO.n.masterBus.gain.cancelScheduledValues(Tone.now());
+    AUDIO.n.masterBus.gain.rampTo(0, 4.2);
+    if (window.speechSynthesis) speechSynthesis.cancel();
+    setTimeout(() => {
+      if (!AUDIO.ready) return;
+      AUDIO.n.masterBus.gain.rampTo(0.72, 0.1);
+    }, 4600);
+  }
+}
+
 function tickScheduler(dt) {
   if (muted) return;
-  const t = dt * tempo;
   sceneT += dt;
   if (sceneT >= sceneDur) {
-    const others = SCENE_LIST.filter(s => s !== scene.name);
-    startScene(pick(others));
+    if (isPerformance) {
+      nextInSetlist();
+    } else {
+      const others = SCENE_LIST.filter(s => s !== scene.name);
+      startScene(pick(others));
+    }
   }
+  // si los hooks de Transport están vivos, los spawns ya se manejan ahí
+  if (AUDIO.ready && AUDIO.onBeat) return;
+
+  // ── FALLBACK :: timers libres antes de que el audio arranque ─
+  const t = dt * tempo;
   const aliveDiag = blocks.filter(b => b.kind === 'diag').length;
+  const mudo = RARE === 'mudo';
   acc.diag += t;
-  if (acc.diag >= 1 / Math.max(0.01, scene.diagRate) && aliveDiag < scene.maxDiag) {
+  if (!mudo && acc.diag >= 1 / Math.max(0.01, scene.diagRate) && aliveDiag < scene.maxDiag) {
     acc.diag = 0;
     spawnDiagram();
   }
@@ -469,15 +599,17 @@ function render() {
   });
   for (const b of blocks) b.draw();
 
-  // HUD inferior derecha
+  // HUD inferior derecha — hardcoded para sobrevivir a ghost mode
   ctx.font = FONTS.micro;
-  ctx.fillStyle = colorFor('dim', 0.85);
+  ctx.fillStyle = 'rgba(0, 135, 35, 0.85)';
   const fps = (1 / Math.max(0.001, lastDt)).toFixed(0);
   const snd = !AUDIO.ready ? '♪ —'
             : !AUDIO.enabled ? '♪ off'
             : `♪${AUDIO.perc?'·D':''}${AUDIO.melody?'·M':''}${AUDIO.voice?'·V':''}`;
   const mus = AUDIO.ready && AUDIO.mus ? `  mode=${AUDIO.mus.sceneName}` : '';
-  const hud = `[${scene.name}]  ${TYPEFACES[typeIdx]}  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  ·  ${snd}${mus}${muted ? '  ·  MUTED' : ''}`;
+  const perf = isPerformance ? `  PERFORMANCE ${setlistIdx + 1}/${SETLIST.length}` : (performanceEnded ? '  EOF' : '');
+  const rare = RARE ? `  rare=${RARE}` : '';
+  const hud = `[${scene.name}]  ${TYPEFACES[typeIdx]}  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  ·  ${snd}${mus}${perf}${rare}${muted ? '  ·  MUTED' : ''}`;
   ctx.fillText(hud, W - hud.length * CW.micro - 14, H - 12);
 }
 
@@ -493,6 +625,7 @@ function loop(ts) {
   lastDt = dt;
   T += dt;
 
+  ensureAudioHooks();
   tickScheduler(dt);
   update(dt);
   render();
@@ -511,6 +644,10 @@ window.addEventListener('keydown', e => {
   if (e.key === 'p' || e.key === 'P') { AUDIO.perc = !AUDIO.perc; return; }
   if (e.key === 'h' || e.key === 'H') { if (AUDIO.ready) toggleMelody(); return; }
   if (e.key === 'v' || e.key === 'V') { if (AUDIO.ready) toggleVoice(); return; }
+  if (e.key === 'o' || e.key === 'O') {
+    if (isPerformance) endPerformance(); else startPerformance();
+    return;
+  }
   if (e.key === 't' || e.key === 'T') { applyTypeface(typeIdx + 1); return; }
   if (e.key === 'm' || e.key === 'M') { muted = !muted; return; }
   if (e.key === 'r' || e.key === 'R') { blocks = []; return; }
