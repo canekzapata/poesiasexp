@@ -415,7 +415,7 @@ function startScene(name) {
   sceneT = 0;
   sceneDur = scene.dur[0] + Math.random() * (scene.dur[1] - scene.dur[0]);
   acc.diag = acc.tick = acc.cita = acc.drop = 0;
-  if (AUDIO.ready) Tone.Transport.bpm.rampTo(percBpm(), 0.8);
+  if (AUDIO.ready) audioSceneChange(scene.name);
   if (scene.ghostBg && Math.random() < 0.65) spawnGhostBackground();
 }
 
@@ -475,8 +475,9 @@ function render() {
   const fps = (1 / Math.max(0.001, lastDt)).toFixed(0);
   const snd = !AUDIO.ready ? '♪ —'
             : !AUDIO.enabled ? '♪ off'
-            : (AUDIO.perc ? '♪+perc' : '♪');
-  const hud = `[${scene.name}]  ${TYPEFACES[typeIdx]}  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  ·  ${snd}${muted ? '  ·  MUTED' : ''}`;
+            : `♪${AUDIO.perc?'·D':''}${AUDIO.melody?'·M':''}${AUDIO.voice?'·V':''}`;
+  const mus = AUDIO.ready && AUDIO.mus ? `  mode=${AUDIO.mus.sceneName}` : '';
+  const hud = `[${scene.name}]  ${TYPEFACES[typeIdx]}  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  ·  ${snd}${mus}${muted ? '  ·  MUTED' : ''}`;
   ctx.fillText(hud, W - hud.length * CW.micro - 14, H - 12);
 }
 
@@ -508,6 +509,8 @@ window.addEventListener('keydown', e => {
   if (e.key === ' ')      { e.preventDefault(); spawnDrop(); return; }
   if (e.key === 's' || e.key === 'S') { toggleSound(); return; }
   if (e.key === 'p' || e.key === 'P') { AUDIO.perc = !AUDIO.perc; return; }
+  if (e.key === 'h' || e.key === 'H') { if (AUDIO.ready) toggleMelody(); return; }
+  if (e.key === 'v' || e.key === 'V') { if (AUDIO.ready) toggleVoice(); return; }
   if (e.key === 't' || e.key === 'T') { applyTypeface(typeIdx + 1); return; }
   if (e.key === 'm' || e.key === 'M') { muted = !muted; return; }
   if (e.key === 'r' || e.key === 'R') { blocks = []; return; }
