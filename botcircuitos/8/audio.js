@@ -1,3 +1,4 @@
+
 'use strict';
 
 // =============================================================
@@ -126,20 +127,17 @@ function midiToName(midi) {
   return names[((midi % 12) + 12) % 12] + oct;
 }
 
-// dado root MIDI + modo + grado, devuelve un acorde de 3-4 notas
+// dado root MIDI + modo + grado, devuelve un acorde de 3 notas (triada)
+// nota: voicings de 4+ notas saturan el PolySynth — quedamos en triadas
 function buildChord(rootMidi, modeSemis, degree, quality) {
   const scale = modeSemis;
   const i = ((degree % scale.length) + scale.length) % scale.length;
   const base = rootMidi + scale[i];
   const get = (step) => rootMidi + scale[((i + step) % scale.length + scale.length) % scale.length] + (Math.floor((i + step) / scale.length) * 12);
   switch (quality) {
-    case 'minor7':  return [base, get(2), get(4), get(6)];
-    case 'major7':  return [base, get(2), get(4), get(6)];
-    case 'sus2':    return [base, get(1), get(4)];
-    case 'dim':     return [base, get(2), get(4)];
-    case 'add9':    return [base, get(2), get(4), get(8)];
-    case 'open5':   return [base, get(4), base + 12];
-    default:        return [base, get(2), get(4)];
+    case 'sus2':  return [base, get(1), get(4)];
+    case 'open5': return [base, get(4), base + 12];
+    default:      return [base, get(2), get(4)];
   }
 }
 
@@ -160,12 +158,14 @@ async function initAudio() {
   catch (e) { AUDIO.initing = false; return; }
 
   // ── MASTER CHAIN ──────────────────────────────────────────
+  // chorus removido :: consumía CPU sin aporte audible suficiente
   const limiter    = new Tone.Limiter(-3).toDestination();
   const masterComp = new Tone.Compressor({ threshold: -18, ratio: 2.5, attack: 0.005, release: 0.18 }).connect(limiter);
   const masterRev  = new Tone.Reverb({ decay: 2.4, wet: 0.20 }).connect(masterComp);
   masterRev.generate().catch(() => {});
-  const masterChor = new Tone.Chorus({ frequency: 0.6, delayTime: 3.5, depth: 0.35, wet: 0 }).connect(masterRev).start();
-  const masterBus  = new Tone.Gain(0.72).connect(masterChor);
+  const masterBus  = new Tone.Gain(0.72).connect(masterRev);
+  // ref dummy para retro-compatibilidad con audioSceneChange (que tocaba .wet)
+  const masterChor = { wet: { rampTo: () => {} } };
 
   // ── CIRCUITO :: bleep + blip + delay ──────────────────────
   const delay       = new Tone.FeedbackDelay({ delayTime: 0.165, feedback: 0.30, wet: 0.18 }).connect(masterBus);
@@ -187,7 +187,7 @@ async function initAudio() {
   const sidechainGain = new Tone.Gain(1).connect(masterBus);
   const padFilter = new Tone.Filter({ type: 'lowpass', frequency: 1800, Q: 0.5 }).connect(sidechainGain);
   const pad = new Tone.PolySynth(Tone.AMSynth, {
-    maxPolyphony: 6,
+    maxPolyphony: 4,
     volume: -22,
     harmonicity: 1.5,
     oscillator: { type: 'sine' },
@@ -271,17 +271,17 @@ async function initAudio() {
     envelope: { attack: 0.001, decay: 0.14, sustain: 0 },
   }).connect(zapFilter);
 
-  // ── VOCODER BED :: AM carrier + banco formante + ring + eco
+  // ── VOCODER BED :: AM carrier + banco formante (2 bandas) + eco corto
+  // ojo: feedback alto y muchas bandas hacen colgar el AudioContext
   const vocMaster = new Tone.Gain(0).connect(masterBus);
-  const vocEcho   = new Tone.PingPongDelay({ delayTime: '8n', feedback: 0.30, wet: 0.35 }).connect(vocMaster);
-  // AMOscillator hace de carrier con ring-mod-ish (harmonicity controla el carácter)
+  const vocEcho   = new Tone.PingPongDelay({ delayTime: '8n', feedback: 0.12, wet: 0.18 }).connect(vocMaster);
   const carrier = new Tone.AMOscillator({
     frequency: 82, type: 'sawtooth', modulationType: 'sine',
-    harmonicity: 1.5, volume: -4,
+    harmonicity: 1.5, volume: -6,
   });
   const bands = [];
-  for (const f of [320, 1100, 2700]) {
-    const bp = new Tone.Filter({ type: 'bandpass', frequency: f, Q: 8 });
+  for (const f of [420, 2100]) {
+    const bp = new Tone.Filter({ type: 'bandpass', frequency: f, Q: 6 });
     const g  = new Tone.Gain(0).connect(vocMaster);
     carrier.connect(bp);
     bp.connect(g);
@@ -506,11 +506,14 @@ function pickVoiceMode() {
 
 function speak(text) {
   if (!AUDIO.enabled || !AUDIO.voice || !window.speechSynthesis || !text) return;
+  // throttle agresivo :: Chrome se cuelga si speak() se llama muy seguido
   if (speechSynthesis.speaking || speechSynthesis.pending) return;
-  if (AUDIO.ready && Tone.now() - AUDIO.last.speakEnd < 1.4) return;
+  if (AUDIO.ready && Tone.now() - AUDIO.last.speakEnd < 3.0) return;
   // navegadores sin voces cargadas a tiempo se traban; abortar
   if (!_voices.length) loadVoices();
   if (!_voices.length) return;
+  // textos largos cuelgan más; truncar a 140 chars
+  text = String(text).slice(0, 140);
 
   const mode = pickVoiceMode();
   AUDIO.currentVoiceMode = mode;
