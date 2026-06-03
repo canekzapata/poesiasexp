@@ -456,13 +456,16 @@ function audioSceneChange(name) {
     Tone.Transport.bpm.rampTo(percBpm(), 0.8);
     AUDIO.n.masterChor.wet.rampTo(cfg.chorus, 1.2);  // stub no-op si chorus eliminado
     AUDIO.n.arpSeq.interval = cfg.arpRate;
-    AUDIO.n.padFilter.frequency.cancelScheduledValues(t);
-    AUDIO.n.padFilter.frequency.setValueAtTime(400, t);
-    AUDIO.n.padFilter.frequency.exponentialRampToValueAtTime(1800, t + 1.4);
+    // sweep sobre el padFilter :: lo deja al LFO conectado.
+    // No usamos exponentialRampToValueAtTime porque el Param tiene
+    // una signal LFO conectada y v14 reporta minValue=maxValue=0
+    // en ese caso → RangeError. Tone.Signal.rampTo() lo maneja.
+    AUDIO.n.padFilter.frequency.rampTo(1800, 1.2);
+    // riser del noise :: linearRampToValueAtTime no necesita base>0
     AUDIO.n.noiseBus.gain.cancelScheduledValues(t);
     AUDIO.n.noiseBus.gain.setValueAtTime(0.05, t);
     AUDIO.n.noiseBus.gain.linearRampToValueAtTime(0.5, t + 0.6);
-    AUDIO.n.noiseBus.gain.exponentialRampToValueAtTime(0.35, t + 1.4);
+    AUDIO.n.noiseBus.gain.linearRampToValueAtTime(0.35, t + 1.4);
   } catch (e) {
     if (AUDIO_LOG) LOG('audioSceneChange ERROR', e);
   }
