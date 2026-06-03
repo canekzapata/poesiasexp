@@ -1,12 +1,17 @@
 
-
   
 
 // =============================================================
 //   CONFIG GLOBAL DE LA SESIÓN
 //   - RARE :: cada carga tira el dado; ~5% sale un modo raro
 //   - performance :: arco cerrado (setlist + fade out), tecla O
+//   - SAFE :: ?safe=audio-off|voice-off|melody-off|perc-off|minimal
+//             para aislar capas durante diagnóstico
 // =============================================================
+
+const SAFE = new URLSearchParams(window.location.search).get('safe') || null;
+const ENG_LOG = (...args) => console.log(`[ENG ${(performance.now()/1000).toFixed(2)}s]`, ...args);
+if (SAFE) ENG_LOG('SAFE MODE =', SAFE);
 
 const RARE = (() => {
   const r = Math.random();
@@ -472,15 +477,26 @@ function startScene(name) {
 // sólo aplica cuando el audio aún no ha arrancado.
 
 let _rareApplied = false;
+let _safeApplied = false;
 function ensureAudioHooks() {
   if (AUDIO.ready && !AUDIO.onBeat) {
     AUDIO.onBeat = onBeatTick;
     AUDIO.onMeasure = onMeasureTick;
+    ENG_LOG('audio hooks registered');
   }
-  // silent mode :: aplicar una sola vez cuando el audio esté listo
   if (RARE === 'silent' && AUDIO.ready && !_rareApplied) {
     AUDIO.enabled = false;
     _rareApplied = true;
+  }
+  // safe modes :: aplicar una vez cuando audio esté listo
+  if (SAFE && AUDIO.ready && !_safeApplied) {
+    _safeApplied = true;
+    if (SAFE === 'audio-off')  { AUDIO.enabled = false; }
+    if (SAFE === 'voice-off')  { AUDIO.voice = false; if (window.speechSynthesis) speechSynthesis.cancel(); }
+    if (SAFE === 'melody-off') { toggleMelody(); }
+    if (SAFE === 'perc-off')   { AUDIO.perc = false; }
+    if (SAFE === 'minimal')    { toggleMelody(); AUDIO.voice = false; }
+    ENG_LOG('safe mode applied:', SAFE, '| enabled=', AUDIO.enabled, 'voice=', AUDIO.voice, 'melody=', AUDIO.melody, 'perc=', AUDIO.perc);
   }
 }
 
@@ -644,12 +660,34 @@ function update(dt) {
   if (blocks.length > 160) blocks = blocks.slice(-160);
 }
 
+let _freezeMaxGap = 0;
+let _freezeReportT = 0;
+let _frameCount = 0;
+
 function loop(ts) {
   if (lastTs === null) lastTs = ts;
-  const dt = Math.min((ts - lastTs) / 1000, 0.06);
+  const rawDt = (ts - lastTs) / 1000;
+  const dt = Math.min(rawDt, 0.06);
   lastTs = ts;
   lastDt = dt;
   T += dt;
+  _frameCount++;
+
+  // ── DETECTOR DE FREEZE ─────────────────────────────────────
+  // gap > 200ms entre frames = el thread estuvo bloqueado
+  if (rawDt > 0.2) {
+    ENG_LOG('!! FREEZE !!  gap=' + (rawDt * 1000 | 0) + 'ms  blocks=' + blocks.length + '  scene=' + scene.name + '  speakingTTS=' + (window.speechSynthesis ? speechSynthesis.speaking : '?'));
+    if (rawDt > _freezeMaxGap) _freezeMaxGap = rawDt;
+  }
+  // reporte cada 5s :: FPS, blocks, max freeze
+  if (T - _freezeReportT > 5) {
+    const fps = (_frameCount / (T - _freezeReportT)) | 0;
+    ENG_LOG('5s report: fps=' + fps + ' blocks=' + blocks.length + ' scene=' + scene.name +
+      ' maxFreeze=' + (_freezeMaxGap * 1000 | 0) + 'ms  TTSspeaking=' + (window.speechSynthesis ? speechSynthesis.speaking : '?'));
+    _freezeReportT = T;
+    _frameCount = 0;
+    _freezeMaxGap = 0;
+  }
 
   ensureAudioHooks();
   tickScheduler(dt);
