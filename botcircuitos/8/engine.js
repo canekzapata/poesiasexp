@@ -238,3 +238,294 @@ let tempo = 1;
 let muted = false;
 let acc = { diag: 0, tick: 0, cita: 0, drop: 0, floater: 0 };
 
+
+
+// =============================================================
+//   SPAWNERS
+// =============================================================
+
+function pickPos(estW, estH) {
+  for (let i = 0; i < 30; i++) {
+    const x = rv(20, Math.max(20, W - estW - 20));
+    const y = rv(40, Math.max(40, H - estH - 60));
+    let coll = 0;
+    for (const b of blocks) {
+      const bw = (b.lines[0]?.length || 0) * CW[b.font];
+      const bh = b.lines.length * LH[b.font];
+      if (x < b.x + bw && x + estW > b.x && y < b.y + bh && y + estH > b.y) coll++;
+    }
+    if (coll <= 1) return { x, y };
+  }
+  return { x: rv(40, Math.max(40, W - 200)), y: rv(40, Math.max(40, H - 100)) };
+}
+
+function spawnDiagram() {
+  const lines = genDiagram();
+  const font  = pick(scene.diagFonts);
+  const cw    = CW[font], lh = LH[font];
+  const estW  = Math.max(...lines.map(l => l.length)) * cw + 10;
+  const estH  = lines.length * lh + 10;
+  const pos   = pickPos(estW, estH);
+  blocks.push(new Block({
+    lines, x: pos.x, y: pos.y,
+    font, color: pick(scene.palette),
+    life: 6 + Math.random() * 8,
+    typeSpeed: 60 + Math.random() * 100,
+    glitch: scene.glitch,
+    kind: 'diag',
+  }));
+  audioDiagram();
+}
+
+function spawnTicker() {
+  const text = genTicker();
+  const font = maybe(0.45) ? 'small' : 'micro';
+  const top  = maybe(0.5);
+  const lh   = LH[font];
+  const y    = top ? 12 + rv(0, 3) * lh : H - 36 - rv(0, 3) * lh;
+  const x    = W;
+  blocks.push(new Block({
+    lines: [text], x, y,
+    font,
+    color: maybe(0.06) ? 'amber' : maybe(0.05) ? 'red' : 'dim',
+    life: 6 + Math.random() * 3,
+    typeSpeed: 280,
+    drift: { x: -75 * tempo, y: 0 },
+    kind: 'ticker',
+    glitch: scene.glitch * 0.5,
+  }));
+}
+
+function spawnCita() {
+  if (maybe(0.30)) return spawnGlosa();
+  const lines = [genCita()];
+  const font  = maybe(0.5) ? 'large' : 'drop';
+  const cw    = CW[font];
+  const estW  = lines[0].length * cw + 20;
+  const x     = rv(20, Math.max(20, W - estW - 20));
+  const y     = rv(80, Math.max(80, H - 200));
+  blocks.push(new Block({
+    lines, x, y,
+    font, color: pick(scene.palette),
+    life: 5 + Math.random() * 4,
+    typeSpeed: 30 + Math.random() * 30,
+    kind: 'cita',
+  }));
+  audioCita();
+  speak(lines[0]);
+}
+
+function spawnGlosa() {
+  const lines = genGlosa();
+  const font  = 'medium';
+  const cw    = CW[font], lh = LH[font];
+  const estW  = Math.max(...lines.map(l => l.length)) * cw;
+  const pos   = pickPos(estW, lines.length * lh);
+  blocks.push(new Block({
+    lines, x: pos.x, y: pos.y,
+    font,
+    color: maybe(0.4) ? 'white' : 'green',
+    life: 8 + Math.random() * 4,
+    typeSpeed: 40 + Math.random() * 30,
+    kind: 'glosa',
+  }));
+  audioCita();
+  speak(lines[0]);
+}
+
+function spawnDrop() {
+  const cita = pick(POOLS.cita);
+  const font = 'drop';
+  const cw   = CW[font];
+  const estW = cita.length * cw;
+  const x    = Math.max(20, (W - estW) / 2);
+  const y    = H / 2 - 22;
+  blocks.push(new Block({
+    lines: [cita], x, y,
+    font, color: maybe(0.3) ? 'white' : 'green',
+    life: 4 + Math.random() * 1.5,
+    typeSpeed: 90,
+    kind: 'drop',
+  }));
+  for (let i = 0; i < 3; i++) {
+    spawnStatusBurstAt(rv(30, Math.max(30, W - 250)), rv(30, Math.max(30, H - 150)));
+  }
+}
+
+function spawnStatusBurstAt(x, y) {
+  const lines = genStatusBurst();
+  blocks.push(new Block({
+    lines, x, y,
+    font: 'small',
+    color: maybe(0.5) ? 'amber' : 'dim',
+    life: 2.5 + Math.random() * 1.5,
+    typeSpeed: 280,
+    kind: 'burst',
+    glitch: 0.12,
+  }));
+}
+
+// floater :: una sola línea suelta — fórmula, kaomoji, ping o glosa-fragmento
+function spawnFloater() {
+  const types = [
+    () => ({ text: pick(POOLS.formula),                    font: 'medium', color: 'dim',   life: 3.5 }),
+    () => ({ text: pick(POOLS.kaomoji),                    font: 'large',  color: maybe(0.5) ? 'amber' : 'green', life: 2.2 }),
+    () => ({ text: '[ ' + pick(POOLS.glosa).slice(0, 42) + ' ]', font: 'small', color: 'white', life: 3.0 }),
+    () => ({ text: pick(POOLS.ping) + '  ·  ' + pick(POOLS.ping) + '  ·  ' + pick(POOLS.ping), font: 'small', color: 'dim', life: 2.5 }),
+    () => ({ text: pick(POOLS.verbo) + '  ·  ' + pick(POOLS.adj),        font: 'medium', color: 'green', life: 3 }),
+    () => ({ text: pick(POOLS.epoch),                      font: 'medium', color: maybe(0.4) ? 'white' : 'dim', life: 3.5 }),
+  ];
+  const opt = pick(types)();
+  const cw  = CW[opt.font];
+  const estW = (opt.text.length || 1) * cw;
+  const x = rv(20, Math.max(20, W - estW - 20));
+  const y = rv(40, Math.max(40, H - 100));
+  blocks.push(new Block({
+    lines: [opt.text], x, y,
+    font: opt.font, color: opt.color,
+    life: opt.life + Math.random() * 1.2,
+    typeSpeed: 220,
+    kind: 'floater',
+    glitch: scene.glitch * 0.3,
+  }));
+}
+
+function spawnGhostBackground() {
+  const lines = genDiagram();
+  const font  = maybe(0.4) ? 'large' : 'medium';
+  const cw    = CW[font], lh = LH[font];
+  const estW  = Math.max(...lines.map(l => l.length)) * cw;
+  const x     = Math.max(20, (W - estW) / 2 + rv(-100, 100));
+  const y     = Math.max(40, (H - lines.length * lh) / 2 + rv(-80, 80));
+  blocks.push(new Block({
+    lines, x, y,
+    font, color: 'ghost',
+    life: 18 + Math.random() * 10,
+    typeSpeed: 25,
+    kind: 'ghost',
+  }));
+}
+
+// =============================================================
+//   SCHEDULER + LOOP
+// =============================================================
+
+function startScene(name) {
+  scene = SCENES[name] || SCENES.terminal;
+  sceneT = 0;
+  sceneDur = scene.dur[0] + Math.random() * (scene.dur[1] - scene.dur[0]);
+  acc.diag = acc.tick = acc.cita = acc.drop = 0;
+  if (AUDIO.ready) Tone.Transport.bpm.rampTo(percBpm(), 0.8);
+  if (scene.ghostBg && Math.random() < 0.65) spawnGhostBackground();
+}
+
+function tickScheduler(dt) {
+  if (muted) return;
+  const t = dt * tempo;
+  sceneT += dt;
+  if (sceneT >= sceneDur) {
+    const others = SCENE_LIST.filter(s => s !== scene.name);
+    startScene(pick(others));
+  }
+  const aliveDiag = blocks.filter(b => b.kind === 'diag').length;
+  acc.diag += t;
+  if (acc.diag >= 1 / Math.max(0.01, scene.diagRate) && aliveDiag < scene.maxDiag) {
+    acc.diag = 0;
+    spawnDiagram();
+  }
+  acc.tick += t;
+  if (acc.tick >= 1 / Math.max(0.01, scene.tickerRate)) {
+    acc.tick = 0;
+    spawnTicker();
+  }
+  acc.cita += t;
+  if (scene.citaRate > 0 && acc.cita >= 1 / scene.citaRate) {
+    acc.cita = 0;
+    spawnCita();
+  }
+  acc.drop += t;
+  if (scene.bigDropRate > 0 && acc.drop >= 1 / scene.bigDropRate) {
+    acc.drop = 0;
+    spawnDrop();
+  }
+  acc.floater += t;
+  const fRate = scene.floaterRate ?? 0.20;
+  if (fRate > 0 && acc.floater >= 1 / fRate) {
+    acc.floater = 0;
+    spawnFloater();
+  }
+  if (scene.ghostBg && Math.random() < 0.0008 * tempo) spawnGhostBackground();
+}
+
+function render() {
+  // fade-trail: rastros decaen suaves frame a frame
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+  ctx.fillRect(0, 0, W, H);
+
+  // ordenar para que ghost vaya al fondo
+  blocks.sort((a, b) => {
+    const order = { ghost: 0, burst: 1, ticker: 2, floater: 2.5, diag: 3, glosa: 4, cita: 5, drop: 6 };
+    return (order[a.kind] || 3) - (order[b.kind] || 3);
+  });
+  for (const b of blocks) b.draw();
+
+  // HUD inferior derecha
+  ctx.font = FONTS.micro;
+  ctx.fillStyle = colorFor('dim', 0.85);
+  const fps = (1 / Math.max(0.001, lastDt)).toFixed(0);
+  const snd = !AUDIO.ready ? '♪ —'
+            : !AUDIO.enabled ? '♪ off'
+            : (AUDIO.perc ? '♪+perc' : '♪');
+  const hud = `[${scene.name}]  ${TYPEFACES[typeIdx]}  tempo=${tempo.toFixed(2)}x  blocks=${blocks.length}  ${fps}fps  ·  ${snd}${muted ? '  ·  MUTED' : ''}`;
+  ctx.fillText(hud, W - hud.length * CW.micro - 14, H - 12);
+}
+
+function update(dt) {
+  for (const b of blocks) b.update(dt);
+  blocks = blocks.filter(b => b.alive);
+}
+
+function loop(ts) {
+  if (lastTs === null) lastTs = ts;
+  const dt = Math.min((ts - lastTs) / 1000, 0.06);
+  lastTs = ts;
+  lastDt = dt;
+  T += dt;
+
+  tickScheduler(dt);
+  update(dt);
+  render();
+
+  requestAnimationFrame(loop);
+}
+
+// =============================================================
+//   VJ CONTROLS
+// =============================================================
+
+window.addEventListener('keydown', e => {
+  initAudio();
+  if (e.key === ' ')      { e.preventDefault(); spawnDrop(); return; }
+  if (e.key === 's' || e.key === 'S') { toggleSound(); return; }
+  if (e.key === 'p' || e.key === 'P') { AUDIO.perc = !AUDIO.perc; return; }
+  if (e.key === 't' || e.key === 'T') { applyTypeface(typeIdx + 1); return; }
+  if (e.key === 'm' || e.key === 'M') { muted = !muted; return; }
+  if (e.key === 'r' || e.key === 'R') { blocks = []; return; }
+  if (e.key === 'f' || e.key === 'F') { for (let i = 0; i < 6; i++) spawnFloater(); return; }
+  if (e.key === '+' || e.key === '=') { tempo = Math.min(4, tempo * 1.25); syncPercTempo(); return; }
+  if (e.key === '-' || e.key === '_') { tempo = Math.max(0.1, tempo / 1.25); syncPercTempo(); return; }
+  if (e.key >= '1' && e.key <= '9') {
+    const idx = parseInt(e.key, 10) - 1;
+    if (idx < SCENE_LIST.length) startScene(SCENE_LIST[idx]);
+    return;
+  }
+});
+
+canvas.addEventListener('click', () => { initAudio(); spawnDrop(); });
+
+// =============================================================
+//   ARRANQUE
+// =============================================================
+
+startScene('terminal');
+requestAnimationFrame(loop);
