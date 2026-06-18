@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>⚡ CIRCUITO POÉTICO</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      font-family: 'Courier New', monospace;
+      color: #00ff41;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #terminal {
+      width: 96vw;
+      max-width: 1400px;
+      height: 92vh;
+      background: #000;
+      padding: 44px 52px;
+      overflow-y: auto;
+      line-height: 1.9;
+      font-size: 1.38em;
+      text-shadow: 0 0 10px #00ff41;
+    }
+    .sep {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 6px;
+      filter: drop-shadow(0 0 6px currentColor);
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+  <script>
+
+    const separadores = [
+      `<svg class="sep" width="56" height="22" viewBox="0 0 56 22" xmlns="http://www.w3.org/2000/svg"><polyline points="2,11 10,3 18,19 26,3 34,19 42,11" fill="none" stroke="#ffff00" stroke-width="5" stroke-linejoin="round"/><line x1="42" y1="11" x2="54" y2="11" stroke="#ffff00" stroke-width="5"/></svg>`,
+      `<svg class="sep" width="56" height="22" viewBox="0 0 56 22" xmlns="http://www.w3.org/2000/svg"><path d="M2 11 Q10 2 18 11 Q26 20 34 11 Q42 2 50 11" fill="none" stroke="#ff00ff" stroke-width="5"/></svg>`,
+      `<svg class="sep" width="40" height="22" viewBox="0 0 40 22" xmlns="http://www.w3.org/2000/svg"><polygon points="4,4 4,18 34,11" fill="none" stroke="#00ff41" stroke-width="5"/></svg>`,
+      `<svg class="sep" width="44" height="22" viewBox="0 0 44 22" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="18" height="14" rx="2" fill="none" stroke="#00ffff" stroke-width="5"/><line x1="22" y1="11" x2="40" y2="11" stroke="#00ffff" stroke-width="5"/></svg>`,
+      `<svg class="sep" width="44" height="22" viewBox="0 0 44 22" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="11" x2="14" y2="11" stroke="#00ff41" stroke-width="5"/><line x1="14" y1="3" x2="14" y2="19" stroke="#00ff41" stroke-width="5"/><line x1="22" y1="3" x2="22" y2="19" stroke="#00ff41" stroke-width="5"/><line x1="22" y1="11" x2="42" y2="11" stroke="#00ff41" stroke-width="5"/></svg>`,
+    ];
+
+    function pickSep() {
+      return separadores[Math.floor(Math.random() * separadores.length)];
+    }
+
+    const versos = {
+      apertura: [
+        "SEÑAL DETECTADA • {T} ⚡",
+        "CIRCUITO ACTIVADO • {T} ⚡",
+        "PULSO INICIADO • {T} ⚡",
+        "CORRIENTE EN MARCHA • {T} ⚡",
+        "SISTEMA DESPIERTO • {T} ⚡",
+        "FRECUENCIA ENCONTRADA • {T} ⚡",
+      ],
+      tecnico: [
+        "V={V}v  I={A}A  f={F}Hz",
+        "Z={Z}Ω  φ={P}°  P={W}W",
+        "C={C}µF  L={L}mH  G={Gd}dB",
+        "δ={D}%  η={H}º  N={N}dBm",
+        "λ={lm}nm  τ={tau}ms  Q={qi}",
+        "Vcc={V}v  GND=0v  Vout≈{V2}v",
+      ],
+      tierra: [
+        "∿ debajo del pino pregunto al silencio\n  el silencio responde: Vout = 0V",
+        "∥ las nubes en paralelo — ninguna pregunta a qué voltaje está",
+        "∆V el musgo crece sobre la roca\n  nadie midió su resistencia superficial",
+        "⊥ en el arroyo las piedras aprenden\n  a ser R sin disipación visible",
+        "─── la montaña guarda su tensión interna\n  nunca la descarga — Z = ∞",
+        "∿ camino entre pinos — el viento:\n  señal sin protocolo, sin ACK, sin origen",
+        "⊕ el río no necesita tierra\n  ya es tierra  ya es corriente  ya es todo",
+        "λ en el valle pájaros sin f definida\n  espectro puro — ningún filtro los corta",
+      ],
+      agua: [
+        "∫ el capacitor guarda\n  lo que el río olvida en su prisa hacia el mar",
+        "→ corriente que fluye\n  no necesita origen para ser real: I = dq/dt",
+        "∿ en el estanque inmóvil\n  la luna almacena su propia luz — C = Q/V",
+        "∥ el agua del manantial no pregunta por dónde va\n  solo va — Kirchhoff lo sabe",
+        "∑ lluvia sobre la choza\n  cien gotas × cien frecuencias = ruido blanco",
+        "← el pescador deja el remo quieto\n  el bote elige su camino — lazo abierto",
+        "≈ profundas y raudas las aguas\n  como la señal cuando encuentra su cauce",
+        "∫ bebo del arroyo — la corriente\n  sabe lo que el esquema no dice aún",
+      ],
+      musica: [
+        "∿ el inductor zumba\n  una nota que nadie escribió en la partitura: f₀ = 1/2π√LC",
+        "∅ entre dos silencios\n  vive la música que el amplificador sueña",
+        "λ frecuencia fundamental\n  todo lo demás: armónicos del deseo",
+        "× el transistor amplifica también el silencio\n  si lo polarizas con cuidado",
+        "▲ la onda cuadrada es honesta\n  sube — se queda — baja — no miente",
+        "∿ en el espectro: colores\n  que el oído nunca vio pero el osciloscopio sí",
+        "→ una melodía entra por la base\n  sale transformada: eso llaman ganancia A = Vout/Vin",
+        "∑ escuché la música del cielo\n  y me sorprendió que usara exactamente 440Hz",
+      ],
+      noche: [
+        "∿ ante mi lecho — luz del LED\n  semeja luna sobre el suelo de tierra",
+        "τ en la noche el oscilador sueña\n  su propia frecuencia: f = 1/T",
+        "∞ alzo la vista al cielo\n  cada estrella: LED @ 3.3v sin R en serie",
+        "△ el reloj de cuarzo late mientras duermo\n  fiel — 32 768 veces por segundo",
+        "→ 0 en silencio el capacitor se descarga\n  lentamente — Vc(t) = V₀·e^(-t/RC)",
+        "∅ tarde muy tarde\n  el sistema entra en modo de bajo consumo",
+        "■ nadie escucha los golpes del clock\n  cuando la ciudad se apaga",
+        "∿ la luna guarda su carga\n  nadie la toca  nadie la mide  C = ∞",
+      ],
+      soledad: [
+        "∥ mil picos — ninguna señal\n  ten cuidado cuando salgas del nodo",
+        "∅ construí una choza sin antena\n  aprendí a vivir sin ACK — timeout = ∞",
+        "⊥ me aparté del mundo de la fama\n  también de la red — impedancia de salida: ∞Ω",
+        "∿ el recluso no necesita protocolo\n  para comunicarse con los pinos — banda base",
+        "→ siguiendo mi propia inclinación\n  disfrutando de lo natural — libre de interrupción",
+        "∑ libre de ruido me construí un filtro\n  paso-bajas lejos, en lo profundo",
+        "Z en la montaña el silencio\n  también tiene impedancia — no es vacío",
+        "■ olvidado de las palabras\n  solo el zumbido del transformador a 50Hz",
+      ],
+      cierre: [
+        "─── todo esto es antiguo y nuevo\n  pulsa  espera  pulsa  ∆t → 0",
+        "∿ interminablemente en el lago crece la señal\n  [click o tecla — nuevo poema]",
+        "⊕ sobrio pero conectado\n  conectado pero libre — estado: HIGH/Z",
+        "∅ el LED se apaga\n  ya es otro poema — duty cycle = 0%",
+        "→ la corriente nunca termina\n  solo cambia de forma — conservación de energía",
+        "GND • GND • GND\n  todo vuelve al origen — ley de nodos: ΣI = 0",
+        "∞ presiona cualquier tecla\n  para continuar el circuito poético",
+        "≡ este texto es una señal\n  tú eres el receptor — S/N ratio: desconocido",
+      ],
+    };
+
+    function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+    function rv(a, b) { return Math.floor(Math.random() * (b - a)) + a; }
+    function rf(a, b) { return (Math.random() * (b - a) + a).toFixed(1); }
+
+    const temas = [
+      "LITERATURA", "MÚSICA", "CIRCUITOS", "CYBERPOESÍA",
+      "ELECTRÓNICA", "SILENCIO", "SEÑAL", "RUIDO", "ARMÓNICOS",
+    ];
+
+    function llenar(s) {
+      return s
+        .replace("{T}", pick(temas))
+        .replace("{V}", rv(8, 320))
+        .replace("{V2}", rv(1, 12))
+        .replace("{A}", rf(0.1, 2.5))
+        .replace("{F}", rv(50, 1600))
+        .replace("{Z}", rv(10, 9900))
+        .replace("{P}", rv(-90, 90))
+        .replace("{W}", rv(1, 800))
+        .replace("{C}", rf(0.1, 470))
+        .replace("{L}", rv(1, 500))
+        .replace("{Gd}", rv(-20, 40))
+        .replace("{D}", rv(10, 90))
+        .replace("{H}", rv(2, 15))
+        .replace("{N}", rv(-120, -40))
+        .replace("{lm}", rv(380, 780))
+        .replace("{tau}", rv(1, 999))
+        .replace("{qi}", rf(0.5, 200));
+    }
+
+    function construirPoema() {
+      return [
+        llenar(pick(versos.apertura)),
+        llenar(pick(versos.tecnico)),
+        "ESTROFA_I",
+        pick(versos.tierra),
+        pick(versos.agua),
+        "ESTROFA_II",
+        pick(versos.musica),
+        pick(versos.noche),
+        "ESTROFA_III",
+        pick(versos.soledad),
+        "ESTROFA_IV",
+        pick(versos.cierre),
+      ];
+    }
+
+    function typeText(el, text, speed, done) {
+      let i = 0;
+      const t = setInterval(() => {
+        if (i < text.length) {
+          el.innerHTML += text[i] === "\n" ? "<br>" : text[i];
+          i++;
+        } else {
+          clearInterval(t);
+          if (done) done();
+        }
+      }, speed);
+    }
+
+    function renderPoema() {
+      const terminal = document.getElementById("terminal");
+      terminal.innerHTML = "";
+      const lineas = construirPoema();
+      let idx = 0;
+
+      function siguienteLinea() {
+        if (idx >= lineas.length) return;
+        const linea = lineas[idx++];
+        if (linea.startsWith("ESTROFA_")) {
+          terminal.innerHTML += "<br>" + pickSep() + "<br><br>";
+          siguienteLinea();
+          return;
+        }
+        typeText(terminal, linea, 13, () => {
+          terminal.innerHTML += "<br>";
+          setTimeout(siguienteLinea, 120);
+        });
+      }
+
+      siguienteLinea();
+    }
+
+    window.onload = renderPoema;
+    document.addEventListener('click', renderPoema);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Enter" || e.key === " ") renderPoema();
+    });
+
+  </script>
+</body>
+</html>
