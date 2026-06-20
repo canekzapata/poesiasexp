@@ -498,60 +498,84 @@ function pickVoiceMode() {
   return 'alien';
 }
 
+// cola suave :: encadenamos hasta MAX_PENDING utterances —
+// el browser maneja la secuencia interna; nosotros sólo capamos para
+// no inundar la API (Chrome se cuelga si la cola crece sin límite).
+const MAX_PENDING_SPEAK = 3;
+let _speakPending = 0;
+
 function speak(text) {
   if (!AUDIO.enabled || !AUDIO.voice || !window.speechSynthesis || !text) return;
-  // throttle agresivo :: Chrome se cuelga si speak() se llama muy seguido
-  if (speechSynthesis.speaking || speechSynthesis.pending) return;
-  if (AUDIO.ready && Tone.now() - AUDIO.last.speakEnd < 3.0) return;
-  // navegadores sin voces cargadas a tiempo se traban; abortar
   if (!_voices.length) loadVoices();
   if (!_voices.length) return;
-  // textos largos cuelgan más; truncar a 140 chars
-  text = String(text).slice(0, 140);
+  if (_speakPending >= MAX_PENDING_SPEAK) return;
+
+  // cap generoso :: 320 chars dejan pasar glosas completas y citas largas
+  text = String(text).slice(0, 320);
 
   const mode = pickVoiceMode();
   AUDIO.currentVoiceMode = mode;
   AUDIO.speakingNow = true;
+  _speakPending++;
 
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'es-ES';
   const v = pickVoice();
   if (v) u.voice = v;
 
+  // pitch/rate más estables :: menos variancia → frases que se encadenan
+  // sin saltos bruscos entre una y otra
   switch (mode) {
     case 'whisper':
-      u.pitch  = 1.3 + Math.random() * 0.5;
-      u.rate   = 0.7  + Math.random() * 0.2;
-      u.volume = 0.45;
+      u.pitch  = 1.25 + Math.random() * 0.25;
+      u.rate   = 0.85 + Math.random() * 0.12;
+      u.volume = 0.55;
       break;
     case 'alien':
-      u.pitch  = 0.1 + Math.random() * 0.25;
-      u.rate   = 0.85 + Math.random() * 0.3;
+      u.pitch  = 0.2 + Math.random() * 0.15;
+      u.rate   = 0.95 + Math.random() * 0.12;
       u.volume = 0.95;
       break;
     case 'double':
-      u.pitch  = 0.5 + Math.random() * 0.25;
-      u.rate   = 0.9 + Math.random() * 0.2;
+      u.pitch  = 0.55 + Math.random() * 0.12;
+      u.rate   = 0.92 + Math.random() * 0.10;
       u.volume = 0.85;
       break;
     case 'normal':
     default:
-      u.pitch  = 0.3 + Math.random() * 0.35;
-      u.rate   = 0.84 + Math.random() * 0.26;
-      u.volume = 0.9;
+      u.pitch  = 0.4 + Math.random() * 0.18;
+      u.rate   = 0.92 + Math.random() * 0.14;
+      u.volume = 0.92;
   }
 
-  u.onstart    = () => { if (AUDIO_LOG) LOG('speak START mode=' + mode + ' len=' + text.length); vocoderStart(mode); };
+  u.onstart    = () => { if (AUDIO_LOG) LOG('speak START mode=' + mode + ' len=' + text.length + ' pend=' + _speakPending); vocoderStart(mode); };
   u.onboundary = () => vocoderPulse(mode);
-  u.onend      = () => { if (AUDIO_LOG) LOG('speak END'); vocoderStop(); };
-  u.onerror    = (e) => { if (AUDIO_LOG) LOG('speak ERROR', e.error); vocoderStop(); };
+  u.onend      = () => {
+    _speakPending = Math.max(0, _speakPending - 1);
+    if (AUDIO_LOG) LOG('speak END  pend=' + _speakPending);
+    // sólo apagamos el vocoder cuando la cola se vacía —
+    // si hay más utterances en camino, lo dejamos abierto para fluidez
+    if (_speakPending === 0) {
+      AUDIO.speakingNow = false;
+      vocoderStop();
+    }
+    if (AUDIO.ready) AUDIO.last.speakEnd = Tone.now();
+  };
+  u.onerror    = (e) => {
+    _speakPending = Math.max(0, _speakPending - 1);
+    if (AUDIO_LOG) LOG('speak ERROR', e.error, 'pend=' + _speakPending);
+    if (_speakPending === 0) {
+      AUDIO.speakingNow = false;
+      vocoderStop();
+    }
+  };
   if (AUDIO_LOG) LOG('speak QUEUE mode=' + mode + ' text=' + text.slice(0, 40));
   speechSynthesis.speak(u);
 
-  // double :: segunda voz desfasada — sólo si el original sigue hablando
+  // double :: segunda voz desfasada — coro fantasma, sin contar en la cola
   if (mode === 'double' && Math.random() < 0.7) {
     setTimeout(() => {
-      if (!AUDIO.speakingNow || !speechSynthesis.speaking) return;
+      if (!speechSynthesis.speaking) return;
       const u2 = new SpeechSynthesisUtterance(text);
       u2.lang = 'es-ES';
       if (v) u2.voice = v;
