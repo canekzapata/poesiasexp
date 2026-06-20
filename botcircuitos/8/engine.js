@@ -378,7 +378,11 @@ function spawnGlosa() {
     kind: 'glosa',
   }));
   audioCita();
-  speak(original[0]);
+  // leemos varias líneas de la glosa, no sólo la primera —
+  // la cola de voz las encadena con micropausa natural
+  const speakable = original.filter(l => l && !/^[^a-zA-Z0-9]+$/.test(l));
+  const n = Math.min(speakable.length, 1 + (Math.random() < 0.5 ? 1 : 2));
+  for (let i = 0; i < n; i++) speak(speakable[i]);
 }
 
 function spawnDrop() {
@@ -731,8 +735,29 @@ window.addEventListener('keydown', e => {
 canvas.addEventListener('click', () => { initAudio(); spawnDrop(); });
 
 // =============================================================
-//   ARRANQUE
+//   ARRANQUE  ::  nada corre hasta que el cuerpo humano da el clic
 // =============================================================
 
-startScene('terminal');
-requestAnimationFrame(loop);
+let _booted = false;
+function bootstrap() {
+  if (_booted) return;
+  _booted = true;
+  const splash = document.getElementById('splash');
+  if (splash) {
+    splash.classList.add('splash-fade');
+    setTimeout(() => splash.remove(), 650);
+  }
+  initAudio();          // exige el gesto — lo tenemos
+  startScene('terminal');
+  requestAnimationFrame(loop);
+}
+
+const splash = document.getElementById('splash');
+if (splash) {
+  splash.addEventListener('click', bootstrap, { once: true });
+  // un keydown también arranca, por si alguien viene del teclado
+  const keyBoot = (e) => { if (_booted) return; bootstrap(); };
+  document.addEventListener('keydown', keyBoot, { once: true });
+} else {
+  bootstrap();
+}
