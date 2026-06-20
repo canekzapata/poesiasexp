@@ -128,6 +128,10 @@ class Block {
     this.glitch   = opts.glitch || 0;
     this.kind     = opts.kind || 'diag';
     this.drift    = opts.drift || { x: 0, y: 0 };
+    // typeface override :: si está, anula la tipografía global para
+    // este bloque. Permite que algunas piezas aparezcan en una fuente
+    // distinta sin cambiar la principal.
+    this.typeface = opts.typeface || null;
   }
 
   update(dt) {
@@ -152,8 +156,15 @@ class Block {
     return 1;
   }
 
+  // construye el font string en runtime; si hay typeface propia,
+  // la antepone a la cadena de fallback en vez de usar el FONTS global
+  _fontString() {
+    if (!this.typeface) return FONTS[this.font];
+    return `${FONT_SIZE[this.font]}px '${this.typeface}', 'Courier New', monospace`;
+  }
+
   draw() {
-    ctx.font = FONTS[this.font];
+    ctx.font = this._fontString();
     const lh = LH[this.font];
     let alpha = this.alpha;
     if (this.kind === 'ghost') alpha *= 0.35;
@@ -290,6 +301,18 @@ let acc = { diag: 0, tick: 0, cita: 0, drop: 0, floater: 0 };
 //   SPAWNERS
 // =============================================================
 
+// pickAltTypeface(p) :: con probabilidad p devuelve una tipografía
+// distinta de la principal (typeIdx). Si no acierta, null y el bloque
+// hereda la principal. Mantiene la mayoría de la pantalla coherente
+// y deja que aparezcan glifos distintos de vez en cuando.
+function pickAltTypeface(p) {
+  if (Math.random() >= p) return null;
+  if (TYPEFACES.length < 2) return null;
+  let idx;
+  do { idx = (Math.random() * TYPEFACES.length) | 0; } while (idx === typeIdx);
+  return TYPEFACES[idx];
+}
+
 function pickPos(estW, estH) {
   for (let i = 0; i < 30; i++) {
     const x = rv(20, Math.max(20, W - estW - 20));
@@ -319,6 +342,7 @@ function spawnDiagram() {
     typeSpeed: 60 + Math.random() * 100,
     glitch: scene.glitch,
     kind: 'diag',
+    typeface: pickAltTypeface(0.15),
   }));
   audioDiagram();
 }
@@ -339,6 +363,7 @@ function spawnTicker() {
     drift: { x: -75 * tempo, y: 0 },
     kind: 'ticker',
     glitch: scene.glitch * 0.5,
+    typeface: pickAltTypeface(0.20),
   }));
 }
 
@@ -357,6 +382,7 @@ function spawnCita() {
     life: 5 + Math.random() * 4,
     typeSpeed: 30 + Math.random() * 30,
     kind: 'cita',
+    typeface: pickAltTypeface(0.08),
   }));
   audioCita();
   speak(original);
@@ -376,6 +402,7 @@ function spawnGlosa() {
     life: 8 + Math.random() * 4,
     typeSpeed: 40 + Math.random() * 30,
     kind: 'glosa',
+    typeface: pickAltTypeface(0.12),
   }));
   audioCita();
   // leemos varias líneas de la glosa, no sólo la primera —
@@ -414,6 +441,7 @@ function spawnStatusBurstAt(x, y) {
     typeSpeed: 280,
     kind: 'burst',
     glitch: 0.12,
+    typeface: pickAltTypeface(0.22),
   }));
 }
 
@@ -439,6 +467,7 @@ function spawnFloater() {
     typeSpeed: 220,
     kind: 'floater',
     glitch: scene.glitch * 0.3,
+    typeface: pickAltTypeface(0.25),
   }));
 }
 
@@ -455,6 +484,7 @@ function spawnGhostBackground() {
     life: 18 + Math.random() * 10,
     typeSpeed: 25,
     kind: 'ghost',
+    typeface: pickAltTypeface(0.30),
   }));
 }
 
