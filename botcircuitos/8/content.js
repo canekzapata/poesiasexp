@@ -388,6 +388,194 @@ POOLS.kaomoji.push(
   '(•_•)>⌐■-■','{ loop }','<<< seq >>>','¬_¬ tic-tac',
 );
 
+// ── expansión v8 :: materia, lo trans, vector, protocolo ─────
+// Kittler · Wark · Galloway · Thacker · Preciado
+// (más Bennett · Barad · Mbembe · Tsing · Haraway en ese registro)
+
+POOLS.adj.push(
+  // registro material / vibrante
+  'vibrante','intra-activo','pre-individual','sin permiso de fase',
+  'molecular','submolecular','químico','dieléctrico',
+  'sin afuera','sin adentro','poroso','permeable',
+  // registro trans / hormonal / farmacológico
+  'trans-','en transición','sin transición','hormonal',
+  'de la testosterona','del estrógeno','de la sustancia',
+  'farmacológico','farmacopornográfico','somateco',
+  'no-binario','sin género asignado','reasignado','autoadministrado',
+  // registro vector / protocolo / hacker
+  'vectorial','del vector','protocolar','sin protocolo',
+  'distribuido','sin centro','descentralizado','sin servidor',
+  'hackeable','hackeado','en código abierto','en código sin licencia',
+  // registro oscuro / dust / world-without-us
+  'sin nosotros','de antes del mundo','en el polvo',
+  'oscuramente vital','indiferente','impersonal',
+);
+
+POOLS.verbo.push(
+  'intra-actúa','hormona','protocoliza','vectoriza',
+  'hackea','medía','filtra el género','reasigna',
+  'farmaceutiza','codifica','decodifica','transcorporea',
+  'vibra sin permiso','escribe en la carne',
+);
+
+POOLS.compType.push(
+  'Tₜ','Hₘ','P★','Vᵥ','Πₚ','Φ_h',  // trans, hormona, preciado, vector, protocolo, fase humana
+);
+
+POOLS.unit.push(
+  'mg','µg/L','ng/dL','pg/mL','cc',
+  'bits/s','paquetes/s','vectores','dosis','ciclos/sem',
+);
+
+POOLS.source.push(
+  'la dosis del lunes','la inyección semanal',
+  'la fricción molecular','el archivo de hormonas',
+  'el código antes del cuerpo','el cuerpo antes del código',
+  'la materia que vibra sin permiso','el vector que reparte la diferencia',
+  'el protocolo que nadie firmó','el paquete que llega tarde',
+  'la sustancia disuelta en saliva','la imagen que dispara endocrinas',
+  'el régimen farmacopornográfico','el peer que sigue conectado',
+);
+
+POOLS.load.push(
+  'el cuerpo abierto a la sustancia','el archivo somateco',
+  'lo que la materia decide','el último protocolo del día',
+  'la red que cae sin avisar','la red que vuelve sin pedir',
+  'el paquete que se entrega a nadie','la dosis siguiente',
+  'el mundo-sin-nosotros que sigue zumbando',
+  'la antena que ya nadie escucha',
+);
+
+POOLS.formula.push(
+  // bridges material/trans/protocolo
+  'dosis(t) = D₀ + ∫i_subq(t) dt',
+  'género ≈ Σ(protocolo_n · gain_n)',
+  'hack = ∂(diferencia)/∂(protocolo)',
+  'vector = información × poder',
+  'control = protocolo · distribución',
+  'cuerpo(t) = hardware(t) ⊛ código(t)',
+  'agencia = materia · intra-acción',
+  'soberanía = bandwidth · permiso',
+);
+
+POOLS.epoch.push(
+  // Kittler / Wark / Galloway / Thacker / Preciado anchors
+  'Berlin 1986','Berlin 1999','Bochum 1985',
+  'Manhattan 2004','Sydney 1996','Melbourne 2004',
+  'Brown 2004','Princeton 2006',
+  'New School 2014','Brooklyn 2010',
+  'París 2008','Madrid 2014','Lisboa 2022',
+  'sala de máquinas sin máquinas','la clínica abierta',
+);
+
+POOLS.ticker.push(
+  '[KITTLER] no software · sólo hardware',
+  '[KITTLER] discurso = ancho de banda',
+  '[KITTLER] el medio define la situación',
+  '[WARK]    vectorial class on packet 47',
+  '[WARK]    hack as differential',
+  '[WARK]    info wants out · still cuffed',
+  '[WARK]    20 años después · todavía hackeando',
+  '[GALLOWAY] protocol layer · ok',
+  '[GALLOWAY] interface effect engaged',
+  '[GALLOWAY] red opaca cuando funciona',
+  '[THACKER] world-without-us · still humming',
+  '[THACKER] dark vitalism stable',
+  '[THACKER] en el polvo · voltaje persiste',
+  '[PRECIADO] testo @ 50mg · día 14',
+  '[PRECIADO] somateca queue · open',
+  '[PRECIADO] régimen farmacoporno · uptime ∞',
+  '[PRECIADO] protocolo de género · editable',
+  '[BARAD]   intra-action detected',
+  '[BENNETT] vibrant matter quorum',
+  '[TSING]   ruin · spore · slow compute',
+  '[MBEMBE]  necropolítica · bandwidth limit',
+  '[HARAWAY] cyborg manifesto · still online',
+  '[FED]     federación nodo 23 · sincronizando',
+  '[P2P]     handshake con desconocidx · ok',
+  '[CRYPT]   clave privada en sobre lacrado',
+);
+
+POOLS.cita.push(
+  // materia
+  'la materia recuerda sin necesidad de archivo.',
+  'la materia escribe en hardware antes de pasar a software.',
+  'la materia vibra antes de tener nombre.',
+  'no toda agencia pasa por la palabra — algunas por la carga.',
+  'lo molecular antecede a lo gramatical.',
+  'la sustancia decide antes que el sujeto.',
+  // trans
+  'lo trans no es paso — es fase desplazada.',
+  'transitar es ajustar la impedancia del cuerpo.',
+  'cada hormona es una señal modulada en sangre.',
+  'el cuerpo no se transcribe — se reescribe.',
+  'todo género es una topología de circuito.',
+  'la testosterona también es un protocolo.',
+  'la dosis es un verso que se sostiene en sangre.',
+  'el cuerpo se autoadministra como una red descentralizada.',
+  // kittler
+  'no hay software — sólo hardware bien dispuesto.',
+  'el discurso es un canal con ancho de banda.',
+  'el medio escribe antes que la mano.',
+  // wark
+  'hackear es producir la diferencia, no la copia.',
+  'el vector mueve más que la información: mueve la diferencia.',
+  'la clase vectorial extrae renta de la abstracción.',
+  'del don al vector — del vector de regreso al don.',
+  // galloway
+  'la red sólo se ve cuando se rompe.',
+  'el protocolo es el lugar donde el control se hace invisible.',
+  'toda interfaz es un efecto — no una ventana.',
+  // thacker
+  'el mundo-sin-nosotros también zumba.',
+  'la mediación es un parásito que también nos cuida.',
+  'en el polvo de este planeta, persiste un voltaje.',
+);
+
+POOLS.glosa.push(
+  // Kittler — más allá del "hay hardware en el lenguaje"
+  'Kittler: no hay software, sólo hardware encendido.',
+  'Kittler: el medio determina nuestra situación.',
+  'Kittler: la máquina de escribir reescribió el cuerpo de quien escribe.',
+  'Kittler: gramófono · film · typewriter — tres canales del siglo XX.',
+  // Wark
+  'Wark: hackear es producir la diferencia.',
+  'Wark: la clase vectorial extrae renta de la abstracción.',
+  'Wark (Hacker Manifesto, 2004): la información quiere ser libre, está esposada.',
+  'Wark · 20 años después: el vector se volvió plataforma.',
+  // Galloway
+  'Galloway: el protocolo es el control después de la descentralización.',
+  'Galloway: toda interfaz es un efecto — no una ventana.',
+  'Galloway: la red es opaca cuando funciona.',
+  // Thacker
+  'Thacker: el mundo-sin-nosotros también vibra.',
+  'Thacker: la mediación es un parásito que también nos cuida.',
+  'Thacker: en el polvo de este planeta — biofilosofía oscura.',
+  // Preciado
+  'Preciado: el cuerpo es una somateca, no un destino.',
+  'Preciado: la testosterona es una ficción molecular eficaz.',
+  'Preciado: régimen farmacopornográfico — voltaje, hormona, imagen.',
+  'Preciado: lo trans no es identidad, es protocolo abierto.',
+  // compañerxs
+  'Bennett: la materia vibrante también tiene voto.',
+  'Barad: la materia se intra-actúa consigo misma.',
+  'Tsing: la seta de la ruina es una computación lenta.',
+  'Mbembe: necropolítica modula el ancho de banda del cuerpo.',
+  'Haraway: prefiero ser cíborg que diosa — y prefiero la simpoiesis.',
+  'Federici: el cuerpo también fue cercado.',
+  'Stengers: pensar con — nunca pensar sobre.',
+);
+
+POOLS.ping.push(
+  'trans','dose','hack','vec','proto','dust',
+  'somat','testo','peer','node','mesh','fork',
+);
+
+POOLS.kaomoji.push(
+  '⟨ trans ⟩','{ dose }','((( vector )))','[ proto ]',
+  '⌐■_■ hack','( materia )','// kittler //','// preciado //',
+);
+
 // =============================================================
 //   GENERATOR  ::  produce fragmentos visuales y textuales
 // =============================================================
