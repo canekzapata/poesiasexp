@@ -3,13 +3,16 @@
 un paisaje zurcido con escrituras, en la línea de [sutilezas](../sutileza):
 tracery casero + caracteres de unicode + colores al azar sobre variables css.
 
-## capas (de arriba a abajo)
+## capas superpuestas (de atrás hacia adelante)
 
-- **cielo** — nubes de emoji (☁🌧⛈), lluvia egipcia 𓇲, trueno anatolio 𔓢 (TONITRUS), aves 𓅃𔒟
-- **cordillera** — MONS anatolio 𔓬, colinas egipcias 𓈉𓈋𓈌, triángulos y cuñas de block elements
-- **ladera** — sextantes y sombras de *symbols for legacy computing* (🬦🮘▓), con plantas, rocas, cabras y gente incrustadas
-- **pradera** — plantas egipcias 𓇋𓆰, cosechas de lineal B (𐂎 trigo, 𐂐 oliva, 𐂖 vino), humanos 𓀠𔐀𐂀
-- **río** — agua egipcia 𓈖𓈗, FLUMEN anatolio 𔓳, peces 𓆟🐠 en subíndice, barcas 𓊛
+1. **cielo** — el fondo total: astro (☀𓇳𔓙 o 🌙𓇹𔓜), nubes ☁🌧⛈, satélites 🛰🛸,
+   aves 𓅃𔒟, lluvia egipcia 𓇲, trueno anatolio 𔓢 (TONITRUS)
+2. **montañas** — block elements con dirección: la ladera izquierda sube ◢🭇🭃,
+   la cumbre ▲🭯 (o meseta de macizo █▓), la ladera derecha baja ◣🬼🭏;
+   faldas con rocas, bestias y signos de lineal A incrustados
+3. **nubes y pájaros** — por delante de los picos
+4. **vida** — humanos en actividades 𓀤𓀠𓁐𔐀, con plantas 𓇋𐂎🌾, bestias 𓃒𔑺𐂂 y vasijas 𐃟
+5. **agua** — al frente: agua egipcia 𓈖𓈗, FLUMEN anatolio 𔓳, peces 𓆟🐠 en subíndice, barcas 𓊛⛵
 
 ## archivos
 
