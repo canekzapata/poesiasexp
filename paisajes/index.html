@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>paisajes con unicode</title>
+<!--
+paisajes con unicode
+
+un paisaje zurcido con escrituras, en cinco capas superpuestas:
+cielo al fondo (astro, nubes, satelites), montañas de block elements
+con laderas que suben ◢ y bajan ◣, nubes y pajaros por delante,
+humanos y naturaleza en jeroglifico, y el agua al frente con sus peces
+
+poesiasexp / canekzapata.net
+2026
+-->
+
+<link rel="preload" href="NOTOSANSEGYPTIANHIEROGLYPHS-REGULAR.TTF" as="font" crossorigin="anonymous">
+<link rel="preload" href="NOTOSANSANATOLIANHIEROGLYPHS-REGULAR.TTF" as="font" crossorigin="anonymous">
+<link rel="preload" href="NOTOSANSLINEARB-REGULAR.TTF" as="font" crossorigin="anonymous">
+<link rel="preload" href="NOTOSANSLINEARA-REGULAR.TTF" as="font" crossorigin="anonymous">
+<link rel="preload" href="UNSCII-16-FULL.WOFF" as="font" crossorigin="anonymous">
+
+<style>
+@font-face { font-family: 'egipcio';  src: url(NOTOSANSEGYPTIANHIEROGLYPHS-REGULAR.TTF); }
+@font-face { font-family: 'anatolio'; src: url(NOTOSANSANATOLIANHIEROGLYPHS-REGULAR.TTF); }
+@font-face { font-family: 'linearb';  src: url(NOTOSANSLINEARB-REGULAR.TTF); }
+@font-face { font-family: 'lineara';  src: url(NOTOSANSLINEARA-REGULAR.TTF); }
+@font-face { font-family: 'unscii';   src: url(UNSCII-16-FULL.WOFF); }
+@font-face { font-family: 'unifont';  src: url(UNIFONT.TTF); }
+@font-face { font-family: 'electro';  src: url(ELECTRONICS.TTF); }
+
+:root {
+  /* el motor sobreescribe todo esto */
+  --c0:#111; --c1:#111; --c2:#111; --c3:#111; --c4:#111; --c5:#111; --c6:#111; --c7:#111;
+  --c8:#111; --c9:#111; --c10:#111; --c11:#111; --c12:#111; --c13:#111; --c14:#111; --c15:#111;
+  --c16:#111; --c17:#111; --c18:#111; --c19:#111; --c20:#111; --c21:#111; --c22:#111; --c23:#111;
+  --c24:#111; --c25:#111; --c26:#111; --c27:#111; --c28:#111; --c29:#111; --c30:#111; --c31:#111;
+  --deg: 90deg; --deg2: 45deg;
+  --t1: 1.4s; --t2: 6s; --t3: 3.7s; --t4: 2s; --t5: 12s;
+  --shad: 1px;
+}
+
+/* ------- esquemas de cambio de color ------- */
+
+@keyframes derrame {          /* el gradiente se desplaza */
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes fondo {            /* el fondo cambia de color */
+  0% { background-color: var(--c0); } 12% { background-color: var(--c3); }
+  25% { background-color: var(--c7); } 37% { background-color: var(--c11); }
+  50% { background-color: var(--c14); } 62% { background-color: var(--c18); }
+  75% { background-color: var(--c22); } 87% { background-color: var(--c26); }
+  100% { background-color: var(--c30); }
+}
+@keyframes tinta {            /* la letra cambia de color */
+  0% { color: var(--c1); } 20% { color: var(--c5); } 38% { color: var(--c9); }
+  56% { color: var(--c13); } 74% { color: var(--c17); } 89% { color: var(--c21); }
+  100% { color: var(--c25); }
+}
+@keyframes sombras {          /* la sombra cambia de color */
+  0% { text-shadow: var(--shad) var(--shad) var(--c2); }
+  25% { text-shadow: calc(var(--shad) * -1) var(--shad) var(--c8); }
+  50% { text-shadow: var(--shad) calc(var(--shad) * -1) var(--c16); }
+  75% { text-shadow: calc(var(--shad) * -1) calc(var(--shad) * -1) var(--c24); }
+  100% { text-shadow: var(--shad) var(--shad) var(--c28); }
+}
+@keyframes esquina {          /* el borde cambia de color */
+  0% { border-color: var(--c6); } 33% { border-color: var(--c15); }
+  66% { border-color: var(--c23); } 100% { border-color: var(--c31); }
+}
+
+/* ------- pagina ------- */
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(var(--deg), var(--c28), var(--c29), var(--c30), var(--c31));
+  background-size: 900% 900%;
+  animation: derrame var(--t5) ease infinite;
+}
+
+body {
+  font-family: 'unscii', 'egipcio', 'anatolio', 'linearb', 'lineara', 'unifont', 'electro', sans-serif;
+}
+
+#marco {
+  width: 96vw;
+  height: 95vh;
+  margin: 2.5vh auto;
+  padding: .6vmax;
+  box-sizing: border-box;
+  border: .6vmax dashed var(--c6);
+  animation: esquina var(--t3) ease infinite;
+  overflow: hidden;
+}
+
+/* ------- el escenario: capas apiladas, la mas atras primero ------- */
+
+#escenario {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.capa { position: absolute; left: 0; right: 0; }
+
+.capa-cielo    { top: 0; bottom: 0; z-index: 1;
+                 display: flex; flex-direction: column; justify-content: space-around; }
+.capa-montanas { bottom: 15%; z-index: 2; line-height: .92; letter-spacing: -.02em; }
+.capa-nubes    { top: 22%; z-index: 3; }
+.capa-vida     { bottom: 14%; z-index: 4; }
+.capa-agua     { bottom: 0; z-index: 5; line-height: 1; }
+
+.fila { white-space: nowrap; overflow: hidden; }
+.capa-cielo .fila { margin-bottom: 1.2vmax; }
+
+/* ------- esquemas por capa ------- */
+
+.anima-gradiente {
+  background: linear-gradient(var(--degcapa, var(--deg)), var(--c4), var(--c9), var(--c12), var(--c20), var(--c27));
+  background-size: 900% 900%;
+  animation: derrame var(--t3) ease infinite;
+}
+.anima-fondo {
+  animation: fondo var(--t4) ease infinite;
+}
+.anima-tinta {
+  animation: tinta var(--t2) ease infinite;
+}
+.anima-sombra {
+  color: var(--c5);
+  text-shadow: var(--shad) var(--shad) var(--c12);
+  animation: sombras var(--t4) ease infinite;
+}
+.anima-mascara {
+  background-image: linear-gradient(var(--degcapa, var(--deg2)), var(--c19), var(--c16), var(--c10), var(--c0), var(--c17));
+  background-size: 900% 900%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: derrame var(--t2) ease infinite;
+}
+
+/* ------- contenedores de texto: cada uno con su pulso ------- */
+
+h4, h5, h6, span, font, sub, sup { margin: 0; overflow: hidden; }
+
+h4 {
+  display: inline-block;
+  font-size: 1.5em;
+  animation: fondo var(--t4) ease infinite;
+}
+h5 {
+  display: inline-block;
+  font-size: 1.25em;
+  background: linear-gradient(var(--deg), var(--c3), var(--c4), var(--c5), var(--c23), var(--c19));
+  background-size: 900% 900%;
+  animation: derrame var(--t2) ease infinite;
+}
+h6 {
+  display: inline-block;
+  font-size: .95em;
+  text-shadow: var(--shad) var(--shad) var(--c12);
+  animation: sombras var(--t4) ease infinite;
+}
+span {
+  display: inline-block;
+  background: linear-gradient(var(--deg2), var(--c1), var(--c2), var(--c6), var(--c9), var(--c15));
+  background-size: 900% 900%;
+  animation: derrame var(--t1) ease infinite;
+}
+font {
+  display: inline-block;
+  animation: tinta var(--t1) ease infinite;
+}
+sub, sup {
+  display: inline-block;
+  font-size: .62em;
+}
+sub { animation: tinta var(--t2) ease infinite; }
+sup { animation: sombras var(--t3) ease infinite; text-shadow: var(--shad) var(--shad) var(--c8); }
+</style>
+</head>
+
+<body>
+  <div id="marco">
+    <div id="escenario"></div>
+  </div>
+
+  <script src="lexico.js"></script>
+  <script src="motor.js"></script>
+</body>
+</html>
