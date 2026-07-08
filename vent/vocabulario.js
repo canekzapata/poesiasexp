@@ -18,7 +18,7 @@
 var VOC = {
 
   /* ---- el habla ---- */
-frases_ampliadas: [
+frases: [
   "Un pino verde respira bajo la bóveda orbital, mientras la Tierra se hunde como un sol azul detrás del vidrio.",
   "La choza rústica flota en una luna sin nombre, atada por raíces de bambú a un cráter silencioso.",
   "No pasan gansos silvestres por este cielo; sólo satélites heridos y la memoria de una migración imposible.",
