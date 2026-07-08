@@ -180,7 +180,7 @@ frases: [
   "No somos posthumanos; somos compost viajando con herramientas.",
   "Una red de raíces atraviesa la nave y desobedece el plano original.",
   "El mapa del cielo se arruga como papel mojado cuando alguien pronuncia la palabra hogar.",
-  "El silencio del espacio no es vacío; está lleno de máquinas esperando, insectos dormidos y dioses sin culto."
+  "El silencio del espacio no es vacío; está lleno de máquinas esperando, insectos dormidos y dioses sin culto.",
     "[2 Bywater] Sext. adv. math, VII 132 (Vgl. A 4. 16. B 51) τοῦ δὲ λόγου τοῦδ’ ἐόντος ἀεὶ ἀξύνετοι γίνονται ἄνθρωποι καὶ πρόσθεν ἢ ἀκοῦσαι καὶ ἀκούσαντες τὸ πρῶτον·",
   "γινομένων γὰρ πάντων κατὰ τὸν λόγον τόνδε ἀπείροισιν ἐοίκασι, πειρώμενοι καὶ ἐπέων καὶ ἔργων τοιούτων, ὁκοίων ἐγὼ διηγεῦμαι διαιρέων ἕκαστον κατὰ φύσιν καὶ φράζων ὅκως ἔχει.",
   "τοὺς δὲ ἄλλους ἀνθρώπους λανθάνει ὁκόσα ἐγερθέντες ποιοῦσιν, ὄκωσπερ ὁκόσα εὕδοντες ἐπιλανθάνονται.",
