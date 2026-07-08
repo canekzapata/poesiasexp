@@ -320,7 +320,7 @@ sintagmas_para_mezclar: [
   "el santo de neón en la esclusa",
   "el pez soñando océanos extintos",
   "la Tierra como fruta azul distante"
-]
+],
   /* ---- el sub-verbo: conjuntos de caracteres abstractos ---- */
   glifos: {
 
