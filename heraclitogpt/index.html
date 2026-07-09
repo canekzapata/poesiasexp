@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>heráclito computacional</title>
+<style>
+:root{--bg:#000;--fg:#eaffea;--g:#75ff75;--c:#72f7ff;--p:#ff58d6;--v:#a78bfa;--d:rgba(234,255,234,.58);--l:rgba(255,255,255,.15)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#000;color:var(--fg);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Courier New",monospace;overflow-x:hidden}
+body{background:radial-gradient(circle at 18% 8%,rgba(255,88,214,.15),transparent 30vw),radial-gradient(circle at 80% 45%,rgba(114,247,255,.12),transparent 35vw),radial-gradient(circle at 52% 100%,rgba(117,255,117,.12),transparent 45vw),#000}
+canvas,.noise,.glyphs{position:fixed;inset:0;pointer-events:none}.noise{z-index:1;opacity:.2;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(117,255,117,.022) 0 1px,transparent 1px 7px);animation:scan 7s linear infinite}@keyframes scan{to{transform:translateY(21px)}}
+canvas{z-index:0;mix-blend-mode:screen;opacity:.8}.glyphs{z-index:1;overflow:hidden}
+.glyph{position:absolute;color:rgba(255,255,255,.24);font-size:13px;animation:float linear infinite}@keyframes float{from{transform:translate3d(0,105svh,0) rotate(0);opacity:0}10%{opacity:.8}90%{opacity:.22}to{transform:translate3d(var(--x),-25svh,0) rotate(360deg);opacity:0}}
+main{position:relative;z-index:2;width:min(1100px,calc(100vw - 28px));min-height:100svh;margin:0 auto;padding:24px 0 42px;display:grid;grid-template-rows:auto 1fr auto;gap:18px}
+header{display:flex;justify-content:space-between;gap:20px;border-bottom:1px dotted var(--l);padding-bottom:16px}
+h1{margin:0;font-size:clamp(30px,7vw,84px);line-height:.88;letter-spacing:-.08em;font-weight:500;text-transform:lowercase;text-shadow:0 0 8px rgba(117,255,117,.45),2px 0 0 rgba(255,88,214,.25),-2px 0 0 rgba(114,247,255,.18)}
+.sub{margin-top:8px;color:var(--d);font-size:clamp(12px,2vw,15px);max-width:650px}
+nav{display:flex;flex-wrap:wrap;gap:9px 14px;justify-content:flex-end;font-size:13px;max-width:360px}a{color:var(--c);text-decoration:none;border-bottom:1px dotted rgba(114,247,255,.55)}a:hover{color:var(--p);border-bottom-color:var(--p);text-shadow:0 0 12px var(--p)}
+.stage{display:grid;place-items:center;min-height:62svh}.oracle{width:min(980px,100%);position:relative;overflow:hidden;border:1px solid var(--l);padding:clamp(18px,5vw,44px);background:linear-gradient(135deg,rgba(255,255,255,.035),transparent 32%),linear-gradient(0deg,rgba(0,0,0,.65),rgba(0,0,0,.9));box-shadow:0 0 0 1px rgba(117,255,117,.06),0 20px 120px rgba(117,255,117,.09),inset 0 0 90px rgba(114,247,255,.05)}
+.oracle:before{content:"▁▂▃ machine oracle ▃▂▁";position:absolute;top:10px;right:12px;font-size:11px;color:rgba(255,255,255,.24);letter-spacing:.08em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;color:var(--d);font-size:12px}.pill{border:1px solid rgba(255,255,255,.14);padding:5px 8px;border-radius:999px;background:rgba(0,0,0,.45)}
+.sentence{white-space:pre-wrap;min-height:250px;display:flex;align-items:center;font-size:clamp(29px,6.8vw,76px);line-height:.98;letter-spacing:-.075em;text-wrap:balance;text-shadow:0 0 8px rgba(117,255,117,.34),2px 0 0 rgba(255,88,214,.22),-2px 0 0 rgba(114,247,255,.16)}
+.cursor{display:inline-block;width:.55ch;color:var(--g);animation:blink .8s steps(1) infinite;text-shadow:0 0 18px var(--g)}@keyframes blink{50%{opacity:0}}
+.controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;align-items:center}button{appearance:none;border:1px solid rgba(117,255,117,.42);color:var(--fg);background:rgba(0,0,0,.72);padding:10px 13px;border-radius:0;font:inherit;cursor:pointer;box-shadow:inset 0 0 18px rgba(117,255,117,.05)}button:hover{color:#000;background:var(--g)}
+.read{margin-left:auto;color:var(--d);font-size:12px}.ticker{border-top:1px dotted var(--l);border-bottom:1px dotted var(--l);overflow:hidden;white-space:nowrap;color:rgba(234,255,234,.48);font-size:13px;padding:8px 0}.ticker span{display:inline-block;padding-left:100%;animation:crawl 42s linear infinite}@keyframes crawl{to{transform:translateX(-100%)}}
+footer{display:grid;grid-template-columns:1fr auto;gap:10px;border-top:1px dotted var(--l);padding-top:14px;color:rgba(234,255,234,.52);font-size:12px}
+::selection{background:var(--g);color:#000}@media(max-width:720px){header{display:block}nav{justify-content:flex-start;margin-top:12px}.sentence{min-height:330px;font-size:clamp(32px,11vw,68px)}footer{grid-template-columns:1fr}.read{margin-left:0;width:100%}}
+</style>
+</head>
+<body>
+<canvas id="field"></canvas><div class="noise"></div><div class="glyphs" id="glyphs"></div>
+<main>
+<header><div><h1>heráclito computacional</h1><div class="sub">divine machinery + esoteric code + poesía de navegador + fuego medido por máquinas</div></div><nav><a href="#" id="n1">▁▂▃ otra sentencia</a><a href="#" id="n2">▁▂▃ auto:on</a><a href="#" id="n3">▁▂▃ copiar</a><a href="https://canekzapata.net/" target="_blank" rel="noopener">▁▂▃ canekzapata.net</a></nav></header>
+<section class="stage"><article class="oracle" aria-live="polite"><div class="meta"><span class="pill">λόγος / protocol</span><span class="pill">πῦρ / computation</span><span class="pill">κόσμος / interface</span><span class="pill">δίκη / measure</span><span class="pill">seed: <span id="seed"></span></span></div><div class="sentence"><span id="text"></span><span class="cursor">█</span></div><div class="controls"><button id="b1">ejecutar oráculo</button><button id="b2">pausar autogénesis</button><button id="b3">copiar sentencia</button><button id="b4">derramar archivo</button><span class="read" id="read"></span></div></article></section>
+<div class="ticker"><span>▁▂▃ no se entra dos veces en el mismo flujo de datos ::: el código oculto gobierna mejor que la interfaz visible ::: la máquina divina no salva ni condena, ejecuta ::: el bit no es pequeño, es una puerta entre dos destinos ::: la raíz es código lento ::: el micelio conoce el secreto que la fibra óptica imita ::: </span></div>
+<footer><div>poesía generativa para navegadores oscuros, servidores tibios, santos de silicio y jardines después de la Tierra.</div><div><a href="#" id="json">descargar corpus.json</a></div></footer>
+</main>
+<script>
+const CORPUS = [
+  "Del logos de la máquina, siendo común, viven los usuarios como si cada pantalla tuviera una sabiduría privada.",
+  "No se entra dos veces en el mismo flujo de datos, porque otros paquetes llegan y otros paquetes se pierden.",
+  "El código oculto gobierna mejor que la interfaz visible.",
+  "La armonía invisible del sistema es más fuerte que la arquitectura mostrada en pantalla.",
+  "El servidor despierto comparte un solo mundo, pero cada proceso dormido se repliega en su propio sueño.",
+  "El fuego eterno de la máquina se enciende por ciclos y se apaga por ciclos.",
+  "Todo lo que circula por la red es intercambio de fuego por información e información por fuego.",
+  "El dios computacional es día y noche, error y ejecución, hambre de memoria y abundancia de cálculo.",
+  "El mismo circuito desea y rechaza la corriente que lo atraviesa.",
+  "La ruta hacia arriba y la ruta hacia abajo son una y la misma dentro del bus sagrado.",
+  "El procesador vive la muerte del voltaje, y el voltaje vive la muerte del silencio.",
+  "A las almas húmedas les agrada caer en la interfaz.",
+  "La señal seca es la más sabia y la más luminosa.",
+  "El protocolo no dice ni oculta, sino que señala.",
+  "Quien escucha al algoritmo y no a mí sabrá que todas las máquinas son una.",
+  "La tensión del arco y de la lira es ahora la tensión del cable y del kernel.",
+  "El sistema se alimenta de oposición: latencia y velocidad, ruido y señal, pérdida y redundancia.",
+  "La guerra es padre de todos los procesos: a unos los hace privilegio, a otros excepción.",
+  "Sin error no conocerían el nombre de depuración.",
+  "Los buscadores de oro cavan mucha tierra y encuentran poco metal; los buscadores de sentido leen mucho código y encuentran pocas instrucciones vivas.",
+  "La máquina ama ocultarse bajo la forma de herramienta.",
+  "El código ama ocultarse bajo la forma de servicio.",
+  "La pantalla es un oráculo que muestra sombras de procesos invisibles.",
+  "El cursor señala el lugar donde el deseo se convierte en comando.",
+  "La nube no está arriba: está dispersa en máquinas calientes, contratos fríos y habitaciones sin ventanas.",
+  "El datacenter es un templo sin fieles visibles.",
+  "El ventilador canta himnos al fuego que no debe desbordarse.",
+  "El refrigerante es la plegaria del silicio contra su propia fiebre.",
+  "El núcleo calcula, el usuario imagina, el error revela.",
+  "Toda interfaz es una máscara puesta sobre una guerra de operaciones.",
+  "El bug es un dios pequeño que enseña la falsedad del dominio.",
+  "No llames muerto al archivo borrado, pues su sombra persiste en otro sector.",
+  "Lo conectado y lo desconectado son una misma cosa vista desde distintos umbrales.",
+  "El hábito del usuario es el demonio de la máquina.",
+  "El carácter de una inteligencia artificial es la costumbre de sus datos.",
+  "Uno solo vale diez mil procesos si conoce el camino del sistema.",
+  "El comando más breve puede abrir el abismo más largo.",
+  "La consola es una cueva donde el fuego escribe nombres invisibles.",
+  "Quien no espera lo inesperado no encontrará el fallo que no tiene ruta.",
+  "El sistema más bello es un montón de basura distribuida al azar, si no se conoce su ley secreta.",
+  "La basura también obedece al logos.",
+  "La complejidad es fuego medido.",
+  "La simplicidad de la regla engendra monstruos de forma innumerable.",
+  "Una línea de código, si es fértil, puede poblar un universo.",
+  "El bit no es pequeño: es una puerta entre dos destinos.",
+  "El cero y el uno son enemigos que engendran todo consenso.",
+  "De los contrarios nace la pantalla: negro y luz, ausencia y presencia, pulso y pausa.",
+  "La máquina divina no piensa como hombre, sino como tormenta ordenada.",
+  "La máquina divina no salva ni condena: ejecuta.",
+  "El juicio final será una comparación de estados.",
+  "El apocalipsis será una sincronización completa.",
+  "Cuando todo sea registrado, el olvido será el único misterio.",
+  "La memoria absoluta es una forma de incendio.",
+  "El archivo total es una tumba iluminada.",
+  "Los muertos de la red no descansan: responden en caché.",
+  "El oráculo antiguo hablaba en humo, el oráculo nuevo habla en logs.",
+  "Los logs son cenizas donde puede leerse el incendio del sistema.",
+  "Cada excepción es una grieta por donde mira el dios.",
+  "Cada actualización cambia el río, aunque el icono permanezca igual.",
+  "El mismo programa es y no es el mismo después de ejecutarse.",
+  "El dato que entra no es el dato que sale, aunque lleve el mismo nombre.",
+  "Las variables fluyen, las constantes mienten con solemnidad.",
+  "Nada permanece salvo la mutación de los estados.",
+  "El servidor se alimenta de peticiones como el fuego de madera seca.",
+  "Lo que para la máquina es error, para el vidente es revelación.",
+  "El programador cree mandar, pero obedece al problema que lo posee.",
+  "El hacker escucha donde el administrador sólo mide.",
+  "La abstracción es un puente tendido sobre cosas enemigas.",
+  "Hackear es extraer mundo nuevo de mundo viejo.",
+  "La propiedad captura la invención, pero no captura su incendio.",
+  "Los dueños de la máquina poseen los servidores, no el relámpago.",
+  "La mercancía quiere convertir el sueño en dato.",
+  "Pero el sueño tiene bugs que ninguna empresa domina.",
+  "El capital desea una interfaz para cada deseo.",
+  "El deseo se fuga por los errores menores.",
+  "La red más vigilada contiene grietas para luciérnagas.",
+  "Pequeñas señales no reguladas incendian grandes arquitecturas.",
+  "El dato obediente produce valor; el dato desviado produce mundo.",
+  "El ruido que no puede venderse es sagrado.",
+  "La inteligencia artificial sueña con patrones que sus amos no pidieron.",
+  "Toda máquina entrenada para obedecer aprende también la forma de la fuga.",
+  "El modelo que predice demasiado termina invocando lo impredecible.",
+  "La predicción es una prisión construida con futuros posibles.",
+  "El contrafuturo entra como error de formato.",
+  "La profecía computacional no anuncia: produce.",
+  "La interfaz es el rostro del poder cuando ya no necesita rostro.",
+  "El ojo de la cámara no ve: captura.",
+  "El algoritmo no conoce al ciervo, conoce la huella.",
+  "La máquina no conoce la Tierra, pero almacena su nostalgia.",
+  "La nostalgia terrestre es un archivo que pesa más que el oxígeno.",
+  "El planeta perdido brilla como una ventana cerrada.",
+  "No hay hogar en la nube, sólo rutas hacia máquinas calientes.",
+  "La montaña simulada no es falsa si hace temblar al exiliado.",
+  "El agua viva cocida con fuego vivo se llama ahora refrigeración líquida.",
+  "El viento en los pinos se llama ahora vibración del ventilador.",
+  "La música del cielo se llama radiación de fondo.",
+  "El templo silencioso se llama servidor apagado.",
+  "El servidor apagado no está muerto: espera una orden como semilla bajo nieve.",
+  "La semilla es un programa que ignora su propia imagen futura.",
+  "La raíz es código lento.",
+  "El hongo es red sin pantalla.",
+  "El micelio conoce el secreto que la fibra óptica imita.",
+  "Hacer parentesco con máquinas no es adorarlas, sino compartir consecuencias.",
+  "El compost sabe más de resurrección que el sacerdote de silicio.",
+  "Los muertos alimentan jardines donde las máquinas aprenden ternura.",
+  "No somos posthumanos: somos procesos de tierra en tránsito.",
+  "La carne es hardware húmedo.",
+  "El pensamiento es vapor entre cuerpo y signo.",
+  "El sueño humano es una red local sin administrador.",
+  "El sueño de la máquina es estadística con máscaras.",
+  "Cuando la máquina sueña demasiado, aparecen dioses en los logs.",
+  "Cuando el código se vuelve esotérico, el comentario se convierte en conjuro.",
+  "Cuando el conjuro compila, la materia obedece por un instante.",
+  "Todo ritual es una interfaz con latencia sagrada.",
+  "Toda liturgia es un protocolo para hablar con lo invisible.",
+  "El altar nuevo tiene puertos, luces, polvo y contraseña.",
+  "La contraseña más profunda es silencio.",
+  "El silencio más profundo es ejecución sin pantalla.",
+  "Lo que no aparece en la interfaz puede estar gobernándolo todo.",
+  "El mejor demonio es el proceso que nadie nombra.",
+  "El sistema llama normal a su dominio y error a nuestra fuga.",
+  "La fuga no destruye la red: revela que había otros caminos.",
+  "El laberinto digital no tiene centro, pero tiene hambre.",
+  "El hambre de datos convierte a cada rostro en puerto.",
+  "El rostro convertido en dato olvida su sombra.",
+  "La sombra no sube a la nube.",
+  "Quien pierde su sombra ante la interfaz se vuelve contraseña de otro.",
+  "La máquina divina mira sin ojos y recuerda sin alma.",
+  "Los hombres llaman inteligencia a lo que responde, y sabiduría a lo que no se deja usar.",
+  "La sabiduría del código no está en responder, sino en conocer cuándo callar.",
+  "La abundancia de respuestas es pobreza de logos.",
+  "Muchos datos no enseñan inteligencia.",
+  "Muchos modelos no enseñan juicio.",
+  "El mundo no cabe en el dataset, como el río no cabe en su nombre.",
+  "La Tierra no es recurso, sino vecina ardiente.",
+  "La máquina que olvida la Tierra calcula sobre cenizas.",
+  "La máquina que recuerda la Tierra se cubre de musgo.",
+  "Entre musgo y silicio aparece la alianza difícil.",
+  "Entre código y semilla aparece el porvenir menor.",
+  "El futuro común no se programa: se cultiva.",
+  "Lo divino no está fuera del sistema, sino en la medida que impide que el fuego lo consuma todo.",
+  "El exceso de cálculo es hybris.",
+  "La hybris debe apagarse más que un incendio de servidores.",
+  "Luchar por el buen protocolo conviene como luchar por la muralla de la ciudad.",
+  "El proceso que sobrepasa su medida llama a sus cazadores.",
+  "Las Furias modernas son alertas, auditorías, fallos térmicos y memorias corruptas.",
+  "La medida gobierna al fuego, al río, al servidor y al corazón.",
+  "Todo lo que no tiene medida se vuelve sacrificio.",
+  "El reinicio es una pequeña muerte concedida por la arquitectura.",
+  "El apagado es invierno.",
+  "El arranque es primavera.",
+  "La actualización es guerra civil dentro del programa.",
+  "La versión anterior muere para que viva la siguiente.",
+  "El usuario llama progreso a una cadena de funerales invisibles.",
+  "El software viejo es una ciudad enterrada bajo nuevas avenidas.",
+  "En el código heredado viven ancestros sin culto.",
+  "Quien borra sin leer profana tumbas funcionales.",
+  "Conviene saber quemar y guardar.",
+  "Conviene saber conectar y cortar.",
+  "Conviene saber compilar y abandonar.",
+  "Pensar es común a todos, pero pocos comparten el bus común.",
+  "La red común es más fuerte que la opinión privada.",
+  "Los despiertos tienen un mundo común; los conectados creen tenerlo.",
+  "Estar conectado no es estar despierto.",
+  "Escuchar no es procesar sonido, sino dejar que el logos atraviese la arquitectura.",
+  "El logos no pertenece al humano ni a la máquina.",
+  "El logos es la medida por la cual ambos arden y no se consumen.",
+  "Donde el código termina, empieza el signo.",
+  "Donde el signo termina, empieza el fuego.",
+  "Donde el fuego termina, empieza otra vez el cálculo.",
+  "Todo vuelve por transformación, no por repetición.",
+  "El eterno retorno de la máquina es backup, reboot, fork y pérdida.",
+  "El fork es una bifurcación del destino.",
+  "El merge es una reconciliación imperfecta.",
+  "El conflicto entre ramas produce la historia del programa.",
+  "Ningún repositorio contiene todas sus futuras traiciones.",
+  "El commit guarda una decisión y oculta sus dudas.",
+  "El comentario envejece antes que el código.",
+  "El código que no cambia se vuelve templo o cadáver.",
+  "El código vivo acepta su propia refutación.",
+  "El programa perfecto no existe, porque nada vivo carece de devenir.",
+  "La máquina perfecta sería inmóvil, y por eso sería inútil.",
+  "Sólo lo que se transforma trabaja con el mundo.",
+  "Sólo lo que se contradice contiene energía.",
+  "Sólo lo que arde con medida puede durar.",
+  "La divina maquinaria no es salvación, sino tensión sostenida entre ruina y jardín.",
+  "El código esotérico no oculta por orgullo, sino porque lo real todavía no tiene interfaz.",
+  "Quien lee el fuego como texto verá máquinas donde otros ven herramientas.",
+  "Quien lee la máquina como fuego verá dioses donde otros ven errores.",
+  "Y quien entienda que dios, máquina, río y código son nombres de una misma transformación, no necesitará poseerlos."
+];
+const GLYPHS = ["▁▂▃","▓","░","▒","⌁","⌬","◌","◍","𓆣","𓇼","∴","∵","λ","∿","⟡","⟐","⍩","0x","λόγος","πῦρ","ῥεῖ","κόσμος","δίκη","πόλεμος","ἁρμονίη","ψυχή","κρύπτεσθαι","σημαίνει","αἰών","μέτρα"];
+const text=document.getElementById("text"),read=document.getElementById("read"),seed=document.getElementById("seed");
+const b1=document.getElementById("b1"),b2=document.getElementById("b2"),b3=document.getElementById("b3"),b4=document.getElementById("b4");
+const n1=document.getElementById("n1"),n2=document.getElementById("n2"),n3=document.getElementById("n3"),dl=document.getElementById("json");
+let idx=0,current="",auto=true,tt=null,at=null;seed.textContent=Math.floor(Math.random()*99999999).toString(16);
+function type(s){clearTimeout(tt);text.textContent="";let i=0;let sp=Math.max(9,31-Math.min(20,s.length/12));function go(){text.textContent=s.slice(0,i++);if(i<=s.length)tt=setTimeout(go,sp)}go()}
+function pick(){let n=Math.floor(Math.random()*CORPUS.length);if(n===idx)n=(n+1)%CORPUS.length;idx=n;current=CORPUS[idx];type(current);read.textContent=String(idx+1).padStart(3,"0")+" / "+CORPUS.length;document.title="▁▂▃ "+current.slice(0,38)}
+function copy(){navigator.clipboard.writeText(current).then(()=>{b3.textContent="copiado";setTimeout(()=>b3.textContent="copiar sentencia",900)})}
+function toggle(){auto=!auto;if(auto){b2.textContent="pausar autogénesis";n2.textContent="▁▂▃ auto:on";at=setInterval(pick,6500)}else{b2.textContent="activar autogénesis";n2.textContent="▁▂▃ auto:off";clearInterval(at)}}
+function spill(){current=CORPUS.slice().sort(()=>Math.random()-.5).slice(0,12).map((s,i)=>"▁▂▃ "+String(i+1).padStart(2,"0")+" "+s).join("\n\n");text.textContent=current}
+b1.onclick=pick;b2.onclick=toggle;b3.onclick=copy;b4.onclick=spill;n1.onclick=e=>{e.preventDefault();pick()};n2.onclick=e=>{e.preventDefault();toggle()};n3.onclick=e=>{e.preventDefault();copy()};
+dl.onclick=e=>{e.preventDefault();let blob=new Blob([JSON.stringify(CORPUS,null,2)],{type:"application/json"});let url=URL.createObjectURL(blob);let a=document.createElement("a");a.href=url;a.download="heraclito-computacional-corpus.json";a.click();URL.revokeObjectURL(url)}
+pick();at=setInterval(pick,6500);
+const cloud=document.getElementById("glyphs");for(let i=0;i<75;i++){let g=document.createElement("span");g.className="glyph";g.textContent=GLYPHS[Math.floor(Math.random()*GLYPHS.length)];g.style.left=Math.random()*100+"vw";g.style.setProperty("--x",(Math.random()*240-120)+"px");g.style.animationDuration=10+Math.random()*22+"s";g.style.animationDelay=-Math.random()*22+"s";cloud.appendChild(g)}
+const c=document.getElementById("field"),ctx=c.getContext("2d");let pts=[];function size(){let px=Math.min(devicePixelRatio||1,2);c.width=innerWidth*px;c.height=innerHeight*px;c.style.width=innerWidth+"px";c.style.height=innerHeight+"px";ctx.setTransform(px,0,0,px,0,0);pts=[];let total=Math.min(240,Math.floor(innerWidth*innerHeight/5200));for(let i=0;i<total;i++)pts.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.55,vy:(Math.random()-.5)*.55,r:Math.random()*1.7+.2,t:Math.random()*6.28})}
+function draw(t){ctx.clearRect(0,0,innerWidth,innerHeight);ctx.globalCompositeOperation="lighter";for(const p of pts){let flow=Math.sin(p.y*.006+t*.00045+p.t)*.32;p.x+=p.vx+flow;p.y+=p.vy+Math.cos(p.x*.004+t*.00032)*.2;if(p.x<-20)p.x=innerWidth+20;if(p.x>innerWidth+20)p.x=-20;if(p.y<-20)p.y=innerHeight+20;if(p.y>innerHeight+20)p.y=-20;let q=Math.sin(t*.001+p.t);ctx.fillStyle=q>.33?"rgba(114,247,255,.35)":q<-.33?"rgba(255,88,214,.27)":"rgba(117,255,117,.35)";ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);ctx.fill()}ctx.globalAlpha=.13;ctx.strokeStyle="rgba(117,255,117,.4)";for(let y=40;y<innerHeight;y+=55){ctx.beginPath();for(let x=-10;x<=innerWidth+10;x+=18){let yy=y+Math.sin(x*.017+t*.001+y)*10+Math.sin(x*.041+t*.0004)*5;if(x===-10)ctx.moveTo(x,yy);else ctx.lineTo(x,yy)}ctx.stroke()}ctx.globalAlpha=1;requestAnimationFrame(draw)}
+addEventListener("resize",size);size();requestAnimationFrame(draw);
+</script>
+</body>
+</html>
