@@ -332,9 +332,9 @@ function hslNumRGB(str) {
    ============================================================================ */
 var cv, ctx, cw, ch, campoCorriendo = false;
 var particles = [], distortions = [], textRevealQueue = [];
-var frameCount = 0, lastRevealTime = 0, lastTextRedraw = 0, nextRedrawTime = 8000;
+var frameCount = 0, lastRevealTime = 0, lastTextRedraw = 0, nextRedrawTime = 12000;
 var lastCollisionCheck = 0, collisionCheckInterval = 100;
-var REVEAL_INTERVAL_MS = 35;
+var REVEAL_INTERVAL_MS = 75;
 function random(n) { return Math.floor(Math.random() * n); }
 
 /* ---- color fluido recursivo (fonts) ---- */
