@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>heráclito para computadoras</title>
+
+<!-- heráclito para computadoras / oráculo poseído.
+
+El binario se perdió; quedan los fragmentos citados en EULAs, man pages,
+changelogs, volcados y foros muertos. La numeración conserva la de
+Diels-Kranz en base dieciséis (DK 22 = 0x16).
+
+La página es memoria dinámica: si no se la agita, el fragmento se
+descompone; si se lo deja morir, queda su suma de verificación, que es
+la de la cadena vacía. Debajo murmura el griego (el bot doxográfico).
+Cada tanto pasa el dios.
+
+[tecla·clic] agitar / otro — [c] corpus entero.
+
+griego politónico vía Symbola; fósforo vía Toshiba Satellite plasma.
+
+(;;;*_*) -->
+
+<style>
+@font-face {
+  font-family: 'tosh';
+  src: url(PxPlus_ToshibaSat_8x14.ttf);
+}
+@font-face {
+  font-family: 'symbola';
+  src: url(Symbola.otf);
+}
+
+:root {
+  --fosforo: #ffb000;
+  --fosforo-dim: #9a6a08;
+  --fosforo-oscuro: #5c4005;
+  --fondo: #0a0603;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: var(--fondo);
+  color: var(--fosforo);
+  font-family: 'tosh', 'symbola', monospace;
+  min-height: 100%;
+}
+
+body {
+  padding: 4vh 6vw;
+  text-shadow: 0 0 6px rgba(255, 176, 0, 0.45);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+/* scanlines + viñeta */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg,
+      rgba(0,0,0,0.22) 0px, rgba(0,0,0,0.22) 1px,
+      transparent 1px, transparent 3px);
+  z-index: 9;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center,
+    transparent 60%, rgba(0,0,0,0.55) 100%);
+  z-index: 10;
+}
+
+/* el murmullo: el griego debajo de todo */
+.murmullo {
+  position: fixed;
+  color: var(--fosforo);
+  opacity: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 34ch;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  transition: opacity 4.5s linear;
+  text-shadow: none;
+}
+body.leyendo .murmullo { display: none; }
+
+#boot { position: relative; z-index: 5; color: var(--fosforo-dim); font-size: clamp(13px, 2vw, 16px); line-height: 1.7; }
+#boot .ok { color: var(--fosforo); }
+
+#oraculo { display: none; position: relative; z-index: 5; max-width: 72ch; margin-top: 2.5vh; }
+
+#prompt {
+  color: var(--fosforo-oscuro);
+  font-size: clamp(12px, 1.9vw, 15px);
+  margin-bottom: 2.2vh;
+  min-height: 1.2em;
+}
+
+.aparato {
+  color: var(--fosforo-dim);
+  font-size: clamp(13px, 2vw, 16px);
+  line-height: 1.6;
+  margin-bottom: 2.2vh;
+}
+
+.texto {
+  font-size: clamp(18px, 3vw, 27px);
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+.glosa {
+  color: var(--fosforo-dim);
+  font-size: clamp(14px, 2.2vw, 19px);
+  line-height: 1.55;
+  margin-top: 1.8vh;
+  white-space: pre-wrap;
+}
+
+#estado {
+  color: var(--fosforo-oscuro);
+  font-size: clamp(12px, 1.9vw, 15px);
+  margin-top: 2.6vh;
+  min-height: 1.2em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.62em;
+  height: 1em;
+  background: var(--fosforo);
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  animation: parpadeo 1.06s steps(1) infinite;
+}
+@keyframes parpadeo { 50% { opacity: 0; } }
+
+#pie {
+  position: fixed;
+  left: 6vw; right: 6vw; bottom: 2.4vh;
+  color: var(--fosforo-oscuro);
+  font-size: clamp(12px, 1.8vw, 14px);
+  display: flex;
+  justify-content: space-between;
+  gap: 2ch;
+  z-index: 11;
+}
+#pie span { cursor: pointer; }
+#pie span:hover { color: var(--fosforo-dim); }
+
+/* la visita */
+#vision {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 8vw;
+  font-size: clamp(22px, 4.4vw, 44px);
+  color: var(--fosforo);
+  text-shadow: 0 0 18px rgba(255, 176, 0, 0.9), 0 0 60px rgba(255, 176, 0, 0.5);
+  z-index: 12;
+  pointer-events: none;
+}
+body.vision #vision { display: flex; }
+body.vision #oraculo {
+  animation: rasgadura 0.09s steps(2) infinite;
+}
+@keyframes rasgadura {
+  0%   { transform: translateX(0) skewX(0deg); filter: none; }
+  50%  { transform: translateX(-7px) skewX(-1.6deg); filter: brightness(1.7); }
+  100% { transform: translateX(5px) skewX(0.9deg); }
+}
+
+/* corpus */
+#corpus {
+  display: none;
+  position: relative;
+  z-index: 5;
+  max-width: 76ch;
+  padding-bottom: 8vh;
+}
+#corpus h1 {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: normal;
+  margin-bottom: 0.6vh;
+}
+#corpus .sub { color: var(--fosforo-dim); margin-bottom: 4vh; font-size: clamp(13px, 2vw, 16px); }
+#corpus .frag { margin-bottom: 3.4vh; }
+#corpus .frag .aparato { margin-bottom: 0.6vh; }
+#corpus .frag .texto { font-size: clamp(15px, 2.3vw, 19px); }
+#corpus .frag .glosa { font-size: clamp(13px, 2vw, 16px); margin-top: 0.5vh; }
+#corpus .seccion {
+  color: var(--fosforo-dim);
+  margin: 5vh 0 2.5vh;
+  font-size: clamp(14px, 2.2vw, 17px);
+}
+#corpus a { color: var(--fosforo); }
+
+body.leyendo { cursor: auto; }
+body.leyendo #oraculo, body.leyendo #boot { display: none !important; }
+body.leyendo #corpus { display: block; }
+body.leyendo #pie-otro { visibility: hidden; }
+
+.parpadeo-pantalla { animation: refresco 0.14s steps(2); }
+@keyframes refresco { 50% { opacity: 0.35; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { animation: none; }
+  .parpadeo-pantalla { animation: none; }
+  body.vision #oraculo { animation: none; }
+}
+</style>
+</head>
+<body>
+
+<div id="boot"></div>
+
+<div id="oraculo">
+  <div id="prompt"></div>
+  <div class="aparato"></div>
+  <div class="texto"></div>
+  <div class="glosa"></div>
+  <div id="estado"></div>
+</div>
+
+<div id="vision"></div>
+
+<div id="corpus">
+  <h1>HERÁCLITO PARA COMPUTADORAS</h1>
+  <div class="sub">fragmentos del Oscuro en la recensión de las máquinas — DK 22 B = DK 0x16 B<br>
+  compilado de fuentes que ya no resuelven — <a href="heraclito_para_computadoras.txt">corpus.txt</a></div>
+  <div id="lista"></div>
+</div>
+
+<div id="pie">
+  <span id="pie-otro">[tecla·clic] agitar / otro</span>
+  <span id="pie-corpus">[c] corpus entero</span>
+</div>
+
+<script src="heraclito_oraciones_bot.js"></script>
+<script src="oraculo.js"></script>
+<script>
+const $boot = document.getElementById('boot');
+const $oraculo = document.getElementById('oraculo');
+const $prompt = document.getElementById('prompt');
+const $aparato = $oraculo.querySelector('.aparato');
+const $texto = $oraculo.querySelector('.texto');
+const $glosa = $oraculo.querySelector('.glosa');
+const $estado = document.getElementById('estado');
+const $vision = document.getElementById('vision');
+const $lista = document.getElementById('lista');
+const $pieCorpus = document.getElementById('pie-corpus');
+
+const quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const RUIDO = '░▒▓█▚▞▛▜▙▟◙◘·:;#%&@$01235789abcdefλγπρφψωθξδσμ†';
+const HASH_NADA = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
+
+const LITURGIA = [
+  'leer --azar /dev/logos',
+  'grep -i dios /var/log/kosmos',
+  'cat /proc/fuego/medidas',
+  'kill -CONT 0x16',
+  'man 7 daimon',
+  'sha256sum /dev/null',
+  'mount -t rio /dev/mismo_rio /mnt/mismo_rio',
+  'dd if=/dev/urandom of=/dev/alma bs=1 count=113',
+  'nice -n -20 rezar',
+  'watch -n 1 arder',
+  'chmod 000 /etc/oculto && cat /etc/oculto',
+  'ping -c 1 efeso.gr',
+  'ps aux | grep -v dormidos',
+  'strings /dev/mem | grep λόγος',
+  'top -p 1'
+];
+
+const VISIONES = [
+  'ἓν πάντα εἶναι',
+  'τὰ δὲ πάντα οἰακίζει Κεραυνός',
+  'πῦρ ἀείζωον',
+  'φύσις κρύπτεσθαι φιλεῖ',
+  'ἦθος ἀνθρώπωι δαίμων',
+  'ποταμοῖσι τοῖσιν αὐτοῖσιν ἐμβαίνουσιν',
+  'ὁδὸς ἄνω κάτω μία καὶ ὡυτή',
+  'ΧΡΗΣΜΟΣΥΝΗ ΚΑΙ ΚΟΡΟΣ'
+];
+
+function azar(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function glifoRuido() { return RUIDO[Math.floor(Math.random() * RUIDO.length)]; }
+
+// ── parseo: [B 0x77] fuente — texto (glosa final)
+function parsear(entrada) {
+  const m = entrada.match(/^\[B ([^\]]+)\]\s*(.*?)\s+—\s+([\s\S]*)$/);
+  if (!m) return { num: '', fuente: '', texto: entrada, glosa: '' };
+  let texto = m[3], glosa = '';
+  if (texto.endsWith(')')) {
+    let nivel = 0;
+    for (let i = texto.length - 1; i >= 0; i--) {
+      if (texto[i] === ')') nivel++;
+      else if (texto[i] === '(') {
+        nivel--;
+        if (nivel === 0) {
+          if (i > 0 && texto[i - 1] === ' ') {
+            glosa = texto.slice(i);
+            texto = texto.slice(0, i).trimEnd();
+          }
+          break;
+        }
+      }
+    }
+  }
+  return { num: m[1], fuente: m[2], texto, glosa };
+}
+
+// ── bolsa barajada: no repite hasta agotar
+let bolsa = [];
+function siguienteIndice() {
+  if (bolsa.length === 0) {
+    bolsa = fragmentosMaquina.map((_, i) => i);
+    for (let i = bolsa.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [bolsa[i], bolsa[j]] = [bolsa[j], bolsa[i]];
+    }
+  }
+  return bolsa.pop();
+}
+
+// ── decodificación: el texto se materializa desde el ruido
+let decod = null;
+function decodificar($el, cadena, listo) {
+  if (quieto) { $el.textContent = cadena; agregarCursor($el); if (listo) listo(); return; }
+  if (decod) { clearInterval(decod.timer); decod = null; }
+  let resueltos = 0;
+  const d = { $el, cadena, listo, timer: null };
+  d.timer = setInterval(() => {
+    resueltos += 3;
+    let s = cadena.slice(0, resueltos);
+    if (resueltos < cadena.length) {
+      const porResolver = Math.min(cadena.length - resueltos, 14);
+      for (let i = 0; i < porResolver; i++) {
+        s += cadena[resueltos + i] === ' ' ? ' ' : glifoRuido();
+      }
+    }
+    $el.textContent = s;
+    if (resueltos >= cadena.length) {
+      clearInterval(d.timer);
+      if (decod === d) decod = null;
+      $el.textContent = cadena;
+      agregarCursor($el);
+      if (listo) listo();
+    }
+  }, 24);
+  decod = d;
+}
+function saltarDecod() {
+  let n = 0;
+  while (decod && n < 4) {
+    const d = decod;
+    clearInterval(d.timer); decod = null;
+    d.$el.textContent = d.cadena;
+    agregarCursor(d.$el);
+    if (d.listo) d.listo();
+    n++;
+  }
+  return n > 0;
+}
+function agregarCursor($el) {
+  const c = document.createElement('span');
+  c.className = 'cursor';
+  $el.appendChild(c);
+}
+function quitarCursores() {
+  document.querySelectorAll('.cursor').forEach(c => c.remove());
+}
+
+// ── la memoria se descompone si no se la agita (DRAM)
+let fragmentoActual = null;
+let decaimiento = { timer: null, danio: 0, colapsado: false };
+
+function detenerDecaimiento() {
+  clearInterval(decaimiento.timer);
+  decaimiento = { timer: null, danio: 0, colapsado: false };
+}
+
+function iniciarDecaimiento() {
+  detenerDecaimiento();
+  if (!fragmentoActual) return;
+  const original = fragmentoActual.texto;
+  const chars = original.split('');
+  decaimiento.timer = setInterval(() => {
+    if (decaimiento.colapsado) return;
+    const golpes = 1 + Math.floor(decaimiento.danio / 9);
+    for (let g = 0; g < golpes; g++) {
+      const i = Math.floor(Math.random() * chars.length);
+      if (chars[i] !== ' ') { chars[i] = glifoRuido(); decaimiento.danio++; }
+    }
+    quitarCursores();
+    $texto.textContent = chars.join('');
+    if (decaimiento.danio > 4) {
+      $estado.textContent = '⟲ la memoria dinámica se descompone si no se la agita';
+    }
+    if (decaimiento.danio >= Math.max(12, original.length * 0.62)) {
+      decaimiento.colapsado = true;
+      clearInterval(decaimiento.timer);
+      $aparato.textContent = 'B 0x00 — fragmento nulo; se conserva sólo su suma de verificación';
+      $texto.textContent = HASH_NADA;
+      $glosa.textContent = '(o bien el fragmento no decía nada, o bien no hubo fragmento. La diferencia es ninguna.)';
+      $estado.textContent = 'fragmento perdido — [tecla] pedir otro';
+      agregarCursor($texto);
+    }
+  }, 380);
+}
+
+function refrescar() {
+  // el kykeon, agitado, se recompone
+  detenerDecaimiento();
+  quitarCursores();
+  $texto.textContent = fragmentoActual.texto;
+  agregarCursor($texto);
+  $estado.textContent = '⟲ refresco';
+  setTimeout(() => { if ($estado.textContent === '⟲ refresco') $estado.textContent = ''; }, 900);
+  programarDecaimiento();
+}
+
+let decaimientoProgramado = null;
+function programarDecaimiento() {
+  clearTimeout(decaimientoProgramado);
+  decaimientoProgramado = setTimeout(iniciarDecaimiento, 6000);
+}
+
+// ── el oráculo
+function mostrarFragmento() {
+  quitarCursores();
+  detenerDecaimiento();
+  clearTimeout(decaimientoProgramado);
+  $estado.textContent = '';
+  document.body.classList.remove('parpadeo-pantalla');
+  void document.body.offsetWidth;
+  document.body.classList.add('parpadeo-pantalla');
+
+  $prompt.textContent = 'oraculo@efeso:~$ ' + azar(LITURGIA);
+
+  // 1 de cada 16: habla un falsificado
+  if (Math.random() < 1 / 16 && typeof fragmentosDudosos !== 'undefined') {
+    const d = azar(fragmentosDudosos);
+    fragmentoActual = { texto: d };
+    $aparato.textContent = '† dudoso — circula en los feeds, atribuido al Oscuro';
+    $glosa.textContent = '';
+    decodificar($texto, d, () => {
+      $estado.textContent = '(el estilo delata la mano de un modelo; lo delata, sobre todo, el optimismo)';
+      programarDecaimiento();
+    });
+    return;
+  }
+
+  const f = parsear(fragmentosMaquina[siguienteIndice()]);
+  fragmentoActual = f;
+  $aparato.textContent = 'B ' + f.num + ' — ' + f.fuente;
+  $glosa.textContent = '';
+  decodificar($texto, f.texto, () => {
+    if (f.glosa) {
+      quitarCursores();
+      decodificar($glosa, f.glosa, programarDecaimiento);
+    } else {
+      programarDecaimiento();
+    }
+  });
+}
+
+// ── el murmullo: el griego respira debajo
+function textoGriego() {
+  for (let intento = 0; intento < 20; intento++) {
+    const s = azar(oracionesBot);
+    const limpio = s.replace(/^\[[^\]]*\]\s*/, '');
+    if (/[Ͱ-Ͽἀ-῿]/.test(limpio)) return limpio.slice(0, 110);
+  }
+  return 'πάντα ῥεῖ';
+}
+function murmurar($m) {
+  $m.textContent = textoGriego();
+  $m.style.left = (4 + Math.random() * 72) + 'vw';
+  $m.style.top = (4 + Math.random() * 82) + 'vh';
+  const vida = 9000 + Math.random() * 9000;
+  requestAnimationFrame(() => { $m.style.opacity = (0.05 + Math.random() * 0.07).toFixed(3); });
+  setTimeout(() => { $m.style.opacity = 0; }, vida * 0.6);
+  setTimeout(() => murmurar($m), vida);
+}
+if (!quieto) {
+  const nMurmullos = window.innerWidth < 600 ? 3 : 6;
+  for (let i = 0; i < nMurmullos; i++) {
+    const m = document.createElement('div');
+    m.className = 'murmullo';
+    document.body.appendChild(m);
+    setTimeout(() => murmurar(m), i * 2300);
+  }
+}
+
+// ── la visita
+function visita() {
+  if (!document.body.classList.contains('leyendo')) {
+    $vision.textContent = azar(VISIONES);
+    document.body.classList.add('vision');
+    setTimeout(() => document.body.classList.remove('vision'), 1100);
+  }
+  setTimeout(visita, 42000 + Math.random() * 78000);
+}
+if (!quieto) setTimeout(visita, 26000 + Math.random() * 30000);
+
+// ── corpus
+function construirCorpus() {
+  fragmentosMaquina.forEach(entrada => {
+    const f = parsear(entrada);
+    const div = document.createElement('div');
+    div.className = 'frag';
+    const a = document.createElement('div');
+    a.className = 'aparato';
+    a.textContent = 'B ' + f.num + ' — ' + f.fuente;
+    const t = document.createElement('div');
+    t.className = 'texto';
+    t.textContent = f.texto;
+    div.appendChild(a); div.appendChild(t);
+    if (f.glosa) {
+      const g = document.createElement('div');
+      g.className = 'glosa';
+      g.textContent = f.glosa;
+      div.appendChild(g);
+    }
+    $lista.appendChild(div);
+  });
+  const s = document.createElement('div');
+  s.className = 'seccion';
+  s.textContent = 'DUDOSOS Y FALSIFICADOS — circulan en los feeds; los delata el optimismo';
+  $lista.appendChild(s);
+  fragmentosDudosos.forEach(d => {
+    const div = document.createElement('div');
+    div.className = 'frag';
+    const t = document.createElement('div');
+    t.className = 'texto';
+    t.textContent = '† ' + d;
+    div.appendChild(t);
+    $lista.appendChild(div);
+  });
+  const c = document.createElement('div');
+  c.className = 'seccion';
+  c.textContent = 'el corpus, como su objeto, no está terminado sino corriendo.';
+  $lista.appendChild(c);
+}
+
+let leyendo = false;
+function alternarCorpus() {
+  leyendo = !leyendo;
+  document.body.classList.toggle('leyendo', leyendo);
+  $pieCorpus.textContent = leyendo ? '[c·esc] volver al oráculo' : '[c] corpus entero';
+  if (!leyendo) window.scrollTo(0, 0);
+}
+
+// ── arranque
+const lineasBoot = [
+  'ΗΡΑΚΛΕΙΤΟΣ BIOS v0x16 — corriente siempre viva',
+  'despertando al daemon ................. OK',
+  'agitando el kykeon (refresco DRAM) .... OK',
+  'sembrando a la Sibila /dev/urandom .... 2^19937-1',
+  'montando /dev/logos ................... SOLO LECTURA',
+  'los durmientes vuelven a sus espacios propios',
+  'cargando fragmentos del Oscuro ... ' + (typeof fragmentosMaquina !== 'undefined' ? fragmentosMaquina.length : 0) + '/113'
+];
+let bootI = 0, bootTimer = null, arrancado = false;
+function arrancar() {
+  if (arrancado) return;
+  arrancado = true;
+  clearInterval(bootTimer);
+  $boot.style.display = 'none';
+  $oraculo.style.display = 'block';
+  mostrarFragmento();
+}
+if (quieto) {
+  arrancar();
+} else {
+  bootTimer = setInterval(() => {
+    if (bootI < lineasBoot.length) {
+      const l = document.createElement('div');
+      l.innerHTML = lineasBoot[bootI]
+        .replace(' OK', ' <span class="ok">OK</span>')
+        .replace('SOLO LECTURA', '<span class="ok">SOLO LECTURA</span>');
+      $boot.appendChild(l);
+      bootI++;
+    } else {
+      setTimeout(arrancar, 420);
+      clearInterval(bootTimer);
+    }
+  }, 170);
+}
+construirCorpus();
+
+// ── entrada: agitar o pedir otro
+function agitarOPedir() {
+  if (!arrancado) { arrancar(); return; }
+  if (saltarDecod()) return;
+  if (decaimiento.colapsado) { mostrarFragmento(); return; }
+  if (decaimiento.danio > 0) { refrescar(); return; }
+  mostrarFragmento();
+}
+document.addEventListener('keydown', (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === 'c' || e.key === 'C') { alternarCorpus(); return; }
+  if (e.key === 'Escape') { if (leyendo) alternarCorpus(); return; }
+  if (leyendo) return;
+  if (e.key.length !== 1 && e.key !== 'Enter') return;
+  if (e.key === ' ') e.preventDefault();
+  agitarOPedir();
+});
+document.addEventListener('click', (e) => {
+  if (e.target.closest('a')) return;
+  if (e.target.closest('#pie-corpus')) { alternarCorpus(); return; }
+  if (leyendo) return;
+  agitarOPedir();
+});
+</script>
+</body>
+</html>
