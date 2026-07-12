@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" font-kerning="normal">
+<!-- nefelógrafo · poema-ciclon · semilla 42 · poesiasexp / concretismopython -->
+<metadata>{&quot;meta&quot;: {&quot;instrumento&quot;: &quot;nefelógrafo&quot;, &quot;tipo&quot;: &quot;ciclon&quot;, &quot;semilla&quot;: 42, &quot;nucleo&quot;: &quot;ciclón&quot;, &quot;esquizo&quot;: 0.35, &quot;puntuacion&quot;: {&quot;densidad&quot;: 0.048, &quot;vacio&quot;: 0.952, &quot;repeticion&quot;: 0.091, &quot;contraste&quot;: 0.664}, &quot;restricciones&quot;: {&quot;palabras_base&quot;: 4, &quot;max_palabras_base&quot;: 12, &quot;vacio&quot;: 0.952, &quot;min_vacio&quot;: 0.3, &quot;fuentes&quot;: 3, &quot;max_fuentes&quot;: 3, &quot;anomalias&quot;: 1, &quot;nucleos&quot;: 1, &quot;cumplidas&quot;: true}, &quot;notas&quot;: [&quot;frase condensada: ciclón + remolino + torbellino = ciclónremolintorbellino&quot;, &quot;transformación etimológica: transmutación culta «ciclónremolino»&quot;, &quot;transformación fonética: el giro erosiona la frase&quot;, &quot;en el centro exacto, el ojo: la palabra intacta&quot;, &quot;anomalía: lo que el giro expulsa&quot;]}, &quot;lienzo&quot;: {&quot;ancho&quot;: 900, &quot;alto&quot;: 900}}</metadata>
+<style>
+  svg { background: #f6f2e9; }
+  text { white-space: pre; }
+
+    @keyframes ascenso   { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    @keyframes caida     { 0%,100% { transform: translateY(0); } 50% { transform: translateY(9px); } }
+    @keyframes deriva    { 0%,100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
+    @keyframes parpadeo  { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+    @keyframes giro      { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(2.2deg); } }
+    @keyframes temblor   { 0%,100% { transform: translate(0,0); } 25% { transform: translate(1.5px,-1px); } 75% { transform: translate(-1.5px,1px); } }
+    .anima-ascenso  { animation: ascenso 9s ease-in-out infinite; }
+    .anima-caida    { animation: caida 7s ease-in-out infinite; }
+    .anima-deriva   { animation: deriva 12s ease-in-out infinite; }
+    .anima-parpadeo { animation: parpadeo 5s ease-in-out infinite; }
+    .anima-giro     { animation: giro 14s ease-in-out infinite; }
+    .anima-temblor  { animation: temblor 0.9s linear infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .anima-ascenso, .anima-caida, .anima-deriva,
+      .anima-parpadeo, .anima-giro, .anima-temblor { animation: none; }
+    }
+
+</style>
+<rect width="900" height="900" fill="#f6f2e9"/>
+<g transform="translate(670.68 715.19) rotate(320.23)" data-id="p1" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="25.0" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.9" class="anima-giro"><title>remolino ← mola (lat.): muela de molino</title>remolino</text>
+</g>
+<g transform="translate(342.65 762.28) rotate(18.97)" data-id="p2" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="24.3" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.89" class="anima-giro"><title>torbellino ← turbō, -inis (lat.): giro, torbellino</title>torbellino</text>
+</g>
+<g transform="translate(141.81 517.15) rotate(77.71)" data-id="p3" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="23.6" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.87" class="anima-giro"><title>tornado ← tornāre (lat.): girar al torno</title>tornado</text>
+</g>
+<g transform="translate(242.85 232.13) rotate(316.44)" data-id="p4" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="22.9" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.86" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · portmanteau</title>ciclónremolintorbellino</text>
+</g>
+<g transform="translate(524.85 174.13) rotate(15.18)" data-id="p5" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="22.3" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · transmutación</title>ciclónremolino</text>
+</g>
+<g transform="translate(710.45 374.91) rotate(73.92)" data-id="p6" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="21.6" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.83" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>iclónremolintorbellin</text>
+</g>
+<g transform="translate(638.47 623.64) rotate(312.65)" data-id="p7" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="20.9" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.82" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>clónremolintorbelli</text>
+</g>
+<g transform="translate(402.31 686.72) rotate(11.39)" data-id="p8" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="20.2" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.81" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>lónremolintorbell</text>
+</g>
+<g transform="translate(236.81 527.05) rotate(70.13)" data-id="p9" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="19.5" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.79" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>ónremolintorbel</text>
+</g>
+<g transform="translate(285.01 317.04) rotate(308.87)" data-id="p10" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="18.8" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.78" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>nremolintorbe</text>
+</g>
+<g transform="translate(476.08 254.63) rotate(7.6)" data-id="p11" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="18.2" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.77" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>remolintorb</text>
+</g>
+<g transform="translate(616.99 376.83) rotate(66.34)" data-id="p12" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="17.5" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.76" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>emolintor</text>
+</g>
+<g transform="translate(587.1 546.27) rotate(305.08)" data-id="p13" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16.8" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.74" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>molinto</text>
+</g>
+<g transform="translate(439.84 602.4) rotate(3.81)" data-id="p14" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16.1" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.73" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>olint</text>
+</g>
+<g transform="translate(327.58 513.59) rotate(62.55)" data-id="p15" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="15.4" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.72" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>lin</text>
+</g>
+<g transform="translate(344.75 386.04) rotate(301.29)" data-id="p16" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="14.7" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.7" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>i</text>
+</g>
+<g transform="translate(450.04 341.63) rotate(0.02)" data-id="p17" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="14.1" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.69" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>ci</text>
+</g>
+<g transform="translate(530.01 401.47) rotate(58.76)" data-id="p18" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="13.4" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.68" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>clón</text>
+</g>
+<g transform="translate(519.89 486.38) rotate(297.5)" data-id="p19" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="12.7" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.66" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>ci</text>
+</g>
+<g transform="translate(454.2 513.86) rotate(356.23)" data-id="p20" data-capa="espiral">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="12.0" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.65" class="anima-giro"><title>ciclón ← kýklos (gr.): círculo · erosión</title>ci</text>
+</g>
+<g transform="translate(450.0 450.0)" data-id="p21" data-capa="nucleo">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle"><title>ciclón ← kýklos (gr.): círculo</title>ciclón</text>
+</g>
+<g transform="translate(426.79 54.68) rotate(356.6)" data-id="p22" data-capa="anomalia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="19" fill="#c8102e" text-anchor="middle" dominant-baseline="middle" class="anima-deriva"><title>ciclón ← kýklos (gr.): círculo · expulsión</title>cicl</text>
+</g>
+</svg>

@@ -1,0 +1,780 @@
+{
+  "archivo": "optica",
+  "palabras": [
+    {
+      "forma": "luz",
+      "silabas": [
+        "luz"
+      ],
+      "raiz": "luc-",
+      "familia": "leuk",
+      "etimologia": [
+        "lūx, lūcis (lat.)",
+        "*leuk- (pie)"
+      ],
+      "campo": [
+        "luz"
+      ],
+      "sonidos": [
+        "l",
+        "u",
+        "s"
+      ],
+      "raiz_culta": [
+        "foto",
+        "luci"
+      ],
+      "paralelos": {
+        "náhuatl": "tlahuilli"
+      },
+      "peso_visual": 3,
+      "densidad": 0.1,
+      "movimiento": "radial"
+    },
+    {
+      "forma": "lumbre",
+      "silabas": [
+        "lum",
+        "bre"
+      ],
+      "raiz": "lumbr-",
+      "familia": "leuk",
+      "etimologia": [
+        "lūmen, lūminis (lat.)"
+      ],
+      "campo": [
+        "luz",
+        "fuego",
+        "casa"
+      ],
+      "sonidos": [
+        "l",
+        "u",
+        "m",
+        "b",
+        "r",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "radial"
+    },
+    {
+      "forma": "lucero",
+      "silabas": [
+        "lu",
+        "ce",
+        "ro"
+      ],
+      "raiz": "luc-",
+      "familia": "leuk",
+      "etimologia": [
+        "lūcifer (lat.): el portador de la luz"
+      ],
+      "campo": [
+        "luz",
+        "estrella",
+        "alba"
+      ],
+      "sonidos": [
+        "l",
+        "u",
+        "s",
+        "e",
+        "r",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {
+        "náhuatl": "citlalin (estrella)"
+      },
+      "peso_visual": 5,
+      "densidad": 0.3,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "lúcido",
+      "silabas": [
+        "lú",
+        "ci",
+        "do"
+      ],
+      "raiz": "luc-",
+      "familia": "leuk",
+      "etimologia": [
+        "lūcidus (lat.)"
+      ],
+      "campo": [
+        "luz",
+        "mente"
+      ],
+      "sonidos": [
+        "l",
+        "u",
+        "s",
+        "i",
+        "d",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.2,
+      "movimiento": "radial"
+    },
+    {
+      "forma": "translúcido",
+      "silabas": [
+        "trans",
+        "lú",
+        "ci",
+        "do"
+      ],
+      "raiz": "luc-",
+      "familia": "leuk",
+      "etimologia": [
+        "trans + lūcidus (lat.)"
+      ],
+      "campo": [
+        "luz",
+        "paso"
+      ],
+      "sonidos": [
+        "t",
+        "r",
+        "a",
+        "n",
+        "s",
+        "l",
+        "u",
+        "s",
+        "i",
+        "d",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.15,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "halo",
+      "silabas": [
+        "ha",
+        "lo"
+      ],
+      "raiz": "hal-",
+      "familia": "hal",
+      "etimologia": [
+        "hálōs (gr.): era de trilla"
+      ],
+      "campo": [
+        "luz",
+        "círculo",
+        "santidad"
+      ],
+      "sonidos": [
+        "a",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.2,
+      "movimiento": "radial",
+      "nota": "el halo era el círculo donde se trillaba el trigo: la santidad es una era"
+    },
+    {
+      "forma": "iris",
+      "silabas": [
+        "i",
+        "ris"
+      ],
+      "raiz": "ir-",
+      "familia": "iris",
+      "etimologia": [
+        "Îris (gr.): la mensajera de los dioses"
+      ],
+      "campo": [
+        "luz",
+        "color",
+        "arco"
+      ],
+      "sonidos": [
+        "i",
+        "r",
+        "i",
+        "s"
+      ],
+      "raiz_culta": [
+        "irido"
+      ],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.3,
+      "movimiento": "radial"
+    },
+    {
+      "forma": "arcoíris",
+      "silabas": [
+        "ar",
+        "co",
+        "í",
+        "ris"
+      ],
+      "raiz": "arcoir-",
+      "familia": "iris",
+      "etimologia": [
+        "arcus (lat.) + Îris (gr.)"
+      ],
+      "campo": [
+        "luz",
+        "color",
+        "lluvia"
+      ],
+      "sonidos": [
+        "a",
+        "r",
+        "k",
+        "o",
+        "i",
+        "r",
+        "i",
+        "s"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.35,
+      "movimiento": "radial"
+    },
+    {
+      "forma": "iridiscencia",
+      "silabas": [
+        "i",
+        "ri",
+        "dis",
+        "cen",
+        "cia"
+      ],
+      "raiz": "irid-",
+      "familia": "iris",
+      "etimologia": [
+        "īris, īridis (lat.)"
+      ],
+      "campo": [
+        "luz",
+        "color",
+        "tornasol"
+      ],
+      "sonidos": [
+        "i",
+        "r",
+        "i",
+        "d",
+        "i",
+        "s",
+        "s",
+        "e",
+        "n",
+        "s",
+        "i",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.25,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "espectro",
+      "silabas": [
+        "es",
+        "pec",
+        "tro"
+      ],
+      "raiz": "spectr-",
+      "familia": "spek",
+      "etimologia": [
+        "spectrum (lat.)",
+        "specere (lat.): mirar"
+      ],
+      "campo": [
+        "luz",
+        "aparición"
+      ],
+      "sonidos": [
+        "e",
+        "s",
+        "p",
+        "e",
+        "k",
+        "t",
+        "r",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.3,
+      "movimiento": "suspendido",
+      "nota": "el espectro de la luz y el fantasma comparten cuerpo: lo que se deja mirar"
+    },
+    {
+      "forma": "prisma",
+      "silabas": [
+        "pris",
+        "ma"
+      ],
+      "raiz": "prism-",
+      "familia": "pris",
+      "etimologia": [
+        "prísma (gr.): lo aserrado",
+        "príein (gr.): serrar"
+      ],
+      "campo": [
+        "luz",
+        "corte",
+        "geometría"
+      ],
+      "sonidos": [
+        "p",
+        "r",
+        "i",
+        "s",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.85,
+      "movimiento": "inmóvil",
+      "nota": "la luz pasada por la sierra"
+    },
+    {
+      "forma": "cristal",
+      "silabas": [
+        "cris",
+        "tal"
+      ],
+      "raiz": "cristal-",
+      "familia": "krys",
+      "etimologia": [
+        "crystallus (lat.)",
+        "krýstallos (gr.): hielo"
+      ],
+      "campo": [
+        "luz",
+        "hielo",
+        "orden"
+      ],
+      "sonidos": [
+        "k",
+        "r",
+        "i",
+        "s",
+        "t",
+        "a",
+        "l"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.9,
+      "movimiento": "inmóvil",
+      "nota": "para el griego todo cristal era hielo que olvidó derretirse"
+    },
+    {
+      "forma": "destello",
+      "silabas": [
+        "des",
+        "te",
+        "llo"
+      ],
+      "raiz": "destell-",
+      "familia": "still",
+      "etimologia": [
+        "destellar, de dēstillāre (lat.): gotear"
+      ],
+      "campo": [
+        "luz",
+        "instante",
+        "gota"
+      ],
+      "sonidos": [
+        "d",
+        "e",
+        "s",
+        "t",
+        "e",
+        "y",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.4,
+      "movimiento": "intermitente",
+      "nota": "un destello es una gota destilada de luz: la etimología lo jura"
+    },
+    {
+      "forma": "brillo",
+      "silabas": [
+        "bri",
+        "llo"
+      ],
+      "raiz": "brill-",
+      "familia": "beryl",
+      "etimologia": [
+        "brillare (it.)",
+        "¿bēryllus (lat.): berilo?"
+      ],
+      "campo": [
+        "luz",
+        "piedra"
+      ],
+      "sonidos": [
+        "b",
+        "r",
+        "i",
+        "y",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "intermitente",
+      "nota": "quizá del berilo: la piedra que aprendió verbo"
+    },
+    {
+      "forma": "reflejo",
+      "silabas": [
+        "re",
+        "fle",
+        "jo"
+      ],
+      "raiz": "flej-",
+      "familia": "flect",
+      "etimologia": [
+        "reflectere (lat.): volver a doblar"
+      ],
+      "campo": [
+        "luz",
+        "espejo",
+        "doblez"
+      ],
+      "sonidos": [
+        "r",
+        "e",
+        "f",
+        "l",
+        "e",
+        "x",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.4,
+      "movimiento": "horizontal",
+      "nota": "reflejo: la luz doblada; refracción: la luz rota"
+    },
+    {
+      "forma": "refracción",
+      "silabas": [
+        "re",
+        "frac",
+        "ción"
+      ],
+      "raiz": "fracc-",
+      "familia": "frang",
+      "etimologia": [
+        "refringere (lat.)",
+        "frangere (lat.): romper"
+      ],
+      "campo": [
+        "luz",
+        "quiebre"
+      ],
+      "sonidos": [
+        "r",
+        "e",
+        "f",
+        "r",
+        "a",
+        "k",
+        "s",
+        "i",
+        "o",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 8,
+      "densidad": 0.45,
+      "movimiento": "oblicuo"
+    },
+    {
+      "forma": "sombra",
+      "silabas": [
+        "som",
+        "bra"
+      ],
+      "raiz": "sombr-",
+      "familia": "umbra",
+      "etimologia": [
+        "umbra (lat.); quizá sub umbra: bajo la sombra"
+      ],
+      "campo": [
+        "sombra",
+        "cuerpo"
+      ],
+      "sonidos": [
+        "s",
+        "o",
+        "m",
+        "b",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [
+        "umbra"
+      ],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.6,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "penumbra",
+      "silabas": [
+        "pe",
+        "num",
+        "bra"
+      ],
+      "raiz": "umbr-",
+      "familia": "umbra",
+      "etimologia": [
+        "paene (lat.): casi + umbra: sombra"
+      ],
+      "campo": [
+        "sombra",
+        "borde"
+      ],
+      "sonidos": [
+        "p",
+        "e",
+        "n",
+        "u",
+        "m",
+        "b",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.5,
+      "movimiento": "suspendido",
+      "nota": "casi-sombra: la palabra dice exactamente lo que es"
+    },
+    {
+      "forma": "umbral",
+      "silabas": [
+        "um",
+        "bral"
+      ],
+      "raiz": "umbral-",
+      "familia": "limen",
+      "etimologia": [
+        "līmināris (lat.)",
+        "līmen (lat.): puerta"
+      ],
+      "campo": [
+        "casa",
+        "paso",
+        "borde"
+      ],
+      "sonidos": [
+        "u",
+        "m",
+        "b",
+        "r",
+        "a",
+        "l"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.7,
+      "movimiento": "inmóvil",
+      "nota": "parece pariente de la sombra (umbra) pero es hijo de la puerta (limen)"
+    },
+    {
+      "forma": "alba",
+      "silabas": [
+        "al",
+        "ba"
+      ],
+      "raiz": "alb-",
+      "familia": "alb",
+      "etimologia": [
+        "albus (lat.): blanco"
+      ],
+      "campo": [
+        "luz",
+        "comienzo"
+      ],
+      "sonidos": [
+        "a",
+        "l",
+        "b",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.2,
+      "movimiento": "ascendente"
+    },
+    {
+      "forma": "aurora",
+      "silabas": [
+        "au",
+        "ro",
+        "ra"
+      ],
+      "raiz": "auror-",
+      "familia": "aus",
+      "etimologia": [
+        "aurōra (lat.)",
+        "*h₂ews- (pie): el este"
+      ],
+      "campo": [
+        "luz",
+        "comienzo"
+      ],
+      "sonidos": [
+        "a",
+        "u",
+        "r",
+        "o",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.25,
+      "movimiento": "ascendente",
+      "nota": "aurora, este y austral apuntan al mismo lado: donde amanece"
+    },
+    {
+      "forma": "crepúsculo",
+      "silabas": [
+        "cre",
+        "pús",
+        "cu",
+        "lo"
+      ],
+      "raiz": "crepuscul-",
+      "familia": "krep",
+      "etimologia": [
+        "crepusculum (lat.)",
+        "creper (lat.): dudoso, oscuro"
+      ],
+      "campo": [
+        "luz",
+        "fin",
+        "duda"
+      ],
+      "sonidos": [
+        "k",
+        "r",
+        "e",
+        "p",
+        "u",
+        "s",
+        "k",
+        "u",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 8,
+      "densidad": 0.55,
+      "movimiento": "descendente",
+      "nota": "el crepúsculo es, literalmente, la pequeña duda del día"
+    },
+    {
+      "forma": "opaco",
+      "silabas": [
+        "o",
+        "pa",
+        "co"
+      ],
+      "raiz": "opac-",
+      "familia": "opak",
+      "etimologia": [
+        "opācus (lat.): sombrío"
+      ],
+      "campo": [
+        "sombra",
+        "materia"
+      ],
+      "sonidos": [
+        "o",
+        "p",
+        "a",
+        "k",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.8,
+      "movimiento": "inmóvil"
+    },
+    {
+      "forma": "color",
+      "silabas": [
+        "co",
+        "lor"
+      ],
+      "raiz": "color-",
+      "familia": "kel",
+      "etimologia": [
+        "color, -ōris (lat.); pariente posible de celāre: ocultar"
+      ],
+      "campo": [
+        "luz",
+        "piel"
+      ],
+      "sonidos": [
+        "k",
+        "o",
+        "l",
+        "o",
+        "r"
+      ],
+      "raiz_culta": [
+        "cromo"
+      ],
+      "paralelos": {
+        "náhuatl": "tlapalli"
+      },
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante",
+      "nota": "si color viene de ocultar, todo color es un velo sobre la cosa"
+    }
+  ]
+}

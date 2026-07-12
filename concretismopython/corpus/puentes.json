@@ -1,0 +1,1992 @@
+{
+  "archivo": "puentes",
+  "nota": "léxico puente: palabras comunes por donde la deriva sonora cruza el corpus",
+  "palabras": [
+    {
+      "forma": "sube",
+      "silabas": [
+        "su",
+        "be"
+      ],
+      "raiz": "sub-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "u",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "cubre",
+      "silabas": [
+        "cu",
+        "bre"
+      ],
+      "raiz": "cub-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "k",
+        "u",
+        "b",
+        "r",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "tuve",
+      "silabas": [
+        "tu",
+        "ve"
+      ],
+      "raiz": "tuv-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "t",
+        "u",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "uve",
+      "silabas": [
+        "u",
+        "ve"
+      ],
+      "raiz": "uve-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "u",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ave",
+      "silabas": [
+        "a",
+        "ve"
+      ],
+      "raiz": "ave-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "nave",
+      "silabas": [
+        "na",
+        "ve"
+      ],
+      "raiz": "nav-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "n",
+        "a",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "llave",
+      "silabas": [
+        "lla",
+        "ve"
+      ],
+      "raiz": "lla-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "y",
+        "a",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "clave",
+      "silabas": [
+        "cla",
+        "ve"
+      ],
+      "raiz": "cla-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "k",
+        "l",
+        "a",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "suave",
+      "silabas": [
+        "sua",
+        "ve"
+      ],
+      "raiz": "sua-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "u",
+        "a",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "nudo",
+      "silabas": [
+        "nu",
+        "do"
+      ],
+      "raiz": "nud-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "n",
+        "u",
+        "d",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "nido",
+      "silabas": [
+        "ni",
+        "do"
+      ],
+      "raiz": "nid-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "n",
+        "i",
+        "d",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "humo",
+      "silabas": [
+        "hu",
+        "mo"
+      ],
+      "raiz": "hum-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "u",
+        "m",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "huso",
+      "silabas": [
+        "hu",
+        "so"
+      ],
+      "raiz": "hus-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "u",
+        "s",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "uso",
+      "silabas": [
+        "u",
+        "so"
+      ],
+      "raiz": "uso-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "u",
+        "s",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "oso",
+      "silabas": [
+        "o",
+        "so"
+      ],
+      "raiz": "oso-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "o",
+        "s",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "eso",
+      "silabas": [
+        "e",
+        "so"
+      ],
+      "raiz": "eso-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "e",
+        "s",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ese",
+      "silabas": [
+        "e",
+        "se"
+      ],
+      "raiz": "ese-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "e",
+        "s",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ola",
+      "silabas": [
+        "o",
+        "la"
+      ],
+      "raiz": "ola-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "o",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "sola",
+      "silabas": [
+        "so",
+        "la"
+      ],
+      "raiz": "sol-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "o",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "cola",
+      "silabas": [
+        "co",
+        "la"
+      ],
+      "raiz": "col-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "k",
+        "o",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "hola",
+      "silabas": [
+        "ho",
+        "la"
+      ],
+      "raiz": "hol-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "o",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "hora",
+      "silabas": [
+        "ho",
+        "ra"
+      ],
+      "raiz": "hor-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "o",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ora",
+      "silabas": [
+        "o",
+        "ra"
+      ],
+      "raiz": "ora-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "o",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "aura",
+      "silabas": [
+        "au",
+        "ra"
+      ],
+      "raiz": "aur-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "u",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "aula",
+      "silabas": [
+        "au",
+        "la"
+      ],
+      "raiz": "aul-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "u",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ala",
+      "silabas": [
+        "a",
+        "la"
+      ],
+      "raiz": "ala-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "alga",
+      "silabas": [
+        "al",
+        "ga"
+      ],
+      "raiz": "alg-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "l",
+        "g",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "alma",
+      "silabas": [
+        "al",
+        "ma"
+      ],
+      "raiz": "alm-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "l",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "alta",
+      "silabas": [
+        "al",
+        "ta"
+      ],
+      "raiz": "alt-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "l",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "azul",
+      "silabas": [
+        "a",
+        "zul"
+      ],
+      "raiz": "azu-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "s",
+        "u",
+        "l"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "azar",
+      "silabas": [
+        "a",
+        "zar"
+      ],
+      "raiz": "aza-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "s",
+        "a",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "mar",
+      "silabas": [
+        "mar"
+      ],
+      "raiz": "mar-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "m",
+        "a",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "sal",
+      "silabas": [
+        "sal"
+      ],
+      "raiz": "sal-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "a",
+        "l"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "sol",
+      "silabas": [
+        "sol"
+      ],
+      "raiz": "sol-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "o",
+        "l"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "sur",
+      "silabas": [
+        "sur"
+      ],
+      "raiz": "sur-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "u",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "luna",
+      "silabas": [
+        "lu",
+        "na"
+      ],
+      "raiz": "lun-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "l",
+        "u",
+        "n",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "lona",
+      "silabas": [
+        "lo",
+        "na"
+      ],
+      "raiz": "lon-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "l",
+        "o",
+        "n",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "hoja",
+      "silabas": [
+        "ho",
+        "ja"
+      ],
+      "raiz": "hoj-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "o",
+        "x",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ojo",
+      "silabas": [
+        "o",
+        "jo"
+      ],
+      "raiz": "ojo-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "o",
+        "x",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "hilo",
+      "silabas": [
+        "hi",
+        "lo"
+      ],
+      "raiz": "hil-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "i",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "filo",
+      "silabas": [
+        "fi",
+        "lo"
+      ],
+      "raiz": "fil-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "f",
+        "i",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "velo",
+      "silabas": [
+        "ve",
+        "lo"
+      ],
+      "raiz": "vel-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "e",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "vela",
+      "silabas": [
+        "ve",
+        "la"
+      ],
+      "raiz": "vel-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "e",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "tela",
+      "silabas": [
+        "te",
+        "la"
+      ],
+      "raiz": "tel-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "t",
+        "e",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "suelo",
+      "silabas": [
+        "sue",
+        "lo"
+      ],
+      "raiz": "sue-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "u",
+        "e",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "vuelo",
+      "silabas": [
+        "vue",
+        "lo"
+      ],
+      "raiz": "vue-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "u",
+        "e",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "duelo",
+      "silabas": [
+        "due",
+        "lo"
+      ],
+      "raiz": "due-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "d",
+        "u",
+        "e",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "hueco",
+      "silabas": [
+        "hue",
+        "co"
+      ],
+      "raiz": "hue-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "u",
+        "e",
+        "k",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "seco",
+      "silabas": [
+        "se",
+        "co"
+      ],
+      "raiz": "sec-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "e",
+        "k",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "cero",
+      "silabas": [
+        "ce",
+        "ro"
+      ],
+      "raiz": "cer-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "e",
+        "r",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "niega",
+      "silabas": [
+        "nie",
+        "ga"
+      ],
+      "raiz": "nie-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "n",
+        "i",
+        "e",
+        "g",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "mayo",
+      "silabas": [
+        "ma",
+        "yo"
+      ],
+      "raiz": "may-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "m",
+        "a",
+        "y",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "mano",
+      "silabas": [
+        "ma",
+        "no"
+      ],
+      "raiz": "man-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "m",
+        "a",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "cruz",
+      "silabas": [
+        "cruz"
+      ],
+      "raiz": "cru-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "k",
+        "r",
+        "u",
+        "s"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "vez",
+      "silabas": [
+        "vez"
+      ],
+      "raiz": "vez-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "e",
+        "s"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ver",
+      "silabas": [
+        "ver"
+      ],
+      "raiz": "ver-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "e",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ser",
+      "silabas": [
+        "ser"
+      ],
+      "raiz": "ser-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "e",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "sed",
+      "silabas": [
+        "sed"
+      ],
+      "raiz": "sed-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "e",
+        "d"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "red",
+      "silabas": [
+        "red"
+      ],
+      "raiz": "red-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "r",
+        "e",
+        "d"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "res",
+      "silabas": [
+        "res"
+      ],
+      "raiz": "res-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "r",
+        "e",
+        "s"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "sabor",
+      "silabas": [
+        "sa",
+        "bor"
+      ],
+      "raiz": "sab-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "a",
+        "b",
+        "o",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "valor",
+      "silabas": [
+        "va",
+        "lor"
+      ],
+      "raiz": "val-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "a",
+        "l",
+        "o",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "favor",
+      "silabas": [
+        "fa",
+        "vor"
+      ],
+      "raiz": "fav-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "f",
+        "a",
+        "b",
+        "o",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "siento",
+      "silabas": [
+        "sien",
+        "to"
+      ],
+      "raiz": "sie-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "e",
+        "n",
+        "t",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ciento",
+      "silabas": [
+        "cien",
+        "to"
+      ],
+      "raiz": "cie-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "e",
+        "n",
+        "t",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "cuento",
+      "silabas": [
+        "cuen",
+        "to"
+      ],
+      "raiz": "cue-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "k",
+        "u",
+        "e",
+        "n",
+        "t",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "lento",
+      "silabas": [
+        "len",
+        "to"
+      ],
+      "raiz": "len-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "l",
+        "e",
+        "n",
+        "t",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "aguja",
+      "silabas": [
+        "a",
+        "gu",
+        "ja"
+      ],
+      "raiz": "agu-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "a",
+        "g",
+        "u",
+        "x",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "nota",
+      "silabas": [
+        "no",
+        "ta"
+      ],
+      "raiz": "not-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "n",
+        "o",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "rota",
+      "silabas": [
+        "ro",
+        "ta"
+      ],
+      "raiz": "rot-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "r",
+        "o",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "ruta",
+      "silabas": [
+        "ru",
+        "ta"
+      ],
+      "raiz": "rut-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "r",
+        "u",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "bota",
+      "silabas": [
+        "bo",
+        "ta"
+      ],
+      "raiz": "bot-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "o",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "broma",
+      "silabas": [
+        "bro",
+        "ma"
+      ],
+      "raiz": "bro-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "r",
+        "o",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "pluma",
+      "silabas": [
+        "plu",
+        "ma"
+      ],
+      "raiz": "plu-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "p",
+        "l",
+        "u",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "espuma",
+      "silabas": [
+        "es",
+        "pu",
+        "ma"
+      ],
+      "raiz": "esp-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "e",
+        "s",
+        "p",
+        "u",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "gris",
+      "silabas": [
+        "gris"
+      ],
+      "raiz": "gri-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "g",
+        "r",
+        "i",
+        "s"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "nueve",
+      "silabas": [
+        "nue",
+        "ve"
+      ],
+      "raiz": "nue-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "n",
+        "u",
+        "e",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "breve",
+      "silabas": [
+        "bre",
+        "ve"
+      ],
+      "raiz": "bre-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "b",
+        "r",
+        "e",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "leve",
+      "silabas": [
+        "le",
+        "ve"
+      ],
+      "raiz": "lev-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "l",
+        "e",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "llueve",
+      "silabas": [
+        "llue",
+        "ve"
+      ],
+      "raiz": "llu-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "y",
+        "u",
+        "e",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "treno",
+      "silabas": [
+        "tre",
+        "no"
+      ],
+      "raiz": "tre-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "t",
+        "r",
+        "e",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "trono",
+      "silabas": [
+        "tro",
+        "no"
+      ],
+      "raiz": "tro-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "t",
+        "r",
+        "o",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "terreno",
+      "silabas": [
+        "te",
+        "rre",
+        "no"
+      ],
+      "raiz": "ter-",
+      "familia": "puente",
+      "etimologia": [],
+      "campo": [
+        "puente"
+      ],
+      "sonidos": [
+        "t",
+        "e",
+        "r",
+        "e",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.5,
+      "movimiento": "errante"
+    }
+  ]
+}

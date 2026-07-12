@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" font-kerning="normal">
+<!-- nefelógrafo · poema-halo · semilla 50828 · poesiasexp / concretismopython -->
+<metadata>{&quot;meta&quot;: {&quot;instrumento&quot;: &quot;nefelógrafo&quot;, &quot;tipo&quot;: &quot;halo&quot;, &quot;semilla&quot;: 50828, &quot;nucleo&quot;: &quot;lucero&quot;, &quot;esquizo&quot;: 0.35, &quot;puntuacion&quot;: {&quot;densidad&quot;: 0.035, &quot;vacio&quot;: 0.965, &quot;repeticion&quot;: 0.7, &quot;contraste&quot;: 0.817}, &quot;restricciones&quot;: {&quot;palabras_base&quot;: 12, &quot;max_palabras_base&quot;: 12, &quot;vacio&quot;: 0.965, &quot;min_vacio&quot;: 0.3, &quot;fuentes&quot;: 3, &quot;max_fuentes&quot;: 3, &quot;anomalias&quot;: 1, &quot;nucleos&quot;: 1, &quot;cumplidas&quot;: true}, &quot;notas&quot;: [&quot;transformación fonética: la deriva sonora gira en el primer anillo&quot;, &quot;transformación etimológica: los anillos son épocas&quot;, &quot;anomalía: un radio recto en un cielo circular&quot;, &quot;restricción: se despidió a «luz» (había más de 12 palabras-base)&quot;, &quot;restricción: se despidió a «cero» (había más de 12 palabras-base)&quot;]}, &quot;lienzo&quot;: {&quot;ancho&quot;: 900, &quot;alto&quot;: 900}}</metadata>
+<style>
+  svg { background: #f6f2e9; }
+  text { white-space: pre; }
+</style>
+<rect width="900" height="900" fill="#f6f2e9"/>
+<g transform="translate(450.0 450.0)" data-id="p1" data-capa="nucleo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="46" fill="#16130f" text-anchor="middle" dominant-baseline="middle"><title>lucero ← lūcifer (lat.): el portador de la luz</title>lucero</text>
+</g>
+<g transform="translate(451.78 298.01) rotate(360.67)" data-id="p3" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85"><title>lumbre ← lūmen, lūminis (lat.)</title>lumbre</text>
+</g>
+<g transform="translate(540.78 328.08) rotate(396.67)" data-id="p4" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85"><title>lúcido ← lūcidus (lat.)</title>lúcido</text>
+</g>
+<g transform="translate(595.1 404.73) rotate(432.67)" data-id="p5" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85"><title>translúcido ← trans + lūcidus (lat.)</title>translúcido</text>
+</g>
+<g transform="translate(448.22 601.99) rotate(720.67)" data-id="p8" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85"><title>lumbre ← lūmen, lūminis (lat.)</title>lumbre</text>
+</g>
+<g transform="translate(359.22 571.92) rotate(756.67)" data-id="p9" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85"><title>lúcido ← lūcidus (lat.)</title>lúcido</text>
+</g>
+<g transform="translate(304.9 495.27) rotate(792.67)" data-id="p10" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85"><title>translúcido ← trans + lūcidus (lat.)</title>translúcido</text>
+</g>
+<g transform="translate(200.28 438.07) rotate(272.74)" data-id="p12" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūcifer · etimología</title>lūcifer</text>
+</g>
+<g transform="translate(230.19 330.9) rotate(298.45)" data-id="p13" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūx, lūcis · etimología</title>lūx, lūcis</text>
+</g>
+<g transform="translate(303.63 247.33) rotate(324.16)" data-id="p14" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūmen, lūminis · etimología</title>lūmen, lūminis</text>
+</g>
+<g transform="translate(406.06 203.89) rotate(349.88)" data-id="p15" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūcidus · etimología</title>lūcidus</text>
+</g>
+<g transform="translate(517.2 209.2) rotate(375.59)" data-id="p16" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>trans + lūcidus · etimología</title>trans + lūcidus</text>
+</g>
+<g transform="translate(615.02 262.2) rotate(401.31)" data-id="p17" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūcifer · etimología</title>lūcifer</text>
+</g>
+<g transform="translate(680.16 352.4) rotate(427.02)" data-id="p18" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūx, lūcis · etimología</title>lūx, lūcis</text>
+</g>
+<g transform="translate(699.72 461.93) rotate(632.74)" data-id="p19" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūmen, lūminis · etimología</title>lūmen, lūminis</text>
+</g>
+<g transform="translate(669.81 569.1) rotate(658.45)" data-id="p20" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūcidus · etimología</title>lūcidus</text>
+</g>
+<g transform="translate(596.37 652.67) rotate(684.16)" data-id="p21" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>trans + lūcidus · etimología</title>trans + lūcidus</text>
+</g>
+<g transform="translate(493.94 696.11) rotate(709.88)" data-id="p22" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūcifer · etimología</title>lūcifer</text>
+</g>
+<g transform="translate(382.8 690.8) rotate(735.59)" data-id="p23" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūx, lūcis · etimología</title>lūx, lūcis</text>
+</g>
+<g transform="translate(284.98 637.8) rotate(761.31)" data-id="p24" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūmen, lūminis · etimología</title>lūmen, lūminis</text>
+</g>
+<g transform="translate(219.84 547.6) rotate(787.02)" data-id="p25" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55"><title>lūcidus · etimología</title>lūcidus</text>
+</g>
+<g transform="translate(766.16 304.58) rotate(425.3)" data-id="p26" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>citlalin · paralelo</title>citlalin</text>
+</g>
+<g transform="translate(796.83 421.48) rotate(445.3)" data-id="p27" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>lūx · paralelo</title>lūx</text>
+</g>
+<g transform="translate(785.67 541.83) rotate(645.3)" data-id="p28" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>*leuk- · paralelo</title>*leuk-</text>
+</g>
+<g transform="translate(734.02 651.09) rotate(665.3)" data-id="p29" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>citlalin · paralelo</title>citlalin</text>
+</g>
+<g transform="translate(648.11 736.11) rotate(685.3)" data-id="p30" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>lūx · paralelo</title>lūx</text>
+</g>
+<g transform="translate(538.31 786.61) rotate(705.3)" data-id="p31" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>*leuk- · paralelo</title>*leuk-</text>
+</g>
+<g transform="translate(417.86 796.51) rotate(725.3)" data-id="p32" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>citlalin · paralelo</title>citlalin</text>
+</g>
+<g transform="translate(301.28 764.62) rotate(745.3)" data-id="p33" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>lūx · paralelo</title>lūx</text>
+</g>
+<g transform="translate(202.64 694.78) rotate(765.3)" data-id="p34" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>*leuk- · paralelo</title>*leuk-</text>
+</g>
+<g transform="translate(133.84 595.42) rotate(785.3)" data-id="p35" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>citlalin · paralelo</title>citlalin</text>
+</g>
+<g transform="translate(103.17 478.52) rotate(805.3)" data-id="p36" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>lūx · paralelo</title>lūx</text>
+</g>
+<g transform="translate(114.33 358.17) rotate(645.3)" data-id="p37" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>*leuk- · paralelo</title>*leuk-</text>
+</g>
+<g transform="translate(165.98 248.91) rotate(665.3)" data-id="p38" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>citlalin · paralelo</title>citlalin</text>
+</g>
+<g transform="translate(251.89 163.89) rotate(685.3)" data-id="p39" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>lūx · paralelo</title>lūx</text>
+</g>
+<g transform="translate(361.69 113.39) rotate(705.3)" data-id="p40" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>*leuk- · paralelo</title>*leuk-</text>
+</g>
+<g transform="translate(482.14 103.49) rotate(725.3)" data-id="p41" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>citlalin · paralelo</title>citlalin</text>
+</g>
+<g transform="translate(598.72 135.38) rotate(745.3)" data-id="p42" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>lūx · paralelo</title>lūx</text>
+</g>
+<g transform="translate(697.36 205.22) rotate(765.3)" data-id="p43" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.36"><title>*leuk- · paralelo</title>*leuk-</text>
+</g>
+<g transform="translate(205.17 440.78) rotate(182.2)" data-id="p44" data-capa="anomalia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="18" fill="#c8102e" text-anchor="middle" dominant-baseline="middle" letter-spacing="46.62"><title>lúcido ← lūcidus (lat.) · radio</title>lúcido</text>
+</g>
+</svg>

@@ -1,0 +1,778 @@
+{
+  "meta": {
+    "instrumento": "nefelógrafo",
+    "tipo": "cumulo",
+    "semilla": 83915,
+    "nucleo": "nube",
+    "esquizo": 0.35,
+    "puntuacion": {
+      "densidad": 0.04,
+      "vacio": 0.96,
+      "repeticion": 0.433,
+      "contraste": 0.717
+    },
+    "restricciones": {
+      "palabras_base": 9,
+      "max_palabras_base": 12,
+      "vacio": 0.96,
+      "min_vacio": 0.3,
+      "fuentes": 2,
+      "max_fuentes": 3,
+      "anomalias": 1,
+      "nucleos": 1,
+      "cumplidas": true
+    },
+    "notas": [
+      "transformación etimológica: «nephélē» sostiene el montón",
+      "transformación fonética: erosión en el borde del montón",
+      "anomalía: un desprendimiento se aleja del montón"
+    ]
+  },
+  "lienzo": {
+    "ancho": 900,
+    "alto": 900,
+    "fondo": "#f6f2e9",
+    "tinta": "#16130f",
+    "fuentes": {
+      "mono": "'Courier Prime', 'Courier New', monospace",
+      "sans": "Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif",
+      "serif": "'Bodoni Moda', Didot, 'Times New Roman', serif"
+    }
+  },
+  "palabras": [
+    {
+      "id": "p1",
+      "texto": "nephélē",
+      "base": "nube",
+      "x": 450.0,
+      "y": 460.0,
+      "rotacion": 0.0,
+      "tamano": 110,
+      "opacidad": 0.09,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "eco",
+      "anomalia": false,
+      "transformacion": "etimología",
+      "variantes": [
+        "tuve",
+        "nueve",
+        "nūbēs",
+        "nebula",
+        "nave",
+        "mixtli",
+        "nublar"
+      ],
+      "etimologia": [
+        "nūbēs (lat.)",
+        "nebula (lat.)",
+        "nephélē (gr.)"
+      ]
+    },
+    {
+      "id": "p2",
+      "texto": "nube",
+      "base": "nube",
+      "x": 450.0,
+      "y": 450.0,
+      "rotacion": 0.0,
+      "tamano": 58,
+      "opacidad": 1.0,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "nucleo",
+      "anomalia": false,
+      "animacion": "ascenso",
+      "variantes": [
+        "nave",
+        "muyal",
+        "nubilidad",
+        "nefo-",
+        "nublado",
+        "nublar",
+        "tuve"
+      ],
+      "etimologia": [
+        "nūbēs (lat.)",
+        "nebula (lat.)",
+        "nephélē (gr.)"
+      ]
+    },
+    {
+      "id": "p3",
+      "texto": "nublado",
+      "base": "nublado",
+      "x": 416.28,
+      "y": 461.51,
+      "rotacion": 0.0,
+      "tamano": 27.5,
+      "opacidad": 0.88,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nublar",
+        "nūbilātus",
+        "nube",
+        "nuboso",
+        "nubilidad"
+      ],
+      "etimologia": [
+        "nūbilātus (lat.)"
+      ]
+    },
+    {
+      "id": "p4",
+      "texto": "nubilidad",
+      "base": "nubilidad",
+      "x": 477.9,
+      "y": 398.94,
+      "rotacion": 0.0,
+      "tamano": 25.9,
+      "opacidad": 0.84,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nūbilis",
+        "nube",
+        "nuboso",
+        "nublado",
+        "nūbere",
+        "nublar"
+      ],
+      "etimologia": [
+        "nūbilis (lat.): casadera",
+        "nūbere (lat.): velarse, casarse"
+      ]
+    },
+    {
+      "id": "p5",
+      "texto": "vapor",
+      "base": "vapor",
+      "x": 467.74,
+      "y": 522.02,
+      "rotacion": 0.0,
+      "tamano": 24.7,
+      "opacidad": 0.81,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "animacion": "ascenso",
+      "variantes": [
+        "vapor, -ōris",
+        "evaporación",
+        "valor",
+        "favor",
+        "calor",
+        "atmo-",
+        "sabor"
+      ],
+      "etimologia": [
+        "vapor, -ōris (lat.)"
+      ]
+    },
+    {
+      "id": "p6",
+      "texto": "nave",
+      "base": "nave",
+      "x": 377.36,
+      "y": 401.61,
+      "rotacion": 0.0,
+      "tamano": 23.8,
+      "opacidad": 0.79,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "llave",
+        "nube",
+        "ave",
+        "clave"
+      ]
+    },
+    {
+      "id": "p7",
+      "texto": "vapor",
+      "base": "vapor",
+      "x": 547.49,
+      "y": 434.87,
+      "rotacion": 0.0,
+      "tamano": 23.0,
+      "opacidad": 0.76,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "animacion": "ascenso",
+      "variantes": [
+        "evaporación",
+        "vapor, -ōris",
+        "calor",
+        "sabor",
+        "atmo-",
+        "favor",
+        "valor"
+      ],
+      "etimologia": [
+        "vapor, -ōris (lat.)"
+      ]
+    },
+    {
+      "id": "p8",
+      "texto": "nubilidad",
+      "base": "nubilidad",
+      "x": 381.96,
+      "y": 534.97,
+      "rotacion": 0.0,
+      "tamano": 22.3,
+      "opacidad": 0.75,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nūbilis",
+        "nūbere",
+        "nube",
+        "nublar",
+        "nublado",
+        "nuboso"
+      ],
+      "etimologia": [
+        "nūbilis (lat.): casadera",
+        "nūbere (lat.): velarse, casarse"
+      ]
+    },
+    {
+      "id": "p9",
+      "texto": "niebla",
+      "base": "niebla",
+      "x": 442.15,
+      "y": 332.08,
+      "rotacion": 0.0,
+      "tamano": 21.6,
+      "opacidad": 0.73,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "ayahuitl",
+        "nebulosa",
+        "nimbostrato",
+        "nimbo",
+        "niega",
+        "nieve",
+        "neblina"
+      ],
+      "etimologia": [
+        "nebula (lat.)",
+        "nephélē (gr.)",
+        "*nebh- (pie)"
+      ]
+    },
+    {
+      "id": "p10",
+      "texto": "niebla",
+      "base": "niebla",
+      "x": 541.68,
+      "y": 537.61,
+      "rotacion": 0.0,
+      "tamano": 21.0,
+      "opacidad": 0.71,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nieve",
+        "nimbostrato",
+        "niega",
+        "nebula",
+        "nebulosa",
+        "nimbo",
+        "ayahuitl"
+      ],
+      "etimologia": [
+        "nebula (lat.)",
+        "nephélē (gr.)",
+        "*nebh- (pie)"
+      ]
+    },
+    {
+      "id": "p11",
+      "texto": "nubilidad",
+      "base": "nubilidad",
+      "x": 315.13,
+      "y": 447.16,
+      "rotacion": 0.0,
+      "tamano": 20.4,
+      "opacidad": 0.7,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nūbere",
+        "nūbilis",
+        "nublado",
+        "nuboso",
+        "nube",
+        "nublar"
+      ],
+      "etimologia": [
+        "nūbilis (lat.): casadera",
+        "nūbere (lat.): velarse, casarse"
+      ]
+    },
+    {
+      "id": "p12",
+      "texto": "nueve",
+      "base": "nueve",
+      "x": 557.1,
+      "y": 355.96,
+      "rotacion": 0.0,
+      "tamano": 19.9,
+      "opacidad": 0.68,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nieve",
+        "nube",
+        "llueve",
+        "breve"
+      ]
+    },
+    {
+      "id": "p13",
+      "texto": "sube",
+      "base": "sube",
+      "x": 433.76,
+      "y": 598.88,
+      "rotacion": 0.0,
+      "tamano": 19.3,
+      "opacidad": 0.67,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "uve",
+        "nube",
+        "suave",
+        "tuve"
+      ]
+    },
+    {
+      "id": "p14",
+      "texto": "nubilidad",
+      "base": "nubilidad",
+      "x": 357.32,
+      "y": 323.68,
+      "rotacion": 0.0,
+      "tamano": 18.9,
+      "opacidad": 0.66,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nuboso",
+        "nublado",
+        "nube",
+        "nūbilis",
+        "nūbere",
+        "nublar"
+      ],
+      "etimologia": [
+        "nūbilis (lat.): casadera",
+        "nūbere (lat.): velarse, casarse"
+      ]
+    },
+    {
+      "id": "p15",
+      "texto": "niebla",
+      "base": "niebla",
+      "x": 610.15,
+      "y": 481.82,
+      "rotacion": 0.0,
+      "tamano": 18.4,
+      "opacidad": 0.64,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nebula",
+        "neblina",
+        "nieve",
+        "nimbo",
+        "nimbostrato",
+        "nebulosa",
+        "ayahuitl"
+      ],
+      "etimologia": [
+        "nebula (lat.)",
+        "nephélē (gr.)",
+        "*nebh- (pie)"
+      ]
+    },
+    {
+      "id": "p16",
+      "texto": "neblina",
+      "base": "neblina",
+      "x": 304.98,
+      "y": 538.01,
+      "rotacion": 0.0,
+      "tamano": 17.9,
+      "opacidad": 0.63,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "variantes": [
+        "nebulosa",
+        "niebla",
+        "nimbo",
+        "nimbostrato",
+        "nebula"
+      ],
+      "etimologia": [
+        "nebula (lat.)"
+      ]
+    },
+    {
+      "id": "p17",
+      "texto": "eb",
+      "base": "niebla",
+      "x": 499.2,
+      "y": 281.26,
+      "rotacion": 0.0,
+      "tamano": 17.5,
+      "opacidad": 0.53,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "neblina",
+        "nimbo",
+        "niega",
+        "nebulosa",
+        "nebula",
+        "nephélē",
+        "ayahuitl"
+      ],
+      "etimologia": [
+        "nebula (lat.)",
+        "nephélē (gr.)",
+        "*nebh- (pie)"
+      ]
+    },
+    {
+      "id": "p18",
+      "texto": "ub",
+      "base": "sube",
+      "x": 530.32,
+      "y": 612.97,
+      "rotacion": 0.0,
+      "tamano": 17.1,
+      "opacidad": 0.52,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "suave",
+        "nube",
+        "tuve",
+        "uve"
+      ]
+    },
+    {
+      "id": "p19",
+      "texto": "av",
+      "base": "nave",
+      "x": 275.35,
+      "y": 382.01,
+      "rotacion": 0.0,
+      "tamano": 16.7,
+      "opacidad": 0.51,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "llave",
+        "clave",
+        "ave",
+        "nube"
+      ]
+    },
+    {
+      "id": "p20",
+      "texto": "av",
+      "base": "nave",
+      "x": 629.89,
+      "y": 380.14,
+      "rotacion": 0.0,
+      "tamano": 16.3,
+      "opacidad": 0.5,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "clave",
+        "ave",
+        "llave",
+        "nube"
+      ]
+    },
+    {
+      "id": "p21",
+      "texto": "e",
+      "base": "nueve",
+      "x": 362.14,
+      "y": 627.87,
+      "rotacion": 0.0,
+      "tamano": 15.9,
+      "opacidad": 0.49,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "llueve",
+        "breve",
+        "nube",
+        "nieve"
+      ]
+    },
+    {
+      "id": "p22",
+      "texto": "bla",
+      "base": "nublado",
+      "x": 393.16,
+      "y": 254.44,
+      "rotacion": 0.0,
+      "tamano": 15.5,
+      "opacidad": 0.48,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "nube",
+        "nuboso",
+        "nubilidad",
+        "nublar",
+        "nūbilātus"
+      ],
+      "etimologia": [
+        "nūbilātus (lat.)"
+      ]
+    },
+    {
+      "id": "p23",
+      "texto": "e",
+      "base": "nueve",
+      "x": 628.39,
+      "y": 558.47,
+      "rotacion": 0.0,
+      "tamano": 15.2,
+      "opacidad": 0.48,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "llueve",
+        "nube",
+        "nieve",
+        "breve"
+      ]
+    },
+    {
+      "id": "p24",
+      "texto": "p",
+      "base": "vapor",
+      "x": 240.28,
+      "y": 491.49,
+      "rotacion": 0.0,
+      "tamano": 14.8,
+      "opacidad": 0.47,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "animacion": "ascenso",
+      "transformacion": "erosión",
+      "variantes": [
+        "atmo-",
+        "sabor",
+        "valor",
+        "calor",
+        "evaporación",
+        "vapor, -ōris",
+        "favor"
+      ],
+      "etimologia": [
+        "vapor, -ōris (lat.)"
+      ]
+    },
+    {
+      "id": "p25",
+      "texto": "ub",
+      "base": "sube",
+      "x": 579.51,
+      "y": 273.8,
+      "rotacion": 0.0,
+      "tamano": 14.4,
+      "opacidad": 0.46,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "suave",
+        "nube",
+        "uve",
+        "tuve"
+      ]
+    },
+    {
+      "id": "p26",
+      "texto": "bla",
+      "base": "nublado",
+      "x": 474.04,
+      "y": 672.17,
+      "rotacion": 0.0,
+      "tamano": 14.1,
+      "opacidad": 0.45,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "nubilidad",
+        "nube",
+        "nublar",
+        "nūbilātus",
+        "nuboso"
+      ],
+      "etimologia": [
+        "nūbilātus (lat.)"
+      ]
+    },
+    {
+      "id": "p27",
+      "texto": "ub",
+      "base": "sube",
+      "x": 278.68,
+      "y": 299.32,
+      "rotacion": 0.0,
+      "tamano": 13.8,
+      "opacidad": 0.44,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "nube",
+        "tuve",
+        "suave",
+        "uve"
+      ]
+    },
+    {
+      "id": "p28",
+      "texto": "bli",
+      "base": "neblina",
+      "x": 682.7,
+      "y": 445.29,
+      "rotacion": 0.0,
+      "tamano": 13.4,
+      "opacidad": 0.43,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "nebula",
+        "niebla",
+        "nimbo",
+        "nimbostrato",
+        "nebulosa"
+      ],
+      "etimologia": [
+        "nebula (lat.)"
+      ]
+    },
+    {
+      "id": "p29",
+      "texto": "bli",
+      "base": "neblina",
+      "x": 278.34,
+      "y": 613.77,
+      "rotacion": 0.0,
+      "tamano": 13.1,
+      "opacidad": 0.42,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "erosión",
+      "variantes": [
+        "niebla",
+        "nebulosa",
+        "nebula",
+        "nimbostrato",
+        "nimbo"
+      ],
+      "etimologia": [
+        "nebula (lat.)"
+      ]
+    },
+    {
+      "id": "p30",
+      "texto": "nave",
+      "base": "nave",
+      "x": 108.0,
+      "y": 90.0,
+      "rotacion": 90,
+      "tamano": 21,
+      "opacidad": 1.0,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "anomalia",
+      "color": "#c8102e",
+      "anomalia": true,
+      "transformacion": "desprendimiento",
+      "variantes": [
+        "clave",
+        "llave",
+        "nube",
+        "ave"
+      ]
+    }
+  ]
+}

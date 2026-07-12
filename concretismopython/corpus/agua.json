@@ -1,0 +1,666 @@
+{
+  "archivo": "agua",
+  "palabras": [
+    {
+      "forma": "agua",
+      "silabas": [
+        "a",
+        "gua"
+      ],
+      "raiz": "agu-",
+      "familia": "akw",
+      "etimologia": [
+        "aqua (lat.)"
+      ],
+      "campo": [
+        "agua"
+      ],
+      "sonidos": [
+        "a",
+        "g",
+        "u",
+        "a"
+      ],
+      "raiz_culta": [
+        "hidro"
+      ],
+      "paralelos": {
+        "náhuatl": "atl",
+        "maya": "ha'"
+      },
+      "peso_visual": 4,
+      "densidad": 0.7,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "lluvia",
+      "silabas": [
+        "llu",
+        "via"
+      ],
+      "raiz": "lluv-",
+      "familia": "pluv",
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ],
+      "campo": [
+        "agua",
+        "lluvia",
+        "caída"
+      ],
+      "sonidos": [
+        "y",
+        "u",
+        "b",
+        "i",
+        "a"
+      ],
+      "raiz_culta": [
+        "pluvio",
+        "ombro"
+      ],
+      "paralelos": {
+        "náhuatl": "quiahuitl",
+        "maya": "cháak (también el dios)"
+      },
+      "peso_visual": 5,
+      "densidad": 0.6,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "llover",
+      "silabas": [
+        "llo",
+        "ver"
+      ],
+      "raiz": "llov-",
+      "familia": "pluv",
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ],
+      "campo": [
+        "lluvia",
+        "verbo"
+      ],
+      "sonidos": [
+        "y",
+        "o",
+        "b",
+        "e",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.55,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "llovizna",
+      "silabas": [
+        "llo",
+        "viz",
+        "na"
+      ],
+      "raiz": "llov-",
+      "familia": "pluv",
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ],
+      "campo": [
+        "lluvia",
+        "suavidad"
+      ],
+      "sonidos": [
+        "y",
+        "o",
+        "b",
+        "i",
+        "s",
+        "n",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.3,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "garúa",
+      "silabas": [
+        "ga",
+        "rú",
+        "a"
+      ],
+      "raiz": "garu-",
+      "familia": "garu",
+      "etimologia": [
+        "origen brumoso: ¿quechua? ¿portugués caruja?"
+      ],
+      "campo": [
+        "lluvia",
+        "niebla"
+      ],
+      "sonidos": [
+        "g",
+        "a",
+        "r",
+        "u",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.2,
+      "movimiento": "suspendido",
+      "nota": "palabra que llegó con la niebla: nadie vio de dónde"
+    },
+    {
+      "forma": "aguacero",
+      "silabas": [
+        "a",
+        "gua",
+        "ce",
+        "ro"
+      ],
+      "raiz": "agu-",
+      "familia": "akw",
+      "etimologia": [
+        "agua (esp.)",
+        "aqua (lat.)"
+      ],
+      "campo": [
+        "lluvia",
+        "golpe"
+      ],
+      "sonidos": [
+        "a",
+        "g",
+        "u",
+        "a",
+        "s",
+        "e",
+        "r",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.8,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "chubasco",
+      "silabas": [
+        "chu",
+        "bas",
+        "co"
+      ],
+      "raiz": "chub-",
+      "familia": "chuv",
+      "etimologia": [
+        "chuva (port.): lluvia",
+        "pluvia (lat.)"
+      ],
+      "campo": [
+        "lluvia",
+        "mar"
+      ],
+      "sonidos": [
+        "ĉ",
+        "u",
+        "b",
+        "a",
+        "s",
+        "k",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.7,
+      "movimiento": "descendente",
+      "nota": "una lluvia brasileña de contrabando: chuva disfrazada de español"
+    },
+    {
+      "forma": "diluvio",
+      "silabas": [
+        "di",
+        "lu",
+        "vio"
+      ],
+      "raiz": "diluv-",
+      "familia": "dilu",
+      "etimologia": [
+        "dīluvium (lat.)",
+        "dīluere (lat.): lavar, deshacer"
+      ],
+      "campo": [
+        "lluvia",
+        "exceso",
+        "mito"
+      ],
+      "sonidos": [
+        "d",
+        "i",
+        "l",
+        "u",
+        "b",
+        "i",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.95,
+      "movimiento": "descendente",
+      "nota": "diluir es un diluvio lento"
+    },
+    {
+      "forma": "gota",
+      "silabas": [
+        "go",
+        "ta"
+      ],
+      "raiz": "got-",
+      "familia": "gutt",
+      "etimologia": [
+        "gutta (lat.)"
+      ],
+      "campo": [
+        "agua",
+        "unidad"
+      ],
+      "sonidos": [
+        "g",
+        "o",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.5,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "rocío",
+      "silabas": [
+        "ro",
+        "cí",
+        "o"
+      ],
+      "raiz": "roci-",
+      "familia": "ros",
+      "etimologia": [
+        "rōs, rōris (lat.)",
+        "rōscidus (lat.)"
+      ],
+      "campo": [
+        "agua",
+        "alba"
+      ],
+      "sonidos": [
+        "r",
+        "o",
+        "s",
+        "i",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {
+        "náhuatl": "ahuachtli"
+      },
+      "peso_visual": 4,
+      "densidad": 0.35,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "escarcha",
+      "silabas": [
+        "es",
+        "car",
+        "cha"
+      ],
+      "raiz": "escarch-",
+      "familia": "huerfana",
+      "etimologia": [
+        "prerromana: sin genealogía"
+      ],
+      "campo": [
+        "hielo",
+        "alba"
+      ],
+      "sonidos": [
+        "e",
+        "s",
+        "k",
+        "a",
+        "r",
+        "ĉ",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.55,
+      "movimiento": "inmóvil",
+      "nota": "palabra huérfana: amaneció escrita sobre el campo"
+    },
+    {
+      "forma": "hielo",
+      "silabas": [
+        "hie",
+        "lo"
+      ],
+      "raiz": "hiel-",
+      "familia": "gel",
+      "etimologia": [
+        "gelū (lat.)"
+      ],
+      "campo": [
+        "hielo",
+        "quietud"
+      ],
+      "sonidos": [
+        "i",
+        "e",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [
+        "crio"
+      ],
+      "paralelos": {
+        "náhuatl": "cetl"
+      },
+      "peso_visual": 4,
+      "densidad": 0.9,
+      "movimiento": "inmóvil",
+      "nota": "gélido, congelar: la familia entera tirita"
+    },
+    {
+      "forma": "nieve",
+      "silabas": [
+        "nie",
+        "ve"
+      ],
+      "raiz": "niev-",
+      "familia": "sneigwh",
+      "etimologia": [
+        "nix, nivis (lat.)",
+        "*sneigʷh- (pie)"
+      ],
+      "campo": [
+        "hielo",
+        "caída",
+        "blancura"
+      ],
+      "sonidos": [
+        "n",
+        "i",
+        "e",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [
+        "nivo"
+      ],
+      "paralelos": {
+        "náhuatl": "cepayahuitl"
+      },
+      "peso_visual": 4,
+      "densidad": 0.4,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "granizo",
+      "silabas": [
+        "gra",
+        "ni",
+        "zo"
+      ],
+      "raiz": "gran-",
+      "familia": "gran",
+      "etimologia": [
+        "grānum (lat.): grano"
+      ],
+      "campo": [
+        "hielo",
+        "semilla",
+        "golpe"
+      ],
+      "sonidos": [
+        "g",
+        "r",
+        "a",
+        "n",
+        "i",
+        "s",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {
+        "náhuatl": "tecihuitl"
+      },
+      "peso_visual": 6,
+      "densidad": 0.85,
+      "movimiento": "descendente",
+      "nota": "el cielo siembra piedras"
+    },
+    {
+      "forma": "charco",
+      "silabas": [
+        "char",
+        "co"
+      ],
+      "raiz": "charc-",
+      "familia": "huerfana",
+      "etimologia": [
+        "prerromana: sin genealogía"
+      ],
+      "campo": [
+        "agua",
+        "suelo",
+        "espejo"
+      ],
+      "sonidos": [
+        "ĉ",
+        "a",
+        "r",
+        "k",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.6,
+      "movimiento": "inmóvil",
+      "nota": "un cielo caído, de bolsillo"
+    },
+    {
+      "forma": "humedad",
+      "silabas": [
+        "hu",
+        "me",
+        "dad"
+      ],
+      "raiz": "humed-",
+      "familia": "humor",
+      "etimologia": [
+        "hūmor, -ōris (lat.): líquido"
+      ],
+      "campo": [
+        "agua",
+        "aire"
+      ],
+      "sonidos": [
+        "u",
+        "m",
+        "e",
+        "d",
+        "a",
+        "d"
+      ],
+      "raiz_culta": [
+        "higro"
+      ],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.45,
+      "movimiento": "suspendido",
+      "nota": "los cuatro humores eran líquidos: el ánimo es cosa de agua"
+    },
+    {
+      "forma": "condensación",
+      "silabas": [
+        "con",
+        "den",
+        "sa",
+        "ción"
+      ],
+      "raiz": "condens-",
+      "familia": "dens",
+      "etimologia": [
+        "dēnsus (lat.): espeso"
+      ],
+      "campo": [
+        "vapor",
+        "agua",
+        "reunión"
+      ],
+      "sonidos": [
+        "k",
+        "o",
+        "n",
+        "d",
+        "e",
+        "n",
+        "s",
+        "a",
+        "s",
+        "i",
+        "o",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.75,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "evaporación",
+      "silabas": [
+        "e",
+        "va",
+        "po",
+        "ra",
+        "ción"
+      ],
+      "raiz": "vapor-",
+      "familia": "vap",
+      "etimologia": [
+        "ē + vapor (lat.)"
+      ],
+      "campo": [
+        "vapor",
+        "pérdida"
+      ],
+      "sonidos": [
+        "e",
+        "b",
+        "a",
+        "p",
+        "o",
+        "r",
+        "a",
+        "s",
+        "i",
+        "o",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.1,
+      "movimiento": "ascendente"
+    },
+    {
+      "forma": "precipitación",
+      "silabas": [
+        "pre",
+        "ci",
+        "pi",
+        "ta",
+        "ción"
+      ],
+      "raiz": "precipit-",
+      "familia": "prek",
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ],
+      "campo": [
+        "lluvia",
+        "caída"
+      ],
+      "sonidos": [
+        "p",
+        "r",
+        "e",
+        "s",
+        "i",
+        "p",
+        "i",
+        "t",
+        "a",
+        "s",
+        "i",
+        "o",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.7,
+      "movimiento": "descendente",
+      "nota": "la lluvia cae de cabeza: eso dice su nombre"
+    },
+    {
+      "forma": "torrente",
+      "silabas": [
+        "to",
+        "rren",
+        "te"
+      ],
+      "raiz": "torr-",
+      "familia": "torr",
+      "etimologia": [
+        "torrēns (lat.)",
+        "torrēre (lat.): quemar, tostar"
+      ],
+      "campo": [
+        "agua",
+        "fuerza"
+      ],
+      "sonidos": [
+        "t",
+        "o",
+        "r",
+        "e",
+        "n",
+        "t",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.85,
+      "movimiento": "descendente",
+      "nota": "torrente viene de arder: agua tan viva que quema"
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "archivo": "nubes",
+  "palabras": [
+    {
+      "forma": "nube",
+      "silabas": [
+        "nu",
+        "be"
+      ],
+      "raiz": "nub-",
+      "familia": "nub",
+      "etimologia": [
+        "nūbēs (lat.)",
+        "nebula (lat.)",
+        "nephélē (gr.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "vapor",
+        "suspensión"
+      ],
+      "sonidos": [
+        "n",
+        "u",
+        "b",
+        "e"
+      ],
+      "raiz_culta": [
+        "nefo",
+        "nubi"
+      ],
+      "paralelos": {
+        "náhuatl": "mixtli",
+        "maya": "muyal"
+      },
+      "peso_visual": 4,
+      "densidad": 0.45,
+      "movimiento": "ascendente",
+      "nota": "nūbēs y nebula parecen madre e hija; son vecinas que se copian los gestos"
+    },
+    {
+      "forma": "nublar",
+      "silabas": [
+        "nu",
+        "blar"
+      ],
+      "raiz": "nub-",
+      "familia": "nub",
+      "etimologia": [
+        "nūbilāre (lat.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "oscurecimiento"
+      ],
+      "sonidos": [
+        "n",
+        "u",
+        "b",
+        "l",
+        "a",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.55,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "nublado",
+      "silabas": [
+        "nu",
+        "bla",
+        "do"
+      ],
+      "raiz": "nub-",
+      "familia": "nub",
+      "etimologia": [
+        "nūbilātus (lat.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "cielo cubierto"
+      ],
+      "sonidos": [
+        "n",
+        "u",
+        "b",
+        "l",
+        "a",
+        "d",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.6,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "nuboso",
+      "silabas": [
+        "nu",
+        "bo",
+        "so"
+      ],
+      "raiz": "nub-",
+      "familia": "nub",
+      "etimologia": [
+        "nūbōsus (lat.)"
+      ],
+      "campo": [
+        "atmósfera"
+      ],
+      "sonidos": [
+        "n",
+        "u",
+        "b",
+        "o",
+        "s",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "nubilidad",
+      "silabas": [
+        "nu",
+        "bi",
+        "li",
+        "dad"
+      ],
+      "raiz": "nub-",
+      "familia": "nub",
+      "etimologia": [
+        "nūbilis (lat.): casadera",
+        "nūbere (lat.): velarse, casarse"
+      ],
+      "campo": [
+        "vapor",
+        "velo"
+      ],
+      "sonidos": [
+        "n",
+        "u",
+        "b",
+        "i",
+        "l",
+        "i",
+        "d",
+        "a",
+        "d"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 7,
+      "densidad": 0.4,
+      "movimiento": "suspendido",
+      "nota": "casarse y nublarse comparten gesto: cubrirse con el velo"
+    },
+    {
+      "forma": "niebla",
+      "silabas": [
+        "nie",
+        "bla"
+      ],
+      "raiz": "nebl-",
+      "familia": "nebh",
+      "etimologia": [
+        "nebula (lat.)",
+        "nephélē (gr.)",
+        "*nebh- (pie)"
+      ],
+      "campo": [
+        "atmósfera",
+        "vapor",
+        "ceguera"
+      ],
+      "sonidos": [
+        "n",
+        "i",
+        "e",
+        "b",
+        "l",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {
+        "náhuatl": "ayahuitl"
+      },
+      "peso_visual": 5,
+      "densidad": 0.3,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "neblina",
+      "silabas": [
+        "ne",
+        "bli",
+        "na"
+      ],
+      "raiz": "nebl-",
+      "familia": "nebh",
+      "etimologia": [
+        "nebula (lat.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "vapor"
+      ],
+      "sonidos": [
+        "n",
+        "e",
+        "b",
+        "l",
+        "i",
+        "n",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.25,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "nebulosa",
+      "silabas": [
+        "ne",
+        "bu",
+        "lo",
+        "sa"
+      ],
+      "raiz": "nebl-",
+      "familia": "nebh",
+      "etimologia": [
+        "nebulōsus (lat.)"
+      ],
+      "campo": [
+        "cosmos",
+        "vapor"
+      ],
+      "sonidos": [
+        "n",
+        "e",
+        "b",
+        "u",
+        "l",
+        "o",
+        "s",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.2,
+      "movimiento": "suspendido",
+      "nota": "una niebla tan grande que le caben estrellas"
+    },
+    {
+      "forma": "nimbo",
+      "silabas": [
+        "nim",
+        "bo"
+      ],
+      "raiz": "nimb-",
+      "familia": "nebh",
+      "etimologia": [
+        "nimbus (lat.): nube de lluvia; aureola"
+      ],
+      "campo": [
+        "atmósfera",
+        "lluvia",
+        "santidad"
+      ],
+      "sonidos": [
+        "n",
+        "i",
+        "m",
+        "b",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.75,
+      "movimiento": "descendente",
+      "nota": "nimbo nombra a la nube negra y al halo del santo: la misma corona"
+    },
+    {
+      "forma": "cúmulo",
+      "silabas": [
+        "cú",
+        "mu",
+        "lo"
+      ],
+      "raiz": "cumul-",
+      "familia": "kumul",
+      "etimologia": [
+        "cumulus (lat.): montón"
+      ],
+      "campo": [
+        "atmósfera",
+        "acumulación"
+      ],
+      "sonidos": [
+        "k",
+        "u",
+        "m",
+        "u",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.7,
+      "movimiento": "radial"
+    },
+    {
+      "forma": "cirro",
+      "silabas": [
+        "ci",
+        "rro"
+      ],
+      "raiz": "cirr-",
+      "familia": "kirr",
+      "etimologia": [
+        "cirrus (lat.): rizo, mechón"
+      ],
+      "campo": [
+        "atmósfera",
+        "filamento"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "r",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.15,
+      "movimiento": "oblicuo",
+      "nota": "las nubes altas son el pelo del cielo"
+    },
+    {
+      "forma": "estrato",
+      "silabas": [
+        "es",
+        "tra",
+        "to"
+      ],
+      "raiz": "strat-",
+      "familia": "strat",
+      "etimologia": [
+        "strātus (lat.)",
+        "sternere (lat.): tender"
+      ],
+      "campo": [
+        "atmósfera",
+        "capa"
+      ],
+      "sonidos": [
+        "e",
+        "s",
+        "t",
+        "r",
+        "a",
+        "t",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.5,
+      "movimiento": "horizontal",
+      "nota": "estrato y calle (strata) son la misma palabra tendida"
+    },
+    {
+      "forma": "nimbostrato",
+      "silabas": [
+        "nim",
+        "bos",
+        "tra",
+        "to"
+      ],
+      "raiz": "nimb-",
+      "familia": "nebh",
+      "etimologia": [
+        "nimbus + strātus (lat.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "lluvia",
+        "masa"
+      ],
+      "sonidos": [
+        "n",
+        "i",
+        "m",
+        "b",
+        "o",
+        "s",
+        "t",
+        "r",
+        "a",
+        "t",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.85,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "cumulonimbo",
+      "silabas": [
+        "cu",
+        "mu",
+        "lo",
+        "nim",
+        "bo"
+      ],
+      "raiz": "cumul-",
+      "familia": "kumul",
+      "etimologia": [
+        "cumulus + nimbus (lat.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "tormenta"
+      ],
+      "sonidos": [
+        "k",
+        "u",
+        "m",
+        "u",
+        "l",
+        "o",
+        "n",
+        "i",
+        "m",
+        "b",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.9,
+      "movimiento": "ascendente"
+    },
+    {
+      "forma": "bruma",
+      "silabas": [
+        "bru",
+        "ma"
+      ],
+      "raiz": "brum-",
+      "familia": "brum",
+      "etimologia": [
+        "brūma (lat.): el solsticio de invierno",
+        "brevissima diēs: el día más corto"
+      ],
+      "campo": [
+        "atmósfera",
+        "mar",
+        "frío"
+      ],
+      "sonidos": [
+        "b",
+        "r",
+        "u",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.35,
+      "movimiento": "suspendido",
+      "nota": "la bruma es, de origen, el día más corto del año"
+    },
+    {
+      "forma": "calima",
+      "silabas": [
+        "ca",
+        "li",
+        "ma"
+      ],
+      "raiz": "calim-",
+      "familia": "kalim",
+      "etimologia": [
+        "kálymma (gr.): velo (etimología disputada)"
+      ],
+      "campo": [
+        "atmósfera",
+        "polvo",
+        "velo"
+      ],
+      "sonidos": [
+        "k",
+        "a",
+        "l",
+        "i",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.3,
+      "movimiento": "suspendido"
+    },
+    {
+      "forma": "vaho",
+      "silabas": [
+        "va",
+        "ho"
+      ],
+      "raiz": "vah-",
+      "familia": "baf",
+      "etimologia": [
+        "*baff- (onomatopeya del soplo)"
+      ],
+      "campo": [
+        "vapor",
+        "aliento"
+      ],
+      "sonidos": [
+        "b",
+        "a",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.2,
+      "movimiento": "ascendente",
+      "nota": "palabra que imita a la boca"
+    },
+    {
+      "forma": "celaje",
+      "silabas": [
+        "ce",
+        "la",
+        "je"
+      ],
+      "raiz": "cel-",
+      "familia": "kel",
+      "etimologia": [
+        "caelum (lat.)"
+      ],
+      "campo": [
+        "cielo",
+        "resquicio"
+      ],
+      "sonidos": [
+        "s",
+        "e",
+        "l",
+        "a",
+        "x",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.25,
+      "movimiento": "horizontal",
+      "nota": "el claro entre nubes por donde el cielo se asoma"
+    },
+    {
+      "forma": "jirón",
+      "silabas": [
+        "ji",
+        "rón"
+      ],
+      "raiz": "jir-",
+      "familia": "jir",
+      "etimologia": [
+        "giron (fr. ant.): regazo"
+      ],
+      "campo": [
+        "fragmento",
+        "tela"
+      ],
+      "sonidos": [
+        "x",
+        "i",
+        "r",
+        "o",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.2,
+      "movimiento": "oblicuo",
+      "nota": "las nubes rotas se miden en jirones"
+    },
+    {
+      "forma": "vapor",
+      "silabas": [
+        "va",
+        "por"
+      ],
+      "raiz": "vap-",
+      "familia": "vap",
+      "etimologia": [
+        "vapor, -ōris (lat.)"
+      ],
+      "campo": [
+        "vapor",
+        "calor",
+        "suspensión"
+      ],
+      "sonidos": [
+        "b",
+        "a",
+        "p",
+        "o",
+        "r"
+      ],
+      "raiz_culta": [
+        "atmo"
+      ],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.15,
+      "movimiento": "ascendente"
+    }
+  ]
+}

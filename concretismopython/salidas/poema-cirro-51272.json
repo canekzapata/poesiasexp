@@ -1,0 +1,549 @@
+{
+  "meta": {
+    "instrumento": "nefelógrafo",
+    "tipo": "cirro",
+    "semilla": 51272,
+    "nucleo": "cirro",
+    "esquizo": 0.35,
+    "puntuacion": {
+      "densidad": 0.033,
+      "vacio": 0.967,
+      "repeticion": 0.35,
+      "contraste": 0.567
+    },
+    "restricciones": {
+      "palabras_base": 10,
+      "max_palabras_base": 12,
+      "vacio": 0.967,
+      "min_vacio": 0.3,
+      "fuentes": 3,
+      "max_fuentes": 3,
+      "anomalias": 1,
+      "nucleos": 1,
+      "cumplidas": true
+    },
+    "notas": [
+      "transformación fonética: las palabras adelgazadas a su esqueleto",
+      "deriva sonora: cirro → cielo → ciento → viento → siento → cuento",
+      "transformación etimológica: «cirrus» reducido a fibra",
+      "anomalía: un nudo denso en el cielo ralo"
+    ]
+  },
+  "lienzo": {
+    "ancho": 1200,
+    "alto": 640,
+    "fondo": "#f6f2e9",
+    "tinta": "#16130f",
+    "fuentes": {
+      "mono": "'Courier Prime', 'Courier New', monospace",
+      "sans": "Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif",
+      "serif": "'Bodoni Moda', Didot, 'Times New Roman', serif"
+    }
+  },
+  "palabras": [
+    {
+      "id": "p1",
+      "texto": "cirro",
+      "base": "cirro",
+      "x": 192.0,
+      "y": 115.2,
+      "rotacion": -14.0,
+      "tamano": 26,
+      "opacidad": 1.0,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "nucleo",
+      "anomalia": false,
+      "variantes": [
+        "cero",
+        "cirrus",
+        "cielo",
+        "filo",
+        "aire"
+      ],
+      "etimologia": [
+        "cirrus (lat.): rizo, mechón"
+      ]
+    },
+    {
+      "id": "p2",
+      "texto": "a  i  r  e",
+      "base": "aire",
+      "x": 227.96,
+      "y": 515.94,
+      "rotacion": -14.0,
+      "tamano": 13,
+      "opacidad": 0.42,
+      "fuente": "mono",
+      "espaciado": 1.29,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "expansión",
+      "variantes": [
+        "aura",
+        "aéreo",
+        "cirro",
+        "āēr",
+        "ave",
+        "aḗr",
+        "aero-"
+      ],
+      "etimologia": [
+        "āēr (lat.)",
+        "aḗr (gr.)"
+      ]
+    },
+    {
+      "id": "p3",
+      "texto": "a  t  m  ó  s  f  e  r  a",
+      "base": "atmósfera",
+      "x": 706.93,
+      "y": 124.48,
+      "rotacion": -14.0,
+      "tamano": 11,
+      "opacidad": 0.74,
+      "fuente": "mono",
+      "espaciado": 1.76,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "expansión",
+      "variantes": [
+        "atmós"
+      ],
+      "etimologia": [
+        "atmós (gr.): vapor + sphaîra (gr.): esfera"
+      ]
+    },
+    {
+      "id": "p4",
+      "texto": "r",
+      "base": "aéreo",
+      "x": 713.1,
+      "y": 367.84,
+      "rotacion": -14.0,
+      "tamano": 11,
+      "opacidad": 0.77,
+      "fuente": "mono",
+      "espaciado": 1.42,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "aire",
+        "verso",
+        "terreno",
+        "cero",
+        "āerius"
+      ],
+      "etimologia": [
+        "āerius (lat.)"
+      ]
+    },
+    {
+      "id": "p5",
+      "texto": "cr",
+      "base": "cero",
+      "x": 640.6,
+      "y": 369.51,
+      "rotacion": -14.0,
+      "tamano": 12,
+      "opacidad": 0.69,
+      "fuente": "mono",
+      "espaciado": 1.95,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "aéreo",
+        "seco",
+        "ser",
+        "cirro"
+      ]
+    },
+    {
+      "id": "p6",
+      "texto": "cl",
+      "base": "cielo",
+      "x": 979.37,
+      "y": 481.53,
+      "rotacion": -14.0,
+      "tamano": 11,
+      "opacidad": 0.77,
+      "fuente": "mono",
+      "espaciado": 2.14,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "ciclón",
+        "hielo",
+        "color",
+        "urano-",
+        "suelo",
+        "ilhuicatl",
+        "cero"
+      ],
+      "etimologia": [
+        "caelum (lat.); quizá de caelāre: ocultar"
+      ]
+    },
+    {
+      "id": "p7",
+      "texto": "r",
+      "base": "aire",
+      "x": 1010.49,
+      "y": 246.48,
+      "rotacion": -14.0,
+      "tamano": 12,
+      "opacidad": 0.41,
+      "fuente": "mono",
+      "espaciado": 2.16,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "ave",
+        "aero-",
+        "aura",
+        "āēr",
+        "aḗr",
+        "aéreo",
+        "cirro"
+      ],
+      "etimologia": [
+        "āēr (lat.)",
+        "aḗr (gr.)"
+      ]
+    },
+    {
+      "id": "p8",
+      "texto": "a  t  m  ó  s  f  e  r  a",
+      "base": "atmósfera",
+      "x": 486.1,
+      "y": 512.25,
+      "rotacion": -14.0,
+      "tamano": 12,
+      "opacidad": 0.52,
+      "fuente": "mono",
+      "espaciado": 1.47,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "expansión",
+      "variantes": [
+        "atmós"
+      ],
+      "etimologia": [
+        "atmós (gr.): vapor + sphaîra (gr.): esfera"
+      ]
+    },
+    {
+      "id": "p9",
+      "texto": "r",
+      "base": "aéreo",
+      "x": 698.26,
+      "y": 371.07,
+      "rotacion": -14.0,
+      "tamano": 10,
+      "opacidad": 0.58,
+      "fuente": "mono",
+      "espaciado": 1.25,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "āerius",
+        "verso",
+        "cero",
+        "aire",
+        "terreno"
+      ],
+      "etimologia": [
+        "āerius (lat.)"
+      ]
+    },
+    {
+      "id": "p10",
+      "texto": "cr",
+      "base": "cero",
+      "x": 718.73,
+      "y": 493.67,
+      "rotacion": -14.0,
+      "tamano": 11,
+      "opacidad": 0.56,
+      "fuente": "mono",
+      "espaciado": 1.5,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "ser",
+        "cirro",
+        "seco",
+        "aéreo"
+      ]
+    },
+    {
+      "id": "p11",
+      "texto": "cl",
+      "base": "cielo",
+      "x": 1050.2,
+      "y": 235.89,
+      "rotacion": -14.0,
+      "tamano": 11,
+      "opacidad": 0.67,
+      "fuente": "mono",
+      "espaciado": 1.88,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "caelum",
+        "color",
+        "hielo",
+        "urano-",
+        "ciclón",
+        "ilhuicatl",
+        "suelo"
+      ],
+      "etimologia": [
+        "caelum (lat.); quizá de caelāre: ocultar"
+      ]
+    },
+    {
+      "id": "p12",
+      "texto": "r",
+      "base": "aire",
+      "x": 849.95,
+      "y": 487.88,
+      "rotacion": -14.0,
+      "tamano": 12,
+      "opacidad": 0.71,
+      "fuente": "mono",
+      "espaciado": 1.21,
+      "capa": "fibra",
+      "anomalia": false,
+      "animacion": "deriva",
+      "transformacion": "esqueleto",
+      "variantes": [
+        "aḗr",
+        "aero-",
+        "ave",
+        "āēr",
+        "cirro",
+        "aura",
+        "aéreo"
+      ],
+      "etimologia": [
+        "āēr (lat.)",
+        "aḗr (gr.)"
+      ]
+    },
+    {
+      "id": "p13",
+      "texto": "cirro",
+      "base": "cirro",
+      "x": 200.0,
+      "y": 415.25,
+      "rotacion": -14.0,
+      "tamano": 14,
+      "opacidad": 1.0,
+      "fuente": "mono",
+      "espaciado": 0.5,
+      "capa": "deriva",
+      "anomalia": false,
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "aire",
+        "cirrus",
+        "cielo",
+        "cero",
+        "filo"
+      ],
+      "etimologia": [
+        "cirrus (lat.): rizo, mechón"
+      ]
+    },
+    {
+      "id": "p14",
+      "texto": "cielo",
+      "base": "cielo",
+      "x": 360.0,
+      "y": 405.65,
+      "rotacion": -14.0,
+      "tamano": 14,
+      "opacidad": 0.91,
+      "fuente": "mono",
+      "espaciado": 0.5,
+      "capa": "deriva",
+      "anomalia": false,
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "ciclón",
+        "ka'an",
+        "celaje",
+        "urano-",
+        "hielo",
+        "cero",
+        "suelo"
+      ],
+      "etimologia": [
+        "caelum (lat.); quizá de caelāre: ocultar"
+      ]
+    },
+    {
+      "id": "p15",
+      "texto": "ciento",
+      "base": "ciento",
+      "x": 520.0,
+      "y": 396.05,
+      "rotacion": -14.0,
+      "tamano": 14,
+      "opacidad": 0.82,
+      "fuente": "mono",
+      "espaciado": 0.5,
+      "capa": "deriva",
+      "anomalia": false,
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "viento",
+        "lento",
+        "cuento",
+        "cielo"
+      ]
+    },
+    {
+      "id": "p16",
+      "texto": "viento",
+      "base": "viento",
+      "x": 680.0,
+      "y": 386.45,
+      "rotacion": -14.0,
+      "tamano": 14,
+      "opacidad": 0.73,
+      "fuente": "mono",
+      "espaciado": 0.5,
+      "capa": "deriva",
+      "anomalia": false,
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "siento",
+        "ventus",
+        "ciento",
+        "ehécatl",
+        "*h₂weh₁-",
+        "cuento",
+        "anemo-"
+      ],
+      "etimologia": [
+        "ventus (lat.)",
+        "*h₂weh₁- (pie): soplar"
+      ]
+    },
+    {
+      "id": "p17",
+      "texto": "siento",
+      "base": "siento",
+      "x": 840.0,
+      "y": 376.85,
+      "rotacion": -14.0,
+      "tamano": 14,
+      "opacidad": 0.64,
+      "fuente": "mono",
+      "espaciado": 0.5,
+      "capa": "deriva",
+      "anomalia": false,
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "cielo",
+        "cuento",
+        "lento",
+        "viento"
+      ]
+    },
+    {
+      "id": "p18",
+      "texto": "cuento",
+      "base": "cuento",
+      "x": 1000.0,
+      "y": 367.25,
+      "rotacion": -14.0,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "mono",
+      "espaciado": 0.5,
+      "capa": "deriva",
+      "anomalia": false,
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "ciento",
+        "siento",
+        "lento",
+        "viento"
+      ]
+    },
+    {
+      "id": "p19",
+      "texto": "crrs",
+      "base": "cirro",
+      "x": 864.0,
+      "y": 140.8,
+      "rotacion": -14.0,
+      "tamano": 12,
+      "opacidad": 0.35,
+      "fuente": "serif",
+      "espaciado": 1.8,
+      "capa": "eco",
+      "anomalia": false,
+      "transformacion": "etimología",
+      "variantes": [
+        "cirrus",
+        "filo",
+        "aire",
+        "cielo",
+        "cero"
+      ],
+      "etimologia": [
+        "cirrus (lat.): rizo, mechón"
+      ]
+    },
+    {
+      "id": "p20",
+      "texto": "aireatmósfera",
+      "base": "aire",
+      "x": 741.6,
+      "y": 243.2,
+      "rotacion": 0,
+      "tamano": 30,
+      "opacidad": 1.0,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "anomalia",
+      "color": "#c8102e",
+      "anomalia": true,
+      "transformacion": "portmanteau",
+      "variantes": [
+        "ave",
+        "āēr",
+        "aéreo",
+        "aero-",
+        "aura",
+        "cirro",
+        "aḗr"
+      ],
+      "etimologia": [
+        "āēr (lat.)",
+        "aḗr (gr.)"
+      ]
+    }
+  ]
+}

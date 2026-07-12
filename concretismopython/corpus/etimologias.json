@@ -1,0 +1,392 @@
+{
+  "familias": {
+    "nub": {
+      "lema": "nube",
+      "origen": "nūbēs (lat.) < *(s)neudh- (pie: cubrir)",
+      "nota": "la familia del velo: nūbere, casarse, es cubrirse"
+    },
+    "nebh": {
+      "lema": "niebla",
+      "origen": "nebula (lat.) ~ nephélē (gr.) < *nebh- (pie)",
+      "nota": "hermana aparente de nube; sangre distinta"
+    },
+    "kumul": {
+      "lema": "cúmulo",
+      "origen": "cumulus (lat.): montón"
+    },
+    "kirr": {
+      "lema": "cirro",
+      "origen": "cirrus (lat.): rizo, mechón de pelo"
+    },
+    "strat": {
+      "lema": "estrato",
+      "origen": "sternere (lat.): tender — hermana de strata, la calle"
+    },
+    "brum": {
+      "lema": "bruma",
+      "origen": "brūma (lat.): el solsticio de invierno"
+    },
+    "kalim": {
+      "lema": "calima",
+      "origen": "kálymma (gr.): velo (disputado)"
+    },
+    "baf": {
+      "lema": "vaho",
+      "origen": "onomatopeya del soplo"
+    },
+    "kel": {
+      "lema": "cielo",
+      "origen": "caelum (lat.); quizá caelāre: ocultar",
+      "nota": "color quizá también venga de celāre: cielo y color, dos maneras de cubrir"
+    },
+    "vap": {
+      "lema": "vapor",
+      "origen": "vapor, -ōris (lat.)"
+    },
+    "jir": {
+      "lema": "jirón",
+      "origen": "giron (fr. ant.): regazo"
+    },
+    "aer": {
+      "lema": "aire",
+      "origen": "aḗr (gr.)"
+    },
+    "atm": {
+      "lema": "atmósfera",
+      "origen": "atmós (gr.: vapor) + sphaîra (gr.: esfera)"
+    },
+    "aith": {
+      "lema": "éter",
+      "origen": "aíthein (gr.): arder"
+    },
+    "horiz": {
+      "lema": "horizonte",
+      "origen": "horízein (gr.): limitar"
+    },
+    "samt": {
+      "lema": "cénit",
+      "origen": "samt (ár.): camino; la errata medieval lo volvió zenit"
+    },
+    "klim": {
+      "lema": "clima",
+      "origen": "klíma (gr.): inclinación del sol"
+    },
+    "meteor": {
+      "lema": "meteoro",
+      "origen": "tà metéōra (gr.): lo suspendido en lo alto"
+    },
+    "went": {
+      "lema": "viento",
+      "origen": "ventus (lat.) < *h₂weh₁- (pie: soplar)"
+    },
+    "bris": {
+      "lema": "brisa",
+      "origen": "incierto"
+    },
+    "rafag": {
+      "lema": "ráfaga",
+      "origen": "incierto"
+    },
+    "mol": {
+      "lema": "remolino",
+      "origen": "mola (lat.): muela — el viento que muele"
+    },
+    "turb": {
+      "lema": "turbulencia",
+      "origen": "turba (lat.): muchedumbre desordenada"
+    },
+    "hurak": {
+      "lema": "huracán",
+      "origen": "hurakán (taíno) ~ Huracán (maya: corazón del cielo)"
+    },
+    "kyk": {
+      "lema": "ciclón",
+      "origen": "kýklos (gr.): círculo"
+    },
+    "torn": {
+      "lema": "tornado",
+      "origen": "tornāre (lat.): girar al torno"
+    },
+    "mawsim": {
+      "lema": "monzón",
+      "origen": "mawsim (ár.): estación"
+    },
+    "torm": {
+      "lema": "tormenta",
+      "origen": "torquēre (lat.): torcer"
+    },
+    "bor": {
+      "lema": "borrasca",
+      "origen": "bóreas (gr.): viento del norte (disputado)"
+    },
+    "ton": {
+      "lema": "trueno",
+      "origen": "tonāre (lat.) — detonar lleva un trueno adentro"
+    },
+    "lamp": {
+      "lema": "relámpago",
+      "origen": "lámpein (gr.): brillar"
+    },
+    "radi": {
+      "lema": "rayo",
+      "origen": "radius (lat.): radio de la rueda"
+    },
+    "ekh": {
+      "lema": "eco",
+      "origen": "Ēkhṓ (gr.): la ninfa reducida a voz"
+    },
+    "ozon": {
+      "lema": "ozono",
+      "origen": "ózein (gr.): oler"
+    },
+    "kal": {
+      "lema": "calor",
+      "origen": "calor, -ōris (lat.)"
+    },
+    "akw": {
+      "lema": "agua",
+      "origen": "aqua (lat.)"
+    },
+    "pluv": {
+      "lema": "lluvia",
+      "origen": "pluere (lat.): llover"
+    },
+    "garu": {
+      "lema": "garúa",
+      "origen": "brumoso: ¿quechua? ¿portugués?"
+    },
+    "chuv": {
+      "lema": "chubasco",
+      "origen": "chuva (port.) < pluvia (lat.)",
+      "nota": "el portugués devolvió la lluvia al español por el mar"
+    },
+    "dilu": {
+      "lema": "diluvio",
+      "origen": "dīluere (lat.): lavar, deshacer"
+    },
+    "gutt": {
+      "lema": "gota",
+      "origen": "gutta (lat.)"
+    },
+    "ros": {
+      "lema": "rocío",
+      "origen": "rōs, rōris (lat.)"
+    },
+    "gel": {
+      "lema": "hielo",
+      "origen": "gelū (lat.)"
+    },
+    "sneigwh": {
+      "lema": "nieve",
+      "origen": "nix, nivis (lat.) < *sneigʷh- (pie)"
+    },
+    "gran": {
+      "lema": "granizo",
+      "origen": "grānum (lat.): grano"
+    },
+    "humor": {
+      "lema": "humedad",
+      "origen": "hūmor (lat.): líquido"
+    },
+    "dens": {
+      "lema": "condensación",
+      "origen": "dēnsus (lat.): espeso"
+    },
+    "prek": {
+      "lema": "precipitación",
+      "origen": "praeceps (lat.): de cabeza"
+    },
+    "torr": {
+      "lema": "torrente",
+      "origen": "torrēre (lat.): quemar"
+    },
+    "huerfana": {
+      "lema": "escarcha",
+      "origen": "sin genealogía conocida",
+      "nota": "palabras huérfanas: aparecieron ya escritas"
+    },
+    "leuk": {
+      "lema": "luz",
+      "origen": "lūx (lat.) < *leuk- (pie)"
+    },
+    "hal": {
+      "lema": "halo",
+      "origen": "hálōs (gr.): era de trilla"
+    },
+    "iris": {
+      "lema": "iris",
+      "origen": "Îris (gr.): la mensajera"
+    },
+    "spek": {
+      "lema": "espectro",
+      "origen": "specere (lat.): mirar"
+    },
+    "pris": {
+      "lema": "prisma",
+      "origen": "príein (gr.): serrar"
+    },
+    "krys": {
+      "lema": "cristal",
+      "origen": "krýstallos (gr.): hielo"
+    },
+    "still": {
+      "lema": "destello",
+      "origen": "dēstillāre (lat.): gotear"
+    },
+    "beryl": {
+      "lema": "brillo",
+      "origen": "¿bēryllus (lat.): berilo?"
+    },
+    "flect": {
+      "lema": "reflejo",
+      "origen": "flectere (lat.): doblar"
+    },
+    "frang": {
+      "lema": "refracción",
+      "origen": "frangere (lat.): romper"
+    },
+    "umbra": {
+      "lema": "sombra",
+      "origen": "umbra (lat.)"
+    },
+    "limen": {
+      "lema": "umbral",
+      "origen": "līmen (lat.): puerta"
+    },
+    "alb": {
+      "lema": "alba",
+      "origen": "albus (lat.): blanco"
+    },
+    "aus": {
+      "lema": "aurora",
+      "origen": "*h₂ews- (pie): el este"
+    },
+    "krep": {
+      "lema": "crepúsculo",
+      "origen": "creper (lat.): dudoso"
+    },
+    "opak": {
+      "lema": "opaco",
+      "origen": "opācus (lat.): sombrío"
+    },
+    "parabol": {
+      "lema": "palabra",
+      "origen": "parabolḗ (gr.): lanzar al lado"
+    },
+    "dnghu": {
+      "lema": "lengua",
+      "origen": "*dn̥ǵʰwéh₂s (pie)"
+    },
+    "phon": {
+      "lema": "fonema",
+      "origen": "phōnḗ (gr.): voz"
+    },
+    "poie": {
+      "lema": "poesía",
+      "origen": "poieîn (gr.): hacer, fabricar"
+    },
+    "wert": {
+      "lema": "verso",
+      "origen": "vertere (lat.): girar el arado"
+    },
+    "littera": {
+      "lema": "letra",
+      "origen": "littera (lat.)"
+    },
+    "syllab": {
+      "lema": "sílaba",
+      "origen": "syllambánein (gr.): tomar junto"
+    },
+    "wekw": {
+      "lema": "voz",
+      "origen": "*wekʷ- (pie)"
+    },
+    "nomen": {
+      "lema": "nombre",
+      "origen": "*h₁nómn̥ (pie)"
+    },
+    "sekw": {
+      "lema": "signo",
+      "origen": "signum (lat.)"
+    },
+    "sil": {
+      "lema": "silencio",
+      "origen": "silēre (lat.): callar"
+    },
+    "ting": {
+      "lema": "tinta",
+      "origen": "tingere (lat.): teñir"
+    },
+    "pag": {
+      "lema": "página",
+      "origen": "pangere (lat.): plantar"
+    },
+    "skribh": {
+      "lema": "escritura",
+      "origen": "scrībere (lat.): rasgar"
+    },
+    "temp": {
+      "lema": "tiempo",
+      "origen": "tempus (lat.)"
+    },
+    "puente": {
+      "lema": "",
+      "origen": "léxico puente para la deriva sonora"
+    }
+  },
+  "cultas": {
+    "nefo": "nube",
+    "nubi": "nube",
+    "hidro": "agua",
+    "aero": "aire",
+    "crono": "tiempo",
+    "foto": "luz",
+    "luci": "luz",
+    "pluvio": "lluvia",
+    "ombro": "lluvia",
+    "anemo": "viento",
+    "eolo": "viento",
+    "crio": "hielo",
+    "nivo": "nieve",
+    "cromo": "color",
+    "fono": "voz",
+    "helio": "sol",
+    "astro": "estrella",
+    "urano": "cielo",
+    "irido": "iris",
+    "higro": "humedad",
+    "baro": "presión",
+    "termo": "calor",
+    "atmo": "vapor",
+    "logo": "palabra",
+    "grafo": "escritura",
+    "umbra": "sombra"
+  },
+  "falsos_parientes": [
+    [
+      "nube",
+      "niebla",
+      "parecen hermanas; vienen de raíces distintas (*(s)neudh- / *nebh-) y la poesía las confunde a propósito"
+    ],
+    [
+      "sombra",
+      "umbral",
+      "el umbral no desciende de umbra sino de limen, la puerta"
+    ],
+    [
+      "ola",
+      "hola",
+      "se saludan sin ser parientes"
+    ],
+    [
+      "luz",
+      "lluvia",
+      "empiezan igual y no comparten sangre: solo clima"
+    ],
+    [
+      "cielo",
+      "color",
+      "quizá los dos vengan de celāre, ocultar: parentesco incierto, hipótesis hermosa"
+    ]
+  ]
+}

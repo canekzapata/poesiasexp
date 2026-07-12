@@ -1,0 +1,860 @@
+{
+  "archivo": "atmosfera",
+  "palabras": [
+    {
+      "forma": "aire",
+      "silabas": [
+        "ai",
+        "re"
+      ],
+      "raiz": "aer-",
+      "familia": "aer",
+      "etimologia": [
+        "āēr (lat.)",
+        "aḗr (gr.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "aliento"
+      ],
+      "sonidos": [
+        "a",
+        "i",
+        "r",
+        "e"
+      ],
+      "raiz_culta": [
+        "aero"
+      ],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.1,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "aéreo",
+      "silabas": [
+        "a",
+        "é",
+        "re",
+        "o"
+      ],
+      "raiz": "aer-",
+      "familia": "aer",
+      "etimologia": [
+        "āerius (lat.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "levedad"
+      ],
+      "sonidos": [
+        "a",
+        "e",
+        "r",
+        "e",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.1,
+      "movimiento": "ascendente"
+    },
+    {
+      "forma": "atmósfera",
+      "silabas": [
+        "at",
+        "mós",
+        "fe",
+        "ra"
+      ],
+      "raiz": "atmosfer-",
+      "familia": "atm",
+      "etimologia": [
+        "atmós (gr.): vapor + sphaîra (gr.): esfera"
+      ],
+      "campo": [
+        "atmósfera",
+        "envoltura"
+      ],
+      "sonidos": [
+        "a",
+        "t",
+        "m",
+        "o",
+        "s",
+        "f",
+        "e",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 7,
+      "densidad": 0.4,
+      "movimiento": "suspendido",
+      "nota": "una esfera hecha de vapor: eso respiras"
+    },
+    {
+      "forma": "cielo",
+      "silabas": [
+        "cie",
+        "lo"
+      ],
+      "raiz": "ciel-",
+      "familia": "kel",
+      "etimologia": [
+        "caelum (lat.); quizá de caelāre: ocultar"
+      ],
+      "campo": [
+        "cielo",
+        "bóveda"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "e",
+        "l",
+        "o"
+      ],
+      "raiz_culta": [
+        "urano"
+      ],
+      "paralelos": {
+        "náhuatl": "ilhuicatl",
+        "maya": "ka'an"
+      },
+      "peso_visual": 4,
+      "densidad": 0.3,
+      "movimiento": "suspendido",
+      "nota": "si caelum viene de ocultar, el cielo es lo que cubre"
+    },
+    {
+      "forma": "éter",
+      "silabas": [
+        "é",
+        "ter"
+      ],
+      "raiz": "eter-",
+      "familia": "aith",
+      "etimologia": [
+        "aithḗr (gr.)",
+        "aíthein (gr.): arder"
+      ],
+      "campo": [
+        "cielo",
+        "fuego"
+      ],
+      "sonidos": [
+        "e",
+        "t",
+        "e",
+        "r"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.05,
+      "movimiento": "suspendido",
+      "nota": "el aire de arriba, el que arde"
+    },
+    {
+      "forma": "horizonte",
+      "silabas": [
+        "ho",
+        "ri",
+        "zon",
+        "te"
+      ],
+      "raiz": "horiz-",
+      "familia": "horiz",
+      "etimologia": [
+        "horízōn kýklos (gr.): el círculo que limita"
+      ],
+      "campo": [
+        "cielo",
+        "límite"
+      ],
+      "sonidos": [
+        "o",
+        "r",
+        "i",
+        "s",
+        "o",
+        "n",
+        "t",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 7,
+      "densidad": 0.5,
+      "movimiento": "horizontal"
+    },
+    {
+      "forma": "cénit",
+      "silabas": [
+        "cé",
+        "nit"
+      ],
+      "raiz": "cenit-",
+      "familia": "samt",
+      "etimologia": [
+        "samt ar-ra's (ár.): el camino sobre la cabeza"
+      ],
+      "campo": [
+        "cielo",
+        "vértice"
+      ],
+      "sonidos": [
+        "s",
+        "e",
+        "n",
+        "i",
+        "t"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.3,
+      "movimiento": "ascendente",
+      "nota": "un copista leyó mal samt y escribió zenit: la cima del cielo es una errata"
+    },
+    {
+      "forma": "clima",
+      "silabas": [
+        "cli",
+        "ma"
+      ],
+      "raiz": "clim-",
+      "familia": "klim",
+      "etimologia": [
+        "klíma (gr.): inclinación (del sol)"
+      ],
+      "campo": [
+        "atmósfera",
+        "medida"
+      ],
+      "sonidos": [
+        "k",
+        "l",
+        "i",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.4,
+      "movimiento": "oblicuo"
+    },
+    {
+      "forma": "meteoro",
+      "silabas": [
+        "me",
+        "te",
+        "o",
+        "ro"
+      ],
+      "raiz": "meteor-",
+      "familia": "meteor",
+      "etimologia": [
+        "tà metéōra (gr.): las cosas suspendidas en lo alto"
+      ],
+      "campo": [
+        "cielo",
+        "caída"
+      ],
+      "sonidos": [
+        "m",
+        "e",
+        "t",
+        "e",
+        "o",
+        "r",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.6,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "viento",
+      "silabas": [
+        "vien",
+        "to"
+      ],
+      "raiz": "vent-",
+      "familia": "went",
+      "etimologia": [
+        "ventus (lat.)",
+        "*h₂weh₁- (pie): soplar"
+      ],
+      "campo": [
+        "viento",
+        "fuerza"
+      ],
+      "sonidos": [
+        "b",
+        "i",
+        "e",
+        "n",
+        "t",
+        "o"
+      ],
+      "raiz_culta": [
+        "anemo",
+        "eolo"
+      ],
+      "paralelos": {
+        "náhuatl": "ehécatl (también dios)",
+        "maya": "ik' (viento, aliento, espíritu)"
+      },
+      "peso_visual": 5,
+      "densidad": 0.2,
+      "movimiento": "oblicuo",
+      "nota": "en griego el viento (ánemos) y el alma (ánima) son la misma respiración"
+    },
+    {
+      "forma": "brisa",
+      "silabas": [
+        "bri",
+        "sa"
+      ],
+      "raiz": "bris-",
+      "familia": "bris",
+      "etimologia": [
+        "brise (fr.): origen incierto"
+      ],
+      "campo": [
+        "viento",
+        "suavidad"
+      ],
+      "sonidos": [
+        "b",
+        "r",
+        "i",
+        "s",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.1,
+      "movimiento": "oblicuo"
+    },
+    {
+      "forma": "ráfaga",
+      "silabas": [
+        "rá",
+        "fa",
+        "ga"
+      ],
+      "raiz": "rafag-",
+      "familia": "rafag",
+      "etimologia": [
+        "origen incierto"
+      ],
+      "campo": [
+        "viento",
+        "golpe"
+      ],
+      "sonidos": [
+        "r",
+        "a",
+        "f",
+        "a",
+        "g",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.5,
+      "movimiento": "oblicuo"
+    },
+    {
+      "forma": "remolino",
+      "silabas": [
+        "re",
+        "mo",
+        "li",
+        "no"
+      ],
+      "raiz": "molin-",
+      "familia": "mol",
+      "etimologia": [
+        "mola (lat.): muela de molino"
+      ],
+      "campo": [
+        "viento",
+        "giro"
+      ],
+      "sonidos": [
+        "r",
+        "e",
+        "m",
+        "o",
+        "l",
+        "i",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.6,
+      "movimiento": "espiral",
+      "nota": "el viento que muele"
+    },
+    {
+      "forma": "torbellino",
+      "silabas": [
+        "tor",
+        "be",
+        "lli",
+        "no"
+      ],
+      "raiz": "turb-",
+      "familia": "turb",
+      "etimologia": [
+        "turbō, -inis (lat.): giro, torbellino"
+      ],
+      "campo": [
+        "viento",
+        "giro"
+      ],
+      "sonidos": [
+        "t",
+        "o",
+        "r",
+        "b",
+        "e",
+        "y",
+        "i",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 8,
+      "densidad": 0.65,
+      "movimiento": "espiral"
+    },
+    {
+      "forma": "turbulencia",
+      "silabas": [
+        "tur",
+        "bu",
+        "len",
+        "cia"
+      ],
+      "raiz": "turb-",
+      "familia": "turb",
+      "etimologia": [
+        "turba (lat.): muchedumbre desordenada"
+      ],
+      "campo": [
+        "viento",
+        "desorden"
+      ],
+      "sonidos": [
+        "t",
+        "u",
+        "r",
+        "b",
+        "u",
+        "l",
+        "e",
+        "n",
+        "s",
+        "i",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 9,
+      "densidad": 0.55,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "huracán",
+      "silabas": [
+        "hu",
+        "ra",
+        "cán"
+      ],
+      "raiz": "hurac-",
+      "familia": "hurak",
+      "etimologia": [
+        "hurakán (taíno)",
+        "Huracán (maya: corazón del cielo, dios de una sola pierna)"
+      ],
+      "campo": [
+        "viento",
+        "dios",
+        "destrucción"
+      ],
+      "sonidos": [
+        "u",
+        "r",
+        "a",
+        "k",
+        "a",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 8,
+      "densidad": 0.9,
+      "movimiento": "espiral",
+      "nota": "uno de los pocos dioses que entraron al diccionario por el caribe"
+    },
+    {
+      "forma": "ciclón",
+      "silabas": [
+        "ci",
+        "clón"
+      ],
+      "raiz": "cicl-",
+      "familia": "kyk",
+      "etimologia": [
+        "kýklos (gr.): círculo"
+      ],
+      "campo": [
+        "viento",
+        "giro"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "k",
+        "l",
+        "o",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.85,
+      "movimiento": "espiral"
+    },
+    {
+      "forma": "tornado",
+      "silabas": [
+        "tor",
+        "na",
+        "do"
+      ],
+      "raiz": "torn-",
+      "familia": "torn",
+      "etimologia": [
+        "tornāre (lat.): girar al torno"
+      ],
+      "campo": [
+        "viento",
+        "giro"
+      ],
+      "sonidos": [
+        "t",
+        "o",
+        "r",
+        "n",
+        "a",
+        "d",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.8,
+      "movimiento": "espiral"
+    },
+    {
+      "forma": "monzón",
+      "silabas": [
+        "mon",
+        "zón"
+      ],
+      "raiz": "monz-",
+      "familia": "mawsim",
+      "etimologia": [
+        "mawsim (ár.): estación, temporada"
+      ],
+      "campo": [
+        "viento",
+        "lluvia",
+        "calendario"
+      ],
+      "sonidos": [
+        "m",
+        "o",
+        "n",
+        "s",
+        "o",
+        "n"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.6,
+      "movimiento": "horizontal"
+    },
+    {
+      "forma": "tormenta",
+      "silabas": [
+        "tor",
+        "men",
+        "ta"
+      ],
+      "raiz": "torment-",
+      "familia": "torm",
+      "etimologia": [
+        "tormentum (lat.)",
+        "torquēre (lat.): torcer"
+      ],
+      "campo": [
+        "tormenta",
+        "torsión"
+      ],
+      "sonidos": [
+        "t",
+        "o",
+        "r",
+        "m",
+        "e",
+        "n",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.8,
+      "movimiento": "espiral",
+      "nota": "tormenta y tormento: la misma torcedura"
+    },
+    {
+      "forma": "borrasca",
+      "silabas": [
+        "bo",
+        "rras",
+        "ca"
+      ],
+      "raiz": "borr-",
+      "familia": "bor",
+      "etimologia": [
+        "bóreas (gr.): viento del norte (disputado)"
+      ],
+      "campo": [
+        "tormenta",
+        "mar"
+      ],
+      "sonidos": [
+        "b",
+        "o",
+        "r",
+        "a",
+        "s",
+        "k",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.75,
+      "movimiento": "descendente"
+    },
+    {
+      "forma": "trueno",
+      "silabas": [
+        "true",
+        "no"
+      ],
+      "raiz": "tron-",
+      "familia": "ton",
+      "etimologia": [
+        "tonāre (lat.)",
+        "tonitrus (lat.)"
+      ],
+      "campo": [
+        "tormenta",
+        "sonido"
+      ],
+      "sonidos": [
+        "t",
+        "r",
+        "u",
+        "e",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.85,
+      "movimiento": "descendente",
+      "nota": "detonar lleva un trueno adentro"
+    },
+    {
+      "forma": "relámpago",
+      "silabas": [
+        "re",
+        "lám",
+        "pa",
+        "go"
+      ],
+      "raiz": "lamp-",
+      "familia": "lamp",
+      "etimologia": [
+        "re + lampāre (lat. vulgar)",
+        "lámpein (gr.): brillar"
+      ],
+      "campo": [
+        "tormenta",
+        "luz",
+        "instante"
+      ],
+      "sonidos": [
+        "r",
+        "e",
+        "l",
+        "a",
+        "m",
+        "p",
+        "a",
+        "g",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {
+        "náhuatl": "tlapetlanilli"
+      },
+      "peso_visual": 7,
+      "densidad": 0.9,
+      "movimiento": "oblicuo"
+    },
+    {
+      "forma": "rayo",
+      "silabas": [
+        "ra",
+        "yo"
+      ],
+      "raiz": "ray-",
+      "familia": "radi",
+      "etimologia": [
+        "radius (lat.): radio, vara de luz"
+      ],
+      "campo": [
+        "tormenta",
+        "luz",
+        "línea"
+      ],
+      "sonidos": [
+        "r",
+        "a",
+        "y",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.95,
+      "movimiento": "descendente",
+      "nota": "el rayo es un radio desprendido de la rueda"
+    },
+    {
+      "forma": "eco",
+      "silabas": [
+        "e",
+        "co"
+      ],
+      "raiz": "ec-",
+      "familia": "ekh",
+      "etimologia": [
+        "ēkhṓ (gr.)",
+        "Ēkhṓ: la ninfa que perdió el cuerpo y quedó voz"
+      ],
+      "campo": [
+        "sonido",
+        "repetición"
+      ],
+      "sonidos": [
+        "e",
+        "k",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 2,
+      "densidad": 0.15,
+      "movimiento": "errante",
+      "nota": "erosionar('eco') repite el mito: primero se pierde el cuerpo, luego la voz"
+    },
+    {
+      "forma": "ozono",
+      "silabas": [
+        "o",
+        "zo",
+        "no"
+      ],
+      "raiz": "ozon-",
+      "familia": "ozon",
+      "etimologia": [
+        "ózein (gr.): oler"
+      ],
+      "campo": [
+        "atmósfera",
+        "olor"
+      ],
+      "sonidos": [
+        "o",
+        "s",
+        "o",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.2,
+      "movimiento": "ascendente",
+      "nota": "el aire que huele a sí mismo"
+    },
+    {
+      "forma": "calor",
+      "silabas": [
+        "ca",
+        "lor"
+      ],
+      "raiz": "calor-",
+      "familia": "kal",
+      "etimologia": [
+        "calor, -ōris (lat.)"
+      ],
+      "campo": [
+        "atmósfera",
+        "fuego"
+      ],
+      "sonidos": [
+        "k",
+        "a",
+        "l",
+        "o",
+        "r"
+      ],
+      "raiz_culta": [
+        "termo"
+      ],
+      "paralelos": {
+        "náhuatl": "tonalli (calor del sol, destino)"
+      },
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "ascendente"
+    }
+  ]
+}

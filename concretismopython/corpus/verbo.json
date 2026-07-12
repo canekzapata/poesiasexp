@@ -1,0 +1,474 @@
+{
+  "archivo": "verbo",
+  "palabras": [
+    {
+      "forma": "palabra",
+      "silabas": [
+        "pa",
+        "la",
+        "bra"
+      ],
+      "raiz": "palabr-",
+      "familia": "parabol",
+      "etimologia": [
+        "parabola (lat.)",
+        "parabolḗ (gr.): lanzar al lado, comparar"
+      ],
+      "campo": [
+        "lenguaje"
+      ],
+      "sonidos": [
+        "p",
+        "a",
+        "l",
+        "a",
+        "b",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [
+        "logo"
+      ],
+      "paralelos": {},
+      "peso_visual": 6,
+      "densidad": 0.5,
+      "movimiento": "errante",
+      "nota": "toda palabra es una parábola: algo lanzado al lado de la cosa"
+    },
+    {
+      "forma": "lengua",
+      "silabas": [
+        "len",
+        "gua"
+      ],
+      "raiz": "lengu-",
+      "familia": "dnghu",
+      "etimologia": [
+        "lingua (lat.)",
+        "*dn̥ǵʰwéh₂s (pie)"
+      ],
+      "campo": [
+        "lenguaje",
+        "cuerpo"
+      ],
+      "sonidos": [
+        "l",
+        "e",
+        "n",
+        "g",
+        "u",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.55,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "fonema",
+      "silabas": [
+        "fo",
+        "ne",
+        "ma"
+      ],
+      "raiz": "fon-",
+      "familia": "phon",
+      "etimologia": [
+        "phṓnēma (gr.): sonido de la voz"
+      ],
+      "campo": [
+        "lenguaje",
+        "sonido"
+      ],
+      "sonidos": [
+        "f",
+        "o",
+        "n",
+        "e",
+        "m",
+        "a"
+      ],
+      "raiz_culta": [
+        "fono"
+      ],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.3,
+      "movimiento": "errante"
+    },
+    {
+      "forma": "poesía",
+      "silabas": [
+        "po",
+        "e",
+        "sí",
+        "a"
+      ],
+      "raiz": "poes-",
+      "familia": "poie",
+      "etimologia": [
+        "poíēsis (gr.): fabricación, hechura"
+      ],
+      "campo": [
+        "lenguaje",
+        "hechura"
+      ],
+      "sonidos": [
+        "p",
+        "o",
+        "e",
+        "s",
+        "i",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.4,
+      "movimiento": "ascendente",
+      "nota": "poesía significa fábrica: este programa es un poema sobre esa fábrica"
+    },
+    {
+      "forma": "verso",
+      "silabas": [
+        "ver",
+        "so"
+      ],
+      "raiz": "vers-",
+      "familia": "wert",
+      "etimologia": [
+        "versus (lat.): el surco que da vuelta",
+        "vertere (lat.): girar"
+      ],
+      "campo": [
+        "lenguaje",
+        "línea",
+        "giro"
+      ],
+      "sonidos": [
+        "b",
+        "e",
+        "r",
+        "s",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.5,
+      "movimiento": "horizontal",
+      "nota": "el verso es el giro del arado al final del surco: escribir es arar"
+    },
+    {
+      "forma": "letra",
+      "silabas": [
+        "le",
+        "tra"
+      ],
+      "raiz": "letr-",
+      "familia": "littera",
+      "etimologia": [
+        "littera (lat.)"
+      ],
+      "campo": [
+        "lenguaje",
+        "signo"
+      ],
+      "sonidos": [
+        "l",
+        "e",
+        "t",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.6,
+      "movimiento": "inmóvil"
+    },
+    {
+      "forma": "sílaba",
+      "silabas": [
+        "sí",
+        "la",
+        "ba"
+      ],
+      "raiz": "silab-",
+      "familia": "syllab",
+      "etimologia": [
+        "syllabḗ (gr.): lo que se toma junto"
+      ],
+      "campo": [
+        "lenguaje",
+        "unidad"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "l",
+        "a",
+        "b",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.45,
+      "movimiento": "inmóvil"
+    },
+    {
+      "forma": "voz",
+      "silabas": [
+        "voz"
+      ],
+      "raiz": "voc-",
+      "familia": "wekw",
+      "etimologia": [
+        "vōx, vōcis (lat.)",
+        "*wekʷ- (pie)"
+      ],
+      "campo": [
+        "lenguaje",
+        "sonido",
+        "cuerpo"
+      ],
+      "sonidos": [
+        "b",
+        "o",
+        "s"
+      ],
+      "raiz_culta": [
+        "fono"
+      ],
+      "paralelos": {},
+      "peso_visual": 3,
+      "densidad": 0.35,
+      "movimiento": "ascendente"
+    },
+    {
+      "forma": "nombre",
+      "silabas": [
+        "nom",
+        "bre"
+      ],
+      "raiz": "nombr-",
+      "familia": "nomen",
+      "etimologia": [
+        "nōmen (lat.)",
+        "*h₁nómn̥ (pie)"
+      ],
+      "campo": [
+        "lenguaje",
+        "identidad"
+      ],
+      "sonidos": [
+        "n",
+        "o",
+        "m",
+        "b",
+        "r",
+        "e"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.55,
+      "movimiento": "inmóvil"
+    },
+    {
+      "forma": "signo",
+      "silabas": [
+        "sig",
+        "no"
+      ],
+      "raiz": "sign-",
+      "familia": "sekw",
+      "etimologia": [
+        "signum (lat.): marca, seña"
+      ],
+      "campo": [
+        "lenguaje",
+        "marca"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "g",
+        "n",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.6,
+      "movimiento": "inmóvil"
+    },
+    {
+      "forma": "silencio",
+      "silabas": [
+        "si",
+        "len",
+        "cio"
+      ],
+      "raiz": "silenc-",
+      "familia": "sil",
+      "etimologia": [
+        "silentium (lat.)",
+        "silēre (lat.): callar"
+      ],
+      "campo": [
+        "lenguaje",
+        "vacío"
+      ],
+      "sonidos": [
+        "s",
+        "i",
+        "l",
+        "e",
+        "n",
+        "s",
+        "i",
+        "o"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 7,
+      "densidad": 0.05,
+      "movimiento": "inmóvil",
+      "nota": "nómbralo y lo rompes"
+    },
+    {
+      "forma": "tinta",
+      "silabas": [
+        "tin",
+        "ta"
+      ],
+      "raiz": "tint-",
+      "familia": "ting",
+      "etimologia": [
+        "tincta (lat.)",
+        "tingere (lat.): teñir, mojar"
+      ],
+      "campo": [
+        "escritura",
+        "líquido"
+      ],
+      "sonidos": [
+        "t",
+        "i",
+        "n",
+        "t",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 4,
+      "densidad": 0.9,
+      "movimiento": "descendente",
+      "nota": "la tinta es agua teñida: toda escritura es meteorología"
+    },
+    {
+      "forma": "página",
+      "silabas": [
+        "pá",
+        "gi",
+        "na"
+      ],
+      "raiz": "pagin-",
+      "familia": "pag",
+      "etimologia": [
+        "pāgina (lat.)",
+        "pangere (lat.): plantar (una viña)"
+      ],
+      "campo": [
+        "escritura",
+        "campo"
+      ],
+      "sonidos": [
+        "p",
+        "a",
+        "x",
+        "i",
+        "n",
+        "a"
+      ],
+      "raiz_culta": [],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.3,
+      "movimiento": "horizontal",
+      "nota": "página: hilera de vides; el texto se planta"
+    },
+    {
+      "forma": "escritura",
+      "silabas": [
+        "es",
+        "cri",
+        "tu",
+        "ra"
+      ],
+      "raiz": "escrit-",
+      "familia": "skribh",
+      "etimologia": [
+        "scrīptūra (lat.)",
+        "scrībere (lat.): rasgar, grabar"
+      ],
+      "campo": [
+        "escritura"
+      ],
+      "sonidos": [
+        "e",
+        "s",
+        "k",
+        "r",
+        "i",
+        "t",
+        "u",
+        "r",
+        "a"
+      ],
+      "raiz_culta": [
+        "grafo"
+      ],
+      "paralelos": {},
+      "peso_visual": 7,
+      "densidad": 0.5,
+      "movimiento": "horizontal",
+      "nota": "escribir es rasgar: toda página es una cicatriz"
+    },
+    {
+      "forma": "tiempo",
+      "silabas": [
+        "tiem",
+        "po"
+      ],
+      "raiz": "tiemp-",
+      "familia": "temp",
+      "etimologia": [
+        "tempus (lat.); quizá de temnō (gr.): cortar"
+      ],
+      "campo": [
+        "tiempo",
+        "medida"
+      ],
+      "sonidos": [
+        "t",
+        "i",
+        "e",
+        "m",
+        "p",
+        "o"
+      ],
+      "raiz_culta": [
+        "crono"
+      ],
+      "paralelos": {},
+      "peso_visual": 5,
+      "densidad": 0.4,
+      "movimiento": "errante",
+      "nota": "si tempus viene de cortar, el tiempo es lo cortado"
+    }
+  ]
+}

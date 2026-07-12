@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1000" width="700" height="1000" font-kerning="normal">
+<!-- nefelógrafo · poema-lluvia · semilla 42 · poesiasexp / concretismopython -->
+<metadata>{&quot;meta&quot;: {&quot;instrumento&quot;: &quot;nefelógrafo&quot;, &quot;tipo&quot;: &quot;lluvia&quot;, &quot;semilla&quot;: 42, &quot;nucleo&quot;: &quot;aguacero&quot;, &quot;esquizo&quot;: 0.35, &quot;puntuacion&quot;: {&quot;densidad&quot;: 0.026, &quot;vacio&quot;: 0.974, &quot;repeticion&quot;: 0.603, &quot;contraste&quot;: 0.625}, &quot;restricciones&quot;: {&quot;palabras_base&quot;: 7, &quot;max_palabras_base&quot;: 12, &quot;vacio&quot;: 0.974, &quot;min_vacio&quot;: 0.3, &quot;fuentes&quot;: 2, &quot;max_fuentes&quot;: 3, &quot;anomalias&quot;: 1, &quot;nucleos&quot;: 1, &quot;cumplidas&quot;: true}, &quot;notas&quot;: [&quot;transformación etimológica: el antepasado dentro de la nube&quot;, &quot;transformación fonética: cada columna pierde su palabra al caer&quot;, &quot;el charco lee la palabra al revés (praeceps: caer de cabeza)&quot;, &quot;anomalía: una gota sube mientras todo cae&quot;]}, &quot;lienzo&quot;: {&quot;ancho&quot;: 700, &quot;alto&quot;: 1000}}</metadata>
+<style>
+  svg { background: #f6f2e9; }
+  text { white-space: pre; }
+
+    @keyframes ascenso   { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    @keyframes caida     { 0%,100% { transform: translateY(0); } 50% { transform: translateY(9px); } }
+    @keyframes deriva    { 0%,100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
+    @keyframes parpadeo  { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+    @keyframes giro      { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(2.2deg); } }
+    @keyframes temblor   { 0%,100% { transform: translate(0,0); } 25% { transform: translate(1.5px,-1px); } 75% { transform: translate(-1.5px,1px); } }
+    .anima-ascenso  { animation: ascenso 9s ease-in-out infinite; }
+    .anima-caida    { animation: caida 7s ease-in-out infinite; }
+    .anima-deriva   { animation: deriva 12s ease-in-out infinite; }
+    .anima-parpadeo { animation: parpadeo 5s ease-in-out infinite; }
+    .anima-giro     { animation: giro 14s ease-in-out infinite; }
+    .anima-temblor  { animation: temblor 0.9s linear infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .anima-ascenso, .anima-caida, .anima-deriva,
+      .anima-parpadeo, .anima-giro, .anima-temblor { animation: none; }
+    }
+
+</style>
+<rect width="700" height="1000" fill="#f6f2e9"/>
+<g transform="translate(350.0 96)" data-id="p1" data-capa="nucleo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="44" fill="#16130f" text-anchor="middle" dominant-baseline="middle"><title>aguacero ← agua (esp.) ← aqua (lat.)</title>aguacero</text>
+</g>
+<g transform="translate(283.5 132)" data-id="p2" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.75" letter-spacing="-0.42"><title>aguacero ← agua (esp.) ← aqua (lat.) · etimología</title>agua</text>
+</g>
+<g transform="translate(318.5 158)" data-id="p3" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.63" letter-spacing="-0.42"><title>agua ← aqua (lat.) · portmanteau</title>aguarcoíris</text>
+</g>
+<g transform="translate(311.25 184)" data-id="p4" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.51" letter-spacing="-0.42"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · portmanteau</title>chubascodiluvio</text>
+</g>
+<g transform="translate(538.22 277.72)" data-id="p5" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.95" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>a</text>
+</g>
+<g transform="translate(536.3 333.04)" data-id="p6" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.86" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>g</text>
+</g>
+<g transform="translate(536.12 391.31)" data-id="p7" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.77" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>u</text>
+</g>
+<g transform="translate(534.62 446.78)" data-id="p8" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.67" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>a</text>
+</g>
+<g transform="translate(535.02 504.56)" data-id="p9" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.58" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>c</text>
+</g>
+<g transform="translate(534.79 564.48)" data-id="p10" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.48" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>e</text>
+</g>
+<g transform="translate(537.54 615.67)" data-id="p11" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.39" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>r</text>
+</g>
+<g transform="translate(536.21 676.63)" data-id="p12" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" class="anima-caida"><title>aguacero ← agua (esp.) ← aqua (lat.) · caída</title>o</text>
+</g>
+<g transform="translate(390.69 271.25)" data-id="p13" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.91" class="anima-caida"><title>agua ← aqua (lat.) · caída</title>a</text>
+</g>
+<g transform="translate(390.41 373.86)" data-id="p14" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.72" class="anima-caida"><title>agua ← aqua (lat.) · caída</title>g</text>
+</g>
+<g transform="translate(390.63 477.82)" data-id="p15" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.53" class="anima-caida"><title>agua ← aqua (lat.) · caída</title>u</text>
+</g>
+<g transform="translate(391.07 585.88)" data-id="p16" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.34" class="anima-caida"><title>agua ← aqua (lat.) · caída</title>a</text>
+</g>
+<g transform="translate(112.33 261.2)" data-id="p17" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.95" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>a</text>
+</g>
+<g transform="translate(112.09 310.92)" data-id="p18" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.86" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>r</text>
+</g>
+<g transform="translate(110.13 369.38)" data-id="p19" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.77" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>c</text>
+</g>
+<g transform="translate(110.26 423.56)" data-id="p20" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.67" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>o</text>
+</g>
+<g transform="translate(112.35 482.03)" data-id="p21" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.58" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>í</text>
+</g>
+<g transform="translate(110.53 531.14)" data-id="p22" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.48" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>r</text>
+</g>
+<g transform="translate(109.19 590.29)" data-id="p23" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.39" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>i</text>
+</g>
+<g transform="translate(112.94 645.48)" data-id="p24" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" class="anima-caida"><title>arcoíris ← arcus (lat.) + Îris (gr.) · caída</title>s</text>
+</g>
+<g transform="translate(241.71 262.19)" data-id="p25" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.95" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>c</text>
+</g>
+<g transform="translate(242.12 310.65)" data-id="p26" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.86" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>h</text>
+</g>
+<g transform="translate(242.43 362.95)" data-id="p27" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.77" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>u</text>
+</g>
+<g transform="translate(241.37 407.98)" data-id="p28" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.67" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>b</text>
+</g>
+<g transform="translate(241.45 460.58)" data-id="p29" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.58" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>a</text>
+</g>
+<g transform="translate(244.63 510.99)" data-id="p30" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.48" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>s</text>
+</g>
+<g transform="translate(241.23 559.74)" data-id="p31" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.39" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>c</text>
+</g>
+<g transform="translate(242.68 614.75)" data-id="p32" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" class="anima-caida"><title>chubasco ← chuva (port.): lluvia ← pluvia (lat.) · caída</title>o</text>
+</g>
+<g transform="translate(344.9 242.38)" data-id="p33" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.95" class="anima-caida"><title>diluvio ← dīluvium (lat.) ← dīluere (lat.): lavar, deshacer · caída</title>d</text>
+</g>
+<g transform="translate(347.08 306.01)" data-id="p34" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.84" class="anima-caida"><title>diluvio ← dīluvium (lat.) ← dīluere (lat.): lavar, deshacer · caída</title>i</text>
+</g>
+<g transform="translate(347.08 363.05)" data-id="p35" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.73" class="anima-caida"><title>diluvio ← dīluvium (lat.) ← dīluere (lat.): lavar, deshacer · caída</title>l</text>
+</g>
+<g transform="translate(345.36 423.13)" data-id="p36" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.62" class="anima-caida"><title>diluvio ← dīluvium (lat.) ← dīluere (lat.): lavar, deshacer · caída</title>u</text>
+</g>
+<g transform="translate(348.81 483.21)" data-id="p37" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.52" class="anima-caida"><title>diluvio ← dīluvium (lat.) ← dīluere (lat.): lavar, deshacer · caída</title>v</text>
+</g>
+<g transform="translate(344.67 543.64)" data-id="p38" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.41" class="anima-caida"><title>diluvio ← dīluvium (lat.) ← dīluere (lat.): lavar, deshacer · caída</title>i</text>
+</g>
+<g transform="translate(347.85 604.68)" data-id="p39" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" class="anima-caida"><title>diluvio ← dīluvium (lat.) ← dīluere (lat.): lavar, deshacer · caída</title>o</text>
+</g>
+<g transform="translate(578.04 300.15)" data-id="p40" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.93" class="anima-caida"><title>nimbo ← nimbus (lat.): nube de lluvia; aureola · caída</title>n</text>
+</g>
+<g transform="translate(580.15 393.4)" data-id="p41" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.78" class="anima-caida"><title>nimbo ← nimbus (lat.): nube de lluvia; aureola · caída</title>i</text>
+</g>
+<g transform="translate(578.27 476.99)" data-id="p42" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.62" class="anima-caida"><title>nimbo ← nimbus (lat.): nube de lluvia; aureola · caída</title>m</text>
+</g>
+<g transform="translate(580.33 565.41)" data-id="p43" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.48" class="anima-caida"><title>nimbo ← nimbus (lat.): nube de lluvia; aureola · caída</title>b</text>
+</g>
+<g transform="translate(577.26 660.05)" data-id="p44" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.32" class="anima-caida"><title>nimbo ← nimbus (lat.): nube de lluvia; aureola · caída</title>o</text>
+</g>
+<g transform="translate(169.34 270.87)" data-id="p45" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.97" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>n</text>
+</g>
+<g transform="translate(173.14 322.58)" data-id="p46" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.9" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>i</text>
+</g>
+<g transform="translate(171.52 369.37)" data-id="p47" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.83" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>m</text>
+</g>
+<g transform="translate(169.09 413.01)" data-id="p48" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.76" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>b</text>
+</g>
+<g transform="translate(173.46 459.07)" data-id="p49" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.69" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>o</text>
+</g>
+<g transform="translate(169.73 509.7)" data-id="p50" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.62" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>s</text>
+</g>
+<g transform="translate(171.37 552.25)" data-id="p51" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.56" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>t</text>
+</g>
+<g transform="translate(172.19 598.02)" data-id="p52" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.49" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>r</text>
+</g>
+<g transform="translate(173.42 651.0)" data-id="p53" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.42" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>a</text>
+</g>
+<g transform="translate(169.16 695.8)" data-id="p54" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.35" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>t</text>
+</g>
+<g transform="translate(173.26 743.89)" data-id="p55" data-capa="lluvia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.28" class="anima-caida"><title>nimbostrato ← nimbus + strātus (lat.) · caída</title>o</text>
+</g>
+<g transform="translate(350.0 862)" data-id="p56" data-capa="charco">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="11" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.28" letter-spacing="37.4"><title>aguacero ← agua (esp.) ← aqua (lat.) · sedimento vocálico</title>auaeo</text>
+</g>
+<g transform="translate(350.0 904) rotate(180)" data-id="p57" data-capa="charco">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="30" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.18"><title>aguacero ← agua (esp.) ← aqua (lat.) · reflejo</title>aguacero</text>
+</g>
+<g transform="translate(238.17 757.04) rotate(180)" data-id="p58" data-capa="anomalia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="19" fill="#c8102e" text-anchor="middle" dominant-baseline="middle" class="anima-ascenso"><title>aguacero ← agua (esp.) ← aqua (lat.) · evaporación</title>u</text>
+</g>
+</svg>

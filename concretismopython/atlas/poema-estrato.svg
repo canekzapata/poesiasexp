@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" font-kerning="normal">
+<!-- nefelógrafo · poema-estrato · semilla 42 · poesiasexp / concretismopython -->
+<metadata>{&quot;meta&quot;: {&quot;instrumento&quot;: &quot;nefelógrafo&quot;, &quot;tipo&quot;: &quot;estrato&quot;, &quot;semilla&quot;: 42, &quot;nucleo&quot;: &quot;bruma&quot;, &quot;esquizo&quot;: 0.35, &quot;puntuacion&quot;: {&quot;densidad&quot;: 0.067, &quot;vacio&quot;: 0.933, &quot;repeticion&quot;: 0.1, &quot;contraste&quot;: 0.496}, &quot;restricciones&quot;: {&quot;palabras_base&quot;: 3, &quot;max_palabras_base&quot;: 12, &quot;vacio&quot;: 0.933, &quot;min_vacio&quot;: 0.3, &quot;fuentes&quot;: 3, &quot;max_fuentes&quot;: 3, &quot;anomalias&quot;: 1, &quot;nucleos&quot;: 1, &quot;cumplidas&quot;: true}, &quot;notas&quot;: [&quot;transformación etimológica: la profundidad es tiempo&quot;, &quot;transformación fonética: la capa de arriba se expande como aire&quot;, &quot;anomalía: un sondeo perfora todas las capas&quot;]}, &quot;lienzo&quot;: {&quot;ancho&quot;: 1000, &quot;alto&quot;: 700}}</metadata>
+<style>
+  svg { background: #f6f2e9; }
+  text { white-space: pre; }
+
+    @keyframes ascenso   { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    @keyframes caida     { 0%,100% { transform: translateY(0); } 50% { transform: translateY(9px); } }
+    @keyframes deriva    { 0%,100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
+    @keyframes parpadeo  { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+    @keyframes giro      { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(2.2deg); } }
+    @keyframes temblor   { 0%,100% { transform: translate(0,0); } 25% { transform: translate(1.5px,-1px); } 75% { transform: translate(-1.5px,1px); } }
+    .anima-ascenso  { animation: ascenso 9s ease-in-out infinite; }
+    .anima-caida    { animation: caida 7s ease-in-out infinite; }
+    .anima-deriva   { animation: deriva 12s ease-in-out infinite; }
+    .anima-parpadeo { animation: parpadeo 5s ease-in-out infinite; }
+    .anima-giro     { animation: giro 14s ease-in-out infinite; }
+    .anima-temblor  { animation: temblor 0.9s linear infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .anima-ascenso, .anima-caida, .anima-deriva,
+      .anima-parpadeo, .anima-giro, .anima-temblor { animation: none; }
+    }
+
+</style>
+<rect width="1000" height="700" fill="#f6f2e9"/>
+<g transform="translate(500.0 130.0)" data-id="p1" data-capa="banda">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.5" letter-spacing="22.5"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto · expansión</title>b   r   u   m   a</text>
+</g>
+<g transform="translate(500.0 187.5)" data-id="p2" data-capa="sedimento">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="10" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" letter-spacing="32.0"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto · sedimento vocálico</title>ua</text>
+</g>
+<g transform="translate(500.0 245.0)" data-id="p3" data-capa="nucleo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.7" letter-spacing="27.72"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto</title>bruma bruma</text>
+</g>
+<g transform="translate(500.0 302.5)" data-id="p4" data-capa="sedimento">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="10" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" letter-spacing="32.0"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto · sedimento vocálico</title>ua</text>
+</g>
+<g transform="translate(500.0 360.0)" data-id="p5" data-capa="banda">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="18" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.8" letter-spacing="20.52"><title>aire ← āēr (lat.) ← aḗr (gr.)</title>aire aire aire aire</text>
+</g>
+<g transform="translate(500.0 417.5)" data-id="p6" data-capa="sedimento">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="10" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" letter-spacing="32.0"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto · sedimento vocálico</title>aie</text>
+</g>
+<g transform="translate(500.0 475.0)" data-id="p7" data-capa="banda">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="23" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.88" letter-spacing="22.08"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto · etimología</title>brūma brūma brūma</text>
+</g>
+<g transform="translate(500.0 532.5)" data-id="p8" data-capa="sedimento">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="10" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.3" letter-spacing="32.0"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto · sedimento vocálico</title>a</text>
+</g>
+<g transform="translate(500.0 590.0)" data-id="p9" data-capa="banda">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="23" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.88" letter-spacing="17.94"><title>bruma ← brūma (lat.): el solsticio de invierno ← brevissima diēs: el día más corto · etimología</title>brevissima diēs</text>
+</g>
+<g transform="translate(644.93 350.0) rotate(90)" data-id="p10" data-capa="anomalia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="19" fill="#c8102e" text-anchor="middle" dominant-baseline="middle" letter-spacing="93.86"><title>brisa ← brise (fr.): origen incierto · sondeo</title>brisa</text>
+</g>
+</svg>

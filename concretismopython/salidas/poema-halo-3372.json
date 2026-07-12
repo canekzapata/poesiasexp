@@ -1,0 +1,608 @@
+{
+  "meta": {
+    "instrumento": "nefelógrafo",
+    "tipo": "halo",
+    "semilla": 3372,
+    "nucleo": "halo",
+    "esquizo": 0.35,
+    "puntuacion": {
+      "densidad": 0.025,
+      "vacio": 0.975,
+      "repeticion": 0.615,
+      "contraste": 0.787
+    },
+    "restricciones": {
+      "palabras_base": 10,
+      "max_palabras_base": 12,
+      "vacio": 0.975,
+      "min_vacio": 0.3,
+      "fuentes": 3,
+      "max_fuentes": 3,
+      "anomalias": 1,
+      "nucleos": 1,
+      "cumplidas": true
+    },
+    "notas": [
+      "transformación fonética: la deriva sonora gira en el primer anillo",
+      "transformación etimológica: los anillos son épocas",
+      "anomalía: un radio recto en un cielo circular"
+    ]
+  },
+  "lienzo": {
+    "ancho": 900,
+    "alto": 900,
+    "fondo": "#f6f2e9",
+    "tinta": "#16130f",
+    "fuentes": {
+      "mono": "'Courier Prime', 'Courier New', monospace",
+      "sans": "Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif",
+      "serif": "'Bodoni Moda', Didot, 'Times New Roman', serif"
+    }
+  },
+  "palabras": [
+    {
+      "id": "p1",
+      "texto": "halo",
+      "base": "halo",
+      "x": 450.0,
+      "y": 450.0,
+      "rotacion": 0.0,
+      "tamano": 46,
+      "opacidad": 1.0,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "nucleo",
+      "anomalia": false,
+      "variantes": [
+        "hilo",
+        "hálōs",
+        "alga",
+        "ala",
+        "alba"
+      ],
+      "etimologia": [
+        "hálōs (gr.): era de trilla"
+      ]
+    },
+    {
+      "id": "p2",
+      "texto": "ala",
+      "base": "ala",
+      "x": 329.02,
+      "y": 357.98,
+      "rotacion": 307.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "alga",
+        "alma",
+        "alba",
+        "alta"
+      ]
+    },
+    {
+      "id": "p3",
+      "texto": "hilo",
+      "base": "hilo",
+      "x": 406.21,
+      "y": 304.44,
+      "rotacion": 343.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "filo",
+        "ala",
+        "halo",
+        "hielo"
+      ]
+    },
+    {
+      "id": "p4",
+      "texto": "alba",
+      "base": "alba",
+      "x": 500.13,
+      "y": 306.5,
+      "rotacion": 379.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "variantes": [
+        "alga",
+        "alma",
+        "ala",
+        "albus",
+        "alta"
+      ],
+      "etimologia": [
+        "albus (lat.): blanco"
+      ]
+    },
+    {
+      "id": "p5",
+      "texto": "arcoíris",
+      "base": "arcoíris",
+      "x": 574.9,
+      "y": 363.37,
+      "rotacion": 415.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "variantes": [
+        "arcus",
+        "iridiscencia",
+        "iris"
+      ],
+      "etimologia": [
+        "arcus (lat.) + Îris (gr.)"
+      ]
+    },
+    {
+      "id": "p6",
+      "texto": "aurora",
+      "base": "aurora",
+      "x": 601.96,
+      "y": 453.33,
+      "rotacion": 631.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "variantes": [
+        "*h₂ews-",
+        "aurōra",
+        "aura"
+      ],
+      "etimologia": [
+        "aurōra (lat.)",
+        "*h₂ews- (pie): el este"
+      ]
+    },
+    {
+      "id": "p7",
+      "texto": "ala",
+      "base": "ala",
+      "x": 570.98,
+      "y": 542.02,
+      "rotacion": 667.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "alma",
+        "alta",
+        "alga",
+        "alba"
+      ]
+    },
+    {
+      "id": "p8",
+      "texto": "hilo",
+      "base": "hilo",
+      "x": 493.79,
+      "y": 595.56,
+      "rotacion": 703.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "deriva sonora",
+      "variantes": [
+        "filo",
+        "ala",
+        "hielo",
+        "halo"
+      ]
+    },
+    {
+      "id": "p9",
+      "texto": "alba",
+      "base": "alba",
+      "x": 399.87,
+      "y": 593.5,
+      "rotacion": 739.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "variantes": [
+        "alta",
+        "alga",
+        "alma",
+        "albus",
+        "ala"
+      ],
+      "etimologia": [
+        "albus (lat.): blanco"
+      ]
+    },
+    {
+      "id": "p10",
+      "texto": "arcoíris",
+      "base": "arcoíris",
+      "x": 325.1,
+      "y": 536.63,
+      "rotacion": 775.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "variantes": [
+        "arcus",
+        "iridiscencia",
+        "iris"
+      ],
+      "etimologia": [
+        "arcus (lat.) + Îris (gr.)"
+      ]
+    },
+    {
+      "id": "p11",
+      "texto": "aurora",
+      "base": "aurora",
+      "x": 298.04,
+      "y": 446.67,
+      "rotacion": 631.26,
+      "tamano": 16,
+      "opacidad": 0.85,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "variantes": [
+        "*h₂ews-",
+        "aurōra",
+        "aura"
+      ],
+      "etimologia": [
+        "aurōra (lat.)",
+        "*h₂ews- (pie): el este"
+      ]
+    },
+    {
+      "id": "p12",
+      "texto": "hálōs",
+      "base": "hálōs",
+      "x": 396.78,
+      "y": 205.73,
+      "rotacion": 347.71,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "alga",
+        "alba",
+        "ala",
+        "halo"
+      ]
+    },
+    {
+      "id": "p13",
+      "texto": "albus",
+      "base": "albus",
+      "x": 508.04,
+      "y": 206.83,
+      "rotacion": 373.42,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "alba",
+        "luz"
+      ]
+    },
+    {
+      "id": "p14",
+      "texto": "arcus",
+      "base": "arcus",
+      "x": 607.8,
+      "y": 256.09,
+      "rotacion": 399.14,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "cruz"
+      ]
+    },
+    {
+      "id": "p15",
+      "texto": "hálōs",
+      "base": "hálōs",
+      "x": 676.3,
+      "y": 343.76,
+      "rotacion": 424.85,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "alga",
+        "alba",
+        "ala",
+        "halo"
+      ]
+    },
+    {
+      "id": "p16",
+      "texto": "albus",
+      "base": "albus",
+      "x": 699.99,
+      "y": 452.47,
+      "rotacion": 630.57,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "luz",
+        "alba"
+      ]
+    },
+    {
+      "id": "p17",
+      "texto": "arcus",
+      "base": "arcus",
+      "x": 674.16,
+      "y": 560.69,
+      "rotacion": 656.28,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "cruz"
+      ]
+    },
+    {
+      "id": "p18",
+      "texto": "hálōs",
+      "base": "hálōs",
+      "x": 603.93,
+      "y": 646.99,
+      "rotacion": 682.0,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "halo",
+        "ala",
+        "alba",
+        "alga"
+      ]
+    },
+    {
+      "id": "p19",
+      "texto": "albus",
+      "base": "albus",
+      "x": 503.22,
+      "y": 694.27,
+      "rotacion": 707.71,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "alba",
+        "luz"
+      ]
+    },
+    {
+      "id": "p20",
+      "texto": "arcus",
+      "base": "arcus",
+      "x": 391.96,
+      "y": 693.17,
+      "rotacion": 733.42,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "cruz"
+      ]
+    },
+    {
+      "id": "p21",
+      "texto": "hálōs",
+      "base": "hálōs",
+      "x": 292.2,
+      "y": 643.91,
+      "rotacion": 759.14,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "alga",
+        "alba",
+        "halo",
+        "ala"
+      ]
+    },
+    {
+      "id": "p22",
+      "texto": "albus",
+      "base": "albus",
+      "x": 223.7,
+      "y": 556.24,
+      "rotacion": 784.85,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "luz",
+        "alba"
+      ]
+    },
+    {
+      "id": "p23",
+      "texto": "arcus",
+      "base": "arcus",
+      "x": 200.01,
+      "y": 447.53,
+      "rotacion": 630.57,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "cruz"
+      ]
+    },
+    {
+      "id": "p24",
+      "texto": "hálōs",
+      "base": "hálōs",
+      "x": 225.84,
+      "y": 339.31,
+      "rotacion": 656.28,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "alga",
+        "halo",
+        "ala",
+        "alba"
+      ]
+    },
+    {
+      "id": "p25",
+      "texto": "albus",
+      "base": "albus",
+      "x": 296.07,
+      "y": 253.01,
+      "rotacion": 682.0,
+      "tamano": 14,
+      "opacidad": 0.55,
+      "fuente": "serif",
+      "espaciado": 0.0,
+      "capa": "orbita",
+      "anomalia": false,
+      "animacion": "giro",
+      "transformacion": "etimología",
+      "variantes": [
+        "alba",
+        "luz"
+      ]
+    },
+    {
+      "id": "p26",
+      "texto": "ola",
+      "base": "ola",
+      "x": 228.03,
+      "y": 346.29,
+      "rotacion": 205.0,
+      "tamano": 18,
+      "opacidad": 1.0,
+      "fuente": "mono",
+      "espaciado": 7.4,
+      "capa": "anomalia",
+      "color": "#c8102e",
+      "anomalia": true,
+      "transformacion": "radio",
+      "variantes": [
+        "cola",
+        "hora",
+        "hoja",
+        "ala"
+      ]
+    }
+  ]
+}

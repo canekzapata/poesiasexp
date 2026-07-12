@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" font-kerning="normal">
+<!-- nefelógrafo · poema-cumulo · semilla 42 · poesiasexp / concretismopython -->
+<metadata>{&quot;meta&quot;: {&quot;instrumento&quot;: &quot;nefelógrafo&quot;, &quot;tipo&quot;: &quot;cumulo&quot;, &quot;semilla&quot;: 42, &quot;nucleo&quot;: &quot;cumulonimbo&quot;, &quot;esquizo&quot;: 0.35, &quot;puntuacion&quot;: {&quot;densidad&quot;: 0.061, &quot;vacio&quot;: 0.939, &quot;repeticion&quot;: 0.414, &quot;contraste&quot;: 0.717}, &quot;restricciones&quot;: {&quot;palabras_base&quot;: 9, &quot;max_palabras_base&quot;: 12, &quot;vacio&quot;: 0.939, &quot;min_vacio&quot;: 0.3, &quot;fuentes&quot;: 2, &quot;max_fuentes&quot;: 3, &quot;anomalias&quot;: 1, &quot;nucleos&quot;: 1, &quot;cumplidas&quot;: true}, &quot;notas&quot;: [&quot;transformación etimológica: «cumulus + nimbus» sostiene el montón&quot;, &quot;transformación fonética: erosión en el borde del montón&quot;, &quot;anomalía: un desprendimiento se aleja del montón&quot;]}, &quot;lienzo&quot;: {&quot;ancho&quot;: 900, &quot;alto&quot;: 900}}</metadata>
+<style>
+  svg { background: #f6f2e9; }
+  text { white-space: pre; }
+
+    @keyframes ascenso   { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    @keyframes caida     { 0%,100% { transform: translateY(0); } 50% { transform: translateY(9px); } }
+    @keyframes deriva    { 0%,100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
+    @keyframes parpadeo  { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+    @keyframes giro      { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(2.2deg); } }
+    @keyframes temblor   { 0%,100% { transform: translate(0,0); } 25% { transform: translate(1.5px,-1px); } 75% { transform: translate(-1.5px,1px); } }
+    .anima-ascenso  { animation: ascenso 9s ease-in-out infinite; }
+    .anima-caida    { animation: caida 7s ease-in-out infinite; }
+    .anima-deriva   { animation: deriva 12s ease-in-out infinite; }
+    .anima-parpadeo { animation: parpadeo 5s ease-in-out infinite; }
+    .anima-giro     { animation: giro 14s ease-in-out infinite; }
+    .anima-temblor  { animation: temblor 0.9s linear infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .anima-ascenso, .anima-caida, .anima-deriva,
+      .anima-parpadeo, .anima-giro, .anima-temblor { animation: none; }
+    }
+
+</style>
+<rect width="900" height="900" fill="#f6f2e9"/>
+<g transform="translate(450.0 460.0)" data-id="p1" data-capa="eco">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="110" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.09"><title>cumulonimbo ← cumulus + nimbus (lat.) · etimología</title>cumulus + nimbus</text>
+</g>
+<g transform="translate(450.0 450.0)" data-id="p2" data-capa="nucleo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="58" fill="#16130f" text-anchor="middle" dominant-baseline="middle" class="anima-ascenso"><title>cumulonimbo ← cumulus + nimbus (lat.)</title>cumulonimbo</text>
+</g>
+<g transform="translate(424.04 474.4)" data-id="p3" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="27.4" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.88" class="anima-ascenso"><title>aéreo ← āerius (lat.)</title>aéreo</text>
+</g>
+<g transform="translate(454.34 391.98)" data-id="p4" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="25.8" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.84"><title>borrasca ← bóreas (gr.): viento del norte (disputado)</title>borrasca</text>
+</g>
+<g transform="translate(495.88 508.28)" data-id="p5" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="24.6" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.81" class="anima-ascenso"><title>aéreo ← āerius (lat.)</title>aéreo</text>
+</g>
+<g transform="translate(363.87 435.9)" data-id="p6" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="23.7" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.78"><title>atmósfera ← atmós (gr.): vapor + sphaîra (gr.): esfera</title>atmósfera</text>
+</g>
+<g transform="translate(532.56 395.98)" data-id="p7" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="22.8" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.76"><title>borrasca ← bóreas (gr.): viento del norte (disputado)</title>borrasca</text>
+</g>
+<g transform="translate(423.09 555.48)" data-id="p8" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="22.1" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.74"><title>nublado ← nūbilātus (lat.)</title>nublado</text>
+</g>
+<g transform="translate(394.19 345.83)" data-id="p9" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="21.4" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.72" class="anima-ascenso"><title>aéreo ← āerius (lat.)</title>aéreo</text>
+</g>
+<g transform="translate(569.67 491.97)" data-id="p10" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="20.8" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.71"><title>aire ← āēr (lat.) ← aḗr (gr.)</title>aire</text>
+</g>
+<g transform="translate(325.98 503.06)" data-id="p11" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="20.2" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.69"><title>nublar ← nūbilāre (lat.)</title>nublar</text>
+</g>
+<g transform="translate(508.75 320.15)" data-id="p12" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="19.7" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.68"><title>nublado ← nūbilātus (lat.)</title>nublado</text>
+</g>
+<g transform="translate(496.65 592.31)" data-id="p13" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="19.1" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.66" class="anima-ascenso"><title>nube ← nūbēs (lat.) ← nebula (lat.) ← nephélē (gr.)</title>nube</text>
+</g>
+<g transform="translate(313.45 373.19)" data-id="p14" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="18.6" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.65"><title>aire ← āēr (lat.) ← aḗr (gr.)</title>aire</text>
+</g>
+<g transform="translate(609.01 412.9)" data-id="p15" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="18.2" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.64"><title>atmósfera ← atmós (gr.): vapor + sphaîra (gr.): esfera</title>atmósfera</text>
+</g>
+<g transform="translate(354.22 590.01)" data-id="p16" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="17.7" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.53"><title>nublar ← nūbilāre (lat.) · erosión</title>bl</text>
+</g>
+<g transform="translate(425.18 276.0)" data-id="p17" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="17.3" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.52"><title>aire ← āēr (lat.) ← aḗr (gr.) · erosión</title>ir</text>
+</g>
+<g transform="translate(590.41 565.3)" data-id="p18" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16.8" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.51"><title>borrasca ← bóreas (gr.): viento del norte (disputado) · erosión</title>rras</text>
+</g>
+<g transform="translate(262.86 460.14)" data-id="p19" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16.4" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.5"><title>nublado ← nūbilātus (lat.) · erosión</title>bla</text>
+</g>
+<g transform="translate(585.04 312.13)" data-id="p20" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16.0" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.49" class="anima-ascenso"><title>nube ← nūbēs (lat.) ← nebula (lat.) ← nephélē (gr.) · erosión</title>ub</text>
+</g>
+<g transform="translate(443.38 648.28)" data-id="p21" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="15.6" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.48"><title>nublado ← nūbilātus (lat.) · erosión</title>bla</text>
+</g>
+<g transform="translate(317.53 295.32)" data-id="p22" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="15.2" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.48"><title>nublar ← nūbilāre (lat.) · erosión</title>bl</text>
+</g>
+<g transform="translate(657.26 475.19)" data-id="p23" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="14.9" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.47" class="anima-ascenso"><title>nube ← nūbēs (lat.) ← nebula (lat.) ← nephélē (gr.) · erosión</title>ub</text>
+</g>
+<g transform="translate(276.09 574.34)" data-id="p24" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="14.5" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.46"><title>atmósfera ← atmós (gr.): vapor + sphaîra (gr.): esfera · erosión</title>tmósfer</text>
+</g>
+<g transform="translate(495.26 236.05)" data-id="p25" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="14.2" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.45"><title>aire ← āēr (lat.) ← aḗr (gr.) · erosión</title>ir</text>
+</g>
+<g transform="translate(563.58 642.45)" data-id="p26" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="13.8" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.44"><title>cúmulo ← cumulus (lat.): montón · erosión</title>úmul</text>
+</g>
+<g transform="translate(231.77 383.45)" data-id="p27" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.43"><title>cúmulo ← cumulus (lat.): montón · erosión</title>mu</text>
+</g>
+<g transform="translate(660.01 349.68)" data-id="p28" data-capa="campo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="13.1" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.42"><title>cúmulo ← cumulus (lat.): montón · erosión</title>mu</text>
+</g>
+<g transform="translate(108.0 90.0) rotate(-90)" data-id="p29" data-capa="anomalia">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#c8102e" text-anchor="middle" dominant-baseline="middle"><title>nube ← nūbēs (lat.) ← nebula (lat.) ← nephélē (gr.) · desprendimiento</title>nube</text>
+</g>
+</svg>

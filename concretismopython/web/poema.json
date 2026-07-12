@@ -1,0 +1,1425 @@
+{
+  "meta": {
+    "instrumento": "nefelógrafo",
+    "tipo": "lluvia",
+    "semilla": 7,
+    "nucleo": "lluvia",
+    "esquizo": 0.55,
+    "puntuacion": {
+      "densidad": 0.023,
+      "vacio": 0.977,
+      "repeticion": 0.582,
+      "contraste": 0.625
+    },
+    "restricciones": {
+      "palabras_base": 9,
+      "max_palabras_base": 12,
+      "vacio": 0.977,
+      "min_vacio": 0.3,
+      "fuentes": 2,
+      "max_fuentes": 3,
+      "anomalias": 1,
+      "nucleos": 1,
+      "cumplidas": true
+    },
+    "notas": [
+      "transformación etimológica: el antepasado dentro de la nube",
+      "transformación fonética: cada columna pierde su palabra al caer",
+      "el charco lee la palabra al revés (praeceps: caer de cabeza)",
+      "anomalía: una gota sube mientras todo cae",
+      "glosolalia: el idioma soñando consigo mismo"
+    ]
+  },
+  "lienzo": {
+    "ancho": 700,
+    "alto": 1000,
+    "fondo": "#f6f2e9",
+    "tinta": "#16130f",
+    "fuentes": {
+      "mono": "'Courier Prime', 'Courier New', monospace",
+      "sans": "Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif",
+      "serif": "'Bodoni Moda', Didot, 'Times New Roman', serif"
+    }
+  },
+  "palabras": [
+    {
+      "id": "p1",
+      "texto": "lluvia",
+      "base": "lluvia",
+      "x": 350.0,
+      "y": 96,
+      "rotacion": 0.0,
+      "tamano": 44,
+      "opacidad": 1.0,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "nucleo",
+      "anomalia": false,
+      "variantes": [
+        "pluvio-",
+        "pluvia",
+        "llovizna",
+        "quiahuitl",
+        "cháak",
+        "pluere",
+        "llover"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p2",
+      "texto": "pluvia",
+      "base": "lluvia",
+      "x": 412.7,
+      "y": 132,
+      "rotacion": 0.0,
+      "tamano": 21,
+      "opacidad": 0.75,
+      "fuente": "sans",
+      "espaciado": -0.02,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "etimología",
+      "variantes": [
+        "quiahuitl",
+        "cháak",
+        "pluere",
+        "pluvia",
+        "pluvio-",
+        "llovizna",
+        "llover"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p3",
+      "texto": "lloverllovizna",
+      "base": "llover",
+      "x": 335.28,
+      "y": 158,
+      "rotacion": 0.0,
+      "tamano": 21,
+      "opacidad": 0.63,
+      "fuente": "sans",
+      "espaciado": -0.02,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "portmanteau",
+      "variantes": [
+        "ver",
+        "lluvia",
+        "plovere",
+        "llovizna",
+        "llave"
+      ],
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ]
+    },
+    {
+      "id": "p4",
+      "texto": "precipitagua",
+      "base": "precipitación",
+      "x": 286.76,
+      "y": 184,
+      "rotacion": 0.0,
+      "tamano": 21,
+      "opacidad": 0.51,
+      "fuente": "sans",
+      "espaciado": -0.02,
+      "capa": "campo",
+      "anomalia": false,
+      "transformacion": "portmanteau",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p5",
+      "texto": "l",
+      "base": "lluvia",
+      "x": 304.57,
+      "y": 254.18,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.94,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "pluere",
+        "llover",
+        "cháak",
+        "pluvio-",
+        "pluvia",
+        "quiahuitl",
+        "llovizna"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p6",
+      "texto": "l",
+      "base": "lluvia",
+      "x": 303.71,
+      "y": 325.15,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.81,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "pluere",
+        "llovizna",
+        "cháak",
+        "llover",
+        "pluvia",
+        "quiahuitl",
+        "pluvio-"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p7",
+      "texto": "u",
+      "base": "lluvia",
+      "x": 307.2,
+      "y": 403.14,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.69,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "pluere",
+        "pluvio-",
+        "llover",
+        "cháak",
+        "llovizna",
+        "pluvia",
+        "quiahuitl"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p8",
+      "texto": "v",
+      "base": "lluvia",
+      "x": 306.03,
+      "y": 478.8,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.56,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "pluvia",
+        "pluere",
+        "llover",
+        "pluvio-",
+        "quiahuitl",
+        "llovizna",
+        "cháak"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p9",
+      "texto": "i",
+      "base": "lluvia",
+      "x": 304.98,
+      "y": 559.15,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.44,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "pluvia",
+        "llover",
+        "quiahuitl",
+        "pluere",
+        "pluvio-",
+        "llovizna",
+        "cháak"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p10",
+      "texto": "a",
+      "base": "lluvia",
+      "x": 303.44,
+      "y": 635.1,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.31,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "quiahuitl",
+        "llovizna",
+        "pluvio-",
+        "cháak",
+        "pluere",
+        "pluvia",
+        "llover"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p11",
+      "texto": "l",
+      "base": "llover",
+      "x": 472.27,
+      "y": 251.82,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.94,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "ver",
+        "lluvia",
+        "llovizna",
+        "plovere",
+        "llave"
+      ],
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ]
+    },
+    {
+      "id": "p12",
+      "texto": "l",
+      "base": "llover",
+      "x": 473.0,
+      "y": 327.26,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.81,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "plovere",
+        "ver",
+        "llave",
+        "lluvia",
+        "llovizna"
+      ],
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ]
+    },
+    {
+      "id": "p13",
+      "texto": "o",
+      "base": "llover",
+      "x": 469.62,
+      "y": 402.41,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.69,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "llave",
+        "ver",
+        "lluvia",
+        "plovere",
+        "llovizna"
+      ],
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ]
+    },
+    {
+      "id": "p14",
+      "texto": "v",
+      "base": "llover",
+      "x": 472.28,
+      "y": 476.93,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.56,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "llave",
+        "plovere",
+        "llovizna",
+        "lluvia",
+        "ver"
+      ],
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ]
+    },
+    {
+      "id": "p15",
+      "texto": "e",
+      "base": "llover",
+      "x": 469.88,
+      "y": 552.12,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.44,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "plovere",
+        "llave",
+        "llovizna",
+        "ver",
+        "lluvia"
+      ],
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ]
+    },
+    {
+      "id": "p16",
+      "texto": "r",
+      "base": "llover",
+      "x": 470.1,
+      "y": 631.4,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.31,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "lluvia",
+        "plovere",
+        "ver",
+        "llovizna",
+        "llave"
+      ],
+      "etimologia": [
+        "plovere (lat. vulgar)"
+      ]
+    },
+    {
+      "id": "p17",
+      "texto": "l",
+      "base": "llovizna",
+      "x": 228.75,
+      "y": 266.95,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.95,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "pluere",
+        "llover",
+        "lluvia"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p18",
+      "texto": "l",
+      "base": "llovizna",
+      "x": 227.42,
+      "y": 338.22,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.86,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "lluvia",
+        "pluere",
+        "llover"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p19",
+      "texto": "o",
+      "base": "llovizna",
+      "x": 226.86,
+      "y": 402.22,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.77,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "llover",
+        "lluvia",
+        "pluere"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p20",
+      "texto": "v",
+      "base": "llovizna",
+      "x": 230.48,
+      "y": 469.81,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.67,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "llover",
+        "lluvia",
+        "pluere"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p21",
+      "texto": "i",
+      "base": "llovizna",
+      "x": 231.04,
+      "y": 535.2,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.58,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "llover",
+        "pluere",
+        "lluvia"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p22",
+      "texto": "z",
+      "base": "llovizna",
+      "x": 230.14,
+      "y": 599.28,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.48,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "llover",
+        "pluere",
+        "lluvia"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p23",
+      "texto": "n",
+      "base": "llovizna",
+      "x": 229.56,
+      "y": 667.68,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.39,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "lluvia",
+        "llover",
+        "pluere"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p24",
+      "texto": "a",
+      "base": "llovizna",
+      "x": 230.86,
+      "y": 732.72,
+      "rotacion": 0.0,
+      "tamano": 13,
+      "opacidad": 0.3,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "llover",
+        "lluvia",
+        "pluere"
+      ],
+      "etimologia": [
+        "llover (esp.)",
+        "pluere (lat.)"
+      ]
+    },
+    {
+      "id": "p25",
+      "texto": "p",
+      "base": "precipitación",
+      "x": 602.27,
+      "y": 281.17,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.97,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p26",
+      "texto": "r",
+      "base": "precipitación",
+      "x": 601.5,
+      "y": 319.05,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.91,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p27",
+      "texto": "e",
+      "base": "precipitación",
+      "x": 600.84,
+      "y": 357.96,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.86,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p28",
+      "texto": "c",
+      "base": "precipitación",
+      "x": 603.05,
+      "y": 394.17,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.8,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p29",
+      "texto": "i",
+      "base": "precipitación",
+      "x": 603.32,
+      "y": 427.15,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.74,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p30",
+      "texto": "p",
+      "base": "precipitación",
+      "x": 601.67,
+      "y": 463.14,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.68,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p31",
+      "texto": "i",
+      "base": "precipitación",
+      "x": 599.7,
+      "y": 500.18,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.62,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p32",
+      "texto": "t",
+      "base": "precipitación",
+      "x": 602.3,
+      "y": 534.46,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.57,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p33",
+      "texto": "a",
+      "base": "precipitación",
+      "x": 603.2,
+      "y": 571.28,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.51,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p34",
+      "texto": "c",
+      "base": "precipitación",
+      "x": 599.44,
+      "y": 608.0,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.45,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p35",
+      "texto": "i",
+      "base": "precipitación",
+      "x": 600.0,
+      "y": 643.17,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.39,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p36",
+      "texto": "ó",
+      "base": "precipitación",
+      "x": 600.76,
+      "y": 676.98,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.34,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p37",
+      "texto": "n",
+      "base": "precipitación",
+      "x": 602.14,
+      "y": 716.22,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.28,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "praeceps"
+      ],
+      "etimologia": [
+        "praeceps (lat.): de cabeza (prae + caput)"
+      ]
+    },
+    {
+      "id": "p38",
+      "texto": "a",
+      "base": "agua",
+      "x": 335.83,
+      "y": 337.18,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.91,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "ha'",
+        "atl",
+        "aguacero",
+        "alba",
+        "hidro-",
+        "aguja",
+        "aqua"
+      ],
+      "etimologia": [
+        "aqua (lat.)"
+      ]
+    },
+    {
+      "id": "p39",
+      "texto": "g",
+      "base": "agua",
+      "x": 336.23,
+      "y": 459.6,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.72,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "alga",
+        "alba",
+        "aguja",
+        "aguacero",
+        "ala",
+        "hidro-",
+        "ha'"
+      ],
+      "etimologia": [
+        "aqua (lat.)"
+      ]
+    },
+    {
+      "id": "p40",
+      "texto": "u",
+      "base": "agua",
+      "x": 337.5,
+      "y": 588.72,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.53,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "aguacero",
+        "aqua",
+        "alga",
+        "ala",
+        "atl",
+        "hidro-",
+        "alba"
+      ],
+      "etimologia": [
+        "aqua (lat.)"
+      ]
+    },
+    {
+      "id": "p41",
+      "texto": "a",
+      "base": "agua",
+      "x": 336.39,
+      "y": 720.23,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.34,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "aqua",
+        "alga",
+        "alba",
+        "aguja",
+        "ha'",
+        "hidro-",
+        "ala"
+      ],
+      "etimologia": [
+        "aqua (lat.)"
+      ]
+    },
+    {
+      "id": "p42",
+      "texto": "g",
+      "base": "gota",
+      "x": 393.28,
+      "y": 274.91,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.91,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "rota",
+        "gutta",
+        "nota",
+        "bota",
+        "alta"
+      ],
+      "etimologia": [
+        "gutta (lat.)"
+      ]
+    },
+    {
+      "id": "p43",
+      "texto": "o",
+      "base": "gota",
+      "x": 395.98,
+      "y": 398.61,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.72,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "alta",
+        "gutta",
+        "nota",
+        "bota",
+        "rota"
+      ],
+      "etimologia": [
+        "gutta (lat.)"
+      ]
+    },
+    {
+      "id": "p44",
+      "texto": "t",
+      "base": "gota",
+      "x": 394.96,
+      "y": 532.79,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.53,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "nota",
+        "rota",
+        "gutta",
+        "alta",
+        "bota"
+      ],
+      "etimologia": [
+        "gutta (lat.)"
+      ]
+    },
+    {
+      "id": "p45",
+      "texto": "a",
+      "base": "gota",
+      "x": 393.97,
+      "y": 658.68,
+      "rotacion": 0.0,
+      "tamano": 14,
+      "opacidad": 0.34,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "bota",
+        "rota",
+        "nota",
+        "gutta",
+        "alta"
+      ],
+      "etimologia": [
+        "gutta (lat.)"
+      ]
+    },
+    {
+      "id": "p46",
+      "texto": "r",
+      "base": "rocío",
+      "x": 524.83,
+      "y": 323.26,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.93,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "rōs, rōris",
+        "rōscidus",
+        "oso",
+        "ahuachtli"
+      ],
+      "etimologia": [
+        "rōs, rōris (lat.)",
+        "rōscidus (lat.)"
+      ]
+    },
+    {
+      "id": "p47",
+      "texto": "o",
+      "base": "rocío",
+      "x": 523.39,
+      "y": 437.31,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.78,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "rōscidus",
+        "oso",
+        "ahuachtli",
+        "rōs, rōris"
+      ],
+      "etimologia": [
+        "rōs, rōris (lat.)",
+        "rōscidus (lat.)"
+      ]
+    },
+    {
+      "id": "p48",
+      "texto": "c",
+      "base": "rocío",
+      "x": 523.18,
+      "y": 556.43,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.62,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "ahuachtli",
+        "oso",
+        "rōs, rōris",
+        "rōscidus"
+      ],
+      "etimologia": [
+        "rōs, rōris (lat.)",
+        "rōscidus (lat.)"
+      ]
+    },
+    {
+      "id": "p49",
+      "texto": "í",
+      "base": "rocío",
+      "x": 523.91,
+      "y": 669.13,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.48,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "ahuachtli",
+        "rōscidus",
+        "oso",
+        "rōs, rōris"
+      ],
+      "etimologia": [
+        "rōs, rōris (lat.)",
+        "rōscidus (lat.)"
+      ]
+    },
+    {
+      "id": "p50",
+      "texto": "o",
+      "base": "rocío",
+      "x": 524.57,
+      "y": 787.13,
+      "rotacion": 0.0,
+      "tamano": 15,
+      "opacidad": 0.32,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "lluvia",
+      "anomalia": false,
+      "animacion": "caida",
+      "transformacion": "caída",
+      "variantes": [
+        "ahuachtli",
+        "rōscidus",
+        "oso",
+        "rōs, rōris"
+      ],
+      "etimologia": [
+        "rōs, rōris (lat.)",
+        "rōscidus (lat.)"
+      ]
+    },
+    {
+      "id": "p51",
+      "texto": "uia",
+      "base": "lluvia",
+      "x": 350.0,
+      "y": 862,
+      "rotacion": 0.0,
+      "tamano": 11,
+      "opacidad": 0.28,
+      "fuente": "mono",
+      "espaciado": 3.4,
+      "capa": "charco",
+      "anomalia": false,
+      "transformacion": "sedimento vocálico",
+      "variantes": [
+        "llover",
+        "pluere",
+        "pluvio-",
+        "llovizna",
+        "cháak",
+        "quiahuitl",
+        "pluvia"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p52",
+      "texto": "lluvia",
+      "base": "lluvia",
+      "x": 350.0,
+      "y": 904,
+      "rotacion": 180,
+      "tamano": 30,
+      "opacidad": 0.18,
+      "fuente": "sans",
+      "espaciado": 0.0,
+      "capa": "charco",
+      "anomalia": false,
+      "transformacion": "reflejo",
+      "variantes": [
+        "llovizna",
+        "llover",
+        "pluvia",
+        "pluvio-",
+        "cháak",
+        "quiahuitl",
+        "pluere"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p53",
+      "texto": "l",
+      "base": "lluvia",
+      "x": 160.73,
+      "y": 702.02,
+      "rotacion": 180,
+      "tamano": 19,
+      "opacidad": 1.0,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "anomalia",
+      "color": "#c8102e",
+      "anomalia": true,
+      "animacion": "ascenso",
+      "transformacion": "evaporación",
+      "variantes": [
+        "pluvio-",
+        "llover",
+        "pluere",
+        "llovizna",
+        "pluvia",
+        "quiahuitl",
+        "cháak"
+      ],
+      "etimologia": [
+        "pluvia (lat.)",
+        "pluere (lat.): llover"
+      ]
+    },
+    {
+      "id": "p54",
+      "texto": "tadad",
+      "base": "tadad",
+      "x": 109.38,
+      "y": 248.84,
+      "rotacion": 0.0,
+      "tamano": 11,
+      "opacidad": 0.55,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "glosolalia",
+      "anomalia": false,
+      "transformacion": "glosolalia"
+    },
+    {
+      "id": "p55",
+      "texto": "clinoción",
+      "base": "clinoción",
+      "x": 407.28,
+      "y": 477.77,
+      "rotacion": 0.0,
+      "tamano": 11,
+      "opacidad": 0.55,
+      "fuente": "mono",
+      "espaciado": 0.0,
+      "capa": "glosolalia",
+      "anomalia": false,
+      "transformacion": "glosolalia"
+    }
+  ]
+}

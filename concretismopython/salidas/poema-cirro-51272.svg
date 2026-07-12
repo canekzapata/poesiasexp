@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-kerning="normal">
+<!-- nefelógrafo · poema-cirro · semilla 51272 · poesiasexp / concretismopython -->
+<metadata>{&quot;meta&quot;: {&quot;instrumento&quot;: &quot;nefelógrafo&quot;, &quot;tipo&quot;: &quot;cirro&quot;, &quot;semilla&quot;: 51272, &quot;nucleo&quot;: &quot;cirro&quot;, &quot;esquizo&quot;: 0.35, &quot;puntuacion&quot;: {&quot;densidad&quot;: 0.033, &quot;vacio&quot;: 0.967, &quot;repeticion&quot;: 0.35, &quot;contraste&quot;: 0.567}, &quot;restricciones&quot;: {&quot;palabras_base&quot;: 10, &quot;max_palabras_base&quot;: 12, &quot;vacio&quot;: 0.967, &quot;min_vacio&quot;: 0.3, &quot;fuentes&quot;: 3, &quot;max_fuentes&quot;: 3, &quot;anomalias&quot;: 1, &quot;nucleos&quot;: 1, &quot;cumplidas&quot;: true}, &quot;notas&quot;: [&quot;transformación fonética: las palabras adelgazadas a su esqueleto&quot;, &quot;deriva sonora: cirro → cielo → ciento → viento → siento → cuento&quot;, &quot;transformación etimológica: «cirrus» reducido a fibra&quot;, &quot;anomalía: un nudo denso en el cielo ralo&quot;]}, &quot;lienzo&quot;: {&quot;ancho&quot;: 1200, &quot;alto&quot;: 640}}</metadata>
+<style>
+  svg { background: #f6f2e9; }
+  text { white-space: pre; }
+</style>
+<rect width="1200" height="640" fill="#f6f2e9"/>
+<g transform="translate(192.0 115.2) rotate(-14.0)" data-id="p1" data-capa="nucleo">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="26" fill="#16130f" text-anchor="middle" dominant-baseline="middle"><title>cirro ← cirrus (lat.): rizo, mechón</title>cirro</text>
+</g>
+<g transform="translate(227.96 515.94) rotate(-14.0)" data-id="p2" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="13" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.42" letter-spacing="16.77"><title>aire ← āēr (lat.) ← aḗr (gr.) · expansión</title>a  i  r  e</text>
+</g>
+<g transform="translate(706.93 124.48) rotate(-14.0)" data-id="p3" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="11" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.74" letter-spacing="19.36"><title>atmósfera ← atmós (gr.): vapor + sphaîra (gr.): esfera · expansión</title>a  t  m  ó  s  f  e  r  a</text>
+</g>
+<g transform="translate(713.1 367.84) rotate(-14.0)" data-id="p4" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="11" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.77" letter-spacing="15.62"><title>aéreo ← āerius (lat.) · esqueleto</title>r</text>
+</g>
+<g transform="translate(640.6 369.51) rotate(-14.0)" data-id="p5" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.69" letter-spacing="23.4"><title>cero · esqueleto</title>cr</text>
+</g>
+<g transform="translate(979.37 481.53) rotate(-14.0)" data-id="p6" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="11" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.77" letter-spacing="23.54"><title>cielo ← caelum (lat.); quizá de caelāre: ocultar · esqueleto</title>cl</text>
+</g>
+<g transform="translate(1010.49 246.48) rotate(-14.0)" data-id="p7" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.41" letter-spacing="25.92"><title>aire ← āēr (lat.) ← aḗr (gr.) · esqueleto</title>r</text>
+</g>
+<g transform="translate(486.1 512.25) rotate(-14.0)" data-id="p8" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.52" letter-spacing="17.64"><title>atmósfera ← atmós (gr.): vapor + sphaîra (gr.): esfera · expansión</title>a  t  m  ó  s  f  e  r  a</text>
+</g>
+<g transform="translate(698.26 371.07) rotate(-14.0)" data-id="p9" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="10" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.58" letter-spacing="12.5"><title>aéreo ← āerius (lat.) · esqueleto</title>r</text>
+</g>
+<g transform="translate(718.73 493.67) rotate(-14.0)" data-id="p10" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="11" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.56" letter-spacing="16.5"><title>cero · esqueleto</title>cr</text>
+</g>
+<g transform="translate(1050.2 235.89) rotate(-14.0)" data-id="p11" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="11" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.67" letter-spacing="20.68"><title>cielo ← caelum (lat.); quizá de caelāre: ocultar · esqueleto</title>cl</text>
+</g>
+<g transform="translate(849.95 487.88) rotate(-14.0)" data-id="p12" data-capa="fibra">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.71" letter-spacing="14.52"><title>aire ← āēr (lat.) ← aḗr (gr.) · esqueleto</title>r</text>
+</g>
+<g transform="translate(200.0 415.25) rotate(-14.0)" data-id="p13" data-capa="deriva">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" letter-spacing="7.0"><title>cirro ← cirrus (lat.): rizo, mechón · deriva sonora</title>cirro</text>
+</g>
+<g transform="translate(360.0 405.65) rotate(-14.0)" data-id="p14" data-capa="deriva">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.91" letter-spacing="7.0"><title>cielo ← caelum (lat.); quizá de caelāre: ocultar · deriva sonora</title>cielo</text>
+</g>
+<g transform="translate(520.0 396.05) rotate(-14.0)" data-id="p15" data-capa="deriva">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.82" letter-spacing="7.0"><title>ciento · deriva sonora</title>ciento</text>
+</g>
+<g transform="translate(680.0 386.45) rotate(-14.0)" data-id="p16" data-capa="deriva">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.73" letter-spacing="7.0"><title>viento ← ventus (lat.) ← *h₂weh₁- (pie): soplar · deriva sonora</title>viento</text>
+</g>
+<g transform="translate(840.0 376.85) rotate(-14.0)" data-id="p17" data-capa="deriva">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.64" letter-spacing="7.0"><title>siento · deriva sonora</title>siento</text>
+</g>
+<g transform="translate(1000.0 367.25) rotate(-14.0)" data-id="p18" data-capa="deriva">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" letter-spacing="7.0"><title>cuento · deriva sonora</title>cuento</text>
+</g>
+<g transform="translate(864.0 140.8) rotate(-14.0)" data-id="p19" data-capa="eco">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="12" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.35" letter-spacing="21.6"><title>cirro ← cirrus (lat.): rizo, mechón · etimología</title>crrs</text>
+</g>
+<g transform="translate(741.6 243.2)" data-id="p20" data-capa="anomalia">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="30" fill="#c8102e" text-anchor="middle" dominant-baseline="middle"><title>aire ← āēr (lat.) ← aḗr (gr.) · portmanteau</title>aireatmósfera</text>
+</g>
+</svg>

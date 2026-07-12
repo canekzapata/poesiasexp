@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" font-kerning="normal">
+<!-- nefelógrafo · poema-halo · semilla 42 · poesiasexp / concretismopython -->
+<metadata>{&quot;meta&quot;: {&quot;instrumento&quot;: &quot;nefelógrafo&quot;, &quot;tipo&quot;: &quot;halo&quot;, &quot;semilla&quot;: 42, &quot;nucleo&quot;: &quot;halo&quot;, &quot;esquizo&quot;: 0.35, &quot;puntuacion&quot;: {&quot;densidad&quot;: 0.025, &quot;vacio&quot;: 0.975, &quot;repeticion&quot;: 0.615, &quot;contraste&quot;: 0.787}, &quot;restricciones&quot;: {&quot;palabras_base&quot;: 10, &quot;max_palabras_base&quot;: 12, &quot;vacio&quot;: 0.975, &quot;min_vacio&quot;: 0.3, &quot;fuentes&quot;: 3, &quot;max_fuentes&quot;: 3, &quot;anomalias&quot;: 1, &quot;nucleos&quot;: 1, &quot;cumplidas&quot;: true}, &quot;notas&quot;: [&quot;transformación fonética: la deriva sonora gira en el primer anillo&quot;, &quot;transformación etimológica: los anillos son épocas&quot;, &quot;anomalía: un radio recto en un cielo circular&quot;]}, &quot;lienzo&quot;: {&quot;ancho&quot;: 900, &quot;alto&quot;: 900}}</metadata>
+<style>
+  svg { background: #f6f2e9; }
+  text { white-space: pre; }
+
+    @keyframes ascenso   { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    @keyframes caida     { 0%,100% { transform: translateY(0); } 50% { transform: translateY(9px); } }
+    @keyframes deriva    { 0%,100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
+    @keyframes parpadeo  { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+    @keyframes giro      { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(2.2deg); } }
+    @keyframes temblor   { 0%,100% { transform: translate(0,0); } 25% { transform: translate(1.5px,-1px); } 75% { transform: translate(-1.5px,1px); } }
+    .anima-ascenso  { animation: ascenso 9s ease-in-out infinite; }
+    .anima-caida    { animation: caida 7s ease-in-out infinite; }
+    .anima-deriva   { animation: deriva 12s ease-in-out infinite; }
+    .anima-parpadeo { animation: parpadeo 5s ease-in-out infinite; }
+    .anima-giro     { animation: giro 14s ease-in-out infinite; }
+    .anima-temblor  { animation: temblor 0.9s linear infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .anima-ascenso, .anima-caida, .anima-deriva,
+      .anima-parpadeo, .anima-giro, .anima-temblor { animation: none; }
+    }
+
+</style>
+<rect width="900" height="900" fill="#f6f2e9"/>
+<g transform="translate(450.0 450.0)" data-id="p1" data-capa="nucleo">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="46" fill="#16130f" text-anchor="middle" dominant-baseline="middle"><title>halo ← hálōs (gr.): era de trilla</title>halo</text>
+</g>
+<g transform="translate(600.13 473.79) rotate(279.0)" data-id="p2" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>ala · deriva sonora</title>ala</text>
+</g>
+<g transform="translate(557.47 557.49) rotate(315.0)" data-id="p3" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>hilo · deriva sonora</title>hilo</text>
+</g>
+<g transform="translate(473.77 600.13) rotate(351.0)" data-id="p4" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>alba ← albus (lat.): blanco</title>alba</text>
+</g>
+<g transform="translate(380.98 585.43) rotate(387.0)" data-id="p5" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>arcoíris ← arcus (lat.) + Îris (gr.)</title>arcoíris</text>
+</g>
+<g transform="translate(314.56 519.0) rotate(423.0)" data-id="p6" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>aurora ← aurōra (lat.) ← *h₂ews- (pie): el este</title>aurora</text>
+</g>
+<g transform="translate(299.87 426.21) rotate(279.0)" data-id="p7" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>ala · deriva sonora</title>ala</text>
+</g>
+<g transform="translate(342.53 342.51) rotate(315.0)" data-id="p8" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>hilo · deriva sonora</title>hilo</text>
+</g>
+<g transform="translate(426.23 299.87) rotate(351.0)" data-id="p9" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>alba ← albus (lat.): blanco</title>alba</text>
+</g>
+<g transform="translate(519.02 314.57) rotate(387.0)" data-id="p10" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>arcoíris ← arcus (lat.) + Îris (gr.)</title>arcoíris</text>
+</g>
+<g transform="translate(585.44 381.0) rotate(423.0)" data-id="p11" data-capa="orbita">
+  <text font-family="Futura, 'Century Gothic', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.85" class="anima-giro"><title>aurora ← aurōra (lat.) ← *h₂ews- (pie): el este</title>aurora</text>
+</g>
+<g transform="translate(410.85 696.91) rotate(369.01)" data-id="p12" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>hálōs · etimología</title>hálōs</text>
+</g>
+<g transform="translate(307.59 655.47) rotate(394.72)" data-id="p13" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>albus · etimología</title>albus</text>
+</g>
+<g transform="translate(232.54 573.34) rotate(420.44)" data-id="p14" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>arcus · etimología</title>arcus</text>
+</g>
+<g transform="translate(200.56 466.77) rotate(446.15)" data-id="p15" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>hálōs · etimología</title>hálōs</text>
+</g>
+<g transform="translate(217.99 356.88) rotate(291.87)" data-id="p16" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>albus · etimología</title>albus</text>
+</g>
+<g transform="translate(281.37 265.44) rotate(317.58)" data-id="p17" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>arcus · etimología</title>arcus</text>
+</g>
+<g transform="translate(378.14 210.55) rotate(343.3)" data-id="p18" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>hálōs · etimología</title>hálōs</text>
+</g>
+<g transform="translate(489.15 203.09) rotate(369.01)" data-id="p19" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>albus · etimología</title>albus</text>
+</g>
+<g transform="translate(592.41 244.53) rotate(394.72)" data-id="p20" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>arcus · etimología</title>arcus</text>
+</g>
+<g transform="translate(667.46 326.66) rotate(420.44)" data-id="p21" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>hálōs · etimología</title>hálōs</text>
+</g>
+<g transform="translate(699.44 433.23) rotate(446.15)" data-id="p22" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>albus · etimología</title>albus</text>
+</g>
+<g transform="translate(682.01 543.12) rotate(651.87)" data-id="p23" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>arcus · etimología</title>arcus</text>
+</g>
+<g transform="translate(618.63 634.56) rotate(677.58)" data-id="p24" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>hálōs · etimología</title>hálōs</text>
+</g>
+<g transform="translate(521.86 689.45) rotate(703.3)" data-id="p25" data-capa="orbita">
+  <text font-family="'Bodoni Moda', Didot, 'Times New Roman', serif" font-size="14" fill="#16130f" text-anchor="middle" dominant-baseline="middle" fill-opacity="0.55" class="anima-giro"><title>albus · etimología</title>albus</text>
+</g>
+<g transform="translate(606.72 638.32) rotate(50.2)" data-id="p26" data-capa="anomalia">
+  <text font-family="'Courier Prime', 'Courier New', monospace" font-size="18" fill="#c8102e" text-anchor="middle" dominant-baseline="middle" letter-spacing="61.02"><title>calor ← calor, -ōris (lat.) · radio</title>calor</text>
+</g>
+</svg>
