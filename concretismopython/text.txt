@@ -1,0 +1,252 @@
+Sí: Python sería mejor como motor generativo, y HTML/CSS/Canvas quedaría como superficie de lectura y edición.
+
+El modelo más fértil sería híbrido:
+
+Python
+
+corpus léxico;
+análisis morfológico y silábico;
+familias etimológicas;
+reglas fonéticas;
+permutaciones;
+puntuación de densidad, repetición y contraste;
+generación geométrica;
+exportación a SVG, PNG, PDF o JSON.
+
+HTML
+
+interfaz;
+edición en tiempo real;
+movimiento;
+variaciones interactivas;
+lectura responsiva;
+manipulación manual del poema generado.
+
+La ventaja decisiva de Python es que permitiría pasar de un simple distribuidor de palabras a un sistema poético con memoria léxica.
+
+Podría trabajar con varias capas simultáneas:
+
+1. Corpus léxico
+
+Cada palabra tendría atributos:
+
+{
+    "forma": "nube",
+    "silabas": ["nu", "be"],
+    "raiz": "nub-",
+    "etimologia": ["nubes", "nebula", "nephélē"],
+    "campo": ["atmósfera", "vapor", "suspensión"],
+    "sonidos": ["n", "u", "b", "e"],
+    "peso_visual": 4,
+    "densidad": 0.45,
+    "movimiento": "ascendente"
+}
+
+Así, el poema no elegiría palabras al azar, sino por relaciones:
+
+nube
+nebula
+neblina
+nuboso
+nublar
+nubilidad
+
+o por deriva sonora:
+
+nube
+sube
+tuve
+uve
+vapor
+2. Reglas constructivistas
+
+No solo “poner palabras en forma de círculo”, sino construir relaciones entre forma y sentido.
+
+Por ejemplo:
+
+ascensión      → texto vertical
+condensación   → aumento de densidad
+evaporación    → pérdida gradual de letras
+lluvia         → caída tipográfica
+viento         → desplazamiento oblicuo
+estrato        → líneas horizontales
+cúmulo         → agregación radial
+cirro          → fibras finas y dispersas
+nimbostrato    → masa oscura y descendente
+
+Esto sería muy importante: la geometría no sería decorativa. Sería isomórfica con el fenómeno.
+
+3. Operaciones verbales
+
+El motor podría aplicar transformaciones:
+
+cortar("atmósfera")
+# at / mó / sfe / ra
+
+erosionar("condensación")
+# condensación
+# ondensació
+# ndensaci
+# densac
+# ensa
+# ns
+expandir("nube")
+# n u b e
+# n  u  b  e
+# n   u   b   e
+condensar(["aire", "agua", "tiempo"])
+# aireaguatiempo
+# aguairtiempo
+# aerohidrocrono
+
+También palabras-portmanteau:
+
+vapoesía
+nubelación
+aerolengua
+cromonimbo
+hidrofonema
+luzestrato
+4. Gramática espacial
+
+En vez de frases convencionales, usaría unidades como:
+
+Nodo
+Eje
+Nube
+Órbita
+Caída
+Capa
+Vacío
+Interferencia
+Repetición
+Fractura
+
+Cada poema podría ser una composición de operaciones:
+
+poema = [
+    Capa("atmósfera"),
+    Nube("vapor", densidad=0.7),
+    Caída("lluvia"),
+    Dispersión("luz"),
+    Vacío(0.35),
+    Fractura("color")
+]
+5. Reglas tipológicas
+
+Podrías definir “especies” de poema:
+
+poema-cúmulo
+poema-estrato
+poema-cirro
+poema-frente
+poema-ciclón
+poema-halo
+poema-iridiscencia
+poema-precipitación
+
+Cada tipo tendría comportamiento propio.
+
+Ejemplo:
+
+TIPO_CIRRO = {
+    "orientacion": "horizontal",
+    "densidad": "baja",
+    "fragmentacion": "alta",
+    "trazo": "fino",
+    "repeticion": "espaciada",
+    "movimiento": "oblicuo"
+}
+TIPO_CUMULO = {
+    "orientacion": "radial",
+    "densidad": "alta",
+    "fragmentacion": "media",
+    "repeticion": "compacta",
+    "movimiento": "ascendente"
+}
+6. Restricciones poéticas
+
+El programa debería tener límites. Sin restricciones, produciría ornamento aleatorio.
+
+Algunas buenas reglas:
+
+máximo 12 palabras-base
+mínimo 30 % de vacío
+máximo 3 familias tipográficas
+una operación geométrica dominante
+una anomalía
+una palabra-núcleo
+una transformación fonética
+una transformación etimológica
+
+La anomalía es importante. Por ejemplo, en una composición horizontal, una palabra cae verticalmente. Ese quiebre crea tensión.
+
+7. Salida vectorial
+
+Lo mejor sería generar SVG, no solo imágenes rasterizadas.
+
+SVG permite:
+
+texto editable;
+escala infinita;
+coordenadas precisas;
+curvas;
+rotación;
+animación;
+exportación;
+integración con HTML.
+
+Python puede producirlo con svgwrite, cairo, reportlab o directamente escribiendo XML.
+
+Una arquitectura adecuada sería:
+
+corpus/
+    nubes.json
+    optica.json
+    atmosfera.json
+    etimologias.json
+
+motor/
+    morfologia.py
+    fonetica.py
+    semantica.py
+    geometria.py
+    composicion.py
+
+reglas/
+    cumulo.py
+    cirro.py
+    estrato.py
+    lluvia.py
+    halo.py
+
+salida/
+    svg.py
+    png.py
+    json.py
+
+web/
+    editor.html
+    viewer.js
+
+Mi recomendación sería no construir “una IA que escribe poemas”, sino un instrumento de composición, algo entre imprenta, partitura, atlas meteorológico y máquina combinatoria.
+
+Python generaría estructuras; el poeta aceptaría, desplazaría, borraría, reordenaría. El sistema no sustituiría la decisión estética: la volvería visible.
+
+La fórmula más sólida sería:
+
+corpus
++
+reglas lingüísticas
++
+reglas geométricas
++
+restricciones
++
+azar controlado
++
+intervención humana
+=
+constructivismo generativo
+
+El HTML actual puede convertirse en el editor frontal de ese motor. Python produciría un archivo JSON o SVG; el navegador permitiría deformarlo, mover nodos y editar palabras. Esa combinación sería mucho más potente que Python solo o HTML solo.
