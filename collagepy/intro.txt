@@ -1,0 +1,1 @@
+hice este generador de collages hace un tiempo, recorta img pone figuras y texto via markov, podríamos ordenarlo, y hacerlo mas funcional, por ejemplo produce grifs, podemos hacerlso mas interesante y variados, podemos intentar que tambien haga cortes de imagen más sofisticados
