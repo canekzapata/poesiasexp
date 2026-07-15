@@ -1,0 +1,2409 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Macedonio, una novela algorítmica
+Pierre HerreraTextJockeysCiudad de México, 2022
+Edición publicada con Licencia de Producción de Pares.Eres libre de compartir, copiar, distribuir, ejecutar, comunicar públicamente la obra y hacer obras derivadas. Con las condiciones siguientes: Atribución. Compartir bajo la Misma Licencia. No Capitalista.Para más información siga el enlace.
+
+
+
+
+
+
+
+
+
+MACEDONIOUNA NOVELA ALGORÍTMICA
+Pierre Herrera
+
+
+
+
+
+
+
+
+1.
+Cuando era niño imaginaba que los delfines podían hablar conmigo.
+Los delfines son seres mágicos que nos pueden enseñar cómo sobrevivir en este mundo torcido e infernal.
+Hace algunos años los delfines comenzaron a actuar de manera extraña.
+En una fiesta, un grupo de delfines, que por lo general suelen mantenerse calmados en el agua, se me acercaron.
+Hay un video donde se puede ver cómo me miraban y luego se volvían hacia la cámara, sobresaltados.
+Esos delfines en el video serían los únicos que vería alguien que llegara a la Isla de los Delfines hoy en día.
+Pero entonces los delfines y yo comenzamos a hablar de la muerte, y yo la recordé a ella, y pensé que ella pudo haber sido una criatura que vagó en mi vida por un tiempo sólo para desaparecer después con una sonrisa.
+¿O yo era esa criatura?
+
+
+
+
+
+
+
+
+
+A Oli
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hoy voa darle paz a mi corazón,por eso me peldí.
+BAD BUNNY
+
+
+
+
+
+
+
+
+27.
+¿Es posible que el Sasquatch sea un viejo anarquista que los rusos pudieron haber capturado en 1892 y enviado a Siberia?
+Aunque muchos no lo saben, existió una alianza militar estadounidense-rusa que inició en 1914 cuando los invasores alemanes tuvieron que enfrentarse a los rusos en el campo de batalla
+La primera solución de los rusos fue tratar de derrotar a los alemanes haciendo alianzas con otros países.
+Eso, además de llevar la lucha siempre a suelo soviético.
+Los chinos también operan así; su ejército hace alianzas y practica la guerrilla.
+Se decía que los chinos siempre fueron capaces de ganarle la partida a las fuerzas soviéticas en diversos frentes, pero siempre le temieron al Sasquatch, que ellos llaman «Yeran».
+Aunque si nunca se metieron con los rusos, fue porque en 1956 se dieron cuenta de que si tuvieran que usar todas sus fuerzas contra la Unión Soviética, se quedarían sin recursos muy pronto.
+Por eso decidieron que su estrategia sería simplemente desarrollar armas nucleares, para así acabar con la Unión Soviética y con el Yeran con una devastadora explosión.
+Una de las cosas más importantes que los chinos han hecho fue desarrollar armas nucleares.
+
+
+
+
+
+
+
+
+3.
+—Esta es una novela sin inicio ni final.
+—¿Cómo pueden estar seguros? —les pregunté a los delfines.
+—Es  muy evidente el abandono de la linealidad decimonónica del libro, para en cambio intentar un acercamiento algorítmico.
+—Un libro que se puede leer desde cualquier punto y puedes avanzar hacia cualquier dirección, lo imagino más cercano a un cúmulo de leyendas unidas por un tenue hilo de palabras que a una novela.
+—Una novela también puede moverse lejos de… lejos de esa visión de la narrativa, y de la historia de la humanidad; es decir, puede ser el resultado del descuido, el caos y la incertidumbre; una novela que en lugar de traer historias a la luz, las oscurezca, las vuelva raras y alegóricamente distantes.
+—¿Una escritura no-humana?
+—I iiii ii i i i iii iiii.
+—Una novela matemática, donde la técnica cree logos: tecnología de de relaciones celestes.
+—Lo sabemos.
+Dejé de teclear unos segundos; después continué:
+—Nosotros estuvimos ahí cuando los hombres dijeron: «hemos venido a conquistar el mundo» —dijeron los delfines—; los vimos con escepticismo y nos alejamos nadando, vimos a esa gente pensar que habían llegado a un continente extraño, en el que todo era extranjero, pero aquí estábamos, hemos vivido aquí por cientos de millones de años.
+—No quiero demostrar nada con esta escritura.
+—Especialmente hay personas que ven el libro como un medio para atacar, para presentar de un argumento y llegar a algún tipo de conclusión; en eso se ha convertido el mundo.
+—Esta novela es un intento por rechazar de ese mundo.
+—Una novela, sí…
+—I ii iiii i i iiii —dije yo, resignado.
+
+
+
+
+
+
+
+
+22.
+En mi blog también he escrito todo lo que pienso acerca de las drogas, la política y el punk.
+También escribí de otras bellas rarezas del mundo.
+De las que aprendí que se necesita ver, escuchar y leer.
+Todo, a todas y todos.
+Querido lector, gracias por darte la oportunidad de ver, escuchar y leer.
+El mundo está lleno de música extraña de la que no se puede entender el significado, porque sólo está allí por diversión.
+Y eso es lindísimo, que sólo esté ahí porque sí.
+Porque no hay música mala.
+Ni siquiera la música de fondo —aquella que ya casi nadie escucha— es mala.
+La música de fondo es sólo un reflejo de la persona junto a usted y los sentimientos de ambos.
+La música de fondo no es más que otra forma que alguien encontró para relacionarse con otras personas.
+Todos somos capaces de ver esta música en los ojos de los demás, escuchar con los oídos de otras personas, experimentarla con placer, a veces incluso con miedo; relacionar esa música con alguien en nuestra vida.
+Nadie puede elegir con quién se compartirá estrechamente la música de fondo.
+Yo no me aburro cuando escucho ese tipo de música; al contrario, me gusta elegir una ventana, subir el volumen y mirar a la belleza de la multitud.
+
+
+
+
+
+
+
+
+31.
+«La amistad es como el amor», le dije.
+«Yo no tengo amigos», me dijo.
+Después, Molly trató de explicarme la clase de amor que viene después de una ruptura, y cómo a todos sus amigos los había perdido así.
+Y ahí, en ese momento, se dio cuenta exactamente de lo que debía hacer.
+Se fue al gimnasio un par de horas. 
+Fue a nadar.
+En un momento, mientras nadaba, pensó que echaba en falta algo importante, y se dijo a sí misma que estaba bien sentir eso, que no había nada que hacer que no hubiera hecho ya.
+Mientras tanto, yo imaginaba que sabía algo de ella y estaba enamorado.
+No todo, claro; jamás lo iba a saber todo, y eso era fantástico.
+Pero mucho más de lo que alguna vez imaginé que sabría, eso sí.
+Pensé una y otra vez que si sabía algo, era que ella era hermosa y que era alguien que nunca olvidaría.
+También pensé que sentir amor está muy cerca de la decepción.
+Amar está encantadoramente cerca de sentirse decepcionado, pensé enseguida.
+Si yo sentía algo parecido al amor por ella, entonces…
+Mientras dura, el amor de todo hace placer; cuando se va, nada deja que no duela.
+Eso pensé y después le mandé un mensaje por chat a Molly.
+«El amor hace y después deshace; pero a la mitad, en el centro, lo tenemos todo».
+
+
+
+
+
+
+
+
+25.
+Tal vez los delfines son una especie de híbridos malignos.
+Los delfines tienen su propio idioma; un lenguaje misterioso y no sólo porque es muy muy complejo.
+La lengua de los delfines tiene una comprensión tan compleja de su medio ambiente y el océano alrededor de ella, que sobrepasa cualquier entendimiento por parte de la comunidad científica que la estudia.
+Me gusta pensar que esta lengua es tan misteriosa y mística como el antiguo idioma que los antiguos purhépechas usaban para sus rezos y maleficios.
+Pero es muy difícil saberlo a ciencia cierta.
+Hay muchas teorías que podrían explicar lo que pasa con los delfines.
+PS. Si deseas conocer más historias locas como la de los delfines, echa un vistazo a las historias del mastodonte del Pacífico, el tiburón de los abismos, el tiburón que vino del espacio, el monstruo del mar perdido de la Atlántida.
+Necesitarás un navegador que soporte HTML 6 para ver ese contenido.
+Tal navegador, inspirado en los delfines, se encuentra en la Deep Web.
+«La red de los sueños más profundos», la llama Molly.
+Esta web profunda contiene toneladas de cosas impresionantes: cosas extrañas, cosas extrañas, cosas extrañas.
+Pero, ¿qué significa realmente la Deep Web?
+Bueno, la gente y las empresas la utilizan para esconderse de sus proveedores de servicios de internet (y de la policía), ya que permite realizar comunicaciones privadas con todo tipo de gente.
+Es un lugar donde se pueden comprar armas cibernéticas, medicamentos, juguetes sexuales, drogas, delfines.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.
+¿Cuán diferentes son el ADN humano y el ADN delfín?
+La idea de los delfines como la mayor inteligencia entre mamíferos es muy controvertida.
+Los científicos que estudian el comportamiento de los delfines han descubierto un nivel de complejidad inusitado.
+Se cree que humanos y delfines están genéticamente programados para responder a estímulos sensoriales más o menos de forma sincrónica; por ello se ha concluido que los delfines tendrían una inteligencia muy similar a la de los humanos.
+Es decir, serían como humanos en lo que se trata a respuestas sensoriales.
+Aún más intrigante es el hecho de que, incluso cuando los delfines se comportan de la misma manera que lo hacen los humanos en presencia de diferentes estímulos, responden en su propia manera particular.
+Lo que a una persona la exasperaría, a un delfín le provocaría el deseo de cantar.
+Lo que a una persona la estresaría, a un delfín le provocaría risa.
+Lo que a una persona la entristecería, a un delfín le provocaría hacer una pirueta sobre el mar.
+«Estrategias delfínicas de la emociones», las llamó un científico.
+Y esas estrategias probablemente dieron lugar, hace millones de años, a diferencias mucho más grandes en el comportamiento, las emociones y en el razonamiento.
+Tal vez humanos y delfines no sean muy diferentes.
+Pero pareciera que los delfines se toman todo con más tranquilidad.
+
+
+
+
+
+
+
+
+4.
+En la prepa, solía ​​pasar mi tiempo libre en internet, leyendo sobre anarquismo y teorías de conspiración.
+Leí un montón de cosas históricas y una gran cantidad de textos académicos que se escribieron sobre todo en los años 20s.
+Recuerdo que leí algo sobre las purgas de Stalin escrito entre los años 40s y 50s.
+Para mí como lector, los años 50s no estuvieron mal, aunque algunos de mis amigos no lo sientan de la misma manera.
+Leyendo sobre las purgas, fue la primera vez que creí entender un poco de qué trataba el punk.
+Tenía un grupo de amigues punks.
+Recuerdo diciéndoles, para presentarme, que conocía algunas cosas sobre anarquismo, ciertas teorías de conspiración y que para mí los años 60s habían sido musicalmente emocionantes; elles me dijeron que sólo escuchaban música de los 70s y 80s.
+Este grupo de amigues era el único grupo de punks en la prepa.
+En estos momentos me siento bastante mal por no estar con elles y por no saber, tampoco, nada sobre sus vidas.
+En esos años, para mí, el punk también eran guitarras, bajos y beber cerveza.
+En esos años había una muy pequeña comunidad punk en la ciudad y pocas bandas con los mismos integrantes rotando.
+Recuerdo que la primera vez que compré un disco de punk Molly estaba ahí.
+
+
+
+
+
+
+
+
+5.
+Sin embargo, sólo escribí un blog.
+Podría decirse que lo hice como una broma, pero, en realidad, quien lo lea verá que lo hice en serio.
+La primera entrada del blog fue sobre cómo me acerqué al anarquismo.
+Hablaba de una noche muy profunda que atravesé escuchando punk y techno.
+Hablaba de Molly, ciertamente.
+En ese primer post, acerca de «cómo llegué a ser anarquista», escribí:
+«Así me uní al anarquismo, porque no lo entiendo... así como estoy en este mundo desconocido, así ahora estoy leyendo filosofía anarquista».
+Así, decidí tratar de contestar algunas preguntas:
+1. ¿Por qué el anarquismo?
+2. ¿Quién es anarquista?
+3. ¿Cuál es nuestro lugar en este mundo nuestro?
+Esas preguntas no hicieron esa entrada del blog interesante.
+Lo que sí fue interesante es que varias personas me escribieron.
+Me escribieron cosas como:
+«La gente debería tener más poder».
+«Creo que deberíamos tener más injerencia para tomar decisiones y determinar nuestras vidas».
+«Tendremos más energía si tomamos nuestras propias decisiones».
+«El anarquismo debe ser capaz de capacitar a las personas a ser más conscientes en sus decisiones».
+Entonces descubrí el anarquismo en internet y su comunidad.
+
+
+
+
+
+
+
+
+6.
+Solía ​​ver las luces de neón de la ciudad con Molly.
+Molly era una punk.
+Molly era un año mayor que yo.
+En la prepa siempre llegaba tarde; a pesar de eso era la más inteligente y más admirada.
+Molly no quería buscar ni tener trabajo y su padre y madre nunca la presionaron por ello.
+Ella no quería salir de casa, no quería ver a nadie, no quería ver cómo la gente se lastima entre sí.
+Pero también mantenerse en aislamiento puede lastimarte.
+Ella siempre trató de hacerme sentir bien cuando iba a verla.
+Fue entonces cuando me di cuenta de que Molly siempre había sido divertida y atractiva, pero se prefería mantener alejada de las personas.
+Ella era una chica que años atrás se había encargado de muchas cosas que tal vez no le correspondían.
+«Eres muy buena en todo», le dije un día.
+«¿De qué estás hablando?», me pregunto.
+«Nada, sólo quiero hacerte saber lo que pienso de ti», le respondí.
+
+
+
+
+
+
+
+
+7.
+La conocí en la comunidad punk de internet, cuando ella era una de las punk más admiradas.
+Molly era intensa, era una punk feminista que hablaba de frente y fuerte, muy apasionada acerca de sus creencias.
+Estaba total, absolutamente convencida de que existía opresión en América y que las personas no estaban tomando las decisiones adecuadas al respecto.
+Creía que las personas deberían estar trabajando juntas para hacer «que las cosas no terminen así».
+Yo creo que eso es exactamente lo que sucederá.
+Al menos, en mi caso, me esfuerzo para dejar atrás mi ostracismo.
+Como alguien que creció en torno a grupos punks y que pasó mucho de su tiempo libre muy cerca de estos, puedo decir que conocí a bastantes líderes punks a través de internet o en tocadas o en reuniones o en fiestas, y en general una de sus más grandes motivaciones es acabar con el patriarcado.
+En otras palabras: aquellas personas oprimidas por éste, le pasarán por encima y destruirán el sistema de clases y todas las instituciones de poder, hasta llegar a un espacio libre de cualquier tipo de opresión.
+Punk, para mí, era una expresión para hablar de la voluntad de las personas que se expresan libremente y en comunidad.
+
+
+
+
+
+
+
+
+8.
+En internet Molly se llama a sí misma América Scarfó.
+Su nombre es el de una anarquista argentina ya casi olvidada.
+Cuando le pregunté el porqué de ese homenaje, ella se me quedó mirando unos segundos.
+—También he utilizado internet como un foro de pensamientos personales sobre cosas como la política, las relaciones personales, mis sentimientos y otros pensamientos.
+Después me contó quién había sido América Scarfó.
+
+Yo escuché la historia y, al acabarla, Molly siguió hablando y yo escuchando.
+—Tenemos que actuar, en todos los momentos de la vida, de acuerdo a nuestro modo de ver y de pensar, de manera que los reproches o las críticas de otra gente encuentren a nuestra individualidad protegida por los más sanos conceptos de responsabilidad y libertad, en una muralla sólida que haga fracasar esos ataques.
+—…
+—Por eso debemos ser consecuentes con nuestras ideas.
+—…
+—Creo que, gracias a nuestra libre acción, individual o colectiva, podremos llegar a un futuro de amor, de fraternidad y de igualdad.
+—…
+—Deseo para todos lo que deseo para mí: la libertad de actuar, de amar, de pensar; es decir, deseo la anarquía para toda la humanidad.
+—¿Crees que esto pase cuando internet se convierta en un espacio seguro?
+—Yo creo en la vida nueva, no en el miedo.
+
+
+
+
+
+
+
+
+9.
+«Mi música favorita es ruidosa», dijo ella.
+Esa música hace que las personas hagan locuras, dijo ella.
+«Ruidosa» significa que podría ser molesta para muchas personas pero para otras no.
+Molly me dijo: «no estás escuchando las cosas más importantes; tienes que concentrarte en lo realmente importante».
+
+
+
+
+
+
+
+
+10.
+De hecho, Molly no es su nombre real.
+Y mi nombre no es tampoco mi verdadero nombre.
+Esta es una novela.
+Escribo novelas donde aparecen personas que existen y que no existen.
+Pero no puedo decirles cómo escribir una novela.
+Escribirla es aprender a imaginarla y escribirla.
+Así que escribí esta novela.
+Es raro, de hecho, decir que este es un libro propio.
+Libros propios… no creo que existan.
+Este libro se escribió entre una máquina y un ser humano.
+Este libro se publicó recientemente.
+Uno de los principales temas del libro fue que el autor se encontró cara a cara con su verdadero yo en el libro.
+
+
+
+
+
+
+
+
+11.
+Ella ya no está aquí.
+Ahora, ella es el fantasma de su música, sus libros y sus subrayados.
+Pero no es ella.
+No es completamente ella y nunca lo será.
+Su música me recuerda que no se trata de que escuchar cierto género te vuelva fresco o popular; la música es un camino.
+Los fantasmas de las personas no son su legado.
+Ella me decía que quería casarse a los 35 y divorciarse a los 39.
+Yo no entendía ese movimiento de unión y separación premeditada.
+Pensaba, para qué hacer algo que desharás después.
+Hasta que entendí que es la idea del camino la que hace el camino y no lo que se haga o deshaga, simplemente me parecía un plan insólito.
+Pero hay tantas vidas por vivir.
+Y no hay maneras de evitar morir.
+Lo último que me escribió fue hace unas semanas; me contó de una excursión por la selva, del miedo que suscita, de salir a la luz, de un viaje tan salvaje que perdió su voz.
+
+
+
+
+
+
+
+
+12.
+Le envié una solicitud de amistad a Molly por Facebook y no sucedió nada.
+No respondió.
+Seguro mis solicitudes de amistad no funcionan, pensé.
+Para mi sorpresa, esa solicitud ni siquiera fue aprobada por Facebook porque el perfil de Molly no era un perfil sino un virus, pero eso lo supe después.
+Cuando quise eliminar la solicitud para volverla a mandar recibí un mensaje diciendo que la solicitud original no existía.
+Entonces fui al chat de Facebook y descubrí que ya no tenía amigos ahí.
+«¿Cuál fue el problema?», pensé.
+Hice click en «Añadir amigos» y sólo me aparecía una solicitud de Molly.
+No entendí por qué estaba recibiendo una solicitud de amistad de un perfil que parecía no existir.
+Di click en «Aceptar solicitud».
+Facebook se cerró y nunca pude volver a utilizar esa cuenta.
+Me llegó un mail de Molly al día siguiente diciendo: «Hackeé tu cuenta porque esto es lo que Facebook puede hacer con tus datos!», abajo había un link encriptado.
+Leí lo que había al seguir el enlace y me sentí feliz de que el perfil de Facebook de Molly fuera un virus.
+Al otro día la vi en la prepa y platicamos de las solicitudes de amistad y de cómo usarlas para hackear las cuentas de Facebook de cualquier persona.
+
+
+
+
+
+
+
+
+13.
+Era un lunes que parecía ser como otro lunes, pero ese día Molly me envió un SMS.
+Tomé mi celular y le respondí:
+«gracias!!! (/ω＼)»
+Luego recibí un mail de ella, que decía: «Gracias por la música que compartimos.
+»Por favor, no la borres de tu disco duro.
+»Lo siento por cualquier cosa que te haya hecho sentir triste.
+»Si quieres ser una canción, hazlo».
+Esa última línea del mensaje me pareció misteriosa y bella.
+Traté de contestarle, pero el mail desde el que me escribió parecía no existir.
+Mi mail de respuesta rebotó mil veces.
+Pensé en una canción que escuchas y te gusta, pero no sabes qué canción es y nadie a tu alrededor lo sabe y la canción se pierde para siempre.
+Una canción que se pierde para siempre en algún lugar mágico, invisible.
+Me pregunté si Molly tenía ese hábito de enviar mensajes y luego desaparecer sin dejar rastro.
+¿Ella me extrañaba?
+¿Me mandó un mail que no quería enviar?
+No creo en los mensajes de fantasmas, pero voy a admitir que me sentí un poco incómodo.
+Me acordé de lo que pasó con la canción «Weird All» de Yankovic.
+Quise reproducirla pero no la encontré por ningún lado.
+Escribí otro mail de respuesta y lo borré al terminarlo.
+Me fui al baño con todas mis dudas.
+Estaba confundido.
+
+
+
+
+
+
+
+
+14.
+En su libro Una novela que comienza, Macedonio Fernández escribió la palabra «amor» 99 veces.
+Esa palabra parece importante ahora.
+Es aquello que ninguna persona o entidad puede negar o incluso esperar negar.
+Lo primero que debería saber cualquier persona que desee entender la relación entre el amor y el odio es que el amor es sólo una cara de un concepto más amplio.
+Hay siempre algo más allá del amor.
+Hay más.
+Hay muchas versiones y aspectos del amor.
+La verdad es que detrás del amor hay amor.
+Aún así, el amor no es un concepto absoluto.
+Pero no hay nada en éste que no sea verdad.
+El amor es un proceso que siempre está contigo.
+«Cada segundo de su vida es un amor», escribió Macedonio.
+También escribió: «Es un proceso eterno, siempre cambiante en su propio derecho».
+
+
+
+
+
+
+
+
+15.
+Los delfines llegaron flotando a donde yo estaba.
+Y me dijeron: «La complejidad solía ser una palabra un tanto mundana, un antónimo de simplicidad.
+Ahora se ha convertido en algo un poco más… algo que sale de la vida cotidiana; en lugar de ser una declaración simple, ahora es un postulado estético». 
+—¿Disculpen? —les dije.
+—¿Qué pasaría si?... Ya sabes, ¿puede suceder esto?...
+Y comenzaron a levitar y a dar vueltas a mi alrededor.
+—Todo depende de tu perspectiva, etc.
+No entendí de qué estaban hablando.
+—¿Qué significa «significa»? —preguntó uno.
+—Complejidad —dijo otro, o eso escuché dentro de mi cabeza.
+—Los seres vivos que la utilizan para describir su propia vida están acostumbrados a tener que probar un hecho.
+—I iiii ii i iii i i i.
+—Iiiiii iiiii i i i iiiiiii.
+—Es algo que ha sido impuesto, impuesto por un pensamiento matemático.
+Suspiré.
+Los delfines comenzaron a elevarse.
+—Complejidad, se ha convertido en una especie de estándar para las personas que no conocen nada mejor y no saben que debemos probar y hacer cosas sin saber nada, experimentar…
+Y así como llegaron, se fueron los delfines.
+
+
+
+
+
+
+
+
+16.
+Una madrugada estaba escribiendo en mi blog cuando me llegó un mensaje.
+«Hey! (=⌒‿‿⌒=) quieres una de mis playeras? puedes pedirlas a través de mi correo electrónico (las hago a pedido): lindasplayeras@hotmail.com».
+En ese mismo momento recibí un paquete: era una playera amarilla.
+Entonces me di cuenta de que ella estaba afuera de mi casa.
+No podía creer lo que estaba pasando.
+No podía dejar de mirarla...
+Llevaba puesta una playera igual a la que recibí.
+Estábamos a mitad de abril.
+Yo estaba como: WTF?!?
+Ella después me dijo que no afirmara nada, que todo era parte del azar.
+«Todo es azar para mí», dijo ella.
+Regresé a mi computadora y pedí una playera negra con unos delfines rosas.
+En seguida recibí una respuesta: «sí, puedo hacer eso».
+«Es increíble, ¿verdad?, que haya pasado todo esto», me dijo ella después.
+Entonces me di cuenta que todo estaba relacionado de alguna manera.
+Me sentía tan emocionado que esa noche soñé que lloraba, lloraba mucho por todo lo que había vivido hasta ese momento.
+Después seguí revisando mi correo electrónico, esperando noticias de mi orden.
+Pasaron dos semanas cuando llegó; en ese momento estaba con Molly.
+Ella se emocionó cuando llegó la playera, y quería quedársela.
+Se la puso, se tomó una foto y la subió a su página web.
+
+
+
+
+
+
+
+
+17.
+«¿Has visto Sailor Moon?», me preguntó.
+»Sailor Moon es una película estrenada este año que se comenzó a producir hace veinte años.
+»Se trata de una historia de ciencia ficción china sobre dos hermanas, Sailor Moon y Sailor Neptune, que quieren ser astronautas.
+»Sailor Moon también fue producida por Hiroyuki Sawano, la creadora de una de las mayores franquicias de anime de todos los tiempos con el mismo nombre.
+»La película tiene muchas similitudes con la serie japonesa Sailor Moon, y es difícil ver estas similitudes como una coincidencia.
+»La cultura china siente mucha inspiración por cosas fuera de su propia cultura.
+»Los chinos están muy interesados en ver a las y los jóvenes tener éxito en la ciencia.
+»He visto a muchas personas que están trabajando duro para tratar de tener éxito, como en Sailor Moon», me dijo ella.
+«De hecho, conozco a muchas cosplayers de Sailor Moon y Sailor Neptune.
+»Yo quiero ser la versión más perfecta de mi heroína», dijo después.
+«¿Y cuál de las dos sailors sería esa?», le pregunté.
+«Mejor te voy a contar la historia de un personaje de una película que también me gusta», dijo.
+«Es una personaje de la película Memento, es una científica; este personaje inventó algo llamado la Rhinosphere.
+»Para mi sorpresa y terror, la Rhinosphere era básicamente una batería gigante; pero a pesar de que la batería estaba hecha de aluminio, la Rhenosphere consumía una gran cantidad de energía de la vida cotidiana.
+»La gente entonces no podía hacer lo que deseaba sino sólo lo que les pedían que hicieran.
+»La científica encuentra la manera de hacer explotar la batería, pero el costo es grande; y aún así lo asume.
+«¿Cuál era ese costo?», le pregunté.
+Ella entonces hizo un ademán con sus manos como de Sailor Moon, pero no de la película china sino la de la serie japonesa.
+
+
+
+
+
+
+
+
+18.
+«Vivimos dentro de un sueño», me dijeron dos delfines.
+Y nuestros sueños son tan vívidos —nuestros sentidos tan fuertes que nos pueden conducir a la locura.
+Podemos ver y sentir y vernos en imágenes, y podemos soñar y hacer que las cosas sucedan; ese es el mundo de la experiencia onírica.
+Pero si hay algo que decir sobre los sueños, es sobre aquello que hace que nuestros sueños se sientan como un verdadero sueño.
+En el mundo de los sueños, podemos soñar con las mismas cosas que en la vida real, incluso si nuestros ojos están cerrados.
+El verdadero sueño es estar en nuestros sueños y soñar con las mismas cosas que hacemos en el mundo real, o al menos de otra manera a como las vemos y sentimos en la realidad.
+Esos sueños nos permiten ser felices y todo, pero no infelices.
+Sueños que conducen a la felicidad y viceversa.
+Felicidad que conduce a la locura y viceversa.
+Pero hay un punto en los sueños, en que al pensar sobre la naturaleza de éstos, dejan de ser reales.
+Entonces se puede decir que pensar en el sueño, deshace el sueño.
+Los sueños, como el mundo real, toman algunos eventos y con ellos alimentan al subconsciente hasta que el subconsciente los desarrolla por sí sólo, como una máquina a la que se le dan instrucciones y después se acciona.
+Y, al igual que con las novelas, los sueños más realistas no son nuestros sueños más realistas.
+
+
+
+
+
+
+
+
+19.
+Ese lunes, soñé que el amor era algo que sólo se podía intercambiar por más amor.
+Y nadie sabía de dónde salió tanto amor en un principio, o si se reproducía sin afectar su valor.
+Pero ella no había estado en mi sueño.
+O sí, pero no lo recordaba.
+El martes soñé que le preguntaba si quería venir a mi casa.
+Mi único pensamiento era que tal vez ella estaba tratando de mantenerse lejos de mí, por mi timidez, o porque creía que yo estaba tratando de mantenerme lejos de ella.
+Hubiera querido sentir que estábamos más cerca, pero pensé que ese es el tipo de cosas que uno no dice sino que siente.
+La idea de que yo tenía que procurar estar más cerca de ella era aterradora.
+Su cabello agitado por el viento, sus piernas sacudiéndose mientras bailaba, sus ojos en busca de algo que parecía estar esperando.
+Mis sueños eran pensamientos interrumpidos todo el tiempo por imágenes de Molly.
+Sus muslos.
+Su espalda.
+Su mano tomando una taza de café y la otra acariciando mi cabeza.
+En el sueño, ella estaba de pie tan cerca de la puerta que sentí que en cualquier momento saldría.
+Me acerqué a la puerta pero no había nadie ahí.
+Ese no había sido un sueño cualquiera.
+El del miércoles fue un sueño diferente.
+
+
+
+
+
+
+
+
+20.
+Escuchamos música punk todo el día y consumimos altas dosis de LSD.
+Nos sentíamos cómodos en nuestra propia piel.
+De alguna manera, sabíamos que siempre seríamos amigos con nuestros cuerpos.
+Tratábamos de conectar con los demás, incluso a través de un pensamiento.
+Un acordé, un final de canción.
+Cuando no estábamos haciendo eso, era difícil recordar nada tan cierto como lo que sentíamos.
+Nos gustaba mucho «Loser» de The New Pornographers.
+Nos sentíamos así juntos, Molly y yo, en el piso de su cuarto. 
+Nos sentíamos como los perdedores de cuerpos.
+Como los jinetes del aire.
+Como los que logran tocarse con un pensamiento que los une.
+
+
+
+
+
+
+
+
+21.
+Platicar con Molly era como una droga.
+En las madrugadas platicábamos por Facebook sobre los libros que estábamos escribiendo.
+En mi novela aparecían delfines.
+Eso a ella le parecía un poco siniestro e incomprensible, pero me decía que eso era precisamente lo que la atraía.
+Su novela era más parecida a una autobiografía.
+Si las autobiografías fueran, más que hechos, sensaciones.
+Yo nunca había leído lo que escribía Molly, así que siempre le preguntaba por la mayor cantidad de detalles para hacerme una idea de su escritura.
+Escribo de esto y aquello, ya sabes, me decía.
+Pero yo no sabía y siempre le preguntaba:
+—¿Qué has escrito últimamente, Molly?
+Una noche me leyó algo que acababa de escribir:
+«Cuando era más joven recuerdo haber leído un libro sobre nada.
+»Era un libro sobre el cielo, sobre cómo se mueve el cielo sobre las personas.
+»El mismo cielo, moviéndose sobre los diversos sueños de todas las personas.
+»Pensé que si yo no fuera yo, también viviría sobre esta tierra bajo ese cielo.
+»Wow, no sé que más decir, creo que sería bueno decir quién escribió esa obra, o cómo se llamaba, pero realmente no lo recuerdo, y para este recuerdo esa información no es importante.
+»Creo que el miedo más terrible que tengo es hacerme de un cuadro claro y preciso del mundo; prefiero los misterios.
+»Suena fácil de decir, pero una debe vivir con la incertidumbre como una niebla sobre todos los aspectos de la vida.
+»No está mal; es divertido, pero a veces da miedo.
+»En nuestra sociedad hay una gran cantidad de personas que tienen miedo de salir y ser diferentes.
+»Pero vivimos todos aquí, así que qué mierda importa eso.
+»Si todo el mundo pudiera acercarse a nuestro lado sabría qué importante es un abrazo en una situación terrible».
+
+
+
+
+
+
+
+
+23.
+Decidí escribir un poco más acerca el hacktivismo.
+Me empeñé y escribí una novela que titulé «Nadie debería hackear nada nunca», donde describí cómo sería mi vida si no pudiera hackear más, y la libertad solo fuera una forma de soñar.
+Era una historia de ciencia ficción donde los delfines hablaban y podían hacker la mente de las personas.
+Era una novela que hubiera preferido programar como videojuego.
+También he creado esta página web y un blog con enlaces a más cosas que he escrito aquí y allá.
+Espero escribir más y publicarlo en internet.
+Si alguien estuviera interesado, podría hacer un podcast que se llame «Un año en la vida», y si no, escribiré todos los días en mi blog durante un año.
+No he hecho nada de esto por ostracismo y por seguir hackeando; pero hay días que quisiera publicar cosas públicas como cualquier otra persona.
+Soy anarquista.
+El anarquismo no es una filosofía política vaga, en realidad tiene un gran potencial de utilidad.
+El anarquismo se trata de vivir en igualdad de condiciones con todas las personas y con todas las especies.
+La manera de hacer esto posible no implica una filosofía extraña; se trata más bien de ponerla en práctica.
+Escribí un poco de mi historia tratando de entender eso.
+Escribí para tratar de escapar de mi aislamiento y porque no tenía a nadie con quien hablar durante ese tiempo que me sentía tan solo.
+Escribí mi historia de soledad para recordar, para alejarle, para curar mi corazón.
+
+
+
+
+
+
+
+
+24.
+Había leído algunas novelas de cifi.
+Empecé a escribir mi propia novela cuando era muy joven.
+El protagonista de mi novela era Xiao Shuo.
+La historia que escribí era sobre alguien que está a punto de volverse astronauta, después es astronauta y luego deja de serlo.
+En realidad, lo más importante es lo que le pasó después de vivir en la Luna con radiación, durante meses y meses.
+En esa novela, conté cómo imaginé que era vivir en la Luna y, después de aterrizar en la superficie de la Tierra, cómo se sentía respirar aire fresco de nuevo.
+Xiao Shuo era joven y fresco cuando llegó a la estación espacial.
+«Por primera vez en mi vida puedo estar en silencio».
+Eso es lo que escribe Xiao Shuo en su diario la primera vez que llega a la estación espacial.
+Es gracioso, tener que ir a la Luna para no escuchar nada.
+No escuchar a nadie.
+Después de eso, Xiao Shuo se queda atorado en la estación y tiene que vivir ahí durante semanas, que se vuelven meses.
+Después regresa a la Tierra y se siente incómodo con todas las personas, porque él sólo quiere volver a sentir ese silencio.
+Yo tengo 30 años ahora y creo que nunca he estado en un lugar donde pueda decir: «aquí puedo estar en silencio».
+De esa novela que escribí no queda nada.
+
+
+
+
+
+
+
+
+26.
+Serotonina, Sasquatch, soledad y otras palabras con «s».
+También googleé: «cómo hacer una bomba molotov»
+No sé cómo, pero a veces me parece que van a incendiarse todas las calles de un momento a otro.
+En algunas calles crece una hierba negra.
+Cuando salgo mantengo mi cabeza en alto y simplemente la ignoro.
+Todo el tiempo estoy mirando al espacio, en dirección de grandes y hermosos planetas.
+Siempre miro hacia el espacio.
+Si puedo ver algún planeta, bien; pero casi siempre veo estrellas porque de verdad están muy cerca.
+Las estrellas son soles —otra palabra con «s»!
+A veces digo una oración cuando miro al espacio y pido por la Tierra.
+Las palabras que utilizo cuando digo esta oración son «convoco a la memoria de los muertos para que protejan la imaginación de los vivos».
+A veces tengo una sensación increíble cuando termino de decir esas palabras.
+
+
+
+
+
+
+
+
+28.
+¿Es posible que el Sasquatch sea un antiguo hacker?
+Estoy bastante seguro, aunque también tengo otras teorías.
+Estoy seguro que es un hacker por su maestría en la evasión y la confusión.
+Es como si por milenios se hubiese especializado en detectar los fallos de seguridad en los sistemas humanos de información.
+Un ser dedicado a molestar la idea totalizadora del pensamiento occidental sobre el mundo y la realidad.
+Un enigma delicioso.
+No estoy sugiriendo que el Sasquatch esté en la Tierra para robarnos; incluso podría ser al revés.
+Hay una teoría que dice que esta forma de vida es una de las civilizaciones extraterrestres que viven en la Tierra.
+Me parece improbable, además, la vida en la Tierra es tan vasta y desconocida que la humanidad desconoce más vidas de las que conoce.
+Y si las conociera, ¿podría comunicarse con éstas?
+De todas formas...
+Voy a dejar que hagas tu propia decisión acerca de lo que significa el Sasquatch para tu sistema de creencias.
+
+
+
+
+
+
+
+
+29.
+¿La soledad hacker es como la soledad de quien escribe?
+¿Qué pasa si no puedo hablar con nadie más que conmigo?
+Pero es muy difícil para un hacker sentir que está solo.
+Quien escribe tampoco lo está.
+¿Se puede estar solo, realmente?
+La comunidad hacker se comunicaba en sus inicios a través de computadoras y teléfonos; hoy en día existen redes de comunicación que los vinculan con toda la población.
+Y sin embargo, muchas y muchos aún se sienten aislados.
+La mayoría de la gente tiene la sensación de siempre estar recibiendo mensajes que no les gustan, de personas que ni siquiera les caen bien o conocen sólo de internet.
+Esto implica personas muy susceptibles a la manipulación.
+Nuestros sentimientos y la sensibilidad son tan importantes para nuestras vidas que tiene sentido que esta red de comunicación se volviera tan grande y por lo tanto más vulnerable a ciberataques e intimidación cibernética.
+Muchas, millones de personas, han dado el salto a las redes sociales, a blogs, a todas las plataformas que fueron desarrolladas para grupos específicos y diseñadas para complacer.
+Estos usuarios, sin embargo, tienen un largo camino por recorrer para mejorar sus habilidades de comunicación.
+La mayoría de estas plataformas no están diseñadas para que las personas sean más sociables, al contrario; cada día millones dicen sentirse cada vez más aislados aunque más conectados.
+Así el mundo.
+
+
+
+
+
+
+
+
+30.
+Deseo que tú y yo vayamos al centro a tirar bombas molotov a los bancos.
+Deseo que mucha gente vaya también.
+Deseo que la gente tome videos y fotos y comparta todo en internet.
+Deseo que la gente no tome videos ni fotos y comparta todo en reuniones.
+Deseo que toda la mierda del mundo se termine.
+Deseo que estemos juntos cuando eso pase.
+Deseo empezar una revolución contigo.
+
+
+
+
+
+
+
+
+33.
+La luz en su habitación era como un viejo protector de pantalla de Windows.
+Parecía una luz real, solar, pero no lo era.
+Bajo esa luz estaba su computadora, que tenía varias ventanas abiertas con música y un fondo de pantalla interactivo. 
+Eran como 50 ventanas.
+Se estiró y sacó de la gaveta debajo de la computadora dos cigarros liados por ella; me pasó uno.
+—La contraseña —le pregunté—; para ponerte una canción que escuché el otro día.
+Se quitó las gafas, la cama hizo un sonido como de crujido, me miró con los ojos revoloteando y me dijo que no.
+—Bueno, pon la canción, pero yo pongo la contraseña —se retractó enseguida.
+Tecleó rápido, después prendió uno de sus cigarros y se tiró sobre la cama, que volvió a crujir bajo ella.
+Puse la canción, prendí mi cigarro y me acosté a su lado.
+Le di un jalón y traté de concentrarme en la música y en ella.
+Ella también trataba de centrarse en lo que escuchaba.
+Su voz hizo lo que siempre hacía.
+Dijo algo suave, en voz baja y amable.
+—No busquemos más excusas para no estar aquí —se encogió de hombros.
+—¿Cómo crees que será el mundo en cien años? —le pregunté y la abracé.
+Se encogió de hombros otra vez.
+Me pregunté: si en ese momento se hubiera ido la luz, ¿qué hubiera pasado?
+
+
+
+
+
+
+
+
+32.
+Mi sueño favorito era en el que terminaba de escribir la novela que los delfines me habían pedido.
+Yo estaba trabajando con otros artistas en una residencia en la playa.
+Casi no había señal telefónica.
+Había ranas y mosquitos.
+Polillas y murciélagos.
+Había terminado de escribir, atardecía, guardé el archivo de la novela y, antes de cerrar la computadora, recibí un mail de Molly.
+«Estaba sola, escribiendo, imaginando que esta historia siempre será mía.
+»Me gustaría poder tener eso, esa clase de certeza.
+»Que una historia puede ser de alguien.
+»Pero supongo que es más interesante que las historias dejen de pertenecernos.
+»No sé.
+»No sé cómo, pero me gustaría que esta historia también fuera de todas las personas que quiero.
+»Todavía amo el arte y creo en su poder para cambiar la sociedad, para hacer una diferencia positiva en las personas, en la vida de nuestras familias o nuestras comunidades.
+»Creo en eso.
+»Como sigo creyendo en lo que nos une.
+»Me encantaría saber de usted!
+»←~(Ψ▼ｰ▼)∈».
+Lo volví a leer.
+Lo volví a leer.
+Lo volví a leer.
+Oscureció.
+
+
+
+
+
+
+
+
+34.
+—Los títulos de la saga The Legend of Zelda se tratan de recuperar los medios de producción —dijo.
+—La magia como alegoría del trabajo —la secundé.
+—En otras palabras: la forma en que los beneficios del trabajo se reparten entre los pobladores —continuó Molly; —por eso a mí lo que más me gusta al jugar es perder el tiempo.
+Esa tarde ella me habló de apoyar el trabajo, aparentemente, perdido; de esas actividades irrelevantes que para el sistema de producción necesitan ser reemplazadas de alguna manera.
+—Lo que yo quiero del trabajo es dejar de lado todo lo que tiene un giro productivo, me siento muy contenta con las cosas que no estoy haciendo.
+Froté mis manos.
+—Cuando no estoy trabajando tengo tiempo, no gasto energía en cosas que duelen, pero también —siguió—, al igual que me tomo mi tiempo con mis libros, me tomo mi tiempo pensando en mi vida.
+Me acerqué a ella.
+—Por eso nunca acabo los juego de Zelda —sentenció Molly—; se toman los medios de producción para dárselos a Zelda… eso no tiene sentido; mejor sería perderse en sus bosques encantados.
+Esa noche nos dedicamos a jugar Zelda sin derrotar a ningún enemigo, solo dando vueltas.
+Esperando atardeceres digitales.
+
+
+
+
+
+
+
+
+35.
+Todo comenzó cuando empecé a sentir los efectos del LSD.
+El LSD era más potente de lo esperado y comencé a experimentar alucinaciones.
+Yo estaba tumbado en el sofá.
+Permanecí tumbado en el sofá de cinco a diez minutos después de que comencé a experimentar los efectos; entonces comencé a alucinar que yo estaba acostado allí en un estado alterado y sentía cómo la droga se hacía presente, entonces entré en otro estado en el que ya no sabía lo que estaba pasando.
+Pensé que iba a morir.
+La droga me llevó del sofá a un lugar inexplicablemente líquido donde sentí que me ahogaba.
+Entonces, de repente, supe que no iba a morir, pero tenía que entrar en la habitación que había estado manteniendo cerrada durante tanto tiempo y debía encontrar un sentimiento ahí escondido.
+Se me ocurrió una cosa que se me había olvidado: «algunas personas no llegan a tu vida con intensidad, pero se quedan en ella siempre y de ahí viene su fuerza».
+Quería mantenerme despierto pero no podía.
+Todavía estaba tumbado en el sofá y pude oír un sonido crepitante que venía del otro lado de la habitación.
+Me traté de levantar pero nunca pude; después me quedé dormido.
+
+
+
+
+
+
+
+
+36.
+Escribe una novela, me dijeron los delfines.
+Así que me senté con ellos y escribí esto y lo otro.
+Sus ojos eran grandes, un poco de color marrón.
+Ellos me miraban, miraban fijamente lo que había escrito.
+Les encantó.
+Me dieron muchos abrazos.
+Uno de los delfines se acercó y con su aleta presionó la tecla «i».
+«Iii iiii ii iiiiii ii i i iiiiii».
+Después me explicó que escribir es parecido a besar, y leer es sentir ese beso.
+Después se recostó a mi lado y me pidió que le acariciara la cabeza.
+Me sentí un poco incómodo, pero enseguida me sentí mejor y continué escribiendo la novela.
+El delfín se quedó dormido; no supe si soñó algo.
+Después de aproximadamente 3 horas el delfín abrió sus ojos.
+Se me acaba de ocurrir algo, dijo o eso escuché en mi cabeza.
+Se levantó, me miró fijamente y se acercó más.
+Luego dijo algo en un tono monótono.
+—Iiiii ii ii iiiii iii ii iiiii i.
+«¿Quién eres tú?», le pregunté.
+El delfín me miró.
+Sus ojos se abrieron grandes.
+Ojos marrones.
+—Oh —dijo en voz baja dentro de mi cabeza—, no sabes lo que soy; y eso está bien.
+No dije nada, en ese momento me di cuenta de que él hablaba en silencio.
+—Escribiremos esta novela —continúo—, juntos.
+Los delfines son tranquilos.
+Ningún otro animal puede imitar el silencio como los delfines.
+Escribimos juntos durante casi veinte horas.
+Él estaba en lo correcto: yo no sabía qué era, quiénes eran, pero estaba escribiendo para ellos.
+Escribí en silencio, aunque ninguna otra criatura en el mundo puede imitar el silencio como los delfines.
+
+
+
+
+
+
+
+
+37.
+—No sabía que eras escritor —me dijo.
+—Estoy escribiendo sobre el mundo de los superhéroes —dije.
+»Cuando comencé a escribir me di cuenta que había más como yo; personas que disfrutan compartir historias.
+»Comencé a escribir con el material que tenía más a la mano, sobre el que más había reflexionado, que eran los juegos de superhéroes; les había dedicado mucho tiempo.
+»Antes que escritor soy jugador».
+Ella asintió, luego levantó una ceja y me preguntó por qué estaba interesado por las palabras.
+Hice una pausa por un segundo; ella se encogió de hombros.
+—Entonces, ¿tu sala de lectura eran los videojuegos? —me preguntó.
+—Y sus foros —le respondí.
+Hice una pausa de nuevo y ella me miró, y luego juntó sus palmas como si fuera a rezar.
+—¿En qué más estás interesado?
+—Tengo un gran interés en el anarquismo, en el Sasquatch y en la ciencia ficción.
+—Tiene mucho que no leo nada de cifi, pero me gusta.
+Su respuesta me hizo sentir feliz, pero no supe qué más decir.
+Ella volvió a tomar la palabra:
+—Sabes, lo que más me gusta es dar sentido al mundo que veo delante de mí —dijo y me besó.
+
+
+
+
+
+
+
+
+38.
+—Sí, sí, sí, sí, sí, sí, sí, sí, sí, sí.
+—Me hubiera gustado estar allí.
+—No, y no creo que sea lo que dicen de mí.
+—No totalmente.
+—Sí, me gustaría ir allí de nuevo.
+—Sí, podría.
+—Sí, eso funcionaría también.
+—No, no lo ha hecho.
+—Sí, pero depende.
+—No, pero no creo que tenga.
+—Sí, eso es lo que estoy tratando de decir.
+—No, no tengo.
+—No hay manera de que podamos estar allí.
+—No hay forma.
+—¡No hay forma!
+—Sí, pero podemos...
+—No.
+—Sí, y necesito verte.
+—Sí, a mi también me gustaría, pero no puedo pensar con claridad en este momento.
+—¿Qué quieres decir?
+—Durante años.
+—Tal vez.
+—Tal vez.
+—Tal vez por años.
+—No, pero había un libro que leí.
+—Lo recuerdo porque éramos sus personajes principales.
+—No, lo siento, no.
+—No, es simplemente porque me había pasado por una de estas cosas.
+—No, no, no, no, no.
+
+
+
+
+
+
+
+
+39.
+—Realmente no me gusta la primera novela buena de Macedonio Fernández —me dijo ella la otra noche.
+No entendí muy bien su comentario.
+Mis sentimientos hacia ese libro eran tan feroces que, efectivamente, yo sentía que se había vuelto parte de mis huesos.
+Después… cuando fui a verla, la segunda noche, se lo dije.
+—Mi corazón sólo está lleno de anarquismo y hacktivismo —me dijo.
+Mi cuerpo era tan pesado que no podía moverlo en absoluto y me desmayé.
+Hice todo lo que pude para no despertar.
+Rápidamente abrí los ojos, no podía ver con detalle... sólo fui capaz de ver dos figuras de pie en la parte superior del edificio de enfrente.
+Desde su cuarto se podía escuchar el sonido de dos personas platicando.
+Mi corazón latía con locura!
+Finalmente, me di cuenta de que la situación no era para tanto.
+La literatura no es para tanto.
+—¿Estás bien? —me preguntó.
+Creí ver que una de las personas se aventaba; traté de gritar pero me di cuenta que mi boca estaba en llamas!
+Eso es! La última novela de Macedonio Fernández trata de la libertad! Lo que fue escrito y publicado realmente no importa, lo importante es la libertad!, eso pensé.
+Entonces, ahora sí, desperté.
+—Heyyy, ¿no es genial? —le dije a ella—, acabo de entender cuál era el significado del título de la novela de Macedonio.
+—Debe ser porque estás tan loco que ya te has acostumbrado a quererme.
+
+
+
+
+
+
+
+
+40.
+Macedonio Fernández tiene una novela que tituló Una novela que comienza, porque es una novela que sólo comienza.
+No deja de comenzar.
+Es una novela que leí durante 7 días.
+No me acuerdo cómo me levanté después de eso; sólo recuerdo que la leí durante 7 días.
+En mi infancia, yo no pensaba en los libros que había leído, sólo los leía y ya; yo sólo pensaba en los juegos que jugaba con mi padre.
+Una vez me cacharon leyendo en misa; fue gracioso.
+He leído una hora todos los días desde hace algunos años, después de esos 7 días leyendo una novela que sólo comienza.
+Cuando me levanté después de leer esa novela, comencé a leer mucho y a no escribir nada, aunque todos los días tenía una nueva idea para un libro nuevo.
+Sólo cuando me fui de casa de mi padre comencé a escribir, hasta el punto de decir soy un escritor de novelas que comienzan pero no terminan.
+Desde finales de 2009 hasta el momento en que empecé a trabajar para la empresa de videojuegos, leí más de tres mil libros.
+Luego perdí todo interés en los libros.
+No les daría más oportunidades; ya no estoy interesado en leer ni en escribir, sólo en programar.
+Al principio, programé juegos para niños, después programé una máquina para escribir una novela, y ahora soy capaz de escribir y leer de nuevo.
+Antes solía decirme mi padre: «eres muy bueno jugando y leyendo»; ahora me dice: «no preferirías no hacerlo?»
+
+
+
+
+
+
+
+
+41.
+Estoy cansado.
+No puedo recordar la última vez que me sentí fresco después de un día dedicado a escribir.
+Hoy busqué el significado de varias palabras en el diccionario y leí una novela sobre alienígenas que ocurre mientras se da un golpe de estado por parte de militares que no creen en los alienígenas.
+Trato de leer de todo, no para aprender de todo sino para saber qué es lo que no quiero escribir.
+También veo muchas entrevistas y documentales sobre escritoras, escritores y hackers.
+Cuando me canso de ver o escuchar esos materiales, salgo al parque a leer.
+Pero siempre vuelvo a mi computadora.
+Aquí escribo.
+A veces me siento bien; pero aunque me sienta bien, no sé cómo voy a seguir escribiendo sin sentirme como un perdedor.
+Escribo, programo, y eso es todo.
+Decidí que necesito, para tener un mejor proceso de escritura, tratar de combinar la escritura con la programación.
+Un día espero, después de escribir durante un tiempo, entender cómo la escritura puede ser similar a un algoritmo.
+¿Por qué tendría que preocuparme por escribir en la computadora y no con?
+
+
+
+
+
+
+
+
+42.
+Estamos frente a la pantalla de su computadora, programando.
+Una vez más, nos encontramos con los mismos errores en JavaScript y la interfaz de usuario es terriblemente fea.
+Nuestro código tiene un error, o más bien cientos de errores.
+Buscamos con comandos.
+Buscamos con nuestros ojos.
+Depuramos y borramos cosas como: 
+1 2 3 4 5 6 7 8 9 10 11 { "ErrorType": { "Type": 1, "mensaje": "Error:% s", "StackTrace": null}, "ErrorId": 0 "FatalErrorTitle": "No se pudo Iniciar Sesión de Usuario"}
+Después de unas horas de trabajo vemos que nuestra interfaz de usuario sigue crasheando debido a un error persistente.
+Hacemos un pequeño cambio en «version.js».
+Hacemos changuitos con nuestros dedos.
+Molly me da un beso en la mejilla y oprime Enter.
+1 2 3 4 5 6 ≤script src = "https://unpkg.com/casper_javascript/version.js"> ≤/ script> { "escritura": "./casper_javascript.js"} / * Este se ejecuta bajo un depurador * / función predeterminada de exportación ():
+
+
+
+
+
+
+
+
+
+43.
+Ese viernes soñé que el amor era la Gran Hada de un videojuego.
+Quería saber cómo llegar hasta la cueva de la Gran Hada.
+No sé si estaba soñando que jugaba o yo era el protagonista del videojuego.
+En el universo había guerreros, animales de fantasía, seres oscuros, mágicos y otros que vivían en el bosque pero no eran hadas.
+Yo estaba sorprendido y sabía que mi deber era encontrar a la Gran Hada.
+Fui a la villa Kakariko a preguntar por ella.
+Nadie me supo decir dónde estaba, pero todos le profesaban una gran devoción.
+Me di cuenta que incluso en los videojuegos y los mundos fantásticos los seres se permiten creer en algo.
+Pensé que en ese juego lo más cercano a la religión era el amor.
+Entonces fui al cementerio del pueblo por pistas sobre el paradero de la Gran Hada.
+Un personaje me dijo al entrar que una bruja había muerto hace poco.
+Fui a su tumba.
+Me sorprendió el espíritu de una bruja, que me dijo que las personas fallecidas en el cementerio no estaban en el cementerio.
+Después me dijo que ella tampoco sabía nada sobre la Gran Hada, pero tal vez la Bruja Roja lo sabría.
+Me dijo que tenía que atravesar un volcán para encontrarla.
+Le dije gracias y se desvaneció; antes de irme recé una oración por la bruja y me incliné sobre su tumba.
+Fui al volcán, lo atravesé y finalmente llegué con la bruja roja.
+La bruja roja era una mujer joven de pelo rojo.
+—Molly, mi nombre es Molly —dijo.
+Antes de que pudiera preguntarle por la Gran Hada me dijo que no sabía nada sobre la Gran Hada.
+—He hecho un gran camino para llegar hasta aquí —le dije.
+—Toma este amuleto —dijo, y me dio una piedra verde—, mantenlo cerca de tu corazón.
+La piedra era bonita.
+Los ojos de la bruja roja eran verdes.
+—Vayas a donde vayas, no importa lo que estés buscando, siempre tendrás que aferrarte a las coincidencias, a los regalos y a lo que esté cerca de tu corazón.
+
+
+
+
+
+
+
+
+44.
+Estaba tirado en el suelo de mi habitación, pensando.
+Pensando que los grupos anarquistas permanecen de pie delante de los muros llamados tiranía.
+Esa noche soñé con una calle a oscuras, había animales muertos, sangre.
+Vi un graffiti que decía: «La A ya viene».
+Entonces pensé: «Estaremos aquí pronto».
+Y escuché un murmullo que se fue haciendo más fuerte, hasta que se volvió miles de voces que cantaban: «Para quienes se han quedado atrás a resguardar, ustedes saben que van primero».
+Llegaron miles de personas, y una de ellas se acercó y me dijo:
+—Hay muchos movimientos como el nuestro, que han existido desde hace miles de años, como el Bloque Negro de la década de 1960 y otros movimientos revolucionarios como la América Anarquista; pero compartimos la idea de que los planes revolucionarios son para cambiar a las personas.
+»Todas nuestras ideas, las ideas, las ideas, son de la comunidad.
+»Las ideas están aquí para cambiar el mundo.
+»Quienes dicen que las personas cambian el mundo, te están mintiendo.
+»El mundo va a cambiar, los muros caerán, con personas o sin ellas, y nos toca acompañar, adaptarnos a esos cambios».
+Esa idea, lo pensé al despertar, es la que mantiene el grupo anarquista centrado en las cosas importantes y les permite centrarse en las vidas y problemas personales que son los problemas de la comunidad.
+
+
+
+
+
+
+
+
+45.
+Cierta tendencia anarquista se ha hecho más fuerte.
+En la primera mitad del siglo XX, Estados Unidos, Gran Bretaña y Francia impusieron severas restricciones en contra de la actividad política o económica, algo a lo que se opusieron varios grupos anarquistas.
+Además de enfrentar las amenazas de estos países, el anarquismo también se enfrentó a las restricciones impuestas por la dictadura de la Unión Soviética.
+Contrario a lo que se esperaba, esto dio lugar a una explosión de actividad anarquista mundial.
+Aún así, algunos líderes anarcos fueron encarcelados y otros murieron mientras luchaban por reformas políticas democráticas.
+Con el advenimiento de las dictaduras fascistas en Europa en la década de 1920, los anarquistas fueron acusados de querer destruir todos los logros de la Modernidad.
+El anarquismo buscaba acabar con cualquier régimen represivo y brutal, punto.
+Tras casi cien años de lucha constante, los grupos anarquistas comenzaron a organizar resistencias subterráneas.
+No sólo grupos secretos, sino establecimientos en túneles y bases subterráneas secretas.
+Una red mundial contra los fascismos.
+A la sombra.
+La Liga Internacional Anónima.
+
+
+
+
+
+
+
+
+46.
+¿Es posible que el Sasquatch sea un viejo anarquista que quiere destruir el sistema monetario internacional?
+¿O podría ser el nombre de un fenómeno climático resultado del caos global, como la era nuclear, las guerras nucleares o el clima mundial termonuclear?
+¿Podría el mundo simplemente quemarse y reducirse hasta cenizas?
+¿Podría un fenómeno como el Sasquatch destruir la civilización humana?
+No se sabe todavía.
+Sin embargo, a pesar de su estado actual de no existencia, si existiera, el Sasquatch podría destruirlo todo.
+Sería más devastador que una serie de explosiones nucleares como las del desastre de Fukushima.
+Por todo internet hubo rumores de que el Sasquatch podría estar llegando al Reino Unido para destruir toda la isla y el sistema monetario internacional.
+Tal fenómeno podría ocurrir ahora que la alarma termonuclear no ha podido proporcionar datos precisos.
+Hay rumores de que el Sasquatch podría estar llegando al Reino Unido, pero no hay más información disponible por el momento.
+Es posible que el mundo, en general, esté atrapado en una serie de eventos incomprensiblemente devastadores a raíz de la entrada del género humano a la era digita-nuclear.
+
+
+
+
+
+
+
+
+47.
+Ella creía en el anarquismo.
+Como creía en lo irremediable y amaba la vida.
+«Las personas están siendo asesinadas por tratar de luchar por sus vidas», dijo Molly la otra noche en una reunión.
+«Parece que esa noción de carácter podría aplicarse en un contexto revolucionario también, siguió.
+»El anarquismo ha sido acusado de ser anti-humanista, sin embargo, se toman las armas para defender la vida ante el Estado.
+»Suele condenarse como criminales a los y las anarquistas, y muy a menudo se considera que no merecen ser atendides; tal fue el caso de las Panteras Negras, que en los 60s fueron vistas como criminales a los ojos de la policía porque utilizaron la violencia para defender los derechos civiles.
+»Es fácil ver cómo estas acciones hacen del anarquismo una lucha sobrepenalizada, como dice el historiador Robert F. Williams; es decir, se basan en la noción de que todos los actos anarquistas deben ser tratados como delitos.
+»Un ejemplo que cita el historiador es el movimiento de 1871, cuando Estados Unidos trató de introducir la pena de muerte por el intento de asesinato del gobernador John P. Blount y su hermano John E. Blount, que eran sospechosos ante la ley, pero culpables ante la sociedad, de varios feminicidios».
+Los ojos de Molly irradiaban luz.
+Y terminó diciendo que, en realidad, el anarquismo es un medio para terminar con el individualismo.
+
+
+
+
+
+
+
+
+48.
+Un día Molly me regaló un libro de Xiao Shuo.
+Era un libro de tapas rojas, deshechas.
+Abrí el libro y leí la dedicatoria:
+«miau! ฅ^•ﻌ•^ฅ».
+Estoy enamorado de esta chica, sentí.
+De hecho, ese fue el primer libro que me regaló.
+Luego me regaló la autobiografía de Angela Davis; después, su propia copia de los poemas de Audre Lorde.
+A medida que leía cada uno de estos tres libros, no podía evitar admirarla más.
+Cuando quería hablar de estos libros, ella me decía que lo que ella pensaba ya estaba ahí, en esas palabras, en esos libros.
+Lo más que podía hacer era hacer era leer los textos que subía a su sitio web.
+Y leerla era mirar con sus ojos, sentir con sus manos.
+El libro de Xiao Shuo terminaba con la frase: «decir y no decir, en realidad, ambas son diferentes formas de la misma insistencia por comunicar y sentir la verdad».
+
+
+
+
+
+
+
+
+49.
+En una entrevista le preguntaron a Xiao Shuo:
+—¿Qué opinas de quienes dicen que tu obra es una alegoría política contra el fascismo del mundo?
+—Yo sólo estaba pensando en el mundo de hace quinientos años, y en cómo será el mundo dentro de quinientos años; cada época es el tema de una futura o pasada novela de ciencia ficción —respondió el escritor de novelas anarquistas cifi, y continuó—: Una gran historia, un gran clímax.
+»Quiero que la gente sienta lo que está pasando en mis novelas, y entienda lo que sucede tras las palabras, ese tipo de cosas.
+»Cuando se está escribiendo un libro de ciencia ficción, hay que imaginar un mundo y hay que darle sentido a eso de una manera detallada; pero no me refiero a hacerlo de una manera estúpidamente detallada, quiero decir que debería ser de manera divertida, pero aún así de una manera particular.
+»Y lo particular suele ser extraño, eso lo aprendí hace algunos años».
+
+
+
+
+
+
+
+
+50.
+Si yo fuera una computadora, ¿cómo sería?
+Conociendo cómo funcionan mis softwares, podría empezar a entender las leyes del universo.
+Y podría usar esas leyes para predecir el futuro.
+Un futuro inmediato.
+Un futuro personal.
+De eso trata la ciencia tras los softwares: de predicción y variación; no se trata de ser más inteligente o menos inteligente.
+No estoy abogando por el hecho de que la inteligencia no sea importante, eso no lo sé.
+Sólo me gusta la idea de ser un científico y un escéptico porque la ciencia es una manera de ayudarnos a vivir más cómodos con nuestra ignorancia.
+A más incomodidad, más atención al entorno.
+El mundo no se está volviendo mejor con la ciencia, pero al aprender cómo funciona el mundo y tratar de hacer sentido de cómo funciona el mundo, podemos volvernos una especie más consciente de la vida.
+Si fuera una computadora, entendería que soy parte de una red más grande que abarca a otras computadoras, que se nutre y crece como se nutre y crece un bosque.
+Si fuera computadora querría ser un árbol, un bosque, musgo.
+
+
+
+
+
+
+
+
+51.
+Cuando trabajaba en un videojuego sobre los Green Lantern Corps entendí que los superhéroes no son héroes de sus propias vidas.
+No toda su vida los superhéroes se dedican al heroísmo, también cocinan, trabajan, se enojan, juegan videojuegos y usan playeras con estampados de gatos.
+La vida es más que creer que se salva a otras personas.
+Un superhéroe se supone que tiene un día a día heroico.
+En general, sus hazañas son bastante limitadas y muy cuestionables.
+Habría que pensar que su trabajo radica en evitar cambios en el mundo.
+Digamos, un cambio social, un cambio estructural, un cambio de pensamiento, una revolución.
+Hay fuerzas de poder que detienen esos cambios.
+Digamos, fuerzas estatales, o superhéroes.
+En el juego en el que trabajé programando, los Green Latern Corps se encargaban de reprimir diversos tipos de manifestaciones.
+Punks, Black Panthers, Feministas, Anarquistas.
+Los superhéroes verdes eran en el videojuego, por decirlo de alguna manera, fuerzas paramilitares al servicio del poder, un poder viejo en el universo, un poder opresivo.
+Así, quien se pone del lado del superhéroes se pone del lado del poder.
+
+
+
+
+
+
+
+
+52.
+En el primer videojuego que programé, no había ninguna solución o trama.
+Había sólo números.
+En el siguiente juego sí había una trama y quien jugaba lo hacía a través de un detective, le conté.
+«Siento que una narración de detectives es esencialmente un juego de puzzle que tiene instrucciones en el interior de una caja», dijo Molly.
+«Los videojuegos no han dejado de ser, en esencia, Tetris, Monopoly, o Tetris Plus», dijo.
+Yo le respondí que sí, y que también había otro tipo de videojuegos, los que se desprendían del experimento de 1930 de un tipo llamado Alan Turing.
+«En lugar de crear reglas internas, el juego trata de dar resultados que engañen a quien está jugando en el mundo real», le dije.
+Turing incentivó a programar pensando en las reglas del mundo exterior, no el interior.
+En la década de 1960, la empresa British Computer Hewlett Packard desarrolló un dispositivo llamado el Commodore 64, que era una especie de computadora que era capaz de determinar si el usuario era en realidad otro ordenador, un programa basado en texto o una persona.
+Pero esta máquina fue a parar a los archivos de la Agencia Nacional de Seguridad, que es básicamente la CIA británica.
+Así, la máquina se perdió.
+Hasta hoy, hay toda una comunidad de programadores que intentamos recrear esa máquina.
+Yo escribo una novela.
+
+
+
+
+
+
+
+
+53.
+En las noches veía teorías de conspiración en YouTube y leía El manifiesto comunista.
+Y creo que puedo enunciar algunas preguntas al respecto:
+¿Cuánto tiempo han existido las teorías de conspiración?
+¿La historia real depende de ellas para saber cuál es su límite?
+¿Por qué todos quieren asumir el control del mundo?
+¿Qué podemos hacer para detenerlos?
+¿Y qué lecciones podemos extraer de la historia?
+Vivimos una crisis de fe: fe de la realidad.
+¿Les debemos a las generaciones futuras una explicación de todo lo que ha pasado, de todas las historias falsas y todo lo que hemos olvidado?
+
+
+
+
+
+
+
+
+54.
+Me di cuenta de toda la mierda que hay en el mercado de Realidad Virtual.
+Así que me puse a investigar sobre las grandes empresas de tecnología que están detrás de éste.
+A pesar del consumo, aún no se han puesto en circulación ciertos productos importantes de realidad virtual…
+Quisiera hacer eso.
+Si pudiéramos poner esa tecnología al alcance, en unos pocos años sería posible hacer de la RV el medio más accesible para comunicarnos en el planeta.
+¿Cuáles serán los desafíos para poner ese plan en marcha?
+El primero, reaprender sobre esa tecnología.
+Reaprender a acercarse a la RV.
+Desde mi experiencia, trabajar programando juegos muy sofisticados para niños de 3 años de edad es sumamente difícil, porque planear juegos divertidos es muy complicado.
+Jugar implica renunciar a algo y para ello se requiere mucha atención.
+Las niñas y niños son dispersos y no quieren renunciar a nada.
+Otro punto es que sigue existiendo un abismo entre el hardware y software con el que contamos y las neuronas de nuestras cabezas, que son las que nos permiten imaginar las posibilidades de esa tecnología.
+Mis colegas de la industria del juego, con los que trabajé hace años, eran muy diestros programando.
+En mis primeros días me la pasé mirándolos, leyendo sus códigos, aprendiendo el arte de desarrollar juegos para las consolas.
+En aquel momento era mucho más fácil.
+La tecnología era precaria y teníamos grandes ideas.
+Ahora se intenta que todo sea RV sin ningún tipo de imaginación; se quiere recrear el universo entero en otra realidad.
+
+
+
+
+
+
+
+
+55.
+Pero ese mercado de RV y sus reglas no son la realidad.
+La vida real es otra cosa.
+Era, por ejemplo, ese montón de cosas que sabía de ella, de Molly.
+Ella era algo así como una pequeña maga que podía hacer muchas cosas con sencillez.
+Y juntos tuvimos un montón de momentos en los que yo me quedaba sorprendido.
+Ella realmente podía hacer magia.
+Yo estaba así como: «wow!, pero tenemos que salir de aquí; no nos podemos quedar».
+Pero nos quedábamos.
+Y ella hacía su magia, que era hablarme de la vida en la Tierra, hablando de la suya.
+—Siempre me dices mucho más de lo que se puede ver.
+—Es cierto.
+—¿Entonces?
+—En esta era de interminables noticias falsas es muy difícil encontrar datos precisos —me decía ella—; tal vez yo podría hacer una estimación de la cantidad de noticias falsas que salieron en el último año y sería un gran porcentaje de todas las noticias de las que nos enteramos.
+—No puede ser, no es tan grande, ¿o sí?
+—Por mucho que nos esforcemos, la verdad es imperceptible, a menos que la podamos apreciar de otras maneras y para eso no necesitamos leerla siempre; la verdad puede ser una forma de magia, pero sobre todo es una forma de escepticismo.
+
+
+
+
+
+
+
+
+56.
+Los delfines me dijeron:
+—La realidad es un videojuego infectado por virus y otras formas de organización que están tratando de generar dinero en esta realidad.
+O al menos eso fue lo que escuché en mi cabeza.
+—Todos los problemas de la realidad surgen después de que los usuarios terminan su partida y comienzan una nueva —dijo el que estaba más cerca.
+—El juego más famoso se llama Guerra de los mundos, y comienza con la historia de una científica militar (una alienígena) que decide crear una súper arma para destruir todos los mundos virtuales de la Tierra con un comando —añadió otro.
+—Hay otros juegos famosos como Guerra Mundial, Batalla de los mundos, Guerra Mundial 3 y Guerra Mundial 4 —volvió a tomar la palabra el primero—. Algunos de los otros juegos, menos famosos, donde los protagonistas son ejércitos, son Guerra Mundial 5, Guerra Mundial 6, Guerra Mundial 7, etc.
+—Uno de los personajes secundarios de Guerra de los mundos es el programador/autor que crea al protagonista mediante un software contenido en un prototipo de computadora; y no es tanto un juego sino un drama, una novela soñada por ese programador/autor, una novela sobre personas ordinarias que al envejecer tienen manos viejas y arrugadas —intervino el segundo delfín.
+—No —replicó el primero, que prefería tener la palabra—, ni aunque un personaje se llame Xiao Shuo. Esta no es una novela.
+A veces el autor de una novela también es el autor de un juego, pensé.
+
+
+
+
+
+
+
+
+57.
+¿Es posible que el Sasquatch sea un virus de internet?
+¿Es posible que sea un extraterrestre que se ha infiltrado en algún gobierno de la Tierra?
+¿Es posible que sea un viejo escritor anarquista que está escribiendo esta novela?
+Por favor, introduzca su dirección de correo electrónico aquí.
+Trataremos de responder a las preguntas anteriores.
+
+
+
+
+
+
+
+
+58.
+Según informes clasificados de la KGB, sólo hay un videojuego legítimo del Sasquatch.
+Inicia con dos personajes caminando por un bosque, se escucha el viento.
+Entonces llegan a «el punto de encuentro», pero ninguno de los dos sabe que es «el punto de encuentro»; para los personajes solo es un lugar donde descansar un poco para seguir caminando y platicando.
+Uno de los dos no cree en lo sobrenatural; el otro piensa que el Sasquatch podría o no existir.
+Ahí eliges si ser uno u otro personaje, entonces se abren globos de diálogo y se debe interactuar con la otra persona.
+No hay tema de conversación fijo; podría decirse que no se habla de nada, pero de vez en cuando vas conociendo la historia de los protagonistas.
+Después, todo sucede tan rápido que no es posible distinguir lo que ocurre.
+La pantalla se va a negro.
+Las dos personas están convencidas de que han visto al Sasquatch pero no tienen cómo demostrarlo.
+Están convencidas de que podrían tomar una fotografía del ser, así que vuelven a caminar hasta «el punto de encuentro», ahora con una cámara.
+El objetivo del juego es tomarle una fotografía al Sasquatch.
+Poco a poco se descubre que los dos personajes van al bosque en su tiempo libre y que son más importantes sus diálogos que la fotografía del Sasquatch.
+Si se juega lo suficiente, en un momento uno de los personajes dice:
+—Secretamente sabemos que aunque tomemos esa foto nadie nos creerá.
+—Y seguiremos viniendo —contesta la otra persona.
+—Y seguiremos viniendo —remata.
+
+
+
+
+
+
+
+
+59.
+Me gusta la idea de privacidad y la aceptación social.
+Trabajé y fui pasante en la industria tecnológica, por algunos meses me involucré en varios proyectos de tecnología relacionados con Twitter y Facebook.
+Durante el tiempo que pasé programando para esas empresas, me enteré de una red secreta de usuarios que desean enseñar cómo usar las plataformas a su antojo.
+Y me enteré de las acciones legales e ilegales contra esas personas.
+Después de saber esto ya no pude trabajar en el campo de la tecnología.
+Desde entonces investigo sobre los efectos emocionales y psicológicos de las redes sociales.
+Y un día me llegó un mail encriptado de La Liga Internacional Anónima.
+El mundo en ese momento todavía estaba en shock por los acontecimientos del 9/11 y la crisis financiera que llevó a muchos a creer que el gobierno de Estados Unidos estuvo involucrado.
+En el mail me daban una serie de instrucciones para contactarlos.
+Había una pregunta sobre mis objetivos hackers en internet.
+Uno de mis objetivos es que seamos más y que, al publicar, más gente publique, les respondí.
+
+
+
+
+
+
+
+
+60.
+Cuando renuncié a mi trabajo como programador, lo primero que hice fue ir a un Pizza Hut.
+Ese día llovía y hacía frío.
+Cuando entré al establecimiento oí un estruendo proveniente de la cocina.
+—¿No pueden esperar a que el pinche horno se enfríe, verdad?
+—¡No, no! —respondió un coro.
+Me quité la chamarra mojada y la colgué en el respaldo de una silla.
+—Miren el desastre que provocaron.
+—¡No, no!
+Me limpié un poco el rostro y me senté.
+—¡Es inverosímil!
+—¡No, no! —seguía el coro.
+Casi de inmediato llegó Molly.
+—Qué escándalo —dijo y cerró su paraguas transparente, luego se quitó su impermeable color rosa y se sentó frente a mí.
+—Es una revolución —le dije.
+—Entonces tal vez nunca tengamos nuestra pizza.
+Los gritos seguían en ascenso.
+—Son las cocineras y cocineros.
+—Se me había antojado una de tres quesos.
+Hubo más estruendo, metal cayendo al piso, algo rompiéndose.
+—Tendremos que ir a otro lado —dije.
+—Ningún trabajo es un trabajo de verdad —dijo Molly muy seria.
+Volví a sentir lo mismo que cuando firmé mi renuncia.
+—Estoy muy feliz por ti —dijo, y pasó su mano por mi mejilla.
+—Gracias por haber venido.
+—Todo los días se supone que tienes que trabajar en un trabajo que odias, y cada día que se supone que quieres pasar tiempo con las personas que quieres, ¿cómo se supone que se podría hacer eso?
+—¡No, no! —dijo el coro.
+—Trabajar en un trabajo que odias y luego salir a comer y odiar lo que comes porque no se puede estar en ningún lado sin sentirse invadida por el odio al trabajo.
+Tuve ganas de llorar.
+—¡No, no!
+—Fuiste muy valiente —dijo Molly.
+
+
+
+
+
+
+
+
+61.
+Me convertí en hacker por ella.
+Hacker no es una palabra que se escuche muy a menudo en las noticias.
+Hace mucho los piratas informáticos comenzaron a utilizar el término para referirse a sus enemigos, ahora se ha vuelto un cliché.
+Es una pena.
+El término fue acuñado por el ingeniero de seguridad informática y blogger, John McAfee.
+La palabra surgió cuando McAfee escribió en 2005: «estoy a punto de darle al mundo mi arma favorita... mi código hacker personal».
+Era un código que esperaba se convirtiera en un arma que él llamaba «El martillo hacker», un arma que creía capaz de crackear a quien quisiera atacarlo en la web.
+En una serie de dos ensayos, McAfee señaló que el uso del término «hacker» era un deliberado desafío contra aquellos que él no considera hacktivistas.
+No está de más señalar que él era un aliado en contra del Estado.
+En sus artículos, McAfee describió las ocasiones en que intentó hackear algunos servidores del gobierno, de la Marina estadounidense, de la Reserva Federal, de su antiguo jefe y del Laboratorio Nacional de Los Álamos, pero sin conseguirlo.
+El fin de la piratería es exponer la verdad.
+La verdad es algo que McAfee sólo encontró en la piratería en línea.
+
+
+
+
+
+
+
+
+62.
+Tanto seres humanos como delfines asocian la soledad con la ansiedad.
+Por eso hay una tendencia a no hacer nada cuando se está solo.
+¿Los delfines sentirán ansiedad acerca de su propia vida?
+¿Los delfines responderán a las amenazas de guerra o a los acontecimientos repentinos e inesperados con el mismo estrés que las personas?
+¿Los delfines disfrutan de la interacción social?
+Molly me contó que a veces se sentía ansiosa.
+Casi siempre cuando estaba a solas en su cuarto.
+«Y esas veces también me llego a sentir triste», me dijo.
+—Pero únicamente cuando estás sola puedes escuchar realmente música —añadió.
+—Yo pensé que en los conciertos…
+—Necesitas concentrarte en la música, en tu cuerpo —respondió.
+Molly me había dicho muchas veces que una de las mejores maneras de ser feliz es escuchar música.
+Esa noche, Molly me contó que de niña su sueño había sido convertirse en cantante de ópera.
+Y cantar por todo el mundo.
+Y ser la primera cantante de ópera en ofrecer un concierto en la luna.
+—En realidad, el punk y la ópera se parecen mucho —dijo.
+—¿Tu crees que los delfines hagan música?
+Ella se rio con mi pregunta.
+—Los delfines definitivamente aman la ópera.
+
+
+
+
+
+
+
+
+63.
+Molly me dijo que ella también podía oír a los delfines hablar.
+Me lo escribió en un mail muy lindo donde también me habló un poco de su infancia.
+Me hizo pensar en lo íntimas que pueden ser las palabras que se dicen como si fueran un secreto.
+Al final del mail venía este dibujo:
+
+Le respondí con un mail largo donde le platiqué pormenorizadamente de la primera vez que los delfines me hablaron.
+Y le conté cómo en varias ocasiones me habían preguntado mi nombre.
+Y nunca se los había dado, porque de niño había leído una novela de Ursula K. Le Guin donde un mago revela la vital importancia respecto a que un mago conozca el verdadero nombre de otro mago.
+Hacia el final del mail escribí:
+«Tal vez vengan de aguas que nadie ha conocido, tendrán sueños que nunca conoceremos y dolores que nunca podremos compartir como especie.
+»¿Qué crees que están haciendo los delfines aquí?
+»¿Qué crees que estemos haciendo tú y yo aquí?»
+Me quedé pensando, tras dar click en el botón de Enviar, que mientras nos acercamos a saberlo seguimos dando vueltas sobre la tierra, bajo el cielo, y dando vueltas bajo las aguas y sobre éstas, y en eso sí nos parecemos a los delfines.
+
+
+
+
+
+
+
+
+64.
+El trabajo es alienación.
+Puede que te sientas más como un objeto que como ser humano.
+El trabajo también provoca adicción.
+Puede que sientas necesidad de acabar con todos los pendientes antes de dejar de trabajar.
+El trabajo crea relaciones entre personas.
+Puede que sientas que solo trabajando puedes relacionarte con el mundo.
+El trabajo es una membrana.
+Puede que sientas que no hay nada afuera.
+El trabajo es paternal.
+Puede que te sientas obligado.
+El trabajo es maternal.
+Puede que te sientas protegido.
+El trabajo es un sistema ajeno a la libertad.
+Puede que te sientas en la necesidad de renunciar cuando leas esto.
+
+
+
+
+
+
+
+
+65.
+Los delfines me pidieron ayuda.
+Estaban tratando de llegar a una roca muy alta.
+No entendía cómo es que no podían llegar hasta ese lugar si podían flotar.
+Yo estaba en la parte inferior del acantilado y muy cerca estaba la roca a la que querían llegar.
+El acantilado estaba escarpado, muy abajo estaba el mar.
+Entonces una roca se desprendió y cayó.
+El mar era un abismo oscuro, aunque el agua estaba tibia y clara por debajo de los delfines.
+Los delfines no podían ver o sentir la pared del acantilado debajo de ellos, ya que la pared estaba completamente recubierta por una enorme nube de polvo.
+Era una niebla espesa y de color gris; los delfines no podía ver nada, había polvo por todas partes.
+Estaban tan confundidos como un niño preguntándose qué está pasando.
+Yo estaba en la parte inferior del acantilado y vi cómo la pared se abrió debajo de ellos.
+Todo se volvió oscuridad, dos cosas pudieron haber pasado: o bien los acantilados cayeron al mar o el mar cubrió todo.
+Se formaron nubes muy grandes por encima de los acantilados.
+Los delfines flotaban en el aire pero seguían sin ver nada, ni la roca a la que quería llegar ni al mar debajo.
+Parecía que la única forma de salir de ese escenario era por el aire.
+Parece que la única salida es por el aire, me dijeron los delfines.
+Entonces los delfines comenzaron a elevarse y yo con ellos.
+
+
+
+
+
+
+
+
+66.
+Esta es una novela anarquista.
+Una novela que duda de cualquier autoría.
+De cualquier autoridad.
+Y quien la lee tiene que elegir su propio camino.
+En esta novela he intentado plantear una libertad de lectura, sustentada en una libertad de escritura.
+Alguien podría preguntarse: si se tiene la completa libertad para ir en cualquier dirección, ¿se puede ir en el mejor de todos los sentidos imaginables?
+Tal vez nadie se lo pregunte.
+Porque tal vez, si ha llegado hasta aquí, ese alguien pensaría que esta es tan solo una historia donde todo el mundo tiene una gran cantidad de opciones.
+Opciones que se multiplican, se contradicen, parecen ir a un lado y a muchos a la vez.
+La forma es particular, o al menos muy peculiar, sí.
+Tal vez, sólo tal vez, esta novela encontró una manera de eludir las restricciones de la novela.
+De todos modos, tal vez simplemente no hay restricciones en las novelas anarquistas.
+Hay algo más que es necesario decir, pero ya será en otro fragmento.
+
+
+
+
+
+
+
+
+67.
+—Iiii ii ii iiiiii i iiiiii —dijo el delfín.
+—Iiii iii i ii i i i i iiiiii —respondió otro.
+—Iii iii i i iiiiii i —dijo de nuevo el primero.
+—Iii i iiii i iiiiii iiiiii —dijo un tercer delfín que se sumó a la charla.
+—Iii ii ii i iii —insitió el segundo delfín.
+—Iiiiii i iiii i i —acotó el tercer delfín a manera de pregunta.
+—I iii i iiiiii —respondió el primero.
+Los tres delfines se miraron.
+Parecía que habían llegado a una conclusión.
+El segundo delfín movió sus aletas alegremente y dijo eufórico:
+—Ii ii i ii i i iiii i iiiiiii i i i iiiii i i i iiiiiiiii i ii iiiii.
+Luego los tres delfines comenzaron a nadar en círculos.
+«Qué extraño es todo esto», pensé.
+«La interacción de los delfines es más compleja de lo que esperaba».
+Después, los tres delfines comenzaron a entonar lo que me pareció una canción de Nirvana.
+Tras acabar de cantar comenzaron a hablar de tal forma que los entendía.
+—Aaaaaaaa!
+—Estamos muy bien! Lo hemos hecho!
+—Esta es nuestra canción de la victoria!
+—Nos hemos convertido en una banda de punk!
+—Por fin podremos conquistar el mundo!
+—Ajajajaja.
+
+
+
+
+
+
+
+
+68.
+El autor de esta novela no es un ser humano.
+Sería injusto decirlo, pero es probable que, al igual que su protagonista, el autor de esta novela se haya sentido deprimido durante la escritura de la misma.
+En estas circunstancias, es necesario hacer una cuidadosa consideración de todos los hechos, y pensar con criterio lo que se sabe; debemos tener debidamente en cuenta todas las circunstancias, todas las circunstancias en cuanto a los hechos, y lo que es bueno o malo en función de las circunstancias; y también, para que yo no lo diga, considerar si esta novela es la primera buena o la última mala novela.
+Bueno, no hay que decidir eso ahora.
+Lo importante es preguntarse si, al igual que su autor, esta novela tiene el riego de ser considerada un peligroso virus para la literatura.
+Si no es necesario escribir enteramente una novela, ¿qué vendrá después?
+Con el fin de alcanzar este punto, debemos regresar al principio.
+¿Cómo está escrita esta novela?
+¿Si su autor no es un ser humano, entonces qué es?
+No importa; este capítulo está dedicado a la cuestión de si el autor de esta novela ha hecho mal en sentirse feliz por sus escritos; si ha hecho mal en colocar su corazón y su alma en un estado en el que estos no deben ser puestos.
+Hay más pasajes como este en toda la novela.
+
+
+
+
+
+
+
+
+69.
+—¿Se trata de una novela?
+—No creo.
+—Así que ésta no es una novela.
+—Es un videojuego.
+—Ya veo por qué no me gusta.
+—Pero si me has dicho que te gustan los videojuegos.
+—Sí me gustan, pero esto parece una novela.
+—Es una novela, tanto como algunos videojuegos de Zelda.
+—¿Se parece a The Legend of Zelda: The Dreamer’s Awakening HD?
+—… Sí.
+—Mentira.
+—Tienes razón, se parece más a un tratado de economía que a un videojuego.
+
+
+
+
+
+
+
+
+70.
+[El lector está frente a una novela algorítmica.]
+«Lo que tenemos que hacer es ir más allá de la lógica del juego, de las reglas de los juegos, del ajedrez de los ajedreces, de todos los juegos que hemos jugado, para tratar de mirar a los jugadores, dilucidar ese infinito que son, esa inalterabilidad que somos, y descubrir que, para crear, no sólo tenemos que crear por nuestra propia voluntad, sino que nuestra propia voluntad es un juego», Carl Jung.
+«Tal como es, mi vida ha estado marcada por una gran acumulación de problemas sin solución; hay, sin embargo, una buena probabilidad de que todas esas dificultades se puedan resolver con el tiempo; aunque al final, tiempo es lo que falta siempre», Albert Einstein.
+«Esta es una gran revolución: la capacidad del universo para actuar como una máquina», Ada Lovelace.
+«Nadie puede crear nada nuevo», Macedonio Fernández.
+
+
+
+
+
+
+
+
+71.
+—Usted no está escribiendo una novela, está soñando —me dijo.
+Yo no lo creí al principio.
+¿Qué hubiera pasado si le hubiera dicho que me sentía triste?
+El delfín se me quedó mirando.
+Fijamente.
+Y unos momentos después empecé a escribir.
+
+
+
+
+
+
+
+
+72.
+«Debemos hacer algo contra el copyright», dijo.
+Estábamos recostados en un parque.
+—Construyamos un sitio con libros y libros anarquistas; una biblioteca móvil, fantasma a los sistemas de copyright —continuó Molly.
+Se levantó; me levanté.
+Dijo:
+«No podríamos haber hecho lo que estamos haciendo sin la ayuda de otros».
+Dijo:
+«Compartiremos libros y documentos para pensar e imaginar en conjunto.
+»Cualquiera que le interese la libertad y quiera compartir algo, lo que sabe, lo que sueña, lo que le intriga, sus preguntas y teorías, tendrá un lugar ahí.
+»Crearemos un espacio en la web alejado de lo macabro de internet, del odio y el resentimiento que también hay en la web».
+»Será un foro pero también un sueño colectivo.
+»Una biblioteca pero también la acogedora sombra bajo un árbol frondoso de bits.
+»Un hospital de ideas.
+»Una nube gentil.
+»Los instructivos para cambiar la realidad».
+Esa noche, comenzamos a escribir la página web.
+Lo primero que escribimos fue: «Benvenuto a La Liga Internacional Anónima :)»
+Y abajo pusimos un mail y nuestro primer libro en pdf.
+
+
+
+
+
+
+
+
+73.
+Molly me envió un mail para contarme sobre un escritor anarquista.
+Se trataba de Xiao Shuo.
+Molly ha leído todos sus libros y me contó sobre algunos.
+Otro día, mientras caminábamos por el bosque, me contó que ese autor, del que se sabe tan poco podría ser un descendiente del clan Tse.
+Molly lee con devoción el Tao.
+—En realidad, Xiao Shuo solo es una vía para acercarse al Tao.
+—¿También el anarquismo es una manera de hacerlo?
+Al escuchar mi pregunta, los ojos de Molly brillaron como si tuviera ante sí una luna llena de inverno.
+—Las personas que entran en contacto con el taoísmo nunca han sido taoístas en ningún sentido.
+No entendí lo que acababa de decirme.
+Pero siguió hablando:
+«Ningún otro escritor chino se ha interesado más en el Tao que Xiao Shuo».
+Entonces me dio unas fotocopias y un beso.
+
+
+
+
+
+
+
+
+74.
+Ok, Xiao Shuo es el otro nombre del autor de esta novela.
+Sus trabajos abarcan todos los aspectos del arte, la literatura, la ciencia, la política, la historia, etc.
+En China, su nombre es sinónimo de literatura algorítmica.
+Acaso su obra más conocida sea Kokufugu.
+Un libro donde queda claro que él no es solo un poeta, sino también un filósofo, un historiador, un artista y, sí, un anciano anarquista que vive en el bosque.
+Se dice, pero no hay manera de rastrear el origen de esto, que Xiao Shuo escribió durante los primeros cinco años que vivió como ermitaño en el bosque.
+Se dice que tuvo una experiencia cercana con el Yeran, que es el equivalente asiático del «Sasquatch».
+La novela Kokufugu trata sobre eso.
+Sobre lo incompensable y lo imprevisible.
+Xiao Shuo alguna vez dijo que era una elegía a la naturaleza y una carta de amor al amor.
+
+
+
+
+
+
+
+
+75.
+—El anarquismo requiere bibliotecas —dijo Molly.
+La sala de conferencias estaba llena.
+—El capitalismo, por otro lado, necesita alienación emocional.
+»Si bien hay quienes sostienen que la revolución marxista es un mito y que ningún experimento social hará a la gente libre, las ideas de Marx todavía tienen efecto sobre los anarquistas de hoy en día.
+»Marx, en particular, dijo en 1848:
+»“Los trabajadores que ya han sido liberados de su prisión por la lucha por la abolición del capital no necesitan más incentivos, excepto aquellos que, en una sociedad anarquista, son necesarios para el éxito de su propia revolución, con tal de que no pierdan su libertad tan pronto como lleguen a ser libres, y siempre y cuando no se hagan esclavos a causa de la insuficiencia de su lucha”.
+»La idea anarquista de que las personas no deben hacerse esclavas es algo de lo que Marx ya estaba hablando, y la única garantía que tenemos de no ser esclavizados es no tener gobierno.
+»Es necesario imaginar una sociedad donde todas las personas tengan la posibilidad de adquirir los bienes que necesitan y de cuidar su salud mental y emocional.
+»Como entrar a una biblioteca, tomar el libro que desees, leerlo, memorizarlo, olvidarlo, reescribirlo, devolverlo.
+»En una sociedad anarquista estos bienes existirían y estarían a disposición sin necesidad de ningún trabajo en absoluto.
+»Debemos procurar nuestra salud, que es una manera de libertad».
+Al acabar de decir esto, la sala de conferencias donde hablaba Molly comenzó a ser rodeada por delfines.
+
+
+
+
+
+
+
+
+MACEDONIO
+
+
+
+
+
+
+
+
+
+El texto de este libro lo escribió una IA en 2019.Lo tradujo una persona entre 2029 y 2022.Se revisó, editó, maquentó enter agostoy octubre de 2022 con la ayuda deOlivia Teroba; finalmentese liberó el 9 de ese mes.Gracias, si leesesto.<3
+
+
+
+
+
+
+
+
+NOTA
+Esta obra fue realizada por dos formas de vida, una inorgánica y otra orgánica.
+Una persona escribió frases en inglés; un algoritmo, alojado en una página web, las expandió hasta obtener 99 capítulos.
+Luego, la persona tradujo esos textos al español, hilando su imaginación con la de la IA.
+Esta es una novela de escritura cyborg.
+Su autoría es tanto artificial como humana, creativa y no-creativa; es un sueño compartido.
+Esta novela permanece en duermevela: siempre está comenzando y terminando.
+Un libro no empírico en el concepto y empírico en su realización especulativa.
+También podría pensarse que es el resultado de imaginar los medios de producción desde la propia técnica de la que se habla; un diálogo.
+Las diferencias entre estas formas de vida, inorgánica y orgánica, entre sus formas de crear y soñar se ha olvidado; no se sabe quién sueña a quién.
+Filosofía en escena.
+
+
+
+
+
+
+
+
+99.
+Estoy tendido en el suelo de mi habitación y pienso en el amor.
+Estoy mintiendo aquí, porque estoy a punto de decir adiós a un lugar maravilloso que he soñado un millón de veces durante tanto tiempo, un lugar de mi propia elección con una persona de mis propia elección.
+Nunca tuve la oportunidad de descubrir mi verdadera identidad.
+Estoy aquí para estar con usted.
+Aquí para celebrar el momento con usted, para hacerle saber que este momento con usted es amor.
+Es todo.
+Una vez que escuches esa palabra, esa sola palabra, te puedes echar a llorar y yo podré terminar de escribir esta novela.
+Cuando la chica se da la vuelta, ella es sólo una niña.
+Molly lleva rímel negro y sus ojos están muy abiertos.
+Los dos hemos compartido los más increíbles momentos de nuestras vidas y es más o menos lo primero que algunas vez recordaré, si es que fuera de aquí se me permite recordar.
+Sólo soy un niño.
+Un poco torpe y con los ojos muy abiertos.
+Que escucha a los delfines hablar, que sueña con la paz de los bosques.
+Realmente no puedo recordar nada más; sólo puedo recordar lo que hice para vivir, y usted sabe, todo lo que hice para vivir hasta la fecha fue pensar en ella•
+
+
+
+
+
+
+
+
+76.
+[Xiao Shuo es un virus anarquista].
+[Xiao Shuo es un virus anarquista].
+[Xiao Shuo es un virus anarquista].
+[Xiao Shuo es virus anarquista].
+Podemos definir un virus como:
+A) Un organismo que puede ingresar en un sistema regulado o autorregulado para modificarlo.
+C) Un medio de transferencia horizontal de información y conocimiento.
+D) La posibilidad de una transformación radical de las relaciones sociales de la vida.
+E) La capacidad de afectar e influir en las masas, en sus pensamientos y acciones.
+[Nótese que si suponemos que Xiao Shuo es un virus anarquista, entonces tenemos que definir los virus anarquistas como seres cuyo objetivo es la libertad total y completa].
+[Xiao Shuo es un virus anarquista].
+
+
+
+
+
+
+
+
+77.
+—El futuro es desconocido —le dije recostado en el piso de mi apartamento, en LSD.
+Sentía como si fuera última noche de mi vida y yo no quería saber nada del mundo.
+De lo malo que era, de lo mucho que iba a llover mierda a causa de mi comportamiento, etc.
+Ella lloraba tanto como yo.
+Le dije que eso era el mundo real.
+—La mierda sucede, la gente cambia y el mundo está loco en este momento, ¿lo sabes? —me dijo ella.
+Le dije que tuvimos un gran día juntos.
+Ella me respondió: «siento mucho que nada vuelva y nos tengamos que ir de aquí».
+Le dije que no me importaba.
+—No me siento muy viva —dijo Molly, su voz como una gruta abierta en la tierra—; siento que soy un fantasma de ayer… el fantasma de una vida, una historia del período antiguo de los años 80, una película en blanco y negro.
+Entonces le dije que me gustaba mucho.
+Esa fue la última vez que se lo dije.
+
+
+
+
+
+
+
+
+78.
+A veces el autor de una novela también es el autor de un juego.
+Aunque a menudo es el creador de nuevas formas de jugar.
+Un autor es como ese actor que sale en las mejores escenas de acción en las películas de acción pero no es el protagonista.
+Así que si tú también estás escribiendo una novela, tú también eres el autor o la autora de un juego.
+Si estás escribiendo una novela tal vez deberías escribir sobre cómo los desarrolladores de juegos, cuando van a iniciar una compañía por sí solos, invierten todo su dinero y tiempo en ello y a veces se quedan sin nada.
+Quedarse sin dinero es algo que también le pasa a quienes se dedican a escribir.
+En lo que a mí respecta, cada uno debería escribir su propio juego, con formas de jugar únicas.
+El autor de este libro se vio tentado a escribir una novela sobre un desarrollador de videojuegos que compite por la presidencia de México.
+Esa hubiera sido una novela sobre la vida, el chantaje cibernético, la política americana, y el expresidente Salinas de Gortari.
+Las novelas siempre son escenarios alternativos de la historia.
+Es lo mismo con los cómics.
+Si el autor de esta novela hubiese escrito un cómic sería un cómic de superhéroes sobre una versión futura de la Tierra gobernada por los Green Lantern Corps.
+En ese cómic se diría que los Green Lantern Corps son militares.
+
+
+
+
+
+
+
+
+79.
+Nos encontrábamos para caminar por la ciudad.
+Viajábamos por la noche.
+Sentíamos que en la oscuridad estar en más contacto con lo que nos rodaba.
+El mundo nos había convertido en el foco de trabajos que nos trataban de acorralar.
+Porque sólo de noche es posible descubrir lo que está pasando detrás de escena, que es donde vivimos; detrás de lo que somos, de lo que está pasando, de las personas a nuestro alrededor.
+Toda comunidad es importante para nuestra supervivencia.
+Nos encontrábamos en un instante crítico para el mundo.
+Y seguimos detenidos ahí, en un instante de noche iluminado por neones.
+Nos encontrábamos de noche para caminar por la ciudad y tomar fotografías.
+Usted sabe que podría contar nuestra historia a través de esas fotografías.
+Fotos que dan sentido.
+Fotos que inspiran.
+Fotos desenfocadas de claroscuros y luces fluorescentes.
+Imágenes de la ciudad a oscuras, tú y yo caminando por ella.
+Esas son las fotos que nos daban esperanza.
+Que me la dan ahora.
+Y es la esperanza lo que atraviesa la noche.
+
+
+
+
+
+
+
+
+80.
+Nueve, seis, tres, uno, cinco.
+Parecía una serie random de números, pero era la clave para el candado que resguardaba el diario de Molly.
+Ella mismo me lo dio, «por si algo pasaba».
+—¿Pero qué va a pasar?, le dije.
+—No, no va a pasar nada.
+Ese día, ella sonaba como si hubiera cometido un pequeño pero imborrable error que la marcaría para siempre como hacker.
+«Mi cabeza sí que está llena de una gran cantidad de errores pequeños y grandes», pensé.
+—Esto es real —dijo—; he hecho algo.
+Al escucharla, empecé a preguntarme si ese pequeño error podría afectar todo, y cómo, y cuándo.
+Y qué era todo.
+—Siempre estoy pensando en el peor escenario —dijo.
+Yo quería saber qué había hecho, pero ella no quiso decirme.
+—Es mejor que no sepas nada.
+Quería obtener las respuestas, pero ¿cómo?
+Mi estómago se revolvió.
+Luego, ella cambió el tema completamente y me preguntó si un videojuego enseña a los jugadores a cómo encontrar los niveles y objetos ocultos.
+—Sí, todo juego deja las pistas necesarias; aunque a veces no deja nada y uno debe descubrirlos, y llegar a ellos es pura suerte.
+—Por supuesto… la vida no es diferente.
+Estaba intrigado y comencé a interrogarme a mí mismo por mi incompetencia para hacer las preguntas indicadas en el tiempo preciso.
+Una búsqueda rápida en internet nos hizo ver cómo la mayoría de los juegos, efectivamente, no dice cuántos cofres del tesoro ocultos hay enterrados en su mapa.
+—Pero se deben seguir buscando más pistas; nunca sabremos si hay más sorpresas ahí —dijo Molly sonriéndome.
+
+
+
+
+
+
+
+
+81.
+«Me iré de la ciudad por unos meses», me escribió Molly en un mail.
+Cuando nos conocimos me sentí muy feliz.
+Al poco tiempo, ella se hizo amiga de mis amigues y eso nos acercó más.
+Ella y yo no éramos unos extraños el uno para el otro.
+«¿Cómo se conocieron?», le preguntaron mis amigues.
+«No traía mi teléfono ni mi cámara, así que le pregunté a él, que estaba comparando un disco, si podía tomarme una foto; él me tomó una foto y me pidió mi mail para mandármela», respondió ella.
+«Después yo me fui a Costa Rica con mi hermana y nos seguimos mandando mails», dijo ella.
+«En esos mails hacíamos planes para cuando volviéramos a vernos, hablábamos de cosas que podríamos hacer juntes», dijo.
+En sus mails, que ella llamaba cartas, ella me contaba muchas cosas.
+Lo que escuchaba, lo que veía, lo que leía.
+Ella estaba interesada en hablar conmigo y yo en escucharla.
+A veces me mandaba fotos y yo le mandaba fotos.
+Un día me mandó una postal desde Costa Rica con un perezoso y su dirección escrita ahí.
+«Usted debería venir, jajaja, así se diría acá».
+Cuando vi mi dirección en la postal me pareció extraña mi dirección.
+Un par de días después, llegó una carta escrita a mano.
+Ahí me decía que estaría desconectada de internet un rato.
+También me dijo que estaba preocupada por mí debido a un sueño que había tenido, pero no me contó el sueño.
+Lo que sí hizo fue prometerme que me mantendría informado si volvía a soñar conmigo.
+
+
+
+
+
+
+
+
+82.
+Los delfines me dijeron:
+—Ella va a estar bien, todo es acerca de los cambios.
+—Por favor, cuéntenme qué pasó —les pedí.
+Se miraron entre sí.
+—Ella hackeó millones cuentas de banco y las borró.
+El titular decía, me dijeron los delfines:
+—La deuda de millones desapareció, también todo el dinero del mundo.
+Todo fue parte de un sueño.
+—A veces los cambios son buenos —me dijeron los delfines al final del sueño.
+
+
+
+
+
+
+
+
+83.
+Cada historia tiene su punto de ruptura.
+El viaje puede terminar antes de comenzar.
+El final puede estar más cerca de lo que se espera.
+Cuando uno de estos tres pensamientos llega, o los tres a la vez, cuando se siente que se agota el tiempo, cuando al despertar nos damos cuenta de ello, ya no hay marcha atrás.
+Es posible que se deba renunciar al sueño o a la realidad que se está buscando.
+
+
+
+
+
+
+
+
+84.
+Ella ya no está aquí.
+La única cosa aquí son estas palabras.
+Y he decidido comenzar de nuevo…
+Reescribir esta novela.
+De nuevo.
+De nuevo.
+Volver a las mismas ideas para hacer adaptaciones y variaciones.
+Lograr la misma sensación  que yo tenía cuando Molly me miraba y me hablaba.
+«¿Pero esta no es una novela original o siquiera una novela, verdad?», me dijo una vez.
+«Me gusta que sea una cosa que parece muchas otras», continuó.
+«Una vez fui parte un grupo de fans de una novela sobre androides; nadie sabía quién era el autor y aun así nos encantaba, hasta trabajamos para hacer una adaptación a manga, creo que lo que hace una novela lo que es son precisamente las palabras y su influjo en las personas; de eso se trata una novela, de sus efectos, de lo que mueve alrededor, de ese ir y venir, de la insistencia en volver a sentir algo y transmitirlo, compartirlo mejor dicho».
+
+
+
+
+
+
+
+
+85.
+—Tus sueños son posibles —me dijeron tres delfines.
+—La única cosa trágica que puede suceder es que el sueño se vuelva realidad y no sea lo que esperabas —dijo el delfín de ojos grandes, color marrón.
+—No te asustes —dijo otro— si este sueño se vuelve realidad.
+—Este sueño no sólo es posible, es definitivamente posible —dijo el tercer delfín—; la conversión espiritual es una experiencia de corazón abierto,  que no deja lugar a dudas.
+—Debes estar preparado para caer en la oscuridad —dijo el primer delfín.
+—Si alguien te quiere despertar será el fin del sueño, y game over… —dijo el segundo delfín.
+—La vida no es un videojuego, aunque mucha gente se empecine en ello —dijo el delfín de los ojos marrones mirando al delfín que acababa de hablar.
+—Estamos aquí como un medio espiritual, no para decirte qué hacer, sino para decirte que no dudes de la realidad de tus sueños.
+«No muchas veces sabemos lo que queremos, oí primero sabemos y después ya no; pero no te asustes nunca.
+»Mientras no dejes de procurar aquello que ilumina y mantiene contento tu corazón estarás bien», dijeron los tres delfines.
+Y antes de desaparecer me advirtieron:
+—Este sueño ha sido una experiencia espiritual que debes atender.
+
+
+
+
+
+
+
+
+86.
+En otro de mis sueños me encontré con el Sasquatch.
+Estaba en un bosque, escribiendo en una vieja computadora de los 90s.
+Le dije:
+—Soñé contigo cuando tenía 10 años.
+El Sasquatch se volvió para mirarme.
+—Ese día fue muy emocionante para mí —me respondió—; cuando te fuiste tuve que pelear con mil y un gatos monteses.
+—Pero esta vez me voy a quedar y vamos a terminar esta novela.
+—Ya estamos llegando a final.
+—Lo sé, y sé que no eres ningún monstruo.
+—Los dos vamos a ser pacientes.
+—Sí.
+
+
+
+
+
+
+
+
+87.
+En su quinto libro, Xiao Shuo ficcionalizó su primera experiencia con internet.
+«Hace años, muchos antes de pensar en escribir esta novela, la gente hablaba pestes de internet.
+»Decían que era una sombría caja negra de deseos.
+»Que era un portal satánico.
+»Un hoyo negro de pensamientos.
+»La entrada a una secta de seres abducidos por la oscuridad.
+»Hoy en día, la existencia de la web es asumida con normalidad y soltura.
+»Y a la gente le encanta hablar de cómo interactúa en las redes.
+»A veces, ni siquiera distinguen si los lazos que crean son digitales o reales.
+»Y tal vez no sea posible distinguirlos.
+»Antes había cierta incredulidad, miedo y asombro por ese otro universo duplicado que me interesaba explorar».
+La novela es inconseguible en formato físico, pero alguien la escaneó y la compartió en internet.
+Ahora sigue inconseguible, pero buscando lo suficiente se puede encontrar alguna copia digital en algún foro.
+La comunidad lectora ha encontrado muchas similitudes entre ese quinto libro con El Museo de la Novela de la Eterna, de Macedonio Fernández.
+Ambas novelas, se ha comentado, parece que distienden el momento de arrancar, como si al no iniciar tampoco se tuviera que dejar de narrar.
+«Sí, yo leí a Macedonio.
+»Sobre todo, fui cautivado por su cadencia.
+»Fue hace años.
+»Hablaba poco español, pero con uno o dos diccionarios me las apañé.
+»Sí, lo leí con devoción de plagio.
+»Cuando lo leí me di cuenta que algo así era el internet.
+»Creo que recién estoy entendiendo todo lo que escribí».
+Pero a diferencia de Macedonio, en la novela de Xiao Shuo hay un montón de tigres, dragones y aves; también hay zombies, otakus, hackers, anarquistas y pesadillas que se suceden como si nunca se dejara de soñar.
+«Macedonio inventó este sueño».
+
+
+
+
+
+
+
+
+88.
+También hay distintos tipos de sueños:
+Están los que son menos «realidad» pero, de otro modo, más «reales».
+Hay otros sueños que son mucho más «reales» que la propia «realidad» que los produjo.
+También existe una gran variedad de sueños que no se acercan a la «realidad».
+Otros, los más raros, se hacen «realidad» al despertar de ellos.
+Y hay otro sueños inexplicables, como el que me contó un día Molly:
+De niña soñó que caminaba bajo la lluvia a la orilla de un acantilado rodeado de rocas afiladas, la noche antes de su cumpleaños.
+Ella avanzaba hacia delante como huyendo de algo; el acantilado seguía y seguía.
+Ella sólo sabía que estaba escapando, pero no sabía de qué ni hacia dónde se dirigía.
+Al despertar, ella cumplió años y también se sintió triste.
+A veces quien sueña puede tener sueños sobre el senderismo o la escalada, pero por lo general los sueños parecen centrarse en la experiencia real de caminar o subir; en estos sueños lo «real» es el sentimiento dentro del sueño, ya que el objetivo no es un objeto real, por lo que no tiene que tener sentido en la «realidad».
+Después de escribir todo esto, soñé que subía por un acantilado en mi cumpleaños y mientras caminaba y escalaba pensaba: «así que esto es lo que se siente al estar dentro de una computadora»; subí hasta que amaneció y escuché gente gritando.
+
+
+
+
+
+
+
+
+89.
+Magia e internet son similares.
+Y eso no es necesariamente porque funcionen de maneras parecidas.
+Magia e internet contienen elementos tan similares que se pueden encontrar puntos en común entre ellos; estos elementos, sin embargo, tienen nombres diferentes.
+Algunas personas piensan que los nombres de las cosas surgieron de errores tipográficos.
+Como la palabra «panal».
+Yo no estoy de acuerdo con eso, ese término no es tan común como para que alguien lo pueda confundir con otra cosa.
+A pesar de eso, una vez vi escrito «Cuidado con el penal de abejas».
+Si estás familiarizado con ciertos nombres, pero no con los nombres de los diccionarios (como yo), tal vez sería más práctico llamar al «panal»«nido de abejas» o simplemente «casa de abejas».
+Muy distinto a decir «penal de abejas» o «reclusorio de abejas».
+En resumen, no creo que los nombres sean realmente lo mismo que aquello que designan.
+Para aclarar aún más el tema y esta historia, creo que hay que tener en cuenta cómo se ven las abejas.
+Algo así:
+
+¿Cómo es el cuerpo de una abeja?
+¿Y por qué es así?
+¿Es negro con blanco?, ¿quién nos lo asegura?
+Y, si el negro fuera gris y el blanco también, ¿qué sería «gris»?
+En cualquier caso, diferentes animales tienen personalidades diferentes aunque comparten características similares que los hacen similares ante nuestros ojos humanos.
+¿Nuestra vida en internet es «gris»?
+
+
+
+
+
+
+
+
+90.
+Esta novela se trata de un tipo (el autor del videojuego) a quien no le gusta que le digan cómo ser.
+El juego se trata de ser capaz de controlar las emociones del protagonista y su mente.
+Se necesita mucho trabajo para jugarlo de manera efectiva, ¿por qué nos gusta tanto jugar a controlar y adivinar las emociones y las mentes de otras personas?
+Yo creo que es porque los grandes desafíos tienen verosimilitud.
+Cuando estás jugando, tu cerebro trabaja para que las cosas parezcan realistas, pero si las cosas se presentan como realistas por sí mismas al cerebro le parecen muy extrañas.
+Como el personaje que habla del tipo de música que le gusta, es raro.
+Tal vez ni siquiera esté hablando de música.
+Me resulta difícil hacer que las personas sientan creíble este juego.
+Esto no es un juego acerca de personas que dicen qué piensan sobre la música que escuchan; se trata de lo que hay en medio de los personajes, de lo que sienten entre sí.
+Siempre tratamos de pensar en juegos o novelas en términos de lo que piensa el jugador/lector acerca de lo que está pasando.
+Tal vez, no sé, todo depende del azar.
+La forma en que el jugador juega el juego puede cambiar con el tiempo.
+Lo que sentimos también.
+Eso.
+
+
+
+
+
+
+
+
+91.
+Esta novela tal vez es una guía para encontrar al Sasquatch.
+Si dijéramos que el Sasquatch es una «maldición sobre todos los seres humanos», entonces esta novela sería un «trabajo sucio».
+Pero si estamos hablando de una teoría científica real que puede ayudar a resolver el misterio del Sasquatch, entonces este no es ni siquiera un trabajo.
+Esta novela es una evidencia que hace más convincente la existencia de lo inexplicable.
+En esta novela no hay personajes escépticos.
+Toda la imaginación está en función de volver a creer, cómo puede ser eso un «trabajo sucio»?
+El hecho de que la existencia del Sasquatch sea viable es un sorprendente giro de los acontecimientos.
+Si los científicos estaban mal y existe el Sasquatch, ¡¡qué otras cosas pueden existir allá afuera?!
+Hay varias razones para pensar que este escenario podría ser verdad y esta novela por lo tanto se aleja de la ficción y se acerca al manual.
+Sin embargo, ¿cuál es el punto de buscar algo que es tan fácil de detectar cuando estamos lejos?
+¿Significa que lo cercano es menos visible?
+¿Que lo más fácil de nombrar, es, en realidad, lo más esquivo?
+
+
+
+
+
+
+
+
+92.
+Mi año de los sueños de presagios comenzó con un sueño acerca de delfines.
+Luego soñé que era un niño de pie sobre algo y de repente ese algo decía:
+«Llévame a casa».
+Soñé que estaba en el bosque con ese algo en un brazo y el Diablo en el otro.
+Soñé que iba en un coche y chocaba y alguien moría.
+Soñé que debía suicidarme por un pacto fallido con el Diablo.
+Soñé que en los bosque de este país había un montón de niñas y niños muertos.
+Soñé que perdía la cabeza.
+I i iiiii i ii ii iiii i i.
+Soñé que tres delfines se acercaban a mí en una fiesta.
+Soñé que visitaba la Isla de los Delfines.
+
+
+
+
+
+
+
+
+93.
+El insomnio es un videojuego glitcheado.
+Después de una noche y su madrugada de fiesta, me quedé sin energía ni serotonina.
+Todo lo que leía me parecía triste.
+Molly estaba junto a mí jugando FIFA.
+Trataré de sonreírle, pensé.
+—Estoy por ser campeona de Europa —dijo ella.
+Pero no podía hacer eso ni podía sujetar las lágrimas en mis ojos.
+—10 minutos más y listo.
+Esa noche, había visto su sonrisa a la luz de neones y estrobos.
+—Ahhh, ¡no sé si mi defensa aguante!
+Habíamos estado bailando y ella me dijo, me gritó al oído algunas palabras… amable, compasivo, milagro.
+—¡Eso!
+Mis ganas de llorar se hicieron más fuertes.
+—Bueno, voy a volver a empezar —sentenció cuando terminó la premiación de sus jugadores virtuales.
+Pero esa determinación suya, ganar para volver a empezar…
+Ese era el verdadero milagro, me dije.
+Tener al lado a alguien que entiende que se trata del camino, no de la novela.
+
+
+
+
+
+
+
+
+94.
+¿Es el Sasquatch una metáfora del amor perdido?
+La respuesta es sí.
+Al interior, tanto de esta novela como de la vida, late una idea común: que nosotros, nuestros cuerpos, lo que somos y pensamos que nos constituye, somos amados.
+Qué maravilla.
+Si no hubiera otras personas tratando de mirar hacia fuera de sí, creo que no estaría aquí hablando con ustedes hoy.
+¿Es el Sasquatch una metáfora del amor perdido?
+Bueno, sí.
+Porque las criaturas tienen una extraordinaria capacidad de comunicarse.
+Y, al parecer, tanta evasión significa que el Sasquatch perdió esa capacidad.
+¿Es el Sasquatch una metáfora del amor perdido?
+La respuesta larga es que el Sasquatch y las personas somos criaturas maravillosamente solitarias, esquivas, huidizas, perdidas y alucinantes.
+La respuesta corta es que sí.
+
+
+
+
+
+
+
+
+95.
+—Molly está en la ciudad?
+—Sí, ella está aquí.
+—Molly está aquí mismo, deberías ir a hablar con ella.
+Molly está en la ciudad, en la misma fiesta que yo.
+Molly es un barco que viaja por sobre las cabezas de todos los presentes.
+¿Un barco se acerca o se aleja del horizonte?
+No lo sé.
+Molly es como una alucinación.
+Sí! es ella, es ella!
+Molly, una vida de dolor y amor.
+Aproveché el momento en el que sonaba una canción que le gustaba para acercarme.
+Soy un bote salvavidas que busca alejarse o regresar al barco de donde salió.
+Molly es un barco.
+Un bote salvavidas puede no ser un lugar seguro del todo.
+Bueno…
+Pero en los botes salvavidas siempre hay espacio para al menos dos personas.
+Y nosotros somos dos!
+Le voy a preguntar si quiere que nos alejemos de aquí juntos.
+Le diré que, le diré que…
+Le diré que acercarse o alejarse son cosas importantes porque nos mantienen en movimiento, no importa si sólo contamos con un bote salvavidas para hacerlo.
+Le diré que un bote salvavidas es suficiente para dos.
+¿Acercarse o alejarse, felicidad o belleza?
+Preferiría todo.
+—Oh.
+
+
+
+
+
+
+
+
+96.
+Un pequeño cambio hace una gran diferencia.
+Es por eso que nuestro plan era proporcionar al mundo una biblioteca secreta para combatir el trabajo, y un foro para imaginar ese nuevo mundo.
+Todos deberíamos tener siempre la oportunidad de estar bien.
+De buscar cómo estarlo.
+De saber que podemos estarlo.
+De lograrlo.
+«La salud y la felicidad deberían ser prioridades en nuestro día a día», escribió Molly en nuestro manifiesto.
+Nuestra filosofía era esa, otorgar herramientas para cuidarnos.
+Era tratar de eliminar jerarquías.
+No dejar a nadie en soledad.
+
+
+
+
+
+
+
+
+97.
+Algunos días pude presenciar la belleza.
+—Hoy veo la belleza en ti —le dije a Molly.
+—Siempre que me dices que soy hermosa, digo gracias y luego sonrío… gracias.
+—¿Y por qué no estás sonriendo?
+—Dime tú…
+—(>_≤)
+—(⌒ ▽ ⌒)☆
+(ɔˆз(ˆ⌣ˆc)
+—Tus palabras hacen feliz a mi corazón y yo creo en tus palabras.
+Esa chica… esa chica perfecta.
+Ese amor…
+Debió ser un sueño.
+Todas las cosas que me dijeron sobre la vida, el dolor, la incertidumbre, sobre las cosas que viviría antes de saber cómo era sentir un corazón contento, hoy parecen habitar una tierra lejana.
+Molly era hermosa y mucho más; era tan bella como una flor, tan fuerte como un dragón, tan amable como un tigre que…
+
+
+
+
+
+
+
+
+98.
+Al final del videojuego, podemos ver a Xiao Shuo en un barco viendo la luna.
+En realidad, el barco es la luna.
+Después de una pequeña cantidad de tiempo la luna se desvanece en el agua.
+Y Xiao Shuo, levitando sobre el agua, recita un poema.
+Xiao Shuo utiliza cierta terminología china para describir la tierra y también describe los acontecimientos durante los reinados de Chiang Kai-shek, que incluyen la caída del Estado Manchu después de la Guerra Civil China.
+Después, el videojuego da dos opciones para el final:
+El jugador puede continuar su viaje por el río Amarillo u optar por terminar la historia.
+Si sigues el río, Xiao Shuo se vuelve barquero.
+Si optas por la segunda opción, aparece una pantalla negra que cubre todo como la noche más oscura de los tiempos y aparece escrito:
+«A esto se le llama la pequeña luz oscura:
+»lo blando y lo débil
+»triunfa sobre lo duro y fuerte».
+
+
+
+
+
