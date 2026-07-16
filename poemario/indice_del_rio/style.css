@@ -23,13 +23,13 @@
   src:url('fonts/NOTOSANSLINEARB-REGULAR.TTF') format('truetype'),
       url('../NOTOSANSLINEARB-REGULAR.TTF') format('truetype');
   unicode-range:U+10000-100FF; }
-@font-face{ font-family:'IDR-materia'; font-display:swap;
+@font-face{ font-family:'unifont'; font-display:swap;
   src:url('../UNIFONT.TTF') format('truetype'); }   /* respaldo universal, sin unicode-range */
 :root{
   --bg:#08080b; --bg2:#11101a; --ink:#e9e4d6;
   --a0:#e5322a; --a1:#2b6cff; --a2:#f2d34a; --a3:#13d6a4;
   --claro:0; --deg:37deg;
-  --mono:'IDR-materia', ui-monospace, 'SFMono-Regular', 'Cascadia Code', Menlo, Consolas, 'Noto Sans Mono', monospace;
+  --mono:'IDR-materia', ui-monospace, 'SFMono-Regular', 'Cascadia Code', Menlo, Consolas, 'Noto Sans Mono', monospace, 'unifont';
   --serif: 'Iowan Old Style','Palatino Linotype','Book Antiqua', Palatino, Georgia, 'Noto Serif', serif;
   --sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
   --mat:'IDR-materia','Segoe UI Historic','Noto Sans Egyptian Hieroglyphs','Noto Sans Cuneiform','Noto Sans Runic','Apple Symbols','Segoe UI Symbol', var(--mono);
