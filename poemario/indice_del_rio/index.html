@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#07070a">
+  <meta name="color-scheme" content="dark light">
+  <title>ÍNDICE DEL RÍO · el texto que todavía no ha sido encontrado</title>
+  <meta name="description" content="Máquina de lectura no lineal para un manuscrito ilegible dentro de una red digital averiada. poesiasexp / canekzapata.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- fondo generativo: río de datos, polvo, residuos -->
+  <canvas id="rio" aria-hidden="true"></canvas>
+
+  <!-- el campo continuo: se arrastra, se acerca, se aleja -->
+  <div id="campo" role="application" aria-label="Índice del río: laberinto de lectura no lineal">
+    <!-- las conexiones, circuitos y diagramas imposibles -->
+    <svg id="hilos" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"></svg>
+    <!-- los nodos legibles y parcialmente legibles -->
+    <div id="nodos"></div>
+  </div>
+
+  <!-- el hilo de Ariadna, poco fiable, y las tres o cuatro marcas del HUD -->
+  <aside id="hud" aria-live="polite">
+    <div id="titulo" aria-hidden="true"><span class="t1">ÍNDICE</span><span class="t2">DEL RÍO</span></div>
+    <div id="hilo-lectura" title="el hilo de Ariadna (no del todo fiable)"></div>
+    <div id="coord" aria-hidden="true">⌖ 00.00 · 00.00 · z0</div>
+    <div id="estado">el río todavía no ha sido leído.</div>
+    <nav id="marcas" aria-label="marcas">
+      <button id="b-r" type="button" title="otra excavación · [R]">↺</button>
+      <button id="b-m" type="button" title="mapa incompleto · [M]">◫</button>
+      <button id="b-t" type="button" title="alternar traducción · [T]">⇄</button>
+      <button id="b-p" type="button" title="imponer esta versión · [P]">⌑</button>
+      <label id="semilla-marca" title="semilla reproducible">
+        <span aria-hidden="true">≈</span>
+        <input id="semilla" spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="semilla reproducible">
+      </label>
+    </nav>
+    <div id="ayuda-min" aria-hidden="true">arrastra · rueda&nbsp;=&nbsp;profundidad · doble&nbsp;clic&nbsp;rompe · esc&nbsp;=&nbsp;afuera</div>
+  </aside>
+
+  <!-- el mapa incompleto (M) -->
+  <div id="mapa" class="camara" hidden aria-hidden="true"></div>
+
+  <!-- las cámaras densas: AFUERA (esc) y EL SIGNIFICADO PROVISIONAL -->
+  <div id="camara" class="camara" hidden></div>
+
+  <!-- la edición impresa de esta lectura (P) -->
+  <section id="impreso" aria-hidden="true"></section>
+
+  <noscript>
+    <div class="sin-js">
+      <p>ÍNDICE DEL RÍO necesita JavaScript para excavar.</p>
+      <p>Sin él sólo queda el manuscrito enterrado, que es como decir: nada, todavía.</p>
+    </div>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
