@@ -1,0 +1,262 @@
+/* =====================================================================
+   EL ARCHIVO NO RECUERDA HABER SIDO LEÍDO
+   style.css :: el color es clima, no decorado
+
+   El clima (canvas) pinta y mueve el fondo. Encima flota un plano de
+   texto y diagramas que respira, deriva y cambia de color con la
+   armonía que le tocó a esta lectura. Poesía visual + arte generativo:
+   legible por zonas, ilegible por zonas, nunca quieto.
+   ===================================================================== */
+
+:root {
+  /* la paleta las sobrescribe (momento del día × modo armónico) */
+  --c0:#222;--c1:#333;--c2:#444;--c3:#555;--c4:#666;--c5:#777;--c6:#888;--c7:#999;
+  --c8:#aaa;--c9:#bbb;--c10:#ccc;--c11:#ddd;--c12:#4af;--c13:#f4a;--c14:#af4;--c15:#fa4;
+  --c16:#4fa;--c17:#a4f;--c18:#f44;--c19:#4f4;--c20:#44f;--c21:#ff4;--c22:#4ff;--c23:#f4f;
+  --fondo:#0a0a12; --fondo2:#141225; --tinta:#f2eee2; --acento:#ff3b70; --diagnostico:#12e0c0;
+  --deg:90deg; --deg2:45deg; --t1:1.4s; --t2:6s; --t3:3.7s; --t5:12s;
+  --authority:0; --depth:0;
+  --mono:"IBM Plex Mono","SFMono-Regular","Cascadia Mono","Courier New",monospace;
+  --grotesk:"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100dvh;overflow:hidden;background:var(--fondo);
+  color:var(--tinta);font-family:var(--mono);font-size:14px;overscroll-behavior:none;cursor:crosshair}
+button,input{font:inherit;color:inherit}
+button{border-radius:0}
+::selection{background:var(--acento);color:#000}
+
+/* -------- animaciones de color (como paisajes de poesiasexp) -------- */
+@keyframes derrame{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes tinta{0%{color:var(--c12)}25%{color:var(--c15)}50%{color:var(--c18)}75%{color:var(--c22)}100%{color:var(--c12)}}
+@keyframes glow{0%,100%{text-shadow:0 0 .3em var(--fc,var(--acento))}50%{text-shadow:0 0 .9em var(--fc,var(--acento)),0 0 .2em var(--tinta)}}
+@keyframes drift{from{translate:0 0}to{translate:var(--dx,0) var(--dy,0)}}
+@keyframes pulse{0%,100%{opacity:.85}50%{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* grano finísimo, ahora casi transparente: el color manda */
+#grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.06;mix-blend-mode:overlay;
+  background-image:radial-gradient(circle at 13% 17%,#fff 0 .4px,transparent .6px),
+    radial-gradient(circle at 71% 59%,#fff 0 .3px,transparent .55px);
+  background-size:5px 7px,7px 11px;animation:grain .24s steps(2) infinite}
+@keyframes grain{50%{transform:translate(.6px,-.4px)}}
+
+/* =====================================================================
+   EL PLIEGO + EL CLIMA
+   ===================================================================== */
+#pliego{position:fixed;inset:0;width:100vw;height:100dvh;overflow:hidden;isolation:isolate;
+  background:linear-gradient(var(--deg),var(--fondo),var(--fondo2),var(--fondo));
+  background-size:400% 400%;animation:derrame var(--t5) ease infinite}
+#clima{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
+/* viñeta: da profundidad y ayuda a que el texto flote */
+#pliego::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:radial-gradient(120% 120% at 50% 45%,transparent 55%,color-mix(in srgb,var(--fondo) 80%,transparent) 100%)}
+
+/* borde de prueba de imprenta, coloreado por la autoridad */
+#pliego::before{content:"";position:absolute;inset:9px;z-index:40;pointer-events:none;
+  border:1px solid color-mix(in srgb,var(--acento) 60%,transparent);
+  opacity:calc(.2 + var(--authority)*.7);mix-blend-mode:screen}
+
+/* relaciones (grafo de enlaces) */
+.relation-layer{position:absolute;inset:0;width:100%;height:100%;z-index:4;overflow:visible;pointer-events:none;
+  mix-blend-mode:screen}
+.relation{fill:none;stroke-width:1.6;vector-effect:non-scaling-stroke;opacity:.85;
+  stroke-dasharray:5 4;animation:dash 3s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-90}}
+.relation.rel-perdida{stroke-dasharray:1 6;opacity:.6}
+.relation.rel-contradiccion{stroke-width:2.2}
+.relation.rel-eco{stroke-dasharray:2 2}
+.relation.transient{stroke-dasharray:3 3;opacity:.95;stroke-width:2}
+.relation-label{font-family:var(--mono);font-size:9px;letter-spacing:.04em;text-transform:uppercase;opacity:.8}
+
+/* =====================================================================
+   FRAGMENTOS :: estaciones meteorológicas con memoria
+   ===================================================================== */
+.fragments{position:absolute;inset:0;z-index:6}
+.fragment{position:absolute;transform:translate(-50%,-50%) scale(var(--scale,1));transform-origin:center;
+  translate:0 0;animation:drift var(--dt,8s) ease-in-out infinite alternate;
+  max-width:min(30ch,34vw);padding:3px 7px;pointer-events:auto;cursor:pointer;
+  opacity:var(--legibility,1);
+  background:color-mix(in srgb,var(--fondo) 66%,transparent);
+  border-left:2px solid var(--fc,var(--acento));border-radius:0 4px 4px 0;
+  box-shadow:-1px 0 .8em color-mix(in srgb,var(--fc,var(--acento)) 30%,transparent);
+  backdrop-filter:blur(1px);transition:opacity .35s,transform .35s}
+.fragment .frag-glyph{font-size:1em;color:var(--fc,var(--acento));margin-right:.35em;
+  filter:drop-shadow(0 0 .3em var(--fc))}
+.fragment .frag-text{display:inline;font-size:clamp(9px,.9vw,15px);line-height:1.22;white-space:pre-wrap;
+  color:var(--tinta);
+  /* compresible / incompresible: la atención comprime la letra */
+  letter-spacing:calc((var(--compress,1) - 1) * .14em);
+  filter:contrast(calc(1 + var(--dano,0)*.7));
+  text-shadow:calc(var(--dano,0)*2px) 0 0 var(--diagnostico)}
+.fragment .frag-graph{font-size:11px;line-height:1;color:var(--fc,var(--acento));letter-spacing:-.02em;
+  opacity:.9;margin-top:1px}
+.fragment .frag-meta{display:block;font-size:6px;color:var(--fc,var(--acento));opacity:.6;
+  letter-spacing:.08em;text-transform:uppercase}
+.fragment:hover{opacity:1!important;z-index:30;animation-play-state:paused}
+.fragment:hover .frag-text{color:#fff}
+
+.fragment.instruction{border-left-color:var(--diagnostico);
+  background:color-mix(in srgb,var(--diagnostico) 12%,color-mix(in srgb,var(--fondo) 40%,transparent))}
+.fragment.instruction .frag-text{text-transform:uppercase;letter-spacing:.05em;font-weight:bold}
+.fragment.fossil{filter:saturate(.4)}
+.fragment.fossil .frag-text{letter-spacing:.24em;opacity:.7}
+.fragment.sign{animation:drift var(--dt,8s) ease-in-out infinite alternate,glow 2.4s ease-in-out infinite}
+.fragment.sign .frag-text{color:var(--diagnostico);letter-spacing:.1em}
+.fragment.predicted{border-left-style:dashed}
+.fragment.predicted .frag-meta{color:var(--diagnostico);opacity:.9}
+.fragment.connected{box-shadow:-1px 0 1.4em color-mix(in srgb,var(--fc) 55%,transparent)}
+.fragment.metadata{opacity:.32!important;filter:grayscale(.7)}
+.fragment.metadata .frag-text::before{content:"‹ "}
+.fragment.metadata .frag-text::after{content:" ›"}
+.fragment.selected{outline:2px solid var(--acento);outline-offset:3px;z-index:40}
+.fragment.selected .frag-text{color:var(--acento)}
+
+/* hipertrofia: lo muy observado se vuelve monumental y a color */
+.fragment.hyper{z-index:20;border:0;background:none;box-shadow:none;padding:0;mix-blend-mode:screen}
+.fragment.hyper .frag-text{font-family:var(--grotesk);font-weight:900;text-transform:uppercase;
+  letter-spacing:-.05em;line-height:.82;font-size:clamp(22px,7vw,130px);
+  color:var(--fc);-webkit-text-stroke:1px color-mix(in srgb,var(--tinta) 30%,transparent)}
+.fragment.hyper .frag-glyph,.fragment.hyper .frag-graph,.fragment.hyper .frag-meta{display:none}
+
+/* =====================================================================
+   CAJAS / FRONTERAS
+   ===================================================================== */
+.boxes{position:absolute;inset:0;z-index:5}
+.box{position:absolute;border:1px dashed var(--bc,var(--acento));pointer-events:auto;cursor:grab;
+  background:color-mix(in srgb,var(--bc,var(--acento)) 6%,transparent);mix-blend-mode:screen}
+.box:active{cursor:grabbing}
+.box-label{position:absolute;top:-9px;left:5px;font-size:7px;text-transform:uppercase;letter-spacing:.22em;
+  color:var(--bc);background:var(--fondo);padding:0 4px}
+.box-handle{position:absolute;right:-6px;bottom:-6px;width:13px;height:13px;
+  border-right:2px solid var(--bc);border-bottom:2px solid var(--bc);cursor:nwse-resize}
+
+/* =====================================================================
+   MONUMENTO :: la palabra del estrato, comprimida o expandida
+   ===================================================================== */
+.monument{position:absolute;left:50%;top:56%;z-index:2;pointer-events:none;
+  transform:translate(-50%,-50%) scaleX(calc(1 - var(--depth,0)*.08));
+  font-family:var(--grotesk);font-weight:900;text-transform:uppercase;
+  font-size:clamp(60px,20vw,340px);letter-spacing:-.08em;line-height:.7;white-space:nowrap;
+  opacity:.16;mix-blend-mode:overlay;user-select:none}
+
+/* =====================================================================
+   PANEL DE GRÁFICAS :: diagramas de la lectura
+   ===================================================================== */
+.charts{position:absolute;left:var(--edge,14px);bottom:14px;z-index:8;
+  display:flex;gap:9px;align-items:flex-end;pointer-events:none;
+  mix-blend-mode:screen;opacity:.9}
+.chart-block{width:clamp(74px,10vw,120px)}
+.chart-title{font-size:7px;text-transform:uppercase;letter-spacing:.14em;color:var(--tinta);opacity:.8;margin-bottom:2px}
+.chart{width:100%;height:auto;overflow:visible}
+.chart rect,.chart line,.chart circle{transition:all .5s}
+
+/* =====================================================================
+   LEYENDA :: corruptible, a color
+   ===================================================================== */
+.legend{position:absolute;right:14px;bottom:14px;z-index:9;width:clamp(140px,15vw,220px);
+  font-size:8px;pointer-events:none;color:var(--tinta);letter-spacing:.04em;
+  border:1px solid color-mix(in srgb,var(--tinta) 30%,transparent);padding:6px 8px;
+  background:color-mix(in srgb,var(--fondo) 55%,transparent);backdrop-filter:blur(2px)}
+.legend-head{text-transform:uppercase;letter-spacing:.16em;margin-bottom:3px;color:var(--acento)}
+.legend-bar{height:3px;background:color-mix(in srgb,var(--tinta) 25%,transparent);margin-bottom:5px}
+.legend-bar::before{content:"";display:block;height:100%;width:var(--w,100%);
+  background:linear-gradient(90deg,var(--diagnostico),var(--acento))}
+.legend-row{display:grid;grid-template-columns:1.4em 1fr;gap:5px;align-items:baseline;line-height:1.5}
+.legend-glyph{font-size:1.1em}
+.legend-name{text-transform:uppercase}
+
+/* =====================================================================
+   ORÁCULO :: boletín del clima / meme / instrucción corrompida
+   ===================================================================== */
+.oracle{position:absolute;left:50%;top:12%;z-index:12;transform:translateX(-50%);
+  font-family:var(--grotesk);font-weight:800;text-transform:uppercase;
+  font-size:clamp(12px,1.8vw,26px);letter-spacing:.02em;text-align:center;max-width:84vw;
+  color:var(--oc,var(--acento));pointer-events:none;opacity:0;
+  text-shadow:0 0 .5em color-mix(in srgb,var(--oc,var(--acento)) 60%,transparent),0 1px 0 #000}
+.oracle.visible{animation:oracle 4.6s steps(60) forwards}
+.oracle[data-kind="bulletin"]{font-weight:700;font-size:clamp(11px,1.5vw,20px);letter-spacing:.04em}
+.oracle[data-kind="mutation"]{font-size:clamp(13px,2vw,30px)}
+@keyframes oracle{0%,3%{opacity:0}7%{opacity:1}86%{opacity:.95}100%{opacity:0}}
+
+/* =====================================================================
+   SELLO :: momento, modo, humor, vuelta
+   ===================================================================== */
+.stamp{position:absolute;left:14px;top:14px;z-index:10;display:flex;flex-direction:column;gap:2px;
+  font-size:8px;text-transform:uppercase;letter-spacing:.14em;pointer-events:none;color:var(--tinta)}
+.stamp-turn{font-weight:bold;color:var(--acento)}
+.stamp-state{color:var(--diagnostico)}
+.stamp-clima{color:var(--c14)}
+.stamp-frag{opacity:.7}
+
+/* lector fantasma */
+.ghost-cursor{position:absolute;width:16px;height:16px;z-index:11;transform:translate(-50%,-50%);
+  border:1.5px solid var(--acento);border-radius:50%;pointer-events:none;
+  box-shadow:0 0 0 4px color-mix(in srgb,var(--acento) 24%,transparent),0 0 1em var(--acento);animation:spin 4s linear infinite}
+.ghost-cursor::after{content:"lector fantasma";position:absolute;left:20px;top:0;font-size:6px;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--tinta);white-space:nowrap}
+#pliego[data-ghost="on"] #clima{filter:brightness(1.06) saturate(1.15)}
+
+/* modos de estado (moduladores sobre el clima) */
+#pliego[data-mode="arqueologia_futura"] #clima{filter:sepia(.3) hue-rotate(-20deg)}
+#pliego[data-mode="excavacion"] .monument{opacity:.3}
+#pliego[data-mode="profecia_fallida"]::before{border-color:var(--diagnostico);opacity:.8}
+#pliego[data-mode="futuro_anterior"] .fragment.predicted{animation:drift var(--dt) ease-in-out infinite alternate,pulse 2.2s infinite}
+
+/* destellos de evento */
+#pliego[data-flash="link"] #clima{animation:none;filter:brightness(1.5) saturate(1.4)}
+#pliego[data-flash="mutation"] #clima{filter:invert(1) hue-rotate(180deg)}
+#pliego[data-flash="authority"]::before{box-shadow:inset 0 0 0 5px var(--acento)}
+#pliego[data-flash="break"]{animation:shake .5s steps(4)}
+@keyframes shake{25%,75%{transform:translateX(4px)}50%{transform:translateX(-4px)}}
+
+/* =====================================================================
+   CONTROLES :: mínimos
+   ===================================================================== */
+#controls{position:fixed;right:12px;top:12px;z-index:60;display:flex;align-items:center;gap:6px;opacity:.22;transition:opacity .3s}
+#controls:hover{opacity:1}
+#controls button{width:26px;height:26px;background:transparent;border:1px solid var(--tinta);color:var(--tinta);cursor:pointer}
+#controls button:hover{border-color:var(--acento);color:var(--acento);box-shadow:0 0 .6em var(--acento)}
+.seed-control{font-size:7px;text-transform:uppercase;letter-spacing:.1em;color:var(--tinta);display:flex;flex-direction:column;opacity:.7}
+.seed-control input{width:130px;background:transparent;border:0;border-bottom:1px solid var(--tinta);color:var(--tinta);font-size:9px;padding:1px 0}
+
+/* =====================================================================
+   IMPOSICIÓN :: la edición impresa de esta lectura
+   ===================================================================== */
+#print-book{display:none}
+@media print{
+  #grain,#pliego,#controls{display:none!important}
+  html,body{height:auto;overflow:visible;background:#fff;color:#111}
+  #print-book{display:block;background:#fff;color:#111;font-family:var(--mono)}
+  @page{size:A4;margin:12mm}
+  .plate{position:relative;width:100%;min-height:258mm;page-break-after:always;padding:8mm;
+    border:.3mm solid #111;overflow:hidden;display:flex;flex-direction:column}
+  .plate-crop{position:absolute;width:6mm;height:6mm}
+  .plate-crop.tl{left:2mm;top:2mm;border-left:.3mm solid #111;border-top:.3mm solid #111}
+  .plate-crop.br{right:2mm;bottom:2mm;border-right:.3mm solid #111;border-bottom:.3mm solid #111}
+  .plate-head{display:flex;justify-content:space-between;font-size:8pt;text-transform:uppercase;
+    letter-spacing:.2em;border-bottom:.3mm solid #111;padding-bottom:2mm;margin-bottom:4mm}
+  .plate-head-r{color:#b00}
+  .plate-foot{margin-top:auto;padding-top:3mm;font-size:7pt;color:#666;text-transform:uppercase;letter-spacing:.1em}
+  .plate-cover{align-items:center;justify-content:center;text-align:center}
+  .cover-title{font-family:var(--grotesk);font-weight:900;font-size:34pt;line-height:.92;white-space:pre-line;margin:0 0 6mm}
+  .cover-sub{font-size:9pt;font-style:italic;color:#444;max-width:120mm}
+  .cover-meta{margin-top:12mm;font-size:8pt;line-height:1.7;text-align:left;color:#222}
+  .plate-field{position:relative;flex:1;min-height:180mm}
+  .plate-svg{position:absolute;inset:0;width:100%;height:100%}
+  .plate-rel{stroke:#111;stroke-width:.3;vector-effect:non-scaling-stroke;opacity:.5}
+  .plate-frag{position:absolute;transform:translate(-50%,-50%) scale(var(--scale,1));transform-origin:left top;max-width:55mm;font-size:7pt;line-height:1.15}
+  .plate-frag-glyph{color:#b00;margin-right:2pt}
+  .stratum-glifo .plate-frag-text,.stratum-residuo .plate-frag-text{color:#b00}
+  .link-list{flex:1;display:flex;flex-direction:column;gap:2mm;font-size:8pt}
+  .link-row{display:grid;grid-template-columns:1.6em 6em 1fr 1.2em 1fr;gap:2mm;align-items:baseline;border-bottom:.2mm dotted #999;padding-bottom:1mm}
+  .link-glyph{color:#b00}.link-kind{text-transform:uppercase;font-size:7pt;color:#444}.link-arrow{color:#b00;text-align:center}
+  .residue-grid{flex:1;column-count:2;column-gap:8mm;font-size:7.5pt}
+  .residue-cell{break-inside:avoid;margin-bottom:3mm}
+  .residue-era{display:block;color:#b00;font-size:7pt;letter-spacing:.1em}
+  .residue-text{display:block}.residue-origin{display:block;font-size:6pt;color:#999;text-transform:uppercase;letter-spacing:.1em}
+  .plate-colophon .colophon-body{flex:1;font-size:9pt;line-height:1.7;white-space:pre-wrap}
+  .colophon-mark{font-size:20pt;color:#b00;text-align:right}
+}
+
+@media (max-width:720px){.legend{width:44vw}.charts{gap:5px}.fragment{max-width:44vw}}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>EL ARCHIVO NO RECUERDA HABER SIDO LEÍDO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="grain" aria-hidden="true"></div>
+
+  <!-- un solo campo continuo: el pliego deformable -->
+  <main id="pliego" aria-label="EL ARCHIVO NO RECUERDA HABER SIDO LEÍDO"></main>
+
+  <!-- casi nada de HUD: sólo tres marcas y la semilla -->
+  <nav id="controls" aria-label="controles">
+    <button id="regen-btn" type="button" title="otra excavación [R]">↺</button>
+    <button id="print-btn" type="button" title="imponer edición [P]">⌑</button>
+    <button id="full-btn" type="button" title="pantalla completa [F]">⛶</button>
+    <label class="seed-control">semilla
+      <input id="seed-input" spellcheck="false" autocomplete="off" aria-label="semilla reproducible">
+    </label>
+  </nav>
+
+  <!-- la edición impresa de esta lectura -->
+  <section id="print-book" aria-hidden="true"></section>
+
+  <noscript>
+    <p>este archivo necesita JavaScript para confundir tu lectura con clima.</p>
+  </noscript>
+
+  <script src="content.js"></script>
+  <script src="archive.js"></script>
+  <script src="palette.js"></script>
+  <script src="climate.js"></script>
+  <script src="field.js"></script>
+  <script src="print.js"></script>
+  <script src="reader.js"></script>
+</body>
+</html>
