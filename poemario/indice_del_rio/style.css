@@ -23,7 +23,8 @@
   src:url('fonts/NOTOSANSLINEARB-REGULAR.TTF') format('truetype'),
       url('../NOTOSANSLINEARB-REGULAR.TTF') format('truetype');
   unicode-range:U+10000-100FF; }
-
+@font-face{ font-family:'IDR-materia'; font-display:swap;
+  src:url('../UNIFONT.TTF') format('truetype'); }   /* respaldo universal, sin unicode-range */
 :root{
   --bg:#08080b; --bg2:#11101a; --ink:#e9e4d6;
   --a0:#e5322a; --a1:#2b6cff; --a2:#f2d34a; --a3:#13d6a4;
