@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4f2ea">
+  <title>EL MUNDO NO COMPILA — edición diagramática fullscreen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="grain" aria-hidden="true"></div>
+  <main id="book" aria-live="polite">
+    <div id="residue-layer" aria-hidden="true"></div>
+    <section id="stage" aria-label="Poemario generativo"></section>
+    <aside id="legend" aria-label="Leyenda de relaciones"></aside>
+    <div id="loop-status" aria-live="off"></div>
+  </main>
+
+  <nav id="controls" aria-label="Controles del poemario">
+    <button id="pause-btn" type="button" title="Pausar o continuar [espacio]">II</button>
+    <button id="next-btn" type="button" title="Avanzar [→]">→</button>
+    <button id="regen-btn" type="button" title="Regenerar [R]">↺</button>
+    <button id="print-btn" type="button" title="Preparar impresión [P]">⌑</button>
+    <button id="full-btn" type="button" title="Pantalla completa [F]">⛶</button>
+    <label class="seed-control">semilla
+      <input id="seed-input" spellcheck="false" autocomplete="off" aria-label="Semilla reproducible">
+    </label>
+  </nav>
+
+  <section id="print-book" aria-hidden="true"></section>
+
+  <noscript>
+    <p>Esta máquina necesita JavaScript para equivocarse de manera continua.</p>
+  </noscript>
+
+  <script src="content.js"></script>
+  <script src="engine.js"></script>
+  <script src="diagrams.js"></script>
+  <script src="animation.js"></script>
+</body>
+</html>

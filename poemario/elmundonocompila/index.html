@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EL MUNDO NO COMPILA — poemario diagramático</title>
+<meta name="description" content="Poemario digital generativo y potencialmente infinito: un loop de diagramas poéticos que fallan al intentar compilar el mundo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hint">EL MUNDO NO COMPILA · espacio: pausa · →: avanza · +/−: velocidad · R: regenerar · S: semilla · P: PDF · ?: ayuda</div>
+
+  <main id="stage">
+    <div id="book-page">
+      <div id="residue-layer"></div>
+      <div id="comp-layer"></div>
+      <div id="furniture"></div>
+      <span class="crop tl"></span>
+      <span class="crop tr"></span>
+      <span class="crop bl"></span>
+      <span class="crop br"></span>
+    </div>
+  </main>
+
+  <div id="hud">
+    <div id="status">[BOOT] encendiendo la máquina sin exterior…</div>
+    <div id="controls">
+      <button data-act="pause"  title="espacio">▐▐ / ▶</button>
+      <button data-act="next"   title="→">▷ avanzar</button>
+      <button data-act="regen"  title="R">↺ regenerar</button>
+      <button data-act="seed"   title="S">semilla</button>
+      <button data-act="print"  title="P">PDF</button>
+      <button data-act="help"   title="?">?</button>
+    </div>
+  </div>
+
+  <div id="help">
+    <h1>EL MUNDO NO COMPILA</h1>
+    <div class="sub">poemario diagramático para una máquina sin exterior</div>
+    <div class="row"><kbd>espacio</kbd> pausar / reanudar el loop</div>
+    <div class="row"><kbd>→ · N</kbd> avanzar a la siguiente composición</div>
+    <div class="row"><kbd>+ · −</kbd> velocidad de lectura (− más lento · + más rápido)</div>
+    <div class="row"><kbd>R</kbd> regenerar: nueva semilla, nueva tentativa del mundo</div>
+    <div class="row"><kbd>S</kbd> introducir una semilla para repetir una ejecución</div>
+    <div class="row"><kbd>P</kbd> modo impresión: imponer páginas y exportar a PDF</div>
+    <div class="row"><kbd>? · H</kbd> mostrar / ocultar esta ayuda</div>
+    <div class="close">
+      El código intenta describir el mundo. El mundo modifica el código.<br>
+      El diagrama registra el conflicto entre ambos. Cada vuelta el mundo cambia:<br>
+      por eso el loop nunca repite el libro. &nbsp; — pulsa <kbd>Esc</kbd> para cerrar
+    </div>
+  </div>
+
+  <div id="print-root"></div>
+
+  <script src="content.js"></script>
+  <script src="diagrams.js"></script>
+  <script src="animation.js"></script>
+  <script src="engine.js"></script>
+</body>
+</html>
