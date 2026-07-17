@@ -1,0 +1,396 @@
+/*
+  style.css — LOOP: una nave que escribe su deterioro
+  poesiasexp / canekzapata
+
+  regla:
+    interfaz mínima
+    texto máximo
+    botones mínimos
+    consecuencias máximas
+    estructura simple
+    escritura compleja
+
+  la interfaz es un casco oscuro y sobrio;
+  el texto adentro puede desbordarse, dispersarse, girar, gritar en
+  microscópico y susurrar en gigante. el estado de la nave deforma
+  la página entera mediante clases en <body>.
+*/
+
+:root {
+  --fondo: #07090b;
+  --tinta: #c9cec3;
+  --tenue: #6d746b;
+  --acento: #8fd7a0;      /* fósforo de consola */
+  --alarma: #d98c66;      /* ámbar de avería */
+  --intrusa: #b48ce0;     /* la otra voz */
+  --rareza: 0deg;         /* el motor la gira con el deterioro acumulado */
+  --ancho: 46rem;         /* la columna única de lectura */
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--fondo); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 16px;
+  line-height: 1.65;
+  filter: hue-rotate(var(--rareza));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------- interfaz mínima: tres franjas y ya ------- */
+
+#estado {
+  width: 100%;
+  max-width: var(--ancho);
+  padding: 1rem 1.2rem .4rem;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  color: var(--tenue);
+  user-select: none;
+}
+#estado .critico { color: var(--alarma); }
+
+#lectura {
+  width: 100%;
+  max-width: var(--ancho);
+  padding: 1.5rem 1.2rem 3rem;
+  flex: 1;
+}
+
+#opciones {
+  width: 100%;
+  max-width: var(--ancho);
+  padding: 0 1.2rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+
+#opciones button {
+  background: none;
+  border: 1px solid #2a2f2a;
+  color: var(--tinta);
+  font: inherit;
+  font-size: .8rem;
+  padding: .35rem .8rem;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+#opciones button:hover {
+  border-color: var(--acento);
+  color: var(--acento);
+}
+
+#pie {
+  width: 100%;
+  max-width: var(--ancho);
+  padding: 0 1.2rem 1.2rem;
+  font-size: .6rem;
+  color: #3a3f3a;
+  user-select: none;
+}
+
+/* ------- el texto: aquí se permite todo ------- */
+
+h1 {
+  font-size: .85rem;
+  font-weight: normal;
+  letter-spacing: .25em;
+  color: var(--tenue);
+  border-bottom: 1px solid #1c211c;
+  padding-bottom: .5rem;
+  margin: 0 0 1.6rem;
+}
+
+.bloque { margin: 0 0 2.2rem; }
+.bloque p { margin: 0 0 .9rem; }
+.bloque pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: inherit;
+  overflow-x: auto;
+}
+
+.rotulo {
+  font-size: .68rem;
+  letter-spacing: .2em;
+  color: var(--tenue);
+  margin-bottom: .7rem;
+}
+
+/* la palabra secuestrada por la contaminación */
+.contaminada { color: var(--intrusa); }
+
+/* --- bitácora: la prosa de a bordo --- */
+.bitacora p { max-width: 58ch; }
+
+/* --- informe técnico: frío, tabulado --- */
+.informe pre {
+  color: var(--acento);
+  font-size: .85rem;
+  border-left: 1px solid #1e241e;
+  padding-left: 1rem;
+}
+
+/* --- poema concreto: el espacio como material --- */
+.poema-concreto pre {
+  white-space: pre;
+  text-align: left;
+  font-size: clamp(.8rem, 2.6vw, 1.2rem);
+  line-height: 1.9;
+  margin: 1.4rem 0;
+}
+
+/* --- señal recibida: parpadea un poco, llega mal --- */
+.senal p {
+  letter-spacing: .12em;
+  animation: parpadeo-suave 3.4s infinite;
+}
+@keyframes parpadeo-suave {
+  0%, 100% { opacity: 1; }
+  47% { opacity: 1; }
+  50% { opacity: .35; }
+  53% { opacity: 1; }
+}
+
+/* --- prosa galáctica: larga, sinuosa, con sangría de viaje --- */
+.prosa p {
+  text-align: justify;
+  hyphens: auto;
+  font-size: .95rem;
+  line-height: 1.9;
+}
+.prosa p::first-letter { color: var(--acento); }
+
+/* --- tabla rota --- */
+.tabla-rota pre {
+  white-space: pre;
+  font-size: .78rem;
+  color: var(--tenue);
+}
+.tabla-rota pre::first-line { color: var(--tinta); letter-spacing: .1em; }
+
+/* --- constelación verbal: palabras como estrellas --- */
+.constelacion {
+  position: relative;
+  height: 62vh;
+  min-height: 20rem;
+}
+.constelacion .estrella {
+  position: absolute;
+  cursor: default;
+  white-space: nowrap;
+}
+.constelacion .estrella .fragmento {
+  display: block;
+  position: absolute;
+  top: 1.4em; left: 0;
+  width: 16rem;
+  max-width: 60vw;
+  font-size: .62rem;
+  font-style: normal;
+  color: var(--tenue);
+  opacity: 0;
+  transition: opacity .5s;
+  pointer-events: none;
+  white-space: normal;
+  z-index: 3;
+}
+.constelacion .estrella:hover { color: var(--acento); z-index: 2; }
+.constelacion .estrella:hover .fragmento { opacity: 1; }
+.constelacion .polvo {
+  position: absolute;
+  color: #2e352e;
+  font-size: .7rem;
+  user-select: none;
+}
+
+/* --- texto orbital: frases girando alrededor de una palabra --- */
+.orbital {
+  height: 78vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.orbital .anillo {
+  position: relative;
+  width: 0; height: 0;
+  animation: girar 70s linear infinite;
+}
+.orbital .centro {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  letter-spacing: .3em;
+  animation: girar 70s linear infinite reverse; /* el centro no gira con el resto */
+}
+.orbital .satelite {
+  position: absolute;
+  font-size: .68rem;
+  color: var(--tenue);
+  white-space: nowrap;
+}
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- texto de exceso: acumulación barroca en columnas --- */
+.exceso {
+  column-width: 16rem;
+  column-gap: 2rem;
+  font-size: .74rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #a9aea3;
+}
+.exceso p { break-inside: avoid; }
+.exceso p:nth-child(3n) { font-size: 1.05rem; }
+.exceso p:nth-child(5n) { font-size: .58rem; color: var(--tenue); }
+.exceso p:nth-child(7n) { letter-spacing: .18em; }
+
+/* --- texto de silencio: una línea y mucho vacío --- */
+.silencio-b {
+  min-height: 46vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--tenue);
+}
+
+/* --- eco terrestre: el archivo pesa --- */
+.eco-tierra blockquote {
+  margin: 1.2rem 0 1.2rem 1rem;
+  padding-left: 1.2rem;
+  border-left: 1px solid #333a33;
+  color: #b9beb2;
+  font-style: italic;
+  max-width: 52ch;
+}
+
+/* --- menú narrativo --- */
+.menu pre { color: var(--tenue); }
+
+/* --- caja negra --- */
+.cajanegra pre {
+  border: 1px solid #232823;
+  padding: 1.4rem;
+  font-size: .85rem;
+  background: #0a0d0a;
+}
+
+/* --- crash: el modo literario de la falla --- */
+.crash pre {
+  color: var(--alarma);
+  font-size: clamp(.9rem, 2.4vw, 1.15rem);
+  line-height: 1.8;
+}
+
+/* --- glitch verbal --- */
+.glitch pre {
+  color: var(--tenue);
+  letter-spacing: .14em;
+  animation: temblor .18s infinite;
+}
+@keyframes temblor {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-1px); }
+  75% { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+
+/* --- repetición: la memoria vuelve mal --- */
+.repeticion p { margin-bottom: .3rem; }
+.repeticion p:nth-child(2) { opacity: .8; }
+.repeticion p:nth-child(3) { opacity: .6; }
+.repeticion p:nth-child(4) { opacity: .45; }
+.repeticion p:nth-child(5) { opacity: .3; }
+
+/* --- la otra voz --- */
+.intrusa p {
+  color: var(--intrusa);
+  text-align: right;
+  font-size: .9rem;
+  letter-spacing: .05em;
+}
+.intrusa p::before { content: "⟨ "; color: #4a3f5c; }
+.intrusa p::after { content: " ⟩"; color: #4a3f5c; }
+
+/* --- cicatrices: lo que dejaron los crashes --- */
+.cicatrices p {
+  color: var(--alarma);
+  font-size: .74rem;
+  opacity: .8;
+}
+
+/* --- apertura: el bloque general de escena --- */
+.apertura pre { line-height: 1.9; }
+
+/* =====================================================================
+   el estado de la nave deforma la página
+===================================================================== */
+
+/* señal baja: la página parpadea, pierde cuerpo */
+body.c-senal #lectura { animation: perdida 5s infinite; }
+@keyframes perdida {
+  0%, 100% { opacity: 1; }
+  81% { opacity: 1; }
+  84% { opacity: .5; }
+  86% { opacity: .9; }
+  91% { opacity: .4; }
+  94% { opacity: 1; }
+}
+
+/* casco bajo: la letra se duplica como visión golpeada */
+body.c-casco #lectura {
+  text-shadow: 1px 0 rgba(217, 140, 102, .35), -1px 0 rgba(143, 215, 160, .25);
+}
+
+/* energía baja: todo más tenue, más pequeño, más lento */
+body.c-energia { font-size: 14px; }
+body.c-energia #lectura { color: #8d938a; transition: color 2s; }
+
+/* contaminación alta: la otra tinta gana terreno */
+body.c-contaminada { --tinta: #beb1d6; }
+body.c-contaminada #opciones button { border-color: #3d3452; }
+
+/* deriva alta: la página pierde la vertical */
+body.c-deriva #lectura { transform: rotate(.55deg); }
+body.c-deriva #opciones { transform: rotate(-.3deg); }
+
+/* crash: inversión momentánea del mundo */
+body.c-crash {
+  background: #12100c;
+  --tinta: #d8cdbd;
+}
+body.c-crash h1 { border-color: #33291c; }
+
+/* tomada: la nave ya no es quien escribe */
+body.c-tomada #estado { color: var(--intrusa); }
+body.c-tomada #opciones button:hover {
+  border-color: var(--intrusa);
+  color: var(--intrusa);
+}
+
+/* ------- pantallas angostas: el poema cabe igual ------- */
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .orbital .satelite { font-size: .58rem; }
+  .constelacion { height: 70vh; }
+}
+
+/* quien prefiera menos movimiento, lee quieto */
+@media (prefers-reduced-motion: reduce) {
+  .orbital .anillo, .orbital .centro, .senal p,
+  body.c-senal #lectura, .glitch pre { animation: none; }
+}
