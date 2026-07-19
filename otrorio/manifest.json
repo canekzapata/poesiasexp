@@ -1,0 +1,1412 @@
+{
+  "version": 2,
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "seed": "otra-agua-2026",
+  "pageCount": 34,
+  "hiddenCount": 4,
+  "rules": [
+    30,
+    45,
+    54,
+    60,
+    90,
+    110
+  ],
+  "topologies": {
+    "table": "tabla infinita",
+    "field": "campo absoluto",
+    "corridor": "corredor horizontal",
+    "vertical": "documento vertical imposible",
+    "windows": "sistema de ventanas",
+    "iframes": "constelación de iframes",
+    "form": "formulario oracular",
+    "source": "código fuente habitable",
+    "cellular": "autómata habitable",
+    "index": "índice explosivo",
+    "empty": "página casi vacía",
+    "error": "error local",
+    "glyphs": "paisaje de glifos",
+    "destruction": "página que se autodestruye",
+    "reproducer": "página reproductora"
+  },
+  "pages": [
+    {
+      "id": "000",
+      "index": 0,
+      "topology": "table",
+      "topologyLabel": "tabla infinita",
+      "secondary": "corridor",
+      "palette": [
+        "#2220a7",
+        "#f9f4d2",
+        "#ff6948",
+        "#40e0ff",
+        "#f0ff00",
+        "#ff68cf"
+      ],
+      "cellularRule": 110,
+      "cellSize": 13,
+      "cellDensity": 0.17,
+      "rhythm": "explosive",
+      "iframeDepth": 1,
+      "mutationBudget": 35,
+      "operations": [
+        "tag",
+        "destroy",
+        "multiply",
+        "display",
+        "swap"
+      ],
+      "rareEvent": "migration",
+      "rareProbability": 0.52,
+      "edges": [
+        "001",
+        "033",
+        "015",
+        "029"
+      ],
+      "hidden": false,
+      "word": "CAUCE",
+      "title": "nave / memoria no montada"
+    },
+    {
+      "id": "001",
+      "index": 1,
+      "topology": "field",
+      "topologyLabel": "campo absoluto",
+      "secondary": "iframes",
+      "palette": [
+        "#f6ff5f",
+        "#351757",
+        "#ff38a2",
+        "#0d9dff",
+        "#ffffff",
+        "#ff792e"
+      ],
+      "cellularRule": 60,
+      "cellSize": 11,
+      "cellDensity": 0.22,
+      "rhythm": "scroll",
+      "iframeDepth": 2,
+      "mutationBudget": 10,
+      "operations": [
+        "position",
+        "iframe",
+        "relocate",
+        "multiply",
+        "swap",
+        "link"
+      ],
+      "rareEvent": "future-frame",
+      "rareProbability": 0.4,
+      "edges": [
+        "002",
+        "000",
+        "015",
+        "023"
+      ],
+      "hidden": false,
+      "word": "CAUCE",
+      "title": "fuego / una ventana sueña"
+    },
+    {
+      "id": "002",
+      "index": 2,
+      "topology": "corridor",
+      "topologyLabel": "corredor horizontal",
+      "secondary": "field",
+      "palette": [
+        "#050505",
+        "#f7f1ff",
+        "#ffd400",
+        "#5a2dff",
+        "#ff4fa3",
+        "#b7ff3c"
+      ],
+      "cellularRule": 30,
+      "cellSize": 7,
+      "cellDensity": 0.23,
+      "rhythm": "still",
+      "iframeDepth": 3,
+      "mutationBudget": 15,
+      "operations": [
+        "link",
+        "display",
+        "swap",
+        "relocate"
+      ],
+      "rareEvent": "css-shift",
+      "rareProbability": 0.39,
+      "edges": [
+        "003",
+        "001",
+        "013",
+        "033",
+        "005"
+      ],
+      "hidden": false,
+      "word": "ORIGINAL",
+      "title": "signo / memoria no montada"
+    },
+    {
+      "id": "003",
+      "index": 3,
+      "topology": "vertical",
+      "topologyLabel": "documento vertical imposible",
+      "secondary": "index",
+      "palette": [
+        "#fff",
+        "#000",
+        "#000",
+        "#bbb",
+        "#eee",
+        "#555"
+      ],
+      "cellularRule": 60,
+      "cellSize": 7,
+      "cellDensity": 0.15,
+      "rhythm": "click",
+      "iframeDepth": 3,
+      "mutationBudget": 10,
+      "operations": [
+        "serialize",
+        "tag",
+        "multiply",
+        "display",
+        "destroy",
+        "swap"
+      ],
+      "rareEvent": "future-frame",
+      "rareProbability": 0.32,
+      "edges": [
+        "004",
+        "002",
+        "026",
+        "017",
+        "001"
+      ],
+      "hidden": false,
+      "word": "UMBRAL",
+      "title": "signo / una ventana sueña"
+    },
+    {
+      "id": "004",
+      "index": 4,
+      "topology": "windows",
+      "topologyLabel": "sistema de ventanas",
+      "secondary": "empty",
+      "palette": [
+        "#eff0ff",
+        "#181829",
+        "#694cff",
+        "#ff3e66",
+        "#00d9a6",
+        "#ffd61e"
+      ],
+      "cellularRule": 90,
+      "cellSize": 9,
+      "cellDensity": 0.33,
+      "rhythm": "still",
+      "iframeDepth": 1,
+      "mutationBudget": 23,
+      "operations": [
+        "link",
+        "iframe",
+        "relocate",
+        "tag",
+        "comment"
+      ],
+      "rareEvent": "css-shift",
+      "rareProbability": 0.65,
+      "edges": [
+        "005",
+        "003",
+        "031",
+        "021",
+        "013"
+      ],
+      "hidden": false,
+      "word": "FUEGO",
+      "title": "copia / guardar sin conservar"
+    },
+    {
+      "id": "005",
+      "index": 5,
+      "topology": "iframes",
+      "topologyLabel": "constelación de iframes",
+      "secondary": "destruction",
+      "palette": [
+        "#d9ff00",
+        "#1900ff",
+        "#ff2800",
+        "#fff8e7",
+        "#ff72bf",
+        "#00b56a"
+      ],
+      "cellularRule": 30,
+      "cellSize": 7,
+      "cellDensity": 0.21,
+      "rhythm": "scroll",
+      "iframeDepth": 1,
+      "mutationBudget": 23,
+      "operations": [
+        "multiply",
+        "comment",
+        "position",
+        "display",
+        "link",
+        "relocate",
+        "iframe"
+      ],
+      "rareEvent": "source",
+      "rareProbability": 0.62,
+      "edges": [
+        "006",
+        "004",
+        "002",
+        "024"
+      ],
+      "hidden": false,
+      "word": "NAVE",
+      "title": "tiempo / sentido parcial"
+    },
+    {
+      "id": "006",
+      "index": 6,
+      "topology": "form",
+      "topologyLabel": "formulario oracular",
+      "secondary": "glyphs",
+      "palette": [
+        "#001a39",
+        "#fff1d7",
+        "#ff7538",
+        "#45d3ff",
+        "#d9ff72",
+        "#ff3b9f"
+      ],
+      "cellularRule": 90,
+      "cellSize": 10,
+      "cellDensity": 0.29,
+      "rhythm": "still",
+      "iframeDepth": 3,
+      "mutationBudget": 20,
+      "operations": [
+        "display",
+        "iframe",
+        "relocate",
+        "hierarchy",
+        "swap",
+        "position",
+        "serialize",
+        "destroy"
+      ],
+      "rareEvent": "css-shift",
+      "rareProbability": 0.25,
+      "edges": [
+        "007",
+        "005",
+        "027"
+      ],
+      "hidden": false,
+      "word": "NAVE",
+      "title": "río / guardar sin conservar"
+    },
+    {
+      "id": "007",
+      "index": 7,
+      "topology": "source",
+      "topologyLabel": "código fuente habitable",
+      "secondary": "destruction",
+      "palette": [
+        "#fff",
+        "#000",
+        "#000",
+        "#bbb",
+        "#eee",
+        "#555"
+      ],
+      "cellularRule": 110,
+      "cellSize": 4,
+      "cellDensity": 0.17,
+      "rhythm": "click",
+      "iframeDepth": 1,
+      "mutationBudget": 13,
+      "operations": [
+        "tag",
+        "comment",
+        "hierarchy",
+        "relocate",
+        "destroy",
+        "serialize",
+        "iframe",
+        "multiply"
+      ],
+      "rareEvent": "same-text",
+      "rareProbability": 0.53,
+      "edges": [
+        "008",
+        "006",
+        "016",
+        "004",
+        "010"
+      ],
+      "hidden": true,
+      "word": "LENGUA",
+      "title": "olvido / guardar sin conservar"
+    },
+    {
+      "id": "008",
+      "index": 8,
+      "topology": "cellular",
+      "topologyLabel": "autómata habitable",
+      "secondary": "reproducer",
+      "palette": [
+        "#2b0a3d",
+        "#fff5c4",
+        "#ff8dce",
+        "#30e8c3",
+        "#f5ff3f",
+        "#7d63ff"
+      ],
+      "cellularRule": 54,
+      "cellSize": 8,
+      "cellDensity": 0.21,
+      "rhythm": "nervous",
+      "iframeDepth": 1,
+      "mutationBudget": 24,
+      "operations": [
+        "display",
+        "destroy",
+        "swap",
+        "multiply",
+        "serialize",
+        "tag",
+        "position",
+        "hierarchy"
+      ],
+      "rareEvent": "monument",
+      "rareProbability": 0.3,
+      "edges": [
+        "009",
+        "007",
+        "017",
+        "012"
+      ],
+      "hidden": false,
+      "word": "MARGEN",
+      "title": "archivo / una ventana sueña"
+    },
+    {
+      "id": "009",
+      "index": 9,
+      "topology": "index",
+      "topologyLabel": "índice explosivo",
+      "secondary": "source",
+      "palette": [
+        "#f6ff5f",
+        "#351757",
+        "#ff38a2",
+        "#0d9dff",
+        "#ffffff",
+        "#ff792e"
+      ],
+      "cellularRule": 90,
+      "cellSize": 7,
+      "cellDensity": 0.31,
+      "rhythm": "click",
+      "iframeDepth": 3,
+      "mutationBudget": 16,
+      "operations": [
+        "display",
+        "iframe",
+        "comment",
+        "destroy",
+        "tag",
+        "link"
+      ],
+      "rareEvent": "css-shift",
+      "rareProbability": 0.35,
+      "edges": [
+        "010",
+        "008",
+        "000",
+        "016",
+        "026"
+      ],
+      "hidden": false,
+      "word": "OLVIDO",
+      "title": "original / cauce temporal"
+    },
+    {
+      "id": "010",
+      "index": 10,
+      "topology": "empty",
+      "topologyLabel": "página casi vacía",
+      "secondary": "windows",
+      "palette": [
+        "#f6ff5f",
+        "#351757",
+        "#ff38a2",
+        "#0d9dff",
+        "#ffffff",
+        "#ff792e"
+      ],
+      "cellularRule": 45,
+      "cellSize": 5,
+      "cellDensity": 0.28,
+      "rhythm": "scroll",
+      "iframeDepth": 2,
+      "mutationBudget": 22,
+      "operations": [
+        "multiply",
+        "link",
+        "destroy",
+        "comment",
+        "iframe"
+      ],
+      "rareEvent": "css-shift",
+      "rareProbability": 0.45,
+      "edges": [
+        "011",
+        "009",
+        "016",
+        "033"
+      ],
+      "hidden": false,
+      "word": "TIEMPO",
+      "title": "eco / nodo ya futuro"
+    },
+    {
+      "id": "011",
+      "index": 11,
+      "topology": "error",
+      "topologyLabel": "error local",
+      "secondary": "destruction",
+      "palette": [
+        "#050505",
+        "#f7f1ff",
+        "#ffd400",
+        "#5a2dff",
+        "#ff4fa3",
+        "#b7ff3c"
+      ],
+      "cellularRule": 54,
+      "cellSize": 4,
+      "cellDensity": 0.21,
+      "rhythm": "still",
+      "iframeDepth": 2,
+      "mutationBudget": 15,
+      "operations": [
+        "position",
+        "hierarchy",
+        "multiply",
+        "destroy",
+        "serialize",
+        "iframe"
+      ],
+      "rareEvent": "glyph-only",
+      "rareProbability": 0.4,
+      "edges": [
+        "012",
+        "010",
+        "029",
+        "024",
+        "025",
+        "003"
+      ],
+      "hidden": false,
+      "word": "CENIZA",
+      "title": "nave / memoria no montada"
+    },
+    {
+      "id": "012",
+      "index": 12,
+      "topology": "glyphs",
+      "topologyLabel": "paisaje de glifos",
+      "secondary": "error",
+      "palette": [
+        "#281f21",
+        "#ffefde",
+        "#dcff62",
+        "#ff4f9a",
+        "#67a8ff",
+        "#ff8f3d"
+      ],
+      "cellularRule": 60,
+      "cellSize": 6,
+      "cellDensity": 0.09,
+      "rhythm": "slow",
+      "iframeDepth": 3,
+      "mutationBudget": 14,
+      "operations": [
+        "comment",
+        "position",
+        "iframe",
+        "swap",
+        "tag"
+      ],
+      "rareEvent": "source",
+      "rareProbability": 0.53,
+      "edges": [
+        "013",
+        "011",
+        "014",
+        "009",
+        "020",
+        "024"
+      ],
+      "hidden": false,
+      "word": "ECO",
+      "title": "índice / nodo ya futuro"
+    },
+    {
+      "id": "013",
+      "index": 13,
+      "topology": "destruction",
+      "topologyLabel": "página que se autodestruye",
+      "secondary": "vertical",
+      "palette": [
+        "#f6ff5f",
+        "#351757",
+        "#ff38a2",
+        "#0d9dff",
+        "#ffffff",
+        "#ff792e"
+      ],
+      "cellularRule": 45,
+      "cellSize": 6,
+      "cellDensity": 0.34,
+      "rhythm": "slow",
+      "iframeDepth": 3,
+      "mutationBudget": 17,
+      "operations": [
+        "hierarchy",
+        "swap",
+        "position",
+        "comment",
+        "display",
+        "serialize",
+        "link"
+      ],
+      "rareEvent": "migration",
+      "rareProbability": 0.23,
+      "edges": [
+        "014",
+        "012",
+        "032",
+        "029"
+      ],
+      "hidden": false,
+      "word": "RÍO",
+      "title": "nave / original: ninguna"
+    },
+    {
+      "id": "014",
+      "index": 14,
+      "topology": "reproducer",
+      "topologyLabel": "página reproductora",
+      "secondary": "vertical",
+      "palette": [
+        "#d9ff00",
+        "#1900ff",
+        "#ff2800",
+        "#fff8e7",
+        "#ff72bf",
+        "#00b56a"
+      ],
+      "cellularRule": 60,
+      "cellSize": 11,
+      "cellDensity": 0.26,
+      "rhythm": "scroll",
+      "iframeDepth": 2,
+      "mutationBudget": 14,
+      "operations": [
+        "display",
+        "relocate",
+        "comment",
+        "link",
+        "position"
+      ],
+      "rareEvent": "glyph-only",
+      "rareProbability": 0.39,
+      "edges": [
+        "015",
+        "013",
+        "033",
+        "020"
+      ],
+      "hidden": false,
+      "word": "CAUCE",
+      "title": "copia / una ventana sueña"
+    },
+    {
+      "id": "015",
+      "index": 15,
+      "topology": "table",
+      "topologyLabel": "tabla infinita",
+      "secondary": "iframes",
+      "palette": [
+        "#ff5b22",
+        "#151515",
+        "#f4e8ff",
+        "#0047ff",
+        "#cbff00",
+        "#ffb6de"
+      ],
+      "cellularRule": 54,
+      "cellSize": 12,
+      "cellDensity": 0.31,
+      "rhythm": "explosive",
+      "iframeDepth": 1,
+      "mutationBudget": 26,
+      "operations": [
+        "destroy",
+        "serialize",
+        "comment",
+        "multiply",
+        "swap",
+        "tag",
+        "hierarchy",
+        "link"
+      ],
+      "rareEvent": "monument",
+      "rareProbability": 0.5,
+      "edges": [
+        "016",
+        "014",
+        "026"
+      ],
+      "hidden": false,
+      "word": "COPIA",
+      "title": "signo / latencia del fuego"
+    },
+    {
+      "id": "016",
+      "index": 16,
+      "topology": "field",
+      "topologyLabel": "campo absoluto",
+      "secondary": "glyphs",
+      "palette": [
+        "#f8f7f1",
+        "#050505",
+        "#ff4fa3",
+        "#147bff",
+        "#b7ff3c",
+        "#ff652b"
+      ],
+      "cellularRule": 60,
+      "cellSize": 8,
+      "cellDensity": 0.3,
+      "rhythm": "scroll",
+      "iframeDepth": 2,
+      "mutationBudget": 15,
+      "operations": [
+        "destroy",
+        "position",
+        "iframe",
+        "comment"
+      ],
+      "rareEvent": "source",
+      "rareProbability": 0.59,
+      "edges": [
+        "017",
+        "015",
+        "009",
+        "002"
+      ],
+      "hidden": false,
+      "word": "CAUCE",
+      "title": "río / sentido parcial"
+    },
+    {
+      "id": "017",
+      "index": 17,
+      "topology": "corridor",
+      "topologyLabel": "corredor horizontal",
+      "secondary": "reproducer",
+      "palette": [
+        "#281f21",
+        "#ffefde",
+        "#dcff62",
+        "#ff4f9a",
+        "#67a8ff",
+        "#ff8f3d"
+      ],
+      "cellularRule": 30,
+      "cellSize": 8,
+      "cellDensity": 0.2,
+      "rhythm": "nervous",
+      "iframeDepth": 3,
+      "mutationBudget": 17,
+      "operations": [
+        "iframe",
+        "hierarchy",
+        "comment",
+        "tag",
+        "position"
+      ],
+      "rareEvent": "monument",
+      "rareProbability": 0.26,
+      "edges": [
+        "018",
+        "016",
+        "002",
+        "001"
+      ],
+      "hidden": true,
+      "word": "ÍNDICE",
+      "title": "nave / guardar sin conservar"
+    },
+    {
+      "id": "018",
+      "index": 18,
+      "topology": "vertical",
+      "topologyLabel": "documento vertical imposible",
+      "secondary": "form",
+      "palette": [
+        "#fff",
+        "#000",
+        "#000",
+        "#bbb",
+        "#eee",
+        "#555"
+      ],
+      "cellularRule": 110,
+      "cellSize": 7,
+      "cellDensity": 0.32,
+      "rhythm": "still",
+      "iframeDepth": 1,
+      "mutationBudget": 22,
+      "operations": [
+        "multiply",
+        "display",
+        "serialize",
+        "relocate",
+        "hierarchy",
+        "tag"
+      ],
+      "rareEvent": "same-text",
+      "rareProbability": 0.46,
+      "edges": [
+        "019",
+        "017",
+        "015",
+        "020",
+        "012"
+      ],
+      "hidden": false,
+      "word": "ÍNDICE",
+      "title": "ceniza / nodo ya futuro"
+    },
+    {
+      "id": "019",
+      "index": 19,
+      "topology": "windows",
+      "topologyLabel": "sistema de ventanas",
+      "secondary": "empty",
+      "palette": [
+        "#eff0ff",
+        "#181829",
+        "#694cff",
+        "#ff3e66",
+        "#00d9a6",
+        "#ffd61e"
+      ],
+      "cellularRule": 60,
+      "cellSize": 7,
+      "cellDensity": 0.11,
+      "rhythm": "still",
+      "iframeDepth": 3,
+      "mutationBudget": 20,
+      "operations": [
+        "serialize",
+        "iframe",
+        "link",
+        "tag"
+      ],
+      "rareEvent": "glyph-only",
+      "rareProbability": 0.36,
+      "edges": [
+        "020",
+        "018",
+        "021",
+        "013"
+      ],
+      "hidden": false,
+      "word": "ECO",
+      "title": "umbral / ruido con sintaxis"
+    },
+    {
+      "id": "020",
+      "index": 20,
+      "topology": "iframes",
+      "topologyLabel": "constelación de iframes",
+      "secondary": "vertical",
+      "palette": [
+        "#d9ff00",
+        "#1900ff",
+        "#ff2800",
+        "#fff8e7",
+        "#ff72bf",
+        "#00b56a"
+      ],
+      "cellularRule": 30,
+      "cellSize": 10,
+      "cellDensity": 0.31,
+      "rhythm": "click",
+      "iframeDepth": 2,
+      "mutationBudget": 19,
+      "operations": [
+        "display",
+        "destroy",
+        "tag",
+        "link",
+        "hierarchy"
+      ],
+      "rareEvent": "css-shift",
+      "rareProbability": 0.48,
+      "edges": [
+        "021",
+        "019",
+        "014",
+        "031",
+        "029"
+      ],
+      "hidden": false,
+      "word": "RUIDO",
+      "title": "copia / fragmento 0 de 0"
+    },
+    {
+      "id": "021",
+      "index": 21,
+      "topology": "form",
+      "topologyLabel": "formulario oracular",
+      "secondary": "reproducer",
+      "palette": [
+        "#ffe5f2",
+        "#46112d",
+        "#ec2f8b",
+        "#185cff",
+        "#ffca2a",
+        "#78f0ce"
+      ],
+      "cellularRule": 90,
+      "cellSize": 11,
+      "cellDensity": 0.15,
+      "rhythm": "still",
+      "iframeDepth": 1,
+      "mutationBudget": 12,
+      "operations": [
+        "iframe",
+        "hierarchy",
+        "display",
+        "serialize",
+        "destroy",
+        "relocate"
+      ],
+      "rareEvent": "monument",
+      "rareProbability": 0.5,
+      "edges": [
+        "022",
+        "020",
+        "031",
+        "008"
+      ],
+      "hidden": true,
+      "word": "LENGUA",
+      "title": "tiempo / latencia del fuego"
+    },
+    {
+      "id": "022",
+      "index": 22,
+      "topology": "source",
+      "topologyLabel": "código fuente habitable",
+      "secondary": "glyphs",
+      "palette": [
+        "#001a39",
+        "#fff1d7",
+        "#ff7538",
+        "#45d3ff",
+        "#d9ff72",
+        "#ff3b9f"
+      ],
+      "cellularRule": 60,
+      "cellSize": 7,
+      "cellDensity": 0.2,
+      "rhythm": "scroll",
+      "iframeDepth": 2,
+      "mutationBudget": 16,
+      "operations": [
+        "multiply",
+        "serialize",
+        "swap",
+        "hierarchy",
+        "destroy",
+        "comment",
+        "position",
+        "relocate"
+      ],
+      "rareEvent": "monument",
+      "rareProbability": 0.46,
+      "edges": [
+        "023",
+        "021",
+        "014",
+        "019"
+      ],
+      "hidden": false,
+      "word": "VENTANA",
+      "title": "copia / original: ninguna"
+    },
+    {
+      "id": "023",
+      "index": 23,
+      "topology": "cellular",
+      "topologyLabel": "autómata habitable",
+      "secondary": "windows",
+      "palette": [
+        "#f8a9cb",
+        "#20134d",
+        "#75f4ff",
+        "#ff6b00",
+        "#f7ff8a",
+        "#8e4dff"
+      ],
+      "cellularRule": 54,
+      "cellSize": 8,
+      "cellDensity": 0.34,
+      "rhythm": "still",
+      "iframeDepth": 3,
+      "mutationBudget": 18,
+      "operations": [
+        "display",
+        "relocate",
+        "multiply",
+        "destroy",
+        "comment",
+        "swap"
+      ],
+      "rareEvent": "migration",
+      "rareProbability": 0.44,
+      "edges": [
+        "024",
+        "022",
+        "014",
+        "032",
+        "001"
+      ],
+      "hidden": false,
+      "word": "ORIGINAL",
+      "title": "ceniza / cauce temporal"
+    },
+    {
+      "id": "024",
+      "index": 24,
+      "topology": "index",
+      "topologyLabel": "índice explosivo",
+      "secondary": "corridor",
+      "palette": [
+        "#f0efe9",
+        "#132519",
+        "#8eeb83",
+        "#ff9fbb",
+        "#8758ff",
+        "#ffe65c"
+      ],
+      "cellularRule": 45,
+      "cellSize": 11,
+      "cellDensity": 0.11,
+      "rhythm": "click",
+      "iframeDepth": 1,
+      "mutationBudget": 8,
+      "operations": [
+        "position",
+        "display",
+        "iframe",
+        "swap",
+        "multiply",
+        "link"
+      ],
+      "rareEvent": "css-shift",
+      "rareProbability": 0.52,
+      "edges": [
+        "025",
+        "023",
+        "003",
+        "028"
+      ],
+      "hidden": false,
+      "word": "AGUA",
+      "title": "índice / sentido parcial"
+    },
+    {
+      "id": "025",
+      "index": 25,
+      "topology": "empty",
+      "topologyLabel": "página casi vacía",
+      "secondary": "destruction",
+      "palette": [
+        "#ffe5f2",
+        "#46112d",
+        "#ec2f8b",
+        "#185cff",
+        "#ffca2a",
+        "#78f0ce"
+      ],
+      "cellularRule": 60,
+      "cellSize": 9,
+      "cellDensity": 0.26,
+      "rhythm": "nervous",
+      "iframeDepth": 2,
+      "mutationBudget": 21,
+      "operations": [
+        "destroy",
+        "multiply",
+        "display",
+        "hierarchy"
+      ],
+      "rareEvent": "monument",
+      "rareProbability": 0.65,
+      "edges": [
+        "026",
+        "024",
+        "028",
+        "021"
+      ],
+      "hidden": true,
+      "word": "VENTANA",
+      "title": "umbral / ruido con sintaxis"
+    },
+    {
+      "id": "026",
+      "index": 26,
+      "topology": "error",
+      "topologyLabel": "error local",
+      "secondary": "index",
+      "palette": [
+        "#2b0a3d",
+        "#fff5c4",
+        "#ff8dce",
+        "#30e8c3",
+        "#f5ff3f",
+        "#7d63ff"
+      ],
+      "cellularRule": 110,
+      "cellSize": 5,
+      "cellDensity": 0.31,
+      "rhythm": "slow",
+      "iframeDepth": 1,
+      "mutationBudget": 13,
+      "operations": [
+        "multiply",
+        "position",
+        "display",
+        "iframe",
+        "hierarchy",
+        "link",
+        "serialize"
+      ],
+      "rareEvent": "migration",
+      "rareProbability": 0.66,
+      "edges": [
+        "027",
+        "025",
+        "019",
+        "030",
+        "031"
+      ],
+      "hidden": false,
+      "word": "ECO",
+      "title": "fuego / una ventana sueña"
+    },
+    {
+      "id": "027",
+      "index": 27,
+      "topology": "glyphs",
+      "topologyLabel": "paisaje de glifos",
+      "secondary": "iframes",
+      "palette": [
+        "#f8f7f1",
+        "#050505",
+        "#ff4fa3",
+        "#147bff",
+        "#b7ff3c",
+        "#ff652b"
+      ],
+      "cellularRule": 30,
+      "cellSize": 13,
+      "cellDensity": 0.28,
+      "rhythm": "click",
+      "iframeDepth": 2,
+      "mutationBudget": 19,
+      "operations": [
+        "destroy",
+        "display",
+        "multiply",
+        "position",
+        "iframe",
+        "swap"
+      ],
+      "rareEvent": "glyph-only",
+      "rareProbability": 0.48,
+      "edges": [
+        "028",
+        "026",
+        "010",
+        "011"
+      ],
+      "hidden": false,
+      "word": "UMBRAL",
+      "title": "glifo / guardar sin conservar"
+    },
+    {
+      "id": "028",
+      "index": 28,
+      "topology": "destruction",
+      "topologyLabel": "página que se autodestruye",
+      "secondary": "vertical",
+      "palette": [
+        "#2b0a3d",
+        "#fff5c4",
+        "#ff8dce",
+        "#30e8c3",
+        "#f5ff3f",
+        "#7d63ff"
+      ],
+      "cellularRule": 30,
+      "cellSize": 5,
+      "cellDensity": 0.15,
+      "rhythm": "slow",
+      "iframeDepth": 1,
+      "mutationBudget": 13,
+      "operations": [
+        "destroy",
+        "iframe",
+        "position",
+        "tag",
+        "swap",
+        "serialize"
+      ],
+      "rareEvent": "source",
+      "rareProbability": 0.57,
+      "edges": [
+        "029",
+        "027",
+        "003",
+        "010",
+        "006",
+        "016"
+      ],
+      "hidden": false,
+      "word": "COPIA",
+      "title": "fuego / sentido parcial"
+    },
+    {
+      "id": "029",
+      "index": 29,
+      "topology": "reproducer",
+      "topologyLabel": "página reproductora",
+      "secondary": "iframes",
+      "palette": [
+        "#fff",
+        "#000",
+        "#000",
+        "#bbb",
+        "#eee",
+        "#555"
+      ],
+      "cellularRule": 90,
+      "cellSize": 12,
+      "cellDensity": 0.24,
+      "rhythm": "nervous",
+      "iframeDepth": 2,
+      "mutationBudget": 22,
+      "operations": [
+        "serialize",
+        "multiply",
+        "swap",
+        "comment",
+        "destroy",
+        "position",
+        "iframe"
+      ],
+      "rareEvent": "glyph-only",
+      "rareProbability": 0.48,
+      "edges": [
+        "030",
+        "028",
+        "022",
+        "004",
+        "014",
+        "020"
+      ],
+      "hidden": false,
+      "word": "GLIFO",
+      "title": "eco / la nota muerde"
+    },
+    {
+      "id": "030",
+      "index": 30,
+      "topology": "table",
+      "topologyLabel": "tabla infinita",
+      "secondary": "cellular",
+      "palette": [
+        "#281f21",
+        "#ffefde",
+        "#dcff62",
+        "#ff4f9a",
+        "#67a8ff",
+        "#ff8f3d"
+      ],
+      "cellularRule": 45,
+      "cellSize": 9,
+      "cellDensity": 0.13,
+      "rhythm": "explosive",
+      "iframeDepth": 2,
+      "mutationBudget": 27,
+      "operations": [
+        "serialize",
+        "position",
+        "destroy",
+        "tag"
+      ],
+      "rareEvent": "glyph-only",
+      "rareProbability": 0.29,
+      "edges": [
+        "031",
+        "029",
+        "018",
+        "021",
+        "007"
+      ],
+      "hidden": false,
+      "word": "UMBRAL",
+      "title": "río / este borde escucha"
+    },
+    {
+      "id": "031",
+      "index": 31,
+      "topology": "field",
+      "topologyLabel": "campo absoluto",
+      "secondary": "iframes",
+      "palette": [
+        "#001a39",
+        "#fff1d7",
+        "#ff7538",
+        "#45d3ff",
+        "#d9ff72",
+        "#ff3b9f"
+      ],
+      "cellularRule": 54,
+      "cellSize": 14,
+      "cellDensity": 0.19,
+      "rhythm": "scroll",
+      "iframeDepth": 1,
+      "mutationBudget": 10,
+      "operations": [
+        "comment",
+        "iframe",
+        "relocate",
+        "destroy",
+        "tag",
+        "swap",
+        "display"
+      ],
+      "rareEvent": "glyph-only",
+      "rareProbability": 0.27,
+      "edges": [
+        "032",
+        "030",
+        "029",
+        "015",
+        "013"
+      ],
+      "hidden": false,
+      "word": "ECO",
+      "title": "agua / latencia del fuego"
+    },
+    {
+      "id": "032",
+      "index": 32,
+      "topology": "corridor",
+      "topologyLabel": "corredor horizontal",
+      "secondary": "table",
+      "palette": [
+        "#2220a7",
+        "#f9f4d2",
+        "#ff6948",
+        "#40e0ff",
+        "#f0ff00",
+        "#ff68cf"
+      ],
+      "cellularRule": 90,
+      "cellSize": 9,
+      "cellDensity": 0.31,
+      "rhythm": "still",
+      "iframeDepth": 1,
+      "mutationBudget": 10,
+      "operations": [
+        "comment",
+        "iframe",
+        "destroy",
+        "relocate",
+        "link",
+        "hierarchy",
+        "tag",
+        "multiply"
+      ],
+      "rareEvent": "source",
+      "rareProbability": 0.22,
+      "edges": [
+        "033",
+        "031",
+        "025",
+        "008"
+      ],
+      "hidden": false,
+      "word": "FUEGO",
+      "title": "signo / guardar sin conservar"
+    },
+    {
+      "id": "033",
+      "index": 33,
+      "topology": "vertical",
+      "topologyLabel": "documento vertical imposible",
+      "secondary": "reproducer",
+      "palette": [
+        "#2b0a3d",
+        "#fff5c4",
+        "#ff8dce",
+        "#30e8c3",
+        "#f5ff3f",
+        "#7d63ff"
+      ],
+      "cellularRule": 45,
+      "cellSize": 14,
+      "cellDensity": 0.31,
+      "rhythm": "click",
+      "iframeDepth": 2,
+      "mutationBudget": 8,
+      "operations": [
+        "display",
+        "comment",
+        "link",
+        "hierarchy",
+        "tag",
+        "relocate"
+      ],
+      "rareEvent": "future-frame",
+      "rareProbability": 0.44,
+      "edges": [
+        "000",
+        "032",
+        "013",
+        "009",
+        "004"
+      ],
+      "hidden": false,
+      "word": "RUIDO",
+      "title": "glifo / original: ninguna"
+    }
+  ]
+}
