@@ -1,0 +1,189 @@
+/*
+  base.css — piso del laberinto
+  poesiasexp / laberinto
+
+  la paleta la inyecta el motor en :root como --fondo/--tinta/--acento/--c0..
+  no hay tema claro/oscuro global: cada pagina impone su propio color. sin
+  fondos serios por miedo al color.
+*/
+
+@font-face { font-family: 'egipcio';  src: url(../fonts/egipcio.ttf);  font-display: swap; }
+@font-face { font-family: 'anatolio'; src: url(../fonts/anatolio.ttf); font-display: swap; }
+@font-face { font-family: 'linearb';  src: url(../fonts/linearb.ttf);  font-display: swap; }
+@font-face { font-family: 'lineara';  src: url(../fonts/lineara.ttf);  font-display: swap; }
+
+:root {
+  --fondo: #0c0c10;
+  --tinta: #e8e8e2;
+  --acento: #b8f;
+  --borde: #555;
+  --enlace: #9cf;
+  --visitado: #c9c;
+  --entropia: 0.3;
+  --empuje: 0px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--fondo);
+  color: var(--tinta);
+}
+
+body {
+  font-family: ui-monospace, 'egipcio', 'anatolio', 'linearb', 'lineara', SFMono-Regular, Menlo, monospace;
+  line-height: 1.35;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; /* el cuerpo nunca hace scroll horizontal; los campos anchos scrollean por dentro o via viewport controlado */
+}
+
+/* familias tipograficas por pagina */
+body.tipo-mono   { font-family: ui-monospace, 'egipcio','anatolio','linearb','lineara', monospace; }
+body.tipo-serif  { font-family: 'egipcio','anatolio','linearb','lineara', Georgia, 'Times New Roman', serif; letter-spacing: .2px; }
+body.tipo-sans   { font-family: system-ui, 'egipcio','anatolio','linearb','lineara', sans-serif; }
+body.tipo-glifo  { font-family: 'egipcio','anatolio','linearb','lineara', ui-monospace, monospace; }
+body.tipo-ancho  { font-family: ui-monospace, monospace; letter-spacing: 2px; word-spacing: 6px; }
+
+main#laberinto { position: relative; min-height: 100vh; transform: translateX(var(--empuje)); }
+
+/* enlaces: hipervinculos reales, teñidos por la paleta */
+a.enlace {
+  color: var(--enlace);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+  word-break: break-word;
+}
+a.enlace:visited { color: var(--visitado); }
+a.enlace:hover { background: var(--acento); color: var(--fondo); text-decoration: none; }
+a.enlace-sin-texto { display: inline-block; width: 1.2em; height: 1.2em; border-bottom: 2px solid var(--enlace); }
+
+.monumento { font-weight: 700; letter-spacing: -.02em; line-height: .9; text-transform: uppercase; }
+.micro { font-size: 10px; opacity: .8; }
+.nota { font-size: 12px; opacity: .8; font-style: italic; }
+
+/* ---------------- 1. tabla ---------------- */
+.envoltura-tabla { overflow-x: auto; max-width: 100%; }
+.g-tabla { border-color: var(--borde); color: inherit; }
+.g-tabla td, .g-tabla th { vertical-align: top; font-size: 13px; }
+.g-tabla th { background: var(--acento); color: var(--fondo); cursor: pointer; }
+.g-tabla.tabla-fija { table-layout: fixed; width: 100%; }
+.g-tabla .mini td { border: 1px solid var(--borde); }
+.celda-iframe { width: 60px; height: 44px; border: 0; }
+
+/* ---------------- 2. ventanas ---------------- */
+.g-ventanas { position: relative; min-height: 100vh; }
+.ventana { position: absolute; overflow: hidden; font-size: 13px; }
+.ventana-barra { padding: 2px 6px; font-size: 12px; cursor: move; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+.ventana-cerrar { cursor: pointer; padding: 0 4px; font-weight: 700; }
+.ventana-cuerpo { padding: 6px 8px; max-height: 60vh; overflow: auto; }
+.ventana-iframe { width: 100%; height: 22vh; border: 0; }
+.ventana-glifos { word-break: break-all; line-height: 1; }
+.ventana.encogida { width: 1.4em !important; min-height: 1.4em !important; }
+.ventana.encogida .ventana-cuerpo { display: none; }
+.residuo { position: absolute; width: 10px; height: 10px; }
+
+/* ---------------- 3. campo absoluto ---------------- */
+.g-campo { color: inherit; }
+.g-campo .zona { position: absolute; mix-blend-mode: multiply; }
+.g-campo .monumento { pointer-events: none; }
+
+/* ---------------- 4. iframes ---------------- */
+.g-iframes.if-mosaico { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 2px; }
+.g-iframes.if-apilado { display: flex; flex-direction: column; gap: 1px; }
+.g-iframes.if-disperso { position: relative; min-height: 100vh; }
+.if-marco { position: relative; border: 1px solid var(--borde); overflow: hidden; }
+.g-iframes.if-disperso .if-marco { position: absolute; }
+.if-marco iframe { width: 100%; height: 180px; border: 0; display: block; }
+.g-iframes.if-disperso .if-marco iframe { height: 100%; }
+.if-etiqueta { position: absolute; right: 2px; bottom: 2px; font-size: 10px; background: var(--fondo); color: var(--acento); padding: 0 3px; }
+
+/* ---------------- 5. formulario ---------------- */
+.g-formulario { padding: 4vh 4vw; max-width: 720px; }
+.g-formulario fieldset { border: 1px solid var(--borde); margin: 0 0 1em; padding: .6em .8em; }
+.g-formulario legend { padding: 0 .4em; color: var(--acento); }
+.g-formulario label { display: block; padding: 2px 0; }
+.g-formulario .region { border: 1px dashed var(--acento); padding: 4px; margin: 4px 0; word-break: break-all; line-height: 1; }
+.g-formulario textarea, .g-formulario select, .g-formulario input[type=text] { width: 100%; background: var(--fondo); color: var(--tinta); border: 1px solid var(--borde); }
+.g-formulario button { background: var(--acento); color: var(--fondo); border: 0; padding: .4em 1em; cursor: pointer; }
+
+/* ---------------- 6. fuente habitable ---------------- */
+.g-fuente { white-space: pre-wrap; word-break: break-word; font-size: 13px; padding: 3vh 3vw; margin: 0; }
+.g-fuente .etiqueta { color: var(--acento); cursor: pointer; }
+.g-fuente .etiqueta.cierra { color: var(--enlace); }
+.g-fuente .etiqueta.plegada ~ * { display: none; }
+.g-fuente .atributo { color: var(--visitado); }
+.g-fuente .comentario { opacity: .55; font-style: italic; }
+
+/* ---------------- 7. celular ---------------- */
+.g-celular { position: relative; min-height: 100vh; }
+.celular-canvas { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; }
+.celular-capa { position: absolute; inset: 0; }
+.celda-viva { position: absolute; font-size: 14px; transform: translate(-50%, -50%); }
+
+/* ---------------- 8. indice ---------------- */
+.g-indice { list-style: none; padding: 3vh 4vw; margin: 0; columns: 2 220px; }
+.g-indice li { break-inside: avoid; padding: 1px 0; }
+.indice-titulo { padding: 2vh 4vw 0; color: var(--acento); font-size: 12px; }
+
+/* ---------------- 9. vacio ---------------- */
+.g-vacio { color: inherit; }
+.celda-sola { font-size: 40px; }
+
+/* ---------------- 10. paisaje ---------------- */
+.g-paisaje { position: relative; min-height: 100vh; overflow: hidden; }
+.paisaje-capa { position: absolute; left: 0; right: 0; white-space: nowrap; overflow: hidden; line-height: 1; letter-spacing: 1px; pointer-events: none; }
+.paisaje-capa .glifo-enlace { pointer-events: auto; }
+.paisaje-palabra { position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); font-size: clamp(40px, 12vw, 200px); font-weight: 700; mix-blend-mode: difference; }
+
+/* ---------------- 11. vertical ---------------- */
+.g-vertical .estrato { padding: 6vh 6vw; }
+.g-vertical .estrato p { max-width: 60ch; }
+
+/* ---------------- 12. corredor ---------------- */
+.g-corredor { height: 100vh; white-space: nowrap; overflow: visible; }
+.corr-zona, .corr-vacio { height: 60vh; margin-top: 20vh; }
+.corr-obj, .corr-palabra { padding: 0 .4em; line-height: 1; }
+.corr-enlace { padding: 0 1em; font-size: 22px; }
+
+/* el corredor y el campo usan scroll horizontal real via el viewport */
+body.scroll-libre { overflow-x: auto; }
+body.scroll-libre main#laberinto { width: max-content; }
+
+/* ---------------- 13. error ---------------- */
+.g-error { padding: 4vh 4vw; font-size: 14px; }
+.modo-error { font-family: ui-monospace, monospace; }
+.error-linea { font-size: 20px; color: var(--acento); margin-bottom: 1em; }
+.error-comentario { opacity: .6; }
+.error-img { display: block; max-width: 100%; }
+.error-reparar { margin-top: 1em; }
+.error-reparar input { background: var(--fondo); color: var(--tinta); border: 1px solid var(--borde); }
+
+/* ---------------- 14. reproductora ---------------- */
+.g-reproductora { padding: 6vh 6vw; }
+.g-reproductora .monumento { font-size: clamp(40px, 10vw, 140px); }
+.rep-panel { display: flex; flex-wrap: wrap; gap: 8px; margin: 1em 0; }
+.rep-panel button { background: var(--acento); color: var(--fondo); border: 0; padding: .5em 1em; cursor: pointer; }
+.rep-vivero { display: flex; flex-wrap: wrap; gap: 6px; }
+.rep-hija { width: 240px; height: 180px; border: 1px solid var(--borde); }
+
+/* ---------------- overlays de ruta ---------------- */
+.overlay-iframe { position: fixed; inset: 8vh 8vw; z-index: 900; display: flex; flex-direction: column; border: 1px solid var(--borde); background: var(--fondo); box-shadow: 0 0 0 100vmax rgba(0,0,0,.5); }
+.overlay-barra { background: var(--acento); color: var(--fondo); padding: 2px 8px; display: flex; justify-content: space-between; }
+.overlay-cerrar { cursor: pointer; font-weight: 700; padding: 0 6px; }
+.overlay-cuerpo { flex: 1; border: 0; width: 100%; }
+
+/* barra de estado del laberinto (inyectada por las cascaras) */
+.lab-barra { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; display: flex; gap: 10px; align-items: center;
+  padding: 2px 8px; font-size: 11px; font-family: ui-monospace, monospace;
+  background: color-mix(in srgb, var(--fondo) 82%, transparent); color: var(--tinta); border-top: 1px solid var(--borde); }
+.lab-barra a { color: var(--enlace); text-decoration: none; }
+.lab-barra a:hover { text-decoration: underline; }
+.lab-barra .sep { opacity: .4; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

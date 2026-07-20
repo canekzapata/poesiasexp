@@ -1,0 +1,99 @@
+/*
+  mutaciones.css — estados del DOM despues de cargar
+  poesiasexp / laberinto
+
+  clases que aplican el motor cuando el documento muta o cuando ocurre un
+  evento raro. --entropia (0..1) modula la intensidad de varios efectos.
+*/
+
+/* --------- residuos de destruccion --------- */
+.residuo-inline { opacity: .5; }
+.resto-enlace { opacity: .4; }
+.duplicado { outline: 1px dotted var(--borde); }
+.comentario-visible { opacity: .5; font-style: italic; font-family: ui-monospace, monospace; }
+.vuelto-enlace { text-decoration: underline dotted var(--enlace); }
+.mut-etiqueta::before { content: '<' attr(class) '>'; font-size: 9px; opacity: .35; font-family: ui-monospace, monospace; }
+.clon { opacity: .85; }
+a.mutando { animation: parpadeo .4s steps(2) infinite; }
+
+@keyframes parpadeo { 50% { opacity: .3; } }
+
+/* --------- eventos raros --------- */
+.raro-palabra {
+  position: fixed; inset: 0; z-index: 1200; display: grid; place-items: center;
+  background: var(--fondo); color: var(--acento);
+  font-size: clamp(60px, 26vw, 480px); font-weight: 800; text-transform: uppercase;
+  cursor: pointer; line-height: .8; letter-spacing: -.03em; overflow: hidden;
+}
+.raro-palabra.desvanece { transition: opacity 1.4s; opacity: 0; }
+
+.raro-min {
+  position: fixed; z-index: 1100; width: 14px; height: 14px; overflow: hidden;
+  font-size: 6px; line-height: 14px; background: var(--acento); color: var(--fondo);
+  border: 1px solid var(--borde);
+}
+.raro-min:hover { width: auto; height: auto; padding: 4px; font-size: 12px; }
+
+table.invertida { transform: scaleY(-1); }
+table.invertida td, table.invertida th { transform: scaleY(-1); }
+
+body.revela-fuente main#laberinto { display: none; }
+body.revela-fuente::before {
+  content: 'href · data-* · <!-- el archivo no recuerda de dónde vino -->';
+  display: block; white-space: pre-wrap; padding: 6vh 6vw; font-family: ui-monospace, monospace;
+  color: var(--acento);
+}
+
+body.sin-alfabeto { --_x: 0; }
+body.sin-alfabeto a, body.sin-alfabeto p, body.sin-alfabeto span { }
+body.solo-glifos p, body.solo-glifos .fragmento { visibility: hidden; }
+
+body.css-otro {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.raro-recuerdo {
+  position: fixed; right: 4vw; bottom: 4vh; z-index: 800; width: 40vw; height: 34vh;
+  border: 1px solid var(--borde); background: var(--fondo);
+}
+.raro-recuerdo iframe { width: 100%; height: 100%; border: 0; }
+.raro-recuerdo .overlay-cerrar { position: absolute; right: 2px; top: 2px; z-index: 1; cursor: pointer; background: var(--acento); color: var(--fondo); padding: 0 6px; }
+
+.raro-indice { position: fixed; left: 2vw; top: 2vh; z-index: 700; list-style: none; padding: 6px 10px;
+  background: color-mix(in srgb, var(--fondo) 85%, transparent); border: 1px solid var(--borde); max-height: 90vh; overflow: auto; font-size: 12px; }
+
+body.fondo-enlace { cursor: crosshair; }
+body.fondo-enlace::after { content: 'el fondo es un enlace'; position: fixed; right: 6px; top: 6px; font-size: 10px; opacity: .5; }
+
+body.migra-izq main#laberinto *  { transition: transform .8s; }
+body.migra-izq main#laberinto > * { transform: translateX(-30vw); }
+body.migra-der main#laberinto > * { transform: translateX(30vw); }
+body.migra-arriba main#laberinto > * { transform: translateY(-20vh); }
+body.migra-abajo main#laberinto > * { transform: translateY(20vh); }
+
+/* --------- entropia: temblor sutil proporcional --------- */
+@keyframes hormigueo {
+  0%,100% { transform: translate(0,0); }
+  25% { transform: translate(calc(var(--entropia) * 1px), calc(var(--entropia) * -1px)); }
+  50% { transform: translate(calc(var(--entropia) * -1px), calc(var(--entropia) * 1px)); }
+  75% { transform: translate(calc(var(--entropia) * 1px), calc(var(--entropia) * 1px)); }
+}
+body.ritmo-nervioso a.enlace, body.ritmo-explosivo a.enlace {
+  animation: hormigueo calc(2s - var(--entropia) * 1.4s) steps(3) infinite;
+}
+
+/* --------- modo quieto (Esc) --------- */
+body.quieto *, body.quieto *::before, body.quieto *::after {
+  animation: none !important;
+  transition: none !important;
+}
+body.quieto::after {
+  content: 'quieto · Esc';
+  position: fixed; right: 8px; bottom: 8px; z-index: 2000;
+  font-size: 10px; font-family: ui-monospace, monospace; opacity: .6;
+  color: var(--tinta);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .raro-palabra, .raro-min, a.mutando { animation: none !important; }
+}
