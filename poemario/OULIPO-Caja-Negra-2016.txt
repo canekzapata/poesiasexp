@@ -1,0 +1,1606 @@
+R. QUENEAU, G. PEREC,
+F. LE LIONNAIS, L. CALVINO
+H. MATHEWS Y OTROS
+
+EJERCICIOS DE
+LITERATURA POTENCIAL
+
+Traducción / Ezequiel Alemian
+Edición al cuidado de / Ezequiel Alemian y Malena Rey
+Introducción / Marcel Bénabou y Eduardo Berti
+
+CAJANE
+NEGRN
+NUMANCIA
+
+
+INTRODUCCIÓN
+CINCUENTA SIGLOS DEL OULIPO, MÁS SEIS
+
+Marcel Bénabou
+
+Para los oulipianos, un año equivale a un siglo. He aquí la larga
+historia de un grupo que, por medio de conceptos matemáticos y
+restricciones literarias, explora los recursos infinitos de la lengua.
+
+Los miembros del Oulipo acostumbran definirse como “ratas
+que construyen ellas mismas un laberinto del cual se proponen
+salir”. No sin cierta ambigiedad, disfrazada de coquetería. Pero
+habría que diseccionar esta fórmula. Para ello, adentrémonos un
+poco en la historia.
+
+En 1960 se formó un pequeño grupo de amantes de las letras
+que en un primer momento se llamó Sélitex [Seminario de
+Literatura Experimental], para luego denominarse Oulipo [Taller
+de Literatura Potencial]. ¿El motivo de este nacimiento? Un semina-
+rio en el castillo de Cerisy-la-Salle titulado “Una nueva defensa e ilus-
+tración de la lengua francesa”, consagrado a los escritos de Raymond
+Queneau. ¿El contexto histórico? Un tiempo marcado por la apari-
+ción de lo que se conocerá como estructuralismo, en el que se ponían
+en duda, en la literatura, una doble serie de ilusiones: las del surrealis-
+mo y las del compromiso de tipo sarteano. El proyecto del Oulipo
+
+
+10
+
+ratifica la ruptura con esas ilusiones. La declaración de principios, del
+mismo Queneau, se convirtió en un emblema: “Llamamos literatu-
+ra potencial a la búsqueda de formas y de estructuras nuevas que po-
+drán ser utilizadas por los escritores como mejor les parezca”.
+
+Bajo la dirección de sus dos fundadores, Raymond Queneau,
+y su cómplice intelectual, Frangois Le Lionnais (sin duda el más
+prodigioso coleccionista de saberes de su generación), el grupo
+reunió una decena de personajes tan marginales como inventivos:
+Noél Arnaud, Jacques Bens, Claude Berge, Paul Braffort, Jacques
+Duchateau, Latis, Jean Lescure, Jean Queval, y Albert-Marie
+Schmidt. Amigos, admiradores o comentaristas de Queneau, te-
+nían la particularidad de ser matemáticos fuertemente atraídos
+por la literatura, como en el caso de Le Lionnais, Berge o Braffort;
+o bien, como en el caso de Queneau, escritores que deseaban es-
+trechar los lazos de la literatura con las matemáticas. Gracias al en-
+tusiasmo y la constancia de unos y otros, que se reunían una vez
+al mes y trabajaban con humor y discreción (porque aunque el
+Oulipo perteneció al Colegio de Patafísica, en un principio se
+comportó como una sociedad secreta), el grupo pronto delimitó
+su espacio de actividad y definió sus principios.
+
+Desde el comienzo, el Oulipo se negó a reconocerse como
+un movimiento literario. Nada tenía que ver con las corrientes
+de vanguardia que querían imponer sus dogmas y pretendían bo-
+rrar el pasado de manera sistemática. Queneau tenía algunas ra-
+zones personales para desconfiar de este tipo de movimientos, que
+se convierten rápidamente en una secta antes de hundirse en la
+bruma. El nuevo grupo marcó claramente su distancia con lo que
+se hacía en esa época bajo el nombre de “literatura aleatoria” (sobre
+todo, alrededor de Max Bense y Stuttgart), y este desafío a la au-
+toridad del azar será uno de sus rasgos principales. Sobre este punto,
+Claude Berge emitió una sentencia vigorosa que no ha perdido vi-
+gencia: “El Oulipo es el anti-azar”.
+
+Aclarado esto, una definición más optimista del proyecto
+se hizo realidad rápidamente. Eligieron como modelo a Bourbaki,
+
+
+ese pequeño círculo de estudiantes de la prestigiosa Escuela
+Normal Superior que en los años treinta proyectaron otorgarle
+un “fundamento sólido” a las matemáticas. De hecho, oulipia-
+nos y bourbakistas tienen al menos tres rasgos en común: la na-
+turaleza colectiva de sus trabajos, la voluntad de reunir en su to-
+talidad un campo dado (las matemáticas para Bourbaki, lo
+literario para el Oulipo), y la utilización de un instrumento es-
+tratégico privilegiado (para Bourbaki, el método axiomático;
+para el Oulipo, la contraínte [restricción]). El proyecto consis-
+tirá en una tentativa de exploración metódica, sistemática, de
+las potencialidades de la literatura, o mejor dicho, de la lengua.
+Para llevar a cabo esta exploración, el Oulipo se asigna dos tipos
+de misiones.
+
+La primera es inventar estructuras, formas o nuevos desafíos
+que permitan la producción de obras originales. En esta búsque-
+da, la importación de conceptos matemáticos y la utilización de
+recursos combinatorios (Queneau había dado, el mismo año del
+nacimiento del Oulipo, un ejemplo determinante con sus Cent
+mille milliards des poemes) son los principales instrumentos. Esta
+explotación de la ciencia constituye uno de los aportes fundamen-
+tales del grupo, y explica la composición del Oulipo, marcado
+desde el origen, como se ha visto, por la presencia conjunta y la
+colaboración estrecha de “literatos” y “matemáticos”.
+
+La segunda misión consiste en examinar antiguas obras lite-
+rarias para encontrar las huellas (a veces evidentes, a veces difíci-
+les de develar) de la utilización de estructuras, formas o restriccio-
+nes. Durante las reuniones del Oulipo, los frutos de esta
+investigación nutrieron el campo de la “erudición”, consagrado a
+eso que los oulipianos llamamos “los plagiarios por anticipación”:
+entre otros, los poetas alejandrinos, los Grandes Retóricos (sobre
+todo Jean Molinet, Guillaume Crétin y Jean Meschinot), algunos
+poetas barrocos alemanes como Quirinus Kuhlmann, el grupo de
+los formalistas rusos, especialmente Khlebnikov, así como los es-
+critores Raymond Roussel o Robert Desnos.
+
+11
+
+
+12
+
+DEL BUEN USO DE LA RESTRICCIÓN
+
+En el corazón del proyecto oulipiano, como hemos visto, gobier-
+na el principio de la restricción, una idea que no siempre tuvo
+buenas críticas. Todos aquellos que comulgan con las concep-
+ciones románticas del “genio creador” y de “la inspiración” (con
+frecuencia sin advertirlo), todos aquellos para quienes la calidad
+de un texto reside en su “sinceridad” o en su “autenticidad”, des-
+confían del Oulipo como si se tratara de un extraño delirio.
+Apenas lo reconocen como un juego, quizás ingenioso, pero que
+permite ocultar el hueco intelectual o la sequía sentimental de
+unos extravagantes acróbatas del lenguaje. Se trata de un proce-
+so muy antiguo: “Es un vergiienza dedicarse a esas nimiedades
+complicadas, y el trabajo que requieren es una tontería”, gruñía
+el poeta latino Marcial, al responder rabiosamente contra las
+modas literarias de su tiempo. Nimiedades difíciles, difficiles
+nugae, las llamaba él, y la expresión dio en el blanco. Sin embar-
+go, algunas restricciones (como los anagramas, los palíndromos,
+los lipogramas, etc.) tienen un carácter universal que debería
+protegerlas de un juicio tan atrevido. Su antigiiedad, su persis-
+tencia, sus apariciones recurrentes en el conjunto de la literatu-
+ra oriental y occidental, son hechos irrebatibles que nadie puede
+darse el lujo de ignorar. Es cierto que no se concibe una poéti-
+ca que no se base en reglas más o menos rigurosas. Todos los es-
+critores, incluso aquellos que disimulan mejor su formalismo,
+admiten que siempre hay exigencias a las cuales su obra no puede
+sustraerse. Para muchos, la crítica al Oulipo se sitúa precisamen-
+te allí, en el límite que separa la regla de la restricción. A punto
+de aceptar la regla, rechazan la restricción; dado que no se trata
+de una regla necesaria, la consideran un mero recurso literario,
+es decir, una exageración.
+
+La práctica del Oulipo ha refutado la idea de esta frontera
+arbitraria. Se sabe, al menos desde Mallarmé, que el lenguaje
+puede y debe ser tratado como un objeto en sí, considerado en
+
+
+su aspecto material: entonces se nos revela como un sistema com-
+plejo, al interior del cual están a la vista diversos elementos cuyas
+combinaciones producen palabras, frases, versos, párrafos o ca-
+pítulos. Nada debería prohibir, en el marco de una búsqueda
+experimental, el someter cada uno de estos elementos a ciertas
+operaciones, a ciertas manipulaciones, y estudiar el resultado,
+del cual el mismo Mallarmé dio el ejemplo: *Soñó”, dijo Sartre,
+“con una poesía que fuera como deducida del conjunto de pro-
+piedades y caracteres del lenguaje”. Se comprende así qué papel
+se le otorga a la restricción en este contexto: obligar al sistema
+del lenguaje a salir de su funcionamiento rutinario. Y también,
+forzarlo a que confiese, a revelar sus recursos ocultos. “Todas esas
+prohibiciones a las cuales uno se somete, todos esos obstáculos
+que uno crea jugando con los elementos del lenguaje (aquí volve-
+mos a las ratas y al laberinto de nuestra definición inicial), ad-
+quieren entonces su verdadero sentido. ¿Una exhibición de vir-
+tuosismo? De ninguna manera. Más bien, la exploración de
+diversas potencialidades.
+
+Así surge la paradoja, tantas veces señalada, de la restricción
+lingúística. En lugar de bloquear la imaginación, estas exigen-
+cias arbitrarias la despiertan, la estimulan, le permiten ignorar
+todas esas otras restricciones que no liberan al lenguaje, y se es-
+capan más fácilmente al control de este último. Michel Leiris, a
+propósito de Raymond Roussel y de sus métodos, no dudaba en
+hablar de una verdadera “supresión de la censura”, que se logra
+mejor por este medio que por el de la escritura automática. De
+repente, la noción misma de inspiración se pone en duda. “Hay
+que afirmar”, proclama Queneau, “que el poeta jamás recibe la
+visita de las musas (...). Jamás es visitado por la inspiración por-
+que él vive en la inspiración, porque las fuerzas de la poesía están
+siempre a su disposición, sujetas a su voluntad, sometidas a la
+actividad que le es propia”.
+
+Es entonces en la fidelidad a esos simples principios que los
+fundadores del Oulipo obraron de manera paciente y artesanal.
+
+13
+
+
+14
+
+Construyeron el zócalo sobre el cual descansa todavía el edificio,
+y al cual se debe, en parte, su popularidad y su notable longevi-
+dad. Y aunque no todos los fundadores están tan presentes como
+antaño (así es la vida), sí permanecen en nuestra memoria.
+Entonces uno puede preguntar con todo derecho dónde se en-
+cuentra el Oulipo después de cincuenta y seis años de existencia,
+o mejor, luego de cincuenta y seis siglos porque, como hemos
+dicho, un año oulipiano equivale a un siglo normal.
+
+EXTENSIONES
+
+Reparemos por un momento en que desde el comienzo hubo cier-
+to interés del Oulipo por abrirse, por extenderse. Cosa que se ha
+hecho, en oleadas sucesivas, aunque el ritmo de este ensanchamien-
+to ha sabido guardar una sabia lentitud. Esto empezó en 1966, con
+la invitación de Queneau al poeta matemático Jacques Roubaud,
+encarnación perfecta del Jano oulipiano. Al núcleo de fundadores
+del grupo se unieron, por cooptación sucesiva, nuevos miembros,
+una veintena aproximadamente. Por orden de aparición: Jacques
+Roubaud (1966), Georges Perec (1967), Marcel Bénabou, Luc
+Étienne (1969), Paul Fournel (1972), Harry Mathews, Italo Calvino
+(1973), Michele Métail (1975), Erangois Caradec, Jacques Jouet
+(1983), Pierre Rosenstiehl, Hervé Le Tellier (1992), Oskar Pastior
+(1992), Michelle Grangaud, Bernard Cerquiglini (1995), lan Monk
+(1998), Olivier Salon, Anne Garréta (2000), Valérie Beaudouin
+(2003), Frédéric Forte (2005), Daniel Levin Becker, Michele Audin
+(2009), Étienne Lécroart (2012), Eduardo Berti y Pablo Martín
+Sánchez (2014). Como se puede advertir, se trata de personalida-
+des muy diversas (hombres o mujeres, jóvenes o no tan jóvenes,
+franceses o extranjeros, escritores o matemáticos, conocidos y des-
+conocidos), pero unidos por lazos comunes: el interés por la escri-
+tura a partir de la restricción, el gusto por compartir sus creacio-
+nes y convivir, y una cierta forma de humor.
+
+
+Gracias a la integración de estos nuevos miembros, el grupo
+abandonó su discreción inicial (de manera notoria desde la pu-
+blicación del libro de Queneau Entretiens avec Georges
+Charbonnier, de 1962), y avanzó en la realización de al menos
+una parte de su ambicioso programa, tanto en materia de crea-
+ción como de erudición. Numerosas líneas han sido exploradas,
+y se abrieron nuevos campos, además de las profusas publicacio-
+nes colectivas del grupo en diversas editoriales francesas (Gallimard,
+Larousse, Seuil, Le Castor Astral, Mille et une nuits) así como la
+gran cantidad de fascículos de la Bibliothéque Oulipienne (más de
+220 al día de hoy), en los cuales los oulipianos presentan indivi-
+dual o colectivamente sus nuevos aportes. De esta manera se es-
+bozan las líneas de cierta “división del trabajo”, sin que por ese
+motivo se ponga en duda el principio fundamental de la sana con-
+vivencia. Es esta dialéctica sutil, hecha a veces de la invención
+individual y de la efervescencia colectiva, la que ha permitido a
+los oulipianos cultivar, en el vasto dominio del lenguaje, casi la
+totalidad de los campos potenciales.
+
+Empecemos por el campo teórico. A medida que prolife-
+raban las propuestas de restricciones, que se multiplicaban los
+descubrimientos de plagiarios por anticipación, que se afina-
+ban los adelantos de la lingiística, se hacía también más impe-
+riosa la necesidad de examinarlos con claridad, de ahí los es-
+fuerzos por tratar de organizar en un sistema coherente el
+conjunto de las restricciones conocidas. Y debemos al espíritu
+enciclopédico de Queneau la primera de esas tentativas: dos ta-
+blas, una consagrada a los objetos lingiiísticos y otra a los ob-
+jetos semánticos, que pronto fueron bautizadas “tablas de
+Queneleieff”. Este trabajo pionero fue retomado muchas veces
+por Marcel Bénabou y Francois Le Lionnais. Este último, en la
+elaboración de su famoso Tercer Manifiesto, gracias a la impor-
+tación masiva de conceptos provenientes de las matemáticas
+modernas, marcó la pauta para una infinidad de nuevas restric-
+ciones posibles.
+
+15
+
+
+16
+
+La creación de restricciones nuevas ocupó, por supuesto, el
+centro de las preocupaciones oulipianas Se exploraron muchas
+líneas al respecto. Comencemos por las más sencillas: encontrar
+nuevas aplicaciones, buscar nuevas formas para las antiguas res-
+tricciones. Veamos solamente algunos ejemplos de los más sig-
+nificativos. El S+7 lescuriano ha tenido, gracias a Italo Calvino,
+Jacques Jouet y Francois Caradec, un verdadero rejuvenecimien-
+to. La práctica de la sustracción, utilizada por Queneau en sus
+ejercicios de haikuzación, tuvo también numerosas extensiones,
+como la de Jacques Roubaud, que puso en marcha un método
+para ofrecernos textos antiguos “en dimensiones razonables”, y
+lo aplicó a Arsace, la tragedia de Monsieur Le Royer de Prade; y
+por otro lado, la de Michelle Grangaud, que propuso los proce-
+dimientos del avión y del poema fundido y que redujo
+Britannicus a sus exclamaciones e interjecciones. Nótese que la
+aplicación contraria al procedimiento de la restricción —es decir,
+la ampliación—, dio origen a la técnica de “estirar la línea”, re-
+curso que a partir de dos frases dadas permite, por inserciones
+sucesivas, engordar un texto hasta la talla deseada. Otra técnica
+de Queneau, que fue más tarde bautizada como “transducción”,
+fue retomada por Paul Braffort, mientras que Hervé Le Tellier
+situó sus variaciones sobre la Gioconda en la línea de los famo-
+sos Ejercicios de estilo de Queneau. En continuidad con el libro
+Je me souviens (Me acuerdo), de Perec, Anne Garréta y Valérie
+Beaudouin establecieron las reglas de Tu te souviens. Y hay que
+recordar que otras restricciones antiguas también fueron reto-
+madas: la práctica del cronograma por Harry Mathews, o la del
+palíndromo, que Perec aplicó a las sílabas, Luc Etienne a los fo-
+nemas, y Michelle Grangaud a las palabras. Esta última opera-
+ción dio nacimiento a deliciosos palíndromos fonéticos, por los
+cuales Luc Étienne debió poner a punto, en conjunto con el la-
+boratorio de lingiiística de la Universidad París VII, de toda una
+técnica de grabación: la colaboración entre oulipianos y cientí-
+ficos demostró, una vez más, su fecundidad.
+
+
+Un territorio importante continúa en exploración: el de las
+restricciones “literales”. Fue el terreno predilecto de Perec, que
+produjo algunas de sus obras novelescas o poéticas a partir de los
+efectos de la presencia, ausencia o repetición de letras, su orden
+de aparición en las palabras, e incluso su forma. Explotando de
+todas las formas posibles ciertos alfabetos voluntariamente restrin-
+gidos, Perec enriqueció el corpus oulipiano con una serie de apor-
+tes sobresalientes: lipogramas, monovocalismos (en e, en a, en 0),
+bellos presentes, heterogramas. En esta línea también se encuen-
+tra Michele Métail, con sus poemas oligogramáticos; Olivier Salon,
+con sus textos bivocálicos; Michelle Grangaud, que renovó com-
+pletamente el anagrama; Hervé Le Teiller, que introdujo los nue-
+vos abecedarios y reflexionó sobre el viento de la lengua; Marcel
+Bénabou, que se interesó en la forma de las letras; y también lan
+Monk, que inició la serie de “Fractales” y propuso una forma
+poética fundada sobre el número de letras de las palabras existen-
+tes en el interior del verso.
+
+Habría que mencionar otro campo: el de las formas fijas, en
+el que hubo tres direcciones principales.
+
+1) Algunos intentaron crear nuevas formas. Queneau intro-
+dujo en 1974 la “moral elemental”, sobre la cual los oulipianos,
+de manera individual o colectiva, multiplicaron las variaciones.
+Jacques Roubaud inventó y practicó una gran cantidad de formas
+nuevas. A Jacques Jouet se le debe la redonda y la recapitulación,
+a Frédéric Forte la óÓpera-minuto, la pequeña moral elemental por-
+tátil, y las 99 notas preparatorias. Señalemos al pasar que también
+presenciamos la aparición de restricciones de un nuevo tipo: Valérie
+Beaudouin experimenta formas de escritura dinámicas articulan-
+do texto e imagen (videopoemas), Étienne Lécroart ha puesto a
+punto una nueva forma de retrato basado en letras (el retrato
+vacío), Jacques Jouet practica asiduamente el poema de metro, el
+monóstico paisajístico y el cronopoema.
+
+2) Revisión y extensión de formas antiguas. Es conocido el
+viejo interés, renovado sin pausa, de Jacques Roubaud por la
+
+17
+
+
+18
+
+forma soneto: ha explorado, en sus obras, todas sus potenciali-
+dades. Existe un trabajo colectivo de largo aliento, iniciado por
+Raymond Queneau, continuado por Jacques Roubaud, Harry
+Mathews, lan Monk y Oskar Pastior, dedicado a la sextina
+(poema de seis estrofas de seis versos) y su extensión a compo-
+siciones con base en otros números. Esto dio nacimiento a la
+proliferante familia de las “queninas” (poemas de n estrofas de
+n versos), familia que incluso se ha enriquecido con la combi-
+nación de la quenina con otras formas fijas. Monk dio otro paso
+con la invención de la queninización: parte del principio de que
+todo poema existente puede ser considerado como una estrofa
+de una quenina, con lo que no queda más que escribir las otras
+estrofas. En este rumbo, aportaron recientemente un desarrollo
+suplementario Michéle Audin y lan Monk, definiendo la noni-
+zación y dando comienzo a su exploración.
+
+3) Extensión del uso de formas fijas a otros campos que no
+son el de la poesía. Tres ejemplos: Perec, en La vida instrucciones
+de uso, utiliza lo que llama una “pseudo-quenina de orden diez”
+como una de las matrices de su novela; Roubaud utiliza la sexti-
+na como estructura de base de su serie de novelas construidas al-
+rededor del personaje de La bella Hortensia; Étienne Lécroart, que
+se sirve de restricciones diversas, a menudo matemáticas, para
+crear sus cómics, utiliza, en su trabajo Bandes de sonnets, la estruc-
+tura del soneto.
+
+A esto se pueden agregar algunas pistas particularmente fe-
+cundas. Los trabajos con expresiones hechas, o avisos clasifica-
+dos, sobre los que trabajó Michele Métail, y con lo que Robert
+Desnos llamó, de forma general, “lenguaje crudo” —acepción
+que los oulipianos extendieron hasta los títulos de libros o de
+films—, y sobre el que han trabajado Harry Mathews, Frangois
+Caradec, Paul Braffort, Hervé Le Tellier y Marcel Bénabou, per-
+mitieron multiplicar los ejercicios de creación con la práctica
+sistemática del reciclaje o del injerto. La vieja sugestión de Le
+Lionnais relativa al “teatro booleano” encontró su realización
+
+
+gracias al trabajo de Paul Fournel primero, y luego de Jacques
+Jouet y Olivier Salon.
+
+En paralelo a estas restricciones que se aplican principalmen-
+te sobre elementos verbales, se desarrollaron restricciones que se
+aplican sobre “objetos semánticos” (sentimientos, sensaciones,
+personajes, situaciones, etc.): están presentes en una gran canti-
+dad de novelas oulipianas. Ciertamente, sería exagerado preten-
+der que existe una forma literaria específica que vendría a ser la
+“novela oulipana”. Sin embargo, se puede constatar la existencia
+de lo que habría que denominar “novela de oulipiano”, cuyo prin-
+cipio se encuentra en una antigua declaración de Queneau: “Me
+he fijado reglas tan estrictas como las del soneto. Los personajes
+no aparecen ni desaparecen por azar, tampoco los lugares, ni los
+diferentes modos de expresión”. Principio siempre activo en al-
+gunas producciones de Jacques Bens, Jacques Roubaud, Harry
+Mathews, Italo Calvino, Paul Fournel, Jacques Jouet, Anne
+Garréta, Olivier Salon, Michéle Audin, Eduardo Berti o Pablo
+Martín Sanchez.
+
+Es necesario señalar también un fenómeno que se expan-
+de: el de las creaciones que podrían llamarse “epidémicas”. Todo
+sucede como si determinadas restricciones, determinados tex-
+tos, se hubiesen contagiado: apenas aparecen, cada oulipiano
+experimenta la necesidad de medirse con ellos. Esto comenzó
+con El viaje de invierno (Le voyage d'hiver) de Perec, que provo-
+có una veintena de otros viajes. Continuó con la serie de los sar-
+dinosaurios, todo un bestiario imaginario construido a partir
+de la creación de palabras-valija. Recientemente, floreció la serie
+de los “autorretratos” elaborados a partir de una estructura des-
+arrollada en una nouvelle de Paul Fournel.
+
+Como consecuencia normal de este largo período de expan-
+sión, el estatus del Oulipo se ha modificado considerablemente.
+El dato principal es que las apariciones públicas del grupo, bajo
+la forma de cursos, lecturas o intervenciones urbanas, se han mul-
+tiplicado y diversificado en varios rubros.
+
+19
+
+
+20
+
+Los “ateliers oulipianos”: por pedido de una serie de institu-
+ciones francesas o extranjeras, el Oulipo, representado por algu-
+nos de sus miembros, aceptó animar “ateliers”, en el transcurso
+de los cuales se pone el acento en el buen uso de las formas, de
+las estructuras o de las restricciones relevantes del corpus ouli-
+piano. Son una manera de probar su fecundidad ante un públi-
+co receptivo, y una ocasión también para afianzar o confirmar
+las vocaciones verdaderas de los participantes. Así fue como
+Jacques Jouet fue cooptado luego de un atelier en Rotaumont, y
+Daniel Levin Becker y Pablo Martín Sánchez luego de uno rea-
+lizado en Bourges.
+
+Los pedidos públicos: el Oulipo fue convocado para inte-
+grar, en colaboración con arquitectos o artistas visuales, sus crea-
+ciones poéticas al espacio urbano. Así se desarrollaron numero-
+sas intervenciones: el Tramway de Estrasburgo (se colocaron 96
+textos en las columnas de las estaciones del metro de la ciudad);
+el poema mural de la fachada de la Universidad París VII, en
+Saint-Denis; los poemas murales de la estación de metro
+Carrefour Pleyel; el poema caminata con recorridos múltiples
+grabado en la Explanada Charles de Gaulle, en Rennes.
+
+Paralelamente a estas intervenciones directas, en las cuales el
+Oulipo conserva el control, se han desarrollado diversas formas
+de presencia oulipiana en el paisaje intelectual contemporáneo,
+con la traducción o adaptación de textos oulipianos a diversas len-
+guas (inglés, alemán, italiano, español); la multiplicación de es-
+tudios y trabajos de investigación, en el mundo universitario,
+sobre el Oulipo; la organización de coloquios universitarios (por
+ejemplo en Rennes y en la Biblioteca del Arsenal en París), con-
+sagradas al Oulipo y a su historia; el uso cada vez más extendido
+del adjetivo “oulipiano” en la crítica, no siempre utilizado correc-
+tamente; y la presencia en Internet de sitios franceses o extranje-
+ros que se proclaman oulipianos, tal vez abusivamente, pero que
+son un punto de encuentro cotidiano de amateurs de la escritu-
+ra por medio de restricciones.
+
+
+Así se realiza, más allá de las expectativas de su autor, la jui-
+ciosa predicción de Raymond Queneau: “No quedan más espe-
+ranzas de resucitar el latín, ese ejercicio maravilloso que tendía
+puentes entre la disertación francesa y el problema geométrico.
+Tal vez esta misma función pueda ser llevada a cabo ahora por los
+trabajos oulipianos de literatura potencial”.
+
+Julio de 2016
+
+Esta Introducción, escrita especialmente para esta edición, es una reelabora-
+ción de Marcel Bénabou de su texto “Cuarenta siglos del Oulipo”, publica-
+do originalmente en Le Magazine littéraire, n*398, de mayo de 2001, y tra-
+ducido por Vesta Mónica Herrerías y Martín Solares para el sitio
+http://mexiqueculture.pagesperso-orange.fr.
+
+21
+
+
+SOBRE LA PRESENTE EDICIÓN
+
+La mayoría de los textos que integran este libro han
+sido seleccionados de las tres antologías históricas
+que el Oulipo hizo de su trabajo, publicadas por la
+editorial Gallimard: La littérature potentielle
+(1973), Atlas de littérature potentielle (1981),
+y Anthologie de 'Oulipo (2009). Se han agregado ar-
+tículos extraídos de la web oficial del grupo
+(www.oulipo.net), y algunos trabajos singulares de
+autores oulipianos. En cada caso, se indica la fuen-
+te de la que han sido tomados.
+
+Hemos dividido el libro en cuatro módulos.
+“Hacia una definición de la literatura potencial” in-
+cluye los textos fundacionales del grupo y algunos
+documentos históricos. “Alrededor de Raymond
+Queneau” comprende artículos referidos al trabajo
+del autor de Cien mil millones de poemas, co-fundador
+y figura emblemática. “Sobre restricciones y expe-
+riencias” recoge los textos que disponen las bases de
+las restricciones [contraintes] más productivas del
+Oulipo. En “Ejercicios, experimentos” se han inclui-
+do ejemplos literarios que resultan de esas restriccio-
+nes. Y la “Caja de ideas” comprende un exhaustivo
+listado de las principales restricciones, con sus defi-
+niciones, para quien quiera ponerlas a prueba.
+Finalmente, se incluye un listado completo y actua-
+lizado con las biografías de los miembros del Oulipo.
+
+Como criterio general para la traducción de las
+obras, optamos por referir el título en español de
+las que tienen traducción publicada. En los casos
+en los que no haya sido traducida, preferimos citar
+
+29
+
+
+30
+
+el título original y sugerir un título tentativo
+entre corchetes.
+
+Dos excepciones: con respecto a Cent mille
+millards de poémes, obra clave de Raymond
+Queneau, optamos por traducirlo y mencionar-
+lo como Cien mil millones de poemas, privilegian-
+do la sonoridad de la cifra por sobre la exactitud
+de su transposición al español.
+
+Con respecto a La disparition, de Georges
+Perec, elegimos conservar en todos los casos su
+título original para respetar la restricción lipogra-
+mática de ausencia de la vocal e, traducida al es-
+pañol como El secuestro, sin utilizar la vocal a.
+
+Por último, en relación con la sigla que da
+nombre al grupo, hemos unificado su variante
+de escritura como Oulipo.
+
+Agradecemos especialmente a Eduardo Berti,
+Marcel Bénabou y Paul Fournel su fundamental
+
+colaboración en la realización de este proyecto.
+
+Ezequiel Alemian y Malena Rey
+
+
+LA LIPO (PRIMER MANIFLESTO)*
+
+Francois Le Liomais
+
+Abramos un diccionario! en la expresión: “Literatura Potencial”.
+No encontraremos nada. Ausencia decepcionante. Las líneas que
+siguen pretenden, si no intentar una definición de estos términos,
+proponer al menos algunas observaciones, simples aperitivos des-
+tinados a ejercitar la paciencia de los hambrientos, a la espera de
+un plato principal que ya sabrán escribir otros más dignos que yo.
+
+SS
+
+¿Recuerdan las discusiones que acompañaron la invención del len-
+guaje? Mistificación, fantasía pueril, licuación de la idea de raza y
+debilitamiento del Estado, traición a la Naturaleza, atentado a la
+emotividad, crimen de lesa-inspiración, ¿de qué no se acusó (sin
+lenguaje) al lenguaje en ese momento?
+
+* Escrito en 1963 y publicado en La littérature potentielle, París, Gallimard, 1973
+y en Anthologie de 'Oulipo, París, Gallimard, 2009.
+1. No importa cuál.
+
+33
+
+
+34
+
+¿Y la creación de la escritura, y de la gramática? ¿Imaginan
+acaso que sucedió sin protestas? La verdad es que la querella entre
+los Antiguos y los Modernos es permanente. Comenzó con el
+Zinjanthropus hace 1.750.000 años y continuará después de la
+humanidad, a menos que los mutantes que la sucedan generen un
+cambio. La querella ha sido, por otra parte, bastante mal compren-
+dida. Aquellos que se conocen como los Antiguos son, la mayo-
+ría de las veces, los descendientes esclerosados de aquellos que, en
+su tiempo, fueron los Modernos; y estos últimos, si regresaran
+entre nosotros, se colocarían, en muchos casos, al lado de los
+innovadores, renegando de sus imitadores, tan fieles.
+
+La literatura potencial no representa más que una nueva in-
+yección de savia en este debate.?
+
+AO
+
+Toda obra literaria se construye a partir de una inspiración (al
+menos es lo que el autor da a entender) que debe acomodarse a
+una serie de restricciones y procedimientos que se insertan unos
+en otros como muñecas rusas. Restricciones de vocabulario y de
+gramática, restricciones vinculadas con las reglas de la novela (di-
+visión en capítulos, por ejemplo) o de la tragedia clásica (regla de
+las tres unidades), restricciones de la versificación general, de las
+formas fijas (como en el caso del soneto), etc.
+
+¿Deberíamos conformarnos con estas herencias conocidas,
+negándonos obstinadamente a imaginar fórmulas nuevas? Los
+partisanos del inmovilismo no dudan en responder de manera
+afirmativa. Su convicción no se apoya en una reflexión medita-
+da sino en la fuerza del hábito y en la impresionante cantidad de
+obras maestras (pero también, desgraciadamente, de obras menos
+
+2. ¿Cómo puede inyectarse la savia en este debate? Nos desentendemos del pro-
+blema, más vinculado a la psicología vegetal que a la poesía.
+
+
+maestras) obtenidas de acuerdo con las normas y las reglas for-
+males vigentes. Así debían argumentar los enemigos de la inven-
+ción del lenguaje, sensibles a la belleza de las exclamaciones, a la
+expresividad de los suspiros y a las miradas en diagonal (no se
+pretende acá que los enamorados renuncien a nada de esto).
+
+¿Debe la humanidad relajarse, satisfecha, pensando ideas nue-
+vas en versos antiguos? Creemos que no. Lo que algunos escritores
+han introducido a su manera, con talento (con genio), algunos oca-
+sionalmente (forjando palabras nuevas), otros más específicamen-
+te (contrarrimas), y algunos con insistencia pero siempre en una
+sola dirección (letrismo), el Ouvroir de Littérature Potentielle [Taller
+de Literatura Potencial] (Oulipo) pretende hacerlo sistemática y
+científicamente, recurriendo a los buenos oficios de las máquinas
+de procesamiento de la información, si es preciso.
+
+SS
+
+Pueden distinguirse dos tendencias principales en las investigaciones
+que se propone realizar el Oulipo, orientadas respectivamente hacia
+el Análisis y hacia la Síntesis. La tendencia analítica trabaja sobre las
+obras del pasado, buscando en ellas posibilidades que en general van
+más allá de las que sus autores habían imaginado. Es, por ejemplo,
+el caso del centón,? que podría, me parece, ser reactualizado por al-
+gunas consideraciones extraídas de la teoría de las cadenas de Markov.
+
+La tendencia sintética es más ambiciosa, y constituye la vo-
+cación esencial del Oulipo. Se trata de ensayar nuevas posibilida-
+des, desconocidas por nuestros predecesores. Es, por ejemplo, el
+caso de los Cien mil millones de poemas o de los haikus booleanos,
+realizados a partir de las fórmulas cuánticas y de las ideas de Boole.
+
+3. El centón es una pieza literaria compuesta de frases y fragmentos ajenos, en
+verso o en prosa. Proviene del griego, y tiene una finalidad paródica o de home-
+naje al autor o a los autores en los que se basa. [N. del T.]
+
+35
+
+
+36
+
+Las matemáticas, más precisamente las estructuras abstractas
+de las matemáticas contemporáneas, nos proponen mil direccio-
+nes de exploración, tanto a partir del álgebra (recurriendo a nue-
+vas leyes de composición) como de la topología (consideraciones
+de proximidad, de apertura o hermetismo de los textos). También
+soñamos con poemas estereoscópicos, con textos transformables
+por proyección, etc. Se pueden imaginar otros caminos, especial-
+mente en el campo de los vocabularios particulares (cuervos, zo-
+rros, marsopas; el lenguaje ALGOL de los ordenadores electrónicos,
+etc.). Se necesitaría un largo artículo para enumerar las posibili-
+dades hoy entrevistas, tal vez ya esbozadas.
+
+No es nada fácil discernir por anticipado, a partir del examen
+de su semilla, cuál será el sabor de una fruta nueva. Tomemos el
+caso de la restricción alfabética. En literatura, pueden resultar de
+ella obras que uno no calificaría de transformadoras (a pesar de lo
+cual, Villon, y antes el Psalmista y autor de las Lamentaciones de
+Jeremías...); en pintura podríamos hablar de Herbin, con lo cual
+ya hay una mejora, y en música un efecto bien podría ser la fuga
+sobre el nombre de B.A.C.H. Aquí ya estamos ante una obra real-
+mente estimable. ¿Cómo habrían sospechado algo así los inven-
+tores del alfabeto?
+
+En resumen, el anoulipismo está lanzado al descubrimiento,
+y el sintoulipismo a la invención. Entre uno y otro existen mu-
+chos pasajes sutiles.
+
+Una palabra, finalmente, con respecto a esas personas parti-
+cularmente serias que condenan sin examen y sin apelación toda
+obra en la que se manifieste una propensión a la diversión.
+
+En la medida en que son el resultado de lo hecho por poetas,
+divertimentos, chistes, artificios, forman parte de la poesía. La li-
+teratura potencial es entonces la cosa más seria del mundo. C.Q.FD.
+
+
+CIEN MIL MILLONES DE POEMAS
+INSTRUCCIONES DE USO*
+
+Raymond Queneau
+
+Fue más por la inspiración que me produjo un libro para niños ti-
+tulado Tétes de Rechange que por juegos surrealistas como el cadáver
+exquisito que concebí (y llevé a cabo) esta pequeña obra, que permi-
+te a cualquier persona componer a voluntad cien mil millones de so-
+netos, todos ellos, por supuesto, regulares. Es, al fin y al cabo, una
+especie de máquina de fabricar poemas en número limitado, aun-
+que es verdad que ese número limitado provee lecturas para casi dos-
+cientos millones de años, leyendo veinticuatro horas por día.
+
+Para componer estos diez sonetos, me fue necesario seguir las
+siguientes reglas:
+
+1) Las rimas no debían ser demasiado banales (para evitar la
+chatura y la monotonía), ni tampoco muy raras o únicas (-¿nze,
+-once, -orze, por ejemplo); era necesario que hubiera en los cuarte-
+tos al menos cuarenta palabras diferentes y en los tercetos, veinte.
+
+* Publicado como Introducción a Cent mil millards de poémes, París, Gallimard,
+1961, aparecido también en La littérature potentielle, París, Gallimard, 1973, y
+en Anthologie de 'Oulipo, París, Gallimard, 2009.
+
+143
+
+
+No tenía importancia que palabras iguales rimasen en el mismo
+verso, porque estos no se leerían al mismo tiempo; solo me per-
+mití romper esta licencia en los casos de “beaux” (sustantivo y an-
+glicismo) y “beaux” (adjetivo).
+
+2) Cada soneto debía, si no ser perfectamente claro, tener al
+menos un tema y una continuidad, si no los otros 10' no habrí-
+an tenido el mismo encanto.
+
+3) La estructura gramatical, finalmente, debía ser la misma y
+mantenerse invariable en cada sustitución de versos. Una solución
+
+144
+
+Vista de los interiores del libro.
+
+
+simple podría haber sido que cada verso conformara una proposi-
+ción principal. No me permití este recurso salvo en el soneto 10 (¡el
+último!). También tuve cuidado de que no hubiese desacuerdos
+entre el género femenino y el masculino, o el número singular y
+el plural, de un verso a otro, en los diferentes sonetos.
+
+Es fácil comprobar, cuando se ve que cada verso está impre-
+so sobre una cinta independiente, que el lector puede componer
+10'* sonetos diferentes, o sea cien mil millones de poemas. (De un
+modo más explícito, para los escépticos: a cada primer verso del
+total de diez primeros versos, uno puede hacerle corresponder diez
+segundos versos diferentes, por lo tanto ya hay cien combinacio-
+nes posibles para los dos primeros versos. Cuando se agrega un
+tercer verso, las combinaciones posibles alcanzan las mil. Para los
+diez sonetos, completos, de catorce versos, se obtiene el resultado
+enunciado en el título.)
+
+Si lleva 45 segundos leer un soneto, y 15 segundos cambiar
+las cintas en que están impresos, a un ritmo de lectura de 8 horas
+por día, durante 200 días al año, se tarda más de un millón de si-
+glos en agotar las posibilidades del libro, mientras que leyendo
+todo el día, los 365 días del año, lleva 190.258.751 años, más al-
+gunas horas y minutos (sin tomar en cuenta los años bisiestos y
+algún otro detalle).
+
+145
+
+
+35 VARIACIONES SOBRE UN TEMA
+DE MARCEL PROUST*
+
+Georges Perec
+
+00 Texto base
+Longtemps je me suis couché de bonne heure
+
+01 Reorganización alfabética
+B CCD EEEEEEEE G HH 1] MM NNN 000 PR SSS T
+UUU
+
+02 Anagrama
+Hé, Jules, ce móme chenu de Proust songe bien!
+
+03 Otro anagrama
+Je cherche le temps bougé ou semé d'un sinon...
+
+* Publicado en el libro 35 variations, París, Le Castor Astral, 2000, y en la
+Anthologie de 'Oulipo, París, Gallimard, 2009. Para esta edición se decidió no
+traducir al español la famosa frase de Proust ni sus variaciones.
+
+291
+
+
+292
+
+04 Lipograma en a
+Longtemps je me suis couché de bonne heure
+
+05 Lipograma en /
+Longtemps nous nous cochámes de bonne heure
+
+06 Lipograma en e
+Durant un grand laps l'on malita tót
+
+07 Traslación
+
+Lugubrement je me suis couronné honteusement
+
+08 Palíndromo estricto
+Eru, eh! En no bed! Eh cu oc si usé me j s.p. met gnol...
+
+09 Una letra de menos
+Longemps je me suis coché de bonne heure
+
+10 Dos letras de menos
+Longemps je me suis coché de bonne hure
+
+11 Una letra de más
+Longemps je me suis coluché de bonne heure
+
+12 Negación
+Longemps je ne me suis pas couché de bonne heure
+
+13 Insistencia
+Pendant longemps, pendant tres longtemps, pendant tres tres tres
+longtemps oui, moi, je me suis couché, je suis allé au lit quoi, de
+tres bonne heure, de tres tres tres bonne heure, vraiment de tres trés tres
+bonne heure...
+
+
+14 Reducción
+Je me suis couché de bonne heure
+
+15 Otra reducción
+Longtemps je me suis couché
+
+16 Doble reducción
+Je me suis couché
+
+16 bis Triple reducción
+
+17 Triple contrasentido
+Jadis, ¡acceptai de perdre le match a l'aube.
+
+18 Otro punto de vista
+Marcel, au lit!!!
+
+19 Variaciones mínimas
+
+Longtemps je me suis bouché de bonne heure
+Longtemps je me suis douché de bonne heure
+Longtemps je me suis mouché de bonne heure
+Longtemps je me suis touché de bonne heure
+
+20 Antonimia
+Une fois, l'autre fit la grasse matinée
+
+21 Amplificación
+Eternellement, je me recouche de plus en plus tót
+
+22 Disminución
+Parfois, je ne metendai pas trop tard
+
+293
+
+
+294
+
+23 Permutación
+De bonne heure je me suis couché longtemps
+
+24 Contaminación cruzada
+
+a) Le 15 mai 1796, je me suis couché de bonne heure
+
+b) Longtemps, le général Bonaparte fit son entrée dans Milan a la
+téte de cette jeune armée qui venait de passer le pont de Lodi, et
+d'apprendre au monde quaprés tant de siécles César er Alexandre
+avaient un successeur
+
+25 Isomorfismos
+Une fois sur deux le confiteor se chante a cappella
+Généralement la peroxydase de potassium sévapore vite
+
+26 Sinónimo
+Pendant plusieurs années j'allai au lit tót
+
+27 Sutil deducción
+Des mon plus jeune áge, je me suis intéressé a des histoires de plume
+
+28 Otra contaminación
+Comme il faisait une chaleur de 33%, je me suis couché de bonne
+heure
+
+29 Homoconsonantismo
+Lart toujours mou se cachaíit dans Ben Hur
+
+30 Homovocalismo
+Qu'on rende le fruit fourré cher aux veuves...
+
+31 Isofonía
+Lhonte en germe, est-ce huis? Coup chez deux bons heurts!
+
+
+32 Bola de nieve con pequeñas libertades
+J .
+
+ai
+
+eté
+
+long
+
+temps
+
+couché
+dorloté
+embrassé
+rondement
+diablement
+suprémement
+debonnebeure
+marcel proust
+
+33 Heterosintaxismo
+De nombreuses années me connurent couche-tót 295
+
+34 Alejandrino
+
+Fort longtemps je me suis/ couché de tres bonne heure
+
+35 Pregunta
+Je me serai longtemps couché de bonne heure?
+
+Dejamos al lector con esta pregunta tan dolorosa.
+
+
+INTEGRANTES DEL OULIPO
+
+Noél ARNAUD
+
+(1919-2003) Miembro fundador. Presidente entre 1984 y 2003. Sucesor de
+Frangois Le Lionnais en la presidencia del Oulipo (después de su muerte en
+1984), Noél Arnaud fue miembro del grupo neo-dadaista Les Réverbéres entre
+1937 y 1940, y fue, durante la ocupación nazi de Francia, uno de los directores
+del grupo surrealista La Main a Plume (muchos de sus miembros fueron tortu-
+rados y fusilados por la Gestapo). Después de la Guerra, se convirtió en miem-
+bro del grupo de izquierda Le Surréalisme Révolutionnaire, y cumplió funcio-
+nes en el grupo Cobra, donde se origina el movimiento situacionista. Luego de
+la escisión del grupo, se convirtió en editor de Situationist Times con Jacqueline
+de Jong. Miembro del Colegio de Patafísica desde 1952, fue Regente y luego
+Sátrapa. Amigo de Boris Vian, es autor de varias de sus biografías.
+
+Michéle AUDIN
+
+Nació en 1954 y se unió al Oulipo en julio de 2009. Se desempeñó como ma-
+temática en las universidades de Ginebra, París y Estrasburgo. La historia de la
+literatura juega un rol muy importante en su trabajo, como así también la idea
+de que las matemáticas (y los matemáticos) ingresen en la cultura general. Entre
+sus libros se encuentran Mademoiselle Haas, Cent vingt et un jours y Une vie breve.
+
+331
+
+
+332
+
+Valérie BEAUDOUIN
+
+Nació en 1968 y se unió al Oulipo en marzo de 2003. Es profesora de ciencias
+sociales en la escuela de ingeniería Telecom Paris Tech y lleva a cabo investiga-
+ciones sobre los cambios en las prácticas culturales en la era digital. Investiga el
+potencial de los ordenadores para analizar textos, el uso de métodos estadísticos
+textuales para el análisis del ritmo del verso alejandrino francés, y las formas de
+escritura de texto dinámico y de la imagen (poemas-video). Además, ella es la
+responsable del sitio web del Oulipo (www.oulipo.net).
+
+Marcel BÉNABOU
+
+Nació en 1939 en Mequinez (Marruecos) y se unió al Oulipo en 1970. Es el
+Secretario definitivamente provisorio desde 1971. Antiguo alumno de la Escuela
+Normal Superior, es doctor en Letras y, hasta 2002, profesor de Historia Romana
+en la Universidad París 7. Se incorporó al Oulipo en 1970, después de que lo hi-
+ciera su amigo Georges Perec, con quien desde 1966 habían formado parte de los
+proyectos PALF [Producción Automática de Literatura Francesa] y de LSD [Literatura
+Semo-Definicional]. Como se deduce de los títulos de sus principales obras publi-
+cadas, en el centro de sus preocupaciones se encuentran los problemas de lectura
+y escritura. Oulipiano en sus producciones, trató de explorar varias áreas, inclu-
+yendo la búsqueda de “plagiarios por anticipación” del Oulipo en la antigua Grecia
+y Roma. Entre sus obras literarias se encuentran Por qué no he escrito ninguno de
+mis libros (editado por Anagrama), Lappentis revisité, y Anthologie de 'Oulipo (¡unto
+a Paul Fournel).
+
+Jacques BENS
+
+(1931-2001) Miembro fundador del Oulipo. Datario del Colegio de Patafísica,
+trabajó junto a Raymond Queneau para la editorial Gallimard en la Encyclopédie
+de la Pléiade, entre 1960 y 1963. Fue, durante los primeros tres siglos del Oulipo,
+su secretario provisorio, responsable de la confección de informes de las reunio-
+nes. Poeta y novelista, también fue miembro fundador del taller de novela negra
+potencial, OuliPoPo.
+
+Claude BERGE
+
+(1926-2002) Miembro fundador. Antiguo director del Centro Internacional de
+Cálculos y director emérito de investigación en el CNRS, es uno de los matemá-
+ticos más importantes del grupo. Raymond Queneau siguió activamente las
+conferencias de este teórico de los grafos en el Instituto Poincaré hacia 1958.
+Berge participó de la primera sesión del Oulipo del 24 de noviembre de 1960.
+Su interés se orientó hacia la alianza de la literatura y la matemática. Trabajó
+junto a Georges Perec en la confección del bi-cuadro latino, utilizado para re-
+
+
+partir los atributos de los distintos ambientes, inmuebles y personajes de La
+vida instrucciones de uso.
+
+Eduardo BERTI
+
+Nació en 1964 en Argentina, y se unió al Oulipo en junio de 2014. Es escritor,
+traductor y periodista cultural. Sus libros fueron traducidos a siete lenguas. Junto
+a Pablo Martín Sánchez es el primer miembro del Oulipo que escribe en espa-
+ñol. Es autor de las novelas Agua, La mujer de Wakefield, Todos los Funes, La som-
+bra del púgil, El país imaginado y Un padre extranjero, y de los libros de cuentos
+Los pájaros, La vida imposible y Lo inolvidable, entre otros. Lleva el blog Bertigo:
+eduardoberti.blogspot.com.ar.
+
+André BLAVIER
+
+(1922-2001) Corresponsal extranjero. Bibliotecario de la ciudad belga de Verviers,
+poeta, crítico, investigador y especialista en René Magritte, la vida de Blavier
+quedó marcada por su encuentro con Raymond Queneau. Fundador en 1952
+de la revista de vanguardia Temps Mélés, fue elegido como miembro correspon-
+sal del Oulipo en 1961. Fue el creador del Centro de Documentación Raymond
+Queneau de Verviers, que entró en funcionamiento en 1976, después de la muer-
+te del autor de Ejercicios de estilo. Pesimista divertido, Blavier recibió en 1977 el
+Gran Premio de Humor Negro.
+
+Paul BRAFFORT
+
+Nació en París en 1923 y se unió al Oulipo en 1961. Se licenció en Matemáticas
+y en Filosofía en la Sorbona. Después de iniciar su tesis doctoral bajo la direc-
+ción de Gaston Bachelard, ingresó en la Comisión de Energía Atómica en 1949
+como bibliotecario y jefe del Laboratorio de Computación Analógica. Trabajó
+para distintos centros y empresas de servicios informáticos, y fue profesor visi-
+tante de la Universidad de Chicago entre 1988 y 1991. Entre 1992 y 1998 fue
+director de programas en el Colegio Internacional de Filosofía.
+
+Italo CALVINO
+
+(1923-1985) Se unió al Oulipo en 1973. Nació en Cuba, pero desde los dos años
+vivió en Tralia. Fue miembro del Partido Comunista y de la resistencia italiana du-
+rante la Segunda Guerra. Su primer libro, El sendero de los nidos de araña, fue pu-
+blicado gracias a las gestiones de Cesare Pavese. Trabajó muchos años en la edito-
+rial Einaudi. Fue amigo de Raymond Queneau durante los años en que vivió en
+París (de 1967 a 1980). Entre sus libros se encuentran El vizconde demediado, El
+varón rampante, Las ciudades invisibles, El castillo de los destinos cruzados, Si una noche
+de invierno un viajero, y Seis propuestas para el próximo milenio. Murió en Siena.
+
+333
+
+
+334
+
+Francois CARADEC
+
+(1924-2008) Se unió al Oulipo en 1983. Fue Regente del Colegio de Patafísica.
+Es autor de biografías de referencia sobre Isidore Ducasse (Conde de
+Lautréamont), Alfred Jarry, Raymond Roussel, Boris Vian y Alphonse Allais, y
+de más de veinte títulos. Fue también uno de los primeros historiadores del cómic,
+y siguió de cerca el trabajo del OuBaPo. Participa, junto con Jacques Jouet, Paul
+Fournel y Hervé Le Tellier, del programa de radio “Les Papous dans la téte” de
+France-Culture.
+
+Bernard CERQUIGLINI
+
+Nació en 1947 y se unió al Oulipo en 1995. Es lingitista, profesor de la
+Universidad París VIT Denis Diderot, y a su vez director del Instituto Nacional
+de la Lengua Francesa y presidente del Observatorio Nacional de Lectura. Autor
+de una “autobiografía del acento circunflejo” que lleva como título Z'Accent du
+souvenir [El acento de la memoria], desempeña el rol de una especie de guardián
+de la lengua.
+
+Ross CHAMBERS
+
+Nació en 1932 y se unió al Oulipo en 1961. Fue elegido como corresponsal ex-
+tranjero del Oulipo en Australia en 1961. Es profesor de literatura francesa en su
+país y en la Universidad de Michigan. Autor de varios ensayos literarios en
+inglés y francés (sobre de Nerval y los inicios de la modernidad en Francia), ya
+no participa en las actividades del Oulipo.
+
+Stanley CHAPMAN
+
+(1925-2009) Se unió al Oulipo en 1961. Elegido en 1961 como corresponsal
+extranjero, Chapman es el traductor al inglés de Cent mille milliards de poemes,
+lo que le valió “el asombro y la admiración” de Raymond Queneau. También
+tradujo, entre otros autores, varias de las novelas de Boris Vian. Miembro del
+Colegio de Patafísica, vivió en Londres. Fue el fundador del OuTraPo [Taller de
+Tragicomedia Potencial] y miembro de la Lewis Carroll Society.
+
+Marcel DUCHAMP
+
+(1887-1968) Se unió al Oulipo en 1962. Duchamp entró al grupo como corres-
+ponsal en los Estados Unidos. Pintor, escultor, poeta e inventor, descubrió las
+Impresiones de África de Raymond Roussel durante una actuación en 1912.
+Jugador profesional de ajedrez entre 1929-1933, trabó amistad con Frangois Le
+Lionnais. Fue admitido en 1959 en el Colegio de Patafísica con el grado de
+Sátrapa Trascendental, y llegó a tener el honor de ser Maestro de la Orden de la
+Gran Gidouille. Durante su última noche de vida con Man Ray y Lebel, Marcel
+
+
+Duchamp se ríe: está leyendo la biografía de Alphonse Allais, escrita por Frangois
+Caradec. Unas horas más tarde, muere. En su epitafio puede leerse: “Por otra
+parte, siempre es el otro quien muere”.
+
+Jacques DUCHATEAU
+
+Nació en 1929. Miembro fundador del Oulipo. Duchateau fue uno de los par-
+ticipantes del Seminario de Cerisy, previo a la fundación del grupo. Hombre de
+la cultura y la radio, fue durante muchos años el animador y productor del pro-
+grama “Panorama” de France-Culture, donde comentaba las noticias literarias
+oulipianas. Sus obras hacen intervenir una serie de restricciones como la inter-
+sección y el isomorfismo.
+
+Luc ÉTIENNE
+
+(1908-1984) Se unió al Oulipo en 1970. Luc Étienne es el seudónimo de Luc
+Périn, cooptado tempranamente por el grupo. Fue profesor de matemáticas y fí-
+sica antes de publicar en 1952 sus primeros trabajos en los Cuadernos del Colegio
+de Patafísica, donde se convirtió en Regente y en Jefe de trabajos prácticos. En
+el Oulipo, se destacó en todos los ejercicios literarios y fue el creador del con-
+cepto de palíndromo fonético.
+
+Frédéric FORTE
+
+Nació en 1973 en Toulouse y se unió al Oulipo en 2005. Descubrió los
+Ejercicios de estilo de Queneau en quinto año del secundario y recuerda haber
+leído la palabra “Oulipo” en un manual escolar. Sus iniciales son también las
+de las “formas fijas”, sobre las que adora explorar potencialidades, tanto tra-
+dicionales como oulipianas. Es el inventor de la ópera-minuto, de la pequeña
+moral elemental portátil y de las 99 notas preparatorias. Entre sus obras se en-
+cuentran Discographie, Banzuke, N/S (en colaboración con lan Monk), y 33
+sonnets plats.
+
+Paul FOURNEL
+
+Nació en 1947 y se unió al Oulipo en 1972. Escritor, poeta, y autor dramático,
+pertenece a la segunda generación de oulipianos, cooptados por Raymond
+Queneau. Es el secretario definitivamente provisorio desde 2003, y el tercer pre-
+sidente del Oulipo. Escribió el primer libro consagrado al grupo, Clefs pour la
+littérature potentielle, y fue director editorial de Éditions Ramsay entre 1987 y
+1992. Varios de sus libros obtuvieron premios literarios como el Goncourt de
+novela. Entre sus últimos títulos publicados se encuentran Méli-Vélo, Courbatures,
+La Liseuse, Anquetil tout seul, Jason Murphy y los poemas de Le Bel Appétit. Su
+página web es www.paulfournel.net.
+
+335
+
+
+336
+
+Anne E GARRÉTA
+
+Nació en 1962 y se unió al Oulipo en 2000. Es la primera integrante del grupo
+en nacer luego de su fundación. Es profesora en la Universidad de Rennes II
+desde 1995. Su primera novela The Sphinx, elogiada por la crítica, cuenta la
+historia de amor entre dos personas sin dar ninguna indicación genérica. En
+otra de sus novelas, La Décomposition, un asesino serial mata a los personajes
+de En busca del tiempo perdido. Conoció a Jacques Roubaud en Viena, en
+1993, y fue invitada varias veces a su seminario poético a presentar las restric-
+ciones de sus novelas. Obtuvo el Premio Médicis en 2002 por su última obra,
+Pas un jour.
+
+Michelle GRANGAUD
+
+Nació en 1941 y se unió al Oulipo en 1995. Especialista en anagramas, a los
+cuales consagró varias obras, y en palíndromos, ella es la creadora de la restric-
+ción sexagramática y del avión. Sus restricciones predilectas hacen intervenir las
+letras y los sustantivos, pero algunas obras como Etat-civil funcionan a partir de
+las restricciones del inventario y la manipulación. Es miembro del comité de re-
+dacción de la revista Poésie.
+
+Jacques JOUET
+
+Nació en 1947 y se unió al Oulipo en 1983. Es poeta, novelista, cuentista, dra-
+maturgo, ensayista y artista visual. Conoció al grupo en 1978 en la Abadía de
+Royaumont durante un curso de formación dirigido por Paul Fournel, Georges
+Perec y Jacques Roubaud. Participa junto a Hervé Le Tellier en el programa “Les
+Papous dans la téte” en France-Culture. Compone, desde el 1* de abril de 1992,
+un poema diario, Le poéme du jour. Su novela por entregas llamada La République
+de Mek Ouyes, cuenta ya con más de dos mil episodios. Sus libros se publican
+principalmente en la editorial POL.
+
+LATIS
+
+(1913-1973) Miembro fundador. Latis es el seudónimo de Emmanuel Peillet,
+quien ingresó al grupo luego de la segunda reunión en enero de 1961 como
+representante del Colegio de Patafísica, donde cumplió varios roles determi-
+nantes. Gracias a su intervención, Olipo pasó a llamarse Oulipo. Ex profe-
+sor de francés en Reims, fue quien reunió por primera vez los poemas de
+Prévert para distribuir entre sus alumnos, en lo que fue quizás la primera edi-
+ción clandestina del autor. Su obra más lograda es una novela formada exclu-
+sivamente por prólogos y epílogos, llamada L'organiste athée [El organista
+ateo]. El “Latis” era también el nombre dado al primer logotipo del Oulipo
+
+que él había dibujado.
+
+
+Francois LE LIONNAIS
+
+(1901-1984) Fresidente-Pundador. Fundador y primer presidente del Oulipo,
+Le Lionnais frecuentó en su juventud los círculos artísticos en los que se moví-
+an Max Jacob y Jean Dubuffet, antes de comenzar su carrera como ingeniero
+químico y matemático. Apasionado del ajedrez, fue por medio del juego que co-
+noció en el período de entreguerras a Marcel Duchamp. Detenido durante la
+Segunda Guerra Mundial, fue encarcelado en el campo de concentración de Dora.
+Después de la liberación, trabajó para la Unesco, fue asesor científico de muse-
+os nacionales, productor de radio, y se convirtió en uno de los regentes del Colegio
+de Patafísica. Fue por su iniciativa que se fundó el Oulipo en 1960, y ejerció,
+durante dos siglos oulipianos, una suerte de “dictadura elegante” como “fresi-
+dente-pundador”.
+
+Hervé LE TELLIER
+
+Nació en 1957 y se unió al Oulipo en 1992. Publicó sus primeros libros en la
+editorial Seghers cuando Paul Fournel era su director. Es doctor en lingúística y
+autor de un ensayo sobre la estética del Oulipo. Sus últimas tres novelas explo-
+ran el tema de los sentimientos amorosos: Je mattache tres facilement es una suer-
+te de autoficción distanciada sobre el fantasma amoroso, Assez parlé d'amour
+sobre la ambivalencia del deseo, y Eléctrico W sobre el regreso imposible. Muchas
+de sus obras de naturaleza oulipiana se sitúan en los dominios del texto breve,
+fragmentario. Es colaborador en el programa de France-Culture “Les Papous
+dans la téte”, y es uno de los fundadores de la Asociación de Amigos de Jean-
+Baptiste Botul. Su último libro, Moi er Frangois Mitterrand, toma la forma de
+una conferencia y cuenta la historia de una relación epistolar entre el narrador y
+el antiguo presidente de Francia.
+
+Etienne LÉCROART
+
+Nació en 1960 y se unió al Oulipo en 2012. Es humorista, dibujante y novelis-
+ta gráfico. Miembro de OuBaPo [Taller de cómic potencial] desde 1993. Casi
+todos sus cómics se basan en las limitaciones formales. Entre muchas otras cosas,
+publicó Bandes de sonnets, con prólogo de Jacques Jouet, una serie de historietas
+basadas en la estructura del soneto; y Contes €* décomptes, con prólogo de Jacques
+Roubaud, construidos a partir de restricciones matemáticas. Su sitio web
+(www.e.lecroart.free.fr) contiene muchos tesoros.
+
+Jean LESCURE
+
+(1912-2005) Miembro fundador. Estudió filosofía y era pariente de Gaston
+Bachelard. Durante la ocupación, llevó adelante la revista de resistencia poética
+Messages, donde se publicaron textos claves como “Instante poético e instante
+
+337
+
+
+338
+
+metafísico” de Bachelard. Es autor de una breve historia del Oulipo. Fue duran-
+te muchos años el director literario de la ORTF y el presidente de la Asociación
+Francesa de Cines de Arte y Ensayo.
+
+Daniel LEVIN BECKER
+
+Nació en 1984 y se unió al Oulipo en 2009. Nació en Chicago, y a la edad de
+seis años, preparó una compilación de canciones en las que ni los títulos ni los
+nombres de los artistas contenían la letra e. Un año más tarde, le hablaron de La
+disparition de Georges Perec. Es escritor, traductor y crítico, y actualmente vive
+en San Francisco.
+
+Pablo MARTÍN SÁNCHEZ
+
+Nació en España en 1977 y se unió al Oulipo en 2014. Ex atleta, ex actor, Pablo
+Martín Sánchez se convirtió en escritor al descubrir al Oulipo. Ofreciéndole La
+vida instrucciones de uso, su madre lo empujó a abandonar sus estudios teatrales
+y a instalarse en París, donde asistió a las reuniones públicas del grupo. De re-
+greso en España, co-fundó la revista ludolingiística Verbigracia junto a Marius
+Serra, y comenzó su tesis, llamada El arte de combinar fragmentos: prácticas hi-
+pertextuales en la literatura oulipiana, que terminará algunos años más tarde en
+la Universidad de Lille. Al mismo tiempo, participó de una serie de manifesta-
+ciones oulipianas en Francia y España, tradujo a autores como Marcel Schwob,
+Alfred Jarry y Raymond Queneau, y publicó el libro de nouvelles Fricciones y la
+novela El anarquista que se llamaba como yo. Desde 2002 trabaja en un proyec-
+to llamado El proyecto, inspirado en Lugares de Georges Perec, que debería fina-
+lizar en 2026. Vive en Barcelona y, junto con el argentino Eduardo Berti, es el
+primer escritor en lengua española cooptado por el Oulipo.
+
+Harry MATHEWS
+
+Nació en 1930 y se unió al Oulipo en 1973. Si bien nació en Nueva York, Harry
+Mathews vivió muchos años en Europa, especialmente en Francia. Actualmente,
+pasa la mitad del año en Francia y la otra mitad en Key West. Desde 1978 da
+clases en distintas universidades y dicta talleres de escritura. Está casado con la
+escritora francesa Marie Chaix. Mathews publicó sus primeros poemas en 1956,
+año en el que trabó relación con su amigo John Ashbery, con quien fundó la re-
+vista Locus Solus. Luego de haber colaborado durante muchos años en la Paris
+Review, se convirtió en su director entre 1989 y 2003. En 1970 conoció a Georges
+Perec, iniciando un período de amistad y de colaboración literaria que perduró
+hasta la muerte de Perec en 1982. Fue él quien introdujo a Mathews en Oulipo,
+convirtiéndose así en el primer integrante norteamericano. Es autor de muchos
+libros de poesía, de traducciones, de ensayos críticos, de una autobiografía y, en
+
+
+colaboración con Alastair Brotchie, del Oulipo Compendium, un estudio enci-
+clopédico sobre el grupo y sus actividades.
+
+Michéle MÉTAIL
+
+Nació en 1950 y se unió al Oulipo en 1975. Creadora de “poemas sonoros”, di-
+funde desde 1973 su “literatura oral”. Las diapositivas y la banda de sonido a
+veces acompañan sus lecturas, en las que trabaja la aliteración y la asonancia
+como interferencias de sentido. Se unió al grupo introducida por Francois Le
+Lionnais. Realizó un doctorado en antigua poesía china. Actualmente se encuen-
+tra distanciada del grupo, y vive y trabaja en Berry.
+
+lan MONK
+
+Nació en Londres en 1960 y se unió al grupo en 1998. Después de estudiar Letras
+en la Facultad de Bristol, entró al grupo luego de trabajar en la adaptación de al-
+gunas obras para el Oulipo Compendium de Harry Mathews. Creó una serie de
+restricciones como las monkinas. Sus poemas fueron publicados en numerosas
+revistas, entre otras Le Jardin Ouvrier, Formes Poétiques Contemporaines,
+MecSweeneys, etc. Realiza regularmente presentaciones con Arnaud Mirland y su
+grupo de rock The Outsiders, y participa de lecturas y performances en Francia
+y distintas partes del mundo. Publicó libros en inglés (Hamily Archaeology, Writings
+for the Oulipo), también en francés, y tradujo al inglés a numerosos autores como
+Georges Perec, Raymond Roussel, Jacques Roubaud, Daniel Pennac y Hugo
+Pratt. Vive en París.
+
+Oskar PASTIOR
+
+(1927-2006) Se unió al Oulipo en 1992. Nació en 1927 en Hermannstadt
+(Transilvania), y murió en Frankfurt. Es el único integrante alemán del Oulipo.
+Deportado entre 1945 y 1949 al campo de trabajo soviético de Dombas, Pastior
+realizó luego estudios germanistas en Bucarest. Vivió en Berlín desde 1969, de-
+dicándose a la escritura, experimentando su pasión por los anagramas y las sexti-
+nas. Participó del libro colectivo 35 variations publicado por Le Castor Astral,
+ocupándose de la frase final del Fausto de Goethe. Recibió los premios Ernst
+Meister, Hugo Ball y el Georg Biichner, el más prestigioso de las letras alemanas.
+
+Georges PEREC
+
+(1936-1982) Se unió al Oulipo en 1967. Georges Perec nació en París, hijo de
+padres judíos polacos, ambos fallecidos durante la Segunda Guerra Mundial (su
+padre en el frente, su madre en un campo de concentración). Estudió literatu-
+ra, época en la que conoció a Marcel Bénabou, y se convirtió en bibliotecario en
+el CNRS. Publicó su primera obra, Las cosas, en 1965, una novela “sociológica”
+
+339
+
+
+340
+
+galardonada con el premio Renaudot. Entró al Oulipo en 1967 y se convirtió
+en una de sus principales figuras. Experimentó con todo tipo de restricciones
+formales: su novela La disparition (El secuestro) está escrita íntegramente sin la
+letra e (lipograma). A la inversa, en su obra Les Revenentes, la única vocal admi-
+tida es la e. Su novela más ambiciosa, La vida instrucciones de uso, está construi-
+da a partir de historias combinadas como las piezas de un rompecabezas, ponien-
+do a prueba una serie de restricciones semánticas. En la obra de Perec se articulan
+tres campos diferentes: la vida cotidiana, la autobiografía, y el gusto por las his-
+torias. En ellas la dimensión lúdica está muy presente, al igual que la búsqueda
+de la identidad y la angustia de la pérdida.
+
+Raymond QUENEAU
+
+(1903-1976) Co-Fundador. Queneau es uno de los co-fundadores del Oulipo
+junto con Francois Le Lionnais. Nació en Le Havre y conoció el surrealismo en
+1924. Participó de todas las actividades del grupo hasta distanciarse de André
+Breton. Asiduo participante a los cursos de Alexandre Kojéve sobre Hegel, llevó
+a cabo una investigación sobre lo que denomina “locos literarios”. Su interés
+por las matemáticas se profundizó hacia 1948, al ingresar en la Sociedad
+Matemática de Francia. Su primer libro, El problema (Le chiendent), es de 1933.
+En 1947 conoce el éxito al publicar los famosos Ejercicios de estilo, y luego Zazie
+en el metro, entre otros títulos. En 1950 se incorporó a la Academia Goncourt
+y al Colegio de Patafísica, donde obtendrá el título de Sátrapa Trascendental.
+Dirigió la Encyclopédie de la Pléiade. Su libro Cien mil millones de poemas es el
+mejor ejemplo de la obra potencial oulipiana. Su preocupación por la forma y
+las estructuras narrativas están en el centro de su trabajo, como se revela en sus
+Entretiens avec Georges Charbonnier. Su último libro publicado, Morale élémen-
+taire [Moral elemental], presenta una nueva forma fija a menudo utilizada por
+los oulipianos.
+
+Jean QUEVAL
+
+(1913-1990) Miembro fundador. Fanático del fútbol desde joven, comenzó a
+los veinte años su carrera como periodista deportivo, antes de convertirse en crí-
+tico de cine de diferentes medios. Escribió durante mucho tiempo la crónica ci-
+nematográfica de Mercure de France y colaboró en la Encyclopédie de la Pléiade.
+Además, escribió guiones para la televisión, y realizó una serie de traducciones
+de textos de Iris Murdoch, George Orwell, Bertrand Russell y W.P. Thackeray,
+entre otros. Fue un escritor discreto y secreto que publicó un relato autobiográ-
+fico llamado Tout le monde descend (1959) y una novela, Etc. (1963).
+
+
+Pierre ROSENSTIEHL
+
+Nació en 1933 y se unió al Oulipo en 1992. Matemático, especialista en la teo-
+ría de los grafos, fue también director de estudios en la Escuela de Altos Estudios
+de Ciencias Sociales. Precozmente se interesó por los laberintos y, si bien tuvo
+poca presencia en las reuniones del grupo, colaboró con Jacques Jouet en la re-
+alización de un grafo de optimización del circuito del metro de París.
+
+Jacques ROUBAUD
+
+Nació en 1932 y se unió al Oulipo en 1966. Poeta, profesor y jubilado de la ma-
+temática, Roubaud fue cooptado por el grupo gracias a Raymond Queneau. Es
+presidente de la Asociación Georges Perec, y el inventor de varias restricciones
+oulipianas como el baobab. Junto a Paul Braffort fundó ALAMO [Atelier de
+Literatura Asistida por la Matemática y los Ordenadores]. Fue director de estu-
+dios en la Escuela de Altos Estudios de Ciencias Sociales.
+
+Olivier SALON
+
+Nació en 1955 y se unió al Oulipo en 2000. Antiguo profesor de matemáticas,
+Salon fue cooptado por el grupo luego de que Jacques Roubaud asistiera a una
+de sus conferencias. Es actor y pianista, y participó, entre otras, de las obras Pieces
+détachées del Oulipo, L'Argumentation de Georges Perec, y Conférence en forme
+de poire, de Martin Granger y Olivier Salon.
+
+Albert-Marie SCHMIDT
+
+(1901-1966) Miembro fundador. Albert-Marie Schmidt fue el creador del
+acrónimo Olipo, propuesto para renombrar el hasta entonces llamado Sélitex
+[Seminario de Literatura Experimental]. Durante mucho tiempo fue profesor
+universitario, y uno de los mejores especialistas en el siglo XVI y el
+Renacimiento. Sus trabajos sobre los Grandes Retóricos constituyen una fuen-
+te de autoridad. De fe protestante, colaboró durante largos años en el perió-
+dico calvinista La Réforme.
+
+341
+
+
+23
+29
+
+33
+37
+
+VOVODOE
+
+PALABRAS PRELIMINARES
+
+Introducción. Cincuenta siglos del Oulipo, más seis,
+por Marcel Bénabou
+
+Del Oulipo, por Eduardo Berti
+
+Sobre la presente edición, por Ezequiel Alemian y
+Malena Rey
+
+HACIA UNA DEFINICIÓN
+DE LA LITERATURA POTENCIAL
+
+La LiPo (Primer Manifiesto), por Francois Le Lionnais
+
+Segundo Manifiesto, por Francois Le Lionnais
+
+
+43
+47
+59
+63
+
+79
+85
+
+97
+109
+
+139
+
+143
+
+147
+
+153
+171
+
+Tercer Manifiesto. Prolegómenos a toda literatura
+futura, por Francois Le Lionnais
+
+Breve historia del Oulipo, por Jean Lescure
+
+El Colegio de Patafísica y el Oulipo
+
+Para un análisis potencial de la literatura
+combinatoria, por Claude Berge
+
+Actas de la reunión del viernes 13 de enero de 1961
+
+Cuestionario de 1970: ¿Cómo despejar el horizonte?
+
+ALREDEDOR DE RAYMOND QUENEAU
+
+Queneau oulipiano, por Jacques Bens
+
+La matemática en el método de Raymond Queneau,
+por Jacques Roubaud
+
+Clasificación de los trabajos del Oulipo [Tabla de
+Queneleieff], por Raymond Queneau
+
+Cien mil millones de poemas. Instrucciones
+
+de uso, por Raymond Queneau
+
+A propósito de la literatura experimental, por
+
+Francois Le Lionnais
+
+SOBRE RESTRICCIONES Y EXPERIENCIAS
+
+Historia del lipograma, por Georges Perec
+
+La literatura definicional, por Raymond Queneau
+
+
+175 El método S+7, por Jean Lescure
+
+179 — Personaje+7, por Italo Calvino
+
+183 De las permutaciones en particular y de los poemas
+cuadrados en general, por Jean Lescure
+
+191 Inventarios, por Jacques Bens
+
+197  Encadenamientos y tentativas al límite,
+por Francois Le Lionnais
+
+203 El anteantepenúltimo, por Francois Le Lionnais
+
+207 Poesía antonímica, por Marcel Bénabou
+
+209 Cuatro figuras para La vida instrucciones de uso,
+de Georges Perec
+
+217 Delirio algólico, por Francois Le Lionnais
+
+223 Escritor y ordenador. La experiencia del
+Centro Pompidou, por Paul Fournel
+
+227 Poemas del metro, por Jacques Jouet
+
+EJERCICIOS, EXPERIMENTOS
+
+231 He aquí el Oulipo, por Francois Caradec
+
+237 Los amnésicos no vivieron nada inolvidable,
+por Hervé Le Tellier
+
+245 Placeres singulares, por Harry Mathews
+
+253 Novelas, por Paul Fournel
+
+265 Una novela lipogramática. Post-scriptum a
+La disparition, por Georges Perec
+
+269 Si una noche de invierno un viajero, por Italo Calvino
+
+
+273
+
+277
+
+291
+
+297
+
+303
+
+309
+
+313
+
+331
+
+La bella Hortensia, por Jacques Roubaud
+
+El cobertizo revisitado, por Marcel Bénabou
+
+35 variaciones sobre un tema de Marcel Proust,
+
+por Georges Perec
+
+35 variaciones sobre un tema de William Shakespeare,
+por Harry Mathews
+
+35 variaciones sobre un tema de Calderón de la Barca,
+por Eduardo Berti
+
+Homenaje, por Harry Mathews
+CAJA DE IDEAS
+
+INTEGRANTES DEL OULIPO
