@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOOP: una nave que escribe su deterioro</title>
+<!--
+  LOOP: una nave que escribe su deterioro
+  máquina de literatura navegable
+
+  interfaz mínima / texto máximo
+  botones mínimos / consecuencias máximas
+  estructura simple / escritura compleja
+
+  todo queda en pantalla: el texto scrollea en su región,
+  las notas acompañan al margen, las opciones no se van nunca.
+
+  la semilla firma el azar: ?seed=… — misma semilla, misma deriva.
+  la memoria vive en localStorage y vuelve con cicatrices.
+
+  poesiasexp / canekzapata.net
+  2026
+-->
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="casco">
+
+    <!-- estado de la nave: una línea administrativa, casi nada -->
+    <header id="estado" aria-live="polite"></header>
+
+    <!-- contenedor principal de lectura: aquí sucede el texto -->
+    <main id="lectura"></main>
+
+    <!-- notas y glosas: la segunda navegación -->
+    <aside id="notas" aria-label="notas">
+      <div class="rotulo">notas / glosas</div>
+      <div id="notas-lista"><div class="nota vacia">(las notas esperan una llamada¹)</div></div>
+    </aside>
+
+    <!-- opciones o decisiones: discretas, no siempre confiables -->
+    <nav id="opciones" aria-label="decisiones"></nav>
+
+    <footer id="pie">
+      <span id="semilla"></span> · R otra semilla · M mapa · números = opciones · las palabras subrayadas son puertas
+    </footer>
+
+  </div>
+
+  <!-- los útiles: tres botones discretos, abajo a la derecha -->
+  <div id="utiles">
+    <button id="btn-sonido" title="encender la bocina rudimentaria">♪</button>
+    <button id="btn-mapa" title="mapa de la misión">✦</button>
+    <button id="btn-imprimir" title="imprimir bitácora de misión">⎙</button>
+  </div>
+
+  <!-- la ventanita del mapa: dónde estamos en el universo -->
+  <div id="mapa" hidden>
+    <pre id="mapa-pre"></pre>
+    <div id="mapa-pie">⊕ tierra · ⌖ la nave · clic o M para cerrar</div>
+  </div>
+
+  <!-- lo único que sale de la pantalla: la bitácora impresa -->
+  <div id="impresion" aria-hidden="true"></div>
+
+  <script src="Tone.js"></script>
+  <script src="corpus.js"></script>
+  <script src="motor.js"></script>
+</body>
+</html>
