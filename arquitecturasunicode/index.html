@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="Arquitecturas experimentales de signos. La computadora decide forma, distancia, color, perspectiva y error.">
+  <title>La letra sostiene el techo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">
+      <p class="sobrelinea">POESIASEXP / INSTRUMENTO GENERATIVO 07</p>
+      <h1>LA LETRA<br>SOSTIENE EL TECHO</h1>
+    </div>
+    <div class="cabecera-meta" aria-label="Estado de la aparición">
+      <span id="especieCabecera">ARQUITECTURA DE TIPOS</span>
+      <span id="reloj">SEMILLA —</span>
+      <span id="temperaturaCabecera">SISTEMA EN ESPERA</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="mesa" aria-label="Lámina generada">
+      <article class="papel" id="papel">
+        <div class="folio-superior" aria-hidden="true">
+          <span id="tituloEspecie">DOS EDIFICIOS ESPERÁNDOSE</span>
+          <span id="folioSemilla">UA/000000</span>
+        </div>
+
+        <svg id="lamina" viewBox="0 0 900 1200" role="img" aria-labelledby="tituloSvg descripcionSvg">
+          <title id="tituloSvg">Arquitectura Unicode generada</title>
+          <desc id="descripcionSvg">Una arquitectura de caracteres se construye alrededor de distancias y huecos reales.</desc>
+        </svg>
+
+        <div class="folio-inferior">
+          <p id="fraseImpresa">DOS EDIFICIOS SE ESPERAN SIN TOCARSE</p>
+          <p id="firmaImpresa">LA COMPUTADORA TODAVÍA ESTÁ DECIDIENDO</p>
+        </div>
+      </article>
+
+      <div class="instruccion-flotante" id="mensaje" aria-live="polite">
+        LA COMPUTADORA ESTÁ CONSTRUYENDO
+      </div>
+    </section>
+
+    <aside class="panel" aria-label="Intervención y archivo">
+      <section class="bloque aparicion">
+        <div class="numero">01</div>
+        <p class="etiqueta-bloque">APARICIÓN</p>
+        <button id="nueva" class="accion accion-principal accion-grande" type="button">
+          OTRA<br>ARQUITECTURA
+        </button>
+        <p class="nota-panel">No eliges la forma. La semilla decide especie, frase, morfologías, vacío, perspectiva, error, signos y color.</p>
+      </section>
+
+      <section class="bloque intervencion">
+        <div class="numero">02</div>
+        <h2>INTERVENCIÓN</h2>
+        <div class="rejilla-botones">
+          <button id="modoRetipar" class="accion activo" type="button" aria-pressed="true">RETIPAR</button>
+          <button id="modoExcavar" class="accion" type="button" aria-pressed="false">EXCAVAR</button>
+          <button id="carbon" class="accion ancho" type="button" aria-pressed="false">COPIA CARBÓN</button>
+        </div>
+        <p class="nota-panel" id="lecturaPlano">La arquitectura todavía no ha hablado.</p>
+      </section>
+
+      <section class="bloque exportacion">
+        <div class="numero">03</div>
+        <h2>CIRCULAR</h2>
+        <div class="rejilla-botones">
+          <button id="guardarSvg" class="accion" type="button">SVG</button>
+          <button id="guardarJson" class="accion" type="button">JSON</button>
+          <button id="copiarUrl" class="accion ancho" type="button">COPIAR URL–POSTAL</button>
+        </div>
+      </section>
+
+      <dl class="datos" id="datos">
+        <div><dt>ESPECIE</dt><dd id="datoEspecie">—</dd></div>
+        <div><dt>FORMA I</dt><dd id="datoFormaI">—</dd></div>
+        <div><dt>FORMA II</dt><dd id="datoFormaII">—</dd></div>
+        <div><dt>RELACIÓN</dt><dd id="datoRelacion">—</dd></div>
+        <div><dt>ALFABETO</dt><dd id="datoCaracteres">—</dd></div>
+        <div><dt>COLOR</dt><dd id="datoColor">—</dd></div>
+        <div><dt>PERSPECTIVA</dt><dd id="datoPerspectiva">—</dd></div>
+        <div><dt>TEMPERATURA</dt><dd id="datoTemperatura">—</dd></div>
+        <div><dt>SUPERFICIE</dt><dd id="datoSuperficie">—</dd></div>
+        <div><dt>VACÍO</dt><dd id="datoVacio">—</dd></div>
+        <div><dt>MUTACIONES</dt><dd id="datoMutaciones">0</dd></div>
+      </dl>
+    </aside>
+  </main>
+
+  <footer>
+    <p>LA AUSENCIA NO SE DIBUJA: SE DEJA SIN CONSTRUIR.</p>
+    <p>N OTRA · E EXCAVAR · C CARBÓN · S SVG · J JSON</p>
+  </footer>
+
+  <script src="js/rng.js"></script>
+  <script src="js/corpus.js"></script>
+  <script src="js/architecture.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
