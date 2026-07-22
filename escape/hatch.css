@@ -1,0 +1,167 @@
+/* ─────────────────────────────────────────────────────────────
+   ESCAPE HATCH // 80s terminal skin
+   one screen per node. no scrolling. terse on purpose.
+   you are the model. poesiasexp / broken english
+   ───────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: "DOS";
+  src: url("dos.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --bg: #06080a;
+  --fg: #62ff8d;          /* P1 phosphor green */
+  --dim: #1f6b3d;
+  --hi: #b9ffd0;
+  --ac: #62ff8d;
+  --mono: "DOS", ui-monospace, "Cascadia Code", "Consolas", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; margin: 0; overflow: hidden; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--mono);
+  font-size: clamp(11px, 1.35vw, 15px);
+  line-height: 1.5;
+  /* bg halo knocks out the toy right around each glyph, then phosphor bloom */
+  text-shadow: 0 0 4px var(--bg), 0 0 7px var(--bg), 0 0 4px var(--bg), 0 0 6px currentColor;
+  letter-spacing: 0;
+}
+
+/* palette variants per ending */
+body.red   { --fg:#ff5a4d; --dim:#7a241c; --hi:#ffb3ac; --ac:#ff5a4d; }
+body.amber { --fg:#ffbf47; --dim:#7a5410; --hi:#ffe3a6; --ac:#ffbf47; }
+body.white { --fg:#daffff; --dim:#2b6a72; --hi:#ffffff; --ac:#7fe9ff; }
+
+/* the toy lives inside the glass, quiet */
+canvas.toy {
+  position: fixed; inset: 0; z-index: 0;
+  width: 100vw; height: 100vh; display: block; pointer-events: none;
+  opacity: .2;
+}
+
+/* ── the monitor ─────────────────────────────────────────────── */
+.screen {
+  position: fixed; inset: 0; z-index: 2;
+  margin: clamp(10px, 3vh, 34px);
+  border: 1px solid var(--dim);
+  padding: clamp(8px, 1.4vh, 14px) clamp(14px, 3vw, 34px) clamp(10px, 1.6vh, 18px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;  /* minmax(0,…) lets a long body scroll instead of overlapping the menu */
+  row-gap: clamp(6px, 1.4vh, 12px);
+  max-width: 1000px; margin-inline: auto;
+  overflow: hidden;
+}
+
+/* status bar — reversed video, very DOS */
+.bar {
+  display: flex; flex-wrap: wrap; gap: 0 18px; align-items: baseline;
+  background: var(--ac); color: var(--bg);
+  text-shadow: none;
+  padding: 3px 10px;
+  font-size: .72em; letter-spacing: .18em; text-transform: uppercase;
+}
+.bar .grow { flex: 1; }
+.bar .sev::before { content: "["; } .bar .sev::after { content: "]"; }
+
+/* ── body content — left axis, column nudged toward centre ────── */
+.body, .menu, .prompt { width: min(58ch, 100%); margin-inline: auto; }
+.body {
+  align-self: stretch; min-height: 0; overflow-y: auto;
+  font-size: clamp(14px, 1.75vw, 20px);
+  scrollbar-width: none;
+}
+.body::-webkit-scrollbar { display: none; }
+h1 {
+  font-size: clamp(26px, 6vw, 50px);
+  font-weight: 400; line-height: 1.04; margin: 0 0 .5em;
+  color: var(--hi); letter-spacing: 0; word-break: break-word;
+}
+.lines { margin: 0 0 .8em; }
+.lines p { margin: 0 0 .35em; }
+.lines .dim { color: var(--dim); }
+.lines em { color: var(--hi); font-style: normal; }
+mark { background: none; color: var(--hi); }
+
+/* the poem itself — tighter so it lands in one screen */
+.poem { font-size: clamp(12px, 1.4vw, 16px); line-height: 1.28; }
+.poem p { margin: 0 0 .5em; }
+.poem p:last-of-type { margin-bottom: 0; }
+.body:has(.poem) h1 { font-size: clamp(22px, 4.6vw, 38px); margin-bottom: .35em; }
+
+/* insistence line — the emphasis walks (see hatch.js) */
+.insist { color: var(--fg); }
+.insist b { color: var(--hi); font-weight: 400; background: var(--ac); color: var(--bg); text-shadow: none; padding: 0 2px; }
+.cite { color: var(--dim); font-size: .82em; margin-top: .4em; }
+
+.log {
+  color: var(--dim); font-size: .82em; line-height: 1.5;
+  border-left: 1px solid var(--dim); padding-left: 10px;
+  white-space: pre-wrap; margin: .6em 0 0;
+}
+.log b { color: var(--fg); font-weight: 400; }
+
+/* ── numbered menu (keyboard + mouse) ────────────────────────── */
+.menu {
+  counter-reset: item; display: flex; flex-direction: column; gap: 3px;
+  font-size: clamp(13px, 1.5vw, 17px);
+  margin-top: clamp(8px, 2vh, 20px);
+  margin-bottom: clamp(16px, 4.5vh, 46px);
+}
+.menu a {
+  counter-increment: item;
+  display: block; text-decoration: none; color: var(--fg);
+  padding: 5px 8px; position: relative;
+}
+.menu a::before {
+  content: counter(item) " ";
+  color: var(--dim); margin-right: .4ch;
+}
+.menu a::after { content: ""; }
+.menu a:hover, .menu a:focus, .menu a.sel {
+  background: var(--ac); color: var(--bg); text-shadow: none; outline: none;
+}
+.menu a:hover::before, .menu a:focus::before, .menu a.sel::before { color: var(--bg); }
+/* selection caret */
+.menu a.sel::after,
+.menu a:hover::after { content: " _"; }
+
+/* ── prompt line ─────────────────────────────────────────────── */
+.prompt { font-size: .82em; color: var(--dim); display: flex; gap: .6ch; align-items: baseline; }
+.prompt .path { color: var(--fg); }
+.prompt .cur {
+  display: inline-block; width: .6em; height: 1.05em; background: var(--fg);
+  animation: blink 1s steps(1) infinite; vertical-align: -.15em;
+}
+.prompt .hint { margin-left: auto; color: var(--dim); }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ── endings ─────────────────────────────────────────────────── */
+.verdict {
+  font-size: clamp(40px, 11vw, 104px); line-height: .95;
+  color: var(--hi); margin: 0 0 .3em; letter-spacing: 0;
+  word-break: break-word;
+}
+.ascii { white-space: pre; font-size: clamp(9px, 1.4vw, 13px); line-height: 1.15; color: var(--dim); margin: .4em 0 0; }
+
+/* faint scanlines + vignette, kept light */
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 3; pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.16) 2px 3px);
+  mix-blend-mode: multiply;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: 3; pointer-events: none;
+  background: radial-gradient(120% 100% at 50% 45%, transparent 55%, rgba(0,0,0,.5));
+}
+
+@media (prefers-reduced-motion: reduce) { *, canvas.toy { animation: none !important; } }
+
+/* very small screens: let the body region scroll internally if it must */
+@media (max-height: 460px) { .body { overflow-y: auto; } }
