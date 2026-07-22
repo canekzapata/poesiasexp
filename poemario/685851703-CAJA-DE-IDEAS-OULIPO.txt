@@ -1,0 +1,534 @@
+Queneau, R. ( et. al.) . (2016).  “Caja de ideas ” (pp. 313 -329) en OULIPO. Ejercicios de 
+literatura potencial.  Caja Negra.  
+A 
+ABECEDARIO  Texto en el cual la primera palabra debe comenzar con la letra a, la 
+segunda palabra con la letra b, la terce ra con la c, y así sucesivamen te hasta t erminar 
+el abecedario, sin sal tearse ninguna letra.  
+ACRÓNIMO Poema en el cual las letras de una palabra proveen las iniciales de las 
+palabras que deben utilizarse en cada verso.  Para realizar este  ejercicio ou lipiano, 
+elegir una palabra cualquiera y tratarla como si fuese una sigla. Definir esa sigla y 
+mult iplicar sus variantes de acuerdo a distintos campos semánticos.  
+ACRÓSTICO UNIVERSAL  A partir de un nombre propio o de una palabra dada, el 
+acróstico es un poema que tiene tantos versos como letras tiene la palabra. El primer 
+verso comienza con la primera l etra de esa palabra, el segundo con la segunda letra, 
+y así sucesivamente. Las variaciones clásicas y oulipianas sobre el acróstico son 
+abundantes: inicial, circular, final, múltiple, en cruz, a lo largo, dependiendo de la 
+ubicación de las letras considera das, etc. El acróstico universal se realiza ubicando 
+en orden todas las letras del abecedario, y escribiendo un verso que comience con 
+cada una de ellas. Se lo puede usar para todas las situaciones imaginables. (De 
+Marcel Bénabou)  
+ACRÓSTICO DE BRIVADOIS  Este acróstico fue desarrollado en el colegio de La 
+Fayette de Brioude, en la clase Mme Ouardia Touahri, quien se lo transmitió a 
+Jacques Jouet. Responde a un sentimiento de insatisfacción con la forma  acróstico, 
+demasiado poco res trictiva. El acróstico de  brivadois puede ser  considerado como 
+una "oulipiza ción ” consecuente del acróstico simple. Cada verso comienza con una 
+letra, de modo tal que el conjunto de las inicia les de los versos, leídos verticalmente, 
+revela un nombre propio. La sucesión de palab ras de cada uno de sus versos respeta, 
+en las letras iniciales, una pro gresión alfabética desde el primer tér mino. La cantidad 
+de palabras de cada verso puede ser libre o regular.  
+ACRÓSTICO SILÁBICO ESCONDIDO  Se compone un poema en el que habrá, adrede , 
+cesuras incorrectas. En cada verso, el acróstico se forma con la primera letra de cada 
+sílaba que pro duce el error de métrica. (De Jacques Roubaud)  
+AFORISMO  Para realizar este ejercicio, se debe conservar la estructura sin táctica de 
+un aforismo conoc ido y reem plazar ciertos elementos (sustantivos, verbos, 
+adjetivos, adverbios) por otros diferentes de la misma naturaleza.  
+ALEJANDRINO TRANSPLANTADO  Un alejandrino es un verso clásico de catorc e 
+sílabas, dividido en dos par tes o hemistiquios de siete silabas cada una. El  
+alejandrino t ransplantado con siste en tomar dos hemistiquios, de dos versos de 
+poemas o autores diferentes y armar con ellos un mismo verso . (De Jacques 
+Roubaud y Marcel Bénaboo)  
+ANAEROBIOS  Asfixiando un texto, es decir privándolo de  la letra r, se ob tiene otro 
+texto del que se dice que es "anaerobio" del primero. La asfixia es fonética y no 
+gráfica. Variante inversa: la ventilación. En lugar de privar al texto de una r, se 
+pueden suprimir las l, o someterlo a un régimen sin t. 
+ANAGR AMA  El anagrama consiste en la permutación de las letras de una o más 
+palabras, de modo de formar una o más palabras diferentes. Un poema anagramático 
+es un poema en el cual todos los versos  han sido compuestos con las mismas letras, 
+pero en un orden difere nte en cada verso.  
+ANTERRIMA  Se trata de los versos de un poema en los cuales la rima recae sobre 
+las primeras sílabas y no sobre las últimas.  
+AVALANCHA  Una avalancha de peso  n es una bola de nieve de longitud 1, seguida 
+de una bola de nieve de longi tud 2, etc., hasta formar una bola de nieve de longitud 
+n (ver Bola de nieve ). 
+AVIÓN  Es una abreviación de palabras, tratando de que el resultado sea una palabra 
+con su propio sentido. Por ejemplo, "avión" es la abreviación de "abreviación".   
+B 
+BAOBAB  La palabra ba obab da su nombre a esta restricción. Escrita como  ba-o-ba-
+b, la primera y la ter cera sílaba remiten a la palabra "bajo" ("bas" , en francés), la 
+segunda remi te a "alto" ("haut" en francés, que se pronuncia "o ”), y la cuarta sílaba 
+no remite a nada. Se pu ede pronunciar la pala bra a tres voces o con tres 
+entonaciones: una para "ba" (en un tono bajo), otra voz para "o" en un tono alto, y la 
+última sobre un tono medio (entre bajo y alto). Un baobab sobre la palabra "baobab" 
+será un texto saturado de sílabas  altas y bajas. También podría darse un texto que 
+conte nga los pares fonéticos verdade ro/falso, largo/corto, si/no, etc. Se pueden 
+componer baobabs sobre las notas musicales, o sobre los aullidos de un animal, que 
+serán ejecutados a varias voces. (De Jac ques Roubaud)  
+BELLO AUSENTE  Poema com puesto en honor a una persona. Está integrado por 
+tantos versos como le tras tiene el nombre del destinatario. En el primer verso no se 
+puede utili zar la primera letra del nombre, en el segundo no se puede utiliza r la 
+segun da, у así sucesivamente. Todas las otras letras del alfabeto deben estar 
+presentes en cada verso, excepto la k, la w, la x y la z, cuya presencia no es 
+obligatoria.  
+BELLO PRESENTE  Un bello presen te es un poema compuesto en honor a una 
+persona  querida o detestada, entre gado como obsequio. Cada verso se es cribe 
+utilizando solamente las letras del nombre del destinatario. Se lo reco mienda para 
+aniversarios, cumpleaños, cartas de insulto y otras ocasiones fes tivas. Un caso 
+particular es el E pitálamo Oulipiano: texto de circunstancia com puesto  en ocasión 
+de una boda, entre gado o  enviado como presente a los es posos, construido 
+solamente con las letras de los nombres de los esponsales.  
+BIBLIOTECAS  INVISIBLES  Consiste en trasladar a la clas ificación de biblio tecas 
+enteras organizaciones de objetos que no han pasado de su dimensión lin güística, 
+lexical. Bibliotecas ordenadas, que combinan lo subjetivo con lo obje tivo. Por 
+ejemplo, libros cuyos títulos incluyan cada uno un número entero,  siendo en cada 
+libro ese número mayor que en el del libro anterior. Otro ejem plo: Bibliotecas 
+imaginarias , de las que existirían tres categorías a) las de libros reales atribuidos a 
+personajes ficticios, b) las de libros imaginarios citados en libros de  ficción, y c) las 
+bibliotecas que incluyan títulos que puedan ser atribui dos a una restricción 
+oulipiana. O las bibliotecas sistemáticas , con libros agru pados según términos en 
+común que contengan sus títulos : letras mayúsculas , nombres propios, refere ncias 
+al calenda rio, a accidentes geográficos, a relacio nes de parentesco. (De Paul Braffort)  
+BI-CUADRO LATINO  Término ma temá tico, también conocido como bi -cuadro 
+ortogonal, que logró cierta di - fusión a raíz de la utilización, por parte de Georges 
+Perec, de un cuadro de 10x10  para la organización de su no vela La vida instrucciones 
+de uso . La pri mera aparición oulipiana del término pertene ce a Claude Berge, quien 
+lo de fine de  esta manera: "Un bi -cuadro la tino de orden  n es una figura de n líneas 
+por n columnas con  n letras diferentes y n números diferentes; cada casillero 
+contiene una letra y un núme ro; cada letra aparece solamente una vez en cada línea 
+y en cada columna, y cada número aparece solamente una vez en cada línea y en 
+cada columna".  
+BI-VOCALISMO  Consiste en escribir  un texto ut ilizando, de las vocales, sola mente 
+dos. Es equivalente a un lipogra ma de tres vocales. (De Olivier Salon)  
+BOLA DE NIEVE  Una bola de nieve de una longitud n es un poema cuyo primer verso 
+está compuesto por una palabra de una letra, el segundo por una palabra de dos 
+letras, y así sucesi vamente, hasta el enésimo verso, com puesto por  n letras. Una bola 
+de nieve  derretida de n letras comienza por un verso de n letras, después del cual el 
+número de letras disminuye de a una en cada verso.  
+BORDE DE POEMA  Dado un poema e n verso, el borde de este poema se obtiene 
+tomando el primer vers o, el último verso, y la primera y la última palabra de cada 
+uno de los versos in termedios restantes.  
+BUBU L'URUBÚ  Monovocalismo en "u". Ejemplo: ¡Uh ! ¡Un cucú ! ¡Un tutú!  ¡Humus 
+y rhum! (De Jacques Roubaud)  
+C 
+CANADA DRY  El nombre está to mado de una bebida qu e se promo ciona  como "el 
+champagne de los gin ger ales". Es una bebida que tiene burbujas como el 
+champagne, pero que no es champagne. Canada Dry es entonces un texto que tiene 
+"el sabor y el color de una restricción, pero que no sigue ninguna restricci ón". (De 
+Paul Fournel)  
+CENTÓN  Se trata de una práctica  muy antigua, también conocida como "mosaico" o 
+"patchwork verse", que cons iste en com poner un poema utiliz ando versos de otros 
+poetas.  
+CIEN MIL MILLONES DE POE MAS  Cent mille milliards de poemes  es el título de la 
+primera obra oulipiana de Raymond Queneau: "He concebi do y realizado esta 
+pequeña obra que permite a cada uno componer a vo luntad cien mil millones de 
+sonetos . Para empezar, hay diez sonetos. Cada uno  tiene catorce versos. Para 
+compo ner un soneto nuevo, uno de los cien mil millones, se debe tomar cualquier 
+primer verso de alguno de los diez so netos de base. A ese se le suma no im porta cuál 
+segundo verso, y después no importa cuál tercer verso, y a sí sucesi vamente. Hay 
+diez elecciones indepen dientes para un primer verso. A su vez, para cada uno de 
+ellos hay diez elec ciones independientes de un segundo  verso, lo que  da cien 
+posibilidades.  Con el tercer verso, uno tiene ya  mil elecciones posibles, luego diez 
+mil, luego cien mil y así hasta llegar a los 100.0 00.000.000.000 al e legir el 
+decimocuarto y último verso. Por su puesto, l as rimas y las estructuras sin tácticas 
+deben ser compatibles. La consigna fue utilizada por  el Oulipo para componer 
+rondós, baladas, car tas postales, recetas de cocina y menús de restaurantes.  
+CILINDRO  Es un texto que se muer de la cola de una manera tan perfecta que uno no 
+sabe si está leyendo la cola o la cabeza. Según la unidad lingüísti ca elegida, se pueden 
+hacer cilindros de letras, de fonemas, de sílabas, de pala bras, de frases y tutti quanti.  
+CITACIONES  Para cada una de las  palabras de una lista determinada, bus car la  
+mayor cantidad posible de vers os que contengan ese términ o. 
+CLINAMEN  Tomando el concepto de "de sviación" de Lucrecio, para los oulipi anos el 
+clinamen es una desvia ción de las consecuencias estrictas de una restricción. La 
+mayoría de las veces está justificada por una necesi dad estética. Mejora los 
+resultad os. Pero hay una condición límite para su utilización: la libertad de ejecución 
+del clinamen está habilitada siempre que la posibilidad de sortear la restric ción esté 
+vigente. Es decir: se puede recurrir al clinamen  únicamente si no es necesario 
+hacerlo.  
+CO-RIMA  Dos palabras o dos seg mentos fónicos serán co rimantes si sus comienzos 
+son fónicamente equi valentes o, más exactamente, si sus segmentos iniciales 
+considerados de manera aislada riman entre sí. (De Jacques Roubaud)  
+CRONOGRAMA  Popular en lo s tiempos antiguos, el cronograma ex plota el doble 
+sentido de las letras que también funcionan como números ro manos (X, I, L , C, D, M). 
+Sumando esas letras por su valor númerico, se ob tiene una cifra que se considera 
+una  
+CRONOPOEMA  Un cronopoema  debe s er leído en voz alta con un cro nómetro o 
+minutero que cuente de forma regresiva los minutos y segun dos. Programar el 
+tiempo, poner en marcha el minutero y leer. Apenas sea pronun ciada la últ ima 
+palabra, el mi nutero sonará. (De Jacques Jouet)   
+CUEN TO A TU MANERA  Ejemplo de estructura con forma de árbol. En cada 
+ramificación, el relato propone varias alternativas que el lector deberá elegir a gusto. 
+Al tener que optar en cada etapa por una de las soluciones propuestas, se va 
+armando una versión singu lar del relato.  
+E 
+ECLIPSE  Variación de S+7 que inclu ye tanto el texto al que se le aplica el S+7 como 
+el original del cual este de riva. Otra opción es que el primer texto sea el S -7 del 
+segundo.  
+EJERCICIOS DE ESTILO  Es el tí tulo del famoso libro d e Raymond Queneau. A partir 
+de una historia in signi ficante, el autor propone noven ta y nueve versiones de ese 
+relato que se diferencian entre sí por el "estilo" de narración empleado: metáforas, 
+sainetes, escritos como si se tratara de un sueño, por me dio de anagra mas, etc. Se 
+puede seguir este mismo proc edimiento eligiendo o escribien do un texto breve 
+infinitamente banal , y sacando de una urna distin tos papelitos con diferentes estilos 
+de escritura. Habrá que reescribir ese texto original respeta ndo el estilo que haya 
+tocado.  
+EL FRANGLÉS  Se trata de un texto que fonéticamente puede leerse igual  en dos 
+lenguas, sin prestarle atención a los tildes ni a las mayúsculas. Las pa labras que allí 
+figuren tienen que tener un sentido diferente en cada un a de las lenguas. (De Harry 
+Mathews)  
+EODERMDROMO  Dada la figura  de un pentágono, tomar cinco letras y ubicar cada 
+una en uno de sus ángu los. Trazar líneas entre los ángulos, de maner a de que los 
+cinco estén vincu lados entre sí. Si las letras han sido elegidas y puestas 
+correctamente, es po sible obtener una secuencia con sentido de once letras 
+desplazándose por las líneas trazadas, pasando única mente una vez por cada una de 
+ellas. La secuencia termina necesariamente en el punto del comienzo.  
+ESCA LERA  Dos palabras de igual  longitud (preferentemente antonómi cas) deben 
+unirse a través de una suce sión de palabras que difieren una de la otra por una sola 
+letra. Ejemplo de Lewis Carroll: "Head/ Heal/Teal/ Tell/ Tall/ Tail".  
+ESTIRADOR DE LÍNEAS  La expresión designa, en periodismo, el hecho de "estirar" 
+o "engordar" el texto, sin agregar información. Para quien co bra por línea esc rita, el 
+inte rés económico salta a la vista. En la concepción oulipiana se trata, dada una frase 
+de partida A y una f rase de llegada B, de insertar una frase inter media C, creando 
+una ficción plausible, y luego recomenzar la operación, insertando una frase D entre 
+A y C  y una frase E entre C  y B. En etapas su cesivas, se seguirá insertando cada vez 
+una frase nueva entre  dos frases exis tentes.  Una variante consiste en cons truir, a 
+partir de un texto dado, un relat o cada vez más extenso agregan do palabras, signos 
+de puntuación entre las palabras, alterando lo menos posible el sentido.  
+EXPRESIONES  INESPERADAS  Se trat a de expresiones familiares que se fragmentan 
+y recombinan dando forma a nuevas locuciones. "Basta para mí, basta para todos", 
+"perdido por perdi do", "construir castillos en el aire", "ha cerse la cabeza" pueden 
+convertirse así en "basta de castillos en  el aire", "cons truir la cabeza", etc. De esta 
+manera, se dota a la lengua de una gran cantidad de locuciones nuevas, a las cuales 
+se le pue den asignar significados muy precisos.  
+F 
+FILIGRANA  Tomando un dicciona rio de referencia, seleccionar una can tidad  de 
+locuciones que contengan de terminada palabra. Borrar la palabra de cada locución 
+y escribir un poema con lo que queda.  
+FORMAS  FIJAS  Todas las formas fijas son, por definición, oulipianas. No hay nada 
+más oulipiano que un soneto.  
+G 
+GRAFO  Para realizarlo, el texto debe seguir la forma de un gráfico matemá tico. En 
+cada bifurcación el lector está invitado a elegir entre distintas solucio nes de lec tura 
+que se le ofrecen. El grá fico puede proliferar de maner a regular (binaria, ternaria, 
+etcétera), ser irregu lar como en "Cuento a tu manera", de Raymond Queneau, y 
+puede también cerrarse para alcanzar un fin único.  
+H 
+HAIKUZACIÓN  Se conserva de un  poema solo  el final de ca da verso (la re ducción a 
+las secci ones rimantes) cre ando  así poemas muy breves, pareci dos a un haiku.  
+HIPERNOVELA  Una hipernovela es una " máquina de multiplicar los rela tos". Si una 
+noche de invierno un viaje ro, de Italo Calvino, es un ejemplo de hipernovela escrita 
+por un solo aut or. Incluso  aunque la figura del autor se encuentre fragmentada y 
+recompuesta a lo largo de la obra. Les voyages d 'hiver [Los viajes de invierno) 
+constitu yen un modelo de hipernovela colec tivo. El punto de partida es la nouvelle 
+homónima de Georges Perec  publica - da en 1979. De 1992 al presente, una veintena 
+de nouvelles escritas por quin ce miembros del Oulipo han prolon gado ese primer 
+relato haciéndose eco  de manera más o menos próxima de los relato s anteriores. 
+Algunos están li gados por variaciones e n el título , o re toman las situaciones o 
+lugares.  
+HOMOFONÍA  Es un tipo de homo morfismo que consiste en tomar un enunciado 
+base (un nombre propio, una frase) y encontrar la mayor canti dad pos ible de 
+enunciados que sean en tera o parcialmente homófo nos.  
+HOMOMORFISMO  Su principio general consiste en producir un texto que tenga la 
+misma estructura que un texto ba se. Los diversos tipos de homo morfismo 
+dependerán de la elección de la estructura: homosintaxismo, ho movocalismo, etc.  
+I 
+ÍNDICES  Cons iste en leer las líneas del índice de un libro como si fueran poemas.  
+Existen diversas formas de ha cerlo: 1) Ordinalmente: tal como está expresado en el 
+libro, sin omitir los nú meros de página; 2) Alfabéticamente: reordenando los ítems 
+del índice según  el abeceda rio; 3) Por rima: sin otra res tricción particular. Esta 
+restricción puede aplicarse también a otros tipos de índices: tablas de temas, índices 
+de nombres, índices de ilustraciones, etc.  
+INVENTARIO  El principio de in ventario consiste en rele var y presen tar en forma de 
+lista las distintas cla ses de palabras de un poema dado (sustantivos, verbos, 
+adjetivos, etc.). El listado resultante puede ser leído como un esquema semántico 
+para identificar tendenci as del autor. (D e Jacques Bens)  
+L 
+LEIRIS  Consiste en definir una pala bra apoyándose en las letras y sonori dades que 
+la componen. Ejemplo: Glosario: globo de Rosario.  
+LIPOGRAMA  Se trata de un texto en  el cual el autor se impone no usar jamás una 
+letra, o varias. Están proscriptas toda s las palabras que contienen esa o esas letr as. 
+El texto puede tener exten sión diversa, y el ejemplo más célebre de lipograma es la 
+novela La disparition , de Georg es Perec, en la que no se utili za la letra e, la vocal más 
+usada en fran cés (fue traduc ida al español como El secuestro , sin utilizar la letra a).  
+LIPONIMIA  Texto en el cual el autor  se impone no utilizar jamás una deter minada 
+clase de palabra: sustantivo, verbo o adjetivo.  
+LIPOSIBLE  A una palabra se le saca determinada letra para forma r otras palabras. 
+Ejemplos: Prensa - Presa; Gastos - Gatos.  
+LITERATURA  DEFINICIONAL  En un enunciado dado, se debe reempla zar cad a 
+vocablo significante (sustan tivo, adjetivo, verbo, adverbio) por una de sus 
+definiciones de un diccionario determinado. Re iterar la operación con el enunciado 
+obtenido, y así sucesiva mente. (De Marcel Bénabou)  
+LITERATURA  ERUPTIVA  Término utilizado por el Oulipo para designar las formas 
+más indisciplinadas de la escritura "inspirada". En sus primeros días, el Oulipo tuvo 
+que dedicarse a diferenciarse de métodos de escritura experimental previos, en 
+particular de los métodos aleatorios de composición dadaísta y de la escritura 
+automática surrealista.  
+LOCURRIMA  Se utiliza la rima  como principio de sustitución de ex presione s 
+corrientes, aforísticas o pro verbiales. Ejemplo: "No por mucho meredar, oscurece 
+más gusano". (De Marcel Bénabou)  
+LSD (LITERATURA SEMA -DEFI NICIONAL)  Extensión de la litera tura definicional. 
+En vez de restrin girse a definiciones simples de tipo cl ásico, se eligen o se fabrican 
+defini ciones inesperadas. Variante 1: Orientar la elección de definiciones de manera 
+de obtener textos que se asemejen a citas "a la manera de". Variante 2: Elegir dos 
+enunciados lo más di ferentes posibles y trabajarlos de tal manera que confluyan en 
+un texto único.  
+M 
+MINISEXTINA  La minisextina es una forma de poema breve. Tomando como punto 
+de partida una palabra cuidadosamente elegida (por ejemplo el nombre de Queneau 
+o Oulipo), se le aplica con gran rigor el principio combinatorio de la sextina, ya sea a 
+las sílabas o a los fonemas que componen la palabra. (De Oskar Pastior)  
+MONKINA  La monkina se compone a partir del cuadro que describe el des arrollo  de 
+palabras rimadas de u na que nina (ver Quenina). Este cuadro deter mina el número 
+de letras de cada palabra de la primera estrofa. La segun da estrofa está construida 
+siguiendo la serie de la misma manera. Se repite el mismo procedimiento hasta la 
+estrofa n. (De lan Monk)  
+MONOCONSONANTISMO  Es al monovocalismo lo que la consonante es a la vocal. 
+Más claramente, un monocon sonantismo es un texto que uti liza una sola 
+consonante, o también puede pensarse como un lipograma de todas las consonantes 
+excepto una. Ejemplo: "Mi mamá me mima".  
+MONÓSTICO  PAISAJÍSTICO  Un monóstico paisajístico es un poema  compuesto 
+sobre el motivo "un paisa je". Es un poema panorámico de un solo verso largo que 
+cuenta con entre cuarenta y cincuenta sílabas, está compuesto en una sola línea. Se 
+lee en voz alta recorriendo el auditorio con la mirada, de izquierda a derecha o de 
+derecha a izqu ierda. (De Jacques Jouet)  
+MONOVOCALISMO  Es un lipogra ma en el cual están prohibidas todas las vocales, 
+excepto una. Ejemplo: "Nosotros no somos como los Orozco. Yo los conozco, son 
+ocho los monos".  
+MORAL  ELEMENTAL  Es una forma poética inventada p or Raymond Queneau, que 
+solía definirla así: "Prime ro tres grupos sustantivo  + adje tivo (o  participio) con 
+algunas repeti ciones, rimas, aliteraciones o ecos a vo luntad; después, una especie de 
+interludio de siete versos de una a cinco sílabas; para ter minar, una con clusión de 
+tres grupos sustantivo  + adjetivo (o participio) que pueden reto mar, más o menos, 
+algunas de las veinticuatro palabras utilizadas en la prime ra parte". Su variación 
+más co nocida y empleada es la "pequeña moral elemental portá til", desarrolla da por 
+Frédéric Forte.  
+O 
+OBLICUO  Se define una palabra po niéndola en relación con otras que ten gan 
+elementos en común. Ejemplos Casa: lugar donde se establecen los cimientos  de la 
+pareja (casa -mient o) Casa: in nova en las conquistas (casa - nova)  
+ONCENA HETEROGRAMÁTICA  Una oncena heterogramática es un poema de 121 
+(once veces once) letras. Se emple an las diez letras más utiliza das en la lengua en la 
+se la realice, más una que elige el autor para fijar las ideas. Las once primeras letra s 
+del poema forman un anagrama de las ele gidas, las once siguientes lo mismo, y así 
+sucesivamente, verso por verso.  
+P 
+PALABRAS PERECQUIANAS  Una palabra será perecquiana si todas las le tras que 
+tiene en común con el nom bre "Perec" aparecen en el mis mo orden (la misma 
+cantidad de veces). Un texto es perecquiano si todas sus palabras lo son.  
+PALÍNDROMO  El palíndromo  es un texto que puede ser leído igual de de recha a 
+izquierda que de izquierda a de recha. Es una forma artística muy an tigua, presen te 
+en todas las lenguas. Existen los palíndromos de sílabas, de palabras  y de frases. 
+Ejemplo de un fa mos o palíndromo monovocálico en in glés, atribuido al presidente 
+Roosevelt " A man, a plan, a canal: Panamá ". Palíndromos  del escritor argentino Juan 
+Filloy: "La ruta nos aportó otro paso natural ", "Acaso hubo búhos acá", "Solo diseca 
+la fe de falaces ídolos", "Sometamos o matemos".  
+PERVERBO  Se obtiene cruzando dos o más fragmentos de proverbios o de 
+locuciones. Por ejemplo, "Siempre se vuelve desafortunad o en el amor" es el 
+resultado de cruzar "Siempre se vuelve al primer amor", con "Afortunado en el 
+juego, desafortunado en el amor".  
+POEMA CUADRADO O CUA DRADO LESCURIANO  Se trata de elegir cuatro palabras 
+y combinarlas linea lmente de todas las mane ras po sibles. El resultado, con un 
+mínimo de conectores agregados (idealmente ninguno), puede ser un poema o el 
+núcleo de una prosa narra tiva. Con cuatro palabras son posibles veinticua tro 
+combinaciones.  
+POEMA DE BANDIDO  Un poema de bandido es un poema robado a la prosa. Solo la 
+disposición en la página cambia: el texto base está puesto en verso. (De Jacques 
+Jouet)  
+POEMA DEL METRO  Un po ema del metro es un poema compuesto en el metro, a lo 
+largo del tiempo de un trayecto. Tiene tantos versos como es taciones, menos una, 
+tiene el trayecto. El primer verso se compone mental mente entre las dos primeras 
+estacio nes del trayecto (contando  desde la es tación de partida). Se transcribe al 
+papel cuando el metro se detiene en la segunda estación. El segundo verso se 
+compone mentalmente entre la segun da y tercera estación y se transcribe al papel 
+cuando el metro se detiene en la tercera estac ión, y así sucesivamente. El último 
+verso del poema se debe transcribir en el andén de la última es tación del trayecto. 
+Si el itinerario su pone una o varias combinaciones de línea, el poema tendrá por lo 
+menos dos estrofas. Si por desgracia el metro se detiene entre dos estaciones, se 
+produce un momento muy delicado en la escritura de un poema del metro. (De 
+Jacques Jouet)  
+POEMA  FUNDIDO  Un poema fun dido es un poema extraído de un poema mayor. 
+Por ejemplo, de un so neto, extraer un haiku. No se debe n utilizar en el poema menor 
+palabras que no estén en el soneto, y tampoco se deben utilizar más de lo que lo 
+están en el poema mayor. La puntuación y el orden de las palabras del texto base no 
+tienen importancia.  
+POEMA PARA TARTAMUDOS  Componer un poema e n el que en cada verso cada 
+sílaba par deba ser idéntica a la sílaba impar que la precede  
+PORCHE  Tomar una palabra, no im porta cuál. Una palabra que tenga una homófona  
+perfecta, y que la palabra y  su homófona  sean de géneros diferen tes. Construir una 
+frase utilizando la pa labra elegida teniendo cuidado de que al oído  los dos sentidos 
+de la palabra sean posibles y que la frase conserve toda su ambigüedad. Esto obliga 
+al autor a inventar una sintaxis, una construcción particular que debe desembocar 
+en el d oble sentido posible de la frase.  
+PROPIO -COMUN  Para escribir un propio -común, se debe tomar una serie finita de 
+sustantivos de un texto que uno ame. Respetando el orden de apa rición en el texto, 
+se procede transfor mando cada sustantivo común en un nom bre propio, 
+agregándole una letra capital, un pronombre, un título, even tualmente una sílaba 
+suplementaria. Cada nombre nuevo es un personaje nuevo. Preferir los textos 
+repetitivos que permitirán a los personajes reapa recer. (De Jacques Jouet)  
+Q 
+QUENINA  La quenina es una gene ralizació n de la sextina. Se trata de po emas de n 
+estrofas, de n versos cada una, con una rima diferente por verso. El lugar de la rima 
+cambia de estrofa en estrofa según el método de permu tación de la sextina.  
+QUENINA  DE ARR ANQUE  Tomar una quenina y, en lugar de cambiar las rimas del  
+final de los versos, modificar los comienzos de los mismos. También podrían 
+cambiarse las partes centrales de los versos, e incluso los comienzos, los finales y las 
+partes centrales. (De lan Mon k). 
+QUENINIZACIÓN  Tomar un texto dado como si fuese una estrofa de una quenina y 
+completarlo. La quenina sería una queninización del texto, una etapa  en el programa 
+general de que ninización de la literatura. Podría haber queninas métricas, de rimas, 
+o de otro tipo, a conveniencia de cada autor. (De Ian Monk)  
+QUIMERA  Tomar un texto X  y ex traer los sustantivos, los adjetivos y los verbos, 
+dejando marcado el espacio que ocupaban cada uno de ellos. A ese texto lo 
+llamaremos "molde". Tomar ahora otros tres textos, a los que llamaremos S, A y V , y 
+extraerle al primero los sus tantivos, al segu ndo los adjetivos, y al tercero los verbos. 
+Retomar el texto molde y  reemplazar los sustantivos su primidos por los del texto S; 
+lo mismo para los adjetivos de A, y para los ver bos de V. Rectificar el texto resultante 
+para acceder al texto quimérico.  
+R 
+RECAPITULACIÓN  Consiste en la escritura de seis estrofas de seis versos 
+relativamente largos (de más de trece sílabas), regulares e iguales. Entre cada  
+estrofa un verso enumera, en forma de lista, seis palabras. Cada una de estas 
+palabras está tomada de  cada uno de los versos de la estrofa precedente. Al final de 
+las seis estrofas, un verso viene a concluir. El propio autor de esta res tricción ha 
+inventado también la pe queña recapitulación portátil. (De Jacques Jouet)  
+RECORRIDO  OBLIGADO  Se es crib e un texto, relato o poema donde aparecen de 
+forma obligatoria, en un orden elegido previamente, una serie de pal abras. 
+Alternativa: se puede es cribir u na serie de relatos en diez fra ses, c ada una de esas 
+frases debe con tener una de las palabras eleg idas. El orden de aparición de las 
+palabras será variable, la cantidad de relatos posibles es diez . 
+REDONDA  La redonda es un poema  de forma fija que repite, permutándo las, las 
+palabras finales de los versos. Está compuesta por tres estrofas de cinco ver sos con 
+tres palabras claves distribuidas de la siguiente forma: 
+12321/23132/31213/12321/ 31213/23132. (De Jacques Jouet)  
+RESTRICCIONES  COMBINADAS  Las restricciones no son exclusivas. Algunas 
+incorporan otras de manera automática. Pero una verdadera com binación de 
+restricciones es resultado de una elección: dos o más contraintes  son combinadas 
+para llegar a compo ner un texto. Las restricciones pueden combinarse de manera 
+consecutiva o de manera simultánea.  
+RESTRICCIÓN DE DELMAS  Un enunciado satisfac e la restricción de Delmas si uno 
+puede reemplazar en él la letra inicial de las palabras más im portantes por otra letra, 
+obteniendo un nuevo enunciado significativo.  
+RESTRICCIÓN DE PASCAL  La restricción  de Pascal consiste en escribir un texto en 
+el cua l las relaciones entre los per sonajes son dictadas por las po siciones  de los 
+puntos de una figura ge ométrica, extraída del teorema de Pascal. (De Michele Audin)  
+RESTRICCIÓN DE TURING Restricci ón utilizada en la novel a ouli piana Sphinx . 
+Consiste en la ausencia de toda marca lingüística o de género que permita atribuir 
+una identidad ge nérica o de sexo al personaje, narrador o enunciador. (De Anne 
+Garréta)  
+RESTRICCIÓN DEL PRISIONE RO Un prisionero quiere enviar un mensaje pero no 
+tiene más que un pe queño papel. Para ganar espacio, escri be su mensaje evitando 
+todas las letras que tengan palos o astas que sobrepa sen el renglón. Solamente le 
+quedan las siguientes letras: a, c, e, m, n, o, r, s, u, v, w, x,z . Si el prisionero tiene un 
+poco más d e papel, puede permitirse utili zar la " i". El prisionero liberado usa las  
+vocales, la y, y únicamente las conso nant es que antes tenía prohibidas ( d, f, g, h, j, k, 
+l, p, q, t ). 
+RETRATO  EN HUECOS  Text o de una página que describe a una perso na y la dibuja, 
+y hace el retrato de esa misma persona a través de los blancos del tex to. El t exto será 
+como un nega tivo, como un identikit policial.  
+RIMA BERRYMANIANA  Esta rima  funciona sobre tres versos. Los dos pri meros no 
+riman, pero el final del ter cer verso está compuesto a partir de la consonante de uno 
+y de la vocal del otro. (De Harry Mathews)  
+RIMA BISEXUAL  La rima bisexual  funciona en trío, como la rima berry maniana, 
+pero con una pareja de dos rimas masculinas que riman con una femenina, o a la 
+inversa.  
+RIMA CAPIC ỦA La rima capicúa es una generalización del principio de rima s 
+abrazadas, siguiendo por ejem plo este dispositivo:  ABCDEFFEDC BA. (De Paul 
+Fournel)  
+RIMAS  ESCONDIDAS  También co nocidas como rimas muertas, o rimas fantasmas. 
+Se trata de versos a los falta completar con una palabra para alcanzar la rima. Es 
+necesario que ausencia de la rima escondida el poema que en trunco tenga de 
+cualquier forma un sentido pleno. (De François Carade c) 
+RONDÓ  El rondó está construido so lamente sobre dos rimas. Contiene trece versos 
+octosilábicos divididos en tres es trofas (dos de cuatro y una de cinco ver sos), y 
+contiene un estribillo. Los dos primeros versos regresan al final de la segunda 
+estrofa  y el primer verso al final de la tercera. Esta forma se utilizaba mucho en los 
+siglos XIV y XVI. Conoció un revival en el siglo XIX, in cluso Mallarmé escribió 
+algunos.  
+S 
+S+7  El método S+7 consiste en reem plazar cada sustantivo (S) de un texto 
+preexistente por el séptimo sustantivo encon trado después suyo en un diccio nario 
+determinado. Jean Lescure expu so el método en una de las primeras reuniones del 
+Oulipo, en febre ro del 1961. Las actas redactadas por Jacques Bens demuestran que 
+se trata de una de las primeras restricciones inventa das por el grupo. Existen 
+múltiples va riaciones, desde el S+X (puede ser 3. 4, 5, 6 o el número que se quiera) 
+hasta el S+tête (s+cab eza) en el que, prescin diendo de un diccionario, se inventa o 
+intuye cuál podría ser el séptimo sus tantivo consecutivo. (De Jean Lescure)  
+SARDINOSAURIO  Se comienza por imaginar dos animales tales que la últi ma sílaba 
+de uno sea la primera del otro. L uego, se unen las dos palabras. El ani mal así 
+concebido es llamado de mane ra genérica  un sardinosaurio. Finalmente, se escribe 
+un texto breve describiendo al quimérico animal, inspirándose en las dos familias a 
+las que pertenece. (De Jacques Roubaud y Oli vier Salon)  
+SEXTINA  La sextina fue inventada en el siglo XIII por el trovador Arnaut Daniel. 
+Adoptada por Dante y Petrarca, fue utilizada hasta nuestros días por nu merosos 
+poetas. Se eligen al principio seis palabras base que no rimen, y el poema se 
+com pone de seis estrofas de seis versos que terminen con una de estas seis palabras. 
+En la primera, el orden de las palabras será 1, 2, 3, 4, 5, 6. En la segunda estrofa, el 
+orden será diferente: 6, 1, 5, 2, 4, 3. Para la estro fa tres, se procede por permut ación 
+de la misma manera que en la estrofa dos: 3, 6, 4, 1, 2, 5. El mismo principio se utiliza 
+para escribir sucesivamente las es trofas 4, 5, 6. La n-ina, que generaliza la sextina, 
+es un poema de n-estrofas, de n-versos, y cada verso de cada estrofa fi naliza con una 
+palabra base diferente (quinina, de cinco estrofas, terina, de tres, etc.). En una n-ina, 
+dos estrofas dis tintas no pueden tener la misma dispo sición. Los números enteros 
+con los cua les es posible realizar una n-ina se denominan "núm eros de Queneau".  
+SOBREDEFINICIONES  Consiste en definir doblemente una palabra. En principio por 
+su sentido, pero tambi én por su presencia en el inte rior de otra palabra.  
+SOLICITUD  De acuerdo a Roubaud y Salon, la solicitud clásica fue expues ta por 
+Franc-Nohain, y responde a va rias restricciones: se trata de un poema rimado que 
+cuenta con tres versos. Los dos primeros versos son alejandri nos, el último es 
+trisilábico y es una pregunta; la pregunta tiene que ver con una persona cuyo 
+nombre no es cono cido; el último verso es homófo no de un sustantivo concreto; y 
+no hay una relación evidente entre los versos y el término de la homofonía. La 
+solicitud moderna viola algunas de estas reglas. (De Jacques Roubaud y Olivier 
+Salon)  
+SOLVA (SONETO DE LONGITUD  VARIABLE)  Se transforma el soneto clásico de 
+catorce alejandrinos en una oda de quince, respetando las restric cione s prosódicas. 
+Se numeran las lí neas del soneto de uno a quince, y la línea nueve se deja en blanco. 
+Ahí se agregan las sílabas del nuevo  verso.  
+SONETO INSUFICIENTE  Se escri be en versos lo más cortos posibles. El orden de las 
+rimas se transforma en el orden de las palabras base, como en la sextina (ver). (De 
+Jacques Jouet)  
+SONETO IRRACIONAL  Es un poema de forma fija, de catorce versos, cuya estructura 
+se apoya sobre el nú mero π. Está dividido en cinco estro fas sucesivas, de 3, 1, 4, 1, y 
+5 versos, respectivamente.   
+SUPONIENDO QUE  Un "suponien do que ” es un texto en prosa (aunque puede ser 
+un poema en prosa) com puesto por una frase úni ca muy des arrollada que comienza 
+con: "S uponiendo que alguien me pregu ntara acá...". Un "suponiendo que" de bería 
+tener no menos de mil caracteres (unas doscientas palabras). El origen es menos 
+proustiano que mallarmeano: muchos sonetos de Mallarmé son  claramente intentos 
+de no utilizar más que una frase. (De Jacquet Jouet)  
+T 
+TAUTOGRAMA  Es un texto en el cual todas las palabras comienzan con la misma 
+letra.  
+TAUTOGRAMA  PROGRESIVO Dada una lista de letras, como por ejemplo l, m, n , se 
+trata de escri bir un texto en el cual las palabras comiencen en orden, con esas letras: 
+I m n, I  m n, I  m n, hasta que el autor diga lo que tiene que decir.  
+TERINA  La terina es una sextina de tres palabras -rima. Para realizarla, se deben 
+tomar tres palabras -rima, que rota rán en espiral en las dos estrofas siguientes.  
+TEXTOS CON ARRANQUE : "Me acuerdo de Reda Caire". Así comienza  el libro de 
+Georges Perec Me acuerdo  (Je me souviens ). Luego le siguen más de quinientos 
+recuerdos. El libro es una larga lista, y también un largo poema. La lista es 
+exploratoria, sistemática, pero no exhaustiva. Sistematización: todos los  
+"arranques" como  "me acuer do" están permitidos. Por ejemplo: "Me olvidé que...". 
+"Sé que..." "Lamento que...". "Dónde leí que... "Me pregunto si...",  etcétera.  
+TRADUCCIÓN  ANTONÓMICA  En un texto dado, reemplazar cada una de las 
+palabras importantes (sustanti vo, verbo, adjetivo) por uno de sus an tónimos 
+posibles.  
+TRANSDUCCIÓN  A partir de un texto dado, sustituir los sustantivos de ese te xto por 
+otros sustantivos toma dos de un diccionario especializado.  
+TRIDENTE  Forma fija breve, que se autodefine así: verso uno, ci nco síla bas; verso 
+dos, tres; verso tres, cinco sí labas. (De Jacques Roubaud)  
+U 
+ULCERACIONES  Las once letras más utilizadas en la lengua francesa son las que 
+figuran en la palabra " ulcérations ". Un poema en " ulcérations " se compone de versos 
+de on ce letras he chos con anagramas de esta palabra. En  lugar de la c, que es la 
+menos utilizada de las o nce de "ulcérations", puede uti lizarse alguna otra de las 
+quince letras restantes del alfabeto.  
+V 
+V+7  Se utiliza el mismo procedimien to que en S+7 (v er), pero utilizando los verbos 
+en lugar de los sustantivos.  
+VILLANELA  Joseph Boulmier, a fines de l siglo XIX, publicó una villa nela que definía 
+su propia forma. Sigue, anticipadamente, un principio de Jacques Roubaud: un texto 
+escrito según una re stricción  que habla de esa misma restricción.  
+VOCABULARIOS  RAZONADOS  Un léxico puede ser ordenado siguiendo principios 
+nuevos y racionales. Así, la de finición del origen de los vientos (Norte, Sur, Este, 
+Oeste) permite clasificar por ejemplo la palabras  en calmas o agitadas, y definir la 
+intensidad de las mismas.  
+ 

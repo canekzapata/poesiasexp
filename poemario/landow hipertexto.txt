@@ -1,0 +1,1663 @@
+Hipertexto 
+La convergencia de la teoría crítica 
+contemporánea y la tecnología 
+.,. 
+Hipermedia George P. Landow 
+1. P. Quéau. Lo virtual Hipertexto2. G. P. Landow, Hipertexto 
+La convergencia de la teoría crítica 
+contemporánea y la tecnología 
+~Ediciones Paidós 
+Barcelona-Buellos Aires-México 
+¡,
+j, 
+1, 
+~: 
+Título original: HiperText. The convergence afcontemporary crirÍcal rhe­
+01) and techllology 
+Publicado en inglés por The Johns Hopkins University Press 
+Traducción de Patrick Ducher 
+Cubierta de Mario Eskenazi • 
+Para Shoshana, Serena y Moali 
+1.a edición, J995 
+© 	1992 by TheJohns Hopkins University Press, Baltimore y Londre~ 
+© 	de todas las ediciones en castellano 
+Ediciones Paidós Ibérica, S.A., 
+Mariano Cubí, 92 -08021 Barcelona 
+yEditoríal Paidós, SAICr, 
+Defensa, 599 -Buenos Aires 
+ISBN: 84-493-0186-6 
+Depósito legal: B. 40.274·1995 
+Impreso en Grafiques 92, S.A" 
+Torrassa, 108 -Sant Adrül de Besós (Barcelona) 
+Impreso en España -Primed in Spain 
+i,.,
+'1~
+ 
+~.! 
+
+-
+2. Reconfigurar el texto 
+Del texto al hipertexto 
+Aunque en el futuro lejano, o no tan lejano, todos los textos in­
+dividuales estarán conectados electrónicamente formando así meta­
+textos y metametatextos de un género sólo parcialmente imaginable 
+hoy en dia, ya han aparecido formas de hipertexto de mucho menor 
+alcance. Existen ya transliteraciones al hipertexto de poesía, de fic­
+ción y de otras materias originalmente concebidas para la tecnolo­
+gía del libro. La fonna más sencilla y 1imitada de esta transliteración 
+preserva el texto lineal, con su orden e inalterabilidad, y luego aña­
+de, a modo de apéndices, críticas, variantes textuales u otros textos, 
+cronológicamente anteriores o posteriores.l En estos casos, el texto 
+original, que conserva su forma antigua, se convierte en un eje fijo 
+del cual irradian los textos conectados, y ello modifica la experien­
+cia del lector de este original texto en un nuevo contexto. 
+Se han publicado didácticas de textos clásicos 
+en hipertexto basadas en un único texto, originalmente creado 
+para su difusión impresa, como eje ininterrumpido alrededor del 
+cual se articulan comentarios y anotaciones. Paul Delany, de la 
+Universidad Simon por ejemplo, utilízó el sistema Hyper­
+card de Apple para transcribir al hipertexto y ampliar el Joseph 
+Andrews de Henry Fielding; en la Universídad Brown, emplea­
+mos de un modo similar el sistema Intennedia para presentar his­
+torias cortas de Kipling y Lawrence.2 
+Otro procedimiento consiste en adaptar para la presentación 
+53 r .. 
+.52 HIPERTEXTO 
+ij 
+hipertextual unos materíaies originalmente concebidos para la tec­
+¡ \1 nología del libro divídiéndolos en lexías discretas, sobre todo cuan­
+do contienen elementos multilineales que requieren la clase de lec­
+tUf'a multisecuel1cial asociada con el hipertex[o. Un ejemplo de este 
+tipo de hipertexto ha aparecido en CD Word: The Interactive Bible 
+,1: Libr¡¡,-y,* que un equipo del Dallas Theologícal Seminaly*l ha crea­
+I 
+r, do con una versión mejorada de Guide. Esta recopilación hipertex­
+"< tual de la Biblia, destinada nU1s bien al «estudiante, teólogo, pastor 
+o lego» que al historiador de la religión, incluye las versiones de la 
+Biblia Kíng James, New InternationaI, New AmeÍican Standard y 
+Revised Standard, así como textos griegos para el Nuevo Testa­
+mento y la Biblia de los Setenta. Acompañan este material tres léxi­
+'¡ cos griegos, dos diccionarios y tres comentarías de la Bib1ia.; Con 
+! este sistema, que almacena los textos electrónicos en un disco com­
+pacto, el lector de la Biblía puede yuxtaponer pasajes diferentes 
+versiones y comparar las variantes, examinar la versión griega origi­
+nal y acceder a una rápída ayuda en gramática yvocabulario griegos. 
+Otra recopilacÍón similar pero que emplea un sistema hi­
+pertexto más sofistIcado es Chinese Uterature (Literatura china) 
+de Paul Kahn, que ofrece diferentes versiones de la poesía de Tu 
+(712-770) que van desde el texto chino, transcripciones en 
+nuestro alfabeto y traducciones Hterales hasta otros 1ibros de 
+Kenneth Rexroth y otr08.4 Literatura china también incluye abun­
+dante material secundario que permite la interpretación de la po­
+esía de Tu Fu. Como CD Word. la recopilación de Kahn permite, 
+tanto al principiante como al iniciado, acercarse a un clásico en 
+lengua extranjera a través de varias versiones y, como la Biblia hi­
+pertextual en disco compacto, también ubica el texto primario en 
+una red de nexos con las diferentes traducciones y las referencias. 
+Antes de examinar otras clases de hipertexto, convendría recal­
+car las justificaciones y conclusiones implícitas de estas dos exce­
+lentes obras. CD ,"(lord ofrece a sus lectores una presentación tec­
+nológica de la Biblia particularmente apropiada porque, en 
+general, el texto se maneja en términos de pasajes cortos o, como 
+dirían los escritores en hipertexto, como si fueran de «alta reso­
+lución». Del mismo modo, al ser más bíen concisos, los poemas de 
+*. Biblioteca Bíblica Interactiva, T. 
+;;1. Seminario Teoló¡peo de Dallas. T. Jl.ECONFIGURAR EL TEXTO 
+Tu Fu se prestan muy bien a una recopilación similar en hipertexto. 
+A diferencia de estos dos ejemplos de realizaciones en hiper­
+texto, que respaldan el estudio con nexos electrónicos entre múl­
+tiples textos paralelos, In Memoriam, otra recopilación, esta vez 
+en Intermedia, creada en la Universidad Brown, se vale de los ne­
+xos electrónicos para elaborar un mapa de las alusiones y referen­
+cias del texto, tanto internas como externas -su ínrel' e intrr/tex­
+rualidad-5 y, asi,las materializa. 
+El In Memoriam de T ennyson, radícalmente experimental, 
+ilustra perfectanJente la validez del comentario de Benjamín: <<la 
+historia del arte presenta épocas críticas en las que cierta forma de 
+arte aspira a efectos que sólo podrán ser conseguidos plenamente 
+con un cambio de patrón técnico, es decir, con una nueva forma 
+artlstíca».6 Otra manifestación de este principio aparece en la li­
+teratura pictórica vic.:roríana, sobre todo en Tennyson y Ruskin, 
+que anticipan en muchísimos detalles las técnÍcíls del cine.7 Así 
+como la literatura pictórica anticipa un medio futuro (el cine) uti­
+lizando la narrativa para estructurar la descrípción, In Memoriam 
+antícípa la hipertextualidad electrónica desafiando precisamente 
+la narrativa y la forma literaria basada en ella. Convencido de que 
+el empuje de la narración elegíaca, que inexorablemente conduce 
+a lector y doliente del pesar a la consolación, falsi fícc.1la experien­
+cia real, el poeta elaboró un poema compuesto de 131 fragmentos 
+para expresar el flujo y reflujo de las emociones y, en particular, la 
+manera en que, irracionalmente, surgen rebrotes de pesar mucho 
+tiempo despllés de la supuesta recuperación del doliente. 
+La muerte de Henry Hallam en 1853 hizo que Tennyson 
+cuestionara su en la naturaleza, en Dios y en la poesía. In Me­
+moriam revela que Tennyson, que se habia dado cuenta de que 
+unas composiciones breves encarnaban mejor las emociones 
+transitorias que seguían embargándolo mucho tiempo después 
+de su pérdida, rechazó la elegía y la narratíva convencionales 
+porque ambas presentaban al lector una versión demasiado uni­
+ficada, y, por lo tanto, demasiado simplificada, de sentimientos 
+como el pesar y la resignación. Creando una poesía no lineal de 
+fragmentos, T ennyson guía al lector de In Memoriam del pesar y 
+la desesperación a la esperanza y la fe pasando por la duda; pero 
+con cada paso irrumpen emociones persistentes y opuestas, y 
+uno encuentra duda en medio de la fe, y dolor con la feso]uCÍón. 
+~ '"' Ou" hoVillt.by 'Vfh1Ch \~mono I nuuJ. 
+H.I'I! In the Long ,ulolovdy i.n-e1... 
+lJtIr¡no, ,.,hMW' my ~f1~4= usrd La loMt 
+$\l'l1,J!(:lc.tr.",.H¡n!.k,.4I lwnd, .. A hnl'd lb.' {sn be dup'd 1'1" ,..al.,-­
+~tLoJd m. fw ( ~..nnllf ~ltIIi:'p, 
+A.rtd "" lilL!' a. guury Ihll"lg 1~m"p 
+)\1 utliMI rm:,,1J1hl!!; mo ti•• door. 
+H. b ~h~'l'11,¡l ttrnuy 
+1'h. l\O!1Ie ",fll~ ~m '1;I'in, .. 
+A.w1W",¡t¡ Ihl"Q' the dnt¡,l¡r,~ToI,11I 
+On lh~ b.tl<::l Jt[~tb'rl:.¡'i lhll!; bl4l1~1.It"I. 
+(ullklo iJudl ........ I<I'll-...¡¡;; , ... ¡......) 
+ '" S«ÜIm 111 
+Dc>o;rn• .,...Iot-[I!; rny hll!'u ¡ "U~ u~,'-' bNI 
+So;) ,-¡uh:L.ly nol u; 0t'I~ Iba L t'II~pl' "" 
+1 ~~lll. om~m~: .hlt aty sl~~p"­... 
+(~melllhl: me41dtlft 111 Ih.~ ,Ilftt 
+1bi'u .... d.lrp ot bip;b I ~I: 
+~lJIi'b, l~bllt(" trt1'I,f:J1cng-'Wilbrin'llftr\ 
+1'1 hehl-blu.larIe uloetrlydatm, 
+Alld I}unl o:f 'l'lIorly d.}"!I ~nd 1l~1I!, 
+¡:"l.d bllB.!:~ ItI.., lar Ih,. lil» Iln bit nd.. 
+1\ I\d ~shllhll! b1sruf.h1p oI1hm. ~; 
+AM in m-r1f'¡1IlI\.t~I~ wnlh.:et:rD!'. ~~ 
+r 1ft ke-lw: ~=~ ~telt¡¡e. h.l\d "" 
+el E!I 
+<[,¡o~lQ_u_.· ...'I1vrelU'll!lrolWtf\,""" oW,"rtI 1 (r\. 
+1·lQnf"", .. lC~:Úll"'l
+"'1iiI._,
+I· ....,r.~ .. lal'"~l.,..,l 
+"'"~~~.;:I~:1JJe I~' 
+e"tnr"loo!r>? 
+1"1fi¡>l¡r~"'Il0.'\.111~1 
+~ 
+hillt'''''I~QV
+(1?oIr~ '-111 it> 2~ 1<1"91 
+1:'1 
+fiI~,~7 
+"""'F .... "la~::!"tI<l~l 
+flli..,l"1Itol ',~ 
+1"'oI\,.b .. la:'!. ~2 t791 
+I"l 
+fijJ"'~'I(N 
+M:Io.r19410~4'!11~91 
+!:aI"~~D\1 '"1....... 410~"''9¡?91 
+, 
+Figura 1. In Memoriam_ En esta in~taníállca de una pantalla típica durante una sesión con lntcrmedia, el Jocmnen­
+to activo. In Memonizm, Seccu;r¡ 7 ("In Mern 7»), está en la parte inferior izquierda de la pantalla, con una línea OScura 
+para señalar su rango_ Aprovechando las prestaciones del hipertexto para navegar fácilmente por el poema, d lector ha 
+yuxtapuesto las seccIOnes 119 y 7, '--jue se remiten y se complementan entre sí. La visión general de In. Memoriam (IN 
+MEM OV), que aparece arriba a la j¡.:quierda, es un documento gráfico que sirve de directorio; organiza los materiales 
+conectados bajo encabezamientos generales corno «Cultural Contexto Victorianism» (Contexto cultural: el período vic­
+toriano) o <<lmages and Motifs» (Imágenes y temas). La visión general de la imaginería de IJI Memonam (IM LMAGERY 
+ay), otro documento gráfico de referencia, solapa el borde derecho d~ la visión general de todo el poema. A la dere­
+cha se ve Web View, que el sistema genera automáticamente cada vez que el usuario activa un documento, ya sea 
+abriéndolo o, si ya se ha abierto y sigue en pantalla, pulsando una tecla. A diferencia de las visiones generales jerárqui­
+cament~ organizadas que el autor crea, Web Yiew presenta pequeños íconos que representan todos los documentos co­
+nectados con el documento activo, en este caso la sección 7 del poema. Al tocar cualquier marca de nexo con el cursor 
+en forma de flecha, se oscurece el icono que representa el documento conectado; en la figura, el lector ha activado la 
+marca encima de la mención «compared to 119» (comparación con la 119); así, los iconos oscurecidos representan a la 
+vez el texto de la sección 7 y un ensayo de un estudiante que la compara con la 119. 
+-
+56 57 H 11>FRTEXTO 
+En lugar la trama elegíacil de «Lycidas», «Adonaís» y ~~Thyr­
+sis», In Memoriam ofrece fragmentos entrelazados con docenas 
+de imágenes y motivos e informados por un igual número de re· 
+soluciones, principales y secundarias, de las que la más famosa es 
+la sección 95, con su representación del encuentro de Tennyson 
+con el espíritu de Hallam, experiencia cumbre y maravillosamen: 
+te ambigua y mística. Además, otras secciones como la 7 y la 119 
+o la 28, la 78 y la 104, se unas a otras de diversos modos. 
+protohipertextualidad de In Memoriam atomiza y disper­
+sa al Tennyson hombre. No se lo percibe en ningún momento, 
+excepto tal vez en el epílogo, que aparece a continuacÍón y fuera 
+del poema en sí. El verdadero Tennyson, el hombre que existió, 
+con sus y temores, no puede extrapolarse de las sec­
+ciones individuales del poema, ya que una de ellas presen­
+ta a Tennyson sólo en un momento dado. Recorriendo estas sec­
+ciones individuales, el lector experimenta una versión algo 
+idealizada de los momentos de pesar o de restablecimiento de 
+Tennyson. Así, In Memoríam cumple la definición de Paul Va­
+lery de la poesía como máquina que reproduce emociones. Tam­
+coincide con otra observación que hizo Benjamin en una 
+comparación del pintor con el camarógrafo: «En su trabajo, el 
+pintor mantiene una distancia natural con la realidad mientras 
+que el camarógrafo penetra profundamente en su trama. Hay 
+una tremenda diferencia entre las imágenes que obtienen. La del 
+pintor es integral, la del camarógrafo consiste de múltiples frag­
+mentos que se ensamblan según una ley nueva» (<<\X:'ork of Art», 
+233-234). Aunque refiriéndose a otro medio de expresión, Ben­
+jamin capta parte del sentido en que el hipertexto, comparado 
+con el texto, parece atomizado al mÍsmo tiempo que transmíte 
+una de las principa1es cualidades del poema no lineal y secuen­
+cial de Tennyson. 
+La trama hipertextual In Memoriam intenta captar la orga­
+nÍzación no lineal del poema estableciendo nexos entre secciones, 
+por ejemplo, entre la 7 yla 119, la 2 yla 39 o los poemas de Naví­
+dad que se evocan unos a otros a lo largo de todo el poema (Pig. 
+1). Y, más importante todavía, gracias a las capacidades de Inter­
+media, el lector puede remontar de sección en sección siguiendo 
+varías docenas de leitmotiv que forman un hilo en todo el poema. 
+Trabajando con la sección 7, por ejemplo, los lectores que desean RECONFIGURAR EL TEXTO 
+moverse por el poema siguiendo una secuencl.llint:al pueden ha­
+cerlo por medio de los nexos entre secciones anteriores y 
+posteriores; también pueden consultar cualquier palabra en W1 
+diccionario electrónicamente conectado o seguir nexos hasta lec­
+turas alternatívas, críticas (e incluso una comparación de la sec­
+ción 7 con la 119) o discusiones de las relaciones internas del 
+poema. Además, la activación de los nexos señalados al lado de 
+palabras como oscuro, casa, puertas, mano o culpable hace apare­
+cer una selección de varios tipos de materiales. La selección de 
+mano genera instantáneamente un menú con todos los nexos aso­
+ciados a esta palabra, que incluyen un directorio gráfico las 
+principales imágenes de In Memoriam, un comentario crítico so­
+bre la imagen citada y, lo más importante, una lista sistemática 
+cada uno de los usos de la palabra en el poema junto con la frase 
+en que aparece; la elección de cualquiera de los elementos del 
+menú provoca la aparición del documento conectado, de una vi· 
+sión general de la imaginería, de un comentario o del texto com· 
+pleto de la sección gue contiene ese uso concreto de mano, 
+GracÍas a las capacidades de InLcrmedía para Cl'tar nexos <::n 
+ambas direccíones y conectarlos con cualquier pasaje (o bloque 
+texto) de la obra, el lector puede desplazarse por el poema si· 
+guiendo distintos ejes. Aunque la trama de In Memoriam conten­
+ga, como las otras obras en hipertexto citadas má~ arriba, material 
+de referencia y lecturas alternativas, su diferencia principal radíca 
+en el empleo de los trayectos de nexos, que permíten organizar el 
+poema por medio de su red de leitmotiv y secciones que se remi­
+ten unos a otros.8 Aunque estos nexos los hayamos creado mis co­
+laboradores, estudiantes y licenciados, y yo, representan una cla­
+se de nexos objetivos que también habrían podido establecerse 
+con una completa función de búsqueda de texto. En este y otros 
+aspectos, la versión con Intermedia de In Memoriam representa 
+una forma adaptable de hipertexto. 
+Aparte de la adaptación de un texto cuya versión impresa ya 
+divide en secciones análogas a las lexias, uno puede imponer 
+sus propias divisiones a una obra, como hace Barthes con «Sarra­
+sine» en S12. Un ejemplo obvio proyectos de este tipo serían 
+versÍones hipertextuales de «Sarrasine» solo, o incluso de en 
+SIZ de Barthes.9 Otra versión electrónica que realiza gran parte 
+del potencial del hipertexto para las variantes es Forking Patb.\': 
+58 59 -
+HIPERTEXTO 
+An Interaclion after Jorge ,""uis Borges (1987)/' de Sruart Mou1th­
+rop, una adaptación de «Forking Paths», de J. L. Borges; funcio­
+na bajo Storyspace, un sistema de hipertexto creado por J. David 
+Bolter, Michael Joyce yJohn B. Smirh. IU 
+Estos ejemplos de adaptación al hipertexto ejemplífican for­
+mas transición entre la textualidad convencional y la hipertex­
+tualidad. Por otra parte, existen ya obras originalmente concebi­
+das para el hipertexto. Éstas conectan electrónicamente bloques 
+de texto, o mejor dicho lexias. unos con otros y con diversos com­
+plementos gráficos como ilustraciones, mapas, organigramas, es­
+quemas y visiones generales, a1gunos de los cuales no existen en el 
+medio impreso. En el futuro, habrá más metatextos formados por 
+la conexión de secciones aisladas de obras individuales, aunque la 
+noción de obra individual y discreta se está volvÍendo cada vez 
+más débil e ínsostenible en el marco de esta tecnología informáti­
+ca, como ya había ocurrido en el contexto de gran parte de la 
+teoría crítica contemporánea. Estas obras incluyen poesía y fic­
+ción hipertextuales, de las que hablaré más adelante, y el equiva­
+lente hipertextual de las obras criticas y eruditas impresas. 
+Una las primeras obras en este nuevo medio, y desde luego 
+la prímera con Intermedia, fue la Barry J. Fishman: «The Works 
+ofGraham Swíft: A Hypertext Thesís» (1989),~,1 una doctoral 
+de la Universidad Brown sobre e1 novelista británico contemporá­
+neo. La tesis de Fishman se compone de sesenta ydos lexias, de las 
+cuales cincuenta y cinco son documentos de texto y siete, esque­
+mas o fotografías digitalizados. Los cincuenta y cinco documentos 
+de texto que creó, con un tamaño de media página hasta tres pági­
+nas a un solo espacio, contienen discusiones de las seis principales 
+obras publícadas de Swíft, las críticas que recibieron, correspon­
+dencia con el novelista y ensayos sobre temas, técnicas y las rela­
+ciones intertextuales en cada uno de sus libros yen el coníunto de 
+su obra. Aunque Fishman creó su recopilación en hipertexto como 
+un conjunto de documentos relativamente autónomo, estableció 
+nexos con varias docenas de documentos presentes en el sistema, 
+que incluyen desde escritos de profesores de al menos tres depar­
+tamentos hasta comentaríos de otros estudiantes. 
+*, Caminos Divergentes: una interacción según Luis 1. 
+~1, Las obras de Graham Swik una tesis hipcrtextuaL 1. RECONFIlaJRAR EL TEXTO 
+Problemas de terminología: ¿Qué es el objeto que leemos? 
+¿Qué es el texto en hipertexto? 
+Como las primeras frases de este capítulo deben de haber su­
+gerido, escribír sobre hipertexto en un medio impreso pla~tea in­
+mediatamente problemas de termínología muy parecidos a los 
+que Barthes, Derrida y otros se encontraron al intentar describir 
+una textualidad ni representada por el carácter físico del libro im­
+preso ni limitada por él. Ya que el hipertexto cambía radicalmen­
+te las experiencias que leer, escnbt'r y texto suponen, ¿cómo pue­
+de uno emplear, sin inducir a errores, estos términos tan cargados 
+de las implicaciones la imprenta, para referirse al material elec­
+trónico? Todavía seguimos leyendo de acuerdo COn la tecnología 
+de la ímpresión y seguimos orientando hacia la publicación 
+presa todo lo que escribimos, pero ya empiezan a vÍslumbrarse las 
+primeras manifestaciones de hipertextualidad y a percibir algu­
+nos aspectos de sus posibles porvenires. A menos que se emplee 
+con sumo cuidado, la terminología estrechamente asociada con la 
+tecnología de la imprenta puede inducir a la confusión. Bastarán 
+dos ejemplos. 
+Uno de los problemas con que nos enfrentamos surge a la 
+hora de dar un nombre al objeto que leemos. El libro, por su­
+puesto, es aquel objeto con el que leemos el producto de la tec­
+nología de la imprenta. En nuestra cultura, la palabra libro puede 
+designar tres entidades muy distintas: el objeto en sí, el texto y la 
+manifestación de una tecnología dada. Llamar «libro electrónico» 
+a la máquina con la que leemos el hipertexto induciría a error, ya 
+que esta máquina con la que se lee (y se escribe y se llevan a cabo 
+otras operaciones como mandar y recibir correo) no constítuye en 
+sí un libro, es decir, un texto: no coincide ni con el texto virtual ni 
+con su encarnación física. 
+Surgen problemas adicionales ya que el hipertexto implica un 
+lector más activo, uno que no sólo selecciona su recorrido de lec­
+tura, sino que tiene la oportunidad de leer como un escritor; es 
+decir, en cualquíer momento, la persona que lee puede asumir la 
+función de autor y añadir nexos u otros textos al que está leyen­
+do. Así, el uso del término lector. como hacen algunos sistemas 
+informáticos en sus mensajes al usuario, tampoco parece apro­
+piado.1l 
+60 61 1" .. 
+HIPERTEXTO 
+Una so]uCÍón ha sido llamar ese lugar de lectura-escritura una 
+estación de trabajo, por analogía con la estación de trabajo del in­
+geniero; esta expresión suele referirse a máquinas relativamente 
+potentes) a menudo conectadas en red, y con mucha más poten­
+da de cálculo, memoria y capacidades gráficas que el ordenador 
+personal.12 Sin embargo, ya que estación de trabajo parece sugerir 
+que estos objetos sólo existirán en el lugar de trabajo y resultarán 
+útiles sólo en ocupaciones remuneradas, esta expresión también 
+resulta confusa. Aun aS1, recurrÍré a ella de vez en cuando, aunque 
+sólo sea porque parece más cercana a lo que el hipertexto requie­
+re que cualquiera de los otros térmÍnos sugeridos hasta la fecha. 
+Estos problemas de terminología aparecen, como ya resulta evi­
+dente, porque los papeles de lector y esctitor cambian tanto en la 
+lecnología hípertextual que nuestro vocabulario corriente tiene 
+muy poco que ofrecer. 
+Comoquiera que se denomine ese lugar de lectura-escritura, 
+,I no debe concebirse la máquina que uno empleará para trabajar (y, 
+,',1, divertirse) en hipertexto como una máquina aislada, como el or­
+r denador personal de hoy en día. En lugar de ello, e] «objeto con \ que se lee» debe concebirse como una entrada, una puerta mági­
+ca, al híperdocumento, ya que es el medio que tienen el lector y e] 
+escritor individuales para conectarse y participar en el mundo de 
+los nexos y documentos hipertextuales. 
+Se plantea otro problema símilar de terminología respecto a 
+la palabra texto, que tantas veces he empleado ya en esta obra. 
+Más que cualquier otro término clave de esta exposicíón, texto ha 
+deíado de ceñirse a una única palabra. Al existir simultáneamente 
+en dos mundos muy dístintos, abarca significados contradictorios 
+y, para emplearlo, debe encontrarse el modo de evitar la confu­
+sÍón. Cuando intento explicar algunos aspectos de la diferencia, a 
+menudo me veo obligado a dar definicíones nuevas y antíguas 
+poco precisas o me descubro utílizando el viejo término con un 
+sentido en esencia anacrónico. Por ejemplo, cuando explico que 
+los sistemas de hipertexto permiten conectar un pasaje «en» el 
+«texto» con otros pasajes tanto «en» el «texto» como «fuera» de 
+él, me veo enfrentado precisamente a un anacronismo de este 
+tipo. La clase de texto que permíte hablar, por muy incorrecta­
+mente que sea, de interÍores y exteriores pertenece a la imprenta, 
+mientras que aquí estamos considerando una forma de textuali-RECONFIGURAj{ I:.L TEXTO 
+dad virtual electrónica en la cual estos tém1inos, ya sospechosos, re­
+stUtan más problemáticos y confusos todavía. Una solución ha sido 
+utilizar texto como una abreviatura anacrónica de los términos 
+entre corchetes en la expresión siguiente: «Si uno tuviera que tnms­
+ferir un texto (obra) [íntegro impreso], digamos Lost Paradise (El 
+Paraíso perdido) de Milton, a una forma electrónica, podrían esta­
+blecerse nexos entre pasajes de [lo que era] el texto [original] (el 
+poema de Milton) y con una amplia gama de material externo al 
+texto oríginal». El problema, por supuesto, es que, cuando el texto 
+impreso se comríerte en un texto dectrónico, deja de poseer la mis­
+ma clase de textualidad. En las páginas siguientes, la palabra texto 
+debe entenderse como <<versión electrónica de un texto impreso», 
+Texto verbal y texto no verbal 
+El problema de la denominación del «texto» en el medio 
+hipertextual conlleva la cuestión implícita de lo que Jebe abarcar 
+dicha palabra. Esta cuestión, a su vez, nos obliga a reconocer 
+que el hipertexto reconfigura el texto de un modo fundamental 
+que los nexos electrónicos no parecían indicar a primera dsta. A 
+la fuerza, la hipertextualidad induye una proporción de informa­
+ción no verbal mucho mayor que la imprenta; la m~~!U.~iª~ili9.ad. 
+en comparación! co.n que puede <\ñadirse este m-aterial fomenta su 
+'inclüSión: nícho de otro modo, el hipertexto materializa la rei-
+viñ-aiC~Ión pe Derrida de una nueva forma de escrÍtura jeroglífi­
+ca que pueda evitar algunos de los problemas ímplicitos, y por lo 
+tanto inevitables, de los sistemas de escritura occidentales' yde sus 
+versiones impresas. Derrida reclama la inclusión de elementos vi­
+suales en la escritura como un medio de escapar a las limitaciones 
+de la linealidad. Comentando esta exigencia de los postulados de 
+Derrida) Gregory UImer explica que la gramatología «se enfren­
+ta» a cuatro milenios durante los cuales fue suprimido del len­
+guaje todo aquello que «se resistía a una reducción a la linealidad. 
+Resumiendo, esta supresión equivale a la negación del carácter 
+multidímensional del pensamiento simbólico originalmente evÍ­
+dente en el "mitograma" (el término es de Leroi-Gourhan) o es­
+critura no lineal (pictográfica o jeroglífica)>> (Applied Gram111ato­
+log;y, 8), Derrida, que-reclama una nueva escritura pictográfica 
+,t. 
+62 63 .. 
+HIPE.RTEXTO 
+corno salída al «logocentri¡;mo», ha.msto su petición en gran par­
+te satisfecha en el hipertexto. 
+Por otra parte,_ el hipertexto induy.e los multimedíos ya que, 
+con la misma facilidad, puede conectar entre sí tanto pasajes de 
+texto verbal como información no verbal. Además, ya queJª in­
+formátÍca digitaliza tanto los símbolos alfanumérÍcos c.Qmo)as ­
+ímágenes, el hipertexto electrónico puede, en teoría, illtegrar am­
+bos. En la práctica, los populares procesadores de texto cC;rr;o 
+Microsoft Word ofrecen cada vez más a menudo la posibilidad de 
+índuír material gráfico en documentos de texto. Los nexos, que 
+permiten remitir al lector a una imagen desde cualquier punto del 
+texto, hacen aún más fácil esta integración de información verbal 
+y visuaL 
+Además de la cantidad y diversidad crecientes de información 
+nI fabética y no verbal incluida en los documentos, el hipertexto 
+aporta element.os visuales que no ..existen en una oQ.i.a-~~P!iSa. 
+l¡\lvez más básico de todos sea cursor, una flecha, línea· "o 
+cualquier otro elemento gráfico parpadean te, que representa la 
+presencia del lector-escritor en el texto. El cursor: queeTusiiiffo 
+desplaza desde el teclado apretando las tedas marcadas con una 
+flecha o con disposidvos como el «ratón» o la bola de rastreo, 
+proporciona una entrometida imagen móvU de la presen¡:i_a del 
+lector en el texto. Desde esta posición, dIector puede modificar 
+el texto: con el ratón, puede situarse el cursor en medio de una 
+palabra, por ejemplo, entre ]a p y la o de por. Apretando un botón 
+del ratón, se inserta una barra vertical parpadeante; apretando las 
+tedas de retroceso o de borrar se suprime la p; al teclear. se van 
+insertando caracteres en este punto. En un Jibro, podemos reco­
+rrer la página impresa con el dedo, pero esta intrusión permane­
+cerá para siempre ajena al texto. Podemos hacer una marca en la 
+página, pero nuestra intrusión no altera para nada el texto. 
+El cursor, que añade la presencia, actividad y movimiento del 
+lector, se completa, en la mayoría de los actuales sistemas de hi­
+pertexto, con un símbolo que indica la existencia de material co­
+nectado. Para indicar la presencia de uno o más nexos, Interme­
+día coloca al principio del pasaje una marca que consiste en un 
+pequeño rectángulo horizontal con una flecha en su interior. El 
+HyperCard de Apple soporta una amplia gama de símbolos gráfi­
+cos (<<botones») para indicar los nexos unidireccíonales caracte-RECONFIGURAR EL TEXTO 
+l'Ísticos de este programa. CD Word, basado en una ampliación de 
+Cuide, emplea una ingeníosa combinación de cursores de dife­
+rentes formas para indicar el material conectado. Por ejemplo, si 
+el cursor se transforma en una flecha horizontal al situarse encima 
+de una palabra, quiere derír que hay un botón de referenda, y, al 
+apretar el botón del ratón, aparecerá el texto conectado. El mis­
+mo procedimiento en la primera página, estando el cursor encima 
+de la palabra Biblias) hace aparecer una lista de las abreviaturas de 
+las versÍones incluidas de las Escrituras. Luego, al situarse endma 
+de RSV, el cursor se convierte en una crucecita que señala un 
+botón de sustitución. Al apretar de nuevo el botón del ratón, 
+aparece ]a mención «Versión Estándar Revisada». Todos estos 
+dispositivos gráficos recuerdan al lector que está procesando y 
+manipulando una nueva clase de texto, en la que los elementos 
+gráficos desempeñan un papel importante. 
+Hay un segundo componente visual importante en los siste­
+mas "de hipertexto que se va1éil de-arsposIt!vos,--estifitos o diná­
+micos, para orientar al lector en-su navegáLi6rr:pu.r::e:1.bipetes­
+pacía. HyperCárd ofrece un dispositivo estático, como lo es 
+también la visión general gráfica de Intermedia, de la cual habla­
+remos más adelante. Por otro lado, Storyspace e Intermedia dis­
+ponen de mapas dinámicos de conceptos. Intermedia genera au­
+tomáticamente Web View, un mapa de conceptos dinámico que 
+proporcíona información al lector mediante iconos rotulados, cu­
+yos documentos «rodean» el texto que se está leyendo. Al iniciar 
+la sesión, el lector elige una trama hipertextual -por ejemplo, la 
+de In Memoriam o de Wole Soyinka o bien otra de la líteratura 
+glesa a partir del siglo xvm -situando el cursor encima del ico­
+no escogido y abre el documento pulsando dos veces seguidas el 
+ratón, o bien activa primero el Icono y selecciona la opción 
+«Abrir» del menú de Intermedia. Una vez que ha abierto Web 
+View, el lector puede colocarlo a un lado de la pantalla (por con­
+vención, a la derecha). Ahora el lector puede trabajar con docu­
+mentos individuales y a su lado el mapa de seguimiento, que se irá 
+actualizando. Cada vez que el lector abre un documento o activa 
+uno previamente abierto, Web Víew se actualiza y, de este modo, 
+proporciona información acerca de adónde se puede ir a conti­
+nuación. Al seleccionar cualquier icono de Web View se abre el 
+documento representado por dicho Ícono. Web View también 
+65 • 
+1I 
+I 
+! 64 HIPERTEXTO 
+presenta un historial gráfico del recorrido lector mediante una 
+disposición vertical de íconos que indica el título de 10$ docu­
+mentos abiertos hasta entonces; pequeños íconos adicionales 
+muestran si el documento se abríó desde un archivo, siguiendo un 
+nexo) o sí fue reactivado desde el escrirorio. D 
+Es el sÍstema de hipertexto, y no el autor, el que proporciona 
+dispositivos como Web View. En contrapartida, los autores en hi­
+pertexto disponen de otros elementos vi~uales importantes: vísio­
+nes generales o directorios gráficos que ayudan al lector a navegar 
+por el metatexto. Estas visiones generales gráficas, que llevan el 
+apodo genérico de OV," presentan una gran diversidad de aspec­
+tos entre los que cabe destacar el mapa de conceptos (véase IN 
+CUSTODY OVen la fig. 2), que informa allectol' acerca de los 
+nexos y de sus contenidos y muestra, además, un camino claro y 
+práctico para acceder a ellos. La visión general organiza con efi­
+ciencia un conjunto de ideas complejas alrededor de un fenóme­
+no central, que puede ser un autor (Tennyson, Derrida), un perío­
+do cronológíco (el siglo XVIII o el posmodernismo), una idea o 
+movimiento (tipología bíblica, desconstruccÍón). De un modo tí­
+picamente hipertextual, la visión general implica que cualquier 
+idea que el lector escoja como centro de su investigación existe en 
+e1 marco de otros fenómenos, que pueden tener o no con él una 
+relación causal. 
+Otro tipo de visión general de conceptos se vale de flechas 
+que recuerdan los vectores de fuerzas para indicar las líneas de in­
+fluencias o las relaciones causales, Por eíemplo, en las «Relaciones 
+Literarias de Dickens» (Fig. 3), se muestran con flechas las rela­
+ciones de Dickens con escritores que influyeron en él, aquellos en 
+quienes él ínfluyó, así como los que compartían influencÍas mutuas 
+con él. Este tipo de visión general gráfica resulta particularmente 
+útil para presentar de forma clara las relacíones históricas, Imáge­
+nes de objetos como fotografías una célula o de la luna pueden 
+constituir un tercer tipo de visión general gráfica así como los ma­
+pas y los gráficos técnicos. 
+Aunque el Web View de Intermedia cumple con éxito su fun­
+ción de informar allecror, funciona aún mejor cuando se lo com­
+"". OV por Overview; «vi~ión general gráfica» es)... traducción del término téc­
+nico «Graphic Ovetview">. T. 
+, I RECONFIGIJl<AR éL '1 EXTO 
+bina con ,uchivos de visión general realizados por el autor o con 
+otras formas de cartografía intelectual. Web View presenta una 
+imagen no jerárquica de todos los documentos conectados a la 
+sión general (o a cualquier documento activado). En cambio, la 
+visión general presenta una organización jerárquica, pero sin re­
+velar la D<lturaleza ynúmero de docWl1entos asociados a cada señal 
+de nexo. Intermedia dos formas de conseguir esta infor­
+mación: el Web View y un menú que se activa siguiendo los nexos 
+señalados con un símbolo, Al activar un nexo partÍcular, se oscure­
+cen todos los demás nexos unidos a ese bloque del Web Víew. Así, 
+trabajando juntos, los documentos ÍndiviJuales y Web View 
+informan constantemente al lector de la información que hay un 
+paso más allá del texto actual. Esta combinación de recursos ge­
+nerados por el autor y por Intermedia es un buen ejemplo de la 
+manera en que autores de hipe:rtexto emplean retóricamente 
+dísposítivos visuales para completar el diseño del sistema y traba­
+jar con él sÍnérgÍcamente.:~ 
+Elementos visuales en el texto impreso 
+descrípdón de los elementos visuales del hipertexto nos 
+recUéid"¡j"- que la imprenta también recurre ti más Ínformación 
+vísual de la que normalmente se tiene en cueQta: ésta no se limi­
+ta, como podría pensarse en un principio, a los ~Il!pl.l~~ 5~~vios " 
+como ilustraciones, mapas, esquemas, organigramas y gráfícos:15 
+Incluso sin más elementos visuales explícitos adiCionales el texto 
+impreso contiene ya una buena cantidad de información visual 
+aparte del código alfanumérico. 
+Los componentes visuales de las tecnologías de la escritura y 
+la imprenta íncluyen el espaciado entre palabras, la divÍsión en 
+párrafos, los díversos tipos y tamaños de letras, una compagína­
+dón diferente para Índicar pasajes cítados de otras obras y la asig­
+nadón de lugares especificas, a pie página o al fínal de un ca­
+pítlllo O del documento, a los materiales de referencia (notas), 
+A pesar su considerable presencía en el texto ímpreso, los 
+dementos visuales tienden a ser dejados de lado por los escritores 
+contemporáneos cuando consideran la naturaleza del texto en la 
+era electrónica. Como cualquier otro cambio, la expansión de la es­
+-."@'" -Sl ~ ...~__ ~~__ ~__, lit 
+,lB 
+lo tbe> l:tit>ph(l('t\' flMtd Or\ .1; 1M't; doi)y 
+upoTI; • lb.rrE ~a. Whlt' *pd. .rufM¡J)' rlngk¡¡ 
+up h ... ,. fnJehd. te l"Q~¡tp 1hiI¡n (o .... p.ltl~CIt 
+shl7W" ",iI~ l¡U fin-;l her hVI*,-nd. 'f'iTM looU 
+br..uo.1I'li" h~t!lotn'behiNJ a O",e.I't'!Id cv .... h., 
+BU1 hjr m~«pil'l¡ inw .Il. tlct'!fnnl.t' 
+"p~:;.¡;,t'IC\ ,.nd ma" Ing.lo 11: :null Caf'l'li OUftlM 
+thr­ ~4pi.t.l. l\IOTIe o-í V:;eM d,",,,,. h44 
+Jrutlnl"l!U~. d~d 1M ..., nt.luAllyem\lilll1in!d",,,..,,, 
+1·%.1 cth&t ~~n In boob}"O-lI n.vt: 
+ntd {';lnmthl "the 14,,#tJM dnn.m '* 
+Qnrt1.gtt''7 HlI1w ~ ~ri,,'1 ~ of il 
+rnemul" .nd "¡)W' dolI$ 11 411rfl m-n únTiM: P\ 
+,~.'S U~ W!lh 'WhtiIRI uplnl~ .CId 
+da.y.ial\tn1 dí' Y'fill.!l 1'tI.<Art 'YJllPllLtItt. .> S&rI. 'v. 
+t:k~r¡'5. N'I.I.('s ';'Hn:. rrnrt...z: &r:&'>Il'tI? VIlla! d<II 
+Ih~ h('lp' uwJ de::rl.~ ....... 10'11 le) du IWl1h CirNII 
+Wt..tf¡~.')(p>.1! ~~"tvtTI1O" (7', 
+,~~~ .O'i n!f3 1"'1 
+e~ ..n. ,I,~lrlh:;rw
+M<;t¡".,., .. ()~"jJ·~I~1 
+e!mtH"'I"¡rOO" O"{ 
+,....,h/¡ "09":n,,~ ."'. 
+~is.rl' • .t;,..,....,_~ 
+M<>rl r.... '" 0)'"J"1>;' l'l"!'l 
+"l rn=~¡ OH..~$-i (Ntr~""t:*tII)I't ~I!. --.
+ 5'''''"" I'Qn1Of\'o:"Y'"""" ""­
+~ O'IeM.w for English 34, 1991 ~ 
+• 
+Figura 2. IN CUSTODY OY La visión general gráfica de la novela de Anita Dcsai, 1/1 CIIstod)', aparece arriba a la 
+ízquiecda, rodeando una imagen relacionad.! con la novda con un abanico de encabezamientos que incluyen: «Relacio­
+nes literarias,,", «El Callon"., «Contexto culrural: India», "Poscolonialismo» y «Anira Desai». En la parte inferior de la 
+visión general const>l.I1 encabezamientos que remiten a documentos sobre técniclls literarias como trama, e$tilo, am. 
+bientación, temas, géneros y modos, narración y pW1tos de vista, etc. A la derecha de la pantalla, el usuario ha situado 
+el directorio Web VICW generado p<>r el sistema, que indica el recorrido redente de! lector yel nombre y tipo de los do­
+cumentos conectados con el docu.menw activo, en este caso, la visión general de la novela de Desai. Debajo, hay otra vi­
+sión general con un mapa del Imperío Británico, que sirve de directorio en un curso de la Universidad Brown sobre la 
+ficción poscolonialista actual. Entre estos dos documentos gráficos y el directorio Web View generado por el sistema, 
+se ve «Las aspiraciones de Sada,>, un típico documento de texto que cita un breve pasaje de la novela con preguntas que
+10 comparan con otras obras estudiadas en la asignatura. 
+, ~,-~,__ "::":"* ""';;"""":'""'-_ h--______ •. 
+,-~ 
+• 
+(:-l~t> .. ~\t"'·_¡_><""J¡(r:J>ldt,.."' 
+¡'<:~ ....1 ., ¡.-'l,J 15' -"'1 
+t;fi!fJ..ot¡ n¡ 
+ti,,,, ... ~" S 1"1 "'-11," 1-1 
+f'"bJv-..ftr> ,,1.1 "''1P_I¡'·",., 
+f 1'1.;.0:,;"'1 J P) f-., ,¡ ''''"01 
+I ... ",..::~,~, .• "" 'l~.""",,, ,~".~, -,,-f-{.·J:,~", ''''.,'.,." "'"". 
+~ ~. ~ &j,.•''''''''''''.' ~.J""'" ,,,,,., '",~'" ,W,.~", >,', 
+~C,,·~Wlf''''')ljf~.,1''-'''' -Gil.,,..... .f;.1~¡"'1 O;"·.I~:rr.t -tiI<l~... ~-"'.l 
+-WUt"-ll-. !n;,",~I' '·¡··I\1IlI.~'... . f.;.' !"'(;]"'''~ 
+,,] _.1".' ,,'
+U('l.fU!<'~}·=Lt-·IO, F~,.'k"rl,"<-.'.--'~..:" "I!Ii'~/rJ',,~ ..... 
+-fj}I.."-.r¡:,, r, ...... ~ ~t.", ... , I~'·,'~' ...' ..Qr,~.I ...¡ ..,n 
+--iJ(lI<.I.~1I ~ ""~"'" l&if"""","l.nJ ..t'4,~'..t' I~"?,.'r''' '~l.,.;{( 
+---~-- -_.-._.-- -_.. -_ ...­
+---------- -----,,----, -_,,, --------- "" 
+Figura J, «Las Relaciones Literarias de DkkcnsN, dos v",r~ioncs, AJ:ríb~ a la izquierda, se ve el aspecto original de 
+este upo de directorio visual; a la derecha, se ve la versi6n más aCIual de Paul D, Kahn. Más abajo, se ve el directorio 
+Web View, que indica al usuario que hay otros veilltidós documentos conectados al direCIorio de Relaciones Literarias 
+de Dickens, como por ejemplo: "Díckens }' Darwin», «Epifarua» y «Dickens, Carlyle y lo grotesco»; algunos docu­
+mentos son de estudiantes y ello aparece señalado por I~s iníciales del autor entre paréntesis después del nombre deldocumento. 
+-
+70 
+71 H1PERTEXTO 
+crhura de un sistema de lenguaíe verbal a otro que abarque infor­
+mación no verbal-información visual en forma de símbolos; de­
+mentas representativos o cualquier otra ínformadón, sonido ín­
+duido-- se ha enfrentado a una fuerte oposición, ya menudo la de 
+los sectores más inesperados y, en concreto, de los que ya emplean 
+el ordenador para escribir. Hasta los que abogan por el cimhío, 
+encuentran a veces la experiencia del cambio, y de su defensa, tan 
+agotadora en la etapa siguiente que se resisten, aunque ésta resul­
+te implícita en los cambios que ellos mismos han propugnado. 
+.Esta resistencia se manifie~ta de forma muy dara.el1~l comen 
+tario -mu·y "frecuente de que los escritores no deberían pre{)_cupar~- . 
+se por la compaginadón o la autoedición y que deberían--dejar 
+estas actividades al editor. Se nos dice que los ·escritores, acaaé­
+micos u otros, no diseñan bien; y aunque lo hicieran, prosigue la 
+argumentación, estas actividades son una pérdida de tiempo para 
+ellos, Esta recomendación, que recientemente se ha transformado 
+en mandato, debería inducirnos a preguntar por qué. ¿Y sí se nos 
+diíese: «Tome, un lápiz. Aunque tenga una goma en Ja punta, no 
+la utilice. Los escríwres de verdad no la utilizam>? Como mínimo, 
+deberíamos preguntarnos por qué se ha incluida esta capacidad 
+de hacer algo; y, si practicásemos con ella, nos daríamos cuenta de 
+que borra; y, dadas la curiosidad y perversidad humanas, que en 
+determinadas circunstancias pueden signífícar lo mismo, con 
+toda seguridad nos veríamos tentados a utilizarla. Así, ¡una capa­
+cidad se convertiría en un placer culpable! 
+Cualquiera con un poco de interés por el diseño que haya exa­
+minado, incluso por casualidad, los productos de las ediciones co­
+merciales o universitarial> habrá notado la gran cantidad de libros 
+pésima y dcfícientemente diseñados. A pesar de la labor ejemplar 
+de diseñadores como P. J. Conkwright y Richard Eckersley, mu­
+chas editoriales siguen produciendo libros feos de ver, con márge­
+nes estrechos, letras demasiado pequeñas o bastas para una distri­
+bución dada y níngún sentido estético de la página. Se suelen 
+invocar las limitaciones económícas como único determinante· de 
+la situación, aunque un buen diseño no tiene por qué producir un 
+producto final más costoso, sobre todo en la era de la compagina­
+ción por ordenador. En varios casos de 10s que tengo constancia, 
+los editores encargaron el diseño a princípiantes que confesaron 
+no tener ni fonnnción ni experiencia en disefío gráfico. Al haber RECONFIGURAR EL 'fRXTO 
+tenido la suerte de que mis libros pasaran por las manos de artis­
+tas de primer orden mucho más a menudo que por las de diseña­
+dores ineptos, no hago estas observaciones en tono de queja, sino 
+como una preparación a Ia averiguacÍón de por qué se les dice a los 
+escritores que no se tomen molestias por eJ aspecto VÍsual de sus 
+escrÍtos y de por qué aceptan tan dócilmente esta recomendadón. 
+En parte se debe a que este mandato implíca ohviamente 
+cuestiones"Cie cátegoria y poder; y, en concreto, jm pliCa' una in­
+terpretación específica -es decir, una construcción social- de 
+los conceptos de escritor y de escritura. Según estos conceptos, el 
+papel y la función del escritor se limitan a escribir. La escritura, a 
+su vez, se concibe exclusivamente como una manera de registrar 
+(o crear) ideas mediante el lenguaje. Superficialmente, este enfo­
+que parece bastante neutro y evidente, y elIo ya debería indkar­
+nos que se ha establecido hasta tal punto que ha lJegado a flbarcar 
+premisas culturales que bien se merecen un examen. 
+Este mandato de_~~Q¡º~~cribir», basado en la conc~p.dQl1pu_
+"ramente:-Y~~?fd:e.la~~!itu~aJ.J~pli~ª :Qh.'Yfameñfi..lo ..siguiente: 
+primero, que sólo la información v~tbal tien.e_YaJof, al menos para 
+el escdtor como escritor y para e11ector como leeror; 16 y, segundo, 
+que la información visual tiene menos valor. El manejo de estos ti­
+pos -de-Ínformación despreciados o· con merúJs: v~]or (eil1cli:iSü,' 
+¿se· merece -el ml;lteúal·vísmill la 'caJificad6n de «verdadera infor­
+mación»?), de algún modo rebaja la categqrja d~Les¡;~iJQr....y.1.o 
+hace menos escritor. El tema de la categoría vuelve a manífestar­
+se al conside~ar otro motivo de] mandato de «sólo escrihir», tam­
+bién unido a las nC?.c.~º!!~~_de gi.'Ú.s.I9!l deI!~ab-;jo,deprestigío- y de 
+posiaón. E~,Ke~~r.~lJ~e cree que los autores'TI- o-debeí'iarq)teocu­
+piifse"PEr t~ma~..que incu~beri ~1 Impresor. 'Atu1gúe turbado por 
+está exclusión, acepté esta arguméni:acion hasta enterarme de 
+que, hasta hace relativamente poco (digamos, los años 30), los es­
+critores solían aparecer por la imprenta de la Oxford University 
+Press,* mientras sus obras se estaban compaginando, y que se les 
+permitía dar opiniones y consejos, algo que ahora se nos dice que 
+no es aSunto nuestro, que está por debajo de nosotros, etc. El rpa~ 
+tivo más evidente para convencer a Jos escrírores de renunciar a 
+las capacidades que les proporcionan Sus herramientas de eseri­
+"~o Editorial universitaria de Oxfotd. T. 
+---:.~ -:;-._"-- ";"'":"-~- ~ ._~":.- '--"~, ~ ~;..,~~~--~:~ 
+, o., 
+-..!~~~ 
+rlWlr .. I>.n... 
+I'¡,.,.A .. ~ I"'!Á ¡" 
+t;.¡;k' ,~_,""";_'''''' 
+I"""_~ ~.n~¡, !f,r;?¡ 
+-~i1~~ h~= ~', Fl~,~~wlI' :~:.I:·,:~ ···,-J~~.'l(~"'T CH' r..,,; (1i 1.-¡r\",¡;vlt',
+~!Gll..,) ... a...\l'·~''''~ ~""~·L,I.'l .'~,.. I..... H',f1"9' r""'~_ 
+-t"k.},.,,·. _, ,-",,~_ ~:''''''''., ,."" ",o., ,< ."N"'" 
+-4i(''''~\oo:I'd1wlf. '1"'tt'>1I'1( t;iJ"P~I{V'~~. 
+~",¡,:t(f.I1'1:¡Q·/¡\'- ~r").."t- ~.!"",..",~.I, ti-r;¡l~f' I~~-
+r!L'l':IM>'" ¡:." .. ~, ~~· ......., .. !•• i.I'.. "n -{¡p, ""I..¡I YI" 
+-~""""'ti:& f",,~,~,. --f~h~,f' I .",,·.. I"JIU"'j, <;r~..,; '¡..1rIl-o¡','~-
+-~._.~ ~-- _ .._ .... _._____ -----"'-_,_o • 
+J71gUl'.t 3. «Las Relacione,; Litcrsrías de Dkken"", dos versiones_ I\"riba a In izqui;:rda, se ve el aspecto original de 
+este tipo de directorio visual; a la derecha, se ve la vel-sión más actual d" Paul D, Kahn. Más abajo, se ve el directorio 
+Web View, que indlca al usuario que hay otros veintidós documentos conectados al directorio de Relaciones Líterarias 
+de Dickens, como por ejemplo: «Dickens y Darwíw>, «Epifanía» y «Dickens, Cadyle y lo grotesco»; algunos docu­
+mentos son de estudiantes y ello aparece señalado por las inidales dd alltor entre paréntesis después Jel nombre del documento. 
+-
+HIPERTEXTO72 
+tura también abarca la ídea de que éstos no tienen la pt:ricia, ni los 
+conocimientos para producir un buen diseño. Pái-á'ap-oyar esta-­
+se esgrimen un sinfín de articulas repletos de ti­
+y tamaños de letra antiestéticos, escritos por estudiantes y l 
+~ , 	usuarios principiantes de Macintosh; y lo aceptamos demasiado 
+fácilmente sin más información. 
+E1 hecho de qut: los principiantes en cualquier campo de acti­
+vidad obtengan resultados de l'elatÍvamente pobre calidad nunca 
+puede jusúficar que abandonen dicha actívidad. Si así fuera, acon­
+sejaríamos del mismo modo a los estudiantes que abandonaran in­
+mediatamente sus esfuerzos en redaccÍón creativa y &scursíva, en 
+dibujo y filosofía, y en matemáúcas y química. Y sí no damos este 
+consejo es porque creemos que las facultades implicadas en estas 
+actividades son importantes, a diferencía, según parece, de las re­
+lacionadas con el aspecto visual. Por supuesto, también está el he-
+que la enseñanza tiene que ver con nuestro sustento y nues­
+tra categoría profesional. La cuestión que se plantea es, pues, ¿por 
+qué es menos importante la--infórmáción visual? El hecho iiiismo­
+de que muchos usuarios investigan con elementos gráfico-s de tex­
+i I to en sus ordenadores demuestra el placer evidente que obtienen '4' I 
+111 manejando efectos visuales. A su vez, este placer sugiere que, al 
+! ptobibir los recursos visuales al escritor, se le prohíbe también una 
+JI; fuente de placer al parecer inocente, algo de lo que uno debe pres­
+cindir si pretende ser un escritor de verdad o un lector decente. 
+La mayoría de nuestros prejuicios contra la ínclusión de in­
+formación visual proviene de la tecnología de la imprenta.Exa­
+minando la historia de la escritura, se ve en se-guida qué-tiene una 
+conexión con la información visual, por no hablar del origen 
+de muchos alfabetos en jeroglíficos ni de otras formas de escritu­
+ra originalmente gráficas. Los manuscritos medievales presentan 
+una especie de combinación hípertextual de tamaños de letra, 
+márgenes, ilustraciones y otros embellecimientos del texto, con la 
+caligrafía y otras adiciones pictóricas. 
+Texto disperso 
+Los nexos del hípertexto, el control por parte del lector y la 
+variabilidad no sólo militan contra los modos de argumentación Rl>CONFlGURAR EL TEXTO 	 TJ 
+que nos resultan familiares, sino que, además, tienen otros efectos 
+mucho más generales, uno de los cuales es añadir una especie de 
+aleatoriedad al texto del lector. Otro es que el escritor, como ve, 
+remos, pierde derto control básico sobre su texto y, más específi­
+los extremos v los límites. Un tercero es que el 
+o atomizar sus componentes (en lexias o 
+texto), y que estas unidades de lectura asumen una 
+más autónomas ya que dependen menos 
+sigue en sucesión líneal. 
+Comparado con el texto tal y como existe en la tecnología de 
+la imprenta, el hipertexto emplea diversas combinaciones de ato­
+mización y dispersión. A diferencia de la inalterabilidad espacial 
+del texto reproducido con la tecnología del libro, el texto electró­
+nico siempre presenta variantes, ya que ningún estado ni versión 
+es definitivo; siempre puede ser cambiado. Comparado con el 
+texto impreso, la forma electrónica parece relativamente dinámi­
+ca, ya que siempre permite la correccÍón, la actualízación y otras 
+modificaciones similares. Incluso sin los nexos, el texto electróni­
+co abandona la inalterabilidad característica del texto impreso, 
+ha tenido en la cultura occidental. Sin 
+no puede haber texto unitario. 
+añade un segundo tipo fundamental de va, 
+más el texto. Los nexos electróni" 
+cos permiten a los usuarios recorrer distintos trayectos de lectura 
+en un conjunto dado de Jexias o bloques de texto. Esta prestación 
+hipertexto, la que surge su característica esquiva de la line­
+alidad, tiene efectos obvios e importantes sobre la concepción de 
+la textualidad y de las estructuras retóricas. Al explicar su modo 
+de proceder en Sil, Barthes declara: «A partir de ahora "estrella­
+remos", el texto, separando, a la manera de un pequeño terremo­
+to, los bloques de significados de los que la lectura sólo percibe la 
+lisa superficie, imperceptiblemente soldada por el movimiento de 
+las el fluido discurso de la narración y la "naturalidad" del 
+lenguaje ordinario. El significante mayor será troceado en una se­
+de breves fragmentos contiguos) que llamaremos lexias, ya que 
+son unidades de lectura» (13). Por muy dramática y apasionada 
+que desde el punto de vista de la imprenta, la presenta­
+ción que Bartbes hace de su método en S12, describe con preci­
+sión la manera en que un intento de ir más allá de la imprenta 
+75 • 
+Hll'ERTEXTO 74 
+cía la hipertextualidad peeturba el texto y la de la lec­
+tura tal y como los conocemos. El texto o más exactamente los 
+pasajes de texto, que se sucedían los unos a otros en una pro­
+gresión líneal ininterrumpída, ahora se fracturan, se desploman, 
+asumen identidades más individuales. 
+mismo tiempo que la lexia bípertextual mantiene lazos 
+más sueltos, o menos determinantes, con las otras lexias de la 
+múma obra (para utilizar una terminología que ahora corre el 
+riesgo de quedar obsoleta), también se la puede asociar con tex­
+tos de otros escritores. De hecho, se asocia con cualquier texto 
+conectado con ella, y de este modo se disuelven las nociones de 
+separación intelectual entre textos, del mismo modo que algunos 
+productos químicos destruyen la membrana celular de un orga­
+nismo: la destrucción de la membrana destruye la célula, la mata. 
+En cambio, una destrucción análoga de las nociones, aún con­
+vencionales, de separación textual quizá pueda destruir ciertas 
+actitudes respecto al texto, pero no necesariamente destruirá el 
+texto. En todo caso, lo reconfigurará, así como nuestras I;;"-LJo;;\.I.U­
+tivas sobre él. 
+Otra consecuencia de 105 nexos electrónicos es UlWC.l:.¡m 
+«eh> texto en otros textos. A medida que las 
+van perdiendo su aislamiento físico e jntelectual con el 
+miento de nexos, el texto se dispersa en ellas. La con­
+textua1idad e intertextualidad, que surgen al situar unídades 
+lectura en una red de trayectos fácilmente navegables, entretejen 
+los textos, incluidos los de otros autores y los de medios no ver­
+bales. Un efecto de este proceso es que debilita, y tal vez 
+ye, cualquier sentido de unicidad textual. 
+Estas nociones no resultan novedosas para la teoría literaria 
+contemporánea, pero aquí, como en otros muchos casos, el hí­
+pertexto representa una encarnación incómodamente literal de 
+un principio que parecía especialmente abstracto y abstruso des­
+de el pumo de vista de la Ímprenta. Puesto que gran parte del 
+atractivo y del encanto de estas ideas teóricas radica en su dificul­
+tad o tal vez en su preciosidad, esta presentación más literal 
+mete trastornar a los teóricos, en parte, por supuesto, porque 
+trastorna la categoría y las relaciones de poder en su campo. 
+j 
+RECONFIGURAR EL TEXTO 
+Transliteración hipertextual de la cultura del escriba o el 
+manuscrito electrónico 
+El hipertexto fragmema, dispersa o atomiza el texto de dos 
+maneras afines. Primero, suprimiendo la linealidad de lo impreso, 
+libera los pasajes individuales de un único principio ordenador: la 
+secuencia, y amenaza con transformar el texto en un caos. Y, lue­
+go, destruye la noción de texto unitario y permanente. El consÍ­
+derar el texto «entero» en términos de sus componentes produce 
+la primera forma de fragmentación; el considerarlo en función de 
+sus diferentes lecturas y versiones produce la segunda. 
+La pérdida de la creenda en la textualidad unitaria podría 
+producir muchos cambios en la cultura occidental, y a menudo 
+con un coste elevado, si los juzgamos según nuestras actitudes ac­
+tuales basadas en la imprenta. No todos esos cambios resultarán 
+necesaríamente costosos o dañinos, sobre todo en el mundo aca­
+démico, donde este cambio conceptual nos permitiría corregir 
+algunas de las distorsiones producidas por la influencia de la cul­
+tura de la imprenta. Acostumbrados a las ediciones eruditas es­
+tándares de los textos canónicos, solemos pasar por alto el hecho 
+de que estas versiones impresas del siglo xx de obras original­
+mente creadas en una cultura del manuscríto son idealizaciones 
+extrañamente Heridas que producen una muy específica expe­
+riencia del texto. Para empezar, las versiones eruditas impresas de 
+Platón, Virgilio o san Agustín proporcionan un texto mucho más 
+fácil de manejar y descifrar que cualquiera que podían obtener los 
+coetáneos de dichos textos. Ellos se encontraban con textos tan 
+diferentes de los nuestros que la mera sugerencia de que pudiéra­
+mos compartir la misma experiencia de la lectura engaña. Los 
+lectores de la época de Platón, Vírgilio o san Agustín procesaban 
+textos sin espaciado entre palabras, ni mayúsculas ni puntuación. 
+Si hubiese leído estas frases mil quinientos años antes, habrían te­
+nído este aspecto: 
+ellosseeneontrabancontextostandíEerentesdelosnuestrosquelamerasu­
+gerencíadequepudíéramoscompanirlamismaexperíenciadelalecturaen­
+gañalosl eeto resdel aépocadepla tónvirgilioosanagustín p rocesabantex . 
+tossinespa cíadoen trepala brasnimayúsculasnipuntuaciónsihubieseJeído 
+estasfrasesmilquinien tosañosanteshabríantenídoesteaspecto. 
+.. 
+./ 
+'t; ~ , 
+" ':•• í 76 HIPERTEXTO RECONflGUH.AR EL TEXTO ,
+77 
+Estos flujos ininterrumpidos de caracteres alfabéticos reque­
+rían una gran habilidad incluso para dominarlos fonéticamente. 
+Ya que el descifrar estos textos favorecía la lectura en voz alta, 
+casi todos los lectores experimentaban los textos no sólo como 
+agotadoras sesiones de decodificación sino también como una es­
+pecie de actuación en público. 
+El hecho mismo de que este texto que hubiésemos leído hace 
+mil quinientos años existía en forma de manuscrito también im­
+plica que, para llegar a leerlo, habríamos tenido que tener acceso 
+a un objeto raro e incluso único ... siempre que hubiésemos sabi­
+do de su existencia y hecho un incómodo, caro ya menudo peli­
+groso viaje para verlo. Tras tener acceso al manuscrito, tendríamos 
+que habernos acercado a él de una forma muy diferente de nuestro 
+actual enfoque desenvuelto hacia e1líbro impreso. Con toda pro­
+babilidad, nos habríamos tomado este encuentro como una rara v 
+privilegiada oportunidad, y también nos habríamos acercado a l~ 
+experiencia de la lectura de este objeto único con un conjunto de 
+supuestos muy distintos de los del erudito moderno. Como Eliza­
+beth Eisenstein ha demostrado, la primera función del estudioso 
+en una cultura del manuscrito consistía simplemente en preservar 
+el texto, que corría un doble pelígro de degradarse con cada lec­
+tura: cada vez que se manejaba físicamente el frágil obíeto, su lon­
+gevidad disminuía, y, cada vez que se copiaba el manuscrito para 
+preservar y transmitir el texto, el escribiente inevitablemente in­
+troducía alguna desviación textual. 
+Así, incluso sin tomar en cuenta la presencia ajena y añadida 
+de la compaginación, los índices, las referencias,los titulas y otros 
+artilugios de la tecnología del libro, el encuentro y posterior lec­
+tura de un manuscrito suponía un conjunto de experiencias muy 
+distinto del que hoy en día damos por sentado. Igual de impor­
+tante resulta el hecho de que, mientras el significado mismo de las 
+ediciones eruditas se debe a su publicación en comparativamente 
+grandes cantidades, cada manuscrito de los textos de Platón, Vír­
+gilio y san Agustín existía como objeto único. No se sabe qué ver­
+sión particular de los textos de dichos autores manejaba el even­
+tual lector. El presentar la historia y una relación de textos 
+creados en una cultura del manuscrito en los términos texto 
+unitario propios de la erudición moderna novela y falsifica sus re· 
+laciones intertextuales. 
+:·1 
+~ Las ediciones eruditas modernas combinan tanto la unicidad 
+como la multiplícidad, pero de modos muy distintos. Una edición 
+moderna de Platón, Virgilio o san Agustín empieza presuponien­
+do la existencia de un texto úníco y unitario, pero ello se debe a su 
+capacidad para diseminar este texto en una gran cantidad de 
+ejemplar(:s idénticos. En cambio, cada manuscrito antiguo o me­
+dieval, que encarnaba sólo una de muchas variantes potenciales 
+~{un texto», existía como objeto único. Los ínvestigadores que 
+imentan determinar, no algún texto maestro probablemente míti­
+co y seguramente perdido hace mucho. sino la manera en que los 
+lectores individuales se encontraban con Platón, Virgilio o san 
+Agustín en ltna cultura del manuscrito, necesitan una nueva con­
+cepción de texto. De hecho, tenemos que renunciar al concepto 
+de texto unitario y sustÍruirlo por nociones de texto disperso. En 
+otras palabras, tenemos que hacer algo que han hecho algunos 
+historiadores de arte que trabajan en similares problemas medie­
+vales: tomar la nocÍón de tipo único encarnado en un objeto úni· 
+ca y sustituida por una noción de conjunto complejo de variantes. 
+Por ejemplo, al intentar determinar los antecedentes temáticos, 
+iconológicos y compositivos de las Madonnas de marfil de princi­
+pios del siglo XlV, Robert Suckale y otros especialistas en el estilo 
+cortesano han abandonado las derivaciones lineales y la noción de­
+típo unitario. En su lugar, insisten en que los escultores escogían 
+como punto de purtida un «plano maestro» entre varios conjuntos 
+de formas básicas. l
+] Parece necesario algún tipo de cambio en las 
+actitudes básicas hacia las creaciones de la cultura del manuscrito. 
+La capacidad del hipertexto para conectar todas las versiones 
+o variantes de un texto particular puede ofrecer un medio de res­
+tablecer el equilibrio entre la unicidad y la variabilidad de los tex­
+tos de antes de la imprenta. Por supuesto, incluso en presemaciones 
+hipertextuales, tanto las convenciones modernas de la imprenta 
+como el aparato académico seguirán íntentando recrear la cxpe­
+dencia de hallarse ante esos textos, y nada puede devolver la uni­
+cidad ni la consecuente aura del manuscrito único. Sin embargo, 
+d hipertexto brinda la posibilidad de presentar el texto como un 
+campo disperso de variantes y no como una entidad falsamente 
+unitaria. Las pantallas alta resolución y otros avances tecnoló­
+gicos deberían permitír algún día la presentación de todos los ma­
+nuscritos individuales. Una familiarizacíón con los sistemas de 
+78 79 .. 
+HIPERTEXTO 
+pertexto podría en sí cambiar lo bastante los supuestos acerca de 
+la textualidad como para liberar de algunos de sus prejuicios a los 
+investigadores de textos anteriores a la imprenta. 
+Argumentación, organización y retórica 
+La conexión electrónica, que otorga al lector un papel mucho 
+más activo de lo que es posible con el libro, presenta algunos efec­
+tos importantes. Considerados a la luz de una literatura vinculada 
+a la tecnología del libro, estos efectos parecen dañinos y peligro­
+sos, como de hecho deben ser para una hegemonia cultural basa­
+da, como la nuestra, en una tecnología diferente de la memoria 
+cultural. En concreto, la retórica lineal numeraria de «primero, 
+segundo y tercero», tan conveniente para la imprenta, seguirá 
+apareciendo dentro de los bloques de textos Índivíduales pero no 
+podrá ser utilizada para estructurar argumentos en un medio que 
+anima a recorrer caminos diferentes en vez de seguir uno líneal. 
+Este alejamiento de ]a linealidad puede parecer un cambio clave, 
+y ]0 es, pero conviene tener presente que no supone un abandono 
+de lo natural. 
+Tom McArthur nos recuerda: «La estructuración de los li­
+bros no tiene nada de "natural"; de hecho, es tremendamente an­
+tinatural y necesitó nada menos que 4.000 afios para producirse. 
+El gran logro de los escolásticos, sobre todo para las elites escri­
+banas del mundo, fue estilizar los temas, tramas yformas de los 
+bros en una forma realmente rigurosa, así como estructuraron 
+también los programas de estudio, las escrituras y el debate>~.18 
+Sus convenciones acerca de la estructura de los libros cambiaron 
+radicalmente con el advenimiento de la imprenta, que fomentó la 
+ordenación alfabétíca, procedímiento que nunca antes había cua­
+jado. ¿Por qué? 
+Una razón debe de ser que la gente ya se había acostumbrado, 
+a 10 largo de demasiados siglos, al material ordenado por temas. 
+Este material se parecía muchísimo a la organización «normal» 
+trabajo escrito ... La alfabetización también debía de resultar 
+ofensiva para la visión global escolástica de las cosas. Debió de pa­
+recer una ordenación perversa, íncoherentc y hasta desprovista de RRCONFTGURAllBL TEXTO 
+sentido a unos individuos interesados en nítidos marcos que con­
+tuvieran todo el saber. Ciertamente, la alfabetización plantea pro­
+blemas de fragmentación, no tan obvios cuando se trata de listas 
+de palabras pero graves cuando se trata de listas de temas (76-77). 
+Las saludables observaciones de McArthur, que nos recuerda 
+que siempre consideramos naturales las construcciones sociales 
+de nuestro mundo, también sugieren que, desde el punto de vista 
+de los escolásticos, el paso del manuscrito al libro impreso y Jue­
+go al hipertexto representa una fragmentación cada vez mayor. 
+Mientras el lector disponga de medios de ordenación, temáticos u 
+otros culturalmente coherentes, la fragmentación del documento 
+en hipertexto no implica la clase de entropía que una fragmenta­
+ción similar supondría en el mundo de la imprenta. Algunas de 
+sus prestaciones como búsqueda de texto, nexos automáticos, 
+agentes y potenciales filtros conceptuales, ofrecen la capacidad de 
+conservar las ventajas de la hipertextualidad mientras protege al 
+lector de los efectos negativos del abandono de la linealidad. 
+Principios y finales en el texto abierto 
+Los conceptos (y experiencias) de empezar y terminar implí­
+can linealidad. ¿Qué les sucede en un tipo de textualidad no regi­
+da principalmente por la linealidad? Si presuponemos que la hi­
+pertextualidad presenta secuencias múltiples en lugar de una 
+ausencia total de linealidad ysecuencia, entonces, una respuesta a 
+esta pregunta es que tiene múltiples principios y finales en Jugar 
+de uno solo. Basándonos en la obra de Edward W. Said sobre orí­
+genes y comienzos, el hipertexto ofrece al menos dos cIases dis­
+dntas de comienzos. La primera se refiere a la lexia individual, y 
+la segunda a un conjunto de éstas que fonnan un metatexto. Cada 
+vez que una reunión de materiales hípertextuales se erige por sí 
+sola, bien porque Ocupa todo un sistema bien porque existe, por 
+muy brevemente que sea, dentro de un marco, el lector tiene que 
+empezar a leer en algún punto, y, para él, este punto es un co­
+mienzo. Refiriéndose a lo impreso, Said dice que «el principio de 
+una obra es, prácticamente hablando, la entrada principal a lo 
+que ofrece».l9 Pero ¿qué ocurre cuando una obra presenta mu­
+81 • 
+~ 1:! I 
+HIl'Eln'EXTO 80 
+chas entradas «principales», de hecho, tantas como nexos haya 
+entre pasajes mediante los cuales se puede llegar a las lexías indi­
+viduales (que, desde nuestro punto de vista, se convierten en el 
+equivalente de una obra)? Said nos ayuda a responder al afirmar 
+que «se designa "un príncipio" para indicar, clarificar o definir 
+un momento, lugar o acto posteriores, En resumen, la designación 
+de un comienzo suele implicar también la designación de una in­
+tención consecutiva» (5), Por lo tanto, y en los términos de Said, 
+incluso un texto atomizado puede servir de comienzo siempre 
+que el lugar del nexo, o punto de partida, asuma la función de pri­
+mer eslabón de una cadena o de primer paso en un trayecto. Se­
+gún Said: «Vemos que el principio es el punto inicial (en el tiem­
+po, espacio o acción) de una consecución o proceso que tiene 
+duración y sentido. El comienzo, entonces, es el primer paso en la 
+pmducción intencional de signtficados» (5). 
+La definición casi hipertextual de Said sugiere que «en re­
+trospectiva, podemos ver el comienzo como el punto en que, en 
+tilla obra dada, el escritor se demarca de todas las otras obras; un 
+comienzo establece inmediatamente relaciones con obras ya exis­
+tentes, relaciones bien de continuidad bien de antagonismo, o 
+una mezcla de ambas~> (3), 
+Así como el hipertexto díficulta la determinación del princi­
+pio de un texto porque, por un lado, cambía nuestra concepción 
+de texto y, por otro, porque permite al lector empezar en muchos 
+ptrntos distintos, también cambia el significado de final. Los lec­
+tores no sólo pueden escoger varios puntos donde terminar, sino 
+que pueden además seguir ampliando el texto, extenderlo, dejar­
+lo más largo de como era cuando empezaron a leer. Como T ed 
+Nelson, uno de los iniciadores del hipertexto, dice: «No hay últi­
+ma palabl·a. No puede haber una última versión, un último pen­
+samiento. Siempre hay una nueva visión, una nueva idea, una 
+nueva interpretación, Y la literatura, que pretendemos informati­
+zar, es un sistema para preservar la continuidad frente a este he­
+cho,., Recuerde la analogía entre el texto yel agua. El agua fluye 
+libremente, el hielo, no, Los documentos que fluyen, los docu­
+mentos vivos en la red están siempre sometidos a uso y conexión 
+constantes, y estos nexos nuevos constantemente se vuelven inter­
+activos y accesibles. Cualquier ejemplar suelto que alguien con­
+serva está congelado, muerto, carece de acceso a nuevas conexio-R~:COt--;J:oIGliRAR EL TEXTO 
+nes» (Literar)' Machines, 2/61, 48), Aquí, como en otras muchas 
+ocasiones, la concepción de textualidad de Bakhtin anticipa el hi­
+pertexto, Caryl Emerson, su traductor y edítor, explica que «para 
+Bakhtín, "el todo" no es una entidad acabada; siempre es una re­
+lación", Así, el todo nunca puede acabarse y apartarse; cuando se 
+realiza un todo, es en virtud de una definición ya abierta al cam­
+bio» (Problems, XXXIX), 
+El hipertexto difumina los límites del metatexto, yno se le pue­
+den aplicar las nociones' convencionales de conclusión y de pro­
+ducto acabado; su novedad misma dificulta su definición y des­
+cripción con la antigua terminología, ya que se deriva de distintas 
+tecnologías de la enseñanza y de la información y conlleva implica­
+ciones ocultas inadecuadas para el hipertexto. Particularmente ina­
+plicables resultan las nociones afínes de conclusión y de producto 
+acabado, Como lo reconoce Derrida, una forma de textualidad que 
+va más allá de la imprenta «nos obliga a extender", la noción do­
+minante de "texto" para que «deje de ser una recopilación acabada 
+de escritos, un contenido encerrado en un libro o entre sus márge­
+nes y se vuelva una red diferencial, un tejido de huellas que eterna­
+mente se refieren a algo distinto, a o[ras huellas diferenciales»,20 
+La materia hipertextual, que por definición es abierta, expan­
+sible e incompleta, replantea estas nociones. Sí se pasa al formato 
+hipertextual una obra convencionalmente considerada completa, 
+por ejemplo, Ulises, ésta se vuelve en el acto «incompleta». Las 
+conexiones electrónicas, que enfatizan el establecimiento de ne­
+xos, expanden instantáneameme un texto al proporcionar gran­
+des cantidades de puntos de amarre donde atar otros textos, La 
+inalterabilidad y aislamiento fisico de la tecnología clellíbro, que 
+permiten la estandarización y una relativa facilidad de reproduc­
+ción, a la fuerza cierran estas posibilidades, El hipertexto las abre, 
+Los límites del texto abierto 
+El hipertexto redefine no sólo los comienzos y los finales del 
+texto, sino también sus limites, sus bordes, por así decir. El hi­
+pertexto nos brinda un medio de escapar de lo que Gérard Ce­
+nette llama «una especie de idolatría, no menos seria y hoy en día 
+incluso más peligrosa» que la idealización del autor, es decir «el 
+82 83 -
+HIPERTEXTO 
+fetichismo de la obra, concebida como objeto cerrado, completo 
+y absoluto».21 Al pasar del texto físico al virtual, de la imprenta al 
+hipertexto, los límites se desvanecen -el desvanecimiento que 
+tanto se esfuerza Derrida en conseguir en sus publicaciones im­
+presas-y no se puede seguir dependiendo de concepciones o su­
+puestos de dentro o fuera. Como ]0 explica Derrida, «mantener 
+fuera lo externo ... es el gesto inaugural de la "lógica" en sí, o del 
+"sentido" común, siempre que concuerde con la identidad de lo 
+que es: ser 10 que es, lo externo está fuera y lo interno, dentro. El 
+escribir debe volver a ser lo que nunca hubiese debzdo dejar de ser: 
+un accesorio, un accidente, un exceso» (Dissemination, 128). Sin 
+linealidad ni fronteras claras entre lo de dentro y lo de fuera, en­
+tre la ausencia y la presencia y entre uno y los demás, cambiará la 
+filosofía. Recurriendo a un texto de Platón como eíemplo, Derri­
+da, que trabaja en el mundo de la imprenta, afirma con prescien­
+cia «que la cadena textual que debemos colocar de nuevo en su si-
+ya no es simplemente interna al vocabulario de Platón. Pero al 
+ir más allá de las fronteras de ese vocabulario, no nos interesa tan­
+to romper ciertos límites, con motivos o sin como replante­
+ar el derecho de situar dichas fronteras. En una palabra, no cree­
+mos que exista, con rigor, un texto platónico, cerrado sobre sí 
+mismo, completo con un interior y un exterior» (130). 
+Derrida va más lejos aún y, con una afortunada mezcla de pa­
+ciencia y humor, explica que al descubrir que los textos no tienen, 
+en realidad, ní interior ni exterior, no se los reduce a una masa 
+amorfa: «No se trata de considerar que [el texto] hace aguas por 
+todas partes y puede hundirse caóticamente en la borrosa genera­
+lidad de su contenido, sino ser capaz de desenmarañar las fuer­
+zas de atracción ocultas que conectan una palabra presente en el 
+texto de Platón con otra, ausente de éste, siempre 
+nozca, rigurosa y prudentemente, las articulaciones» 
+Otro signo de la toma de conciencia, por parte de Derrida, de 
+las limitaciones y restricciones de las actítudes contemporáneas, 
+que surgen en asociación con el libro impreso, es su enfoque hi­
+pertextual de la textualidad y del signifícado; enfoque que sigue 
+dudando la existencia de «un principio fundamental o totali­
+zadof», puesto que reconoce que «el "exterior" clásico del 
+ma no puede asumir ya la forma de una especie de extratexto ca­
+paz de detener la concatenación de la escritura» RECONFIGURAR EL TEXTO 
+Así, el hipertexto crea un texto abierto, con límites abiertos, 
+un texto que no puede mantener fuera a otros textos yque, por lo 
+tanto, encarna el texto de Derrida en el que se difuminan «todos 
+los límites que forman el borde movedizo de lo que solía llamarse 
+texto, de lo que antes creíamos que el mundo podia identificar, es 
+decir, los supuestos comienzo y final de una obra, la unidad de 
+una recopilación, el título, los márgenes~ las firmas, el dominio 
+de las referencias fuera del marco, etc,». El hipertexto sufre lo 
+que Derrida describe como «un desbordamiento (débordement) que 
+borra todos esos límites y divisiones» (<<Living On», 83). 
+En los sistemas de hipertexto, los nexos dentro y fuera de 
+un texto -las conexiones intra yextratexruales entre elementos del 
+texto (imágenes incluidas)- se vuelven equivalentes, acercando 
+así los textos entre ellos y dífuminando sus límites. Consideremos 
+nexos hipertextuales en el caso de Mílton: sus diversas des­
+cripcíones de sí mismo como profeta o poeta inspirado en Paradi­
+se Los! y sus citas del Génesis 3:15 aportan ejemplos obvios. En 
+cambio, las relaciones extra e íntertextuales se ilustran con nexos 
+entre un pasaje particular en el que Milton menciona la profecía y 
+sus otros escritos, en versos o en prosa, que recalcan puntos simi­
+lares u oDviamente relevantes, así como textos bíblicos, comenta­
+rios de todas las épocas, declaraciones poéticas de otros autores 
+semejantes o contrarias y comentarios especializados. Del mismo 
+modo, las citas de MUtan del texto bíblico en que un hombre es 
+mordido por una serpiente cuando le aplastaba la con el 
+talón, conectan evidentemente con el pasaje bíblico y sus inter­
+pretaciones tradicionales y también con otras alusiones literarias 
+y comentarios especializados sobre todos estos temas. Los nexos 
+hipertextuales simplemente aceleran el proceso usual de estable· 
+cer relaciones y aportan un medio gráfico para estas transaccio­
+nes, si es que se puede utilizar la palabra «simplemente» para re­
+ferirse a un procedimiento tan radicalmente transformador. 
+La rapidez con que podemos movernos entre pasajes y pun­
+tos en unos coníuntos de textos cambia tanto nuestra manera de 
+leer como escribir, del mismo modo que la tremenda rapidez y 
+capacidad de cálculo de los grandes ordenadores -cambiaron va­
+rios campos científicos al permitir investigaciones que antes re­
+querían demasiado tiempo o riesgos, Uno de estos cambios pro­
+viene del hecho de que los nexos permiten alleetor moverse con 
+85 • 
+)-IIPERTE XTO 84 
+la misma facilidad entre puntos dentro y fuera de un texto. Una 
+vez que uno puede moverse con la m isma lacilidad entre, por 
+ejemplo, el principio de Paradise Losi y un pasaje e1el Libro 12, 
+miles dc líneas «más allá», y entre este principio y cierto texto 
+francés anterior o UD moderno comentario erudito, entonces, en 
+un sentido importante , la individualidad de los textos, que la cul­
+tura de la imprenta creó, cambia radicalmente y, tal vez, desapa­
+rece. Se poJría argumentar que, de hecho, roda lo que esta cone­
+xión hipertextual hace es encarnar la forma en que uno 
+experimenta de hecho el texto durante la lectura; pero, incluso 
+aSÍ, el acto de leer se ha acercado muchísimo, de algún modo, a 
+W1a encarnación electrónica del texto y por ello su naturaleza ha 
+empe%ado a cambiar. 
+Estas observaciones sobre hipertexto sugieren que los ordena­
+dores nos accrc¡m todavía más a una cultura en la que ciertos as­
+pectos tienen más en común con UDa cultura de tradición oral de lo 
+que incluso \'{/alrer]' Ong está dispuesto a admitir. En Orali/yaítd 
+Literacy afirma que los ordenadores nos han llevado a lo que llama 
+un «estadio oral secundario» que tiene «parecidos chocantes» con 
+el estadio oral primario, anterior a la escritura, «en su mística de la 
+participación, su cuidado del sentimiento comunal, su concentra­. , 1 . 1 d c, I 22Clon en e momento presente e mc uso su uso e rormu as». 
+No obstante, a pesar de que Ong descubre paralelismos inte­
+resantes entre una cultura del ordenador y otra puramente oral, 
+insiste equivocadamente en que: «El proceso secuencial y espacial 
+de la palabra, iniciado por la escritura y elevado a un nuevo orden de 
+intensidad por la imprenta, se ve aLIl1 más intensificado por el 
+ordenador, que lleva al. m~lximo el compromiso de la palabra con 
+el espacio y el movimiento local (electrónico) y optimiza la linea­
+lidad anaJitica, haciéndola virtualmente installtánea>~ (136). De 
+hecho, los sistemas de hipertexto , que ubican todos los textos en 
+una trama de relaciones, producen UD efecto n:1Uy distinto, ya que 
+permiten la lectura y el pensamiento no secuenciales. 
+Uno de los efectos principales de esta lectura no secuendal , el 
+debilitamiento de los límites del texco, puede concebirse o como la 
+corrección del aislamiento artificial de un texto respecto a todos 
+sus contextos o como la violación de una de las principales Olrac­
+terlstÍcas del libro. Según Ong, la escriturel y la impresión pmelu­
+cen el efecto de una declaración oral discreta e independiente: RECONFIGURAR EL TE.,XTO 
+Al aislar un pensamienro en una superficie escrita, indepen­
+dientement e de cualquier interlocutor , y al hacer la declaración 
+oral más autónoma e indiferente a cualquier ataque, la escritura 
+presenta el habla yel pensamiento como dcslJrenJidos de todo lo 
+demás, como algo independienrc, completo. La imprenta también 
+ubica el habla y el pcnsamien to en una superficie sep'lI'adél de 
+toJo lo demás, pero va más allá y sugiere la autosuficiencia (132). 
+Ya hemos observado la formú en que el hipertextO sugiere in­
+tegración en lugar de autosuficiencia. Otro posible resultado del 
+hipertexto tal vez pueda resultar desconcerrantc. Como Ong des­
+taca, los ljbros, a diferencia de sus autores, no pueden ser puestos 
+en entredicho. 
+El autor lJoJría ser puesto en entredichu si se pudiese llegar 
+hasta él, pero no se lo puede alcanzar en ningún libro. No hay for­
+ma directa de refutar un texto. Incluso después de una total y de­
+vastadora refutación, sigue diciendo exactalllente lo mismo que 
+antes. Ésta es una de las razones por la cual la frase «lo dice elli­
+bro» equivale popularmente a «es cicl'tm>. Es también una razón 
+por la cual ha habido quemas de libros. Un texto que ,1{irme algo 
+que todo el mundo sabe que es falso seguid proclaDl~nd o la fal· 
+sedad mientras exista (79) . 
+De todos modos, surge la cuestión siguiente: puesto que e! 
+hipertexto sitúa el texto en un campo de otros t:cxtos, ¿podrá una 
+obra individual cualquiera, a la que otra se haya referido, seguir 
+hablando con la misma fuerza? Podernos imaginarnos presenta­
+ciones hipertextuales de libros (o equivalentes) en las que el lec­
+tor podrá disponer ele todas las críticas y comentarios sobre la 
+obra, que entonces pasará a existir como parte de Wl complejo 
+diálogo en vez de ser la encarnac ión de una voz que habla conti­
+nuamente. El hipertexto, al conectar un bloque de texto con mi­
+ríadas de otros bloques, deslruye el aislamiento físico del texto, 
+así como las actitudes que suscita. Al permitir tanto las aDotacio­
+nes a un lexto individual como su conexión con otros textos, po­
+siblemente contradic torios, destruye una de las características 
+m.ás básicas de! texto impreso: su separación y su unicidad de voz. 
+Siempre que se ubica un texto dentro de una red de textos, se lo 
+obliga a existir como parte de un complejo diálogo. Los nexos del 
+86 87 -
+HIPERTEXTO 
+hipertexto, que tienden a afectar las funciones de autor y de lec­
+tor, también modifican los límites del texto 
+Los nexos electrónicos cambian radicalmente la experiencia 
+texto al cambiar su relación espacial y con otros tex­
+tos. Leyendo una versión hipertextual Expectations 
+(Grandes esperanzas), de Dickens, o de Wasteland (La tierra baldía) 
+de Eliot, por ejemplo, uno puede seguir nexos hasta textos prece­
+dentes, lecturas alternativas, críticas, etc. Seguir un nexo electróni­
+co hasta una ímagen, digamos, de un desierto o de un yermo en un 
+poema de Tennyson, Browning o Swinbume no toma más tiempo 
+que seguir un nexo entre un pasaje al principio poema y otro al 
+fina1. Por lo tanto, el lector percibe los textos del Wasteland 
+yel pasaje en la obra como equidistantes del inicial. Por 
+el hipertexto difumIna la distinción entre 10 que «dentro» y lo 
+está «fuera» de un texto. También hace todos los textos 
+conectados con un bloque de texto colaboren con dicho texto. 
+La categoría del texto, la categoría en el texto 
+Alvín Kernan afirma que la «teoría general Benjamin, se­
+gún la cual las numerosas reproducciones desmitificaron el arte 
+en sí, explica precisamente 10 que pasó en el siglo XVIII, cuando la 
+imprenta, con su lógica de multiplicidad, despojó su aura a los 
+clásicos del antiguo orden literario» (Printing Technology, 152); 
+es muy probable que el hipertexto extenderá aún más el proceso 
+de desmitificación. Kernan defiende de forma convincente que en 
+los tiempos de Pope «una inundación de libros, tanto en su ver­
+tiente de obras diferentes como de múltiples ejemplares de un 
+mismo texto, amenazó con oscurecer los pocos clásicos, tanto an­
+tiguos como modernos, idealizados en las letras culta!', y con de­
+bilitar su aura con la edición de ejemplares impresos de aquéllos» 
+(153). Cualquier medio de información que fomente la rápida di­
+seminación de los textos y un fácil acceso a ellos desmitificará 
+cada vez más los textos individuales. Pero el 
+otro efecto potencial para la desmitificación: na<:lerwo 
+las fronteras del texto (ahora considerado como 
+se suprime parte de su independencia y unicidad. 
+Kernan añade además: «Como los libros impresos estaban en RECONFIGURAR EL TEXTO 
+su mayor parte en IdIomas vernáculos, vulgarizaron aún más las 
+letras ampliando su ámbito desde un puñado de textos venera­
+bles escritos en idiomas antiguos y sólo comprensibles para una 
+elite hasta un cuerpo de escritos contemporáneos en idioma local 
+que podían comprender todos los que sabían ]eet» (153-154). ¿Se 
+verán así profanadas las versiones electrónÍcas de la Biblia como 
+CD Word, que en esencÍa parecen democratizarla? Podría ocurrir 
+de dos maneras. Primero, al proporcionar a cualquier lector algu­
+nos procedimientos propíos de los investigadores, la BibHa elec­
+trónica podda desmitificar un texto que reviste un poder de talis­
+mán para una gran parte de su 
+En segundo lugar aunque más fundamental todavía, está el 
+hecho mismo de que esta Bíblia hipertextual, al fomentar la pre­
+sencia de múltiples versiones, socava potencialmente la fe en la 
+posibilidad de un texto único y unitario. Desde luego, el prece­
+dente victoriano de la pérdida de fe en la doctrina de la inspira­
+ción verbal de las escrituras sugerir que el hipertexto po­
+dría tener un efecto paralelo (Landow, Victoria n Types, 54-56). 
+En la Inglaterra victoriana, el abandono generalizado de la creen· 
+cía de que todas y cada una las palabras de la BíbJia, incluso en 
+su traducción inglesa, estaban divinamente inspiradas se debió a 
+una gran variedad de causas, incluyendo la influencia del criticis· 
+mo alemán, los enfoques racionales británicos independientes 
+como los del obispo Colenso, y los descubrimientos en geología, 
+filología y (más tarde) biología. Por ejemplo, el descubrimiento 
+de que los hebreos no tenían un idioma único, como hasta enton­
+ces presumían muchos creyentes, sobre todo evangélicos, debi1í­
+tó la fe en gran parte porque los creyentes tomaron conciencia de 
+una multiplícidad donde hasta entonces habían supuesto la unici­
+dad. El descubrimiento de múltiples manuscritos de las Escritu­
+ras tuvo muchos efectos paralelos. hipertexto, que enfatiza la 
+multipUcídad, podría provocar crísis parecidas en las creencias. 
+Aunque la principal motriz de la página impresa sea un 
+empuje líneal que cautiva al y lo obliga a seguir leyendo 
+corno si tuviese que leerlo todo, se han desarrollado formas espe· 
+cíalizadas de texto que utílízan códigos secundarías para presen­
+tar una ínformación difícil o imposible de incluir en un texto li­
+neal. Las notas, finales o a pie de página, que constituyen una de 
+las principales formas en que Jos libros crean un espacio adício· 
+• 
+HIPERTEXTO 88 
+'" nal, requieren algún tipo de código, como un número superíncli­
+" ce o entre paréntesis, para indicar al Ieetor que deje de leer 10 que 
+convencionalmente se denomina textD principal o cuerpo del tex­
+to, y que pase a leer un fragmento de texto añadido o 
+motivado por el pasaje del texto principal. 
+Tanto en la edición académica como en la prosa erudita, estas 
+divisiones del texto se rigen de acuerdo con jerarquías de calego­
+poder. La letra más pequeña, en la que aparecen las notas fi­
+ya pie de página, así como su ubicación fuera del centro de 
+atención normal del lector, dejan bien claro que estos escritos son 
+subsídiarios, dependientes, menos importantes. En la edíción aca­
+démica, estos y otros códigos tipográficos dejan bien claro que 
+los esfuerzos del investigador, por muy extensos y costosos que 
+hayan resultado, son obviamente menos importantes que los es­
+critos publicados, ya que éstos aparecen en el texto principal. 
+el discurso erudito y crítico que emplea la anotación, estas con­
+¡. venciones también establecen la importancia del argumento do­
+minante respecto a las fuentes del autor, sus partidarios y adver­
+e incluso la obra de ficción o poética objeto de la crítica. 
+hipertexto las anotaciones se experimentan de una 
+muy dístinta. En primer lugar, los nexos electrónicos destruyen 
+en el acto la oposición binaria simple entre texto y notas en la que 
+las relaciones de categoría propias del libro impreso. Al 
+un nexo, cllector puede encontrarse con otro pasaje del 
+mÍsmo texto o con otro al que alude. El nexo también puede con­
+ducir a otras obras del mismo autor o a una gama de críticas, va­
+riantes textuales, etc. La asignación al texto ya las notas de lo que 
+Tom Wolfe llama clistintos «niveles de categoría» (statuspheres) 
+se vuelve muy difícil, y estas jerarquías del texto tienden a desmo­
+ronarse rápidamente. 
+Los nexos hipertextuales colocan el texto actual en el centro 
+de un universo textual y, de este modo, crean un nuevo tipo de je­
+rarquía, en la que el poder del centro domina la infinÍta periferia. 
+Pero como en el hipertexto este centro es siempre pasajero, vir­
+, tua! y cambiante --o, dicho de otfO modo, aparece con la mera 
+lectura de un pasaje en particular- nunca tiraniza los otros as­
+pectos la red como ocurre con el texto impreso. 
+Perfectamente consciente de que las obligaciones políticas de 
+un texto hacen que el lector lea de un determinado modo, Bart-RECONFiGURAR EL TEXro t>9 
+hes también manipula las relaciones pOllticas del texto de una 
+manera muy interesante. Por ejemplo, el procedimiento comple­
+to o la construcción de SIZ sirve de comentario al problema de la 
+io.......quía y a las relaciones políticas entre las partes del texto eru­
+estándar. A modo de juego, Barthes crea su propia versión 
+un complejo sistema de notas a píe de página. Como Derrida en 
+G/as, crea una obra o metatexto que el lector acostumbrado a 
+líbros encuentra corrosÍvamente diferente o que considera, en 
+contadas ocasiones, como un comentario ingeniosamente pode­
+roso sobre la forma en que los libros operan, es decir, la forma en 
+que obligan alleeror a ver relaciones entre diferentes secciones y, 
+por lo tanto, a respaldar ciertas asociaciones de palabras dotadas 
+de poder y valor por aparecer en cierto formato y no en otro. 
+En otras palabras, Barthes habla de las notas a pie de 
+y SIZ resulta ser una crítica de las relaciones de poder entre 
+distintas partes del texto. En una nota final o a pie de página, re­
+cordémoslo, la porción de texto convencionalmente conocida 
+como texto principal revÍste, para el autor y el lector, un valor su-
+a cualquiera de sus partes complementarias que incluyen 
+notas, prefacio, dedicatorias, etc., }' que suelen adoptar la forma 
+dísposítivos diseñados para facilitar la recuperación de la in­
+formación. Estos dispositivos, que suelen derivarse directamente 
+de la tecnología de la imprenta, sólo pueden operar en textos fi­
+jos, repetibles y físicamente aislados. Presentan grandes ventajas y 
+permíten distintos modos de lectura: por ejemplo, no hace falta 
+saber de memoria dónde se encuent.ra un pasaje determinado 
+cuando se dispone de recursos como títulos de capitulo, índices 
+de contenidos y alfabéticos. Por lo tanto, el sistema de referen 
+muchísÍmo valor como medío de orientar al lector en su r~­
+corrido y de ayudarlo a recuperar Ínformacíón. 
+ello tiene costes que, como la mayoría de los que paga el 
+lector) se han convertido en parte de nuestra experíencia de la lec­
+tura hasta el punto que ya ni reparamos en eHos. Nos los enseña 
+Barthes. Como casi todos los teórícos de la crítica de finales del 
+siglo xx, sobresale viendo lo invisible, insuflándolo con esperan­
+ZaS de que el condensado iluminará las sombras de aquello en que 
+los demás, durante mucho tiempo, no repararon y que creyeron 
+que no existía. ¿Qué implica una nota a pie de página? ¿Y cóm.o 
+lo manipula o evita Barthes? Unida al aislamiento físico de cada 
+,. 
+RECONFIGURAR EL TEXTO 91 90 HIPERTEXTO 
+texto, la entre texto principal y nota a pie de página esta­
+la primaria del texto principal respecto a otros 
+textos, cuando una reflexión acerca del tema revela en el 
+acto que dicha de hecho, no puede existir. 
+Tómese un artículo erudito del tipo que nosotros, profesores, 
+todos escribimos. Deseamos escribír un artículo sobre algún as­
+pecto de la sección de Nausíca del Ulises de Joyce, un texto que 
+incluso según la más burda medición cuantitativa parece más im­
+portante, más poderoso que una nota nuestra que identifique el 
+origen de una expresión de Gerty McDowell en una revista feme­
+nina de la époc¡;¡. La novela de Joyce existe, y siempre existirá, en 
+más ejemplares que nuestro artículo y, por ello, alcanza un públi­
+co y una extensos ... aunque reconozco que éstas 
+son problemáticas basadas en ciertas ideologías; no obs­
+rna"nf"í,~ de nosotros, o así lo espeto, accede a ellas ya que 
+son según los cuales trabajamos. Al menos de forma 
+los desconstruccionistas orivilellian el texto,Ja 
+gran obra. 
+Sín embargo, una vez que se ha empezado a escribir el articu­
+lo, las convenciones la imprenta rápidamente cuestionan estos 
+supuestos ya que cualquier elemento del texto principal resulta 
+claramente más importante que cualquier elemento fuera de él. El 
+texto físicamente aislado y defjnido es muy discreto, ya que, como 
+Ong explaya, oculta obvias conexiones de agradecimientos y calí-
+Cuando se introduce a otros escritores en un texto, 
+aparecer como sombras atenuadas y a menudo distorsio­
+sí mismos, Ello en parte es necesario ya que, después de 
+todo, uno no reproducir en su artículo todo el texto o libro 
+otro autor. de esta atenuación proviene de una inexacti­
+tud, negligencia o descarada mala fe por parte del autor. De todos 
+modos, dicha atenuación forma parte del mensaje de la imprenta 
+y supone una implicacíón que no puede eludirse, o en todo caso, 
+no desde el advenimiento del hípertexto, el cual, al proporcionar 
+un modo alternativo de textualidad, pone al descubierto diferen­
+cias que ya dejan de ser inevitables o invisibles. 
+Al escribir para la imprenta, cuando indico el número de pá­
+gina un pasaje de Joyce que cito o menciono, e incluso si in­
+cluyo dicho pasaje en mi texto o en una nota, éste pasa a asumir 
+menos en mi artícul(}- una posícÍón subsidiaria y comparativamente inferíor respecto a mis palabras, que, al fin y 
+al cabo, aparecen en el llamado texto principal. ¿Qué pasaría si el 
+artículo se escribiese en hipertexto? Suponiendo que se esté tra­
+bajando en un entorno hípertextual completamente desarrollado, 
+se empezaría la novela de Joyce y abriendo, en un lado 
+de la pantalla del monitor, el o los pasajes en cuestión. A conti­
+nuación, se el comentario pero, llegado al punto en que 
+normalmente se se procedería de un modo total­
+mente distinto. un nexo electrónico entre el texto pro­
+pio y uno o más del texto de Joyce. Al mismo tiempo, se 
+podrían conectar pasajes del texto propio con otros aspectos de 
+ese mismo texto, con escritos de terceros o incluso con textos 
+propios anteriores. Han ocurrido varias 'cosas, cosas que no co­
+rresponden a 10 que esperábamos. En primer Jugar, los nexos en­
+tre los pasajes de Joyce y mi comentario hacen que se establezca 
+una relación muy distinta y mucho más tenue con el llamado tex­
+to original de la se daría en el mundo de los textos físicamen­
+te aislados. segundo lugar, tan pronto como uno ata más de un 
+bloque texto o lexía a un mismo amarre (o nodo, marca de 
+se cualquier posibilídad de jerarquía bipartita en­
+tre la nota y el texto principal. En el hipertexto, el texto principal 
+es aquel se leyendo en este momento. Se da, pues, una 
+doble revalorización: con la disolución de esta jerarquía, cual­
+guíer texto conectado una importancia que tal vez nun­
+ca hubiese alcanzado otro modo. 
+Según Bakhtin, el artículo erudito, que cita o contiene decla­
+raciones hechas por terceros, «a veces para refutar, otras para 
+confirmar o añadir» es un ejemplo de relación dialogística entre 
+discursos directamente significantes dentro de los límites de un 
+único contexto .., Ello no supone un choque entre dos autorida­
+des semánticas definitivas, sino uno objetivado (tramado) entre 
+dos posiciones representadas y totalmente subordinadas a la au­
+toridad superior y última del autor. En estas circunstancias, el 
+contexto de no se desmorona ni se debilita» (Pro­
+blems, 188). eludír las exigencias, la lógica, de la eru­
+dición impresa, el mismo Bakhtin adopta un enfoque de la cita­
+ción de otros autores más característicos del hipertexto o de la 
+tecnología posterior al libro que del libro impreso. De acuerdo 
+con Emerson, su editor y traductor, cuando Bakhtin cita a otros 
+-
+HlPERTEXTO 
+;;1 al ' 92 
+críticos, <do hace a conciencia, y deja que su voz se oiga plena­
+mente. Comprende que el marco siempre sigue en poder del que 
+lo elabora y que la posibilidad de citar a terceros conlleva un pri­
+vilegio ofensivo. ASÍ, las notas a pie de página de Bakhtin rara­
+mente sírven para limitar el debate desacreditando a otro, o bien 
+confiriéndole una autoridad exclusiva. Pueden identificar, ex­
+pandir o ilustrar, pero nunca atribuyen rango al cuerpo del texto, 
+y, así, su naturaleza es más próxima a la de un glosaría marginal 
+que no a la de una nota de una autoridad» (XXXVII). 
+Derrida también menciona las relaciones de categoría que re­
+corren y fragmentan los textos, pero, a diferencia de Barthes, se 
+dedica más a las oposiciones entre prefacio y texto principal y 
+otros textos. ReconocÍendo la categoría que corresponde a las di­
+ferentes partes de un texto, Derrida examina la manera en que 
+cada una de ellas se asocia con el poder °la categoría. Al discutír 
+la introducción de la Lógica de Hegel, por ejemplo, Derrida seña­
+la que «el prefacio debe distinguirse de la introducción. Según He­
+gel, no tienen ni la misma función ni la misma dígnidad (Dissemi­
+nation, 17\. La nueva, o verdadera, textualidad de Derrida (que 
+no he dejado de equiparar a la hipertextualidad) representa «una 
+tipología completamente nueva en la que se desvanecen los lími­
+tes del prefacio y del texto "principal"» (39). 
+, i 
+; El hipertexto y el descentrar; fundamentos filosóficos 
+1: Se tiende a pensar en el texto desde la posición de la lexia que 
+se considera. Acostumbrados a leer páginas impresas en papel, 
+'" tendemos a concebir el texto desde el punto de vista del lector 
+, ' que experimenta dicha página o pasaje, yesta parte del texto asu­
+1 me la posición central. Sin embargo, el hipertexto vuelve muy 
+problemático dicho supuesto de posición central. En cambio, el\' texto conectado, la nota, existe como el otro texto y lleva a una 
+i: 	 concepción (y vivencia) del texto como otro. 
+En hipertexto, la nota, comentario o apéndice puede ser I 
+:1
+'1 ' 	cualquier texto conectado y por ello la posición de cualquier le­
+xia en un hipertexto se parece a la del sabio en la época victoria­
+na. Como el sabio, digamos Carlyle, Thoreau o Ruskin, la lexia 
+está fuera, descentrada y, además, desafía. Dicho de OtrO modo, 
+',1:': 
+'1'¡Iil" "i~: : 
+r
+-.~ , 
+, ' , ' 
+!' : ¡u.:CONFlGVRAR EL TE)",O 	 9) 
+el hipertexto prospera en la marginalidad, como el saLio. Desde 
+esta marginalidad esencial, a la que acota' con un uso certero y 
+agresivo de los pronombres para enfrentar sus intereses y opi­
+niones con los del lector, define su posición discursiva o punto 
+de vista. 
+El hipertexto insiSTe en qtle lo marginal tiene mucho que ofre­
+cer y no sólo porque redefine el centro al no emregar la centrali­
+dad a ninguna lexía, que sólo la ocupa mientras está ¡¡ la vista del 
+lector. En hipertexto, el centro, asI como la belleza yla relevancia, 
+se encuentran en la mente del que contempla. Como los quince: 
+minutos de fama del hombre moderno de Andy \Xlarhol, en hi­
+pertexto el centro sólo existe como obíeto de evanescencia. Como 
+cabe esperar de un medio de comunicación que cambia Ullestréls 
+relaciones con la información, los pensamientos y nosotros mis­
+mos de una forma tan drástica, la evanescencia de este cenero (en 
+migración perpetua) es más una premisa que un motivo de queja 
+o de burla. Es simplemente la condición según la cual, o en ]a 
+cual, pensamos, comunicamos o registramos pensamientos y ex­
+presiones en el dominio hipertextual. 
+Esta disolución hipertextual de] centro, que hace que este 
+medio resulte en potencia tan democrático, también lo convierte 
+en un modelo de sociedad de conversaciones en la que ninguna 
+conversación, ninguna disciplina o doctrina domine o fundamen­
+te las otras. Es un ejemplo de lo que Richard ROl"ty denomina «fi­
+losofía edificante», cuyo objeto consiste en «mantener la conver­
+sación en movimiento en lugar de buscar una verdad objetiva». 
+Es una forma de filosofía 
+q l1e sólo cobra sentiJo cuando protesta contra los intC:l1to~ para 
+terminal' la conversación con proposiciones de alcance universal, 
+recurriendo a la hipóstasis de un privilegiado conjunto de dc~­
+cripciones. El peligro que pretende prevenir el discurso edifican­
+te es que ulla termínL)logía dada, una partícular forma de verse <1. 
+sí mÍsmo lleve a pensar erróneamente que, a partir de entonces, 
+cualquier discurso puede o debe ~er normal. El estancami(:'nto re­
+sultante de la cultura supondría, para los fiJósofos edificantes, la 
+deshumanización de los seres humanos (Phitosophy, 377). 
+El hipertexto, que tiene incorporado un prejuicio contra la 
+hipóstasis y probablemente tambíén contra las descripciones pri­
+94 -
+HIPERTEXTO 
+vilegiadas. encarna el enfoque filosófico que preconiza Rorty. Las 
+experiencias básicas de texto, de información y de control, que 
+desplazan los límites del poder del autor hacia el lector, elaboran 
+estos modelos sumamente posmodernos y antijerárquicos de in­
+formación, texto, filosofía y sociedad. 3. Reconfigurar al autor 
+Erosión de la personalidad 
+El hipertexto, como la teoría crítica contemporánea, reconfigu­
+ra -reescribe- al autor de varias maneras evidentes. Primero, la 
+figura del escritor en hipertexto se acerca a la del lector, aunque no 
+se funda completamente con ella; las funciones del escritor y del 
+lector se entrelazan más estrechamente que en cualquier otro mo­
+mento. Esta transformación y casí fusión de los papeles es el último 
+paso de la convergencia entre dos actividades antes muy díferencia­
+das. Aunque hoy en día se presuma que todos los que saben leer 
+también saben escribir, no siempre ha sido el caso, y los historiado· 
+res la lectura señalan que durante varios milenios mucha gente 
+que sabía leer no podía siqwera escribir su nombre. Hoy en día, 
+cuando consideramos la lectura y la escritura, seguramente las con­
+cebimos como procesos en serie o procedimientos realizados de 
+forma intermitente por una misma persona: primero se lee, luego se 
+escribe y se vuelve a leer. El hipertexto, que crea un lector activo y 
+hasta entrometido, contribuye a la consumación de esta convergen-
+entre ambas actividades; pero, al hacerlo, invade las prerrogati­
+vas del escritor, qwtándole algunas para otorgárselas al lector. 
+Una señal dara de esta transferencia de competencias se ma­
+nifiesta en las posibilidades. para el usuario, de escoger su propÍo 
+camino por el meta texto, de anotar textos escritos por otros y de 
+crear nexos entre documentos propios o ajenos. El hipertexto no 
+permite que se modifique un texto producido por un tercero aun­

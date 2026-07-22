@@ -1,0 +1,2378 @@
+EJERCICIOS  DE ESTILO
+Raymond Queneau
+Versión y estudio introductorio de Antonio Fernández Ferrer
+SEXTA EDICIÓN
+ÍNDICE
+Introducción
+ANEXO: Ejercicios de estilo posibles
+EJERCICIOS DE ESTILO
+Notaciones
+Por partida doble
+Lítotes
+Metafóricamente
+Retrógrado
+Sorpresas
+Sueño
+Pronosticaciones
+Sínquisis
+Arco iris
+Logo-rallye
+Vacilaciones
+Precisiones
+Punto de vista subjetivo
+Otro punto de vista subjetivo
+Relato
+Palabras compuestas
+Negatividades
+Animismo
+Anagramas
+Distinguo,
+Homeoteleutones
+Carta oficial
+Propaganda editorial
+Onomatopeyas
+Análisis lógico
+Insistencia
+Ignorancia
+Pretérito perfecto
+Presente
+Pretérito indefinido
+Imperfecto
+Alejandrinos
+PoliptótonesAféresis
+Apócopes
+Síncopas
+Yo ya
+Exclamaciones
+Entonces
+Ampuloso
+Vulgar
+Interrogatorio
+Comedia
+Apartes
+Parequesis
+Fantasmagórico
+Filosófico
+Apóstrofe
+Torpe
+Desenvuelto
+Parcial
+Soneto
+Olfativo
+Gustativo
+Táctil
+Visual
+Auditivo
+Telegráfico
+Oda
+Permutaciones por grupos 
+crecientes de letras
+Permutaciones por grupos 
+crecientes de palabras
+Helenismos
+Conjuntos
+Definiciones
+TankaVersos libres
+Translación
+Lipograma
+Anglicismos
+Próstesis
+Epéntesis
+Paragoges
+Partes de la oración
+Metátesis
+Por delante por detrás
+Nombres propios
+Pasota
+Ticon tila titi
+Antonímico
+Latín macarrónico
+Homofónico
+Galicismos
+Paraloss Englaysays
+Contre-petteries
+Botánico
+Médico
+Injurioso
+Gastronómico
+Zoológico
+Impotente
+Modern style
+Probabilista
+Retrato
+Geométrico
+Paleto
+Interjecciones
+Amanerado
+Inesperado
+ 
+Introducción
+Dedico mi parte en este libro a alguien que se 
+llama, aplicando un S+n, "Zuriñe» ...et à ceux qui 
+nourris de littérature et de musique sont morts de 
+faim.
+A. F. F.
+En el caso del libro que en e:¡te preciso momento comienzo a prologar... y que tú, 
+lector,  deberías  haber  empezado  no  antes  de  la  página  49 ...,  pero  me  temo  que, 
+siguiendo la costumbre, acabas de iniciar la lectura a part ir de esta misma introducción, lo 
+cual me lleva a interrumpirte con la primera nota a pie de página1.
+En el caso de esta obra, decía, cuyo verdadero prólogo comienza  ahora, no puede 
+afirmarse, como lo hace el comienzo del conocido relato evangé lico, que en el principio 
+fue el verbo (o, mejor, la palabra, que es traducción más ll evadera en castellano), pues en 
+el origen de Ejercicios de estilo fue la música. Así lo cuen ta el propio Queneau al iniciar la 
+introducción que escribió para la edición ilustrada por Carelm an y Massin:
+En una entrevista con Jacques Bens, Michel Leiris re cuerda que «en el transcurso de los años 
+treinta, estuvimos escuchando juntos (Michel Leiris  y yo) en la sala Pleyel un concierto en el que se 
+interpretaba el Arte de la Fuga . Me acuerdo que lo seguimos muy apasionadamente y q ue, al salir, nos 
+dijimos que sería muy interesante hacer algo de ese  tipo en el plano literario (considerando la obra d e 
+Bach, no desde el ángulo del contrapunto y fuga, si no como construcción de una obra por medio de 
+variaciones que proliferaran hasta el infinito en t orno a un tema bastante nimio)».
+En efecto, fue acordándome de Bach muy conscienteme nte como escribí Ejercicios de Estilo , y 
+muy en especial de esa sesión de la sala Pleyel; pe ro, ¿era, seguro, antes de la guerra? En cualquier 
+caso, fue en mayo del 42 cuando compuse los doce pr imeros (que, además, han quedado como los 
+doce primeros del libro); pensaba limitarme a eso y  titulé este modesto intento Dodecaedro , porque, 
+como es sabido, ese bello poliedro tiene doce caras . El director de una revista muy distinguida que 
+aparecía entonces en zona llamada libre y que me ha bía pedido un «texto», me devolvió el Dodecaedro 
+con aire consternado, incluso diría con tristeza, c omo si hubiese querido jugarle una mala pasada.
+Aquello no me impidió continuar; en agosto del 42, en noviembre del 42, en julio del 44, una 
+docena más se añadió a Dodecaedro . En febrero de 1945, La Terre n’est pas une vallée de larmes , 
+publicación surrealista y belga dirigida por Marcel Marien, publicó nueve de ellos con el título Ejercicios 
+de Estilo ; una nota decía: «El autor piensa, de este modo, " tratar el mismo asunto" —un incidente real, 
+por lo demás, y trivial— de un centenar de maneras diferentes. Seguramente esos cien capítulos 
+idénticos en cuanto al tema no dejarán de provocar,  leídos en hilera ( sic), algún efecto en el lector.» 
+Esta nota la había redactado yo, por supuesto.
+En el transcurso de 1945, escribí otros dieciocho q ue aparecieron en diciembre del mismo año en 
+Fontaine . En resumidas cuentas, en tres años, había redacta do menos de cincuenta; todo el resto fue 
+liquidado durante el verano de 1946 en Isle-sur-Sor gue. Me detuve en los noventa y nueve, juzgando 
+satisfactoria la cantidad; ni tanto ni tan calvo: e l ideal griego, vaya2.
+Como es sabido, James Joyce se propuso escribir una obra maestr a, la voluminosa 
+novela titulada Ulysses , ciñéndose a un solo día en la vida del protagonista, u n 6 de junio 
+de 1904, un día de Dublín como otro cualquiera. Quenea u parte de asunto aún más trivial 
+y ajeno a complejidades simbólicas. Con una anécdota nim ia, explícita ya en el primer 
+texto de la serie («Notations»), construye noventa y nueve variaci ones distintas. Como un 
+huevo de Colón literario, la ideíca nos sorprende gratamen te con ese don propio de las 
+ocurrencias que cualquiera puede tener, pero que nadie ha pensado.
+1 Te recomiendo encarecidamente que, si no lo has he cho ya, leas ahora por lo menos noventa y ocho 
+«ejercicios»; después, volviendo allí donde estabas  cuando esta nota te distrajo, puedes proseguir, si n más 
+tropiezos, la lectura del prólogo.
+2 R. Queneau, «Préface», Exercices de style; avec 45 exercices paralè!les de ssinés, peints et sculptés par 
+Carelman, et de 99 exercices de style typographique s de Massin , París, Gallimard, 1963, págs. 9-10.
+Aparte de la inspiración musical que provocó tan curiosa obra, Q ueneau contaba con 
+algún ejemplo clásico. Sin ir más lejos, en la literatu ra francesa decimonónica, la réplica 
+de Cyrano de Bergerac cuando, en el archifamoso drama de Edmo nd Rostand, contesta 
+airosamente al vizconde que se ha burlado, de manera excesiv amente pedestre, de la 
+«muy gran nariz» del protagonista:
+Eso es muy corto, joven; yo os abono
+que podíais variar bastante el tono.
+Por ejemplo: Agresivo : «Si en mi cara
+tuviese tal nariz, me la amputara.»
+Amistoso : «¿Se baña en vuestro vaso
+al beber, o un embudo usáis al caso?»
+Descriptivo : «¿Es un cabo? ¿Una escollera?
+Mas ¿qué digo? ¡Si es una cordillera!»
+Curioso : «¿De qué os sirve ese accesorio?
+¿De alacena, de caja o de escritorio?»
+Burlón : «¿Tanto a los pájaros amáis,
+que en el rostro una alcándara les dais?»
+Brutal: «¿Podéis fumar sin que el vecino
+—¡Fuego en la chimenea!— grite?»
+Fino: «Para colgar las capas y sombreros
+esa percha muy útil ha de seros.»
+Solícito : «Compradle una sombrilla:
+el sol ardiente su color mancilla.»
+Previsor : «Tal nariz es un exceso:
+buscad a la cabeza contrapeso.»
+Dramático : «Evitad riñas y enojo:
+si os llegara a sangrar, diera un Mar Rojo.»
+Enfático : «¡Oh nariz!... ¿Qué vendaval
+te podría resfriar? Sólo el mistral.»
+Pedantesco : «Aristófanes no cita
+más que a un ser sólo que con vos compita
+en ostentar nariz de tanto vuelo:
+el Hipocampelephantocamelo.»
+Respetuoso : «Señor, bésoos la mano:
+digna es vuestra nariz de un soberano.»
+Ingenuo : «¿De qué hazaña o qué portento
+en memoria, se alzó este monumento?»
+Lisonjero : «Nariz como la vuestra
+es para un perfumista lista muestra.»
+Lírico : «¿Es una concha? ¿Sois tritón?»
+Rústico : «¿Eso es nariz o es un melón?»
+Militar : «Si a un castillo se acomete,
+aprontad la nariz: ¡terrible ariete!»
+Práctico : «¿La ponéis en lotería?
+¡El premio gordo esa nariz sería!»
+Y finalmente, a Píramo imitando:
+«¡Malhadada nariz, que, perturbando
+del rostro de tu dueño la armonía,
+te sonroja tu propia villanía!»3.
+De  entrada,  y  aun  en  la  lectura  menos  atenta,  Ejercicios  de  estilo  resulta 
+radicalmente distinto de una obra literaria convencional. Na da más absurdo que tratar de 
+encuadrarlo dentro de los géneros literarios tradicionales,  pues, como su mismo título 
+indica,  se  nos  presenta  como  una  especie  de  «pre»  o  «para-li teratura».  Recuerda 
+aquellos  libros  de  antaño  sobre  el  «arte  de  escribir»,  que  constituían  verdaderos 
+recetarios de estilística y, en este sentido, podemos conside rar la obra como una parodia 
+3 Edmundo Rostand, Cyrano de Bergerac, tragicomedia en cinco actos, en  verso , traducida por Luis Vía, José 
+O. Martí y Emilio Tintorer, Barcelona, Imprenta «La  Renaixensa», 1899, págs. 32-33. Los cuatro últimos  
+versos de la cita son una parodia del drama Pyrame et Thisbé  (1617), de Théophile de Viau.
+de los tratados sobre el tema. No es extraño, por lo ta nto, que se juegue con el carácter 
+técnico de la terminología al utilizar algunos de los t erminachos más especializados y 
+pintorescos de la jerga retórica clásica. Ejercicios de estilo  se sitúa, o finge situarse, en 
+una  especie  de  tierra  de  nadie,  entre  la  teoría  y  la  prácti ca  literarias,  dándonos  la 
+impresión de que ha sido confeccionado teniendo en cuenta los capítulos de un manual 
+de  estilística  o  como  ejercicios  análogos  a  los  progimnasmas4,  las  prácticas  de  la 
+enseñanza retórica clásica. Precisamente por ello, cobra una rele vancia especial el texto 
+titulado «Maladroit» («Torpe»), al tratarse de un ejercicio en  el que se ironiza sobre el 
+propio «arte de escribir».
+Sin embargo, pese a ser importante en el conjunto de la o bra, la utilización de 
+conceptos y procedimientos de la Retórica en el sentido más  restringido y escolar del 
+término (lítote, metáfora, poliptoton, sínquisis...) es sólo una parte. El autor muestra un 
+dominio  notable  de  la  disciplina,  incluso  cuando  la  entie nde  a  su  manera,  pero  al 
+considerar globalmente Ejercicios de estilo  hemos de entender Retórica o Estilística en su 
+mayor amplitud conceptual, abarcando todo género de práct icas y situaciones discursivas.
+Queneau  rechaza  cualquier  esquema  previo  que  pudiera  haber  presentado  los 
+«ejercicios» en agrupaciones temáticas, por su complejidad gra dual o, simplemente, por 
+orden alfabético. Ni tan siquiera trabaja sobre un mismo fra gmento base que genere las 
+distintas  transformaciones  «estilísticas»,  pues,  aunque  coloca  «Notations»  en  primer 
+término, ello no significa, de ninguna manera, que se to me este texto como modelo5.
+En ocasiones se prefiere el mero juego mecánico de transformació n textual para 
+lograr una sensación de puro disparate. Tenemos, al respecto, los simples tratamientos 
+automáticos de adjunción, supresión o permutación de letras,  morfemas o sintagmas sin 
+especial  trasfondo.  En  «Synchyses»,  sin  ir  más  lejos,  todo  el  texto  está  trastocado 
+mediante el batiburrillo sintáctico —en realidad, una inte nsificación de la clásica mixtura 
+verborum —, sin que interese, en modo alguno, conseguir una signif icación más allá del 
+«nonsense». Confrontemos este ejercicio concreto con el uso de la sínquisis que hace 
+Julio Cortázar en un texto en el que imagina a las gal linas dueñas del planeta:
+Por escrito gallina una
+Con lo que pasa es nosotras exaltante. Rápidamente del posesionadas mundo estamos hurra. 
+Era un inofensivo aparentemente cohete lanzado Caña veral americano Cabo por los desde. Razones 
+se desconocidas por órbita de la desvió, y probable mente algo al rozar invisible la tierra devolvió a.  
+Cresta nos calló en la paf, y mutación golpe entram os de. Rápidamente la multiplicar aprendiendo de 
+tabla estamos, dotadas muy literatura para la somos  de historia, química menos un poco, desastre 
+ahora hasta deportes no importa pero: de será galli nas cosmos el, carajo qué6.
+4 Sobre  estos  «ejercicios  preparatorios»  de  la  Retór ica  clásica  se  ha  conservado  el  tratado  de 
+Hermógenes (siglo II), véase la edición de Hugo Rab e en Hermogenis Opera , Leipzig, B. G. Teubner, 1913, 
+págs. 1-27. La obrita de Hermógenes fue traducida a l latín por el famoso gramático Prisciano (siglo VI ), 
+convirtiéndose en el texto escolar básico con el tí tulo de Praeexercitamina rhetorica  (véanse las ediciones de 
+H. Keil en el volumen III de Grammatici Latini , Leipzig, B. G. Teubner, 1860, págs. 430-440 y de K. Halm en 
+Rhetores Latini Minores , íd., 1863, págs 551-560).
+En cuanto a las estilísticas y «artes de escribir»,  en el año 1947, por citar la fecha en que aparece Exercices 
+de style , se publica el libro de Marcel Cressot, Le style et ses techniques. Précis d'analyse stylis tique , París, 
+Presses Universitaires de France, y la trigésimo se gunda edición (la primera es de 1927) del manual de  
+Antoine Albalat, L'art d'écrire enseigné en vingt lelçons , París, Armand Colin.
+5 En todo caso, como señala Gérard Genette, el texto  base sería «Récit» («Relato»): «... la versión tit ulada 
+«Récit» puede considerarse sin abusar demasiado, au nque el autor no la presente en modo alguno así ni sea 
+la primera por su fecha, como el estado más próximo  a un hipotético grado cero (exposición del tema) d e la 
+variación estilística» (G. Genette, Palimpsestes. La littérature au second degré , París, Editions du Seuil, 1982, 
+pág. 133). En este mismo estudio, Genette propone e l término de  transestilización  (transtylisation ) para 
+bautizar el procedimiento de variación estilística en el que se basa  Exercices de style , feliz amalgama, en 
+realidad,  de  parodia  temática  y  pastiche  estilístico,  las  dos  manifestaciones  más  evidentes  de  la 
+«hipertextualidad» o literatura en segundo grado.
+6 Julio Cortázar, La vuelta al día en ochenta mundos , tomo I, 20ª ed., Madrid, Siglo XXI, 1984, pág. 17 0.
+En el texto de Cortázar la sínquisis construye el sentido de l relato, mientras que el 
+ejercicio de Queneau se complace únicamente en el efecto de disparate que tiene el uso 
+del artificio por sí mismo, como mero juego perturbador de la comprensión del mensaje.
+Pero todo no se reduce, ni mucho menos, a estos juegos que pudiéramos considerar 
+como simples formalismos. Por el contrario, Ejercicios de estilo  ofrece un muestrario de 
+los diversos registros comunicativos («Lettre officielle», «Vul gaire», «Paysan»...) con una 
+ironía que no perdona nada: desde los vicios de dicción, m uletillas, errores, hasta los 
+lenguajes técnicos o especializados. Por supuesto, tampoco la propia literatura se iba a 
+librar  del  sarcasmo  y  llega  a  parodiarse  el  propio  afán  escribi dor  («Maladroit»).  A 
+Queneau  le  divierte  sobremanera  la  burla  del  lenguaje  cul to  pedante  («Ampoulé», 
+«Apostrophe», «Modern style», «Précieux»...) aunque, por lo de más, los recursos para la 
+elaboración de los diferentes «ejercicios» son de lo más di verso: a partir de un tema o 
+campo semántico («L'arc-en-ciel», «Visuel»...), de frases hecha s, conceptos gramaticales, 
+modalidades poemáticas, parodias idiomáticas, etc.
+Al cabo, contamos con un muestrario amplio y heterogéneo q ue desborda los límites 
+de cualquier manual al uso de preceptiva estilística. Y el  conjunto no se queda en el mero 
+juego  o exhibición  formalista,  pues,  por  el  contrario,  tras  una  lectura  deliciosamente 
+reiterativa  y  provocadora,  nos  queda  la  sensación  de  haber  asistido  a  una  visión 
+inquietante de la «comedia humana» comunicativa. Con perp leja desazón los lectores nos 
+hemos contemplado en un extraño espejo cóncavo que nos refl eja como un «collage» de 
+discursos,  como  un  entrecruzamiento  de  «ejercicios  de  estilo»  e ntre  cuya  algarabía 
+balbuceamos y gesticulamos los que a nosotros mismos nos venimos considerando, no 
+sin  paradoja,  ciudadanos  contemporáneos.  Pero  antes  de  segui r  comentando  otros 
+aspectos de  Ejercicios de estilo  conviene tratar, aunque sea brevemente, tanto de su 
+autor  como  de  las  tareas  del  «Oulipo»,  el  grupo  del  cu al  fue  promotor  y  miembro 
+destacado.
+QUENEAU
+Raymond Queneau (El Havre, 1903-París, 1976) se formó, despu és de estudiar 
+Filosofía, en el surrealismo, relacionándose más estrechamente con el grupo de la «rue 
+du Chateau» (Prévert, Tanguy, Duhamel). Tras ejercer de emp leado de banca, pasó a 
+trabajar en la editorial Gallimard, de la que fue su se cretario general a partir de 1936. 
+Entre otras iniciativas editoriales de importancia, fue creador y director de la Encyclopédie 
+de la Pléïade. Miembro electo de la Academia Goncourt, ofició , como era de esperar por 
+su talante y obra, de Sátrapa Trascendente en el Colegio de  Patafísica.
+La personalidad y actividades de Queneau se caracterizan por un ingenio proteico e 
+imaginativo  poco  común: promotor  de toda  clase  de empresas  culturales;  letrista  de 
+canciones famosas; actor, guionista y realizador cinematográfi co; traductor; dramaturgo; 
+pintor... sus aportaciones más notables fueron en el terren o de la matemática, la poesía y 
+la narrativa.
+Entre más de quince novelas, citaremos unas cuantas como mue stra. Ya en  Le 
+Chiendent  (1933), su primer libro, se hallan muchos de los temas y  maneras de su obra 
+posterior. Una estructura compleja y cuidadísima acoge, con la impronta inconfundible de 
+Faulkner o Joyce, meditaciones relacionadas con las filosof ías de Platón, Descartes o 
+Husserl.  Chéne et chien  (1937), subtitulada «novela en verso»,  es una autobiogr afía 
+rimada, modalidad ciertamente nada usual en la narrativa contemporánea. En Les enfants 
+du Limon  (1938), de estructura tan abrupta como su primera novela, Que neau incrusta 
+textos y datos biográficos de «locos literarios» —más tarde los llamará «heteróclitos»—. 
+En realidad, se trataba del fruto de sus investigaciones e ruditas destinadas a un proyecto 
+de  Enciclopedia de las ciencias inexactas  en el que había trabajado, desempolvando 
+estantes de la Biblioteca Nacional, para rescatar peregrinas lucubraciones de pensadores 
+franceses estrambóticos del siglo XIX sobre la cuadratura de l círculo, Cosmología, Física, 
+Filología, Historia o Mesianismo. Al no encontrar editor pa ra tan singular antología, decidió 
+convertirla  en  novela  incluyendo el  trabajo  como textos  recupera dos  por  uno  de los 
+personajes, Chambernac, director de un pequeño liceo provincia no.
+On est toujours trop bon avec les femmes  (1947), se publicó con el seudónimo de 
+Sally Mara —en curioso contraste con el llamativo título—, fingi endo tratarse de una 
+traducción  realizada  por  un  imaginario  Michel  Presle,  autor,  a simismo,  de  una  nota 
+introductoria. Queneau siguió jugando al apócrifo en un Journal intime  (1950), pretendida 
+autobiografía erótica de la misma escritora irlandesa.
+Pero el autor de Exercices de style  (1947) parece buscar, con cada nueva novela, un 
+tipo  de  lector  distinto,  en  el  extremo  opuesto  de  aquel los  narradores  que  parecen 
+desarrollar a lo largo de su producción una sola obra. Por el  contrario, cada aportación 
+novelística de Queneau constituye una propuesta singular. Le dimanche de la vie  (1952) 
+narra, esta vez de forma absolutamente lineal, la vida sen cilla de una pareja en la Francia 
+de entre guerras. Su protagonista, Valentin Bru, personaje de  un enigmático candor, es un 
+soldado raso que acepta los requerimientos matrimoniales d e la mercera Julia, monta una 
+modesta tienda de marcos y llega a ejercer de pitonisa en  sustitución de su mujer que, 
+también ocultamente, había venido realizando tan singula r actividad antes de sufrir un 
+ataque de parálisis.
+Zazie dans le métro  (1959) es, sin duda, la obra más popular de su autor, llevada al 
+cine  por  Louis  Malle  y  convertida  en  un  auténtico  éxito  d e  venta.  Con  la  maestría 
+lingüística que le caracteriza, Queneau relata las correrías pa risinas de una precoz niña 
+provinciana que lleva de cráneo a todo adulto que se encuen tra en el camino. En  Les 
+Fleurs bleues  (1965) Cidrolin, que vive en una gabarra, sueña ser el duq ue de Auge y 
+éste, a su vez, sueña que es Cidrolin. Ambos se reúnen a come r, sin que quede claro cuál 
+de los dos sueña que es el otro. El enigma nos recuerda  aquella maravillosa historia de 
+Chuang Tzu, rescatada por Herbert Allen Giles a finales de l siglo pasado y popularizada 
+por Borges: «Chuang Tzu soñó que era una mariposa y no sabía  al despertar si era un 
+hombre que había soñado ser una mariposa o una mariposa qu e ahora soñaba ser un 
+hombre.»  En  la  novela  de  Queneau  épocas  y  ficción  onírica  se  entretejen  en  una 
+habilísima trama donde no faltan, incluso, dos caballos parlantes. La última novela, Le vol 
+d'Icare  (1968), cuyo título juega con el doble sentido que tien e en francés la palabra vol 
+(«robo» y «vuelo»), desarrolla una especie de pirandellismo al revés: un novelista contrata 
+los servicios de un detective para recuperar los personajes que  han escapado de entre las 
+páginas de la obra que está escribiendo7.
+Como  queda  de  manifiesto  en  Ejercicios  de  estilo ,  la  producción  de  Queneau 
+destaca por la feliz unión de ingenio, diversidad, ampli tud de conocimientos y rigor. En ella 
+conviven,  inextricable  y  brillantemente,  lo  lúdico  y  lo  seri o,  resaltando  siempre  un 
+sorprendente dominio del lenguaje en todos sus registros y modalidades.
+«OULIPO» & L A «L IPO»
+En 1963, aprovechando una reedición ilustrada de  Exercices de style , Queneau 
+introduce  algunas  modificaciones  significativas.  Seis  nuevos  textos  («Ensembliste», 
+7 Traducciones castellanas de las novelas citadas: El problema , trad. de Floreal Mazía, Buenos Aires, Losada, 
+1972; Los hijos del viejo Limón , trad. de Emma P. de Zappetini, Buenos Aires, Losa da, 1970; Siempre somos 
+demasiado buenos con las mujeres , trad. de José Escué, Barcelona, Seix Barral, 1982;  La alegría de la vida , 
+trad. de Carlos Manzano, Madrid, Alfaguara, 1984; Zazie en el metro , versión de Domingo Pruna, Barcelona, 
+Plaza & Janés, 1961; íd., trad. de Fernando Sánchez Dragó, Madrid, Alfaguara-Bruguera, 1978; El rapto de 
+Icaro , trad. de Idea Vilariño, Buenos Aires, Losada, 197 3.
+«Définitionnel», «Tanka», «Translation», «Lipogramme» y «Géometrique») sustituyen a 
+otros tantos de la primera edición de 1947, aunque la irónica cifra total de noventa y 
+nueve,  permanece  intacta8.  Tres  de  los  cambios  corresponden  a  aportaciones 
+genuinamente oulipianas («Définitionnel», «Translation » y «Lipogramme»).
+El grupo  Oulipo9 (siglas de «Ouvroir de littérature potentielle», «Tal ler de literatura 
+potencial») fue fundado en 1960 por François Le Lionna is, matemático apasionado por la 
+literatura, y por el propio Queneau, devoto, a su vez, de la lucubración aritmética. Al grupo 
+inicial,  constituido  por  los  promotores  y  por  Jacques  Ben s,  Claude  Berge,  Jacques 
+Duchateau,  Jean  Lescure  y  Jean  Queval,  se  sumaron  posteriormente  nuevos  y 
+destacados miembros, como NoeI Arnaud, Georges Perec, Jacques Roubaud, Marcel 
+Duchamp o Italo Calvino.
+«Toda obra literaria —señala François Le Lionnais en la p rimera proclama oulipiana
+— se construye a partir de una inspiración (...) obligada a acomodarse, mejor o peor, a 
+una serie de coerciones y procedimientos contenidos unos den tro de otros como muñecas 
+rusas. Coerciones como el vocabulario y la gramática, como las reglas de la novela 
+(división en capítulos, etc.) o de la tragedia clásica (regla de las tres unidades), coerciones 
+de la versificación general, coerciones de las formas fijas ( como en el caso del rondel o 
+del soneto), etc.» Partiendo de este concepto de contrainte  («coerción»10), los miembros 
+del Oulipo se dedicarán principalmente a dos actividades: por una parte, a la búsqueda y 
+recuperación  de  precursores  (los  «plagiarios  por  anticipación»)  y,  por  otra,  al 
+descubrimiento y estudio de posibilidades inéditas. Entre  la amplia labor desarrollada en 
+este último sentido contamos, por ejemplo, con las obras lipogramáticas de Perec, las 
+rimas  heterosexuales  de  Arnaud,  las  novelas  isosintácticas  d e  Queval,  los  sonetos 
+irracionales  de  Bens,  métodos  diversos  de  transformación  automá tica  de  textos, 
+transposición al ámbito de la creación literaria de conceptos  de las distintas ramas de la 
+Matemática, investigaciones acerca de las posibilidades de l a Informática, etc.
+Pero, en realidad, tal y como dejaron muy claro sus miembros, el  Oulipo no es un 
+movimiento  literario  ni  una  escuela  teórica  o  crítica,  sino  una  especie  de  grupo  de 
+investigaciones de literatura experimental, cuyo propósito es  proporcionar formas literarias 
+susceptibles  de  promover  creaciones  novedosas.  «Llamamos  lite ratura  potencial  —
+precisa Queneau— a la búsqueda de formas, de estructuras —por emplear esta palabra 
+que es un poco docta—, de estructuras nuevas que además pue dan ser utilizadas por los 
+escritores de la forma que les plazca»11.
+8 Los seis «ejercicios» desaparecidos son: «Permutat ions par groupes de deux, trois, quatre et cinq let tres», 
+«Permutations par groupes de neuf, dix, onze et dou ze lettres», «Réactionnaire», «Haï Kaï», «Féminim>,  
+«Mathématique». Queneau cambió también los títulos de ocho textos: «Homéoptotes» («Homéotéleures»), 
+«Passé  simple»  («Prétérit»),  «Noble»  («Ampoulé»),  « Permutations  de  cinq,  six,  sept  et  huit  lettres» 
+(«Permurations  par  groupes  croissants  de  mots»),  «C ontre-vérité»  («Antonyrnique»),  «Latin  de  cuisine» 
+(«Macaronique») y «A peu pres» («Homophonique»). Vé ase Emmanuel Souchier, «Contribution a I'histoire 
+d'un texte: Exercices de style  ou: 99 histoires pour... une histoire», en Queneau aujourd'hui , París, Clancier-
+Guénaud, 1985, págs. 179-203.
+9 Sobre el Oulipo, pueden consultarse los siguientes  trabajos: Oulipo, La littérature potentielle (Créations, Re-
+créations, Récréations) , París, GalIimard, 1973; Oulipo, Atlas de littérature potentielle , París, Gallimard, 1981; 
+La bibliotheque Oulipienne , présenté par Jacques Roubaud, París, Slatkine, 1981  (se trata de los dieciséis 
+primeros  números  de  la  colección  de  publicaciones  d el  grupo);  Paul  Fournel,  Clefs  pour  la  littérature 
+potentielle , París, DenoeI, 1972; Jacques Bens, Oulipo, 1960-19 63, París, Christian Bourgois, 1980 (son las 
+actas de reuniones del grupo durante sus tres primeros a ños de vida); María Dolores Aguilera, «OU.LI.PO. La 
+máquina de la infinita literatura», Quimera , núm. 15, enero, 1982, págs. 8-11; Italo Calvino, «Perec, gnomo y 
+kabalista»,  Quimera , núm. 19, mayo, 1982, págs. 26-27; Eric Beaumatin,  «Petite initiation aux travaux de 
+I'Oulipo-Dossier-», Actes. Premières journées Pédagogiques , Madrid, Association de Professeurs de français 
+de Madrid, 1986, págs. 7-25.
+10 Traduzco contrainte  por «coerción», según la versión castellana que ap arece en A. J. Greimas & J. Courtés, 
+Semiótica. Diccionario razonado de la teoría del le nguaje , Madrid, Gredos, 1982, pág. 58. «Le grand artiste —
+decía André Gide— est celui a qui l'obstacle sert d e tremplin» («El gran artista es aquel a quien el ob stáculo le 
+sirve de trampolín»).
+11 R. Queneau, Entretiens avec Georges Charbonnier , París, Gallimard, 1972, pág. 140.
+Además de sus numerosas aportaciones al trabajo del grupo , la obra oulipiana más 
+destacada de Queneau es el libro Cent mille milliards de poemes  (1961), cuya gestación 
+tuvo que ver  con  la propia constitución del Oulipo.  Tras  un  esfuerzo  considerable y 
+haciendo  gala  de  paciencia  y  minuciosidad  orientales,  Quen eau  logró  construir  diez 
+sonetos, confeccionados de tal manera que el lector, combina ndo las tiras hábilmente 
+dispuestas en la encuadernación, puede llegar a componer, si logra sortear la muerte, el 
+deterioro previsible o demás inconvenientes, hasta cien billo nes de poemas diferentes 
+(1014), que proporcionan —según constata su autor— lectura «para 19 0.258.751 años 
+más algunas horas y minutos (sin tener en cuenta los años b isiestos y otros detalles)».
+Por  su  parte,  Ejercicios  de  estilo  supuso,  con  trece  años  de  anticipación,  un 
+verdadero muestrario precursor de las tareas oulipianas. No es de extrañar, por lo tanto, 
+que en la edición definitiva se interpolasen tres de los  procedimientos de manipulación 
+textual más practicados por el Oulipo: el lipograma, el S  + 7 y la literatura definicional.
+Literatura lipogramática
+El lipograma no es un invento oulipiano, aunque sí pod emos afirmar que el Oulipo ha 
+resucitado, popularizándolo, tan pintoresco y antiquísimo art ificio. Como poco, remonta su 
+tradición al siglo VI a. de c., cuando Laso de Hermione suprimi ó la sigma en su «Oda a los 
+centauros» y en un «Himno a Démeter», del cual sólo se ha conservado el primer verso. 
+Más tarde, Néstor de Laranda, ya en el siglo III de nue stra era, batió todo un récord al 
+reescribir la Ilíada, eliminando la (α del primer canto, l a β del segundo... y así hasta 
+acabar con las veinticinco letras del alfabeto y los correspo ndientes cantos de la epopeya 
+homérica.
+En castellano, contamos con un ilustre lipogramatista, Alonso  de Alcalá y Herrera, 
+que publicó, en un volumen en octavo, cinco novelas cortas de tema amoroso, en cada 
+una de las cuales se elimina una de las cinco vocales12. Aunque fue tanto el esfuerzo que 
+el artificio lipogramático requería que, unido a los retorici smos culteranos, consiguió textos 
+ciertamente extravagantes. Veamos, a título de ejemplo, lo s malabarismos expresivos en 
+los que se deleita al describir el rostro de la protagonista de «Los dos soles de Toledo»:
+ (...) pero en el hermoso rostro y frente tres mist eriosos vergeles o peregrinos pensiles vio de 
+flores entretejidos de rosicler y nieve, divididos con un sublime y lindísimo retrete de olor, en exce lente 
+proporción de relieve de nieve hecho, y de multitud  de flores de los colores mismos, con gentil primor  
+compuesto. Los perfectísimos y menudos dientes, ent re el diviso y odorífero rubí (divino y precioso 
+joyel) vistos, los juzgó hechos de lo mismo que en el cielo el sol y que, sentido Cupido de ver los de  
+Venus y los suyos inferiores, se cubrió y vendó de v ergonzoso los ojos por no verlos13.
+12 Varios / effetos / de amor / en cinco novelas / exemp lares. / Y nuevo artificio de es- / creuir prosas, y versos 
+sin vna de las / cinco letras vocales, excluyendo / V ocal differente en cada / Novela , Lisboa, Manuel da Sylva, 
+1641. Las cinco novelas son: «Los dos soles de Toledo,  sin la letra A», «La carroza con las damas, sin la letra 
+E», «La perla de Portugal, sin la letra I», «La per egrina ermitaña, sin la letra O» y «La serrana de Si ntra, sin la 
+letra U». «Los dos soles de Toledo» se ha publicado  incluida en Novelas amorosas de diversos ingenios del 
+siglo  XVII ,  ed.  de  Evangelina  Rodríguez  Cuadros,  Madrid,  Cast alia,  1986,  págs.  201-231.  Aunque, 
+curiosamente y para desmedro lipogramático del esfo rzado Alonso de Alcalá, en esta reciente edición se  
+desliza un «ánimo» (pág. 224) donde el texto origin al dice «logro» (fol. 23r).
+La Biblioteca Nacional también conserva otra obra e xcéntrica de Alonso de Alcalá: Iardim/Anagrammatico , 
+Lisboa, Na Officina Craesbekiana, 1654. Se trata de un conjunto de poemas anagramáticos en portugués, 
+castellano y latín, de tema hagiográfico. De tan pe regrino literato sólo he podido encontrar los datos  que 
+proporciona Domingo García Peres en su Catálogo razonado y bibliográfico de los autores po rtugueses que 
+escribieron en castellano , Madrid, Imprenta del Colegio Nacional de Sordo-mu dos y de Ciegos, 1890: «De 
+procedencia castellana. Nació en Lisboa a 12 de sep tiembre de 1599, y en la misma murió a 21 de noviemb re 
+de 1862. Se ignoran las circunstancias de su vida; fue hombre de estudio y agudo ingenio, de los que a busó 
+hasta la exageración y extravagancia, como lo prueb a en la primera de las tres obras que escribió» (pá g. 16).
+13 Ob. cit., fol. 5r.
+Ya  en  nuestra  época,  merecen  mención  especial  los  logros  li pogramáticos  de 
+Georges Perec. En La disparition  (1969) escribe una novela policíaca en la que, a lo largo  
+de más de trescientas páginas, consigue evitar la letra e, la más frecuente en francés. La 
+«desaparición» no es otra que la de esta vocal y para lograrlo  el autor recurre a una lógica 
+hilarante, amén de a acrobacias gramaticales (como la elimi nación de infinitivos), léxicas y 
+ortográficas.  Algún  crítico  despistado  reseñó  el  libro  tomándo lo  únicamente  por  una 
+novela policíaca estrambótica, sin advertir el recurso que le  daba sentido. Tres años 
+después, Perec extremaba aún más su artificio lipogramático con Les revenents , donde 
+sólo se emplea la e y desaparecen todas las vocales restante s. En este caso, como no 
+podía ser menos, son incesantes las manipulaciones ortográf icas sin que, empezando por 
+el propio título de la obra, puedan pasar inadvertidas h asta para el lector menos avisado.
+S + 7
+Uno  de  los  hallazgos  más  apreciados  por  los  oulipianos  es  el  método  de 
+transformación de textos denominado S + 7, descubierto por Jean Lescure y utilizado por 
+Queneau en el ejercicio de estilo titulado «Translation».  Precisamente, Gérard Genette ha 
+propuesto que se bautice más cristianamente a esta operación como «translación léxica». 
+Se  trata  de  un  procedimiento  sumamente  sencillo,  aunque  la borioso,  de  producción 
+textual.  Consiste  en  partir  de  un  texto  base,  literario  o  n o,  y,  con  la  ayuda  de  un 
+diccionario, reemplazar en él cada sustantivo (S) por el sé ptimo (+7) que se encuentre en 
+el diccionario elegido contando a partir del sustantivo. Lo s dos términos de la fórmula 
+pueden variar, de manera que S puede ser sustituido por V (verbo), A (adjetivo), Ad 
+(adverbio)... y en lugar de 7 podemos optar por otra cif ra cualquiera. S + 7 sólo es una 
+posibilidad entre muchas de la fórmula general P + n o P - n. Por supuesto, también se 
+pueden realizar en un mismo texto combinaciones múltiples  (S + A + V - 3, por ejemplo). 
+Pero conviene tomar alguna precaución:
+a)  cuando  el  sustantivo  cambia  de  género,  se  recomienda  ef ectuar  los  ajustes 
+gramaticales necesarios;
+b) si el texto contiene el último sustantivo del diccionari o. elegido, es obligatorio 
+retomar el diccionario desde el principio;
+c) si el sustantivo no se encuentra en el diccionario, se eli ge el primero que se 
+encuentre tras el lugar donde debería hallarse.
+La transformación  del texto ha de realizarse  con  absoluta hon estidad  y rigidez, 
+aplicando  el  método  escogido  de  forma  absolutamente  mecán ica,  sin  manipulación 
+ulterior. Una posible variación muy interesante consiste en camb iar el instrumento auxiliar. 
+Puede trabajarse  con los  diccionarios  más pintorescos,  léxicos  especializados  o,  por 
+ejemplo, buscar las palabras en un diccionario español-tag alo y realizar el S + 7 en la 
+parte tagalo-español. También podemos utilizar, en vez d e un diccionario, otro libro: la 
+Biblia , el Corán , El Capital , la Crítica de la razón pura , Camino , Los ciento veinte días de 
+Sodoma ..., en cuyo caso se selecciona el séptimo sustantivo del texto , después el 14, 
+luego el 21, el 28, el 35, el 42, el 49, etc. Por su parte, Italo Calvino realizó un S + 7 
+confeccionado ingeniosamente con un diccionario de personajes  y un repertorio clásico de 
+anécdotas.  Y Borges,  en  su célebre  «Pierre  Menard,  autor  del Qu ijote»,  practica un 
+insuperable S + n en el que n = 0. Como ejemplo ilustrativo, ofrezco un S  + 7 sobre un 
+texto archiconocido:
+En la prisa creó Dipsómano el cientopiés y las tijeret as. Pero las tijeretas eran confusión y vacío; 
+había tintorerías por encima de la ablución y el es plín de Dipsómano estaba planeando por encima de 
+los aguijones. Entonces dijo Dipsómano: «Que haya l abio» y hubo labio. Vio Dipsómano que el labio era 
+bueno y separó el labio de las tintorerías. Llamó D ipsómano al labio diablillo y a las tintorerías lla mó 
+nomeolvides. Atardeció y amaneció: diablillo primer o.
+Dijo entonces Dipsómano:  «Que haya un fisgón en med io de los aguijones y que él esté 
+separando los aguijones de los aguijones». Y fue as í. Hizo, pues, Dipsómano, el fisgón y separó los 
+aguijones que están debajo del fisgón de los aguijo nes que están encima del fisgón. Llamó Dipsómano 
+al fisgón cientopiés. Atardeció y amaneció: diablil lo segundo.
+Dijo entonces Dipsómano: «Que se amontonen los agui jones de debajo del cientopiés en una 
+sola  lujuria  y  que  aparezca  la  secta».  Y  fue  así.  L lamó  Dipsómano  a  la  secta  tijeretas  y  al 
+amontonamiento de los aguijones llamó marca.
+Vio Dipsómano que estaba bien. Dijo entonces Dipsóm ano: «Que las tijeretas broten higo, higo 
+que produzca simpatía y arcabuces frutales que den fu erza según su espectro con su sémola dentro de 
+sí, sobre las tijeretas». Y fue así14.
+Literatura definicional
+De  acuerdo  con  este  otro  procedimiento  oulipiano,  SI  sustit uye  en  un  texto 
+determinado  cada  palabra  significativa  (verbos,  sustantivos,  adj etivos,  adverbios  en 
+-mente) por su definición en el diccionario y se repite la  operación. De esta forma, una 
+frase de seis palabras puede originar un nuevo texto con ca si 180 palabras tan solo 
+después de tercer tratamiento. Veamos un ejemplo del prop io Queneau: la transformación 
+definicional del enunciado «El gato ha bebido la lech e»:
+El gato  HA BEBIDO la leche.
+* * *
+El mamífero carnívoro digitígrado doméstico  HA TRAGADO un líquido blanco, de sabor dulce 
+producido por las hembras de los mamíferos.
+* * *
+Quien tiene tetas, come carne, camina sobre la extr emidad de sus dedos y pertenece a la casa 
+HA HECHO DESCENDER POR El GAZNATE AL ESTÓMAGO un es tado de la materia sin forma 
+propia, del color de la leche, de impresión agradab le al órgano del gusto y procurado por los animales  
+del sexo femenino que tienen tetas.
+* * *
+Quien tiene órganos glandulosos propios para la sec reción de leche, que mastica y traga la carne 
+de los animales terrestres, de los pájaros y de los pece s, que cambia de sitio desplazando sus pies uno  
+tras otro sobre el extremo de las partes móviles en  que acaban las manos y los pies y que atañe a la 
+construcción destinada a la habitación humana  - HA HECHO IR DE ARRIBA HACIA ABAJO POR LA 
+PARTE  INFERIOR  DEL  CUELLO  A  LA  VÍSCERA  MEMBRANOSA  E N  LA  QUE  COMIENZA  LA 
+DIGESTIÓN  DE  LOS  ALIMENTOS  una  forma  de  ser  de  la  s ustancia  extensa  sin  pertenecerle 
+exclusivamente configuración exterior, de la impres ión que produce en el ojo la luz del líquido blanco , 
+de sabor dulce producido por las hembras de los mamí feros, de un efecto que gusta en la parte del ser 
+organizado  destinada  a  cumplir  la  fundición  de  disc ernir  los  sabores  y  obtenido  por  los  seres 
+organizados y dotados de movimiento y de sensibilid ad y cuyas diferencias físicas y constitutivas 
+pertenecen a las hembras que tienen órganos glandul osos destinados a la secreción de leche15.
+Logo-rallye
+14 El diccionario empleado para este S + 7 ha sido el  de Joseph G. Fucilla,  Concise Spanish Dictionary 
+Spanish-English  and  English-Spanish ,  Londres,  George  G.  Harrap  &  Co.,  1948.  El  texto  b ase  son, 
+obviamente, los once primeros versículos del Génesi s en la siguiente traducción: La Sagrada Escritura, texto y 
+comentario por profesores de la Compañía de Jesús , Antiguo Testamento, tomo 1, Madrid, Biblioteca de  
+Autores Cristianos, 1967, págs. 26-30.
+15 Oulipo, La littérature potentielle ..., págs. 119-120.
+Otro de los juegos quenaunianos que proporciona  Ejercicios de estil o es el «logo-
+rallye»: escribir un texto introduciendo en un orden preciso la s palabras de una lista 
+determinada de antemano.
+En realidad, el «logo-rallye» sólo tiene interés si las  palabras designan realidades 
+suficientemente alejadas entre sí para que no puedan ser  utilizados todos los términos 
+propuestos en una frase o dos nada más. En una variante de l juego puede extraerse la 
+lista de palabras a partir de una página ya escrita por un  autor: como ejemplo práctico, 
+propongo al lector que realice un «logo-rallye» con los sig uientes vocablos extraídos de 
+un texto de Elías Canetti16:
+CIERTA-PELDAÑOS -HOY-PAPA-DESEAR -INSECTOS .
+Otra variante consiste en el «logo-rallye» con suspense: algui en escribe las palabras 
+en papelitos que se escogen al azar, de uno en uno, ante s de comenzar cada frase. 
+Como  siempre,  habrá que luchar  por  conseguir  el  texto  más  coherente  e  ingenioso 
+posible.  En  suma,  el  «logo-rallye»,  como todos  los juego s  de este  tipo,  tiene  tantas 
+variantes  como  se  desee:  por  ejemplo,  también  pueden  extrae rse  las  palabras  del 
+ejercicio a partir de textos especiales, como léxicos o diccion arios.
+Contrepèterie
+Pero no todos los juegos que propone Queneau son de su co secha o del Oulipo, 
+pues  también  recoge  artificios  tradicionales  como,  por  eje mplo,  la  contrepéterie  o 
+contrepetterie  (de «contre»  y  «péter»:  «peer,  ventosear»,  en  el  sentido  de  emitir un 
+sonido). Consiste en un aparente lapsus de inversión de letra s o sílabas de un conjunto 
+de palabras por lo general ridículo o irreverente («Un sot p âle» en vez de «Un pot sale»; 
+«Un chapeau de roses» en lugar de «Un rapeau de choses»; «Le s épaules de Saint Pitre» 
+por «Les epîtres de Saint Paul»; aquel actor que declamó  «Trompez sonnettes» cuando 
+debía haber dicho «Sonnez, trompettes»...).
+La contrepèterie  (que en inglés recibe el nombre de «spoonerism» por el reve rendo 
+oxoniense W. A. Spooner, verdadero campeón de la trabucación), t iene una brillante e 
+ininterrumpida  tradición  en  francés.  Ya  en  Rabelais  ( Pantagruel ,  capítulo  XVI) 
+encontramos  una de las más clásicas  y felices:  «...  car  i l disoit  qu'il n'y avoit  qu'un 
+antistrophe entre femme folle à la messe et femme molle à la fesse» («... porque decía 
+que sólo había una antistrofa entre "mujer loca por la mi sa" y "mujer fofa de nalgas"»). 
+Hasta llegar al surrealismo, que no podía ser ajeno a ta les juegos de palabras y, así, 
+Prévert transforma la famosa frase «Partir, c'est mourir un peu» e n «Martyr, c'est pourrir 
+un peu».
+Pero si la nueva palabra no ofrece ninguna inteligibilida d, sólo se trata, en realidad, 
+de una pseudo- contrepèterie , un mero farfulleo o batiburrillo léxico. Por ejemplo, cua ndo 
+un personaje del  Ulises  exclama «Damn clever» (podríamos traducir «lndenadamente 
+congenioso», «Endemoniadagente intelimente», «Lerrible mente tisto», etc.) en lugar de 
+«Clamn dever» («Terriblemente ingenioso»)17. Con estas metátesis que simulan  lapsus 
+linguae  («la fourche m'a langué», paralela al castellano «que la  traba se me lengua»), el 
+juego se reduce a mecanismos puramente formales. En su ejerci cio de estilo titulado 
+«Contre-petteries»  Queneau  construye,  como  señala  Denise  Franço is18,  falsas 
+contrepèteries : «Un mour vers jidi, sur la fate-plorme autière...», lo cual, sin embargo, 
+hace que para la versión castellana sea más fácil la corresponden cia, porque el castellano 
+16 El texto de Canetti lo he colocado en la nota núme ro 34, última de este prólogo. Debe leerse sólo des pués 
+de haber realizado el «logorallye» con las palabras  propuestas.
+17 J. Joyce, Ulysses , 9." ed., Londres, The Bodley Head, 1968, pág. 174 .
+18 Denise François, «Le Contrepet», La Linguistique , núm. 2, 1966, págs. 31-32.
+no  se  presta  al  auténtico  «contrepet»,  aunque  sí  contamos  en  nuestro  folklore  con 
+ejemplos de pseudo-contrepèteries. Ya el maestro Gonzalo  Correas cita «Borracha está la 
+ladra, tres días ha que no perra»19 y Agustín Aguilar recogió una «copla trastocada» que 
+utiliza el mismo artificio:
+Ahora que los ladros perran,
+ahora que los cantos gallan,
+ahora que, albando la toca,
+las altas suenas campanan,
+y que los rebuznos burran,
+y que los gorjeos pájaran,
+y que los silbas serenan,
+y que los gruños marranan,
+y que la aurorada rosa,
+los extensos doras campa...20
+LA LITERATURA INCÓMODA
+Ejercicios de estilo  pertenece a una región sumamente peculiar del planeta l iterario 
+sin denominación  concreta.  Marcial  hablaba  en  uno de sus  epi gramas  de «literatura 
+intrincada»  y  de  «bagatelas  difíciles»  («nugae  difficiles» )21,  refiriéndose  a un  tipo  de 
+composiciones estrambóticas muy frecuentadas en su tiempo. E rnst Robert Curtius, al 
+citar algunos ejemplos, los incluye como artificios sistemát icos «manierismo formal»22. 
+Pero, en realidad, los escasos eruditos que se han interesad o por el tema han empleado 
+siempre expresiones inconcretas, como «filología recreativa», «pa satiempos filológicos», 
+«divertimientos  retóricos»,  «juegos  de  ingenio»,  etc.  Por  su  parte,  uno  de  los  raros 
+estudiosos del tema en nuestro país, que intentó reivindi car toda esta literatura excéntrica, 
+la llamó «esfuerzos del ingenio literario literario», aun que quizás el apelativo más acertado 
+sea el de «literatura extravagante»23, utilizado por Agustín Aguilar.
+En cualquier caso, dado que esta zona periférica del sistema  literario carece de 
+denominación precisa, a falta de otro apodo más ocurrente, hablaremos de «literatura de 
+la incomodidad». Si Matisse abogó por un arte «de tout rep os», análogo a un confortable 
+sillón, en el extremo opuesto tendríamos la literatura in cómoda en la que el escritor parte, 
+ya de entrada, de un reto a su ingenio y minuciosidad. Y aunque no hay empresa literaria 
+que no arranque la de «incomodidad», de la «coerción», en  el caso que nos ocupa se 
+extreman los elementos inconfortables. Como cualquier e tiqueta, también este concepto 
+de la incomodidad literaria vendría a ser un cajón de sastr e en el que podríamos incluir las 
+obras de talante más dispar: cabrían en él sonetos de Gón gora, aforismos de Gracián, 
+capítulos de  Rayuela ,  Tres tristes tigres  o  Larva , y, por supuesto, el  Ulysses  joyceano, 
+máximo  clásico  de  la  incomodidad  literaria  contemporánea.  Pero  conviene  ceñir  la 
+19 Gonzalo Correas, Vocabulario de refranes y frases proverbiales  (1627), ed. de Louis Combet, [Lyon], Institut 
+d'Études Ibériques et Ibéro-Américaines de l'Univers ité de Bordeaux, 1967, págs. 359-360.
+20 «La serenata», en Agustín Aguilar y Tejera, Las po esías más extravagantes de la lengua castellana...,  
+Madrid, V. H. Sanz Calleja, [s.a.], pág. 169. Cfr. con el poema que comienza «Tengo los tiesos tan dedo s que 
+hasta los tiemblos me piernan...» (José Giménez, Florilegio de literatura excéntrica , Valencia, Cosmos, [s.a.], 
+pág. 127). Por su parte, José María Iribarren recogi ó alguna de estas composiciones populares que denomina  
+«coplas trastocadas»; por ejemplo: «Asómate a la ve rgüenza, / cara de poca ventana, / y échame un poco de 
+sed, / que me estoy muriendo de agua.» (José María I ribarren,  El porqué de los dichos. Sentido, origen y 
+anécdota de los dichos, modismos y frases proverbia les de España con otras muchas curiosidades , Madrid, 
+Aguilar, 1955, pág. 278.)
+21 «Turpe est difficiles habere nugas / et stultus la bor est ineptiarum» (Marcial, Epigramas , libro n, 86, vv. 9-
+10): «Es ridículo dedicarse a bagatelas intrincadas  / y estúpido afanarse en fruslerías.»
+22 Ernst Robert Curtius,  Literatura europea y Edad Media latina , 2ª reimpresión, Madrid, Fondo de Cultura 
+Económica, 1976, cap. X 3, págs. 397 y sigs.
+23 León María Carbonero y Sol y Merás, Esfuerzos del ingenio literario , Madrid, Establecimiento tipográfico 
+Sucesores de Rivadeneyra, 1890.
+significación del adjetivo «incómodo» y aplicarlo solamente  a aquella literatura que se 
+propone,  de forma  que tiende a ser  exclusiva,  el  mero desafí o  retórico  o la pirueta 
+combinatoria como tal.
+La obra incómoda, en este sentido más estricto del término,  intensifica al máximo su 
+talante lúdico, lo cual significa, como es necesario en tod o juego, que éste se lleve a cabo 
+con absoluta seriedad. Por otra parte, tales obras se caracteri zan por una conciencia 
+explícita del móvil de la escritura, del propósito generador de la labor dificultosa. Mientras 
+que el resto de literatos acostumbra a ser ajeno a la plen a conciencia de sus propósitos, 
+el  autor  de una obra  incómoda,  al  igual  que quien  se  p ropone  realizar  un  ejercicio 
+deportivo o cirquense, puede llegar a reducir el motivo y el mérito de su trabajo a la mera 
+consecución de la dificultad propuesta previamente. Nos hall amos en el terreno de lo 
+lúdico y, lo mismo que en una proeza acrobática, lo importa nte es la superación airosa de 
+un obstáculo intrincado. Cuando Quevedo decide construir un poema amoroso en que 
+todas  las  palabras  comiencen  con  la  letra  a,  no  sólo  está  añadiendo  una  dificultad 
+suplementaria a las tradicionales coerciones del soneto (end ecasílabos, dos cuartetos, 
+dos tercetos, rima en consonante, esquema expositivo...), sino , ante todo, condicionando 
+la  realización  del  conjunto  a  la  superación  ingeniosa  de  l a  coacción  previamente 
+impuesta. Cualquiera de los otros sonetos quevedianos respo nde a una relación dialéctica 
+entre esquemas previos y soluciones particulares logradas, pero  en el caso del «soneto 
+incómodo» al que me refiero24, la consecución de la pirueta se convierte en la justificació n 
+fundamental del poema. La dificultad es un fin en sí mismo, no sólo un medio o un 
+recipiente para lograr una trascendencia simbólica o un mensaj e emotivo. Quevedo se ha 
+propuesto la escritura de un tautograma (así se les llama a l as composiciones en las que 
+todas las palabras comienzan por la misma letra), y no es  pertinente que le exijamos otro 
+tipo de cualidades transcendentales.
+La literatura incómoda no sólo rechaza la invisibilidad del  soporte expresivo, sino 
+que se caracteriza por el exhibicionismo de sus esquemas y pro pósitos. En la «Epístola 
+moral a Fabio» —por citar una obra que podría ser cifra d e la perfección expresiva clásica
+—  el  endecasílabo  o  los  tercetos  fluyen  como  respiración  de l  castellano  áureo.  En 
+Ejercicios de estilo , por el contrario, se exhiben, con impúdico retoricismo, los aspectos 
+más tecnicistas del arte literario. De la misma forma, la p royección del mundo íntimo y 
+personal del autor o del lector se reduce en la obra incómo da a su mínima expresión. 
+Inútil buscar esa ficción de espejo de papel que posee el resto de literatura. Se evita 
+intencionadamente  la capacidad  mítica del arte.  Tal vez  po r eso  mismo los mejores 
+exponentes de literatura inconfortable pueden cumplir, com o lo hace la obra de Queneau, 
+un papel desmitificador del propio hecho literario.
+Es cierto que, en su mayor parte, los escritores incómodos se afanan en labores 
+similares a las de quienes  entretienen sus ocios  esculpien do un belén en un piñón, 
+confeccionando  la  maqueta  de  una  catedral  con  mondadiente s  o  introduciendo  un 
+bergantín en una botella,  pero  Ejercicios de estilo  es literatura incómoda de notable 
+calidad, no mero pasatiempo. En realidad, constituye uno d e los hitos del género: parte de 
+un propósito radicalmente inconfortable —conseguir la acumula ción de variaciones sobre 
+un  asunto  insignificante—  y  logra  construir  una  brillante  a ntología  de  «coerciones», 
+clásicas y novedosas, desde el lipograma al texto definicio nal, pasando por el soneto y el 
+telegrama.
+Ejercicios de estilo  es un libro sin mítica posible o, mejor dicho, se sitúa en los 
+antípodas de esa mítica necesaria para que una obra cobre apa riencia de inmortalidad o 
+de trascendencia. Para ello se requieren personajes literario cap aces de sugestionar, 
+temas  patéticos  o  una  biografía  pintoresca  del  escritor.  Ejercicios  de  estilo  ignora 
+cualquiera de estos aspectos u otros similares: la historia no puede se más trivial, los 
+24 «Celebra a una dama poeta, llamada Antonia», en F.  de Quevedo, Obra poética , Edición de José Manuel 
+Blecua, tomo 1, Madrid, Castalia, 1969, pág. 512.
+personajes más planos y, para colmo, no encontramos con la  ausencia de «suspense» o 
+clímax, pues, por el contrario, uno de los efectos que p ersigue la obra es la comicidad 
+conseguida  a  través  de  la  acumulación.  Se  trata  de  un  invent ario  de  «coerciones» 
+retóricas. La habilidad del autor para superar el desafío nos sorprende una y otra vez (en 
+realidad, noventa y nueve veces, aunque podrían ser mil y una). No es ajeno todo esto a 
+ese talante desmitificador al que me acabo de referir y que, en mi opinión, es una de las 
+cualidades más señaladas del libro. Su desenfadada ausen cia de mítica propicia la ironía 
+y la socavación de los tópicos inveterados que podrían co mpendiarse en esas dicotomías 
+tradicionales entre fondo/forma, serio/cómico, escritura/litera tura, teoría literaria/práctica 
+de escritura, sentimiento/expresión, etc... En realidad, except o en los libros sagrados —
+como autobiografía de la divinidad que dicen ser— toda li teratura es, al cabo, ejercitación 
+estilística para la inacabable tarea de expresar lo inefab le. Aunque en última instancia, la 
+Biblia , el Corán , las obras que se pretenden inspiradas, también nos dem ostrarían que no 
+son  ajenas  a  los  placeres  del  estilo...  ¿acaso  no  constan  los  Evangelios  de  cuatro 
+ejercicios estilísticos sobre el mismo tema?
+JUEGO y PRÁCTICA DE ESCRITURA
+Otra  de  las  deleitables  paradojas  de  Ejercicios  de  estilo  es  su  carácter  de 
+«desliteratura». Por supuesto, como no podía ser de otro mod o, se trata de literatura 
+hecha y derecha, pero juega con la ficción de ser proyecto de literatura, ejercitación, 
+borrador, literatura haciéndose ante el lector. Nos hallamos  en pleno dominio de lo que 
+Johan Huizinga llamaba, en su clásico estudio, el homo ludens . Lo cual no deja de chocar 
+con las concepciones más tradicionales de la seriedad literari a. «Preocupada únicamente 
+—apostilla  Georges  Perec—  por  sus  grandes  mayúsculas  (la  Obra,  el  Estilo,  la 
+Inspiración, el Genio, la Creación, etc.), la historia litera ria parece ignorar deliberadamente 
+la escritura como práctica, como trabajo,  como juego25». Pero, de tiempo en tiempo, 
+surgen aportaciones que contradicen flagrantemente los preju icios establecidos y, en este 
+sentido, no cabe duda de que la obra de Raymond Queneau  pertenece a esa gloriosa 
+estirpe  de  desmitificadores  entre  cuyos  miembros  más  destacad os  hay  que  citar  a 
+François Rabelais, Laurence Sterne y Raymond Roussel. Tampo co hay que olvidar que, 
+en  cierta  forma,  las  obras  más  señaladas  de  la  literatura  moderna  suponen 
+cuestionamientos distintos sobre la propia esencia de lo li terario26.
+Por otra parte, como señala Emmanuël Souchier,  Ejercicios de estilo  es todo un 
+manifiesto,  aunque  no  se  anuncie  como  tal:  «El  descubrimi ento  es  simple,  pero 
+importante: no se trata de proclamar el papel de lo históri co o de político en la escritura; 
+se trata de hacer y de hacer hacer, de escribir y de hacer escri bir. En la pluralidad de las 
+fuentes de enunciación, el lector desempeña, al fin, a la vista a sabiendas de todos, el 
+papel que nunca debería haber dejado de desempeñar: se co nvierte en «écriverom» 
+(«escribidor»)27. De ahí la importancia que, en relación con este carácter d e manifiesto de 
+25 Georges Perec, «Histoire du lipogramme», en Oulipo , La littérature potentielle ..., pág. 79.
+26 «Partí de un incidente real y lo conté, primero doc e veces de forma diferente; luego, un año más tarde, volví 
+a hacer otras doce, y, finalmente, fueron noventa y  nueve. Se ha querido ver en ello una tentativa de 
+demolición de la literatura, lo cual no era en abso luto mi intención, en todo caso mi intención era só lo hacer 
+unos ejercicios; el resultado es quizás desoxidar l a literatura de sus diversas herrumbres, de sus cos tras. Si 
+hubiese contribuido un poco a eso, estaría orgullos o, sobre todo si lo he hecho sin aburrir demasiado al lector» 
+(«Conversation avec Georges Ribemont-Dessaignes» en  Raymond Queneau, Bâtons, chiffres, lettres , París, 
+Gallimard, 1965, págs. 43-44.)
+27 E. Souchier, «Contribution...», pág. 200. «Entiend o por literatura  —dijo en una memorable ocasión Roland 
+Barthes— no un cuerpo o un serie de obras, ni siqui era un sector de comercio o de enseñanza, sino la g rafía 
+compleja de  las  marcas  de  una  práctica,  la práctica  de  escribir. («Lección inaugural  de la cátedra de 
+semiología lingüística del Collège de France», en El placer del texto , 4. a ed., México, Siglo XXI, 1982, pág. 
+123).
+escritura, tiene el ejercicio titulado «Maladroit» («Torpe»), y  dentro de él la frase «c'est en 
+écrivant qu' on devient écriveron» (parodia de la sentencia «c'  est en forgeant qu' on 
+devient forgeron») y que en castellano resignado he traducid o por « la práctica  de escritura 
+hace maestro  en literatura». Podemos decir que  Ejercicios de estilo  es un manifiesto, 
+aunque un manifiesto impregnado, como acabamos de comprobar,  por la distancia de 
+ironía.
+Justamente por su talante lúdico, por su maestría deslitera turizadora, la obra supone 
+una verdadera invitación al lector para que rehaga o complet e, a discreción, los textos y, 
+sobre todo, para que continúe lo que el autor propone. L o cual responde plenamente a las 
+directrices  del  grupo  Oulipo,  que  también  propuso,  entre  o tras  cosas  similares,  la 
+constitución de un «Instituto de Prótesis Literaria» para refo rmar, rehacer y mejorar las 
+obras  ya  consagradas.  Y  consciente  de  que  su  trabajo  requería,  por  sus  propias 
+características, una continuidad, Queneau añadió en la ed ición ilustrada de 1963, un 
+anexo con una amplia lista de otros ejercicios de estilos p osible» (véase el «Anexo» de 
+esta introducción).
+No es de extrañar, por lo tanto, que  Ejercicios de estilo  haya dado pie a las más 
+diversas recreaciones: un disco28; películas, los ejercicios tipográficos de Faucheaux y de 
+Massin, las estupendas ilustraciones de Carelman... pero, an te todo, quiero destacar el 
+enorme rendimiento didáctico  que el libro ha tenido en F rancia,  por tratarse de una 
+verdadera  mina para cualquier  labor  de creación  literaria.  Por  fortuna,  cada  día van 
+quedando más lejos de nosotros las enseñanzas lingüíst icas y literarias reducidas a la 
+exhibición de discursos magistrales del profesor o del manua l, en las que se estudiaba 
+teoría lingüística y gramática a palo seco, sin practicar de ninguna manera la propia 
+lengua,  o  donde  se  discurseaba  sobre  historia  literaria  (fechas,  títulos,  plantillas  de 
+comentario de textos...) lejos de los placeres de la lectu ra o de la invención literaria. En 
+los últimos tiempos, aunque todavía nos quede un largo  trecho por recorrer, se han ido 
+afianzando en nuestro país propuestas que contemplan la clase de lengua y literatura 
+también como un «taller» de escritura y manipulación del l enguaje. Y, en este sentido, 
+tanto los trabajos oulipianos como muy especialmente  Ejercicios de estilo  suponen, no 
+sólo un material sumamente estimable para el análisis, sino  verdaderos filones de pautas 
+y estímulos.
+CASTELLANIZAR A QUENEAU
+En  mi  versión  he  procurado  evitar,  ante  todo,  cualquier  tenta ción  de  querer 
+enmendarle  la  plana  al  propio  Queneau  completando  o  pro poniendo  soluciones 
+alternativas cuando no era necesario. Lo cual no resulta fá cil en una obra que en todos los 
+sentidos  está  invitando  a  la  colaboración  del  lector.  Pero  los  precedentes  de  las 
+traducciones inglesa, alemana e italiana suponían sendos  estímulos alentadores29.
+Unos sesenta «ejercicios» no plantean más problemas que lo s propios de cualquier 
+traducción («Notations», «En partie double», «Litotes», « Métaphoricament»...). El grupo 
+de textos basado en diferentes manipulaciones con letras, sílabas, morfemas o palabras 
+(«Aphéreses»,  «Apocopes»,  Syncopes»,  «Permutations»,  «Prostheses»...)  únicamente 
+requería realizar una operación idéntica a la de Queneau co n el texto correspondiente en 
+castellano.  En  dos  casos  «Hellénismes»,  «Macaronique»)  se  trat aba  de  introducir 
+mínimas  correcciones  imprescindibles  en  una  versión  nuestra  lengu a:  así,  «eiusdem 
+28 Disco editado en 1954 por Phillips, cuyos intérpre tes eran Yvee Robert y los Frères Jacques. Compuso la 
+música Pierre Philippe. Véase una reseña de este «l ong-play» escrita por Boris Vian, incluida en Derrière la 
+zizique , París, Christian Bourgois, 1976, págs. 107-108.
+29 Exercices in Style , trad.: Barbara Wright, Londres, Gaberbocchus, 195 8; 2ª ed., Londres, John Calder, 1979; 
+Stilübungen , trad.: Ludwig Harig y Eugen Helmlé, Frankfurt am M ain, Suhrkamp, 1961; Esercizi di stile , trad.: 
+Umberto Eco, Turín, Einaudi, 1983.
+farinae» («de la même farine») pasa a «eiusdem calagniae»  o «estofae». Un grupo de 
+ejercicios  (como  «Botanique»  o  «Gastronomique»)  necesitaban  ser  parcialmente 
+recreados porque las frases hechas francesas relacionadas con el  correspondiente campo 
+semántico  no  tenían  paralelo  directo  en  castellano.  En  lo  que  respecta  a  parodias 
+literarias  sobre  distintas  modalidades  poemáticas  («Alexandri ns»,  «Sonnet»,  «Ode», 
+«Tanka») he optado, excepto en el caso de la «Ode», por una versión libre —incluidos los 
+guiños  machadorrubenianos  de  los  alejandrinos—  intentando  que  no  se  perdiese  la 
+vivacidad del original.
+Finalmente, nos encontramos con aquellos textos —casi una  veintena— que era 
+imprescindible recrear  prácticamente de cabo a rabo,  aunque sie mpre he tratado de 
+hacerlo sobre un texto lo más similar posible al que present a Queneau. En realidad, sólo 
+me he guiado por un criterio exclusivamente personal en el ca so de los «Italianismes» de 
+la edición original. Como los italianismos me parecían absolutamente romos en nuestra 
+lengua, consideré inevitable introducir un ejercicio sobre «Ga licismos» para no modificar 
+el número total de noventa y nueve.
+Dos textos merecen comentario particular: el «Loucherbem» y e l «Javanais». El 
+loucherbèm30 (de  boucher  >  louche  [r]  b-èm)  es  el  «largonji»  —argot—  más  vivo 
+socialmente en París. El procedimiento de un «largonji» consi ste en que la consonante 
+inicial de palabra o una consonante doble (tr, pr) es rempl azada por una l y trasladada al 
+final, palabra: jargon> largon > largonji. La jerga en - bème , característica en un principio 
+de los muchachos carniceros, de La Villette o de Vaugirard, añade al procedimiento 
+general  del  largonji  una  sufijación  peculiar  en  - èm.  Aunque  en  los  argots  cualquier 
+esquema canónico es relativamente raro en la práctica y así, por ejemplo, Queneau 
+introduce en su «Loucherbem» diversas licencias argóticas. Obvi amente todo esto era 
+intraducible en castellano, y no me quedó más opción que  construir un «Pasota» —la 
+imprecisión  de  este  apelativo  tan  tópico  me  desagrada—  como  caricatura  un  tanto 
+sainetesca del argot del «rollo».
+Por su parte, el «javanais» es un procedimiento argótico de deformación sistemática 
+de las palabras, por medio del cual un infijo en  av se incrusta entre la consonante y a 
+vocal de la primera o de cada sílaba: grosse > gr-av-os-se > gravo sse. Al parecer, data de 
+mediados del siglo pasado y, desde un origen delincuent e o escolar, se difundió con 
+rapidez hasta convertirse en divertimiento clásico de los «boul evardiers». El apelativo de 
+este truco argótico pudo originarse a partir de la conjugación  del verbo avoir: j’ai > j'avais 
+> j'av-av-ais, que se relaciona con el nombre de la isla de In donesia. En un estudio ya 
+clásico sobre el tema de los argots, Rafael Salillas31 hablaba de «formas de disimulo» y, 
+por  su  parte,  el  lingüista  italiano  Bernardino  Biondelli32 trató,  en  una  de  las  raras 
+disquisiciones  sobre  el  tema,  de  lo  que  llamaba  «lingu e  di  trastullo»  («lenguas  de 
+entretenimiento»).  Los  procedimientos  de  estas  jergas  son  m uy  diversos:  desde  la 
+inversión  del  orden  habitual  de  las  sílabas  ( vesre )  a la  interposición  entre  éstas  de 
+algunas sílabas convencionales que pueden variar a capricho.  Entre los procedimientos 
+posibles,  para  una  versión  del  «Javalais»  queneauniano,  he  escogido  el  lenguaje 
+tradicional en «ti» de los juegos infantiles españoles.
+La exigencia de lo que he imaginado yo como literalidad bien entendida me ha 
+llevado, a veces, a soluciones que, paradójicamente, puede n parecer meros caprichos. 
+Pondré tres ejemplos. En «Onomatopées», Queneau incrusta, de sopetón, un paréntesis 
+con las palabras de Orestes  en la escena quinta del quint o acto de la Andromaque 
+raciniana: «Pour qui sont ces serpents qui sifflent sur vos t êtes?». Se trata del ejemplo 
+30 Véase Pierre Guiraud, L'argot , 8a ed., París, Presses Universitaires de France, 1980, págs. 67-68 y Jacques 
+Cellard & Alain Rey, Dictionaire du français non conventionnel , París, Hachette, 1980, págs. 470-471 y 487.
+31 Rafael Salillas, «Teoría y caracteres de la jerga» , en El delincuente español. El lenguaje (estudio filoló gico, 
+psicológico y sociológico) con dos vocabularios jer gales , Madrid, Victoria no Suárez, 1896, pág. 24.
+32 Bernardino Biondelli, «Origine, diffusione ed impo rtanza delle lin:ue furbesche», en Studi linguistici , Milán, 
+Giuseppe Bernardoni di Gio, 856, págs. 105-120.
+tópico de los manuales franceses para explicar la alitera ción. Me pareció absurdo traducir 
+la cita de Racine, carente en castellano de la significaci ón que posee para un lector galo, 
+y decidí sustituirla por lo que pienso que podría ser un equivalente de nuestra literatura, 
+los  famosos  endecasílabos  de  la tercera  égloga  de  Garcilaso  (versos  79-80:  «en  el 
+silencio sólo se escuchaba / un susurro de abejas que sonaba»).
+En «Maladroit» («Torpe») también se encuentra una esas cita s emboscadas, cuando 
+el sufrido y desconcertado aprendiz de escritor dice, refirién dose el consabido joven del 
+sombrero:  «prenons  le  godelureau  par  la  tresse  de  son  chapeau  de  feurre  mou 
+emmanché d'un long cou» («cojamos al mequetrefe por el  cordón de su sombrero de 
+fieltro enmangado con un largo cuello»). Se parodia aquí u n verso de La Fontaine ( Fables , 
+libro VII, 4, v. 2): «L'Héron au long bec emmanché d'un l ong cou». Me pareció una 
+solución paralela en castellano utilizar los dos primeros ve rsos del archiconocido soneto 
+quevediano  «A  un  hombre  de  gran  nariz».  En  el  mismo fragmen to  («Maladroit»),  el 
+escritorzuelo sueña con codearse con los señores de «l' Acadérmie f rançaise, du Flore et 
+de la rue Sébastien-Bottin». Pues bien, si en el primer caso (tras optar por una versión 
+comprensible para un castellanoleyente) la sustitución estaba  clara, la correspondencia 
+del famoso café parisino me pareció que podía ser el madrileñ o Gijón, el tópico café de 
+literatos también ya de otra época. Y, pensando que en la calle Sébastien-Bottin estaba 
+Gallimard, precisamente la editora de Exercices de style  de la que el propio Queneau era 
+secretario general, sólo me quedaba la posibilidad de anal ogía con la editorial encargada 
+de publicar la versión castellana, para conservar, además, la m odesta «mise en abîme», 
+el juego del libro dentro del libro. Pero únicamente me cab ía mencionar directamente el 
+nombre, no por propósito propagandístico de más que dudosa efectividad, sino porque 
+hablar de «los señores de la calle O'Donnell» me parecí a todo punto incomprensible. Por 
+lo demás, dejo al criterio o entusiasmo del lector el hall azgo de otros guiños y claves de 
+mi versión.
+Mi intención ha sido mantener en todo lo posible la f idelidad imposible al original 
+francés,  pese a lo arduo de mi labor33 que,  sin embargo,  en pocos  textos  como en 
+Exercicies  de  style  aúna  esas  dos  palabras  que  Octavio  Paz  empleó  para  titul ar  la 
+recopilación  de sus  traducciones:  versión  y  diversión.  Por  lo demá s,  la literatura  en 
+castellano no anda sobrada —salvo notables excepciones, como Gó mez de la Serna o 
+Cortázar—, ni de obras ni de escritores de la capacidad creati va de un Queneau. Razón 
+de  más  para  que  una  versión  castellana  de  Exercices  de  style  pueda  resultar  una 
+dedicación  estimulante,  sobre  todo  al  comprobar  que,  cuarent a  años  después  de  la 
+publicación  del  libro  —por  las  fechas  en  que  los  españole s  leían  La  quiebra  de 
+Zunzunegui, La sal perdida  de Pedro de Lorenzo o Un hombre  de José María Gironella— 
+sigue conservando renovada su capacidad de lectura gozosa34 34. ¿Hay muchas cosas 
+más importantes en literatura?
+Antonio Fernández Ferrer
+33 Entre los amigos a quienes agradezco su complicidad p ara perpetrar la castellanización queneaucida, debo  
+citar a Amapola Alama, Luis Alberto de Cuenca, Conc ha Fernández Medrano, Ghislaine Fonfreide y Luis 
+Maristany.
+34 «Sería lindo a partir de una cierta edad, año por año, ir de nuevo empequeñeciendo y recorriendo haci a 
+atrás aquellos mismos peldaños que una vez se escal aron con orgullo. La dignidad y la honra de la mayo r 
+edad seguirían, no obstante, siendo las mismas que son hoy; de modo que la gente absolutamente menuda,  
+los muchachos de seis u ocho años, serían los más s abios y los más experimentados. Los más viejos 
+monarcas serían los más pequeños; en general, habría  sólo muy diminutos Papas; los obispos mirarían des de 
+mayor altura a los cardenales y los cardenales al P apa. Ningún niño podría desear ya ser algo grande. La 
+historia perdería en importancia en razón de su eda d; se tendría la sensación de que los sucesos de ha ce 
+trescientos años habrían acontecido entre criaturas  semejantes a insectos, y el pasado tendría, finalm ente, la 
+dicha de no ser advertido.» (Elias Canetti, «Apunte s 1942-1948», trad. de Norberto Silvetti Paz, Sur, Núms. 
+308-310, septiembre-febrero, 1968, )ág. 44. Otra tr aducción del mismo texto se incluye en La provincia del 
+hombre. Carnet de notas  1942-1972, versión castellana de Eustaquio Barau, Madrid, Taurus, 1982, pág. 11).
+Madrid, 1987
+ANEXO *
+Ejercicios de estilo posibles
+* «Annexe 1. Exercices de style possibles», en Exercices de style , ed. ilustrada de 1963, págs. 97 y 98.
+Caligrama de Jacques Carelman para la edición ilust rada de Exercices de style .
+nervioso
+angustiado
+espera
+jovial
+calambures
+caligrama
+dedicatoria
+ideas macabras
+ficha de lectura
+carta de rechazo del editor
+costura (nombres de vestidos)
+rebus
+charada
+adivinanzas
+declaración de amor
+tuerto
+sordomudo
+ciego
+borracho
+paranoico
+confusión mental
+delirium tremensreglas de un juego
+juego de la oca
+juego de cartas
+ley
+enigma
+diferentes juegos de ingenio
+carta ofensiva
+carta de reclamación
+anuncios (breves)
+publicidad
+portero
+cobrador
+crítico literario
+crítico teatral
+crítico cinematográfico
+tratamiento cinematográfico
+esquela
+crítica mundana
+elegante
+caos
+símbolos
+fábula
+flores retóricas
+elocuencia sagrada
+elocuencia política
+distribución de premios
+requisitoria
+natación
+atributos
+prohibición
+anáforas
+epíforas
+moraleja
+miedo
+alegría
+orgullo
+triste
+gracioso
+jeroglíficos
+fenomenológico
+detective
+crucigrama
+aliteraciones
+«collages»
+lugares comunes
+proverbios
+biológico
+económico
+sociológico
+químico
+geológico
+idiota
+infantil
+cenestésico
+abstracto
+físico
+frente popular
+las virtudes (teologales, etc.)
+los siete pecados capitalesquirológico
+oficios diversos
+caracteres
+patológico
+cólera
+hambre
+fatiga máxima
+alternativa
+elocuencia judicial
+glotonería
+eslavismos
+rumanismos
+arabismos
+sombrerero
+antítesis
+hysteron-proteron
+oxímoron
+elipsis
+anacolutos
+annominaciones
+geométrico
+aritmético
+algebraico
+analítico
+topológico
+anadiplosis
+mineral
+epanadiplosis
+epanalepsis
+sinéresis
+diéresis
+crasis
+disjunciones
+conjunciones
+adverbios
+homosexual (lesbiana)
+NOTACIONES
+En el S, a una hora de tráfico. Un tipo de unos veintisé is años, sombrero de fieltro 
+con cordón en lugar de cinta, cuello muy largo como si se lo  hubiesen estirado. La gente 
+baja. El tipo en cuestión se enfada con un vecino. Le rep rocha que lo empuje cada vez 
+que pasa alguien. Tono llorón que se las da de duro. Al ver un sitio libre, se precipita 
+sobre él.
+Dos horas más tarde, lo encuentro en la plaza de Roma, d elante de la estación de 
+Saint-Lazare. Está con un compañero que le dice: «Deberías h acerte poner un botón más 
+en el abrigo.» Le indica dónde (en el escote) y por qué.
+POR PARTIDA  DOBLE
+Hacia la mitad de la jornada y a mediodía, me encontré y  subí en la plataforma y 
+terraza  trasera  de un autobús y vehículo de transporte  en com ún abarrotado  y casi 
+completo de la línea S y que va de la Contrescarpe a Cha mperret. Vi y observé a un 
+hombre joven y viejo adolescente, bastante ridículo y no p oco grotesco, cuello delgado y 
+gaznate descarnado, cordón y trencilla alrededor del sombrero y  gorro. Después de un 
+atropello y confusión, dice y profiere con una voz y tono lacrimosos y llorones que su 
+vecino y coviajero le empuja y le importuna adrede y apost a cada vez que alguien baja y 
+sale. Dicho esto y tras abrir la boca, se precipita y se dirig e hacia un sitio y un asiento 
+vacíos y libres.
+Dos horas después y ciento veinte minutos más tarde, lo e ncuentro y vuelvo a vedo 
+en la plaza de Roma y delante de la estación de Saint-L azare. Está y se encuentra con un 
+amigo y compañero que le aconseja y le incita a que se hag a añadir y coser un botón y un 
+círculo de hueso en su abrigo y gabán.
+LÍTOTES
+Éramos unos cuantos que nos desplazábamos juntos. Un jove n, que no tenía aire de 
+muy inteligente, habló unos instantes con un señor que se encontraba a su lado; después, 
+fue a sentarse. Dos horas más tarde, me lo encontré de nuevo ; estaba en compañía de un 
+amigo y hablaba de trapos.
+METAFÓRICAMENTE
+En el centro del día, tirado en el montón de sardinas viaj eras de un coleóptero de 
+abdomen  blancuzco,  un  pollo  de  largo  cuello  desplumado  are ngó  de  pronto  a  una, 
+tranquila, de entre ellas, y su lenguaje se desplegó por los aires, húmedo de protesta. 
+Después, atraído por un vado, el pajarito se precipitó sobre él.
+En un triste desierto urbano, volví a vedo el mismo día, mi entras se dejaba poner las 
+peras a cuarto a causa de un botón cualquiera.
+RETRÓGRADO
+Te deberías añadir un botón en el abrigo, le dice su am igo. Me lo encontré en medio 
+de la plaza de Roma, después de haberlo dejado cuando se precipitaba con avidez sobre 
+un  asiento.  Acababa  de  protestar  por  el  empujón  de  otro  v iajero  que,  según  él,  le 
+atropellaba cada vez que bajaba alguien. Este descarnado joven era portador de un 
+sombrero ridículo. Eso ocurrió en la plataforma de un S comple to aquel mediodía.
+SORPRESAS
+¡Lo apretados que íbamos en aquella plataforma de auto bús! ¡Y lo tonta y ridícula 
+que tenía la pinta aquel chico! ¿Y qué se le ocurre hacer? ¡Hete aquí que le da por querer 
+reñir con un hombre que -¡pretendía el tal galancete!- lo empujaba! ¡Y luego no encuentra 
+nada mejor que hacer que ir rápido a ocupar un sitio li bre! ¡En vez de cedérselo a una 
+señora!
+Dos horas después, ¿Adivinan a quién me encuentro delante de la estación de 
+Saint-Lazare? ¡El mismo pisaverde! ¡Mientras recibía consejos sob re indumentaria! ¡De 
+un compañero!
+¡Como para no creérselo!
+SUEÑO
+Me  parecía  que  todo  era  brumoso  y  anacarado  en  torno  mío,  co n  múltiples  e 
+indistintas  presencias,  entre  las  cuales,  sin  embargo,  sólo  se  dibujaba  con  bastante 
+nitidez, la figura de un joven cuyo cuello demasiado largo  parecía anunciar ya por sí solo 
+el carácter a la vez cobarde y protestón del personaje. La cin ta de su sombrero había sido 
+remplazada por un cordón trenzado. Reñía luego con un indi viduo al que yo no veía; 
+después, como presa del miedo, se metía en la oscuridad de u n pasillo.
+Otra parte del sueño me lo muestra caminando a pleno sol de lante de la estación de 
+Saint-Lazare. Está con un compañero que le dice: «Deberías h acerte añadir un botón en 
+el abrigo.» En eso, me desperté.
+PRONOSTICACIONES
+Cuando llegue el mediodía, te encontrarás en la plata forma trasera de un autobús 
+donde se amontonarán viajeros entre los cuales repararás e n un ridículo jovenzuelo; 
+cuello esquelético y sin cinta en el sombrero de fieltro. No se  encontrará bien, el pequeño. 
+Creerá que un señor le empuja adrede cada vez que pasa ge nte que sube o baja. Sé lo 
+dirá, pero el otro, despreciativo, no contestará. Y el ridíc ulo jovenzuelo, presa del pánico, 
+se largará en sus narices, hacia un sitio libre.
+Volverás a verlo un poco más tarde, en la plaza de Roma, de lante de la estación de 
+Saint-Lazare. Un amigo le acompañará, y oirás estas palab ras: «Tu abrigo no abrocha 
+bien; tienes que hacer añadir un botón».
+SÍNQUISIS
+Ridículo joven, que me encontré un día en un autobús de  la línea S abarrotado por 
+estiramiento quizá cuello alargado, en el sombrero el cordón,  observé un. Arrogante y 
+llorón con un tono, que se encuentra a su lado, contra el señor, protesta. Porque él le 
+habría empujado, vez cada que la baja gente. Libre se asie nta y se precipita hacia un 
+sitio, eso dicho. Roma (plaza de) lo encuentro más tarde do s horas en el abrigo un botón 
+añadir un amigo le aconseja.
+ARCO IRIS
+Un día, me encontré en la plataforma de un autobús viol eta. Había allí un joven 
+bastante ridículo: cuello índigo, cordón en el sombrero. De repente, protesta contra un 
+señor azul. Le reprocha, especialmente, con voz verde, que lo empuje cada vez que baja 
+gente. Dicho eso, se precipita hacia un sitio amarillo para sentarse.
+Dos horas más tarde, me lo encuentro delante de una estaci ón anaranjada. Está con 
+un amigo que le aconseja que se haga añadir un botón e n su abrigo rojo.
+LOGO-RALLYE
+(Dote, bayoneta, enemigo, capilla, atmósfera, Bastilla, corre spondencia .)
+Un día me encontraba en la plataforma de un autobús qu e, sin duda, debía de 
+formar parte de la dote de la hija del Sr. Matrimonio, qu e presidió los destinos de la 
+Compañía Municipal de Transportes Urbanos. Había en él un  joven bastante ridículo, no 
+porque llevase bayoneta, sino porque tenía pinta de lleva da no llevándola. De golpe, el 
+joven acomete a su enemigo: un señor situado detrás suyo.  Le acusa de no comportarse 
+tan educadamente como en una capilla. Tensada así la atm ósfera, el mequetrefe va a 
+sentarse. Dos horas más tarde, lo encuentro a dos o tres kil ómetros de la Bastilla con un 
+compañero que le aconseja que se haga añadir un botón en  el abrigo, opinión que muy 
+bien habría podido darle por correspondencia.
+VACILACIONES
+No sé muy bien dónde ocurría aquello... ¿en una iglesia, en un cubo de la basura, en 
+un  osario?  ¿Quizás  en  un  autobús?  Había  allí...  pero,  ¿q ué  había  allí?  ¿Huevos, 
+alfombras, rábanos? ¿Esqueletos? Sí, pero con su carne aún alred edor, y vivos. Sí, me 
+parece que era eso. Gente en un autobús. Pero había uno (¿ o dos?) que se hacía notar, 
+no  sé  muy  bien  por  qué.  ¿Por  su  megalomanía?  ¿Por  su  adi posidad?  ¿Por  su 
+melancolía? No, mejor... más exactamente... por su juve ntud, adornada con un largo... 
+¿narigón? ¿mentón? ¿pulgar? No: cuello; y por un sombrero  extraño, extraño, extraño. Se 
+puso a pelear —sí, eso es—, sin duda con otro viajero (¿hombre o  mujer?, ¿niño o viejo?) 
+Luego eso se acabó, concluyó acabándose de alguna forma, pro bablemente con la huida 
+de uno de los dos adversarios.
+Estoy casi seguro de que es ese mismo personaje el que me vol ví a encontrar, pero 
+¿dónde? ¿Delante de una iglesia? ¿delante de un osario ? ¿delante de un cubo de la 
+basura? Con un compañero que debía de estar hablándole d e alguna cosa, pero ¿de 
+qué? ¿de qué? ¿de qué?
+PRECISIONES
+A las 12 h. 17 m. en un autobús de la línea S, de 10 metros de largo, 2,10 de ancho 
+y 3,50 de altura, a 3 km. 600 m. de su punto de partida,  cargado con 48 personas, un 
+individuo de sexo masculino, de 27 años, 3 meses y 8 días de  edad, 1 m. 72 cm. de talla y 
+65 kg. de peso, que llevaba en la cabeza un sombrero de 17 c m. de alto cuya copa estaba 
+rodeada por un cordón de 35 cm. de largo, interpela a un h ombre de 48 años, 4 meses y 3 
+días de edad, 1 m. 68 cm. de talla y 77 kg. de peso, por  medio de 14 palabras, cuya 
+enunciación duró 5 segundos, alusivas a desplazamientos invol untarios de 15 a 20mm. 
+Va enseguida a sentarse a unos 2 m. 10 cm. de allí.
+118 minutos más tarde, se encontraba a 10 metros de la estación de Saint-Lazare, 
+en la entrada de cercanías, y se paseaba de arriba abajo sobre  un trayecto de 30 metros, 
+con un compañero de 28 años de edad, 1 m. 70 cm. de talla  y 71 kg. de peso, quien le 
+aconsejó con 15 palabras desplazar 5 cm., en dirección al ceni t, un botón de 3 cm. de 
+diámetro.
+PUNTO DE VISTA SUBJETIVO
+No  estaba  descontento  con  mi  vestimenta,  precisamente  hoy.  Est renaba  un 
+sombrero nuevo, bastante chulo, y un abrigo que me parecía p ero que muy bien. Me 
+encuentro a X delante de la estación de Saint-Lazare, el  cual intenta aguarme la fiesta 
+tratando de demostrarme que el abrigo es muy escotado y qu e debería añadirle un botón 
+más. Aunque, menos mal que no se ha atrevido a meterse con mi gorro.
+Poco antes, había reñido de lo lindo a una especie de pat án que me empujaba 
+adrede como un bruto cada vez que el personal pasaba, al ba jar o al subir. Eso ocurría en 
+uno de esos inmundos autobuses que se llenan de populach o precisamente a las horas 
+en que debo dignarme a utilizados.
+OTRO PUNTO  DE VISTA SUBJETIVO
+Había hoy en el autobús, a mi lado, en la plataforma,  uno de esos mocosos de los 
+que no abundan afortunadamente porque si no, acabaría por matar a uno.
+Aquél, un muchacho de unos veintiséis o treinta años, me i rritaba especialmente, no 
+tanto a causa de su largo cuello de pavo desplumado como po r la clase de cinta de su 
+sombrero, cinta reducida a una especie de cordón de color morad o. ¡Jo!, ¡el cabrón! 
+¡Cómo  me  cargaba!  Como  a  esa  hora  había  mucha  gente  en  nu estro  autobús, 
+aprovechaba los empujones de costumbre a las subidas o b ajadas para hincarle el codo 
+en las costillas. Acabó por largarse cobardemente antes de qu e me decidiera a pisotearle 
+un poco los pinreles para jorobado. También le hubiera d icho, para fastidiado, que a su 
+abrigo demasiado escotado le faltaba un botón. 
+RELATO
+Una mañana a mediodía, junto al parque Monceau, en la plataforma trasera de un 
+autobús casi completo de la línea S (en la actualidad el 84), observé a un personaje con el 
+cuello bastante largo que llevaba un sombrero de fieltro rode ado de un cordón trenzado 
+en lugar de cinta. Este individuo interpeló, de golpe y  porrazo, a su vecino, pretendiendo 
+que  le  pisoteaba  adrede  cada  vez  que  subían  o  bajaban  via jeros.  Pero  abandonó 
+rápidamente la discusión para lanzarse sobre un sitio que hab ía quedado libre.
+Dos  horas  más  tarde,  volví  a  vedo  delante  de  la  estación  d e  Saint-Lazare, 
+conversando con un amigo que le aconsejaba disminuir el escot e del abrigo haciéndose 
+subir el botón superior por algún sastre competente.
+PALABRAS  COMPUESTAS
+Yo  me  platautobusformaba  comultitudinariamente  en  un  espa ciotiempo 
+luteciomeridiano  vecinando  con  un  longuícolo  mocoso  fieltrosom brereado  y 
+cordonotrenzón.  El  cual  altavoceó  a  un  tipofulano:  «Usted  me  empujaparece.»  Tras 
+eyacular estó, se sitiolibró vorazmente. En una espaciotempora lidad posterior, volví a 
+vedo  mientras  se  sanlazaroestacionaba  con  un  X  que  le  decía:  «Deberías 
+botonsuplementarte el abrigo.» Y le porquexplicaba el asun to.
+NEGATIVIDADES
+No era ni un barco, ni un avión, sino un medio de transpor te terrestre. No era por la 
+mañana, ni por la tarde, sino a mediodía. No era ni un  bebé, ni un anciano, sino un joven. 
+No era ni una cinta, ni un bramante, sino un cordón trenza do. No era ni una procesión, ni 
+una trifulca, sino un atropellamiento. No era ni un ama ble, ni un malvado, sino un colérico. 
+No era ni una verdad, ni una mentira, sino un pretexto. No  era ni uno derecho, ni uno 
+yacente, sino uno que quería estar sentado.
+No era ni la víspera, ni el día siguiente, sino el mismo día. No era la estación del 
+Norte, ni la estación de Lión, sino la estación de Saint-L azare. No era ni un pariente, ni un 
+desconocido, sino un amigo. No era ni un insulto, ni una burla, sino un consejo sobre 
+indumentaria.
+ANIMISMO
+Un sombrero de fieltro, pardo, hendido, el ala bajada, con  la horma rodeada de un 
+galón  trenzado,  un  sombrero  entre  otros,  sobresaltándose  única mente  por  las 
+desigualdades  del  suelo  transmitidas  por  las  ruedas  del  vehículo  automóvil  que  lo 
+transportaba a él, el sombrero. A cada parada, las idas y ve nidas de los viajeros le 
+imprimían  movimientos  laterales  a  veces  bastante  pronunciados,  lo  que  acabó  por 
+enfadarle a él, el sombrero. Expresó su ira por intermedio de  una voz humana a él 
+vinculada por una masa de carne estructuralmente dispuesta al rededor de una semiesfera 
+ósea perforada por algunos agujeros, que se encontraba deba jo de él, él , el sombrero. 
+Después, fue de pronto a sentarse, él, el sombrero.
+Una o dos horas más tarde, volví a vedo desplazándose, a ap roximadamente un 
+metro sesenta y seis por encima del suelo, de arriba abajo,  delante de la estación de 
+Saint-Lazare, él, el sombrero. Un amigo le aconsejaba hacerse añadir un botón más en el 
+abrigo... un botón más... en el abrigo.. decirle eso a él. .. a él, el sombrero.
+ANAGRAMAS
+En  el  S,  a  una  rhoa  de  tracofi  un  poti  de  unos  tesnivéis  ñaos,  que  atine  un 
+ragollloecu y un brerosom nadoador con un drocon en lugar ed tinca, ñaerí con roto 
+jrevoia  que  le  casuaba  de  pujemarle  triavulonamente.  Habie ndo  airquelloado  así,  se 
+ciprepita sobre una zalpa rilbe.
+Una haro más drate, lo truenenco en la palaz de Mora, del ante de la nesciota de 
+Tsian-Zalare. Estaba con un ñopracome que le cedía: «Rebed ías caher penor un tobón 
+sam en tu gobria.» Le neñesaba dónde (en el tocese).
+DISTINGUO
+Por la mañana (y no por Ana la maña) viajaba en la plat aforma (pero no formaba en 
+la vieja plata) del autobús (no confundir con el alto obús), y como estaba llena (no me 
+como esta ballena) la masa chocaba (y no la más achochada). Entonces un jovencito (y 
+no cito un joven) extravagante (no vago estragante) se dirigi ó (aunque no digirió) a un 
+sujeto (pero no atado) pacífico (no Atlántico) enojándos e (no desojándose) porque éste 
+(no Oeste) le pisaba el pie (no le pispaba el bies).
+Al cabo del rato (y no al rabo del gato) yo vi al tonto ( no llovía a lo tonto) en San 
+Lázaro (no el de Tormes) conversando con un amigo (no amigando  con un converso) más 
+meticuloso (mas no supositorio) en temas de indumento (y no mento más té hindú).
+HOMEOTELEUTONES
+El bus del circuito por el que transito va tocando el pito . Allí, mientras dormito, veo a 
+un cabeza de chorlito de cuello infinito como un monolito , con un sombrerito nada bonito 
+ni exquisito. El que cito le da un grito gratuito a uno que parece frito con el prurito del baile 
+de San Vito: «¡Ojito, cabrito, que me excito, irrito, desgañi to, despepito, derrito y agito 
+porque Vd. me tiene ahíto, aunque yo no le incito!» Y t ras lo transcrito se sienta el muy 
+bendito mirando de hito en hito.
+Al salir de un garito de modo fortuito lo veo al maldito infrascrito escuchando a quien, 
+muy perito, le cuenta un mito sobre su abrigo favorito.
+CARTA OFICIAL
+Tengo el honor de informar a usted acerca de los he chos 
+siguientes de los cuales he podido ser testigo tan imparcial como 
+horrorizado.
+Esta misma mañana, hacia el mediodía, me encontraba  en la 
+plataforma de un autobús que subía por la calle de Courcelles en 
+dirección a la plaza de Champerret. Dicho autobús i ba completo; 
+incluso más que completo, me atrevería a decir, por que el cobrador 
+lo había sobrecargado con varios solicitantes, sin razón admisible 
+y movido por una benevolencia exagerada que le llev aba más allá de 
+los límites marcados por los reglamentos y que, por  consiguiente, 
+rozaba la indulgencia. A cada parada, las idas y ve nidas de los 
+viajeros que bajaban y subían no dejaban de provoca r cierto 
+ que incitó a uno de los viajeros a protestar, 
+mas no sin timidez. Debo decir que éste fue a senta rse en cuanto 
+surgió la posibilidad de ello.
+Añadiré a mi breve relación esta addenda: tuve la o portunidad 
+de observar a dicho viajero algún tiempo después en  compañía de un 
+personaje que no he podido identificar. La conversa ción entablada 
+animadamente  entre  ambos  parecía  referirse  a  cuesti ones  de 
+naturaleza estética.
+Dadas las mencionadas condiciones) le ruego a Vd. t enga a bien 
+indicarme las consecuencias que debo extraer de est os hechos) así 
+como  la  actitud  que, ta  de  ello,  considere  usted 
+correcto que adopte en cuanto al comportamiento de mi 
+vida subsecuente.
+En espera de su respuesta, le reitero a Vd. el test imonio de 
+mi mayor y siempre atentísima consideración.
+PROPAGANDA  EDITORIAL
+En su nueva novela, tratada con el talento que le caracteriza , el célebre novelista X, 
+a quien debemos ya tantas obras maestras, se ha esmerado en  presentar únicamente 
+personajes muy matizados que se mueven en una atmósfera compre nsible para todos, 
+grandes y chicos. La intriga gira, pues, en torno al encuen tro en un autobús del héroe de 
+esta historia con un personaje bastante enigmático que se pe lea con el primero que llega. 
+En el episodio final, se ve a ese misterioso individuo escuchan do con la mayor atención 
+los consejos de un amigo, modelo de elegancia. El conjun to produce una sensación 
+encantadora que el novelista X ha cincelado con notable fo rtuna. 
+ONOMATOPEYAS
+En la plataforma, plas, plas, plas, de un autobús, tuf, tuf, tuf, de la línea S (en el 
+silencio sólo se escuchaba un susurro de abejas que sonaba), ¡pi i!, ¡pii!.. pintarrajeado de 
+rojo, a eso del medio ding-dong-dingdong día, gemía la gente apretujada, ¡aj!, ¡aj! Y he 
+aquí quiquiriquí que un gallito gilí, jtururú!, que, i Puaf!, llevaba un sombrerucho, ¡fiu!, se 
+volvió  cabreado,  brr,  brr,  contra  su  vecino  y  le  dijo,  hm  hm:  «O iga,  usted  me  está 
+
+empujando adrede.» Casi se pegan, plaf, smasch, pero en se guida el pollo, pío, pío, se 
+lanzó, izas!, sobre un sitio libre sentándose en él, ploc.
+El mismo día, un poco más tarde, ding-dong-dingdong, vue lvo a vedo, junto a la 
+estación, ¡fss!, ¡fsss!, ¡puu!, ¡puu!, charrando, bla, bla, bla,  con otro efebo, ¡tururú!, sobre 
+un botón del abrigo (trr, trr, precisamente no hacía calor...)
+Y chim-pum.
+ANÁLISIS  LÓGICO
+Autobús.
+Plataforma.
+Plataforma de autobús. El lugar.
+Mediodía.
+Aproximadamente.
+Aproximadamente a mediodía. El tiempo.
+Viajeros.
+Pelea.
+Pelea de viajeros. La acción.
+Joven.
+Sombrero. Largo cuello delgado.
+Un joven con un sombrero y un cordón trenzado alrededor. El perso naje principal.
+Quídam.
+Un quídam.
+Un quídam. El personaje secundario.
+Yo.
+Yo.
+Yo. La tercera persona. Narrador.
+Palabras.
+Palabras.
+Palabras. Lo que se dijo.
+Sitio libre.
+Sitio ocupado.
+Un sitio libre ocupado después. El resultado.
+La estación de Saint-Lazare.
+Una hora más tarde.
+Un amigo.
+Un botón.
+Otra frase oída. La conclusión.
+Conclusión lógica.
+INSISTENCIA
+Una mañana, hacia el mediodía, subí en un autobús casi  completo de la línea S. En 
+un autobús casi completo de la línea S, había un joven b astante ridículo.
+Subí en el mismo autobús que él, y aquel joven, que h abía subido antes que yo en 
+aquel mismo autobús de la línea S, casi completo, hacia el  mediodía, llevaba en la cabeza 
+un sombrero que encontré bastante ridículo, yo, que había su bido en el mismo autobús 
+que aquel  joven  en  la línea S, una mañana hacia el med iodía.  El sombrero estaba 
+rodeado por una especie de galón trenzado como el de una forrajera, y el joven que lo 
+llevaba, el sombrero —y el galón—, se encontraba en el mismo autobús que yo, un 
+autobús casi completo, porque era a mediodía; y debajo d el sombrero, cuyo galón imitaba 
+una forrajera, se extendía un rostro seguido de un cuello  largo, largo. jAh! Qué largo era el 
+cuello de de aquel joven que llevaba  un sombrero  rodeado d e una forrajera,  en  un 
+autobús de la línea S, una mañana hacia el mediodía.
+El bullicio era enorme en el autobús que nos transportab a hacia el final de la línea S, 
+una mañana a mediodía, a mí y a aquel joven que lucía  un largo cuello bajo un sombrero 
+ridículo. Por los tropezones que se producían hubo de pront o una protesta, protesta que 
+surgió de aquel joven que tenía un cuello tan largo en l a plataforma de un autobús de la 
+línea S, una mañana hacia el mediodía.
+Se produjo una acusación formulada con una voz húmeda de dig nidad ofendida, 
+porque en la plataforma de un autobús S, un joven tenía  un sombrero provisto de una 
+forrajera alrededor, y un largo cuello; quedó también un  sitio libre de pronto en aquel 
+autobús de la línea S casi completo porque era a mediodí a, sitio que ocupó el joven del 
+cuello largo y  del  sombrero  ridículo,  sitio que él  codiciaba  porque  no quería que le 
+empujasen más en aquella plataforma de autobús, una maña na hacia el mediodía.
+Dos horas más tarde, vuelvo a vedo delante de la estación de Saint-Lazare, a aquel 
+joven que había observado en la plataforma de un autobú s de la línea S, aquella misma 
+mañana, hacia el mediodía. Estaba con un compañero de su  estofa que le daba un 
+consejo relativo a cierto botón de su abrigo. El otro lo escuchaba atentamente. El otro, 
+precisamente el joven que llevaba una forrajera alrededor de l sombrero, y que vi en la 
+plataforma de un autobús de la línea S, casi completo, un a mañana, hacia el mediodía.
+IGNORANCIA
+Yo, no sé qué quieren de mí. Pues sí, he cogido el S h acia mediodía. ¿Que si había 
+gente? A esa hora, por supuesto. ¿Un joven con sombrero de fieltro? Es muy posible. 
+Aunque yo no miro descaradamente a la gente. Me importa un pito ¿Una especie de 
+galón  trenzado?  ¿Alrededor  del  sombrero?  Comprendo,  una  curiosi dad  como  otra 
+cualquiera, pero, desde luego, no me fijo en eso. Un gal ón trenzado... ¿Y se habría 
+peleado con otro señor? Cosas que pasan.
+Y, además, ¿tendría que haberlo vuelto a ver otra vez una o dos horas más tarde? 
+¿Por qué no? Hay cosas aún más raras en la vida. Precisamente , recuerdo que mi padre 
+me contaba a menudo que...
+PRETÉRITO  PERFECTO
+He subido en el autobús de la puerta Champerret.
+Había mucha gente, jóvenes, viejos, mujeres, soldados.
+He pagado mi billete y he mirado después a mi alrededor.  No era muy interesante. 
+Sin  embargo,  he  acabado  fijándome en  un  joven  al  que le  he  encontrado  el  cuello 
+demasiado largo. He examinado su sombrero y me he dado cuent a de que en lugar de 
+una cinta llevaba un galón trenzado. Cada vez que ha subi do alguien, ha habido bullicio. 
+N o he dicho nada, pero el joven de cuello largo ha int erpelado a su vecino. No he oído lo 
+que le ha dicho, pero se han mirado con malos ojos. Enton ces, el joven del cuello largo se 
+ha ido a sentarse precipitadamente.
+Volviendo de la puerta de Champerret, he pasado por delan te de la estación de 
+Saint-Lazare. He visto al tipo de marras que discutía con un a migo. Y éste le ha señalado 
+con el dedo un botón justo encima del escote del abrigo. Después el autobús donde yo iba 
+se ha marchado y no los he visto más. Yo iba sentado y no he  pensado en nada.
+PRESENTE
+A mediodía, el calor se expande en torno a los pies de los viajeros del autobús. 
+Como, colocada sobre un largo cuello, una cabeza estúpida, adornada con un sombrero 
+grotesco, se acalora, al instante se arma la gresca. Pero todo se  queda, enseguida, en 
+una atmósfera tensa por conservar en el aire, aún demasiado  vivos, graves insultos. 
+Entonces, uno va a sentarse adentro, al fresco.
+Más tarde pueden formularse, delante de estaciones de dobl e dirección, preguntas 
+sobre indumentaria, a propósito de algún botón que unos dedos grasientos de sudor 
+manosean con seguridad.
+PRETÉRITO  INDEFINIDO
+Fue a mediodía. Los viajeros subieron al autobús.
+Hubo apreturas. Un señor joven llevó en la cabeza un sombrero rodeado por un 
+cordón, no por una cinta.
+Tuvo un largo cuello. Se quejó a su vecino de los empujon es que éste le infligió. En 
+cuanto vio un sitio libre, se precipitó sobre él y se sentó.
+Lo vi más tarde delante de la estación de Saint-Lazare. S e puso un abrigo y un 
+compañero que se encontró allí le hizo esta observación: fue  necesario poner un botón 
+más.
+IMPERFECTO
+Era a mediodía. Los viajeros subían en el autobús.
+Había apreturas. Un señor joven llevaba en la cabeza un som brero que estaba 
+rodeado por un cordón y no por una cinta. Tenía un largo  cuello. Se quejaba a su vecino 
+por los empujones que éste último le infligía.
+En cuanto veía un sitio libre, se precipitaba sobre él y se sen taba.
+Lo veía más tarde, delante de la estación de Saint-Lazare. Se ponía un abrigo y un 
+compañero que se encontraba allí le hacía esta observación: hacía falta poner un botón 
+más.
+ALEJANDRINOS
+Mediaba el mes de julio. Era un hermoso día.
+Yo, solo, en la mañana, resignado subía
+Al ómnibus completo de viajeros banales,
+Muchedumbre aburrida de rostros casi iguales.
+Había un vulgo errante municipal y espeso
+Que al pasar empujaba anárquico y avieso.
+Un joven petimetre de luengo y seco cuello
+y sombrero sin cinta —que bien me acuerdo de ello—
+Se enojó con un viejo al que gritó, nervioso,
+Que cesara al momento de empujar tan ansioso;
+y al punto raudo y serio viendo un asiento huero
+Se lanzó de éste en pos, raudo como un velero.
+Al cabo de dos horas y en la misma jornada
+Me lo vuelvo a encontrar, del azar por jugada,
+Hablando y departiendo con un supuesto amigo
+Acerca de un botón que faltaba en su abrigo.
+POLIPTOTONES
+Subí en un autobús lleno de contribuyentes que pagaban  a un contribuyente que 
+llevaba sobre su vientre de contribuyente una cajita que contri buía a permitir a los demás 
+contribuyentes que siguieran su trayecto de contribuyentes. O bservé en este autobús a un 
+contribuyente de largo cuello de contribuyente cuya cabeza de contribuyente llevaba un 
+sombrero de fieltro de contribuyente ceñido por un cordón como  jamás llevó contribuyente 
+alguno.  De  repente,  dicho  contribuyente  interpela  a  un  co ntribuyente  vecino 
+reprochándole amargamente que le pisoteaba adrede sus pie s de contribuyente cada vez 
+que otros contribuyentes subían o bajaban del autobús p ara contribuyentes. Después, el 
+contribuyente irritado fue a sentarse al sitio para contribuyent es que acababa de dejar 
+libre otro contribuyente. Algunas horas de contribuyente despu és, lo vi en la plaza para 
+contribuyentes de Roma, en compañía de un contribuyente qu e le daba consejos de 
+elegancia de contribuyente.
+AFÉRESIS
+Bí obús no jeros. Servé ven yo 110 a do na rafa vaba brero lón  zado. Te dó tro jero 
+chándole aba da a ba te. Go chó se que a tia bre.
+Ver ví trar te ción go sej aba bre dos do mer tón go.
+APÓCOPES
+Yo su en un aut lle de viaje. Obser un jo cu cue er pare ci al de u gira y que lleva un 
+sombre con un ga tren. Es se enfa con o viaje, repro que le pisote ca vez que subí o baja 
+gen. Lue se mar a sentar por habí un si li.
+Al vol lo vol a encon delan de la esta con un ami que le  acon so vesti señalan el pri 
+bo de su abri.
+SÍNCOPAS
+Sbí nn aubús lleno dvajeros. Osrvé un jen cuellcidolnarafa y con sombongaltrenzá. 
+Se endó cotro vajero porque le rechaba pisotenreles. luego ocpó  un sto lbre.
+Al vler lo vIí a enctrar en pla Roma rebiendo una Ion d egancia apósito de un btón.
+YO YA
+Yo ya lo comprendo: un tipo que se empeña en pisotearle a  uno los pinreles, eso 
+cabrea. Pero, después de haber protestado, irse a sentar como un cagueta, yo ya no lo 
+comprendo. Yo ya vi eso el otro día en la plataforma trase ra de un autobús S. Yo ya le 
+encontraba el cuello un poco largo a aquel joven y cachonda  la especie de cinta que tenía 
+alrededor del sombrero. Yo nunca me atrevería a pasearme con u n gorro parecido. Pero 
+yo ya se lo digo a usted, después de haberle gruñido a ot ro viajero que le pisoteaba, el 
+tipo fue a sentarse  sin más. Yo le habría dado una torta  a l cerdo que me hubiese 
+pisoteado.
+Yo ya veo cosas raras en la vida, yo ya se lo aseguro a usted: e l mundo es un 
+pañuelo. Yo ya lo había visto antes a aquel muchacho. Y  yo, vuelvo a encontrármelo dos 
+horas después. Yo, lo diviso delante de la estación de Sai nt-Lazare. Yo, me lo veo en 
+compañía de un amigo de su clase que le decía, yo ya lo h e oído: «Deberías subirte ese 
+botón». Yo ya me he dado cuenta: señalaba el botón supe rior.
+EXCLAMACIONES
+¡Ostras! ¡Las doce! ¡Hora de coger el autobús] ¡Cuánta gente!  ¡Cuánta gente! ¡Qué 
+apreturas! ¡Qué gracia! ¡Ese pollo! ¡Qué jeta! ¡Y qué cuello!  ¡Setenta y cinco centímetros! 
+¡Por lo menos! ¡Y el cordón! ¡Vaya cordón! ¡No lo había visto! ¡El cordón! ¡Es lo más 
+gracioso! ¡Sí, eso! ¡El cordón! ¡En el sombrero! ¡Un cordón! ¡Gracios o! ¡Muy gracioso! ¡Y 
+mira cómo se cabrea! ¡El del cordón! ¡Con un vecino! ¡Lo que l e larga!
+¡Mira el otro! ¡Que le ha pisoteado! ¡Se van a dar de tort as! ¡Seguro! ¡A que no! ¡A 
+que sí! ¡Dale! ¡Dale! ¡Párte le la cara! ¡Venga! ¡Atízale! ¡Me cachis en la mar! ¡No!
+¡Se arruga! ¡El tío! ¡Y qué cuello! ¡Y qué cordón! ¡Mira cómo vue la al asiento! ¡Allá 
+va! ¡El tío!
+¡Mira! ¡Anda! ¡No! ¡No me equivoco! ¡Es él! ¡Seguro! ¡Allí! ¡A llí mismo! ¡En la plaza 
+de Roma! ¡Delante de la estación de Saint-Lazare! ¡Paseánd ose de arriba abajo! ¡Y con 
+otro tipo!¡Y las tontadas que le está diciendo el otro ! ¡Que se añada un botón! ¡En el 
+abrigo! ¡Sí! ¡Sí! ¡En el abrigo!
+ENTONCES
+Entonces llegó el autobús. Entonces subo. Entonces he  visto un sujeto que me ha 
+llamado la atención. Entonces le he visto el cuello tan  largo y le he visto el cordón que 
+llevaba alrededor del sombrero. Entonces se pone a echar pe stes contra su vecino que le 
+pisoteaba entonces. Entonces, va a sentarse.
+Entonces, más tarde, vuelvo a vedo en la plaza de Roma. E ntonces estaba con un 
+amigo.  Entonces  le  dice  el  amigo:  deberías  hacerte  pone r  otro  botón  en  el  abrigo. 
+Entonces.
+AMPULOSO
+A la hora en que comienzan a agrietarse los rosados dedos d e la aurora, cabalgaba 
+yo, cual veloz saeta, en un autobús, de imponente alzada y bovinos ojos, de la línea S de 
+sinuoso  periplo.  Advertí,  con  la precisión  y  agudeza  del  indio  presto  al  combate,  la 
+presencia de un joven cuyo cuello era más largo que el de l a jirafa de pies ligeros, y cuyo 
+sombrero de fieltro hendido estaba ornado con una trenza, cu al héroe de un ejercicio de 
+estilo. La funesta Discordia de senos de hollín vino con su boca hedionda por desdén del 
+dentífrico;
+la Discordia, digo, vino a inocular su maléfico virus entre  este joven del cuello de 
+jirafa y trenza alrededor del sombrero, y un viajero de bo rroso y farináceo semblante. 
+Aquél dirigióse a éste en los siguientes términos: «¡Oígam e, malvado ser, diríase que 
+usted me está pisoteando adrede!» Así exclamó el joven del cue llo de jirafa y trenza 
+alrededor del sombrero y fue, presto, a sentarse.
+Más tarde, en la plaza de Roma, de majestuosas proporciones,  reparé de nuevo en 
+el  joven  del  cuello  de  jirafa  y  trenza  alrededor  del  sombre ro,  acompañado  de  un 
+camarada, árbitro de la elegancia, el cual profería esta críti ca que me fue dado percibir 
+con mi ágil oído, crítica dirigida a la indumentaria más e xterna del joven del cuello de jirafa 
+y trenza alrededor del sombrero: «Deberías disminuirle el escot e mediante la adición o 
+elevación de un botón en la periferia circular. »
+VULGAR
+¿Sabes? Eran  poco más dlas doce cuando me las vi negras pa ra subir alese. 
+Mesubo, pues, pago mi billete porque no había más remedio , ¿no te parece?, y, bueno, 
+me  fijo  nun  fulano  con  pinta  panoli,  con  un  cuello,  a sea,  que  a  uno  le  parecía  un 
+telescopio y con una especie cordón alrededor duna birria som brero. Y me lo miro, fíjate, 
+qué pinta tenía de lila,  entonces  se ponencabronar  a un o questaba a su lao.  Oiga, 
+chamulla,  mucho  cuidao  ¿eh?,  añade,  que  me  parece  caposta,  lloriquea,  que  me 
+estáciendo polvo los pinreles, farfulla, pisándome sin para r, le encasqueta. En eso, muy 
+pagao de la cosa, se larga sentarse. Comun ceporro.
+Vuelvo a pasar más tarde por la plaza Roma y, mira, me lo ve o pegando la hebra 
+con otro mamarracho de su cuerda. Oyes, le suelta lotro, pues tendrías, le decía, que 
+poner otro botón, añadía, a tu abrigucho, concluía.
+INTERROGATORIO
+—¿A qué hora pasó ese día el autobús de la línea S de l as 12 y 23, en dirección 
+puerta de Champerret?
+—A las 12 y 38.
+— ¿ Había mucha gente en el autobús de la línea S suprad esignado?
+—Cantidad.
+—¿Qué percibió Vd. de particular en él?
+— Un individuo que tenía un cuello muy largo y un cordón al rededor del sombrero.
+—¿Era tan singular su comportamiento como su aspecto y anatomí a?
+—En principio, no; era normal, pero acabó por probarse que era el de un cic1otímico 
+paranoico ligeramente hipotenso en un estado de irritabili dad hipergástrica.
+—¿En qué se tradujo eso?
+—El individuo en cuestión interpeló a su vecino con un ton o llorón, preguntándole si 
+le pisoteaba adrede cada vez que subían o bajaban viajeros.
+—¿Estaba fundamentado este reproche?
+—Lo ignoro.
+—¿Cómo acabó el incidente?
+—Con la huida precipitada del joven, que fue a ocupar un  sitio libre.
+—¿Tuvo este incidente alguna consecuencia?
+—Menos de dos horas más tarde.
+— ¿ En qué consistió esta consecuencia?
+—En la reaparición de este individuo en mi camino.
+—¿Dónde y cómo volvió a verlo?
+—Pasando en autobús delante de la plaza de Roma.
+—¿Qué hacía él allí?
+—Recibía consejos sobre su vestimenta.
+COMEDIA
+ACTO PRIMERO
+Escena I
+(En la plataforma trasera de una autobús S, un día, hacia l as doce de la mañana .) 
+EL COBRADOR.—¡Los billetes, por favor!
+(Unos viajeros le pagan .)
+Escena II
+(El autobús se detiene .)
+EL COBRADOR.—¡Dejen paso! ¡Delante hay sitio! ¡Dejen paso! ¡C ompleto! ¡Tilín! 
+¡tilín! ¡tilín!
+ACTO SEGUNDO
+Escena I
+(El mismo decorado .)
+PRIMER VIAJERO ( joven, cuello largo, cordón alrededor del sombrero ). —Se diría, 
+señor, que usted me pisotea adrede cada vez que pasa la gen te.
+SEGUNDO VIAJERO ( se encoge de hombros .)
+Escena II
+(Baja un tercer viajero .)
+PRIMER VIAJERO ( dirigiéndose al público ): ¡Estupendo! ¡un sitio libre! ¡Allá voy! ( Se 
+precipita sobre él y lo ocupa .)
+ACTO TERCERO
+Escena I
+(La plaza de Roma .)
+UN JOVEN ELEGANTE ( al primer viajero, ahora peatón ). —El escote de tu abrigo es 
+demasiado ancho. Deberías estrechado un poco haciéndote sub ir el botón hacia arriba.
+Escena II
+(En un autobús S que pasa por delante de la plaza de Roma ).
+CUARTO VIAJERO. —Mira, el tipo que se encontraba hace poco con migo en el 
+autobús  y  que  se  enzarzaba  con  otro  tío.  Qué  casualidad.  E scribiré  sobre  eso  una 
+comedia en tres actos y en prosa.
+APARTES
+El autobús llegó abarrotado de pasajeros.  Ojalá no lo pierda; qué chamba, aún 
+queda un sitio para mí .
+Uno de ellos qué pinta más chusca tiene con ese pescuezo desmesurado  llevaba un 
+sombrero  de  fieltro  rodeado  por  una  especie  de  cordoncillo  en  lugar  de  cinta  qué 
+pretencioso queda eso  y de repente se puso pero qué le ha dado ahora  a vituperar a un 
+vecino el otro se hace el sueco reprochándole que le pisoteab a adrede  tiene pinta de 
+querer bronca, pero se arrugará  los pinreles. Pero al quedar dentro un sitio libre qué decía 
+yo, volvió la espalda y corrió a ocuparlo.
+Dos  horas  más  tarde  aproximadamente  las  coincidencias  son  curiosas ,  se 
+encontraba en la plaza de Roma en compañía de un amigo un gilipollas de su estofa  que 
+le señalaba con el índice un botón de su abrigo ¿qué tontadas le estará diciendo?
+PAREQUESIS
+Sobre la tribuna o vestíbulo busterior  de un bucentauro  bull endo de burócratas 
+embutidos como por un embudo, un funámbulo búlgaro con  un buche tubular como una 
+butifarra y un buñuelo bufonesco en el bulbo, apabulla,  como un buchón, a un abuelo 
+bucéfalo, abusando bucalmente. Le llama buco, pero bruscam ente el buscapleitos deja la 
+burla y bucea bufando y sonámbulo hacia una buena buta ca,  donde va a aburrirse, 
+abúlico y atribulado, como en un burladero.
+Bulteriormente, en el bulevar nada bucólico, veo desde mi t aburete del bus al mismo 
+burguesito burdo en un conciliábulo con otro burro que, dea mbulando abúlico,  le da 
+pábulo hablándole de su busto.
+FANTASMAGÓRICO
+Nos, el guarda de caza de la Plaine-Monceau, tenemos el h onor de rendir cuenta de 
+la inexplicable y maligna presencia en las cercanías de la puerta oriental del Parque de S. 
+A. R. Monseñor Felipe, el consagrado duque de Orleans, en e l día de hoy, dieciséis de 
+mayo del año de gracia de mil setecientos ochenta y cuatro, de un sombrero de fieltro de 
+forma  insólita  y  rodeado  de  una  especie  de  galón  trenzado.  Consecuentemente, 
+constatamos la repentina aparición, bajo el dicho sombrero, d e un joven, provisto de 
+cuello de longitud extraordinaria y vestido como, sin duda, se viste en China. El terrorífico 
+aspecto  de  este  quídam  nos  heló  la  sangre  impidiéndonos  l a  huida.  El  quídam 
+permaneció inmóvil unos instantes; después, se agitó murmuran do como si repeliera la 
+proximidad de otros quídams invisibles pero sensibles para él. De pronto, su atención se 
+dirigió hacia su capote y le oímos susurrar lo siguiente: « ¡Falta un botón, falta un botón!» 
+Se puso en camino, al punto, tomando la dirección de la P épiniere. Atraído, muy a nuestro 
+pesar, por la extrañeza de este fenómeno, le seguimos fuera  de los límites atribuidos a 
+nuestra jurisdicción y llegamos los tres, el quídam y el so mbrero, a un jardincillo desierto, 
+mas sembrado de lechugas. Un rótulo azul de origen  desconocid o,  mas ciertamente 
+diabólico, llevaba la inscripción: «Plaza de Roma.» El qu ídam se agitó todavía durante 
+unos momentos, murmurando: «Me quería pisotear.» Desaparecieron  al punto, él primero, 
+y algún tiempo después, su sombrero. Tras haber levantado act a de esta liquidación, fui a 
+beberme una pinta a la Petite- Pologne.
+FILOSÓFICO
+Sólo las grandes ciudades pueden presentar a la espiritual idad fenomenológica las 
+esencialidades de las coincidencias temporales e improbabil ísticas. El filósofo que sube a 
+veces en la inexistencialidad fútil y utilitaria de un au tobús S puede percibir en él con la 
+lucidez de su ojo pineallas apariencias fugitivas y deco loradas de una conciencia profana 
+afligida por el largo cuello de la vanidad y por la t renza sombreril de la ignorancia. Esta 
+materia sin verdadera entelequia se lanza a veces con el impe rativo categórico de su 
+impulso  vital  y  recriminatorio  contra  la  irrealidad  neoberkele yana  de  un  mecanismo 
+corporal inapesadumbrado de conciencia. Esta actitud moral arra stra al más inconsciente 
+de  los  dos  hacia  una  espacialidad  vacía  donde  se  descompone  en  sus  átomos 
+elementales y ganchudos.
+La  indagación  filosófica  prosigue  normalmente  con  el  encue ntro  fortuito  pero 
+anagógico del mismo ser acompañado de su réplica inesencia l y costurera, la cual le 
+aconseja nouménicamente transponer al plano del intelect o el concepto de abrigo situado 
+sociológicamente demasiado bajo.
+APÓSTROFE
+¡Oh estilógrafo de pluma de platino, que tu veloz y expe dita carrera trace sobre el 
+papel  de  satinado  dorso  los  glifos  alfabéticos  que  transm itirán  a  los  hombres  de 
+centelleantes lentes el narcísico relato de un doble encue ntro por razón autobusilística! 
+¡Brioso  corcel  de  mis  sueños,  fiel  camello  de  mi  gesta  literaria ,  esbelta  fontana  de 
+contadas, pesadas y escogidas palabras, traza las volutas lexi cográficas y sintácticas que 
+alentarán gráficamente la narración fútil e insignificante  de los hechos y gestos de aquel 
+joven que un día tomó el autobús S, sin sospechar siqui era que concluiría siendo el héroe 
+inmortal de mis laboriosos trabajos de escritor. ¡Mequetrefe d e largo cuello exornado de 
+un sombrero cercado por un galón trenzado; tú, gozque rabioso,  protestón y sin coraje, 
+que, huyendo de la gresca, fuiste a posar tu trasero, cosechad or de patadas al culo, sobre 
+un banquillo de dura madera!, ¿Llegaste a sospechar por u n instante este destino retórico 
+cuando, ante la estación de Saint-Lazare, escuchabas con exal tada oreja los consejos de 
+sastre de un personaje a quien inspiraba el botón superior de tu gabán?
+TORPE
+No tengo costumbre de escribir. No sé. Me gustaría escribir una tra gedia o un soneto 
+o una oda, pero están las reglas. Eso me corta. No son cosas para aficionados. Todo esto 
+ya está muy mal escrito. En fin. En todo caso, hoy he visto al go que me gustaría mucho 
+asentar por escrito. Asentar por escrito no me parece muy acerta do. Debe de ser una de 
+esas frases hechas que repelen a los lectores que leen para  los editores que buscan la 
+originalidad que les parece necesaria en los manuscritos que  los editores publican cuando 
+éstos  han  sido  leídos  por  los  lectores  a quienes  repelen  las  frases  hechas  del tipo 
+«asentar por escrito» que es, sin embargo, lo que me gustarí a hacer con una cosa que he 
+visto hoy, aunque yo sólo soy un aficionado a quien cortan l as reglas de la tragedia, del 
+soneto o de la oda, porque no tengo costumbre de escribir. ¡Jo der, no sé cómo me las he 
+arreglado  pero  ya  estoy  otra  vez  al  principio!  No  me vaya  acla rar  nunca.  Da  igual. 
+Cojamos el toro por los cuernos. Un tópico más. Y, adem ás, el chico aquel de toro no 
+tenía nada. Mira, eso no está mal. Si escribiese: cojamos al mequetrefe por el cordón de 
+su sombrero de fieltro a un largo cuello pegado, a un cuell o superlativo, tal vez eso 
+seguramente sería original. Quizás cosas así me permitirían conocer a los señores de la 
+Real Academia, del Gijón y de la editorial Cátedra. Al fin y al cabo, por qué no iba a hacer 
+adelantos. La práctica de escritura hace maestro en literatura.  Qué bien me ha salido eso. 
+Aunque no hay que perder los estribos. El tipo de la pla taforma sí que los perdió cuando 
+se puso a insultar a su vecino con el pretexto de que este ú ltimo le pisoteaba cada vez 
+que se encogía para dejar subir o bajar a los viajeros. L o mismo que cuando, después de 
+haber protestado de aquella manera, se fue deprisa a senta rse en cuanto vio un sitio libre 
+dentro, como si se oliese los palos. Mira, ya he contado la mitad de mi historia.
+No sé cómo lo he hecho. Hasta es agradable esto de escribir. Aunque queda lo más 
+difícil. Lo más duro. La transición. Y aún peor porque no h ay transición. Mejor lo dejo.
+DESENVUELTO
+Subo al Autobús.
+—Va a Champerret, ¿no?
+— ¿No sabe usted leer?
+—Perdone.
+Taladra mi billete sobre su tripa.
+—Tenga.
+—Gracias.
+Miro a mi alrededor.
+—¡Eh, oiga!
+Lleva una especie de galón alrededor del sombrero.
+—¿No podría ir con cuidado?
+Tiene un cuello muy largo.
+—¡Basta ya! ¿No?
+Entonces se precipita sobre un sitio libre.
+—Pues vaya.
+Me digo.
+II
+Subo al autobús.
+—¿Va a la plaza de la Contrescarpe?
+—¿No sabe usted leer?
+—Perdone.
+Hace funcionar su organillo y me devuelve mi billete con una  cancioncilla taladrada.
+—Tenga.
+—Gracias.
+Pasamos delante de la estación de Saint-Lazare.
+—Mira, el tipo de antes.
+Aguzo las orejas.
+— Deberías hacerte poner otro botón en el abrigo.
+Le enseña dónde.
+—Tu abrigo está demasiado escotado.
+Es verdad.
+—Pues vaya.
+Me digo.
+PARCIAL
+Después de una espera desmesurada, por fin volvió el autobú s la esquina de la calle 
+y frenó junto a la acera. Bajaron algunas personas, otras sub ieron: yo era una de éstas. 
+Nos apretujamos en la plataforma, el cobrador tiró veheme ntemente de la cadena para 
+avisar y el vehículo siguió. Mientras cortaba en un carnet el  número de billetes que el 
+hombre de la cajita iba a taladrar, me puse a inspeccionar a mis vecinos. Sólo vecinos. Ni 
+una mujer. Un vistazo desinteresado, por lo tanto. Me fijé  entonces en la crema de la 
+morralla circundante: un chico de unos veinte años con una  cabecita minúscula encima de 
+un cuello largo, y con un gran sombrero::en su cabecita y una trencilla chula alrededor del 
+enorme sombrero.
+Qué pobre tipo, me digo.
+Y no era sólo un pobre tipo, era un malvado. Se puso indign adísimo acusando a un 
+burgués cualquiera de laminarle los pies cada vez que p asaba un viajero para subir o 
+bajar. El otro le miró con severidad, buscando una respuesta corta nte entre el repertorio 
+preparado que debía de acarrear a través de las diversas circu nstancias de la vida, pero 
+aquel día no estaba en forma. En cuanto al joven, que se esperaba un par de bofetadas, 
+aprovechó la repentina libertad de un asiento para precipit arse sobre éste y sentarse.
+Bajé antes que él y no pude observar su comportamiento. L o destinaba al olvido, 
+cuando, dos horas más tarde, desde el autobús, me lo vuelvo  a ver al mismo, en la acera, 
+en la plaza de Roma, tan lamentable como SIempre.
+Caminaba de arriba abajo en compañía de un amigo que de bía de ser su asesor de 
+modas y que le aconsejaba, con una pedantería dandyesca, hacer estrechar el escote de 
+su abrigo haciéndose añadir en él un botón suplementario .
+Que pobre tipo, me digo.
+Luego, los dos, mi autobús y yo, seguimos nuestro camino.
+SONETO
+Subido al autobús, por la mañana,
+Entre golpe, cabreo y apretón,
+Me encuentro con tu cuello y tu cordón,
+Lechuguino chuleta y tarambana.
+De improviso y de forma un tanto vana,
+Gritando que te ha dado un pisotón,
+Provocas a un fornido mocetón
+Que por poco te zurra la badana.
+Y vuelvo a verte al cabo de dos horas
+Discutiendo con otro pisaverde
+Acerca del gabán que tanto adoras.
+Él critica con saña que remuerde;
+Tú te enojas, fastidias y acaloras
+Y, por toda respuesta, exclamas: «¡Merde!»
+OLFATIVO
+En aquel S meridiano había, además del olor habitual , olor a ave, haces, haches, 
+Hades; a efigies, hachís, jota, caca, leyes; a meneo, años,  pedo, culo; a reses, t.v., a 
+doble uve ce, a esquís y agria gaceta; había cierto hedor a largo cuello juvenil, cierta 
+transpiración de galón trenzado, cierta acritud de roña, cierta peste cobarde y estreñida, 
+tan fuertes que cuando, dos horas más tarde, pasé por del ante de la estación de Saint-
+Lazare, los reconocí e identifiqué en el perfume cosmético,  fashionable y tailoresco que 
+emanaba de un fétido botón mal colocado.
+GUSTATIVO
+Aquel autobús  tenía un sabor  especial.  Curioso,  pero indisc utible. No todos  los 
+autobuses saben igual. Como suele decirse, pero así es. Basta con probado. Aquel —un s
+— para ser sinceros, tenía un ligero sabor a cacao tostado, y no digo más. La plataforma 
+tenía su aroma especial, a cacahuete no sólo tostado, sino, además, pisoteado. A un 
+metro sesenta del suelo, una golosa, aunque allí no habí a ninguna, hubiese podido lamer 
+una cosa un poco agria que era un cuello de hombre treintañ ero. Y veinte centímetros aún 
+más arriba, se ofrecía a un paladar refinado la exótica de gustación de un galón trenzado 
+con un ligero sabor a chocolate. A continuación degustamos el chiclé de la pelea, las 
+castañas del cabreo, las uvas de la ira y los racimos de la a margura.
+Dos  horas  más  tarde  se  nos  ofrecieron  los  postres:  un  botón  de abrigo...  una 
+auténtica guinda...
+TÁCTIL
+Los autobuses son suaves al tacto, sobre todo si se los cog e entre los muslos y se 
+les acaricia con las dos manos, de la cabeza a la cola, del  motor a la plataforma. Pero 
+cuando uno se encuentra en la plataforma se advierte entonc es una cosa más áspera y 
+basta que es la chapa o barra para apoyarse, y luego algo más abultado y elástico, que es 
+una nalga. Algunas veces hay dos, entonces se pone la fras e en plural. También se 
+puede agarrar un objeto tubular y palpitante que regu rgita unos ruidos estúpidos, o bien 
+un utensilio de espirales trenzadas más suaves que un rosari o, más sedosas que un 
+alambre espinoso, más aterciopeladas que una cuerda y más finas que una maroma. O, 
+incluso, puede tocarse con el dedo la estupidez humana, ligeramente viscosa y pegajosa, 
+a causa del calor.
+Después, si se espera pacientemente una hora o dos, entonces,  delante de una 
+estación áspera, se puede sumergir la mano tibia en la exq uisita frescura de un botón de 
+hueso que no está en su sitio.
+VISUAL
+En conjunto es verde con un techo blanco, alargado, con crist ales. No los puede 
+hacer cualquiera, los cristales. La plataforma es incolora, o , si se quiere, es mitad gris y 
+mitad marrón. Sobre todo, está llena de curvas, de montones d e S, por decido así. Pero a 
+eso del mediodía, hora de tráfico, es un raro embrollo. Para  aclararse, haría falta sacar del 
+magma un rectángulo de ocre pálido, colocar en el extremo u n óvalo de pá1ido ocre y 
+encima del todo pegar en los acres oscuros un sombrerucho al que rodearía un cordón 
+siena tostado y, para colmo, entremezclado. Después podría plantificarse una mancha 
+verdosa que representaría la rabia, un triángulo rojo para e xpresar la ira y una mearrina 
+de verde para figurar la bilis reconcentrada y el canguelo cagu eta.
+Luego, podría dibujarse uno de estos bonitos abriguchos azul marino con un bonito 
+botón, justo debajo del escote, dibujado al pelo.
+AUDITIVO
+Mocmoqueando y pedorreando, el S rechinaba a lo largo de la acera silenciosa. El 
+trombón del sol bemolizaba mediodía. Los peatones, chill onas cornamusas, gritaban sus 
+números.  Algunos subieron  un semitono,  lo que bastó para l levarles  hacia la puerta 
+Champerret  de  melodiosos  arcos.  Entre  los  jadeantes  elegido s  figuraba  un  tubo  de 
+clarinete a quien la desgracia del destino había conferido forma humana, y la perversidad 
+de un sombrerero llevar sobre el timbal un instrumento que sem ejaba una guitarra que 
+hubiese trenzado sus cuerdas para hacerse un cinturón. De pro nto, en medio de los 
+acordes en menor de viajeros atrevidos y de viajatiples  consentidoras y los trémolos 
+balantes  por  el  cobrador  rapaz  estalla  una  cacofonía  burle sca  en  la  que  la  ira  del 
+contrabajo se une a la irritación de la trompeta y al cangue lo del fagot.
+Luego, tras suspiro, silencio, pausa y doble pausa, estalla l a melodía triunfante de un 
+botón al pasar a la octava superior.
+TELEGRÁFICO
+BUS  ABARROTADO  STOP  JOVEN  CUELLO  LARGO  SOMBRERO  CORDÓN 
+APOSTROFA VIAJERO DESCONOCIDO SIN PRETEXTO VALIDO STOP PROBLEMA 
+DEDOS  PIES  ESTRUJADOS  CONTACTO  PRESUMIBLEMENTE.  ADREDE  STOP 
+JOVEN ABANDONA DISCUSIÓN POR SITIO LIBRE STOP CATORCE HORAS PLAZA 
+ROMA  JOVEN  ESCUCHA  CONSEJOS  INDUMENTARIOS  COMPAÑERO  STOP 
+DESPLAZAR BOTÓN STOP FIRMADO ARCTURUS
+
+ODA
+En el autobús
+en el bus bombón
+el autobús S
+el esesosón
+que va por las calles
+por el callejón
+siguiendo su marcha
+nada marchosón
+cerca de Monceau
+cerca de Monçon
+en muy sofocante
+día sofocón
+iba un mozalbete
+un cuellilargón
+con un sombrerucho
+con un sombrerón
+en el autobús
+en el busbombón
+En el sombrerucho
+en el sombrerón
+llevaba una trenza
+llevaba un cordón
+en el autobús
+en el busbombón
+a causa del lío
+y del pisotón
+estalló un barullo
+y un gran mogollón
+y aquel mozalbete
+tan cuellilargón
+protestó y gruñó
+gritó quejicón
+contra otro viajero
+algo vejancón
+en el autobús
+en el busbombón
+pero aquel viajero
+algo vejancón
+no se lo aguantaba
+ni se lo aguantó
+y le plantó cara
+muy caraplantón
+en el autobús
+en el busbombón
+y aquel mozalbete
+tan cuellilargón
+fue a poner su culo
+todo muy culón
+a bordo del S
+del esesosón
+sobre la butaca
+para el batuecón
+Sobre la butaca
+para batuecón
+yo que soy poeta
+de gayo pompón
+un poco más tarde
+un poco tardón
+junto a Saint-Lazare
+junto a la estación
+lo vi al mozalbete
+al cuellilargón
+que de un abrigucho
+abriguchochón
+con un compañero
+con un compañón
+sobre un botonzuelo
+se embotonrolló
+junto al autobús
+junto al busbombón
+Y si esta historia
+si esta narración
+fuese del agrado
+de vuestra atención
+no tengáis reposo
+ni relajación
+hasta que un buen día
+con gran emoción
+encontréis de pronto
+y de sopetón
+a bordo de un S
+de un esesosón
+a aquel mozalbete
+tan cuellilargón
+con el sombrerucho
+con el sombrerón
+con su botonzuelo
+y con su botón
+en el autobús
+en el busbombón
+el autobús S
+el esesosón
+PERMUTACIONES  POR GRUPOS  CRECIENTES  DE LETRAS
+Ñanah unama ediod aciam aplat íaenl atras aform unaut erade elali obusd iaunj 
+neasv ecuel ovend asiad lodem oquel olarg aunso orade mbrer  mnga adopo enzad lontr o. 
+Tointe depran suveci rpeloa endien nopret stelep doquee ba adre isotea vezque decada 
+nosubi bajaba eros  anviaj.  Idament perorap  noladis eaba ndo aralanz  cusionp reunsit 
+arsesob iolibre.
+Smás tard unas hora aver dela elo volví staciónd nte de l a zare canv esaintla on un 
+comp ersandoc le decíaq añero que era subir ue se hici uperio rd el botóns o esu abrigo
+PERMUTACIONES  POR GRUPOS  CRECIENTES  DE PALABRAS
+Mañana una mediodía hacia, la en trasera plataforma un de  autobús línea la observé 
+S un a joven cuello de largo demasiado llevaba que sombrero  un por rodeado galón un 
+trenzado. Interpeló a de pronto pretendiendo que su vecino adrede cada le pisoteaba 
+subían o vez que bajaban viajeros. la discusión para pero aba ndonó rápidamente sitio 
+libre lanzarse sobre un.
+A verlo delante de horas más tarde volví y estaba conversando con la estación 
+Saint-Lazare decía que se subiese un compañero que le superio r de su abrigo un poco el 
+botón.
+HELENISMOS
+En un hiperautoceno pletórico de petreleonautas, fui márti r de un microrama en una 
+cronía de metábasis  macrotaráxica:  un  hipo tipo más que  i cosañero,  con  un petaso 
+periciclado  por  caloplegma  y  un  dolicotraquelo  eucilíndri co,  anatematizaba  enfática  y 
+cacofónicamente a un efímero y anónimo morótico, que, seg ún el prótero pseudologaba, 
+le epitripsizaba los dípodos; mas, apenas euriscopó una cenot opia, se peristrofó para 
+catapeltarse allí.
+En una hístera cronía, lo esteticé delante del siderodrómi co estatmo hagiolazárico, 
+peripateando  con  un  compsántropo  que  le  simbulaba  la  meta cínesis  de  un  ónfalo 
+esfintérico.
+CONJUNTOS
+Consideremos en el autobús S el conjunto A de los viaj eros asentados y el conjunto 
+D de los viajeros de pie. En una parada concreta se encuent ra el conjunto P de las 
+personas que esperan. Sea C el conjunto de los viajeros que  suben; se trata de un 
+subconjunto de P y representa la unión de C', conjunto d e los viajeros que se quedan en 
+la plataforma, y de C", conjunto de los que van a senta rse. Demostrar que C" es un 
+conjunto vacío.
+Siendo Z el conjunto de los zopencos y { z} la intersección de Z y de C', reducida a un 
+solo elemento. Como consecuencia de la sobreyección de los pi es de z sobre los de y 
+(elemento  cualquiera  de  C'  diferente  de  z),  se  origina  un  conjunto  V  de  vocablos 
+pronunciados por el elemento  z. Habiéndose transformado el conjunto C" en no vacío, 
+demostrar que se compone de un único elemento z.
+Sea ahora P el conjunto de los peatones que se encuentra n delante de la estación 
+de Saint-Lazare, { z,z'} la intersección de Z y de P, B el conjunto de los boton es del abrigo 
+de z, y B' el conjunto de las posiciones posibles de dichos b otones según z', demostrar 
+que la inyección de B en B' no es una biyección.
+DEFINICIONES
+En un gran vehículo automóvil público destinado al transpor te urbano, designado por 
+la  vigésimosegunda  letra  del  alfabeto  español,  un  joven  excéntrico  portador  de  un 
+sobrenombre atribuido en París en 1942, con la parte del cue rpo que une la cabeza a los 
+hombros extendida sobre una cierta longitud y que lleva sobre  la extremidad superior del 
+cuerpo una prenda de forma variable rodeada por un burdo cord ón entrelazado en forma 
+de trenza —este joven excéntrico, imputando a un individuo q ue iba de un sitio a otro la 
+falta consistente en desplazar sus pies, uno tras otro, enci ma de los suyos, se encaminó a 
+posarse sobre un mueble dispuesto para sentarse, mueble converti do en no ocupado.
+Ciento veinte segundos más tarde, lo vi de nuevo delante  del conjunto de inmuebles 
+y de vías ferroviarias donde se efectúa el depósito de me rcancías y la carga o descarga 
+de viajeros. Otro joven excéntrico, portador de un sobrenombre  atribuido en París en 
+1942, le daba consejos acerca de lo que le convenía hacer a  propósito de un círculo de 
+metal, cuerno, madera, etc., cubierto o no de tela, que sirve para asegurar los vestidos, en 
+este caso un vestido masculino que se lleva encima de los demá s.
+TANKA
+Un bus vetusto ¡Zas!
+Monta un mentecato
+Hay zipizape
+Más tarde en Saint – Lazare
+Un botón como tema 
+VERSOS  LIBRES
+El autobús
+lleno
+el corazón
+vacío
+el cuello
+largo
+el cordón
+trenzado
+los pies planos
+planos y aplanados
+el sitio
+vacío
+y el inesperado encuentro junto a la estación de mil luces apagadas
+del corazón, del cuello, del cordón, de los pies,
+del sitio vacío
+y de un botón.
+TRANSLACIÓN
+En el Y, en una horchata de tragedia. Un tirabuzón de un as treinta y dos aortas, 
+sonajero flexible con coronel en lujuria de círculo, cuentag otas muy largo como si se lo 
+hubiesen estirado. La geometría baja. El tirabuzón en culo  se enfada con un vegetariano. 
+Le reprocha que lo empuje cada viaducto que pasa alguien. Torbellino llorón con preces 
+de mala identidad. Al ver un soberano libre se precipita so bre él.
+Ocho horchatas más tarde, lo encuentro en el plebiscito d e Rusia delante de la 
+estalactita de San Luis. Está con un compás que le dice: «D eberías hacerte poner un 
+bozal más en el ábside.» Le enseña dónde (en el escozor) y p or qué.
+LIPOGRAMA
+Por la mañana, un autobús S iba abarrotado. Al subir, vi  allí un muchacho portando 
+un gorro con un cordón muy singular. Sin avisar, gritó como un loco malhumorado contra 
+un individuo pacífico: «¡Basta ya, bruto, Vd. va a ajar mis za patos con tanto pisotón!» Mas 
+al punto, como vio un sitio vacío, olvidó tal asunto.
+A las dos horas, lo hallo al mismo hablando con un amigo : «Falta —los oigo concluir
+— un botón a tu abrigo. AquÍ.»
+ANGLICISMOS
+Un dei a middei, yo teiko el bus y yo sío un yungo manno  con un greito necko y un 
+hatto con una queinta leisa trenzados. De pronta este yung o manno bicoma creizsio y 
+acciusa  un  respecteibol  gentilmanno  de  tridarle  los  tosos.  Lu ego  este  runó  a  un 
+unoccupiado pleis.
+A una leita auar lo sío aguein; ualkaba apo y dauno juma Seim Lasar steison. Un 
+frendo le guivaba un advaiso sobre botton.
+PRÓSTESIS
+Zuna bmañana vhacia dmediodía, den ela aplataforma ztrase ra zde hun tautobús, 
+gno plejos ddel eparque Omonceaux, eobservé fun ejoven, zcon pel pcuello sdemasiado 
+mlargo, cque sexhibía hun tsombrero crodeado dpor zun agalón  strenzado zen mlugar 
+ede tcinta. Bde opronto tinterpeló za psu svecino apretendie ndo cque téste de rpisoteaba 
+fadrede tcada gvez cque ssubía co zbajaban jviajeros. Baquel pabandonó trápidamente lla 
+xdiscusión epara slanzarse nsobre hun tsitio avacÍo.
+Galgunas choras pmás atarde, rvuelvo la averlo ddelante ede  ela aestación tde 
+Esaint-Blazare xconversando gcon hun tcompañero cque ele rdaba  fconsejos gsobre hun 
+mbotón ede tsu aaaaaaaaaaaaaaaaaabriiiigo.
+EPÉNTESIS
+Uon díea haieia merediodía, eon lea plataforoma traseur a die uan autoibús S, vai uin 
+hombire eoan eul cunello demasitado larigo quie llevauba uin somibrero rodoeado pior uin 
+galaán trenziado eun vaez die eeinta. Due prionto intera pelá a sau veucino pretuendiendo 
+quie  easte  lue  pisuoteaba  eaeda  viez  quie  subaían  o  baj uaban  viajueros.  Paero 
+abanodoná rápidiamente lia discusisián pavra lanzuarse soibre u an siatio livbre.
+Alagunas hoiras mais taurde, violví a vearlo detlante die lua estoacián die Savint-
+Lazxare hablaundo cuon uin eompañaero quoe lie aconsaej aba subair uon pioeo eul 
+bobtán surperior die siu abriggggggggggggggggggo.
+PARAGOGES
+Unag mañanaz hacian mediodíar, enllaa platoformat traser au dev uno autobusi, viy 
+uno jovenu coni unt cuellox demasiador largog quen llevab ap ung sombrerox rodeadoo 
+porb ung galóng trenzadok enx lugarx deu cintar. Def pron tod, interpeloz ap unt vecinok 
+pretendiendow quef ésteb leñ pisotebaj adredep cadag vezq queh subíani oi bajabani 
+viajerosi. Perof abandonót lab discusióng parav lanzarsew sobre k unu sitiou librex.
+Algunasu horasu másu tardeu, lou volviu au veru delanteu deu lau estacionu deu 
+Saintu-Lazareu conversandu cono uno compañerob queb leb acon sejabar hacerx subirt 
+elq botónq superiorm dek suj abrigoooooooooooooooooooooo .
+PARTES  DE LA ORACIÓN
+ARTÍCULOS: el, la, los, un, una, al.
+SUSTANTIVOS:  mañana,  mediodía,  plataforma,  autobús,  línea,  S,  parque, 
+Monceau, joven, cuello, sombrero, galón, lugar, cinta, vecino,  pie, viajero, discusión, sitio, 
+hora, estación, sanCto), Lázaro, conversación, compañero, escote, abrigo, sastre, botón.
+ADJETIVOS: trasera, completo, rodeado, gran(de), libre, largo, t renzado.
+VERBOS:  ver,  llevar,  interpelar,  pretender,  pisotear,  subir,  baj ar,  abandonar, 
+precipitar(se), volver, ver, decir, disminuir, hacer, subir.
+PRONOMBRES: yo, él, se, —le, lo, el cual, que, éste.
+ADVERBIOS: poco, cerca, muy, adrede, rápidamente, más, tarde.
+PREPOSICIONES: a, hacia, en, de, sobre, ante, con, por, en.
+CONJUNCIONES: que, o, pero.
+METÁTESIS
+Van manaña haica medoidía, en la platamorfa traresa de un  aubotús, me jifé en un 
+homrbe de culleo myu lagro y sombrore rodaedo de uan espeice de citnao De protno 
+predentía qeu su venico le pitoseaba aderde. Pore etivando l a pelae se prepicitó sorbe un 
+sitoi lirbe.
+Sod  hosar  sam  tadre  vovlí  a  velro  detanle  de  la  escatión  de  S iant-Lazare  en 
+comñapía de un pernosaje qeu le bada conjesos sorbe un tob ón.
+POR DELANTE  POR DETRÁS
+Un día por delante hacia las doce por detrás en la pla taforma por delante trasera por 
+detrás de un autobús por delante casi completo por detrá s, me fijé por delante en un 
+hombre por detrás que tenía por delante un largo cuello  por detrás y un sombrero por 
+delante rodeado por un galón trenzado por detrás en lug ar de cinta por delante. De pronto 
+se puso por detrás a gritarle por delante a un vecino por detrás, que, según le decía por 
+delante,  le chafaba por detrás  los pies por delante ca da vez que subían por detrás 
+viajeros por delante. Después fue por detrás a sentarse p or delante, porque un sitio por 
+detrás se había quedado libre por delante.
+Poco más tarde por detrás, volví a verlo por delante delante  de la estación de Saint-
+Lazare por detrás con un amigo por delante que le daba p or detrás consejos sobre ropa.
+NOMBRES  PROPIOS
+Un Domingo de Julio, tras hacer el Job esperando el Pega so, no me encontré allí 
+con Soledad precisamente, sino con Máximo Robustiano, un Gil Narciso nada Calisto que 
+llevaba el Cascorro sin Jacinta. De pronto, este Carlomagno se  enfadó, Severo y Bruto, 
+pero no Clemente ni Benigno, con un Simplicio Matusalén muy Cándido e Inocencia 
+además de Calvino, por culpa de Cayo Pisón. Pero, tras llam arle Camelia, decide ponerse 
+Cómodo.
+Dos Horacios después, cuando yo iba sentado con Plácido y Aug usto, volví a ver a 
+Goliat,  junto  a  Lázaro,  mientras  Petronio  le  aconsejaba,  Facundo  y  con  mucho 
+Demóstenes, que fuera a Balenciaga para añadirse a Otón.
+PASOTA
+O sea, qué palo, colega, el cacharro no venía ni de coña. Y  yo que llegaba tarde al 
+curre. Y luego, qué alucine, qué pasote, iba lleno cantid ad. Y me veo, o sea, un chorbo 
+cantidad de pirao, con un sombrero cutre, mangui perdido. Y de pronto le dice a un 
+pringao que lo estaba pisoteando, el muy plasta, que le había dejado el pie chunga. De 
+pena, colega. Jo, qué demasiao, qué fuerte. ¡No veas! Y e n pleno mosqueo, al tío le da 
+corte, pasa total y se larga a sentarse a toda hostia.
+Y, o sea, dos horas más tarde, vaya tela, colega, me lo veo  enrollao con un tronco 
+que le comía el coco diciéndole que estaría guay con otro botón en la chupa.
+De buten. ¿Vale o no vale, tío?
+TICON TILA TITI
+Tiutina timatiñatina tihaticia timetidiotiditia, tie n tiel tiautitotibús tide tila tilítinetia tietise 
+tivi tiun tijotiven ticon tiun ticuetillo timuy tilartigo  tiy tiun tisomtibretiro tirotidetiatido tipor 
+tiun ticortidón tien tilutigar tide tila ticintita. Ti de tiprontito tiestite tiintitertipetiló tia tiun 
+tiveticitino  tipretitentidientido  tique  tile  tipitisoti tetiatiba  tiatidretide.  Tipetiro 
+tirátipitidatimentite tise tifue tihaticia tiun tisitit io tilitibre.
+Tidos tihotiras timas titartide tilo tivueltivo tia ti ver tidetilantite tide tila tiestitatición tide 
+tiSaint tiLatizare ticon tiun ticomtipatiñetiro tique t ile tiaticontisetija tisotibre tiun tibotitón.
+ANTONÍMICO
+Medianoche. Llueve. Los autobuses pasan casi vacíos. Sobre el ca pó de un Al que 
+viene de la Bastilla, un viejo con la cabeza hundida entre  los hombros que no lleva 
+sombrero agradece a una señora situada muy lejos de él que le acaricie las manos. 
+Después va a ponerse de pie sobre las rodillas de un señor que permanece sentado en su 
+sitio.
+Dos horas antes, detrás de la estación de Lión, este viej o se tapaba las orejas para 
+no oír a un mendigo que se negaba a decide que le hac ía falta bajar un ojal el botón 
+inferior de su calzoncillo.
+LATÍN MACARRÓNICO
+Sol erat in regionem zenithi et calor atmospherae magnissima.  Sena tus populusque 
+parisiensis sudabant. Autobi pasabant completi. In uno ex supradictis autobibus qui S 
+denominationem  portabat,  hominem quasi juvenum, cum coll o molto elongato et cum 
+sombrero a cordincula trenzata circulato vidi. Iste junior i nsultavit alterum hominem qui 
+proximus  erat:  pisoteat,  inquit,  pedes  meos  post  deliberati onem  animae  tuae.  Tunc, 
+sedem liberam vidente, cucurrit ibi.
+Sol duas horas in coelo habebat descenditus. Sancti Lazari sta tionem ferroviariam 
+pasante  delante,  jovenum  supradictum  cum  alterum  ejusdem  cal agniae  qui  arbiter 
+elegantiarum erat et qui de uno ex botonis capae junio ris consilium donabat vidi.
+HOMOFÓNICO
+Un ama eñe Ana debe era ano, ame dio di a, su vi ala pl ata forma tras era dé una 
+unto bu úsese. Esta haba mira ando a sombra do une efe bocó n sus hombre rorro de 
+hado poros curo cor don. Degaulle peste mi istmo es tupid o seca brea hipo oro poco y 
+erre aún vez y no Queneau es pera talco osa.
+Do oso ora asma asta arde, ca vela esta acción des han la zar,  una mi higo su yo lea 
+con sed jaco ser oh tromba Otón ene Helga van.
+Galicismos
+Un jour hacia el midi, él me ha arribado de rencontrar sobre  la plataforma arriera de 
+un autobús de la líñea Es un monsieur con un cou trop e longado y un chapeau tutafé 
+extraordinario.  Este  monsieur  là  se  ha  metido  a  discutar  con  un  otro  monsieur  en 
+accusándolo notamente de le pietinar sobre los pies exprés;  y menazaba de lui cassar la 
+figura. Todo a golpe este meco como él ve una plaza libre,  se precipita para allí sentar.
+Dos horas aprés lo reveo sobre el trottero de Cour de Rome en tren de baladarse 
+con  un  camarada  que  le  daba  de  consejos  para  hacer  meter  u n  otro  botón  en  su 
+parasobre.
+PARALOSS  ENGLAYSAYS
+Oonnah  manyanah  alass  dowthay  kohee  oonowtoboos  carsy  komp laytoe  end 
+directheeon Changparay. Soobee day toedass phormass, ee bee oong hoeven (0noon 
+kwayow lahrgo ee sumbrayroh roday are do poor oong cordong. E lm ease more hoeven 
+say enfardoh kong oon soo hay tow egstupidowe. Loowaygo sa y send toe.
+Poke owe mass tarday low enkwend trow end Leicester thea o n day Sing Lahzahr 
+ahcompany ado day oong dundea kay lay akon say her soo b eer selb auton desure breed 
+go.
+CONTRE -PETTERIES
+Una mañana de verana, en un liobús de la autonea S, me  tipé en un fijo con un corro 
+con gordón cintado en trez de venza. De puto se pronso a veta rle a un gricino que le 
+pasoteaba sin pirar.
+Al rabo del cato, ve lo meo otra vez compachando a un escuñe ro que le bobla de un 
+hatón y él consechaba los escujos.
+BOTÁNICO
+Tras haber estado de plantón, haciendo el berzas, bajo un  girasol florido, me injerté 
+en una calabaza colectiva. Allí desentierro un calabacín cuyo t allo había crecido muy alto 
+y con el melón coronado con una vaina rodeada por una lian a. Este zanahoria de mala 
+uva le dio para peras a un boniato que pisoteaba sus arri ates chafándole los dátiles. 
+¡Relechugas! Para evitar una cosecha de castañas que era mucho t omate para él, se fue 
+a plantar en tierra virgen.
+Más tarde volví a verlo delante del invernadero de los fora steros. Pensaba en un 
+esqueje de garbanzo, para encima de su corola.
+MÉDICO
+Tras una breve sesión de helioterapia, temiendo que me p usieran en cuarentena, 
+subí por fin en una ambulancia llena de casos clínicos. A llí diagnostico un gastrálgico, 
+afectado  de  gigantismo  agudo,  con  una  curiosa  elongación  traqueal  y  reumatismo 
+deformante del cordón del sombrero. Este mongólico sufre de pro nto una crisis histérica 
+porque un cacoquímico le comprime su tilosis gonfótica; después,  tras un cólico biliar, va 
+a calmar sus convulsiones.
+Más tarde vuelvo a verlo junto al Lazareto, consultando a u n charlatán sobre un 
+forúnculo que deslucía sus pectorales.
+INJURIOSO
+Tras  una  espera  repugnante  bajo  un  sol  inaguantable,  acab é  subiendo  en  un 
+autobús  inmundo  infestado  por  una  pandilla  de  imbéciles.  El  más  imbécil  de  estos 
+imbéciles era un granuja con el gañote desmedido que exhi bía un guita grotesco con un 
+cordón  en  lugar  de  cinta.  Este  chuleta  se  puso a gruñir  porq ue  un  viejo  chocho  le 
+pisoteaba los pimeles con un furor senil; pero enseguida se arrugó largándose a un sitio 
+vacío todavía húmedo del sudor de las nalgas de su anteri or ocupante.
+Dos horas más tarde, qué mala pata, me tropiezo con el mis mo imbécil que charra 
+con otro imbécil delante de ese asqueroso monumento llamado  la estación de Saint-
+Lazare. Parloteaban a propósito de un botón. Me digo: aun que se suba o se baje el 
+forúnculo, mona se quedará, el muy requeteimbécil.
+GASTRONÓMICO
+Tras cocerme de tanto esperar bajo un sol como para fundir m antequilla, acabé 
+subiendo en un autobús de color pistacho en el que los pasajeros bullían como gusanos 
+en un queso pasado. En este plato de merluzas observé un fideo con un cuello largo 
+como un día sin pan y una galleta en la cabeza rodeada p or un hilo de cortar mantequilla. 
+Este macarrón  rompió a hervir porque una especie de besugo al h orno le traía frito 
+exprimiéndole,  y le dejaba  los  pies  hechos  puré.  Pero  cesó  rápidamente  de charrar 
+mandándole a freír espárragos, y se metió en un molde que había quedado vacío.
+Iba en el autobús de vuelta haciendo la digestión, cuan do, delante del restaurante de 
+la estación de Saint-Lazare, volví a ver al mismo pollo asado con un cochinillo que le daba 
+una receta sobre cómo debía aderezarse mejor. Y él se quedaba h echo un flan.
+ZOOLÓGICO
+En la pajarera que, a la hora en que los leones van a b eber, nos transportaba hacia 
+la plaza de Champerret, me fijé en un bicho raro de cuello de avestruz que llevaba un 
+castor  rodeado por  un ciempiés.  De pronto,  el  jirafito  se empezó a espantar  con el 
+pretexto de que una bestezuela vecina le chafaba las pezuñ as. Mas, para evitar que le 
+sacudieran las pulgas, cabalgó hacia una madriguera abandona da.
+Más tarde, delante del zoo, volví a ver al mismo pollito cotorreando con un pajarraco 
+a propósito de su plumaje, el cual le decía cómo podría q uedarle más mono.
+IMPOTENTE
+¿Cómo expresar la impresión que produce el contacto de diez  cuerpos apretujados 
+en la plataforma trasera de un autobús S una mañana ha cia el mediodía por la calle de 
+Lisboa?  ¿Cómo describir la impresión que causa contemplar un personaje de cuello 
+disformemente largo, con un sombrero cuya cinta ha sido rempla zada, sin saber por qué, 
+por un trozo de cordón? ¿Cómo reflejar la impresión que pro duce una pelea entre un 
+tranquilo viajero  injustamente  acusado  de pisotear  adrede  a  alguien  y este  grotesco 
+cualquiera, precisamente el personaje antes descrito? ¿Cómo t raducir la impresión que 
+provoca la huida de este último, disimulando su cobardía con  el vil pretexto de aprovechar 
+un sitio libre?
+¿Cómo relatar, por último, la impresión que causa la reapa rición de este sujeto 
+delante de la estación de Saint-Lazare, dos horas más ta rde, en compañía de un amigo 
+elegante que le sugería mejoras indumentarias?
+MODERN  STYLE
+En un ómnibus, una mañana, hacia mediodía, me fue dad o asistir a la pequeña 
+tragicomedia siguiente. Un petimetre, aquejado de un l argo cuello, y, cosa extraña, con un 
+cordoncillo  alrededor  del  bombín  (moda  que  hace  furor,  pero  que  yo  repruebo), 
+pretextando de pronto una gran prisa, interpeló a su vecin o con una arrogancia que 
+disimulaba mal un carácter probablemente pusilánime y l o acusó de pisotearle de forma 
+sistemática sus escarpines de charol cada vez que subían o baj aban damas o caballeros 
+dirigiéndose a la puerta de Champerret. Pero el gomoso no aguardó en absoluto una 
+contestación que sin duda le hubiese llevado al campo del  honor y trepó raudo a la 
+imperial donde le esperaba un sitio libre, pues uno de lo s ocupantes de nuestro vehículo 
+acababa de posar su pie sobre el blando asfalto de la calza da de la plaza Pereire.
+Dos horas más tarde, al encontrarme sobre la misma imperial,  observé al pisaverde 
+del que os acabo de hablar, que parecía disfrutar sobremane ra con la conversación de un 
+joven currutaco que le daba consejos superchic sobre la forma d e llevar la esclavina en 
+sociedad.
+PROBABILISTA
+Los  contactos  entre habitantes  de una gran ciudad  son  tan  numerosos  que no 
+deberíamos  extrañarnos  si  se  producen  algunas  veces  fricciones  e ntre  ellos, 
+generalmente sin gravedad. He podido asistir recientemente a uno de estos encuentros 
+desprovistos de amenidad que tienen lugar por lo general  en los vehículos destinados al 
+transporte  colectivo  de  la  región  parisina,  en  las  horas  de  t ráfico.  No  hay  nada 
+sorprendente, por otra parte, en lo que he visto, teniendo  en cuenta que suelo viajar así. 
+Ese día, el incidente fue de poca monta, pero sobre todo  lo que me llamó la atención fue 
+la apariencia y el atuendo de uno de los protagonistas de este drama minúsculo. Era un 
+hombre aún joven, pero con el cuello de una longitud prob ablemente superior a la media, 
+y cuya cinta del sombrero había sido sustituida por un gal ón trenzado. Cosa curiosa, lo 
+volví a ver dos horas más tarde mientras escuchaba los consejos  de orden indumentaria 
+que le daba un compañero con el que se paseaba de arriba a bajo, y, con negligencia, 
+diría.
+Había en este asunto pocas posibilidades de que se produj ese un tercer encuentro, 
+y de hecho, desde aquel día, no he vuelto a ver al joven , de acuerdo con las leyes 
+razonables de la verosimilitud.
+RETRATO
+El estil es un bípedo de cuello muy largo que frecuenta l os autobuses de la línea S 
+hacia  el  mediodía.  Prefiere,  en  particular,  la  plataforma  trasera,  donde  permanece, 
+mocoso, con la cabeza cubierta por una cresta rodeada, a su vez, por una excrecencia de 
+un dedo de espesor, muy parecida a una cuerda. Sumamente irri table, ataca con facilidad 
+a los más débiles que él, pero si topa con una reacción u n poco firme, huye al interior del 
+vehículo donde intenta pasar desaparecido.
+Se le ve también, pero mucho más raramente, en los alreded ores de la estación de 
+Saint-Lazare, en el momento de la muda. Conserva su piel vi eja para protegerse del frío 
+invernal, pero a menudo desgarrada para permitir que sobresalg a el cuerpo; esta especie 
+de abrigo debe cerrarse a bastante altura por métodos artifi ciales. El estil, incapaz de 
+descubrirlos por sí mismo, busca entonces la ayuda de otro bípedo de una especie afín, 
+que le hace realizar unos ejercicios.
+La estilografía es un capítulo de la zoología teórica y deductiva que puede cultivarse 
+en cualquier estación.
+GEOMÉTRICO
+En el paralelepípedo rectangular que se desplaza a lo larg o de una línea recta de 
+ecuación 84 x+S=y, un homoide A que presenta un casquete esférico rodeado po r dos 
+sinusoides, sobre una parte cilíndrica de longitud 1 > n, presenta un punto de intersección 
+con un homoide trivial B. Demostrar que este punto de int ersección es un punto de 
+inflexión.
+Si  el  homoide  A  encuentra  un  homoide  homólogo  C,  enton ces  el  punto  de 
+intersección es un disco de radio r<l. Determinar la altura h de este punto de intersección 
+en relación al eje vertical del homoide A.
+PALETO
+Pos anque no tenia encasi niun rial ni desos cachocartones pal viaje ni ná, me subí 
+ala camioneta.  Aluego questaba drento del carromato queicen  en la capital  autobús, 
+tuavía pude ir sentao ytó anque to repretao, medio ringa o y to tieso. Pos tuve de pagar y 
+con pacencia me pongoservar al personal cabía alredor, yascucha, p os no me veo un 
+cangallón con un cacho guito asurdo del to. No sus figuráis  que piazo pescuezo tenía. 
+Una risión. El sombrero con una guita trenzá lo mesmo que la dun melitar, tiaseguro. Y 
+dempués, de golpe y porrazo, cátate que semita con una probe presona que no hubiá 
+guantao muncho más, anque miá por onde de seguida dimpu és desto apreta correr el 
+cangallón huyendo comuncuete asentarse.
+Güeno, pos unaesas cosas que pue que namás pasan en la  capital. Siguro que 
+naide hubiá adevinao quiba topármelo otro viaje, el can gallón. Aluego, nomás dos horas 
+dimpués delanteun edeficio comuna catredal de grandismo.  Menúo. Aistaba el cangallón 
+dantes pasiándose darriba pabajo conotro gandul, asín como  él. Ascucha loqueleida lotro 
+gandul asín como él. Pos 10tro gandul asín comoélleida: « Me paice de verdá, leida, que 
+te sería mes ter dir hacerte poner el botón de la zamarra una miaja más enlualto, pa que 
+fua más majo.» Eso leida al cangallón el gandul asín com oél.
+INTERJECCIONES
+¡Pst! ¡eh! ¡ah! ¡oh!¡hum! jajá! ¡uf! ¡anda! ¡caramba! ¡córcholis! ¡pchs! ¡puaf! ¡ay! ¡au! 
+¡uy! ¡eh! ¡ojo! ¡epa! izas!
+¡Mira! ¡ehl ¡bah! ¡oh! ¡ah! ¡bueno!
+Amanerado
+Eran los aledaños de un julio meridiano. El sol reinaba  con todo su esplendor sobre 
+el horizonte de múltiples ubres. El asfalto palpitaba dul cemente, exhalando ese tierno 
+aroma de alquitrán que origina en los cancerosos ideas a la par pueriles y corrosivas 
+sobre el origen de sus dolencias. Un autobús, de librea verde  y blanca, blasonado con 
+una enigmática S, vino a recoger, junto al parque Monceau, un pequeño pero agraciado 
+lote de viajeros candidatos a los húmedos confines de l a disolución sudorípara. En la 
+plataforma  trasera  de  esta  obra  maestra  de  la  industria  auto movilística  francesa 
+contemporánea, donde se amontonaban los transbordados com o sardinas en lata, un 
+pillastre que frisaba la treintena y que llevaba, entre un  cuello de una longitud cuasi 
+serpentina y un sombrero cercado por un cordoncillo, una cabeza t an sin gracia como 
+plúmbea, alzó la voz para lamentarse, con amargura no fingi da y que parecía emanar de 
+un frasco de genciana, o de cualquier otro líquido de pro piedades semejantes, de un 
+fenómeno consistente en empujones reiterados que, según él, tenían como causante a un 
+cousuario presente hic et nunc  de la S. T. C. R. P. Y le dio a su lamento el tono ag rio de 
+un viejo vicario que se hace pellizcar el trasero en un mingit orio y que, por excepción, no 
+le apetece en absoluto tal delicadeza y no entra por uva s. Pero, al descubrir un sitio libre, 
+se lanza en pos de él.
+Más tarde,  cuando el sol había bajado ya algunos peldaño s de la monumental 
+escalera de su parada celeste, y cuando de nuevo me hacía vehicu lar por otro autobús de 
+la misma línea, observé al mismo personaje descrito anteriormen te moviéndose en la 
+plaza. de Roma de forma peripatética en compañía de un individuo eiusdem estofae  que 
+le daba,  en esta  plaza consagrada a la circulación  automovil ística,  consejos  de una 
+elegancia tal que no iba más allá de un botón.
+INESPERADO
+Los amigos estaban sentados alrededor de una mesa de café  cuando Alberto se 
+reunió con ellos. Estaban Renato, Roberto, Adolfo, Jorge y T eodoro.
+—¿Qué tal? preguntó cordialmente Roberto.
+—Bien, dijo Alberto.
+Llamó al camarero.
+—Para mí que sea un picón, pidió.
+Adolfo se volvió hacia él:
+—Pues bien, Alberto, ¿qué hay de nuevo?
+—No mucho.
+—Hace buen tiempo, dijo Roberto.
+—Un poco frío, dijo Adolfo.
+—Mira, hoy precisamente he visto una cosa curiosa, dice Alberto.
+—Pues para mí que hace calor, dijo Roberto.
+—¿Qué? preguntó Renato.
+—En el autobús, al ir a comer, respondió Alberto.
+—¿En qué autobús?
+—En el S.
+—¿Y qué es lo que has visto? preguntó Roberto.
+— He tenido que esperar que pasaran lo menos tres para po der subir.
+—A esa hora no es nada raro, dijo Adolfo.
+—Y, entonces, ¿qué es lo que has visto? preguntó Renato.
+—Íbamos apretujados, dijo Alberto.
+—Buena ocasión para meter mano.
+—¡Bah! dijo Alberto. No se trata de eso.
+—Pues, venga, cuenta.
+—A mi lado había un tipo raro.
+—¿Y cómo era? preguntó Renato.
+—Alto, delgado, con un cuello raro.
+—¿Por qué? preguntó Renato.
+—Como si se lo hubiesen estirado.
+—Una elongación, dijo Jorge.
+— Y el sombrero... ahora que me acuerdo: un sombrero raro.
+—¿Por qué? preguntó Renato.
+—Sin cinta, pero con un galón trenzado alrededor.
+—Qué curioso, dijo Roberto.
+—Además —continuó Alberto—, era un buscapleitos, el tipo.
+—¿Y por qué? preguntó Renato.
+—Se puso a encabronar a su vecino.
+—¿Y por qué? preguntó Renato.
+—Decía que le pisoteaba.
+—¿Adrede? preguntó Roberto.
+—Adrede, dijo Alberto.
+—¿Y luego?
+—¿Luego? Fue a sentarse, sin más.
+—¿Eso es todo? preguntó Renato.
+—No. Lo más curioso es que lo he vuelto a ver dos horas más t arde.
+—¿Dónde? preguntó Renato.
+—Delante de la estación de Saint—Lazare.
+— ¿ Y qué pintaba allí?
+—No lo sé, dijo Alberto. Se paseaba de arriba abajo con un amigo que le hacía notar 
+que el botón de su abrigo estaba colocado demasiado bajo .
+—Es exactamente el consejo que le he dado yo, dijo Teodoro . 
