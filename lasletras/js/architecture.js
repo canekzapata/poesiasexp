@@ -1,0 +1,2021 @@
+/*
+  architecture.js — la letra sostiene el techo
+
+  Cinco familias comparten la misma materia tipográfica:
+  1. arco para una palabra ausente: masa voxelar excavada;
+  2. dos edificios esperándose: cuerpos paramétricos que no se tocan;
+  3. arquitecturas entrelazadas: cintas, cápsulas y pasillos que se atraviesan;
+  4. geometrías que regresan: curvaturas, portales y orientaciones imposibles;
+  5. arquitecturas con genealogía: planta, estructura, vacío, cubierta,
+     anexo y deformación combinados por la semilla.
+
+  La semilla es el único parámetro público. Decide especie, frase, masa,
+  vacío, perspectiva, error, relación, morfologías, alfabeto y color.
+*/
+(function (root) {
+  "use strict";
+
+  var Azar = root.ARQ_AZAR;
+  var Corpus = root.ARQ_CORPUS;
+  if (typeof module !== "undefined" && module.exports) {
+    Azar = Azar || require("./rng.js");
+    Corpus = Corpus || require("./corpus.js");
+  }
+
+  var clamp = function (value, min, max) { return Math.max(min, Math.min(max, value)); };
+  var lerp = function (a, b, t) { return a + (b - a) * t; };
+  var voxelKey = function (x, y, z) { return x + "," + y + "," + z; };
+  var TAU = Math.PI * 2;
+  var MORPHOLOGIES = ["ESTRATOS", "COSTILLAS", "PANTALLA", "ANILLO", "PLIEGUE", "TÓTEM", "VÓRTICE", "CELOSÍA", "HIPERBOLOIDE", "ZIGURAT", "ACUEDUCTO", "VOLADIZOS", "MÉNSULAS"];
+  var ENTANGLEMENTS = ["DOBLE HÉLICE", "LAZO HABITABLE", "CÁPSULAS ENLAZADAS", "ESPIRAL ATRAVESADA", "NUDO DE LOSAS"];
+  var NON_EUCLIDEAN = ["ESFERA HABITABLE", "INTERIOR MAYOR QUE EL EXTERIOR", "PASILLO RECURRENTE", "CÚPULA INVERSA", "PATIO DE HORIZONTE CURVO"];
+  var ARCH_FOOTPRINTS = ["BARRA", "L", "U", "PATIO", "ANILLO", "TORRES", "BASAMENTO ESCALONADO"];
+  var ARCH_STRUCTURES = ["LOSAS", "PÓRTICOS", "COSTILLAS", "BÓVEDAS", "PANTALLAS", "COLUMNAS", "CINTAS", "CELOSÍAS", "ZIGURATS", "ARCADAS", "MÉNSULAS"];
+  var ARCH_VOIDS = ["ARCO", "TÚNEL", "PATIO", "GRIETA", "PORTAL", "NÚCLEO AUSENTE"];
+  var ARCH_CROWNS = ["VOLADIZO", "CÚPULA", "BLOQUE DESPLAZADO", "TERRAZAS", "ALETAS", "CORONA"];
+  var ARCH_ANNEXES = ["PUENTE INCOMPLETO", "TORRE PARÁSITA", "ESCALERA", "BALCÓN", "SEGUNDO CUERPO", "NINGUNO"];
+  var ARCH_DEFORMATIONS = ["INCLINAR", "CURVAR", "TORCER", "REPETIR", "EROSIONAR", "ENTRELAZAR"];
+
+  function weightedPick(items, rng) {
+    var total = items.reduce(function (sum, item) { return sum + (item.peso || 1); }, 0);
+    var cursor = rng.float(0, total);
+    for (var i = 0; i < items.length; i += 1) {
+      cursor -= items[i].peso || 1;
+      if (cursor <= 0) return items[i];
+    }
+    return items[items.length - 1];
+  }
+
+  function perspectiveByChance(rng) {
+    var chance = rng.next();
+    if (chance < 0.045) return rng.int(2, 21);       // casi frontal: raro pero posible
+    if (chance < 0.17) return rng.int(22, 46);
+    return rng.int(47, 94);
+  }
+
+  function madnessByChance(rng) {
+    var chance = rng.next();
+    if (chance < 0.48) return rng.float(0.16, 0.48);
+    if (chance < 0.87) return rng.float(0.48, 0.8);
+    return rng.float(0.8, 1);
+  }
+
+  function curvatureByChance(rng) {
+    var chance = rng.next();
+    if (chance < 0.42) return { value: rng.float(0.32, 1), className: "POSITIVA" };
+    if (chance < 0.8) return { value: rng.float(-1, -0.32), className: "NEGATIVA" };
+    return { value: rng.float(-0.14, 0.14), className: "CASI PLANA" };
+  }
+
+  function decide(seed, forceSpecies) {
+    var rng = new Azar.RNG(seed).fork("decisiones");
+    var speciesRoll = rng.next();
+    var species = forceSpecies || (speciesRoll < 0.55
+      ? "gramatica" : speciesRoll < 0.65 ? "arco" : speciesRoll < 0.78
+        ? "espera" : speciesRoll < 0.92 ? "entrelazada" : "noeuclidiana");
+    var madness = madnessByChance(rng.fork("temperatura"));
+    var relation = rng.pick(["ESPEJO IMPERFECTO", "PARIENTES", "DESCONOCIDOS", "UNO RECUERDA MAL AL OTRO"]);
+    var leftMorph = rng.pick(MORPHOLOGIES);
+    var rightMorph = relation === "ESPEJO IMPERFECTO" ? leftMorph : rng.pick(MORPHOLOGIES);
+    if (relation === "PARIENTES" && rng.chance(0.68)) rightMorph = leftMorph;
+    var phrase = rng.pick(Corpus.frasesPorEspecie[species]);
+    var color = weightedPick(Corpus.colores, rng.fork("color"));
+    var glyphs = rng.pick(Corpus.paletas);
+    var perspective = perspectiveByChance(rng.fork("perspectiva"));
+    var curvature = curvatureByChance(rng.fork("curvatura"));
+
+    return {
+      species: species,
+      phrase: phrase,
+      mass: rng.int(30, 95),
+      opening: rng.int(28, 88),
+      perspective: perspective,
+      perspectiveClass: perspective < 22 ? "CASI FRONTAL" : perspective < 47 ? "CERCANA" : "OBLICUA",
+      error: rng.chance(0.06) ? rng.int(0, 2) : rng.int(3, Math.round(9 + madness * 10)),
+      madness: madness,
+      temperature: madness < 0.4 ? "SERENA" : madness < 0.75 ? "INESTABLE" : "FEBRIL",
+      direction: rng.chance(0.5) ? 1 : -1,
+      tilt: rng.chance(0.2 + madness * 0.35) ? rng.float(-0.18, 0.18) * madness : 0,
+      relation: relation,
+      leftMorph: leftMorph,
+      rightMorph: rightMorph,
+      entangleForm: rng.pick(ENTANGLEMENTS),
+      entangleBodies: rng.int(2, madness > 0.78 ? 4 : 3),
+      entangleTurns: rng.int(2, madness > 0.72 ? 4 : 3),
+      nonEuclideanForm: rng.pick(NON_EUCLIDEAN),
+      curvature: curvature.value,
+      curvatureClass: curvature.className,
+      gravityCenters: rng.int(1, madness > 0.72 ? 3 : 2),
+      portals: rng.int(1, madness > 0.68 ? 4 : 3),
+      orientationFault: rng.chance(0.28 + madness * 0.48),
+      archFootprint: rng.pick(ARCH_FOOTPRINTS),
+      archStructure: rng.pick(ARCH_STRUCTURES),
+      archVoid: rng.pick(ARCH_VOIDS),
+      archCrown: rng.pick(ARCH_CROWNS),
+      archAnnex: rng.pick(ARCH_ANNEXES),
+      archDeformation: rng.pick(ARCH_DEFORMATIONS),
+      topologicalContamination: rng.chance(0.08 + madness * 0.08)
+        ? rng.pick(["HORIZONTE CURVO", "GRAVEDAD PARCIAL", "INTERIOR EXPANDIDO"])
+        : "NINGUNA",
+      alphabetRelation: rng.pick(["MISMO IDIOMA", "CARAS INVERTIDAS", "TRADUCCIÓN MATERIAL"]),
+      palette: glyphs,
+      colors: color,
+      carbon: rng.chance(color.familia === "digital" ? 0.08 : 0.2)
+    };
+  }
+
+  function VoxelField() {
+    this.cells = new Set();
+    this.added = 0;
+    this.removed = 0;
+  }
+
+  VoxelField.prototype.has = function (x, y, z) { return this.cells.has(voxelKey(x, y, z)); };
+  VoxelField.prototype.add = function (x, y, z) {
+    var k = voxelKey(x, y, z);
+    if (!this.cells.has(k)) { this.cells.add(k); this.added += 1; }
+  };
+  VoxelField.prototype.remove = function (x, y, z) {
+    if (this.cells.delete(voxelKey(x, y, z))) this.removed += 1;
+  };
+  VoxelField.prototype.block = function (x0, x1, y0, y1, z0, z1) {
+    for (var x = x0; x < x1; x += 1) {
+      for (var y = y0; y < y1; y += 1) {
+        for (var z = z0; z < z1; z += 1) this.add(x, y, z);
+      }
+    }
+  };
+  VoxelField.prototype.forEach = function (callback) {
+    this.cells.forEach(function (value) {
+      var xyz = value.split(",").map(Number);
+      callback(xyz[0], xyz[1], xyz[2]);
+    });
+  };
+
+  function carveArch(field, geometry) {
+    var xMin = Math.floor(geometry.center - geometry.radius - 1);
+    var xMax = Math.ceil(geometry.center + geometry.radius + 1);
+    for (var x = xMin; x <= xMax; x += 1) {
+      var dx = Math.abs((x + 0.5) - geometry.center);
+      if (dx > geometry.radius) continue;
+      var crown = geometry.spring + Math.sqrt(Math.max(0, geometry.radius * geometry.radius - dx * dx));
+      for (var y = -1; y <= geometry.depth; y += 1) {
+        for (var z = 0; z < Math.ceil(crown); z += 1) field.remove(x, y, z);
+      }
+    }
+  }
+
+  function carveWindow(field, geometry, rng) {
+    var side = rng.chance(0.5) ? -1 : 1;
+    var center = geometry.center + side * (geometry.radius + 3);
+    var bottom = geometry.spring + geometry.radius + rng.int(1, 4);
+    for (var x = Math.floor(center - 1); x <= Math.ceil(center + 1); x += 1) {
+      for (var y = -1; y <= geometry.depth; y += 1) {
+        for (var z = bottom; z < bottom + rng.int(2, 4); z += 1) field.remove(x, y, z);
+      }
+    }
+  }
+
+  function erodeEdges(field, amount, rng) {
+    if (amount <= 0) return;
+    var candidates = [];
+    field.forEach(function (x, y, z) {
+      var exposed = !field.has(x - 1, y, z) || !field.has(x + 1, y, z) ||
+        !field.has(x, y - 1, z) || !field.has(x, y + 1, z) || !field.has(x, y, z + 1);
+      if (exposed && z > 0) candidates.push([x, y, z]);
+    });
+    rng.shuffle(candidates);
+    var total = Math.floor(candidates.length * clamp(amount, 0, 0.14));
+    for (var i = 0; i < total; i += 1) field.remove(candidates[i][0], candidates[i][1], candidates[i][2]);
+  }
+
+  function makeArchMass(traits, interpretation, rng) {
+    var field = new VoxelField();
+    var mass = clamp(traits.mass + interpretation.masa, 20, 100);
+    var opening = clamp(traits.opening + interpretation.vano, 20, 94);
+    var width = rng.int(16, 22) + Math.round(mass / 30);
+    var depth = rng.int(5, 9) + Math.round(mass / 42) + Math.min(2, interpretation.profundidad);
+    var lowerHeight = rng.int(13, 18) + Math.round(mass / 22);
+    var upperHeight = rng.int(4, 9) + Math.round(mass / 34);
+    var plinth = 1 + Math.min(2, interpretation.zocalo);
+
+    field.block(0, width, 0, depth, 0, lowerHeight);
+    var radius = clamp(Math.round(2.8 + opening / 17), 4, Math.floor(width / 2) - 2);
+    var spring = clamp(Math.round(4 + opening / 15), 6, lowerHeight - radius - 1);
+    var arch = { center: width / 2, radius: radius, spring: spring, depth: depth };
+    carveArch(field, arch);
+
+    if (plinth > 1) {
+      field.block(-1, width + 1, -1, depth + 1, 0, plinth);
+      carveArch(field, arch);
+    }
+
+    var shiftRange = 1 + Math.round(traits.madness * 4) + interpretation.desplazamiento;
+    var upperShift = rng.int(-shiftRange, shiftRange);
+    var upperInset = rng.int(0, 2);
+    field.block(upperInset + upperShift, width - upperInset + upperShift,
+      0, Math.max(3, depth - rng.int(0, 2)), lowerHeight, lowerHeight + upperHeight);
+
+    var annexes = 1 + (rng.chance(traits.madness * 0.55) ? 1 : 0);
+    for (var a = 0; a < annexes; a += 1) {
+      var annexWidth = rng.int(3, 8);
+      var annexHeight = rng.int(4, Math.max(6, lowerHeight - 3));
+      if (rng.chance(0.5)) field.block(-annexWidth - a, 0, 1, depth - 1, 0, annexHeight);
+      else field.block(width, width + annexWidth + a, 1, depth - 1, 0, annexHeight);
+    }
+
+    if (interpretation.repeticion > 0 || rng.chance(traits.madness * 0.45)) {
+      var echoWidth = Math.max(6, Math.floor(width * rng.float(0.45, 0.75)));
+      var echoStart = Math.floor(width / 2 - echoWidth / 2) + rng.int(-3, 3);
+      var echoGap = rng.int(1, 4);
+      field.block(echoStart, echoStart + echoWidth, depth + echoGap, depth + echoGap + rng.int(1, 3),
+        0, Math.max(5, lowerHeight - rng.int(2, 6)));
+    }
+
+    if (interpretation.ventana || rng.chance(0.18 + traits.madness * 0.35)) carveWindow(field, arch, rng.fork("ventana"));
+    erodeEdges(field, interpretation.erosion + traits.madness * 0.018, rng.fork("erosion"));
+
+    return {
+      field: field,
+      geometry: {
+        kind: "ARCO EXCAVADO", width: width, depth: depth,
+        lowerHeight: lowerHeight, upperHeight: upperHeight,
+        upperShift: upperShift, radius: radius, spring: spring, plinth: plinth
+      }
+    };
+  }
+
+  function visibleFaces(field, direction, body) {
+    var faces = [];
+    var sideDirection = direction >= 0 ? 1 : -1;
+    field.forEach(function (x, y, z) {
+      var voxel = voxelKey(x, y, z);
+      if (!field.has(x, y - 1, z)) {
+        faces.push({ face: "frente", body: body || "solo", voxel: voxel, x: x + 0.5, y: y, z: z + 0.5 });
+      }
+      if (!field.has(x + sideDirection, y, z)) {
+        faces.push({
+          face: "lateral", body: body || "solo", voxel: voxel,
+          x: sideDirection > 0 ? x + 1 : x, y: y + 0.5, z: z + 0.5
+        });
+      }
+      if (!field.has(x, y, z + 1)) {
+        faces.push({ face: "techo", body: body || "solo", voxel: voxel, x: x + 0.5, y: y + 0.5, z: z + 1 });
+      }
+    });
+    return faces;
+  }
+
+  function SurfaceBuilder() {
+    this.points = [];
+    this.count = 0;
+  }
+
+  SurfaceBuilder.prototype.add = function (body, face, x, y, z, group) {
+    this.count += 1;
+    this.points.push({
+      body: body, face: face, x: x, y: y, z: z,
+      voxel: "p:" + body + ":" + (group || this.count),
+      parametric: true
+    });
+  };
+
+  function addBase(builder, spec, rng) {
+    // Al menos dos filas: el zócalo aporta siempre una cara "techo", de modo
+    // que cualquier cuerpo emite frente + lateral + techo (alfabeto >= 3).
+    var rows = rng.int(2, 3);
+    for (var y = 0; y < rows; y += 1) {
+      for (var x = -spec.width / 2; x <= spec.width / 2; x += 0.9) {
+        builder.add(spec.body, y === 0 ? "frente" : "techo", spec.originX + x, spec.baseY + y * 0.8, 0, "base:" + y + ":" + x.toFixed(1));
+      }
+    }
+  }
+
+  function addStrata(builder, spec, rng) {
+    var phase = rng.float(0, TAU);
+    var amplitude = spec.width * lerp(0.06, 0.28, spec.madness);
+    for (var z = 0; z <= spec.height; z += 0.82) {
+      var t = z / spec.height;
+      var width = spec.width * (0.68 + 0.27 * Math.sin(t * Math.PI)) + Math.sin(t * TAU * 2.3 + phase) * amplitude;
+      width = Math.max(spec.width * 0.42, width);
+      var shift = Math.sin(t * TAU * 1.4 + phase) * amplitude + rng.float(-0.16, 0.16) * spec.madness;
+      for (var x = -width / 2; x <= width / 2; x += 0.86) {
+        builder.add(spec.body, "frente", spec.originX + shift + x, spec.baseY, z, "strata:" + z.toFixed(1) + ":" + x.toFixed(1));
+      }
+      for (var y = 0.8; y <= spec.depth; y += 0.9) {
+        builder.add(spec.body, "lateral", spec.originX + shift + width / 2, spec.baseY + y, z, "strata-side:" + z.toFixed(1) + ":" + y.toFixed(1));
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addRibs(builder, spec, rng) {
+    var ribs = rng.int(3, 7 + Math.round(spec.madness * 2));
+    var bend = spec.width * rng.float(0.18, 0.52) * (spec.side === "left" ? 1 : -1);
+    var phase = rng.float(0, TAU);
+    for (var rib = 0; rib < ribs; rib += 1) {
+      var offset = lerp(-spec.width / 2, spec.width / 2, ribs === 1 ? 0.5 : rib / (ribs - 1));
+      for (var step = 0; step <= Math.round(spec.height * 1.35); step += 1) {
+        var t = step / Math.round(spec.height * 1.35);
+        var x = spec.originX + offset + Math.sin(t * Math.PI) * bend +
+          Math.sin(t * TAU * 2 + phase + rib) * spec.madness * 0.45;
+        var z = t * spec.height;
+        var depthLayers = 1 + Math.round(spec.depth / 2);
+        for (var layer = 0; layer < depthLayers; layer += 1) {
+          builder.add(spec.body, layer === 0 ? "frente" : "lateral", x, spec.baseY + layer * 0.8, z,
+            "rib:" + rib + ":" + step + ":" + layer);
+        }
+      }
+    }
+    var floors = rng.int(1, 3);
+    for (var f = 1; f <= floors; f += 1) {
+      var floorZ = spec.height * f / (floors + 1);
+      for (var fx = -spec.width / 2; fx <= spec.width / 2; fx += 0.9) {
+        builder.add(spec.body, "techo", spec.originX + fx, spec.baseY, floorZ, "rib-floor:" + f + ":" + fx.toFixed(1));
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addScreen(builder, spec, rng) {
+    var columns = Math.max(7, Math.round(spec.width * 1.25));
+    var rows = Math.max(12, Math.round(spec.height * 1.15));
+    var aperture = rng.chance(0.35 + spec.madness * 0.35);
+    var phase = rng.float(0, TAU);
+    for (var column = 0; column <= columns; column += 1) {
+      var nx = column / columns;
+      for (var row = 0; row <= rows; row += 1) {
+        var nz = row / rows;
+        var inAperture = aperture && Math.pow((nx - 0.5) / 0.2, 2) + Math.pow((nz - 0.48) / 0.18, 2) < 1;
+        if (inAperture) continue;
+        var x = spec.originX + (nx - 0.5) * spec.width + Math.sin(nz * TAU + phase) * spec.madness * 0.55;
+        var y = spec.baseY + spec.depth * (0.48 + 0.43 * Math.sin(nx * TAU * rng.float(0.7, 1.8) + phase));
+        builder.add(spec.body, column % 3 === 0 ? "lateral" : "frente", x, y, nz * spec.height,
+          "screen:" + column + ":" + row);
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function angleDistance(a, b) {
+    var d = Math.abs(a - b) % TAU;
+    return Math.min(d, TAU - d);
+  }
+
+  function addRing(builder, spec, rng) {
+    var radiusX = spec.width * rng.float(0.36, 0.5);
+    var radiusZ = spec.height * rng.float(0.3, 0.43);
+    var centerZ = spec.height * rng.float(0.48, 0.62);
+    var layers = rng.int(2, 4);
+    var samples = rng.int(58, 88);
+    var openingAngle = spec.side === "left" ? 0 : Math.PI;
+    var openingSize = rng.float(0.22, 0.55) * (0.6 + spec.madness);
+    for (var layer = 0; layer < layers; layer += 1) {
+      var inset = layer * 0.65;
+      for (var sample = 0; sample < samples; sample += 1) {
+        var theta = sample / samples * TAU;
+        if (angleDistance(theta, openingAngle) < openingSize) continue;
+        for (var depth = 0; depth < 1 + Math.round(spec.depth / 2.2); depth += 1) {
+          builder.add(spec.body, depth === 0 ? "frente" : "lateral",
+            spec.originX + Math.cos(theta) * Math.max(1, radiusX - inset),
+            spec.baseY + depth * 0.85,
+            centerZ + Math.sin(theta) * Math.max(1, radiusZ - inset),
+            "ring:" + layer + ":" + sample + ":" + depth);
+        }
+      }
+    }
+    var stemWidth = Math.max(2, spec.width * 0.22);
+    var stemTop = Math.max(1, centerZ - radiusZ + 1);
+    for (var z = 0; z <= stemTop; z += 0.82) {
+      for (var x = -stemWidth / 2; x <= stemWidth / 2; x += 0.85) {
+        builder.add(spec.body, "frente", spec.originX + x, spec.baseY, z, "ring-stem:" + z.toFixed(1) + ":" + x.toFixed(1));
+      }
+    }
+    if (spec.madness > 0.72 && rng.chance(0.5)) {
+      var small = Object.assign({}, spec, {
+        originX: spec.originX + (spec.side === "left" ? 1 : -1) * spec.width * 0.14,
+        width: spec.width * 0.54, height: spec.height * 0.62,
+        baseY: spec.baseY + 0.5, madness: spec.madness * 0.7
+      });
+      addRing(builder, small, new Azar.RNG(rng.seed + 9127));
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addFold(builder, spec, rng) {
+    var columns = rng.int(7, 13);
+    var rows = Math.round(spec.height * 1.05);
+    var phase = rng.chance(0.5) ? 0 : 1;
+    for (var column = 0; column <= columns; column += 1) {
+      var nx = column / columns;
+      var localX = (nx - 0.5) * spec.width;
+      var foldY = ((column + phase) % 2 ? spec.depth : 0) + Math.sin(nx * TAU) * spec.madness;
+      var top = spec.height * (0.82 + 0.18 * Math.sin(nx * Math.PI + rng.float(-0.25, 0.25)));
+      for (var row = 0; row <= rows; row += 1) {
+        var z = row / rows * top;
+        builder.add(spec.body, column % 2 ? "lateral" : "frente",
+          spec.originX + localX, spec.baseY + foldY, z, "fold:" + column + ":" + row);
+      }
+      if (column < columns) {
+        for (var between = 1; between < 4; between += 1) {
+          var t = between / 4;
+          var nextY = (((column + 1 + phase) % 2) ? spec.depth : 0);
+          builder.add(spec.body, "techo", spec.originX + localX + spec.width / columns * t,
+            spec.baseY + lerp(foldY, nextY, t), top, "fold-top:" + column + ":" + between);
+        }
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addTotem(builder, spec, rng) {
+    var modules = rng.int(3, 6);
+    var cursor = 0;
+    for (var module = 0; module < modules; module += 1) {
+      var remaining = spec.height - cursor;
+      var moduleHeight = module === modules - 1 ? remaining : Math.max(2.2, remaining / (modules - module) * rng.float(0.72, 1.18));
+      var moduleWidth = spec.width * rng.float(0.48, 1.05);
+      var shift = rng.float(-spec.width * 0.18, spec.width * 0.18) * (0.35 + spec.madness);
+      var ellipse = rng.chance(0.42);
+      var rows = Math.max(3, Math.round(moduleHeight));
+      for (var row = 0; row <= rows; row += 1) {
+        var nz = row / rows;
+        var width = ellipse ? moduleWidth * Math.sqrt(Math.max(0.08, 1 - Math.pow(nz * 2 - 1, 2))) : moduleWidth;
+        for (var x = -width / 2; x <= width / 2; x += 0.86) {
+          builder.add(spec.body, "frente", spec.originX + shift + x, spec.baseY, cursor + nz * moduleHeight,
+            "totem:" + module + ":" + row + ":" + x.toFixed(1));
+        }
+        builder.add(spec.body, "lateral", spec.originX + shift + width / 2,
+          spec.baseY + spec.depth * rng.float(0.65, 1), cursor + nz * moduleHeight,
+          "totem-side:" + module + ":" + row);
+      }
+      cursor += moduleHeight;
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addVortex(builder, spec, rng) {
+    var turns = rng.float(1.5, 2.7) + spec.madness * 0.8;
+    var baseRadius = spec.width * rng.float(0.32, 0.46);
+    var taper = rng.float(0.45, 0.72);
+    var steps = Math.max(24, Math.round(spec.height * 4.4));
+    var phase = rng.float(0, TAU);
+    var depthLayers = 1 + Math.round(spec.depth / 2.4);
+    var handedness = spec.side === "left" ? 1 : -1;
+    for (var step = 0; step <= steps; step += 1) {
+      var t = step / steps;
+      var z = t * spec.height;
+      var radius = Math.max(1.1, baseRadius * (1 - t * taper));
+      var theta = phase + handedness * t * TAU * turns;
+      var wobble = Math.sin(t * TAU * 3 + phase) * spec.madness * 0.55;
+      for (var layer = 0; layer < depthLayers; layer += 1) {
+        builder.add(spec.body, layer === 0 ? "frente" : "lateral",
+          spec.originX + Math.cos(theta) * (radius + layer * 0.5),
+          spec.baseY + Math.sin(theta) * radius * 0.5 + layer * 0.42 + wobble,
+          z, "vortex:" + step + ":" + layer);
+      }
+    }
+    var mastTop = spec.height * rng.float(0.9, 1.02);
+    for (var mz = 0; mz <= mastTop; mz += 0.9) {
+      builder.add(spec.body, "frente", spec.originX, spec.baseY, mz, "vortex-mast:" + mz.toFixed(1));
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addLattice(builder, spec, rng) {
+    var families = rng.int(4, 7);
+    var top = spec.height * rng.float(0.9, 1.02);
+    var steps = Math.max(14, Math.round(spec.height * 1.15));
+    var bend = spec.width * rng.float(0.55, 0.95);
+    var phase = rng.float(0, TAU);
+    for (var dir = -1; dir <= 1; dir += 2) {
+      for (var line = 0; line < families; line += 1) {
+        var offset = lerp(-spec.width / 2, spec.width / 2, families === 1 ? 0.5 : line / (families - 1));
+        for (var step = 0; step <= steps; step += 1) {
+          var t = step / steps;
+          var x = offset + dir * (t - 0.5) * bend;
+          if (x < -spec.width / 2 - 0.6 || x > spec.width / 2 + 0.6) continue;
+          var y = spec.baseY + Math.sin(t * Math.PI) * spec.madness * 0.6;
+          builder.add(spec.body, dir > 0 ? "frente" : "lateral",
+            spec.originX + x, y, t * top, "lattice:" + dir + ":" + line + ":" + step);
+        }
+      }
+    }
+    var floors = rng.int(2, 4);
+    for (var floor = 1; floor <= floors; floor += 1) {
+      var floorZ = top * floor / (floors + 1);
+      for (var fx = -spec.width / 2; fx <= spec.width / 2; fx += 0.92) {
+        builder.add(spec.body, "techo", spec.originX + fx,
+          spec.baseY + spec.depth * 0.28 + Math.sin(fx + phase) * spec.madness * 0.3,
+          floorZ, "lattice-floor:" + floor + ":" + fx.toFixed(1));
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addHyperboloid(builder, spec, rng) {
+    // Torre de cintura: dos anillos unidos por generatrices RECTAS que se
+    // cruzan; la superficie se estrecha sola en el talle (hiperboloide reglado).
+    var generatrices = rng.int(13, 20);
+    var steps = Math.max(16, Math.round(spec.height * 1.25));
+    var baseRadius = spec.width * rng.float(0.42, 0.52);
+    var topRadius = spec.width * rng.float(0.32, 0.46);
+    var ellip = 0.5;
+    var twist = rng.float(0.9, 1.7);
+    var handed = spec.side === "left" ? 1 : -1;
+    for (var family = -1; family <= 1; family += 2) {
+      for (var g = 0; g < generatrices; g += 1) {
+        var a0 = g / generatrices * TAU;
+        var a1 = a0 + handed * family * twist;
+        for (var s = 0; s <= steps; s += 1) {
+          var t = s / steps;
+          var bx = Math.cos(a0) * baseRadius, by = Math.sin(a0) * baseRadius * ellip;
+          var tx = Math.cos(a1) * topRadius, ty = Math.sin(a1) * topRadius * ellip;
+          builder.add(spec.body, family > 0 ? "frente" : "lateral",
+            spec.originX + lerp(bx, tx, t),
+            spec.baseY + lerp(by, ty, t),
+            t * spec.height, "hyp:" + family + ":" + g + ":" + s);
+        }
+      }
+    }
+    var rings = [[0, baseRadius], [1, topRadius], [rng.float(0.42, 0.6), lerp(baseRadius, topRadius, 0.5) * rng.float(0.6, 0.8)]];
+    for (var r = 0; r < rings.length; r += 1) {
+      var ringZ = rings[r][0] * spec.height, ringR = rings[r][1];
+      for (var sample = 0; sample < 42; sample += 1) {
+        var theta = sample / 42 * TAU;
+        builder.add(spec.body, "techo", spec.originX + Math.cos(theta) * ringR,
+          spec.baseY + Math.sin(theta) * ringR * ellip, ringZ, "hyp-ring:" + r + ":" + sample);
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addZiggurat(builder, spec, rng) {
+    // Retranqueos escalonados: cada nivel se estrecha y deja una terraza.
+    var tiers = rng.int(3, 6);
+    var cursor = 0;
+    var setback = spec.width * rng.float(0.09, 0.15);
+    for (var tier = 0; tier < tiers; tier += 1) {
+      var tierHeight = spec.height / tiers * rng.float(0.82, 1.16);
+      var halfWidth = Math.max(1.6, spec.width / 2 - setback * tier);
+      var tierDepth = spec.depth * (1 - tier * 0.1);
+      var lean = rng.float(-0.18, 0.18) * spec.madness * tier;
+      for (var z = 0; z <= tierHeight; z += 0.82) {
+        for (var x = -halfWidth; x <= halfWidth; x += 0.9) {
+          builder.add(spec.body, "frente", spec.originX + lean + x, spec.baseY, cursor + z,
+            "zig:" + tier + ":" + z.toFixed(1) + ":" + x.toFixed(1));
+        }
+        builder.add(spec.body, "lateral", spec.originX + lean + halfWidth,
+          spec.baseY + tierDepth * rng.float(0.6, 1), cursor + z, "zig-side:" + tier + ":" + z.toFixed(1));
+      }
+      for (var tx = -halfWidth; tx <= halfWidth; tx += 0.9) {
+        builder.add(spec.body, "techo", spec.originX + lean + tx, spec.baseY + tierDepth * 0.4,
+          cursor + tierHeight, "zig-top:" + tier + ":" + tx.toFixed(1));
+      }
+      cursor += tierHeight;
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addAqueduct(builder, spec, rng) {
+    // Arcada repetida: pilares + arcos de medio punto, uno o dos niveles.
+    var levels = rng.chance(0.4 + spec.madness * 0.25) ? 2 : 1;
+    var levelHeight = spec.height / levels;
+    for (var level = 0; level < levels; level += 1) {
+      var baseZ = level * levelHeight;
+      var bays = rng.int(3, 6);
+      var bayWidth = spec.width / bays;
+      var pierHeight = levelHeight * rng.float(0.48, 0.62);
+      for (var pier = 0; pier <= bays; pier += 1) {
+        var px = spec.originX - spec.width / 2 + pier * bayWidth;
+        for (var z = 0; z <= pierHeight; z += 0.8) {
+          builder.add(spec.body, pier % 2 ? "lateral" : "frente", px, spec.baseY, baseZ + z, "aq-pier:" + level + ":" + pier + ":" + z.toFixed(1));
+          builder.add(spec.body, "lateral", px, spec.baseY + spec.depth * 0.7, baseZ + z, "aq-pier-d:" + level + ":" + pier + ":" + z.toFixed(1));
+        }
+      }
+      for (var arch = 0; arch < bays; arch += 1) {
+        var cx = spec.originX - spec.width / 2 + (arch + 0.5) * bayWidth;
+        var radius = bayWidth * 0.5;
+        for (var sample = 0; sample <= 20; sample += 1) {
+          var theta = sample / 20 * Math.PI;
+          var az = baseZ + pierHeight + Math.sin(theta) * (levelHeight - pierHeight);
+          builder.add(spec.body, "techo", cx + Math.cos(theta) * radius, spec.baseY, az, "aq-arch:" + level + ":" + arch + ":" + sample);
+          builder.add(spec.body, "lateral", cx + Math.cos(theta) * radius, spec.baseY + spec.depth * 0.5, az, "aq-arch-d:" + level + ":" + arch + ":" + sample);
+        }
+      }
+      for (var dx = -spec.width / 2; dx <= spec.width / 2; dx += 0.9) {
+        builder.add(spec.body, "frente", spec.originX + dx, spec.baseY, baseZ + levelHeight, "aq-deck:" + level + ":" + dx.toFixed(1));
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addCantilevers(builder, spec, rng) {
+    // Voladizos apilados: losas horizontales que sobresalen alternando lados
+    // desde un núcleo central (brutalismo tipo jenga).
+    var slabs = rng.int(4, 8);
+    var coreWidth = Math.max(2, spec.width * rng.float(0.26, 0.4));
+    var slabHeight = spec.height / slabs;
+    var handed = spec.side === "left" ? 1 : -1;
+    var depthLayers = 1 + Math.round(spec.depth / 2.5);
+    for (var i = 0; i < slabs; i += 1) {
+      var baseZ = i * slabHeight;
+      var side = (i % 2 === 0 ? 1 : -1) * handed;
+      var reach = spec.width * rng.float(0.3, 0.52) * side * (0.6 + spec.madness * 0.5);
+      var slabLeft = Math.min(-coreWidth / 2, reach);
+      var slabRight = Math.max(coreWidth / 2, reach);
+      var plateZ = baseZ + slabHeight * rng.float(0.72, 0.9);
+      for (var x = slabLeft; x <= slabRight; x += 0.85) {
+        for (var d = 0; d < depthLayers; d += 1) {
+          builder.add(spec.body, d === 0 ? "frente" : "lateral", spec.originX + x, spec.baseY + d * 0.8, plateZ, "cant-slab:" + i + ":" + x.toFixed(1) + ":" + d);
+        }
+        builder.add(spec.body, "techo", spec.originX + x, spec.baseY + spec.depth * 0.3, plateZ + 0.45, "cant-top:" + i + ":" + x.toFixed(1));
+      }
+      for (var z = baseZ; z <= baseZ + slabHeight; z += 0.82) {
+        for (var cxx = -coreWidth / 2; cxx <= coreWidth / 2; cxx += 0.9) {
+          builder.add(spec.body, "frente", spec.originX + cxx, spec.baseY, z, "cant-core:" + i + ":" + z.toFixed(1) + ":" + cxx.toFixed(1));
+        }
+        builder.add(spec.body, "lateral", spec.originX + coreWidth / 2, spec.baseY + spec.depth * 0.6, z, "cant-core-d:" + i + ":" + z.toFixed(1));
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addCorbelVault(builder, spec, rng) {
+    // Ménsulas / muqarnas: hiladas que voladizan hacia adentro escalón a
+    // escalón hasta cerrar el vano (bóveda por aproximación de hiladas).
+    var courses = rng.int(7, 12);
+    var span = spec.width;
+    var courseHeight = spec.height / courses * rng.float(0.9, 1.06);
+    var wallWidth = Math.max(1.4, span * rng.float(0.12, 0.2));
+    var step = (span * 0.5 - wallWidth) / courses;
+    for (var c = 0; c < courses; c += 1) {
+      var z0 = c * courseHeight;
+      var inset = c * step * rng.float(0.85, 1.15);
+      var innerX = Math.max(wallWidth * 0.5, span * 0.5 - inset);
+      for (var rx = innerX; rx <= span * 0.5; rx += 0.85) {
+        for (var rz = z0; rz <= z0 + courseHeight; rz += 0.82) {
+          builder.add(spec.body, "frente", spec.originX + rx, spec.baseY, rz, "corbel-r:" + c + ":" + rx.toFixed(1) + ":" + rz.toFixed(1));
+        }
+      }
+      for (var lx = -span * 0.5; lx <= -innerX; lx += 0.85) {
+        for (var lz = z0; lz <= z0 + courseHeight; lz += 0.82) {
+          builder.add(spec.body, "frente", spec.originX + lx, spec.baseY, lz, "corbel-l:" + c + ":" + lx.toFixed(1) + ":" + lz.toFixed(1));
+        }
+      }
+      builder.add(spec.body, "techo", spec.originX + innerX, spec.baseY + spec.depth * 0.3, z0, "corbel-ledge-r:" + c);
+      builder.add(spec.body, "techo", spec.originX - innerX, spec.baseY + spec.depth * 0.3, z0, "corbel-ledge-l:" + c);
+      for (var dz = z0; dz <= z0 + courseHeight; dz += 0.9) {
+        builder.add(spec.body, "lateral", spec.originX + span * 0.5, spec.baseY + spec.depth * 0.7, dz, "corbel-side-r:" + c + ":" + dz.toFixed(1));
+        builder.add(spec.body, "lateral", spec.originX - span * 0.5, spec.baseY + spec.depth * 0.7, dz, "corbel-side-l:" + c + ":" + dz.toFixed(1));
+      }
+    }
+    var capZ = courses * courseHeight;
+    for (var kx = -wallWidth; kx <= wallWidth; kx += 0.85) {
+      builder.add(spec.body, "techo", spec.originX + kx, spec.baseY + spec.depth * 0.3, capZ, "corbel-cap:" + kx.toFixed(1));
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addMorphology(builder, morphology, spec, rng) {
+    if (morphology === "ESTRATOS") addStrata(builder, spec, rng);
+    else if (morphology === "COSTILLAS") addRibs(builder, spec, rng);
+    else if (morphology === "PANTALLA") addScreen(builder, spec, rng);
+    else if (morphology === "ANILLO") addRing(builder, spec, rng);
+    else if (morphology === "PLIEGUE") addFold(builder, spec, rng);
+    else if (morphology === "TÓTEM") addTotem(builder, spec, rng);
+    else if (morphology === "VÓRTICE") addVortex(builder, spec, rng);
+    else if (morphology === "CELOSÍA") addLattice(builder, spec, rng);
+    else if (morphology === "HIPERBOLOIDE") addHyperboloid(builder, spec, rng);
+    else if (morphology === "ZIGURAT") addZiggurat(builder, spec, rng);
+    else if (morphology === "ACUEDUCTO") addAqueduct(builder, spec, rng);
+    else if (morphology === "VOLADIZOS") addCantilevers(builder, spec, rng);
+    else addCorbelVault(builder, spec, rng);
+  }
+
+  function addFailedBridge(builder, leftEdge, rightEdge, height, depth, traits, rng) {
+    var remaining = rng.float(1.8, Math.max(2.2, (rightEdge - leftEdge) * 0.52));
+    var center = (leftEdge + rightEdge) / 2;
+    var leftEnd = center - remaining / 2;
+    var rightStart = center + remaining / 2;
+    var layers = rng.int(1, 2 + Math.round(traits.madness));
+    for (var layer = 0; layer < layers; layer += 1) {
+      for (var x = leftEdge; x <= leftEnd; x += 0.78) {
+        builder.add("izquierda", layer ? "techo" : "frente", x, layer * 0.8, height + layer * 0.28, "bridge-l:" + layer + ":" + x.toFixed(1));
+      }
+      for (var rx = rightStart; rx <= rightEdge; rx += 0.78) {
+        builder.add("derecha", layer ? "techo" : "frente", rx, layer * 0.8, height + layer * 0.28, "bridge-r:" + layer + ":" + rx.toFixed(1));
+      }
+    }
+    return Math.round(remaining * 10) / 10;
+  }
+
+  function makeWaitingSurface(traits, interpretation, rng) {
+    var builder = new SurfaceBuilder();
+    var leftWidth = rng.float(7, 13);
+    var leftHeight = rng.float(13, 25);
+    var rightWidth;
+    var rightHeight;
+    if (traits.relation === "ESPEJO IMPERFECTO") {
+      rightWidth = leftWidth * rng.float(0.9, 1.08);
+      rightHeight = leftHeight * rng.float(0.88, 1.1);
+    } else if (traits.relation === "PARIENTES") {
+      rightWidth = leftWidth * rng.float(0.72, 1.28);
+      rightHeight = leftHeight * rng.float(0.7, 1.3);
+    } else {
+      rightWidth = rng.float(6, 14);
+      rightHeight = rng.float(10, 27);
+    }
+    if (traits.relation === "UNO RECUERDA MAL AL OTRO") {
+      if (rng.chance(0.5)) rightHeight *= rng.float(0.42, 0.68);
+      else leftHeight *= rng.float(0.42, 0.68);
+    }
+
+    var gap = lerp(4.2, 15.5, clamp((traits.opening + interpretation.vano) / 100, 0, 1));
+    var leftOrigin = -gap / 2 - leftWidth / 2;
+    var rightOrigin = gap / 2 + rightWidth / 2;
+    var depthBase = rng.float(3, 7);
+    var leftSpec = {
+      body: "izquierda", side: "left", originX: leftOrigin,
+      baseY: rng.float(-1, 1) * traits.madness, width: leftWidth,
+      height: leftHeight, depth: depthBase * rng.float(0.75, 1.2), madness: traits.madness
+    };
+    var rightSpec = {
+      body: "derecha", side: "right", originX: rightOrigin,
+      baseY: rng.float(-1, 1) * traits.madness, width: rightWidth,
+      height: rightHeight, depth: depthBase * rng.float(0.75, 1.28), madness: traits.madness
+    };
+
+    addMorphology(builder, traits.leftMorph, leftSpec, rng.fork("cuerpo-izquierdo"));
+    addMorphology(builder, traits.rightMorph, rightSpec, rng.fork("cuerpo-derecho"));
+
+    var bridgeGap = null;
+    if (rng.chance(0.24 + traits.madness * 0.42 + interpretation.voladizo * 0.1)) {
+      bridgeGap = addFailedBridge(builder, -gap / 2, gap / 2,
+        Math.min(leftHeight, rightHeight) * rng.float(0.42, 0.78), depthBase, traits, rng.fork("puente-incompleto"));
+    }
+
+    return {
+      surface: builder.points,
+      geometry: {
+        kind: "DOS CUERPOS PARAMÉTRICOS",
+        relation: traits.relation,
+        leftMorph: traits.leftMorph,
+        rightMorph: traits.rightMorph,
+        left: { width: leftWidth, height: leftHeight },
+        right: { width: rightWidth, height: rightHeight },
+        gap: gap,
+        bridgeGap: bridgeGap
+      }
+    };
+  }
+
+  function wrap01(value) {
+    value %= 1;
+    return value < 0 ? value + 1 : value;
+  }
+
+  function addRibbonPath(builder, spec) {
+    var samples = spec.samples || 96;
+    var across = spec.across || 6;
+    var depthLayers = spec.depthLayers || 2;
+    var last = spec.closed ? samples - 1 : samples;
+    var delta = 1 / samples;
+    for (var sample = 0; sample <= last; sample += 1) {
+      var t = sample / samples;
+      var p = spec.path(t);
+      if (spec.skip && spec.skip(t, sample, p)) continue;
+      var beforeT = spec.closed ? wrap01(t - delta) : clamp(t - delta, 0, 1);
+      var afterT = spec.closed ? wrap01(t + delta) : clamp(t + delta, 0, 1);
+      var before = spec.path(beforeT);
+      var after = spec.path(afterT);
+      var tangentX = after.x - before.x;
+      var tangentZ = after.z - before.z;
+      var length = Math.sqrt(tangentX * tangentX + tangentZ * tangentZ) || 1;
+      var normalX = -tangentZ / length;
+      var normalZ = tangentX / length;
+      for (var stripe = 0; stripe < across; stripe += 1) {
+        var u = across === 1 ? 0 : (stripe / (across - 1) - 0.5) * spec.width;
+        var section = spec.section
+          ? spec.section(t, u, p, normalX, normalZ)
+          : { x: normalX * u, y: 0, z: normalZ * u };
+        for (var depth = 0; depth < depthLayers; depth += 1) {
+          var face = depth > 0 ? "lateral" : (stripe === 0 || stripe === across - 1 ? "techo" : "frente");
+          builder.add(spec.body, face,
+            p.x + section.x,
+            p.y + section.y + depth * (spec.depthStep || 0.72),
+            p.z + section.z,
+            spec.key + ":" + sample + ":" + stripe + ":" + depth);
+        }
+      }
+    }
+  }
+
+  function addEntangledPier(builder, x, y, top, width, key) {
+    for (var z = 0; z <= top; z += 0.8) {
+      for (var dx = -width / 2; dx <= width / 2; dx += 0.78) {
+        builder.add("cimientos", "frente", x + dx, y, z, key + ":front:" + z.toFixed(1) + ":" + dx.toFixed(1));
+      }
+      builder.add("cimientos", "lateral", x + width / 2, y + 0.82, z, key + ":side:" + z.toFixed(1));
+    }
+  }
+
+  function addEntangledGround(builder, width, rng) {
+    var doorway = rng.float(-width * 0.22, width * 0.22);
+    var opening = rng.float(1.5, 3.5);
+    var rows = rng.int(1, 2);
+    for (var row = 0; row < rows; row += 1) {
+      for (var x = -width / 2; x <= width / 2; x += 0.82) {
+        if (Math.abs(x - doorway) < opening / 2) continue;
+        builder.add("cimientos", row ? "techo" : "frente", x, row * 0.78, 0,
+          "ground:" + row + ":" + x.toFixed(1));
+      }
+    }
+  }
+
+  function ellipsePath(spec) {
+    return function (t) {
+      var theta = t * TAU + (spec.phase || 0);
+      var localX = Math.cos(theta) * spec.radiusX;
+      var localZ = Math.sin(theta) * spec.radiusZ;
+      var rotation = spec.rotation || 0;
+      return {
+        x: spec.centerX + localX * Math.cos(rotation) - localZ * Math.sin(rotation),
+        y: (spec.centerY || 0) + Math.sin(theta + (spec.depthPhase || 0)) * spec.depth,
+        z: spec.centerZ + localX * Math.sin(rotation) + localZ * Math.cos(rotation)
+      };
+    };
+  }
+
+  function addHelixArchitecture(builder, traits, rng) {
+    var height = rng.float(22, 30);
+    var amplitude = rng.float(6.8, 10.5);
+    var depth = rng.float(2.5, 5.5);
+    var turns = traits.entangleTurns * rng.float(0.58, 0.82);
+    var phase = rng.float(-0.35, 0.35);
+    var width = rng.float(3.2, 5.2);
+    var pathFor = function (offset) {
+      return function (t) {
+        var theta = phase + t * TAU * turns + offset;
+        return { x: Math.sin(theta) * amplitude, y: Math.cos(theta) * depth, z: 1.8 + t * height };
+      };
+    };
+    var skipFor = function (offset) {
+      return function (t) {
+        var theta = phase + t * TAU * turns + offset;
+        return Math.abs(Math.sin(theta)) < 0.14 && Math.cos(theta) > 0.25;
+      };
+    };
+    addRibbonPath(builder, {
+      body: "cinta-a", key: "helix-a", path: pathFor(0), skip: skipFor(0),
+      width: width, samples: 92 + traits.entangleTurns * 18, across: 6, depthLayers: 2
+    });
+    addRibbonPath(builder, {
+      body: "cinta-b", key: "helix-b", path: pathFor(Math.PI), skip: skipFor(Math.PI),
+      width: width * rng.float(0.78, 1.12), samples: 92 + traits.entangleTurns * 18, across: 6, depthLayers: 2
+    });
+    var startA = pathFor(0)(0);
+    var startB = pathFor(Math.PI)(0);
+    addEntangledPier(builder, startA.x, startA.y, 2.2, width * 0.72, "helix-pier-a");
+    addEntangledPier(builder, startB.x, startB.y, 2.2, width * 0.72, "helix-pier-b");
+    addEntangledGround(builder, amplitude * 2.8, rng.fork("suelo"));
+    return { bodies: 2, crossings: Math.max(4, Math.round(turns * 2)), voids: Math.max(4, Math.round(turns * 2)), width: amplitude * 2.8 };
+  }
+
+  function addHabitableLoop(builder, traits, rng) {
+    var radiusX = rng.float(10, 14.5);
+    var radiusZ = rng.float(8.4, 12.5);
+    var centerZ = radiusZ + rng.float(3.8, 6.2);
+    var depth = rng.float(3.2, 6.2);
+    var width = rng.float(3.4, 5.6);
+    var phase = rng.float(-0.22, 0.22);
+    var loop = function (t) {
+      var theta = t * TAU + phase;
+      return {
+        x: Math.sin(theta) * radiusX,
+        y: Math.cos(theta) * depth,
+        z: centerZ + Math.sin(theta * 2) * radiusZ
+      };
+    };
+    addRibbonPath(builder, {
+      body: "lazo", key: "lazo", path: loop, closed: true,
+      skip: function (t) { return angleDistance(t * TAU + phase, Math.PI) < 0.17; },
+      width: width, samples: 144, across: 7, depthLayers: 2
+    });
+
+    var innerPath = ellipsePath({
+      centerX: 0, centerZ: centerZ, radiusX: radiusX * 0.47, radiusZ: radiusZ * 0.52,
+      depth: depth * 0.68, depthPhase: Math.PI, rotation: rng.float(-0.18, 0.18)
+    });
+    addRibbonPath(builder, {
+      body: "habitación", key: "habitacion", path: innerPath, closed: true,
+      skip: function (t) { return angleDistance(t * TAU, traits.direction > 0 ? 0 : Math.PI) < 0.13; },
+      width: width * 0.62, samples: 92, across: 5, depthLayers: 2
+    });
+
+    addEntangledPier(builder, -radiusX * 0.7, 0, Math.max(2.4, centerZ - radiusZ * 0.92), width * 0.58, "loop-pier-l");
+    addEntangledPier(builder, radiusX * 0.7, 0, Math.max(2.4, centerZ - radiusZ * 0.92), width * 0.58, "loop-pier-r");
+    addEntangledGround(builder, radiusX * 2.45, rng.fork("suelo"));
+    return { bodies: 2, crossings: 3, voids: 4, width: radiusX * 2.45 };
+  }
+
+  function addLinkedCapsules(builder, traits, rng) {
+    var radiusX = rng.float(7.2, 10.2);
+    var radiusZ = rng.float(9.5, 13.8);
+    var centerZ = radiusZ + rng.float(3, 5.5);
+    var depth = rng.float(2.5, 5.2);
+    var width = rng.float(2.8, 4.7);
+    var separation = radiusX * rng.float(0.72, 1.08);
+    var pathA = ellipsePath({
+      centerX: -separation / 2, centerZ: centerZ, radiusX: radiusX, radiusZ: radiusZ,
+      depth: depth, rotation: rng.float(-0.28, -0.08), depthPhase: 0
+    });
+    var pathB = ellipsePath({
+      centerX: separation / 2, centerZ: centerZ * rng.float(0.94, 1.04), radiusX: radiusX * rng.float(0.82, 1.08),
+      radiusZ: radiusZ * rng.float(0.78, 1.04), depth: depth, rotation: rng.float(0.08, 0.3), depthPhase: Math.PI
+    });
+    addRibbonPath(builder, {
+      body: "cápsula-a", key: "capsule-a", path: pathA, closed: true,
+      skip: function (t) { return angleDistance(t * TAU, Math.PI * 1.73) < 0.15; },
+      width: width, samples: 112, across: 6, depthLayers: 2
+    });
+    addRibbonPath(builder, {
+      body: "cápsula-b", key: "capsule-b", path: pathB, closed: true,
+      skip: function (t) { return angleDistance(t * TAU, Math.PI * 0.72) < 0.15; },
+      width: width * rng.float(0.76, 1.06), samples: 108, across: 6, depthLayers: 2
+    });
+    var bodies = 2;
+    if (traits.entangleBodies > 2) {
+      var pathC = ellipsePath({
+        centerX: rng.float(-1.2, 1.2), centerZ: centerZ * 1.02,
+        radiusX: radiusX * 0.48, radiusZ: radiusZ * 0.6,
+        depth: depth * 1.15, rotation: rng.float(-0.12, 0.12), depthPhase: Math.PI / 2
+      });
+      addRibbonPath(builder, {
+        body: "cápsula-c", key: "capsule-c", path: pathC, closed: true,
+        skip: function (t) { return angleDistance(t * TAU, Math.PI * 1.5) < 0.18; },
+        width: width * 0.55, samples: 84, across: 4, depthLayers: 2
+      });
+      bodies += 1;
+    }
+    addEntangledPier(builder, -separation / 2, 0, Math.max(2.2, centerZ - radiusZ), width * 0.75, "capsule-pier-a");
+    addEntangledPier(builder, separation / 2, 0, Math.max(2.2, centerZ - radiusZ * 0.9), width * 0.75, "capsule-pier-b");
+    addEntangledGround(builder, separation + radiusX * 2.4, rng.fork("suelo"));
+    return { bodies: bodies, crossings: bodies === 3 ? 5 : 3, voids: bodies + 2, width: separation + radiusX * 2.4 };
+  }
+
+  function addPiercedSpiral(builder, traits, rng) {
+    var outer = rng.float(11, 15.5);
+    var centerZ = outer + rng.float(3.8, 6.2);
+    var turns = traits.entangleTurns * rng.float(0.82, 1.08);
+    var depth = rng.float(2.7, 5.8);
+    var width = rng.float(2.7, 4.8);
+    var phase = rng.float(-0.4, 0.4);
+    var spiral = function (t) {
+      var theta = phase + t * TAU * turns;
+      var radius = lerp(outer, outer * 0.18, t);
+      return { x: Math.cos(theta) * radius, y: Math.sin(theta * 0.72) * depth, z: centerZ + Math.sin(theta) * radius };
+    };
+    var spiralGap = rng.chance(0.5);
+    addRibbonPath(builder, {
+      body: "espiral", key: "spiral", path: spiral,
+      skip: function (t) { return spiralGap && Math.abs(t - 0.78) < 0.025; },
+      width: width, samples: 138 + traits.entangleTurns * 16, across: 6, depthLayers: 2
+    });
+    var corridorHeight = centerZ + rng.float(-1.4, 1.8);
+    var corridor = function (t) {
+      return {
+        x: lerp(-outer * 1.12, outer * 1.12, t),
+        y: Math.cos(t * Math.PI) * depth * 0.72,
+        z: corridorHeight + Math.sin(t * Math.PI) * traits.madness * 2.1
+      };
+    };
+    addRibbonPath(builder, {
+      body: "pasillo", key: "corridor", path: corridor,
+      skip: function (t) { return !spiralGap && Math.abs(t - 0.5) < 0.055; },
+      width: width * rng.float(0.72, 1.05), samples: 82, across: 5, depthLayers: 2
+    });
+    addEntangledPier(builder, -outer * 0.92, 0, corridorHeight, width * 0.75, "spiral-pier-l");
+    addEntangledPier(builder, outer * 0.92, 0, corridorHeight, width * 0.75, "spiral-pier-r");
+    addEntangledGround(builder, outer * 2.65, rng.fork("suelo"));
+    return { bodies: 2, crossings: traits.entangleTurns + 1, voids: traits.entangleTurns + 2, width: outer * 2.65 };
+  }
+
+  function addSlabKnot(builder, traits, rng) {
+    var scale = rng.float(4.2, 5.8);
+    var centerZ = scale * 2.55 + rng.float(4, 6.5);
+    var depth = rng.float(3.4, 6.4);
+    var width = rng.float(3, 5.2);
+    var phase = rng.float(-0.18, 0.18);
+    var knot = function (t) {
+      var theta = t * TAU + phase;
+      var radius = scale * (2 + 0.5 * Math.cos(theta * 3));
+      return {
+        x: radius * Math.cos(theta * 2),
+        y: depth * Math.sin(theta * 3),
+        z: centerZ + radius * Math.sin(theta * 2)
+      };
+    };
+    var gapCenters = [0.17, 0.49, 0.82];
+    addRibbonPath(builder, {
+      body: "nudo", key: "knot", path: knot, closed: true,
+      skip: function (t) {
+        return gapCenters.some(function (center, index) {
+          return index % 2 === (traits.direction > 0 ? 0 : 1) && Math.abs(t - center) < 0.018;
+        });
+      },
+      width: width, samples: 184, across: 7, depthLayers: 2
+    });
+
+    var ring = ellipsePath({
+      centerX: 0, centerZ: centerZ, radiusX: scale * 1.05, radiusZ: scale * 1.65,
+      depth: depth * 0.78, rotation: rng.float(-0.35, 0.35), depthPhase: Math.PI
+    });
+    addRibbonPath(builder, {
+      body: "núcleo", key: "knot-core", path: ring, closed: true,
+      skip: function (t) { return angleDistance(t * TAU, traits.direction > 0 ? Math.PI * 0.5 : Math.PI * 1.5) < 0.16; },
+      width: width * 0.62, samples: 92, across: 5, depthLayers: 2
+    });
+    addEntangledPier(builder, -scale * 1.9, 0, Math.max(2.5, centerZ - scale * 2), width * 0.62, "knot-pier-l");
+    addEntangledPier(builder, scale * 1.9, 0, Math.max(2.5, centerZ - scale * 2), width * 0.62, "knot-pier-r");
+    addEntangledGround(builder, scale * 6.2, rng.fork("suelo"));
+    return { bodies: 2, crossings: 6, voids: 7, width: scale * 6.2 };
+  }
+
+  function makeEntangledSurface(traits, interpretation, rng) {
+    var builder = new SurfaceBuilder();
+    var geometry;
+    var loadedTraits = Object.assign({}, traits, {
+      entangleBodies: clamp(traits.entangleBodies + Math.min(1, interpretation.profundidad), 2, 4),
+      entangleTurns: clamp(traits.entangleTurns + Math.min(1, interpretation.repeticion), 2, 5)
+    });
+    if (traits.entangleForm === "DOBLE HÉLICE") geometry = addHelixArchitecture(builder, loadedTraits, rng.fork("doble-helice"));
+    else if (traits.entangleForm === "LAZO HABITABLE") geometry = addHabitableLoop(builder, loadedTraits, rng.fork("lazo-habitable"));
+    else if (traits.entangleForm === "CÁPSULAS ENLAZADAS") geometry = addLinkedCapsules(builder, loadedTraits, rng.fork("capsulas"));
+    else if (traits.entangleForm === "ESPIRAL ATRAVESADA") geometry = addPiercedSpiral(builder, loadedTraits, rng.fork("espiral"));
+    else geometry = addSlabKnot(builder, loadedTraits, rng.fork("nudo-losas"));
+
+    geometry.kind = traits.entangleForm;
+    geometry.relation = rng.pick(["DENTRO / A TRAVÉS", "ARRIBA / DEBAJO", "INTERIOR RECURRENTE", "CRUCE HABITABLE"]);
+    geometry.authenticGaps = geometry.voids;
+    geometry.interpretation = interpretation.nombres.slice();
+    return { surface: builder.points, geometry: geometry };
+  }
+
+  function addDoorwayFrame(builder, spec) {
+    var half = spec.width / 2;
+    var step = 0.78;
+    for (var z = 0; z <= spec.height; z += step) {
+      for (var edge = -1; edge <= 1; edge += 2) {
+        builder.add(spec.body || "portal", "frente", spec.x + edge * half, spec.y || 0, spec.z + z,
+          spec.key + ":jamb:" + edge + ":" + z.toFixed(1));
+        builder.add(spec.body || "portal", "lateral", spec.x + edge * half, (spec.y || 0) + 0.72, spec.z + z,
+          spec.key + ":depth:" + edge + ":" + z.toFixed(1));
+      }
+    }
+    for (var x = -half; x <= half; x += step) {
+      builder.add(spec.body || "portal", "techo", spec.x + x, spec.y || 0, spec.z + spec.height,
+        spec.key + ":lintel:" + x.toFixed(1));
+    }
+  }
+
+  function addHabitableSphere(builder, traits, rng) {
+    var radius = rng.float(10.5, 15.5);
+    var centerZ = radius + rng.float(3.2, 6);
+    var depthScale = rng.float(0.42, 0.72);
+    var portalLat = rng.float(-0.18, 0.14);
+    var portalLon = rng.float(-0.12, 0.12);
+    var portalWidth = rng.float(0.2, 0.32);
+    var portalHeight = rng.float(0.26, 0.4);
+    var latitudes = 21 + Math.round(Math.abs(traits.curvature) * 5);
+    var longitudes = 38 + traits.portals * 2;
+    for (var latIndex = 1; latIndex < latitudes; latIndex += 1) {
+      var latitude = lerp(-Math.PI / 2, Math.PI / 2, latIndex / latitudes);
+      for (var lonIndex = 0; lonIndex <= longitudes; lonIndex += 1) {
+        var longitude = lerp(-Math.PI / 2, Math.PI / 2, lonIndex / longitudes);
+        var inPortal = Math.pow((longitude - portalLon) / portalWidth, 2) +
+          Math.pow((latitude - portalLat) / portalHeight, 2) < 1;
+        if (inPortal) continue;
+        var cosLat = Math.cos(latitude);
+        builder.add("esfera", lonIndex % 6 === 0 ? "lateral" : latIndex % 4 === 0 ? "techo" : "frente",
+          radius * cosLat * Math.sin(longitude),
+          radius * cosLat * Math.cos(longitude) * depthScale,
+          centerZ + radius * Math.sin(latitude),
+          "sphere:" + latIndex + ":" + lonIndex);
+      }
+    }
+
+    var portalCenterX = radius * Math.cos(portalLat) * Math.sin(portalLon);
+    var portalCenterY = radius * Math.cos(portalLat) * Math.cos(portalLon) * depthScale;
+    var portalCenterZ = centerZ + radius * Math.sin(portalLat);
+    var room = ellipsePath({
+      centerX: portalCenterX, centerY: portalCenterY + 0.5, centerZ: portalCenterZ,
+      radiusX: radius * portalWidth * 0.78, radiusZ: radius * portalHeight * 0.78,
+      depth: 0.55, rotation: 0, depthPhase: Math.PI / 2
+    });
+    addRibbonPath(builder, {
+      body: "habitación-interior", key: "sphere-room", path: room, closed: true,
+      width: rng.float(0.65, 1.15), samples: 58, across: 3, depthLayers: 2
+    });
+
+    var supportTop = Math.max(2.4, centerZ - radius * 0.92);
+    addEntangledPier(builder, -radius * 0.34, 0, supportTop, rng.float(1.8, 3.2), "sphere-pier-l");
+    addEntangledPier(builder, radius * 0.34, 0, supportTop, rng.float(1.8, 3.2), "sphere-pier-r");
+    addEntangledGround(builder, radius * 2.5, rng.fork("suelo"));
+    return {
+      bodies: 2, portalCount: 1, voids: 1, radius: radius,
+      law: "SUPERFICIE / HABITACIÓN", orientation: "CURVATURA POSITIVA"
+    };
+  }
+
+  function addLargerInterior(builder, traits, rng) {
+    var facadeWidth = rng.float(10.5, 15);
+    var facadeHeight = rng.float(14, 20);
+    var portalWidth = rng.float(3.2, 5);
+    var portalHeight = rng.float(6.2, 9);
+    var columns = Math.round(facadeWidth * 1.2);
+    var rows = Math.round(facadeHeight * 1.15);
+    for (var column = 0; column <= columns; column += 1) {
+      var x = lerp(-facadeWidth / 2, facadeWidth / 2, column / columns);
+      for (var row = 0; row <= rows; row += 1) {
+        var z = row / rows * facadeHeight;
+        if (Math.abs(x) < portalWidth / 2 && z < portalHeight) continue;
+        builder.add("exterior", column % 4 === 0 ? "lateral" : "frente", x, 0, z,
+          "small-outside:" + column + ":" + row);
+      }
+    }
+
+    var roomCount = 3 + traits.gravityCenters;
+    var centerZ = portalHeight * 0.88;
+    for (var roomIndex = 0; roomIndex < roomCount; roomIndex += 1) {
+      var growth = Math.pow(roomIndex + 1, 1.18 + Math.abs(traits.curvature) * 0.26);
+      var radiusX = facadeWidth * (0.48 + growth * 0.28);
+      var radiusZ = facadeHeight * (0.38 + growth * 0.2);
+      var roomPath = ellipsePath({
+        centerX: rng.float(-0.35, 0.35) * roomIndex,
+        centerY: 1.2 + roomIndex * 1.1,
+        centerZ: centerZ + roomIndex * rng.float(0.3, 0.8),
+        radiusX: radiusX, radiusZ: radiusZ,
+        depth: rng.float(0.6, 1.4), rotation: rng.float(-0.08, 0.08), depthPhase: roomIndex * 0.7
+      });
+      addRibbonPath(builder, {
+        body: "interior-" + roomIndex, key: "larger-room-" + roomIndex,
+        path: roomPath, closed: true,
+        skip: function (t) { return angleDistance(t * TAU, Math.PI * 1.5) < 0.12; },
+        width: rng.float(1.1, 2.4), samples: 74 + roomIndex * 8, across: 3 + (roomIndex % 2), depthLayers: 2
+      });
+    }
+
+    addDoorwayFrame(builder, {
+      body: "umbral", key: "small-door", x: 0, y: -0.4, z: 0,
+      width: portalWidth, height: portalHeight
+    });
+    addEntangledGround(builder, facadeWidth * 2.8, rng.fork("suelo"));
+    return {
+      bodies: roomCount + 1, portalCount: 1, voids: roomCount + 1,
+      exteriorWidth: facadeWidth, interiorWidth: facadeWidth * (0.76 + roomCount * 0.32),
+      law: "ESCALA INTERIOR / ESCALA EXTERIOR", orientation: "EXPANSIÓN HIPERBÓLICA"
+    };
+  }
+
+  function addRecurrentCorridor(builder, traits, rng) {
+    var radius = rng.float(10.5, 15);
+    var centerZ = radius + rng.float(3.5, 6);
+    var depth = rng.float(2.6, 5.5);
+    var width = rng.float(4.2, 7.2);
+    var phase = rng.float(-0.3, 0.3);
+    var centerPath = function (t) {
+      var theta = t * TAU + phase;
+      return {
+        x: radius * Math.cos(theta),
+        y: depth * Math.sin(theta),
+        z: centerZ + radius * Math.sin(theta)
+      };
+    };
+    var gapCenter = rng.float(0.08, 0.28);
+    addRibbonPath(builder, {
+      body: "pasillo", key: "recurrent-corridor", path: centerPath, closed: true,
+      skip: function (t) { return Math.abs(t - gapCenter) < 0.026; },
+      section: function (t, u, p, normalX, normalZ) {
+        var twist = t * Math.PI * (traits.orientationFault ? 1 : 2);
+        return {
+          x: normalX * u * Math.cos(twist),
+          y: u * Math.sin(twist),
+          z: normalZ * u * Math.cos(twist)
+        };
+      },
+      width: width, samples: 164, across: 8, depthLayers: 2
+    });
+
+    if (traits.gravityCenters > 1) {
+      var returnPath = function (t) {
+        var theta = t * TAU;
+        return {
+          x: Math.sin(theta) * radius * 0.55,
+          y: -Math.cos(theta) * depth * 0.72,
+          z: centerZ + Math.sin(theta * 2) * radius * 0.43
+        };
+      };
+      addRibbonPath(builder, {
+        body: "retorno", key: "return-loop", path: returnPath, closed: true,
+        skip: function (t) { return Math.abs(t - 0.5) < 0.025; },
+        width: width * 0.48, samples: 112, across: 4, depthLayers: 2
+      });
+    }
+
+    var gapPoint = centerPath(gapCenter);
+    addDoorwayFrame(builder, {
+      body: "portal-a", key: "return-door-a", x: gapPoint.x, y: gapPoint.y,
+      z: Math.max(0, gapPoint.z - width * 0.45), width: width * 0.52, height: width * 0.9
+    });
+    addEntangledPier(builder, 0, 0, Math.max(2.2, centerZ - radius), width * 0.5, "return-pier");
+    addEntangledGround(builder, radius * 2.65, rng.fork("suelo"));
+    return {
+      bodies: traits.gravityCenters > 1 ? 2 : 1, portalCount: 2,
+      voids: traits.gravityCenters > 1 ? 2 : 1, twist: traits.orientationFault ? 1 : 2,
+      law: "COMIENZO / REGRESO", orientation: traits.orientationFault ? "MEDIA VUELTA" : "VUELTA COMPLETA"
+    };
+  }
+
+  function addInverseDome(builder, traits, rng) {
+    var radius = rng.float(11.5, 16);
+    var rimZ = rng.float(20, 27);
+    var fall = rng.float(7, 12) * (0.72 + Math.abs(traits.curvature) * 0.38);
+    var portalRadius = rng.float(2.2, 4.2);
+    var rings = 14 + Math.round(Math.abs(traits.curvature) * 5);
+    var samples = 68;
+    for (var ringIndex = 1; ringIndex <= rings; ringIndex += 1) {
+      var radial = lerp(portalRadius, radius, ringIndex / rings);
+      var normalized = radial / radius;
+      var z = rimZ - fall * (1 - normalized * normalized);
+      for (var sample = 0; sample < samples; sample += 1) {
+        var theta = sample / samples * TAU;
+        builder.add("cúpula", ringIndex % 4 === 0 ? "techo" : sample % 8 === 0 ? "lateral" : "frente",
+          Math.cos(theta) * radial,
+          Math.sin(theta) * radial * rng.float(0.34, 0.44),
+          z,
+          "inverse-dome:" + ringIndex + ":" + sample);
+      }
+    }
+
+    var shaftHeight = Math.max(4, rimZ - fall - 1.5);
+    var shaft = ellipsePath({
+      centerX: 0, centerY: 0, centerZ: shaftHeight,
+      radiusX: portalRadius, radiusZ: portalRadius * 1.25,
+      depth: portalRadius * 0.35, depthPhase: Math.PI / 2
+    });
+    addRibbonPath(builder, {
+      body: "pozo-invertido", key: "inverse-well", path: shaft, closed: true,
+      width: rng.float(1.1, 2), samples: 68, across: 4, depthLayers: 2
+    });
+    for (var support = -1; support <= 1; support += 2) {
+      addEntangledPier(builder, support * radius * 0.78, 0, rimZ - fall * 0.18,
+        rng.float(1.8, 3.2), "dome-pier:" + support);
+    }
+    addEntangledGround(builder, radius * 2.55, rng.fork("suelo"));
+    return {
+      bodies: 2, portalCount: 1, voids: 1, radius: radius,
+      law: "TECHO / SUELO", orientation: "GRAVEDAD INVERTIDA"
+    };
+  }
+
+  function addCurvedHorizonPatio(builder, traits, rng) {
+    var patioRadius = rng.float(7.2, 10.5);
+    var wallHeight = rng.float(5.5, 9.5);
+    var centerZ = rng.float(12, 17);
+    var segments = 5 + traits.gravityCenters + Math.round(traits.madness * 2);
+    var gap = rng.float(0.08, 0.15);
+    var levels = 9 + Math.round(wallHeight);
+    for (var segment = 0; segment < segments; segment += 1) {
+      var start = segment / segments * TAU + gap;
+      var end = (segment + 1) / segments * TAU - gap;
+      var samples = 14 + Math.round(Math.abs(traits.curvature) * 8);
+      for (var level = 0; level <= levels; level += 1) {
+        var localHeight = level / levels * wallHeight * rng.float(0.88, 1.08);
+        for (var sample = 0; sample <= samples; sample += 1) {
+          var theta = lerp(start, end, sample / samples);
+          var gravityFlip = traits.orientationFault && segment % 3 === 0 ? -0.52 : 1;
+          var radial = patioRadius + localHeight * gravityFlip;
+          builder.add("horizonte-" + segment,
+            level % 4 === 0 ? "techo" : sample % 5 === 0 ? "lateral" : "frente",
+            Math.cos(theta) * radial,
+            Math.sin(theta * traits.gravityCenters) * rng.float(1.8, 3.8),
+            centerZ + Math.sin(theta) * radial,
+            "curved-yard:" + segment + ":" + level + ":" + sample);
+        }
+      }
+    }
+
+    var horizon = ellipsePath({
+      centerX: 0, centerY: 0, centerZ: centerZ,
+      radiusX: patioRadius, radiusZ: patioRadius,
+      depth: rng.float(1.4, 2.8), depthPhase: 0
+    });
+    addRibbonPath(builder, {
+      body: "patio", key: "curved-horizon", path: horizon, closed: true,
+      skip: function (t) { return Math.abs(t - 0.75) < gap * 0.6; },
+      width: rng.float(0.8, 1.5), samples: 92, across: 3, depthLayers: 2
+    });
+    return {
+      bodies: segments, portalCount: segments, voids: segments + 1,
+      radius: patioRadius, gravityCenters: traits.gravityCenters,
+      law: "PATIO / HORIZONTE", orientation: traits.orientationFault ? "GRAVEDADES DISCONTINUAS" : "GRAVEDAD RADIAL"
+    };
+  }
+
+  function makeNonEuclideanSurface(traits, interpretation, rng) {
+    var builder = new SurfaceBuilder();
+    var loadedTraits = Object.assign({}, traits, {
+      curvature: clamp(traits.curvature * (1 + interpretation.curvatura * 0.12), -1, 1),
+      gravityCenters: clamp(traits.gravityCenters + Math.min(1, interpretation.retorno), 1, 3),
+      portals: clamp(traits.portals + Math.min(1, interpretation.profundidad), 1, 4),
+      orientationFault: traits.orientationFault || interpretation.inversion > 0
+    });
+    var geometry;
+    if (traits.nonEuclideanForm === "ESFERA HABITABLE") geometry = addHabitableSphere(builder, loadedTraits, rng.fork("esfera"));
+    else if (traits.nonEuclideanForm === "INTERIOR MAYOR QUE EL EXTERIOR") geometry = addLargerInterior(builder, loadedTraits, rng.fork("interior-mayor"));
+    else if (traits.nonEuclideanForm === "PASILLO RECURRENTE") geometry = addRecurrentCorridor(builder, loadedTraits, rng.fork("pasillo-recurrente"));
+    else if (traits.nonEuclideanForm === "CÚPULA INVERSA") geometry = addInverseDome(builder, loadedTraits, rng.fork("cupula-inversa"));
+    else geometry = addCurvedHorizonPatio(builder, loadedTraits, rng.fork("patio-curvo"));
+
+    geometry.kind = traits.nonEuclideanForm;
+    geometry.curvature = Math.round(loadedTraits.curvature * 100) / 100;
+    geometry.curvatureClass = traits.curvatureClass;
+    geometry.gravityCenters = geometry.gravityCenters || loadedTraits.gravityCenters;
+    geometry.orientationFault = loadedTraits.orientationFault;
+    geometry.interpretation = interpretation.nombres.slice();
+    return { surface: builder.points, geometry: geometry };
+  }
+
+  function surfaceBounds(points) {
+    var xs = points.map(function (point) { return point.x; });
+    var ys = points.map(function (point) { return point.y; });
+    var zs = points.map(function (point) { return point.z; });
+    return {
+      minX: Math.min.apply(Math, xs), maxX: Math.max.apply(Math, xs),
+      minY: Math.min.apply(Math, ys), maxY: Math.max.apply(Math, ys),
+      minZ: Math.min.apply(Math, zs), maxZ: Math.max.apply(Math, zs)
+    };
+  }
+
+  function grammarSpec(body, side, originX, baseY, width, height, depth, madness) {
+    return {
+      body: body, side: side, originX: originX, baseY: baseY,
+      width: width, height: height, depth: depth, madness: madness
+    };
+  }
+
+  function makeGrammarSpecs(traits, rng) {
+    var width = rng.float(12, 18);
+    var height = rng.float(15, 27);
+    var depth = rng.float(3.2, 7);
+    var specs = [];
+    var footprintVoids = 0;
+    var push = function (x, y, w, h, d) {
+      specs.push(grammarSpec("gene-" + specs.length, specs.length % 2 ? "right" : "left",
+        x, y, w, h, d || depth, traits.madness));
+    };
+
+    if (traits.archFootprint === "BARRA") {
+      push(0, 0, width * 1.25, height, depth);
+    } else if (traits.archFootprint === "L") {
+      push(-width * 0.2, 0, width * 0.72, height, depth);
+      push(width * 0.29, depth * 0.7, width * 0.42, height * rng.float(0.58, 0.9), depth * 1.28);
+      footprintVoids = 1;
+    } else if (traits.archFootprint === "U") {
+      push(-width * 0.43, 0, width * 0.3, height, depth);
+      push(width * 0.43, 0, width * 0.3, height * rng.float(0.82, 1.08), depth);
+      push(0, depth * 0.9, width * 0.62, height * rng.float(0.42, 0.66), depth * 0.72);
+      footprintVoids = 1;
+    } else if (traits.archFootprint === "PATIO") {
+      push(-width * 0.48, 0, width * 0.25, height * rng.float(0.78, 1.08), depth);
+      push(width * 0.48, 0, width * 0.25, height * rng.float(0.72, 1.04), depth);
+      push(0, depth * 1.12, width * 0.66, height * rng.float(0.38, 0.58), depth * 0.65);
+      push(-width * 0.31, -depth * 0.52, width * 0.24, height * rng.float(0.32, 0.52), depth * 0.54);
+      push(width * 0.31, -depth * 0.52, width * 0.24, height * rng.float(0.32, 0.52), depth * 0.54);
+      footprintVoids = 2;
+    } else if (traits.archFootprint === "ANILLO") {
+      var ringBodies = rng.int(4, 6);
+      for (var ringBody = 0; ringBody < ringBodies; ringBody += 1) {
+        var theta = ringBody / ringBodies * TAU;
+        push(Math.cos(theta) * width * 0.46, Math.sin(theta) * depth * 0.72,
+          width * rng.float(0.2, 0.31), height * rng.float(0.56, 0.92), depth * 0.68);
+      }
+      footprintVoids = 1;
+    } else if (traits.archFootprint === "TORRES") {
+      var towers = rng.int(2, traits.madness > 0.72 ? 5 : 4);
+      for (var tower = 0; tower < towers; tower += 1) {
+        push(lerp(-width * 0.46, width * 0.46, towers === 1 ? 0.5 : tower / (towers - 1)),
+          rng.float(-depth * 0.28, depth * 0.75), width * rng.float(0.22, 0.38),
+          height * rng.float(0.56, 1.15), depth * rng.float(0.62, 1.02));
+      }
+      footprintVoids = Math.max(1, towers - 1);
+    } else {
+      var steps = rng.int(3, 5);
+      for (var step = 0; step < steps; step += 1) {
+        push(rng.float(-0.5, 0.5) * step, step * depth * 0.62,
+          width * (1 - step * 0.13), height * (1 - step * 0.11), depth * 0.72);
+      }
+      footprintVoids = 1;
+    }
+    return { specs: specs, footprintVoids: footprintVoids, nominalWidth: width, nominalHeight: height, nominalDepth: depth };
+  }
+
+  function addPorticoStructure(builder, spec, rng) {
+    var bays = rng.int(3, 7);
+    var bayWidth = spec.width / bays;
+    var spring = spec.height * rng.float(0.48, 0.68);
+    for (var bay = 0; bay <= bays; bay += 1) {
+      var columnX = spec.originX - spec.width / 2 + bay * bayWidth;
+      for (var z = 0; z <= spring; z += 0.78) {
+        builder.add(spec.body, bay % 2 ? "lateral" : "frente", columnX, spec.baseY, z,
+          "portico-column:" + bay + ":" + z.toFixed(1));
+        if (bay === 0 || bay === bays) builder.add(spec.body, "lateral", columnX, spec.baseY + spec.depth * 0.7, z,
+          "portico-depth:" + bay + ":" + z.toFixed(1));
+      }
+    }
+    for (var arch = 0; arch < bays; arch += 1) {
+      var centerX = spec.originX - spec.width / 2 + (arch + 0.5) * bayWidth;
+      for (var sample = 0; sample <= 18; sample += 1) {
+        var theta = sample / 18 * Math.PI;
+        for (var depth = 0; depth < 1 + Math.round(spec.depth / 2.6); depth += 1) {
+          builder.add(spec.body, depth ? "lateral" : "techo",
+            centerX + Math.cos(theta) * bayWidth * 0.5,
+            spec.baseY + depth * 0.78,
+            spring + Math.sin(theta) * (spec.height - spring),
+            "portico-arch:" + arch + ":" + sample + ":" + depth);
+        }
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addVaultStructure(builder, spec, rng) {
+    var ribs = rng.int(4, 9);
+    for (var rib = 0; rib < ribs; rib += 1) {
+      var y = spec.baseY + rib / Math.max(1, ribs - 1) * spec.depth;
+      for (var sample = 0; sample <= 42; sample += 1) {
+        var theta = sample / 42 * Math.PI;
+        builder.add(spec.body, rib % 3 === 0 ? "lateral" : "techo",
+          spec.originX + Math.cos(theta) * spec.width / 2,
+          y,
+          Math.sin(theta) * spec.height,
+          "vault:" + rib + ":" + sample);
+      }
+    }
+    var floors = rng.int(1, 3);
+    for (var floor = 1; floor <= floors; floor += 1) {
+      var floorZ = spec.height * floor / (floors + 2);
+      for (var x = -spec.width / 2; x <= spec.width / 2; x += 0.84) {
+        builder.add(spec.body, "frente", spec.originX + x, spec.baseY, floorZ,
+          "vault-floor:" + floor + ":" + x.toFixed(1));
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addColumnStructure(builder, spec, rng) {
+    var columns = rng.int(4, 9);
+    var depthRows = rng.int(1, 3);
+    for (var column = 0; column < columns; column += 1) {
+      var x = lerp(spec.originX - spec.width / 2, spec.originX + spec.width / 2,
+        columns === 1 ? 0.5 : column / (columns - 1));
+      for (var depth = 0; depth < depthRows; depth += 1) {
+        for (var z = 0; z <= spec.height; z += 0.78) {
+          builder.add(spec.body, depth ? "lateral" : "frente", x,
+            spec.baseY + depth * spec.depth / Math.max(1, depthRows - 1), z,
+            "column-grid:" + column + ":" + depth + ":" + z.toFixed(1));
+        }
+      }
+    }
+    var slabs = rng.int(2, 5);
+    for (var slab = 1; slab <= slabs; slab += 1) {
+      var slabZ = spec.height * slab / (slabs + 1);
+      for (var sx = -spec.width / 2; sx <= spec.width / 2; sx += 0.82) {
+        builder.add(spec.body, "techo", spec.originX + sx, spec.baseY, slabZ,
+          "column-slab:" + slab + ":" + sx.toFixed(1));
+      }
+    }
+    addBase(builder, spec, rng);
+  }
+
+  function addGrammarStructure(builder, structure, spec, rng) {
+    if (structure === "LOSAS") addStrata(builder, spec, rng);
+    else if (structure === "PÓRTICOS") addPorticoStructure(builder, spec, rng);
+    else if (structure === "COSTILLAS") addRibs(builder, spec, rng);
+    else if (structure === "BÓVEDAS") addVaultStructure(builder, spec, rng);
+    else if (structure === "PANTALLAS") addScreen(builder, spec, rng);
+    else if (structure === "COLUMNAS") addColumnStructure(builder, spec, rng);
+    else if (structure === "CELOSÍAS") addLattice(builder, spec, rng);
+    else if (structure === "ZIGURATS") addZiggurat(builder, spec, rng);
+    else if (structure === "ARCADAS") addAqueduct(builder, spec, rng);
+    else if (structure === "MÉNSULAS") addCorbelVault(builder, spec, rng);
+    else addFold(builder, spec, rng);
+  }
+
+  function carveGrammarVoid(builder, gene, rng) {
+    var bounds = surfaceBounds(builder.points);
+    var centerX = (bounds.minX + bounds.maxX) / 2;
+    var width = Math.max(1, bounds.maxX - bounds.minX);
+    var height = Math.max(1, bounds.maxZ - bounds.minZ);
+    var before = builder.points.length;
+    var radius = width * rng.float(0.1, 0.19);
+    var portalHeight = height * rng.float(0.22, 0.42);
+    var slope = rng.float(-0.28, 0.28);
+    builder.points = builder.points.filter(function (point) {
+      var localX = point.x - centerX;
+      var localZ = point.z - bounds.minZ;
+      if (gene === "ARCO") {
+        var crown = portalHeight * 0.46 + Math.sqrt(Math.max(0, radius * radius - localX * localX));
+        return !(Math.abs(localX) < radius && localZ < crown);
+      }
+      if (gene === "TÚNEL") return !(Math.abs(localX) < width * 0.14 && localZ < height * 0.48);
+      if (gene === "PATIO") return !(Math.abs(localX) < width * 0.2 && localZ < height * 0.62);
+      if (gene === "GRIETA") return !(Math.abs(localX - (localZ - height * 0.35) * slope) < width * 0.035 && localZ < height * 0.9);
+      if (gene === "PORTAL") return !(Math.abs(localX) < width * 0.11 && localZ < portalHeight);
+      return !(Math.pow(localX / (width * 0.17), 2) + Math.pow((localZ - height * 0.48) / (height * 0.22), 2) < 1);
+    });
+    return before - builder.points.length;
+  }
+
+  function addGrammarCrown(builder, gene, bounds, traits, rng) {
+    var centerX = (bounds.minX + bounds.maxX) / 2;
+    var width = bounds.maxX - bounds.minX;
+    var top = bounds.maxZ;
+    if (gene === "VOLADIZO") {
+      var cantilever = width * rng.float(0.16, 0.34) * traits.direction;
+      for (var row = 0; row < rng.int(2, 4); row += 1) {
+        for (var x = bounds.minX - Math.max(0, -cantilever); x <= bounds.maxX + Math.max(0, cantilever); x += 0.8) {
+          builder.add("cubierta", row ? "techo" : "frente", x + cantilever * 0.36, row * 0.75, top + row * 0.55,
+            "crown-cantilever:" + row + ":" + x.toFixed(1));
+        }
+      }
+    } else if (gene === "CÚPULA") {
+      var domePath = function (t) {
+        var theta = t * Math.PI;
+        return { x: centerX + Math.cos(theta) * width * 0.3, y: 0, z: top + Math.sin(theta) * width * 0.23 };
+      };
+      addRibbonPath(builder, {
+        body: "cubierta", key: "grammar-dome", path: domePath,
+        width: rng.float(1.4, 2.6), samples: 68, across: 4, depthLayers: 2
+      });
+      var supportDrop = Math.max(2.8, (bounds.maxZ - bounds.minZ) * 0.18);
+      for (var domeSide = -1; domeSide <= 1; domeSide += 2) {
+        var supportX = centerX + domeSide * width * 0.3;
+        for (var supportZ = top - supportDrop; supportZ <= top; supportZ += 0.76) {
+          builder.add("cubierta", domeSide < 0 ? "frente" : "lateral", supportX, 0, supportZ,
+            "crown-dome-support:" + domeSide + ":" + supportZ.toFixed(1));
+        }
+      }
+    } else if (gene === "BLOQUE DESPLAZADO") {
+      var shift = width * rng.float(0.1, 0.28) * traits.direction;
+      for (var z = top; z <= top + rng.float(3.5, 6.5); z += 0.78) {
+        for (var bx = -width * 0.25; bx <= width * 0.25; bx += 0.8) {
+          builder.add("cubierta", "frente", centerX + shift + bx, 0, z,
+            "crown-block:" + z.toFixed(1) + ":" + bx.toFixed(1));
+        }
+      }
+    } else if (gene === "TERRAZAS") {
+      var terraces = rng.int(3, 6);
+      for (var terrace = 0; terrace < terraces; terrace += 1) {
+        var terraceWidth = width * (0.62 - terrace * 0.075);
+        for (var tx = -terraceWidth / 2; tx <= terraceWidth / 2; tx += 0.8) {
+          builder.add("cubierta", terrace % 2 ? "techo" : "frente", centerX + tx,
+            terrace * 0.42, top + terrace * 1.02,
+            "crown-terrace:" + terrace + ":" + tx.toFixed(1));
+        }
+      }
+    } else if (gene === "ALETAS") {
+      var fins = rng.int(5, 10);
+      for (var fin = 0; fin < fins; fin += 1) {
+        var finX = lerp(centerX - width * 0.32, centerX + width * 0.32, fin / Math.max(1, fins - 1));
+        var finHeight = rng.float(3.4, 8.2);
+        for (var fz = top; fz <= top + finHeight; fz += 0.76) {
+          builder.add("cubierta", fin % 2 ? "lateral" : "frente",
+            finX + Math.sin((fz - top) / finHeight * Math.PI) * traits.madness,
+            fin % 3 * 0.65, fz, "crown-fin:" + fin + ":" + fz.toFixed(1));
+        }
+      }
+    } else {
+      var crown = ellipsePath({
+        centerX: centerX, centerY: 0, centerZ: top + width * 0.1,
+        radiusX: width * 0.28, radiusZ: width * 0.13,
+        depth: rng.float(1.3, 2.8), depthPhase: Math.PI / 2
+      });
+      addRibbonPath(builder, {
+        body: "cubierta", key: "grammar-crown", path: crown, closed: true,
+        skip: function (t) { return Math.abs(t - 0.75) < 0.04; },
+        width: rng.float(1, 2.1), samples: 82, across: 4, depthLayers: 2
+      });
+    }
+  }
+
+  function addGrammarAnnex(builder, gene, bounds, traits, rng) {
+    var width = bounds.maxX - bounds.minX;
+    var height = bounds.maxZ - bounds.minZ;
+    if (gene === "NINGUNO") return 0;
+    if (gene === "PUENTE INCOMPLETO") {
+      var side = traits.direction;
+      var start = side > 0 ? bounds.maxX : bounds.minX;
+      var span = width * rng.float(0.28, 0.52);
+      var bridgeHeight = bounds.minZ + height * rng.float(0.45, 0.76);
+      for (var x = 0; x <= span * 0.62; x += 0.78) {
+        builder.add("anexo", "techo", start + side * x, 0, bridgeHeight,
+          "annex-bridge:" + x.toFixed(1));
+      }
+    } else if (gene === "TORRE PARÁSITA") {
+      addTotem(builder, grammarSpec("anexo", "right", bounds.maxX + width * 0.13,
+        1.2, width * 0.24, height * rng.float(0.42, 0.72), rng.float(2, 4), traits.madness), rng);
+    } else if (gene === "ESCALERA") {
+      var steps = rng.int(5, 10);
+      for (var step = 0; step < steps; step += 1) {
+        var stepWidth = width * 0.18;
+        for (var sx = 0; sx <= stepWidth; sx += 0.78) {
+          builder.add("anexo", step % 2 ? "techo" : "frente",
+            bounds.minX - stepWidth + sx + step * 0.42, step * 0.55,
+            bounds.minZ + step * height * 0.055,
+            "annex-stair:" + step + ":" + sx.toFixed(1));
+        }
+      }
+    } else if (gene === "BALCÓN") {
+      var balconyZ = bounds.minZ + height * rng.float(0.5, 0.78);
+      var balconyWidth = width * rng.float(0.24, 0.5);
+      for (var bx = -balconyWidth / 2; bx <= balconyWidth / 2; bx += 0.78) {
+        builder.add("anexo", "techo", (bounds.minX + bounds.maxX) / 2 + bx,
+          bounds.minY - rng.float(1.5, 3), balconyZ,
+          "annex-balcony:" + bx.toFixed(1));
+      }
+    } else {
+      var spec = grammarSpec("anexo", "right", bounds.maxX + width * 0.28,
+        rng.float(1, 3), width * rng.float(0.22, 0.38), height * rng.float(0.38, 0.68),
+        rng.float(2.4, 4.5), traits.madness * 0.8);
+      addGrammarStructure(builder, rng.pick(ARCH_STRUCTURES), spec, rng.fork("segundo-cuerpo"));
+    }
+    return 1;
+  }
+
+  function deformGrammar(builder, gene, contamination, traits, rng) {
+    var bounds = surfaceBounds(builder.points);
+    var centerX = (bounds.minX + bounds.maxX) / 2;
+    var centerY = (bounds.minY + bounds.maxY) / 2;
+    var width = Math.max(1, bounds.maxX - bounds.minX);
+    var height = Math.max(1, bounds.maxZ - bounds.minZ);
+    if (gene === "INCLINAR") {
+      var lean = rng.float(0.05, 0.2) * traits.direction * (0.5 + traits.madness);
+      builder.points.forEach(function (point) { point.x += (point.z - bounds.minZ) * lean; });
+    } else if (gene === "CURVAR") {
+      var bend = width * rng.float(0.06, 0.18) * traits.direction;
+      builder.points.forEach(function (point) {
+        var t = (point.z - bounds.minZ) / height;
+        point.x += Math.sin(t * Math.PI) * bend;
+      });
+    } else if (gene === "TORCER") {
+      var twist = rng.float(0.18, 0.62) * traits.direction;
+      builder.points.forEach(function (point) {
+        var t = (point.z - bounds.minZ) / height;
+        var angle = twist * t;
+        var x = point.x - centerX;
+        var y = point.y - centerY;
+        point.x = centerX + x * Math.cos(angle) - y * Math.sin(angle);
+        point.y = centerY + x * Math.sin(angle) + y * Math.cos(angle);
+      });
+    } else if (gene === "REPETIR") {
+      var firstBody = builder.points.length ? builder.points[0].body : null;
+      var echo = builder.points.filter(function (point, index) { return point.body === firstBody && index % 2 === 0; })
+        .map(function (point, index) {
+          var copy = Object.assign({}, point);
+          copy.body = "eco";
+          copy.x += width * rng.float(0.12, 0.22) * traits.direction;
+          copy.y += rng.float(1.5, 3.8);
+          copy.voxel = point.voxel + ":echo:" + index;
+          return copy;
+        });
+      builder.points = builder.points.concat(echo);
+    } else if (gene === "EROSIONAR") {
+      var erosion = rng.float(0.05, 0.13) * (0.55 + traits.madness);
+      builder.points = builder.points.filter(function (point) {
+        var edge = point.z > bounds.minZ + height * 0.08;
+        return !edge || !rng.chance(erosion);
+      });
+    } else {
+      var turns = rng.float(1.2, 2.4);
+      var ribbonDepth = rng.float(2.2, 4.8);
+      var path = function (t) {
+        var theta = t * TAU * turns;
+        return {
+          x: centerX + Math.sin(theta) * width * 0.48,
+          y: centerY + Math.cos(theta) * ribbonDepth,
+          z: bounds.minZ + t * height
+        };
+      };
+      addRibbonPath(builder, {
+        body: "cinta-genealógica", key: "grammar-entangle", path: path,
+        skip: function (t) { return Math.abs(t - 0.5) < 0.022; },
+        width: rng.float(1.2, 2.4), samples: 108, across: 3, depthLayers: 2
+      });
+    }
+
+    if (contamination === "HORIZONTE CURVO") {
+      builder.points.forEach(function (point) {
+        point.z += Math.cos((point.x - centerX) / width * Math.PI) * height * 0.06;
+      });
+    } else if (contamination === "GRAVEDAD PARCIAL") {
+      builder.points.forEach(function (point, index) {
+        if (index % 3 === 0) point.x += Math.sin((point.z - bounds.minZ) / height * TAU) * width * 0.07;
+      });
+    } else if (contamination === "INTERIOR EXPANDIDO") {
+      builder.points.forEach(function (point) {
+        var t = clamp((point.z - bounds.minZ) / height, 0, 1);
+        point.x = centerX + (point.x - centerX) * (1 + t * 0.18);
+      });
+    }
+  }
+
+  function makeGrammarArchitecture(traits, interpretation, rng) {
+    var builder = new SurfaceBuilder();
+    var grammar = makeGrammarSpecs(traits, rng.fork("planta"));
+    var secondaryStructure = rng.chance(0.34) ? rng.pick(ARCH_STRUCTURES) : traits.archStructure;
+    grammar.specs.forEach(function (spec, index) {
+      var structure = index === 0 || rng.chance(0.62) ? traits.archStructure : secondaryStructure;
+      addGrammarStructure(builder, structure, spec, rng.fork("estructura-" + index));
+    });
+    var removed = carveGrammarVoid(builder, traits.archVoid, rng.fork("vacio"));
+    var structuralBounds = surfaceBounds(builder.points);
+    addGrammarCrown(builder, traits.archCrown, structuralBounds, traits, rng.fork("cubierta"));
+    var annexBodies = addGrammarAnnex(builder, traits.archAnnex, structuralBounds, traits, rng.fork("anexo"));
+    deformGrammar(builder, traits.archDeformation, traits.topologicalContamination, traits, rng.fork("deformacion"));
+    var finalBounds = surfaceBounds(builder.points);
+    addEntangledGround(builder, Math.max(grammar.nominalWidth * 2.1, finalBounds.maxX - finalBounds.minX), rng.fork("suelo"));
+
+    var relations = {
+      "BARRA": "CUERPO ÚNICO", "L": "DOS ALAS", "U": "PATIO ABIERTO",
+      "PATIO": "RECINTO CENTRAL", "ANILLO": "PERIFERIA HABITADA",
+      "TORRES": "CONJUNTO DISCONTINUO", "BASAMENTO ESCALONADO": "ESTRATOS SUPERPUESTOS"
+    };
+    return {
+      surface: builder.points,
+      geometry: {
+        kind: "GENEALOGÍA ARQUITECTÓNICA",
+        genealogy: {
+          footprint: traits.archFootprint,
+          structure: traits.archStructure,
+          secondaryStructure: secondaryStructure,
+          void: traits.archVoid,
+          crown: traits.archCrown,
+          annex: traits.archAnnex,
+          deformation: traits.archDeformation,
+          contamination: traits.topologicalContamination
+        },
+        relation: relations[traits.archFootprint],
+        bodies: grammar.specs.length + annexBodies,
+        authenticVoid: Math.max(1, removed + grammar.footprintVoids),
+        removedPoints: removed,
+        combinations: ARCH_FOOTPRINTS.length * ARCH_STRUCTURES.length * ARCH_VOIDS.length *
+          ARCH_CROWNS.length * ARCH_ANNEXES.length * ARCH_DEFORMATIONS.length,
+        interpretation: interpretation.nombres.slice()
+      }
+    };
+  }
+
+  function project(item, traits) {
+    var p = clamp(traits.perspective / 100, 0, 1);
+    var unit = 15;
+    var depthX = unit * lerp(0.035, 0.8, p) * traits.direction;
+    var depthY = unit * lerp(0.015, 0.36, p);
+    return {
+      rawX: item.x * unit + item.y * depthX,
+      rawY: -item.z * unit - item.y * depthY + item.x * unit * traits.tilt
+    };
+  }
+
+  function glyphFor(item, palette, traits) {
+    var normal = item.face === "frente" ? palette.frente : item.face === "lateral" ? palette.lateral : palette.techo;
+    if (item.body !== "derecha" || traits.alphabetRelation === "MISMO IDIOMA") return normal;
+    if (traits.alphabetRelation === "CARAS INVERTIDAS") {
+      if (item.face === "frente") return palette.lateral;
+      if (item.face === "lateral") return palette.frente;
+      return palette.sombra;
+    }
+    if (item.face === "frente") return palette.techo;
+    if (item.face === "lateral") return palette.sombra;
+    return palette.frente;
+  }
+
+  function disturb(surface, traits, rng) {
+    var palette = traits.palette;
+    var probability = clamp(traits.error / 100, 0, 0.34);
+    var alternatives = [palette.frente, palette.lateral, palette.techo, palette.sombra];
+    surface.forEach(function (item) {
+      item.opacity = rng.float(0.84, 1);
+      item.perturbX = 0;
+      item.perturbY = 0;
+      item.rotation = 0;
+      item.error = null;
+      if (!rng.chance(probability)) return;
+      var kinds = traits.madness > 0.75
+        ? ["cambio", "cambio", "desfase", "ausencia", "presion", "salto"]
+        : ["cambio", "cambio", "desfase", "ausencia", "presion"];
+      var kind = rng.pick(kinds);
+      item.error = kind;
+      if (kind === "cambio") item.glyph = rng.pick(alternatives.filter(function (glyph) { return glyph !== item.glyph; }));
+      if (kind === "desfase") {
+        item.perturbX = rng.float(-2.2, 2.2) * (0.65 + traits.madness);
+        item.perturbY = rng.float(-1.6, 1.6) * (0.65 + traits.madness);
+      }
+      if (kind === "salto") {
+        item.perturbX = rng.float(-7, 7) * traits.madness;
+        item.perturbY = rng.float(-5, 5) * traits.madness;
+      }
+      if (kind === "ausencia") item.glyph = "";
+      if (kind === "presion") item.opacity = rng.float(0.38, 0.68);
+    });
+  }
+
+  function fitToPage(surface) {
+    var printable = { x: 70, y: 112, width: 760, height: 936 };
+    var xs = surface.map(function (item) { return item.rawX + item.perturbX; });
+    var ys = surface.map(function (item) { return item.rawY + item.perturbY; });
+    var minX = Math.min.apply(Math, xs);
+    var maxX = Math.max.apply(Math, xs);
+    var minY = Math.min.apply(Math, ys);
+    var maxY = Math.max.apply(Math, ys);
+    var rawWidth = Math.max(1, maxX - minX);
+    var rawHeight = Math.max(1, maxY - minY);
+    var scale = Math.min(printable.width / rawWidth, printable.height / rawHeight);
+    scale = Math.min(scale, 2.6);
+    var usedWidth = rawWidth * scale;
+    var usedHeight = rawHeight * scale;
+    var originX = printable.x + (printable.width - usedWidth) / 2;
+    var originY = printable.y + (printable.height - usedHeight) / 2;
+    var fontSize = clamp(12.7 * scale, 9, 31);
+
+    surface.forEach(function (item, index) {
+      item.id = "u" + String(index + 1).padStart(5, "0");
+      item.x = Math.round((originX + (item.rawX + item.perturbX - minX) * scale) * 100) / 100;
+      item.y = Math.round((originY + (item.rawY + item.perturbY - minY) * scale) * 100) / 100;
+      item.fontSize = Math.round(fontSize * 100) / 100;
+    });
+    return { scale: scale, fontSize: fontSize, bounds: { x: originX, y: originY, width: usedWidth, height: usedHeight } };
+  }
+
+  function assignDelays(surface, species) {
+    if (species === "arco") {
+      surface.forEach(function (item, index) { item.delay = Math.round(index * 2.1) / 1000; });
+      return;
+    }
+    if (species === "entrelazada" || species === "noeuclidiana" || species === "gramatica") {
+      var minX = Math.min.apply(Math, surface.map(function (item) { return item.rawX; }));
+      var maxX = Math.max.apply(Math, surface.map(function (item) { return item.rawX; }));
+      var minY = Math.min.apply(Math, surface.map(function (item) { return item.rawY; }));
+      var maxY = Math.max.apply(Math, surface.map(function (item) { return item.rawY; }));
+      surface.forEach(function (item) {
+        var horizontal = (item.rawX - minX) / Math.max(1, maxX - minX);
+        var vertical = (item.rawY - minY) / Math.max(1, maxY - minY);
+        item.delay = Math.round((vertical * 1.05 + horizontal * 0.42) * 1000) / 1000;
+      });
+      return;
+    }
+    var left = surface.filter(function (item) { return item.body === "izquierda"; });
+    var right = surface.filter(function (item) { return item.body === "derecha"; });
+    var minLeft = Math.min.apply(Math, left.map(function (item) { return item.rawX; }));
+    var maxLeft = Math.max.apply(Math, left.map(function (item) { return item.rawX; }));
+    var minRight = Math.min.apply(Math, right.map(function (item) { return item.rawX; }));
+    var maxRight = Math.max.apply(Math, right.map(function (item) { return item.rawX; }));
+    surface.forEach(function (item) {
+      var progress = item.body === "izquierda"
+        ? (item.rawX - minLeft) / Math.max(1, maxLeft - minLeft)
+        : (maxRight - item.rawX) / Math.max(1, maxRight - minRight);
+      item.delay = Math.round((progress * 1.45 + Math.max(0, -item.rawY) * 0.00035) * 1000) / 1000;
+    });
+  }
+
+  function chooseAnomaly(surface, palette, rng) {
+    var candidates = surface.filter(function (item) { return item.glyph && item.face !== "techo"; });
+    if (!candidates.length) candidates = surface.filter(function (item) { return item.glyph; });
+    var chosen = rng.pick(candidates);
+    if (!chosen) return null;
+    chosen.glyph = palette.anomalia;
+    chosen.anomaly = true;
+    chosen.error = "anomalia";
+    chosen.opacity = 1;
+    return chosen.id;
+  }
+
+  function calculateStats(surface, field, layout) {
+    var visible = surface.filter(function (item) { return item.glyph; });
+    var pageArea = 760 * 936;
+    var estimatedInk = visible.length * layout.fontSize * layout.fontSize * 0.73;
+    var whitespace = clamp(1 - estimatedInk / pageArea, 0.28, 0.94);
+    return {
+      voxels: field ? field.cells.size : 0,
+      faces: surface.length,
+      visibleGlyphs: visible.length,
+      errors: surface.filter(function (item) { return item.error && item.error !== "anomalia"; }).length,
+      whitespace: whitespace,
+      removedVoxels: field ? field.removed : 0
+    };
+  }
+
+  function build(options) {
+    options = options || {};
+    var seed = options.seed === undefined ? 1 : options.seed;
+    var traits = decide(seed, options.forceSpecies);
+    var interpretation = Corpus.interpretar(traits.phrase);
+    var rng = new Azar.RNG(seed);
+    var construction;
+    var surface;
+    var field = null;
+
+    if (traits.species === "arco") {
+      construction = makeArchMass(traits, interpretation, rng.fork("arco"));
+      field = construction.field;
+      surface = visibleFaces(field, traits.direction, "solo");
+    } else if (traits.species === "espera") {
+      construction = makeWaitingSurface(traits, interpretation, rng.fork("espera"));
+      surface = construction.surface;
+    } else if (traits.species === "entrelazada") {
+      construction = makeEntangledSurface(traits, interpretation, rng.fork("entrelazada"));
+      surface = construction.surface;
+    } else if (traits.species === "noeuclidiana") {
+      construction = makeNonEuclideanSurface(traits, interpretation, rng.fork("no-euclidiana"));
+      surface = construction.surface;
+    } else {
+      construction = makeGrammarArchitecture(traits, interpretation, rng.fork("gramatica"));
+      surface = construction.surface;
+    }
+
+    surface.forEach(function (item) {
+      var projection = project(item, traits);
+      item.rawX = projection.rawX;
+      item.rawY = projection.rawY;
+      item.glyph = glyphFor(item, traits.palette, traits);
+      item.baseGlyph = item.glyph;
+      item.anomaly = false;
+    });
+
+    surface.sort(function (a, b) { return a.rawY - b.rawY || a.rawX - b.rawX; });
+    disturb(surface, traits, rng.fork("errores"));
+    var layout = fitToPage(surface);
+    assignDelays(surface, traits.species);
+    var anomalyId = chooseAnomaly(surface, traits.palette, rng.fork("anomalia"));
+    var stats = calculateStats(surface, field, layout);
+    var alphabet = [];
+    surface.forEach(function (item) {
+      if (item.baseGlyph && alphabet.indexOf(item.baseGlyph) === -1) alphabet.push(item.baseGlyph);
+    });
+
+    return {
+      meta: {
+        instrument: "la letra sostiene el techo",
+        speciesKey: traits.species,
+        species: traits.species === "arco"
+          ? "arco para una palabra ausente"
+          : traits.species === "espera"
+            ? "dos edificios esperándose"
+            : traits.species === "entrelazada"
+              ? "arquitecturas entrelazadas"
+              : traits.species === "noeuclidiana" ? "geometrías que regresan" : "arquitecturas con genealogía",
+        seed: String(seed),
+        phrase: traits.phrase,
+        alphabet: alphabet,
+        palette: traits.palette.nombre,
+        color: traits.colors.nombre,
+        instructions: interpretation.nombres,
+        anomalyId: anomalyId,
+        version: "0.5.0"
+      },
+      parameters: {
+        mass: traits.mass, opening: traits.opening,
+        perspective: traits.perspective, error: traits.error,
+        curvature: traits.curvature, portals: traits.portals,
+        gravityCenters: traits.gravityCenters
+      },
+      traits: traits,
+      interpretation: interpretation,
+      geometry: construction.geometry,
+      palette: traits.palette,
+      colors: traits.colors,
+      layout: layout,
+      stats: stats,
+      surface: surface
+    };
+  }
+
+  var api = {
+    build: build,
+    decide: decide,
+    VoxelField: VoxelField,
+    visibleFaces: visibleFaces,
+    project: project,
+    morphologies: MORPHOLOGIES.slice(),
+    entanglements: ENTANGLEMENTS.slice(),
+    nonEuclideanForms: NON_EUCLIDEAN.slice(),
+    architecturalGenes: {
+      footprints: ARCH_FOOTPRINTS.slice(), structures: ARCH_STRUCTURES.slice(),
+      voids: ARCH_VOIDS.slice(), crowns: ARCH_CROWNS.slice(),
+      annexes: ARCH_ANNEXES.slice(), deformations: ARCH_DEFORMATIONS.slice()
+    }
+  };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  root.ARQ_MOTOR = api;
+})(typeof window !== "undefined" ? window : globalThis);
