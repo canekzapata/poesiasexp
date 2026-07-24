@@ -1,0 +1,188 @@
+/* ------------------------------------------------------------------ *
+ * Estratos que piensan — LEXICÓN POÉTICO
+ *
+ * Este archivo contiene sólo las frases del generador, organizadas
+ * por zonas del mundo. Edita, agrega o quita versos con libertad:
+ * el motor (estratos.js) las lee desde aquí.
+ *
+ * Reglas suaves:
+ *  - frases cortas (caben mejor; se parten en máx. 3 líneas)
+ *  - cada frase entre comillas y separada por coma
+ *  - este archivo debe cargarse ANTES que estratos.js (ver index.html)
+ * ------------------------------------------------------------------ */
+
+const lexicon = {
+  sky: [
+    "cielo sin centro", "nube que aún no cae", "la luz llega siempre tarde",
+    "vemos estrellas ya apagadas", "cada ojo abre su mundo",
+    "el aire es un pulmón común", "respirar es deber al aire",
+    "el cielo no tiene adentro", "lo abierto no se posee",
+    "el horizonte huye al andar", "el viento se infiere, no se ve",
+    "el azul es polvo y desvío", "altura: otra forma de lejos",
+    "un ave inscribe y borra", "decidir en bandada, sin jefe",
+    "vuelo que escribe", "pájaro sin mapa", "el universo en una gota",
+    "'animal' guarda un aliento", "espíritu y respirar, una raíz",
+    "respiras átomos de otros siglos", "la atmósfera es un acuerdo",
+    "considerar: pensar con los astros", "desear es extrañar un astro",
+    "mi lengua dibuja mi cielo", "el aire entra ajeno y sale tuyo",
+    "el viento ensaya sus rutas", "toda ala es un mapa plegado"
+  ],
+  mountain: [
+    "el tiempo se lee en capas", "lo lento también es violento",
+    "cada estrato es una fecha", "la montaña fue fondo del mar",
+    "fósiles: cartas sin destino", "metamorfosis sin prisa",
+    "subir es leer hacia atrás", "la cumbre dura menos que el viento",
+    "todo relieve es herida lenta", "lo sólido fue líquido, será polvo",
+    "la paciencia de lo mineral", "tiempo apilado", "lo sólido fluye",
+    "lo ilimitado, de donde todo sale", "un desvío mínimo y empieza el mundo",
+    "lejos del equilibrio nace la forma", "la roca es lava con memoria",
+    "toda cima es un permiso del tiempo", "lo que pesa, dura",
+    "el eco devuelve la pregunta", "el granito olvida despacio",
+    "el derrumbe también construye", "la niebla borda la ladera",
+    "el sendero es memoria de pies"
+  ],
+  forest: [
+    "bosque de señales", "vida sin modelo", "vivir es producirse sin parar",
+    "la hoja escribe con luz", "lo verde inventa el azúcar",
+    "un árbol come luz y tiempo", "crecer es recordar hacia arriba",
+    "una semilla es una hipótesis", "el bosque enlaza, no suma",
+    "la raíz negocia, no conquista", "humus y humano, misma raíz",
+    "todo órgano fue herramienta", "el helecho se despliega",
+    "una flor apuesta al sol", "lo vivo se ramifica",
+    "el micelio recuerda", "micorrizas que negocian",
+    "una seta es el borde de la red", "el bosque comparte por la raíz",
+    "hifas que calculan", "esporas sin permiso",
+    "hongos traducen entre raíces", "hacer parientes con el bosque",
+    "devenir-con, nunca solo", "especies de compañía",
+    "ni natura ni cultura", "simbiosis bajo el suelo",
+    "la red no tiene dueño", "biología: dar palabra a la vida",
+    "ecología: la lógica de la casa", "el castor es también su represa",
+    "la hoja secuestró una bacteria de luz", "comer es heredar sol prestado",
+    "ningún cuerpo es uno: holobionte", "crecer es demorar la forma",
+    "cada cosa persevera en su ser", "los genes también se prestan",
+    "la simbiosis es la trama, no el detalle",
+    "el ciervo escucha con la piel", "el sauce peina la orilla"
+  ],
+  shore: [
+    "ni mar ni tierra: orilla", "el borde es donde algo decide ser",
+    "individuarse: no terminar nunca", "entre dos estados, lo posible",
+    "todo límite es poroso", "la marea conjuga el agua",
+    "un signo nace en el margen", "la arena archiva lo que borra",
+    "lo que la marea olvida", "la concha guarda un eco",
+    "el cangrejo duda de lado", "individuo: lo aún no partido",
+    "símbolo: lo que se arroja junto", "lo simbólico junta, lo diabólico parte",
+    "rivales: los que comparten el río", "la marea no se posee, se espera",
+    "todo umbral cobra un peaje", "la tortuga carga su casa lenta",
+    "la espuma firma y se retracta", "cada ola deja un inventario",
+    "la sal pule lo que abandona", "el borde piensa en dos idiomas",
+    "la playa: archivo rotatorio", "anfibio: el que duda bien",
+    "la marea presta y luego cobra", "la concha: casa sin inquilino",
+    "arena: piedra que aprendió a ceder", "la garza mide el vado"
+  ],
+  sea: [
+    "la sangre recuerda el mar", "fuimos plancton antes que nombre",
+    "metabolizar: robar orden al caos", "la ola mueve forma, no agua",
+    "una célula es una frontera tenaz", "la corriente es una sintaxis",
+    "salar conserva un origen", "el oxígeno lo hizo un microbio",
+    "cuerpos pelágicos", "el agua tiene memoria",
+    "un cardumen decide sin centro", "el pulpo piensa con los brazos",
+    "ocho ideas a la vez", "un brazo decide solo",
+    "bebes el agua de un dinosaurio", "somos carbono que aprendió a preguntar",
+    "la vida eligió una sola mano", "la energía se paga en una moneda",
+    "informar es reducir la sorpresa", "el río permanece cambiando",
+    "el ojo se inventó muchas veces", "plancton: el pulmón azul del mundo",
+    "la ballena archiva canciones", "nadar es pensar en curvas",
+    "el caballito ancla la corriente"
+  ],
+  abyss: [
+    "luz propia donde no hay sol", "hablar con luz en lo oscuro",
+    "un signo sin testigo, ¿significa?", "el ojo sobra sin luz",
+    "la presión también da forma", "vida que nunca supo del día",
+    "lo hondo no necesita un arriba", "nadie toca el fondo",
+    "vida bajo la vida", "luz que no llega", "tinta que escribe el miedo",
+    "el universo en unas células", "pensar es tentacular",
+    "tentáculos que preguntan", "parentescos en lo hondo",
+    "el Chthuluceno enreda", "ocho corazones laten", "medusa sin centro",
+    "un virus es una frase sin verbo", "el virus toma prestada tu voz",
+    "todo siente algo de todo", "el rostro pide antes de hablar",
+    "lo oscuro no es lo vacío", "lo que brilla abajo, llama",
+    "ningún fondo se contiene del todo"
+  ],
+  tectonic: [
+    "no hay cosas, hay sucesos", "el ser es un verbo lento",
+    "una sola materia, mil modos", "cuatro letras bastan para un cuerpo",
+    "una cadena que se lee a sí misma", "el error de copia se llamó especie",
+    "la vida aplaza la entropía", "morir es repartirse",
+    "fuimos muchos antes de ser uno", "la mitocondria fue una huésped",
+    "el código no sabe que es código", "materia y signo, un mismo plano",
+    "'leer' viene de 'recoger'", "'texto' fue 'tejido'",
+    "el polvo guarda instrucciones", "el suelo es un libro de horas",
+    "se conserva la diferencia, no la cosa", "raíces de señal",
+    "cables como algas", "archivo hundido", "el sistema sueña sin centro",
+    "todo se traduce en variación", "fin que continúa",
+    "la memoria no tiene fondo", "una célula contiene un cielo",
+    "lo mínimo repite lo inmenso", "cada grano guarda una galaxia",
+    "polvo que fue estrella", "un átomo recuerda el mar",
+    "la escala se pliega", "número que florece", "lo inorgánico despierta",
+    "la forma duda de sí", "todo está hecho de lo mismo",
+    "el micelio enlaza el subsuelo", "nada se hace solo: simpoiesis",
+    "descomponer también es crear", "lo podrido alimenta la red",
+    "somos humus, somos compost", "seguir con el problema",
+    "el juego del hilo entre especies", "la red subterránea recuerda",
+    "responder es hacerse-con", "vivir y morir con, en suelo dañado",
+    "parentescos raros, alianzas raras", "el tiempo no se cuenta, se dura",
+    "verdad: lo que deja de ocultarse", "metáfora dormida en cada palabra",
+    "la cifra nació del vacío", "álgebra: reunir lo roto",
+    "el efecto vuelve sobre su causa", "morir a tiempo también es vivir",
+    "envejecer es perder copias", "más ajeno que propio",
+    "el sol da sin recibir", "lógos: juntar y decir",
+    "narrar y saber, parientes", "la materia es lenta, no muda",
+    "el carbono firma todo lo vivo", "interpretar hasta el hueso"
+  ],
+  desierto: [
+    "lo escaso afina la forma", "el desierto edita lo superfluo",
+    "durar con poca agua, una ética", "vivir al mínimo no es menos vivir",
+    "la duna es tiempo con forma", "la arena fue roca, será vidrio",
+    "el espejismo no miente sobre la sed", "la víbora traza un signo",
+    "lo seco también vive", "lagarto al acecho",
+    "el desierto no perdona el adorno", "menos agua, más decisión",
+    "el cactus reescribió la hoja como espina", "la sed enseña geometría",
+    "la palmera promete sombra", "la arena viaja sin cuerpo",
+    "el saguaro cuenta siglos a sorbos", "la sombra es moneda del desierto",
+    "todo espejismo es un anticipo", "la duna camina sin cuerpo",
+    "el calor redondea las piedras", "la espina es una hoja con tesis",
+    "la víbora escribe en cursiva", "el lagarto cobra el sol en escamas",
+    "la sed es una brújula", "el desierto memoriza de noche"
+  ],
+  pantano: [
+    "lo impuro es fértil", "fermentar: pensar con bacterias",
+    "ni sólido ni líquido: barro", "lo estancado no está quieto",
+    "descomponer es redistribuir", "la mezcla precede a la forma",
+    "barro que archiva", "entre el agua y la tierra",
+    "la garza espera un dato", "libélula sin rumbo fijo",
+    "raíz que respira lodo", "la mucosa es una ciudad",
+    "las bacterias votan por número", "pudrir es repartir de nuevo",
+    "ni agua ni tierra: un tercer estado", "lo viscoso también tiene ley",
+    "la burbuja sube: el fondo habla",
+    "el lodo archiva pisadas", "la rana afina el estanque",
+    "el junco hace señas", "burbuja: sílaba del fondo",
+    "lo turbio incuba", "el nenúfar flota su hipótesis",
+    "la libélula cose el aire", "fermentar es recordar distinto",
+    "el pantano no corre: fermenta", "el estanque: caldo primordial"
+  ],
+  hielo: [
+    "el frío no mata: suspende", "latencia: vida en pausa",
+    "el cristal ordena sin pensar", "el hielo guarda aire antiguo",
+    "tiempo detenido, no perdido", "bajo cero, el metabolismo susurra",
+    "lo congelado espera otra era", "el témpano deriva", "silencio bajo cero",
+    "el núcleo de hielo guarda climas", "dormir mil años y seguir",
+    "el orden barato del frío", "lo quieto acumula tiempo",
+    "bajo el hielo, la vida espera turno",
+    "cada copo archiva su hexágono", "la nieve borra y enumera",
+    "el glaciar es un río con paciencia", "la escarcha ensaya geometrías",
+    "el frío archiva sin preguntar", "el témpano enseña sólo un décimo",
+    "el cristal repite su única idea", "la nieve iguala los relieves",
+    "hibernar: apostar al deshielo", "el hielo cruje sus fechas",
+    "blanco: todas las luces juntas", "el invierno toma notas breves"
+  ]
+};

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Strata that think — poetic generator</title>
+  <meta name="description" content="Poetic, pixelated generator of landscapes, living systems and mineral consciousness. Generative cartography in HTML Canvas." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛰</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main>
+  <section class="canvas-wrap">
+    <div class="stack">
+      <canvas id="world" width="720" height="1000" aria-label="Enlarged pixelated poetic generator"></canvas>
+      <canvas id="overlay" aria-hidden="true"></canvas>
+    </div>
+  </section>
+
+  <aside>
+    <h1>STRATA</h1>
+    <p>Generative poetic cartography: landscape, diagram, poem and interface as one same system. Change the <strong>seed</strong>, the <strong>territory</strong> and the <strong>palette</strong>; generate <strong>series</strong>, export <strong>layers</strong> and turn on the slow <strong>animation</strong>.</p>
+
+    <label for="seed">seed</label>
+    <input id="seed" value="memory-without-center" autocomplete="off" />
+
+    <label for="mode">dominant territory</label>
+    <select id="mode">
+      <option value="total">full continuum</option>
+      <option value="aire">air / mountain / forest</option>
+      <option value="mar">coast / sea / abyss</option>
+      <option value="tectonica">underground / fault / core</option>
+      <option value="desierto">desert / dune / heat</option>
+      <option value="pantano">swamp / reed / fog</option>
+      <option value="hielo">ice / crevasse / crystal</option>
+    </select>
+
+    <label for="palette">color palette</label>
+    <select id="palette"></select>
+
+    <button id="regenerate">↻ reorder world</button>
+    <button id="toggleText">T text: on</button>
+    <button id="toggleAnim">A animation: paused</button>
+    <button id="save">S export PNG</button>
+
+    <div class="section">
+      <h2>series</h2>
+      <p class="hint">Same ecology (territory + palette), the seed mutates from plate to plate.</p>
+      <div class="row">
+        <input id="seriesCount" type="number" min="2" max="12" value="6" aria-label="number of plates" />
+        <button id="buildSeries">generate series</button>
+      </div>
+      <button id="exportSeries" disabled>export series (PNG)</button>
+      <div id="seriesStrip" class="series-strip" aria-label="series thumbnails"></div>
+    </div>
+
+    <div class="section">
+      <h2>layers by territory</h2>
+      <p class="hint">Download transparent PNGs per territory + one text layer, to compose elsewhere.</p>
+      <button id="exportLayers">export layers (PNG)</button>
+    </div>
+
+    <div class="meta">
+      <p>
+        <kbd>R</kbd> seed &nbsp; <kbd>T</kbd> text &nbsp;
+        <kbd>A</kbd> animation &nbsp; <kbd>P</kbd> palette &nbsp; <kbd>S</kbd> export
+      </p>
+      <p><span class="pill">720 × 1000</span><span class="pill">6 palettes</span><span class="pill">series</span><span class="pill">layers</span><span class="pill">animation</span></p>
+      <p>Click on the map to mutate the seed. Click a series thumbnail to load it.</p>
+    </div>
+  </aside>
+</main>
+
+<script src="lexicon.js"></script>
+<script src="estratos.js"></script>
+</body>
+</html>
