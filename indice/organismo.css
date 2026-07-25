@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "Apricot";
+  src: url("../lasletras/fonts/Ac437_ApricotPortable.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Symbola";
+  src: url("../lasletras/fonts/Symbola.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Electronics";
+  src: url("../lasletras/fonts/ELECTRONICS.TTF") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lineal B";
+  src: url("../lasletras/fonts/NOTOSANSLINEARB-REGULAR.TTF") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --background: #f8f7f1;
+  --background-ink: #050505;
+  --paper: #f8f7f1;
+  --ink: #050505;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 250vh;
+  overflow-x: hidden;
+  color: var(--ink);
+  background: var(--background);
+  font-family: Apercu, Arial, sans-serif;
+  transition: background-color 1.2s steps(4, end);
+}
+
+#unicode-field {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--background-ink);
+  background: transparent;
+  image-rendering: pixelated;
+}
+
+#cannibal-world {
+  position: relative;
+  z-index: 1;
+  min-height: 250vh;
+  isolation: isolate;
+}
+
+#species-field,
+#text-field,
+#rare-windows,
+#glyph-field,
+#vein-field,
+#wire-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#species-field { z-index: 3; }
+#glyph-field { z-index: 5; overflow: visible; pointer-events: none; }
+#vein-field { z-index: 6; overflow: visible; pointer-events: none; }
+#text-field { z-index: 8; pointer-events: none; }
+#wire-field { z-index: 9; overflow: visible; pointer-events: none; }
+#rare-windows { z-index: 12; pointer-events: none; }
+
+.species {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  z-index: var(--z);
+  display: block;
+  width: var(--w);
+  height: var(--h);
+  color: var(--color);
+  text-decoration: none;
+  transform: rotate(var(--r)) scale(var(--scale-x), var(--scale-y));
+  transform-origin: var(--origin);
+  mix-blend-mode: var(--blend);
+  filter: drop-shadow(var(--shadow-x) var(--shadow-y) 0 var(--shadow));
+  animation: species-move var(--duration) ease-in-out var(--delay) infinite alternate;
+  cursor: crosshair;
+}
+
+.species canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+.species:hover {
+  z-index: 999 !important;
+  mix-blend-mode: normal;
+  filter: drop-shadow(4px 4px 0 var(--background-ink));
+}
+
+.glyph-link {
+  pointer-events: visiblePainted;
+  cursor: pointer;
+}
+
+.glyph-unit {
+  fill: var(--fill);
+  stroke: var(--stroke);
+  stroke-width: var(--stroke-width);
+  paint-order: stroke fill;
+  font-family: var(--font);
+  font-size: var(--size);
+  opacity: var(--opacity);
+  mix-blend-mode: var(--blend);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: glyph-breathe var(--duration) steps(var(--steps), end) var(--delay) infinite alternate;
+}
+
+.glyph-link:hover .glyph-unit {
+  fill: var(--background);
+  stroke: var(--background-ink);
+  stroke-width: 5px;
+  opacity: 1;
+}
+
+.phrase {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  z-index: var(--z);
+  display: block;
+  width: var(--w);
+  color: var(--color);
+  font-size: var(--size);
+  font-weight: var(--weight);
+  line-height: .8;
+  letter-spacing: var(--tracking);
+  text-decoration: none;
+  text-transform: var(--case);
+  overflow-wrap: anywhere;
+  pointer-events: auto;
+  mix-blend-mode: var(--blend);
+  transform: rotate(var(--r)) scaleX(var(--stretch));
+  transform-origin: 0 0;
+  -webkit-text-stroke: var(--stroke-width) var(--stroke);
+  paint-order: stroke fill;
+  animation: phrase-move var(--duration) ease-in-out var(--delay) infinite alternate;
+}
+
+.phrase.tiny {
+  line-height: 1;
+  letter-spacing: .18em;
+}
+
+.phrase.vertical {
+  writing-mode: vertical-rl;
+  width: auto;
+  height: var(--w);
+}
+
+.phrase:hover {
+  color: var(--background);
+  mix-blend-mode: normal;
+  -webkit-text-stroke-color: var(--background-ink);
+}
+
+.vein {
+  color: var(--color);
+  filter: url("#vein-wobble");
+}
+
+.vein .line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: var(--width);
+  stroke-linecap: round;
+  stroke-dasharray: var(--dash);
+  vector-effect: non-scaling-stroke;
+  animation: vein-run var(--duration) linear infinite;
+}
+
+.vein .hit {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 24px;
+  vector-effect: non-scaling-stroke;
+}
+
+.vein a {
+  pointer-events: visibleStroke;
+  cursor: pointer;
+}
+
+.vein text {
+  fill: currentColor;
+  stroke: var(--background);
+  stroke-width: 3px;
+  paint-order: stroke fill;
+  font: 700 var(--type-size)/1 Apercu, Arial, sans-serif;
+}
+
+.wire {
+  fill: none;
+  stroke: var(--color);
+  stroke-width: var(--width);
+  opacity: var(--opacity);
+  vector-effect: non-scaling-stroke;
+  animation: wire-move var(--duration) steps(4, end) infinite alternate;
+}
+
+.rare-window {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  z-index: 300;
+  width: var(--w);
+  height: var(--h);
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid currentColor;
+  box-shadow: 5px 5px 0 var(--shadow);
+  transform: rotate(var(--r));
+  pointer-events: auto;
+}
+
+.rare-window header {
+  height: 15px;
+  padding-right: 3px;
+  color: var(--bg);
+  background: var(--fg);
+  font: 9px/15px monospace;
+  text-align: right;
+}
+
+.rare-window a {
+  display: block;
+  width: 100%;
+  height: calc(100% - 15px);
+}
+
+.rare-window canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#regenerate {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  opacity: .08;
+  border: 0;
+  background: var(--background-ink);
+  cursor: pointer;
+}
+
+#regenerate:hover { width: 38px; height: 38px; opacity: .85; }
+
+#donor-dock {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 720px;
+  height: 1000px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#donor-dock iframe {
+  width: 720px;
+  height: 1000px;
+  border: 0;
+}
+
+@keyframes species-move {
+  from { translate: var(--xa) var(--ya); rotate: var(--ra); }
+  to { translate: var(--xb) var(--yb); rotate: var(--rb); }
+}
+
+@keyframes glyph-breathe {
+  from { translate: var(--xa) var(--ya); rotate: var(--ra); scale: var(--sa); }
+  to { translate: var(--xb) var(--yb); rotate: var(--rb); scale: var(--sb); }
+}
+
+@keyframes phrase-move {
+  from { translate: var(--xa) var(--ya); }
+  to { translate: var(--xb) var(--yb); }
+}
+
+@keyframes vein-run {
+  to { stroke-dashoffset: -380; }
+}
+
+@keyframes wire-move {
+  from { transform: translate(-5px, 2px); }
+  to { transform: translate(8px, -4px); }
+}
+
+@media (max-width: 720px) {
+  body, #cannibal-world { min-height: 330vh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .species,
+  .glyph-unit,
+  .phrase,
+  .vein .line,
+  .wire { animation: none; }
+}
