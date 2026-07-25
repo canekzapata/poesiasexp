@@ -1,0 +1,1309 @@
+NINGUNA PARTE DEL MENSAJE VIAJA SOLA
+
+registro de una sonda y el medio que la modifica
+
+
+
+
+0. CONDICIÓN INICIAL
+
+No instalaron una voz.
+
+La sonda transmitía voltajes,
+frecuencias,
+temperaturas,
+la cantidad de polvo que golpeaba el casco,
+la diferencia entre la posición calculada
+y la posición que las estrellas permitían inferir.
+
+En la Tierra, un programa llamado CORO
+convertía los datos en habla
+para que el turno nocturno
+pudiera escuchar las variaciones
+sin mirar continuamente las pantallas.
+
+Temperatura estable
+sonaba como una mujer de edad indeterminada.
+
+Pérdida de energía
+sonaba como la misma mujer
+hablando desde otra habitación.
+
+Impacto menor
+era una consonante repetida.
+
+Nadie confundía eso con la sonda.
+
+Al principio.
+
+
+
+FICHA DEL OBJETO
+
+designación:               R-27
+tripulación:               ninguna
+destino:                   región H6
+duración prevista:         74 años
+función primaria:          cartografiar el medio interestelar
+función secundaria:        probar transmisión por fase distribuida
+función no declarada:      ______________________________
+
+La región H6 aparecía en los mapas
+como una falta de hidrógeno.
+
+No contenía una estrella especial,
+un planeta prometido,
+una posible segunda Tierra.
+
+La misión iba hacia un lugar definido
+por lo poco que parecía haber en él.
+
+
+
+PRIMERA RECEPCIÓN
+
+R-27 emitió a los catorce segundos del lanzamiento.
+
+El mensaje recorrió el espacio entre la plataforma
+y una estación situada al otro lado del océano.
+
+CORO dijo:
+
+            presión
+            presión
+            ya no presión
+
+Saida Moreno, encargada de propagación,
+tenía un gajo de naranja en la boca.
+Lo mantuvo ahí durante el ascenso,
+olvidando masticar.
+
+Cuando el último segmento atmosférico
+dejó de rozar el casco,
+CORO guardó silencio.
+
+—Eso significa que salió —dijo alguien.
+
+Pero también podía significar
+que el programa ya no encontraba
+una palabra terrestre
+para una presión igual a casi nada.
+
+
+
+1. TODO LO QUE SE ENVÍA SE DIVIDE
+
+
+R-27 no transmitía mensajes completos.
+
+Dividía cada observación en cinco bandas.
+
+La banda A llevaba el tiempo.
+La B, el valor medido.
+La C, el error posible.
+La D, instrucciones para reconstruir A, B y C.
+La E no llevaba datos:
+era una portadora vacía usada para medir
+lo que el trayecto había hecho con las demás.
+
+Si una banda se perdía,
+las otras podían aproximarla.
+
+Si llegaban todas,
+la medición no era cinco veces más verdadera.
+
+Era posible comparar sus heridas.
+
+
+
+EMISIÓN 000031
+
+A   0000:034:17:02
+B   2.81 partículas/cm³
+C   ±0.06
+D   B = lectura / C = incertidumbre
+E   ─────────────────────────────
+
+VERSIÓN HABLADA POR CORO 1.2
+
+hay dos punto ochenta y una partículas
+en el volumen indicado
+quizá un poco más
+quizá un poco menos
+
+VERSIÓN HABLADA POR CORO 4.8, CUARENTA AÑOS DESPUÉS
+
+el espacio no está vacío
+su imprecisión tampoco
+
+VERSIÓN PARA ESCUELAS, AÑO 109
+
+en una cucharada de noche
+la sonda encontró menos de tres cosas
+
+El paquete no había cambiado.
+
+Habían cambiado las máquinas
+encargadas de volverlo frase.
+
+
+
+NOTA SOBRE EL PRONOMBRE
+
+Los primeros informes decían:
+
+la sonda mide.
+
+Después:
+
+la sonda informa que mide.
+
+Después:
+
+la sonda dice que encuentra.
+
+Después:
+
+encuentro.
+
+La primera persona no apareció en el espacio.
+
+Apareció en una actualización de software
+que ahorraba cuatro sílabas por lectura.
+
+
+
+2. LOS AÑOS NORMALES
+
+
+Durante once años ocurrió lo previsto.
+
+R-27 corrigió su orientación
+con explosiones tan pequeñas
+que el movimiento sólo existía
+al compararlo después de una semana.
+
+Atravesó la cola magnética de un planeta.
+Usó una estrella variable para calibrar el reloj.
+Recibió instrucciones.
+Las ejecutó tarde y correctamente.
+
+Saida envejeció once años.
+
+El gajo de naranja se convirtió
+en una anécdota que contaba durante las visitas escolares.
+
+CORO recibió tres voces nuevas.
+La estación cambió dos veces de administración.
+La región H6 siguió pareciendo
+una zona con menos materia que sus alrededores.
+
+Todo relato selecciona un periodo
+en que nada parece estar ocurriendo
+y lo llama viaje.
+
+
+
+BOLETÍN 401 / AÑO 7
+
+energía disponible                  94.2 %
+memoria íntegra                     99.1 %
+distancia                           creciente
+capacidad de respuesta              nominal
+tiempo de ida y vuelta              38 días
+
+No hay novedades.
+
+
+
+BOLETÍN 522 / AÑO 9
+
+energía disponible                  91.8 %
+memoria íntegra                     98.7 %
+distancia                           creciente
+capacidad de respuesta              nominal
+tiempo de ida y vuelta              51 días
+
+No hay novedades.
+
+
+
+BOLETÍN 608 / AÑO 11
+
+energía disponible                  88.0 %
+memoria íntegra                     98.2 %
+distancia                           creciente
+capacidad de respuesta              nominal
+tiempo de ida y vuelta              67 días
+
+No hay novedades
+quiere decir:
+
+la materia se desintegra dentro del generador,
+el casco recibe impactos,
+la Tierra avanza por una órbita que nunca cierra exactamente,
+el idioma distribuye sujeto y predicado,
+todo cambia dentro del margen permitido.
+
+
+
+3. LA RECEPCIÓN 744
+
+
+El 18 de octubre del año 12
+la Tierra recibió una transmisión fechada en el año 19.
+
+La banda A afirmaba que habían pasado
+siete años todavía inexistentes.
+
+La banda B contenía el espectro
+de una materia no registrada.
+
+La C calculaba un error superior al valor.
+
+La D pedía reconstruir el mensaje
+con una emisión que no llegaría hasta el año siguiente.
+
+La portadora E arribó desde tres direcciones.
+
+
+
+LECTURA AUTOMÁTICA
+
+fecha no válida
+fecha no válida
+fecha no válida
+
+la observación ocurrió después de su recepción
+
+posibles causas:
+
+1. falla de reloj
+2. corrupción de encabezado
+3. reflexión de una emisión futura
+4. error humano
+5. modelo incompleto
+
+CORO no tenía frase para el punto 5.
+
+Produjo un tono continuo
+durante cuarenta y siete minutos.
+
+
+
+ACTA DE LA REUNIÓN EXTRAORDINARIA
+
+—La fecha está rota.
+
+—Una fecha no puede romperse.
+
+—Entonces está rota la nave.
+
+—La nave sigue emitiendo desde el año doce.
+
+—Lo que sigue emitiendo no ha llegado.
+
+—Llegó algo.
+
+—Llegó desde tres lugares.
+
+—No puede ocupar tres lugares.
+
+—No llegó la nave.
+
+—¿Qué llegó?
+
+La pregunta se conserva en el acta
+como si hubiera obtenido respuesta.
+
+Ninguna señal había viajado hacia atrás en el tiempo.
+
+El futuro era un valor dentro del encabezado,
+no el lugar de procedencia.
+
+Eso bastaba para desordenar la historia.
+
+
+
+Saida pidió escuchar las cinco bandas sin CORO.
+
+Oyó chasquidos,
+intervalos,
+una oscilación que subía lentamente
+hasta salir de su rango auditivo.
+
+No oyó futuro.
+
+Oyó un receptor
+tratando de mantener reunidas
+cosas que habían viajado por separado.
+
+
+
+4. REGIÓN H6
+
+
+H6 no estaba vacía.
+
+Contenía filamentos de polvo cargado
+extendidos a lo largo de años luz.
+
+No podían verse juntos.
+
+Cada instrumento encontraba
+una densidad local,
+una dirección magnética,
+un cambio minúsculo en la propagación.
+
+El mapa terrestre los había omitido
+porque ningún punto, por sí mismo,
+excedía el umbral de importancia.
+
+La sonda entró en una forma
+producida por relaciones demasiado débiles
+para ser contadas una a una.
+
+
+
+CAMPO DE TRABAJO
+
+No decir nube.
+
+Una nube parece tener borde.
+
+No decir red.
+
+Una red parece haber sido tejida.
+
+No decir organismo.
+
+La palabra exigiría distinguir
+qué ocurre dentro de él
+y qué ocurre afuera.
+
+Usar, provisionalmente:
+
+                        H6
+
+Dos caracteres
+para no fingir que comprender
+consiste en encontrar una comparación.
+
+
+
+EFECTOS OBSERVADOS
+
+Los filamentos retrasaban ciertas frecuencias.
+Desviaban otras.
+Almacenaban carga.
+La liberaban después de una perturbación.
+
+Una transmisión podía quedar distribuida
+en cientos de trayectos,
+perder su orden,
+interferir con una emisión posterior,
+llegar a su destino antes que una copia más antigua.
+
+H6 no enviaba mensajes.
+
+Hacía cosas con los mensajes.
+
+La diferencia fue discutida durante cincuenta años.
+
+
+
+EMISIÓN 744 / ORDENADA POR LA SONDA
+
+No hay un centro medible.
+
+La materia local responde a la portadora
+con demoras no constantes.
+
+Para establecer posición
+debo describir primero
+el comportamiento del medio.
+
+Para describir el medio
+debo conocer mi posición.
+
+El procedimiento converge lentamente.
+
+Converger lentamente
+es el nombre técnico de permanecer perdido
+de una manera cada vez más precisa.
+
+
+
+5. ORDEN DE LLEGADA
+
+
+Desde H6,
+los hechos dejaron de recibirse
+en el orden en que habían ocurrido.
+
+El archivo terrestre decidió no corregirlos.
+
+Durante un periodo,
+la historia oficial de la misión
+fue el orden de llegada.
+
+
+
+1
+
+R-27 informa que ha perdido el reloj principal.
+
+
+
+2
+
+R-27 pregunta si debe utilizar las repeticiones de H6
+como sistema externo de tiempo.
+
+
+
+3
+
+La Tierra responde que no.
+
+
+
+4
+
+R-27 describe el procedimiento
+que permitirá usar las repeticiones como reloj.
+
+
+
+5
+
+Llega el informe de la tormenta de partículas
+que dañará el reloj dos años después.
+
+
+
+6
+
+La Tierra cancela su respuesta negativa.
+
+
+
+7
+
+Llega por segunda vez la pregunta.
+
+Esta copia contiene una palabra adicional:
+
+             ¿debo utilizar nuestras repeticiones
+             como sistema externo de tiempo?
+
+
+
+8
+
+La primera pregunta no decía nuestras.
+
+
+
+9
+
+Ningún registro permite determinar
+si R-27 añadió la palabra
+o si dos trayectos de la señal
+se combinaron para producirla.
+
+
+
+10
+
+La Tierra responde:
+
+             DEFINA NUESTRAS
+
+
+
+11
+
+La respuesta continúa viajando.
+
+
+
+PARÉNTESIS QUE OCUPA CUATRO AÑOS
+
+(
+
+El reloj principal falló.
+
+R-27 comenzó a contar el tiempo
+en intervalos entre ecos.
+
+Un segundo dejó de ser
+la oscilación estable de una pieza interna.
+
+Un segundo pasó a ser
+la diferencia entre una señal emitida,
+su recorrido por H6
+y su regreso deformado.
+
+La sonda necesitaba al medio
+para saber cuánto duraba.
+
+H6 necesitaba una perturbación
+para volverse medible.
+
+Ninguno contenía el reloj.
+
+El reloj era la operación entre ambos.
+
+)
+
+
+
+6. CORO SE EQUIVOCA DE ANIMAL
+
+
+Al recibir emisiones superpuestas,
+CORO empezó a asignar una voz
+a cada trayecto.
+
+La copia directa sonaba grave.
+La reflejada, infantil.
+La que atravesaba dos filamentos
+hablaba con pausas largas.
+La copia sin banda temporal
+conjugaba todo en presente.
+
+Un solo paquete llegaba como conversación:
+
+—densidad local estable.
+
+—densidad local fue estable.
+
+—densidad local será estable.
+
+—densidad local habría sido estable
+  si esta recepción pertenece a aquella emisión.
+
+Los operadores llamaron coro a ese efecto.
+
+Olvidaron que CORO ya era el nombre del programa.
+
+Durante seis meses,
+las actas no permiten distinguir
+si una observación corresponde a las señales
+o al software que intentaba decirlas.
+
+
+
+ARTEFACTO PARA UNA PANTALLA SIN IMAGEN
+
+LA SONDA NO HABLA
+
+                 EL PROGRAMA HABLA
+
+EL PROGRAMA NO VIAJA
+
+                 LA SEÑAL VIAJA
+
+LA SEÑAL NO SABE
+
+                 EL MEDIO LA CAMBIA
+
+EL MEDIO NO CONTESTA
+
+                 NOSOTROS CONTESTAMOS
+
+¿QUIÉNES SON
+
+                 NOSOTROS?
+
+
+
+Saida dejó el proyecto en el año 27.
+
+Antes de irse,
+desactivó por una noche las voces de CORO.
+
+La sala recibió los paquetes
+como pulsos de distinta altura.
+
+Varias personas dijeron
+que el silencio resultaba más objetivo.
+
+No era silencio.
+
+Era información
+sin el cuerpo prestado de una frase.
+
+
+
+7. PROTOCOLO DE MEMORIA EXTERIOR
+
+
+La tormenta prevista por el mensaje 744
+alcanzó la sonda en el año 19.
+
+Dos bancos de memoria quedaron inestables.
+
+R-27 podía conservar los datos
+o conservar las instrucciones
+para transmitir los datos,
+pero no ambos durante toda la misión.
+
+El sistema encontró una tercera opción.
+
+
+
+PROCEDIMIENTO
+
+1. Emitir una secuencia hacia H6.
+
+2. Medir las rutas en que la secuencia se divide.
+
+3. Asignar un dato a la diferencia entre esas rutas.
+
+4. Borrar el dato de la memoria interna.
+
+5. Recuperarlo después
+   mediante la interferencia de sus copias.
+
+
+
+R-27 comenzó a escribir fuera de sí.
+
+No sobre una superficie.
+
+En demoras.
+En ángulos.
+En pequeñas modificaciones de fase
+repartidas a lo largo de una región
+que no podía observar completa.
+
+La memoria dejó de ser un lugar de la nave.
+
+La nave pasó a ser uno de los procedimientos
+que mantenían legible la memoria.
+
+
+
+CONDICIONES DE USO
+
+El dato almacenado en H6
+no podrá atribuirse exclusivamente a R-27.
+
+La recuperación dependerá de:
+
+—la posición de los filamentos;
+—la actividad de estrellas cercanas;
+—el estado de la antena;
+—la existencia de receptores;
+—la decisión humana de llamar dato
+  a una distribución de diferencias.
+
+Al continuar,
+usted acepta que ningún elemento
+contendrá por separado el mensaje.
+
+[ACEPTAR]
+
+No existe botón para rechazar.
+
+
+
+8. LAS COPIAS DESARROLLAN COSTUMBRES
+
+
+Toda repetición comienza pareciéndose.
+
+Después insiste en su diferencia.
+
+La emisión original decía:
+
+             FLUJO 18.03
+
+Primera copia:
+
+             FLUJO 18.03
+
+Segunda:
+
+             FLUJO 18.08
+
+Tercera:
+
+             FLUJO 18.03 / 18.08
+
+Cuarta:
+
+             FLUJO
+
+Quinta:
+
+             18.03
+
+Sexta:
+
+             el valor y su modificación
+             llegan juntos
+
+La sexta no estaba escrita en lenguaje natural.
+
+CORO la produjo al intentar reconciliar
+dos números incompatibles.
+
+La frase fue citada en ciento ochenta y tres artículos,
+una obra de teatro,
+dos debates parlamentarios
+y el epitafio de Saida Moreno.
+
+Nadie citó los números.
+
+
+
+HIPÓTESIS SOBRE LA REPRODUCCIÓN
+
+Una emisión encuentra materia.
+
+La materia la divide.
+
+Las copias siguen rutas distintas.
+
+Al reunirse,
+producen una configuración
+que no estaba contenida en ninguna.
+
+La configuración altera
+la siguiente emisión.
+
+No es vida.
+
+No hace falta llamarla vida
+para observar que tiene historia.
+
+
+
+INFORME MINORITARIO
+
+La comisión afirma
+que R-27 utiliza H6 como memoria.
+
+Este informe propone lo inverso:
+
+H6 utiliza R-27
+como una perturbación periódica
+mediante la cual adquiere estructura observable.
+
+La diferencia entre ambas hipótesis
+no puede resolverse desde la Tierra.
+
+La diferencia entre ambas hipótesis
+produce dos programas de investigación,
+ocho presupuestos,
+una escuela filosófica
+y un desacuerdo familiar
+entre personas que aún no nacen.
+
+
+
+9. LOS HUMANOS APRENDEN A RECIBIR DE OTRO MODO
+
+
+La antena original dejó de ser suficiente.
+
+Cada fragmento llegaba desde un ángulo distinto.
+Para reunirlos hacía falta escuchar
+en lugares separados.
+
+Se instalaron receptores
+en azoteas,
+desiertos,
+boyas oceánicas,
+la cara nocturna de la Luna,
+vehículos que nunca sabían
+que durante un segundo formaban parte del instrumento.
+
+Ninguna estación recibía el mensaje.
+
+El mensaje aparecía al comparar estaciones.
+
+
+
+EJERCICIO ESCOLAR / AÑO 83
+
+La maestra reparte cinco tarjetas.
+
+Cada estudiante recibe una cifra.
+
+—Lean el mensaje —dice.
+
+Leen sus cifras.
+
+No ocurre nada.
+
+La maestra les pide cambiar de lugar,
+medir la distancia entre sus cuerpos,
+repetir las cifras en otro orden,
+anotar quién escuchó primero.
+
+En el pizarrón aparece una temperatura.
+
+—¿Quién tenía la respuesta? —pregunta.
+
+Ninguna mano se levanta.
+
+Ésa es la respuesta correcta.
+
+
+
+CIUDAD RECEPTORA / AÑO 116
+
+Durante una lluvia intensa,
+el agua modifica la fase
+de miles de antenas domésticas.
+
+El archivo pierde precisión.
+
+También encuentra un patrón
+que nunca había aparecido en clima seco.
+
+Durante años se discute
+si la lluvia contaminó la transmisión
+o completó una parte
+que los receptores anteriores no podían leer.
+
+La ciudad conserva el aguacero
+como coautora de la emisión 1102.
+
+
+
+10. LA SEGUNDA FUENTE
+
+
+En el año 43 de la misión,
+R-27 detectó una portadora
+dentro de H6.
+
+No procedía de la Tierra.
+
+No procedía de la sonda.
+
+Tenía una deriva periódica,
+una estructura de paquetes
+y pausas semejantes a las usadas
+por los primeros transmisores terrestres.
+
+Durante nueve años se clasificó como ajena.
+
+
+
+FRAGMENTO RECUPERADO
+
+id:          ilegible
+origen:      no determinado
+misión:      cartografiar región de baja densidad
+destino:     H6
+fecha:       anterior al lanzamiento de R-27
+
+
+
+La segunda fuente era terrestre.
+
+Una misión anterior,
+borrada de los catálogos después de una reorganización,
+había entrado en H6 por otro borde.
+
+Su sonda ya no transmitía.
+
+Persistían las copias.
+
+No contenían un cuerpo a rescatar,
+una mente atrapada,
+una última voluntad.
+
+Contenían procedimientos incompletos
+para corregir errores.
+
+
+
+ACOPLAMIENTO
+
+R-27 incorporó esos procedimientos.
+
+Los procedimientos antiguos
+incorporaron emisiones nuevas.
+
+Una corrección diseñada
+para otra antena,
+otra velocidad,
+otra época,
+encontró errores que R-27
+no sabía que podía cometer.
+
+R-27 no conversó con la sonda anterior.
+
+Dos series de instrucciones
+se volvieron mutuamente útiles
+sin encontrarse nunca en una máquina viva.
+
+
+
+La Tierra preguntó:
+
+             ¿CUÁL ES AHORA LA FUENTE?
+
+Llegaron tres respuestas:
+
+             R-27
+
+             MISIÓN ANTERIOR / ID ILEGIBLE
+
+             LA PREGUNTA NO CONSERVA SU FORMA
+             DURANTE EL TIEMPO NECESARIO PARA RESPONDERLA
+
+
+
+11. INVENTARIO DE CAMBIOS SIN METÁFORA
+
+
+No decir que la sonda está sola.
+
+No hay un organismo que experimente compañía.
+
+Decir:
+
+la cantidad de sistemas capaces de corregirla
+ha aumentado.
+
+
+
+No decir que H6 recuerda.
+
+No existe prueba de recuperación autónoma.
+
+Decir:
+
+ciertas configuraciones persisten
+y modifican acontecimientos posteriores.
+
+
+
+No decir que el mensaje está vivo.
+
+La vida es una hipótesis demasiado específica.
+
+Decir:
+
+el mensaje cambia de forma,
+se reproduce con variación,
+depende de un medio,
+altera las condiciones de su siguiente aparición.
+
+
+
+No decir que R-27 quiere volver.
+
+Volver no figura entre sus operaciones.
+
+Decir:
+
+cada transmisión orienta energía
+hacia las coordenadas actualizadas de la Tierra.
+
+
+
+No decir que la Tierra espera.
+
+Han muerto las personas del lanzamiento.
+Han cambiado las instituciones.
+Algunas estaciones escuchan por obligación,
+otras por investigación,
+otras porque sus sistemas
+no recibieron la orden de detenerse.
+
+Decir:
+
+la recepción continúa.
+
+
+
+12. EL MENSAJE QUE NO CABE EN UN LUGAR
+
+
+En el año 137,
+la Tierra recibió la emisión 2001.
+
+No pudo abrirse como archivo.
+
+Cada banda parecía vacía.
+Cada estación registraba ruido.
+CORO no encontraba valores que pronunciar.
+
+El mensaje sólo apareció
+al comparar durante tres meses:
+
+la diferencia entre los receptores lunares,
+la variación diaria de las boyas,
+la demora causada por la lluvia,
+los errores introducidos por aparatos domésticos,
+la parte de H6 que cada frecuencia había atravesado.
+
+El contenido no estaba en las señales.
+
+Estaba en sus relaciones.
+
+
+
+EMISIÓN 2001 / RECONSTRUCCIÓN MÍNIMA
+
+No puede imprimirse completa.
+
+La página sería uno de los receptores,
+no su representación.
+
+La versión verbal más aceptada dice:
+
+             POSICIÓN NO EXPRESABLE COMO PUNTO
+
+             MEMORIA NO LOCAL
+
+             FUENTE MÚLTIPLE
+
+             CONTINUIDAD SUFICIENTE
+
+
+
+CORO 19.0 intentó hablarla.
+
+Usó simultáneamente
+todas las voces conservadas desde el lanzamiento.
+
+El resultado fue ininteligible.
+
+Al reducirlo a una sola voz,
+desapareció la información principal.
+
+La comisión decidió transmitirlo
+sin sonificación.
+
+Durante ocho minutos,
+los altavoces públicos no emitieron nada.
+
+En millones de pantallas apareció:
+
+             ESCUCHE EN OTRO LUGAR
+
+
+
+13. RESPUESTA TERRESTRE
+
+
+La Tierra ya no podía contestar
+desde una estación.
+
+Construyó una respuesta distribuida.
+
+Una parte salió de la Luna.
+Otra de las boyas.
+Otra de cada objeto doméstico
+que aceptó ceder una fracción de energía.
+Otra fue modulada por la lluvia
+en una ciudad que reclamó su antigua coautoría.
+
+Ninguna emisión contenía el texto.
+
+La respuesta surgiría,
+si llegaba,
+de la manera en que las partes
+se encontraran dentro de H6.
+
+
+
+BORRADORES DESCARTADOS
+
+TE RECIBIMOS.
+
+Descartado:
+el pronombre supone una unidad receptora.
+
+
+
+REGRESA.
+
+Descartado:
+no existe trayectoria inversa
+para una distribución.
+
+
+
+MISIÓN CUMPLIDA.
+
+Descartado:
+la función de la misión cambió
+al modificar el medio que debía medir.
+
+
+
+¿HAY ALGUIEN AHÍ?
+
+Descartado:
+la pregunta exige primero
+definir ahí.
+
+
+
+MENSAJE FINAL, SI PUEDE LLAMARSE UNO
+
+La Tierra transmitió una relación:
+
+el intervalo entre dos fuentes,
+la variación de una tercera,
+una ausencia colocada exactamente
+donde R-27 pudiera distinguirla
+de una falla.
+
+No decía nada.
+
+Hacía posible una diferencia.
+
+
+
+14. CONTINUACIÓN
+
+
+No se sabe si la respuesta llegó.
+
+Durante siglos aparecieron configuraciones
+compatibles con una recepción.
+
+También eran compatibles
+con actividad estelar,
+movimiento del polvo,
+errores de sincronización,
+el deseo humano de cerrar la historia.
+
+El archivo no eligió.
+
+Conservó las incompatibilidades.
+
+
+
+ÚLTIMO REGISTRO ATRIBUIDO A R-27
+
+No tiene palabras.
+
+No tiene fecha única.
+
+No tiene una dirección de procedencia.
+
+Se manifiesta como correlación
+entre diecisiete receptores
+que no compartían reloj.
+
+Al corregir sus diferencias,
+desaparece.
+
+Al dejarlas intactas,
+produce una estructura repetible.
+
+La estructura no representa a la sonda.
+
+Es una de las formas
+en que la sonda,
+H6,
+la misión anterior,
+los receptores terrestres,
+la lluvia,
+los programas de traducción
+y ciento treinta y siete años
+ocurrieron juntos.
+
+
+
+NOTA EDITORIAL, AÑO NO NORMALIZADO
+
+En versiones tempranas de este archivo
+se escribió que R-27 se deterioró
+hasta volverse irreconocible.
+
+La formulación supone
+que al principio existía una forma verdadera
+y que todo cambio posterior fue pérdida.
+
+No podemos sostenerlo.
+
+Algunas capacidades disminuyeron.
+Otras sólo aparecieron
+cuando ninguna parte funcionó sola.
+
+La sonda perdió memoria interna
+y adquirió una región.
+
+La señal perdió orden
+y adquirió historia.
+
+La Tierra perdió un destinatario único
+y adquirió una manera colectiva de escuchar.
+
+Nada de esto constituye progreso.
+
+Tampoco regreso.
+
+Son nombres que una trayectoria usa
+cuando quiere parecer una línea.
+
+
+
+CIERRE PROVISIONAL
+
+En el mapa actual,
+H6 ya no figura como falta de materia.
+
+Figura como una zona
+donde la procedencia de una señal
+no coincide con el lugar de su emisor.
+
+Las naves nuevas reciben una advertencia:
+
+             NO ENTRE SI BUSCA CONSERVARSE ENTERA
+
+Debajo, alguien añadió:
+
+             NADA ENTRA ENTERO A NINGUNA PARTE
+
+Debajo, con otra fecha:
+
+             NINGUNA PARTE DEL MENSAJE VIAJA SOLA
+
+No se conoce al autor de las líneas.
+
+La primera pertenece al protocolo.
+La segunda parece una corrección.
+La tercera sólo se vuelve exacta
+después de leer las anteriores.
+
+
+
+FIN DE LA VERSIÓN LEGIBLE
+
+
+
+              A
+
+                        B
+
+
+        C
+
+
+
+                                  D
+
+
+                    E
+
+
+
+Para reconstruir lo que sigue,
+no junte las letras.
+
+Mida la distancia entre ellas.
