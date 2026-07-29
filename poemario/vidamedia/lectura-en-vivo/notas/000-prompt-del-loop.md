@@ -221,18 +221,21 @@ Electronics para la telemetría, EverexME para las glosas chicas.
 ## 10 · el teclado del performer
 
 ```
-espacio      cuadro siguiente          ←            cuadro anterior
+espacio / →  cuadro siguiente          ←            cuadro anterior
 1–9, 0       saltar al cuadro N (0=16) R            re-sembrar (sólo en PLATAFORMA)
-V            vocoder on/off            D            dry del micro on/off (¡feedback!)
+Shift+V      vocoder on/off            D            dry del micro on/off (¡feedback!)
 T            R-27 lee el fragmento     Y            CORO lee el boletín del cuadro
-M            música on/off             H            hydra on/off
+Shift+M      música on/off             H            hydra on/off
 G            ráfaga de glitch (2s)     E            modo ensayo (timing por cuadro)
 F            fullscreen                B            blackout (pantalla negra, audio sigue)
 K            PÁNICO: mata todo el audio en 30ms. sin fade. sin preguntas.
-zxcvbnm      acorde del vocoder en vivo (grados de la escala del cuadro)
+z x c v n m ,   acorde del vocoder en vivo (grados 0–6 de la escala del cuadro)
 ```
 
 `K` y `B` son sagradas: cualquier etapa que las rompa se revierte.
+(cicatriz de la etapa 1: `b`, `v` y `m` chocaban entre grados y controles.
+las sagradas ganan las teclas planas; los toggles raros se van a Shift;
+el grado 6 vive en la coma.)
 
 ## 11 · fail-safes de escenario
 
@@ -274,21 +277,45 @@ se actualiza; nunca al revés.
 
 ## 13 · etapas de construcción
 
-1. **el esqueleto vuela** — index + setlist + constructores de texto
-   (teclea/borra/apila) + starfield + HUD + reloj de misión con vidas
-   medias + avance por teclado + fuentes. sin audio, sin hydra.
-   verificable: los 16 cuadros se recorren con espacio sin errores.
-2. **la consola suena** — Tone.js, música generativa por cuadro,
-   semilla compartida, limiter, teclas `M/K/B`.
-3. **el micro entra** — vocoder por bandas, reloj de ecos (delay real),
-   LA OTRA (segundo carrier), dry/wet por cuadro, degradación sin micro.
-4. **las máquinas leen** — CORO (`speechSynthesis`) y R-27 (formantes
-   → cadena de efectos), teclas `T/Y`.
-5. **hydra** — vendorizar, presets por cuadro, puente FFT, carta de
-   ajuste, disco de Newton, paleta atada a la pila.
-6. **ensayo general** — modo ensayo, checklist, ajuste de duraciones,
-   y una corrida completa simulada (playwright): 16 cuadros, ~20 min
-   acelerados, cero errores de JS, `K` y `B` verificadas.
+1. ~~**el esqueleto vuela**~~ ✓ — index + setlist + constructores de texto
+   + starfield + HUD + reloj de misión con vidas medias + teclado + fuentes.
+2. ~~**la consola suena**~~ ✓ — Tone.js, música generativa por cuadro,
+   semilla compartida, limiter, teclas `Shift+M/K/B`.
+3. ~~**el micro entra**~~ ✓ — vocoder de 14 bandas + banda de sibilantes,
+   reloj de ecos (delay real), LA OTRA (segundo carrier con deriva),
+   dry/wet por cuadro, degradación sin micro.
+4. ~~**las máquinas leen**~~ ✓ — CORO (`speechSynthesis`) y R-27
+   (formantes → vocoder), teclas `T/Y`.
+5. ~~**hydra**~~ ✓ — vendorizado (`lib/hydra-synth.js`, 208 KB, del repo
+   de hydra-synth), 18 presets, puente micro→hydra por función-parámetro,
+   carta de ajuste, disco de Newton que converge al gris.
+6. ~~**ensayo general**~~ ✓ (la parte automática) — corrida simulada en
+   playwright: 39 verificaciones, 16 cuadros, invaders, puertas, pánico,
+   blackout, saltos, cero errores de JS. **falta el ensayo con cuerpo:
+   micro real, bocinas reales, proyector real.**
+
+> cicatrices de la etapa 1 (la construcción entera, julio 2026):
+> · **los guards `window.X` mataban módulos en silencio**: un `const` de
+>   nivel superior no vive en `window`; los puentes entre módulos se
+>   verifican con `typeof X !== "undefined"`. la puerta de PUNTERO no
+>   hería hasta que esto se encontró (lo delató la corrida simulada).
+> · el bpm no baja a saltos duros de mitad (sonaba a error): baja
+>   continuo con la pila (`0.55 + 0.45·pila`), y sólo VIDA MEDIA (cuadro 8)
+>   divide por dos de verdad, dos veces, dentro del cuadro.
+> · los triggers inmediatos de Tone (clic de tecleo, blips de invaders)
+>   pueden chocar en el mismo instante de reloj: todos van blindados con
+>   try/catch y el clic tiene rate-limit de 50 ms. un choque de reloj
+>   no detiene la función.
+> · ELECTRONICS.TTF es una fuente de símbolos, no de letras: sirve para
+>   adornos, nunca para el HUD ni el contador (quedaron en everex/crt437).
+> · el «polvo granular» de ESCRIBIR FUERA DE SÍ se aproximó con
+>   delay largo (4s, feedback 0.45) + pitch-shift −5: granular de a
+>   deveras queda para otra vuelta.
+> · unpkg y jsdelivr estaban bloqueados por el proxy de la sesión;
+>   hydra-synth se vendorizó desde el repo de GitHub (dist del main).
+> · la pila es literalmente el tiempo restante: `(1200−t)/1200`,
+>   clavada en 1.5% como piso. las mitades caen solas en 10:00, 15:00,
+>   17:30… sin programarlas: la aritmética las regala.
 
 Reglas operativas por instancia (heredadas de loop-nave, vigentes):
 leer este documento antes de tocar nada; el setlist crece antes que el
