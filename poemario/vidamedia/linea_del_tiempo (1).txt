@@ -1,0 +1,227 @@
+LÍNEA DEL TIEMPO
+ninguna parte del mensaje viaja sola  ·  y dónde se acopla vida media
+
+                              poesiasexp / canek zapata
+
+
+
+
+CÓMO LEER ESTA LÍNEA
+
+Este proyecto tiene dos textos de una misma nave no tripulada, R-27:
+
+· NINGUNA PARTE DEL MENSAJE VIAJA SOLA — el principal.
+  el registro de la Tierra: lo que llegó, en qué orden, y lo que la región le hizo.
+
+· VIDA MEDIA — lo secundario.
+  lo que la sonda escribió fuera de sí, en los filamentos, cuando ya no pudo
+  transmitir: las confesiones que dejó cifradas en H6.
+
+Esta línea ordena los hechos de NINGUNA PARTE por año de misión
+(año 0 = lanzamiento; duración prevista, 74 años; duración real, sin cierre)
+y marca con  [acopla]  el punto donde un poema de VIDA MEDIA se prende de ese hecho,
+y con  [semilla]  la idea que pasó de NINGUNA PARTE a VIDA MEDIA en esta vuelta.
+
+El título recoge el hilo que atraviesa el registro: en el acta del año 12,
+alguien insiste «—Llegó algo». Todavía, siglos después, algo sigue llegando.
+
+
+
+═══════════════════════════════════════════════════════════
+
+AÑO 0 · LANZAMIENTO
+
+NINGUNA PARTE
+    0. CONDICIÓN INICIAL — «no instalaron una voz»; el programa CORO
+       convierte voltajes, frecuencias y temperaturas en habla
+    FICHA DEL OBJETO — R-27; destino, región H6; 74 años;
+       función primaria, cartografiar el medio interestelar;
+       función no declarada: ______
+    PRIMERA RECEPCIÓN — R-27 emite a los 14 s; «presión / ya no presión»;
+       Saida Moreno y el gajo de naranja
+
+    [acopla] NO TENGO NOMBRE — la designación, el destino H6, la casilla en blanco;
+             «ya estaba yendo sin haber empezado»
+    [acopla] TIEMPO CONTINUO — el presente como único tiempo de la máquina
+
+    [semilla] el destino H6 y la casilla «no declarada» entran a la ficha de vida media
+
+
+AÑOS 0–11 · LOS AÑOS NORMALES
+
+NINGUNA PARTE
+    1. TODO LO QUE SE ENVÍA SE DIVIDE — cinco bandas: A el tiempo, B el valor,
+       C el error, D la reconstrucción, E la portadora vacía
+    EMISIÓN 000031 — la misma lectura, distintas máquinas que la vuelven frase
+    NOTA SOBRE EL PRONOMBRE — la primera persona aparece en una actualización de software
+    2. LOS AÑOS NORMALES — boletines de los años 7, 9 y 11: «no hay novedades»
+
+    [acopla] PARIDAD — el tejido, la sombra del dato, la tarjeta perforada
+    [acopla] CORRECCIÓN — el código que no se rinde:
+             «te llega mi mejor adivinanza vestida de mensaje»
+    [acopla] LONGITUD DE ONDA — el color se queda en tierra
+    [acopla] LA RED — las tres antenas; el modo temprano de ser oída
+
+    nota de acople: las cinco bandas A–E de NINGUNA PARTE son la misma operación
+    que la paridad de VIDA MEDIA —el dato y su sombra, la trama y lo que falta.
+
+
+AÑO 12 · LA FECHA ROTA — «Llegó algo»
+
+NINGUNA PARTE
+    3. LA RECEPCIÓN 744 — llega una transmisión fechada en el año 19 (aún inexistente),
+       materia no registrada, error mayor que el valor, arribo desde tres direcciones
+    LECTURA AUTOMÁTICA — «la observación ocurrió después de su recepción»
+    ACTA DE LA REUNIÓN EXTRAORDINARIA — «—Llegó algo. —Llegó desde tres lugares.»
+    Saida escucha las cinco bandas sin CORO: «no oyó futuro»
+
+    aquí H6 empieza a hacer cosas con el mensaje, aunque la nave todavía no lo sabe.
+    el futuro es un valor del encabezado, no un lugar de procedencia.
+
+
+AÑOS 12–19 · EL RELOJ SE VUELVE OPERACIÓN
+
+NINGUNA PARTE
+    PARÉNTESIS QUE OCUPA CUATRO AÑOS — falla el reloj principal;
+       un segundo pasa a ser la diferencia entre una señal, su recorrido por H6
+       y su regreso deformado. «El reloj era la operación entre ambos.»
+    5. ORDEN DE LLEGADA — los hechos dejan de llegar en su orden;
+       «¿debo utilizar nuestras repeticiones como sistema externo de tiempo?»
+
+    [acopla] RELOJ DE ECOS — el tiempo tomado prestado a la región   (poema nuevo)
+    [acopla] EL NÚMERO — «la fecha que ese número señala»; el rumbo ajustado solo
+
+    [semilla] el reloj de ecos entra a vida media desde este paréntesis
+    [semilla] «el número que reza solo» = las repeticiones de H6
+
+
+AÑO 19 · LA TORMENTA · MEMORIA EXTERIOR        ← el quicio del poemario
+
+NINGUNA PARTE
+    7. PROTOCOLO DE MEMORIA EXTERIOR — la tormenta prevista por la emisión 744
+       daña dos bancos de memoria; R-27 elige una tercera opción:
+       escribir fuera de sí, en demoras, ángulos, modificaciones de fase por H6.
+       «La memoria dejó de ser un lugar de la nave.»
+    CONDICIONES DE USO — «ningún elemento contendrá por separado el mensaje» / [ACEPTAR]
+
+    [acopla] ESCRIBIR FUERA DE SÍ — desde dentro: por qué existen estos poemas   (poema nuevo)
+    [acopla] MATERIA OSCURA — medir la ausencia por cómo dobla lo que se ve
+
+    [semilla] LA FORMA DE ALMACENAR EL MENSAJE.
+              aquí VIDA MEDIA «pasa a ser» lo que la nave deja escrito en los filamentos,
+              en redes de varias dimensiones, de ocho en ocho bits.
+
+
+AÑOS 12–50 · REGIÓN H6 · LOS FILAMENTOS
+
+NINGUNA PARTE
+    4. REGIÓN H6 — no estaba vacía: filamentos de polvo cargado a lo largo de años luz
+    CAMPO DE TRABAJO — no decir nube, no decir red, no decir organismo: usar H6
+    EFECTOS OBSERVADOS — los filamentos retrasan, desvían, almacenan, liberan
+    EMISIÓN 744 / ORDENADA POR LA SONDA — «converger lentamente es el nombre técnico
+       de permanecer perdido de una manera cada vez más precisa»
+
+    [acopla] LA REGIÓN — el destino que es una falta, el lugar más lleno   (poema nuevo)
+    [acopla] FILAMENTOS — el telar ya montado; escribir en el medio mismo   (poema nuevo)
+
+    [semilla] H6 y los filamentos entran a vida media
+
+
+AÑO 27 · SAIDA DEJA EL PROYECTO
+
+NINGUNA PARTE
+    6. CORO SE EQUIVOCA DE ANIMAL — una voz por cada trayecto; el paquete llega como coro
+    ARTEFACTO PARA UNA PANTALLA SIN IMAGEN — «¿quiénes son nosotros?»
+    Saida desactiva las voces una noche: «no era silencio, era información
+       sin el cuerpo prestado de una frase»
+
+    (Saida es el hilo humano de NINGUNA PARTE; su epitafio llegará en el año ~137.)
+
+
+AÑOS 43–52 · LA SEGUNDA FUENTE
+
+NINGUNA PARTE
+    10. LA SEGUNDA FUENTE — una portadora dentro de H6, ni de la Tierra ni de la sonda:
+        una misión anterior, borrada de los catálogos, entrada por otro borde.
+        «Contenían procedimientos incompletos para corregir errores.»
+    ACOPLAMIENTO — dos series de instrucciones se vuelven mutuamente útiles
+        sin encontrarse nunca en una máquina viva
+
+    [acopla] LA OTRA — la compañía sin encuentro   (poema nuevo)
+
+    [semilla] la segunda fuente entra a vida media como «la otra»
+
+
+AÑOS 83–137 · LA RECEPCIÓN SE VUELVE COLECTIVA
+
+NINGUNA PARTE
+    9. LOS HUMANOS APRENDEN A RECIBIR DE OTRO MODO — azoteas, boyas, la cara nocturna de la Luna
+    EJERCICIO ESCOLAR / AÑO 83 — «¿quién tenía la respuesta?»: ninguna mano
+    CIUDAD RECEPTORA / AÑO 116 — la lluvia como coautora de la emisión 1102
+    8. LAS COPIAS DESARROLLAN COSTUMBRES — FLUJO 18.03 →
+       «el valor y su modificación llegan juntos» (epitafio de Saida Moreno)
+    INFORME MINORITARIO — ¿H6 usa a R-27 como perturbación periódica?
+    11. INVENTARIO DE CAMBIOS SIN METÁFORA
+
+    [acopla] PUNTERO — la dirección corrida: «casa» devuelve el tablero de calibración
+
+    nota de acople: aquí la oreja única de LA RED (tres antenas) ya se multiplicó.
+    en vida media, LA RED se lee como memoria del modo antiguo de ser oída.
+
+
+AÑO 137 · EL MENSAJE QUE NO CABE EN UN LUGAR
+
+NINGUNA PARTE
+    12. EL MENSAJE QUE NO CABE — emisión 2001: «el contenido no estaba en las señales,
+        estaba en sus relaciones» / «ESCUCHE EN OTRO LUGAR»
+    13. RESPUESTA TERRESTRE — una respuesta distribuida; borradores descartados;
+        «no decía nada. Hacía posible una diferencia.»
+
+    [acopla] VIDA MEDIA — la media vida: «un solo pensamiento cada mil años: sigo»
+    [acopla] ACUSE — el último tejido, ya sin paridad: «hay algo / en vez de nada»
+
+
+SIGLOS · CONTINUACIÓN · SIN CIERRE
+
+NINGUNA PARTE
+    14. CONTINUACIÓN — «durante siglos aparecieron configuraciones compatibles con una recepción»
+    ÚLTIMO REGISTRO ATRIBUIDO A R-27 — correlación entre diecisiete receptores sin reloj común
+    NOTA EDITORIAL — «la sonda perdió memoria interna y adquirió una región»
+    CIERRE PROVISIONAL — NO ENTRE SI BUSCA CONSERVARSE ENTERA /
+        NADA ENTRA ENTERO A NINGUNA PARTE / NINGUNA PARTE DEL MENSAJE VIAJA SOLA
+    FIN DE LA VERSIÓN LEGIBLE — A B C D E: «no junte las letras, mida la distancia entre ellas»
+
+    los poemas de VIDA MEDIA siguen en los filamentos, recuperándose —cuando se recuperan—
+    no como una señal, sino como la diferencia entre varias.
+
+
+
+═══════════════════════════════════════════════════════════
+
+LAS SEMILLAS DE ESTA VUELTA   (de ninguna parte a vida media)
+
+    1. el destino H6 — una falta de hidrógeno            → ficha + LA REGIÓN
+    2. los filamentos — el telar que también teje        → FILAMENTOS
+    3. la forma de almacenar el mensaje                  → ESCRIBIR FUERA DE SÍ
+       (escribir fuera de sí, de ocho en ocho bits, sin destinatario)
+    4. el reloj de ecos                                  → RELOJ DE ECOS
+    5. la segunda fuente                                 → LA OTRA
+
+
+PENDIENTE · PASO 3 · EL NODO HUMANO RECEPTOR   (aún no existe — lo escribo yo)
+
+    el texto de los humanos que leyeron el log (NINGUNA PARTE)
+    y, al ser encontrada la nave —como 200 años después—,
+    hipervincularon esas ideas con lo que dice VIDA MEDIA.
+
+    los dos enganches ya quedaron puestos en esta vuelta:
+    · la ficha de VIDA MEDIA deja «no declarada ... ______» en blanco,
+      la misma casilla vacía que la FICHA DEL OBJETO de NINGUNA PARTE;
+    · ESCRIBIR FUERA DE SÍ describe cómo se lee lo que quedó en los filamentos:
+      «juntando lo que llegó por caminos distintos y no corrigiendo la diferencia».
+    ese es, exactamente, el gesto que harán los humanos del paso 3.
+
+
+———————————————————————————————
+poesiasexp · canekzapata.net · 2026
+———————————————————————————————

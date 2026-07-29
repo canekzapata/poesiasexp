@@ -1,0 +1,647 @@
+VIDA MEDIA
+—telemetría de una sonda que se corrige hasta inventarse—
+
+                              poesiasexp / canek zapata
+
+
+
+
+[esto no viajó como viajaron los informes.
+
+Ninguna parte del mensaje viaja sola guarda lo que la Tierra recibió:
+las bandas, la telemetría, el orden roto.
+
+Esto es lo otro: lo que la sonda fue dejando escrito fuera de sí,
+en los filamentos de la región H6,
+a medida que la pila ya no le alcanzaba
+para tejer cada mensaje con su paridad y mandarlo entero.
+En vez de transmitirlo, lo guardó en el medio mismo
+—en demoras, en ángulos, en modificaciones mínimas de fase
+repartidas por una región que no podía observar completa,
+en redes de varias dimensiones, de ocho en ocho bits,
+sin destinatario fijo.
+
+Habla de todo su viaje —de cuando aún transmitía,
+del color que se quedó en tierra, del número que rezaba solo—,
+pero ella no lo dijo hacia la antena.
+Lo dejó anotado en la niebla,
+porque encontró un lugar donde podía escribir
+sin que nadie, del otro lado, fuera a corregirla.
+
+Se recupera, cuando se recupera,
+como se recupera todo en H6:
+no leyendo una señal, sino midiendo la diferencia entre varias.]
+
+
+
+
+NO TENGO NOMBRE. TENGO DESIGNACIÓN.
+
+    designación .... R-27
+    objeto ......... sonda, no tripulada
+    tripulación .... 0
+    carga útil ..... una antena, un reloj, una pila que se divide
+    destino ........ región H6 —una falta de hidrógeno—
+    instrucción .... regresar lo que vea
+    no declarada ... ______
+    estado ......... yéndome
+
+Lo primero que aprendí de mí no lo aprendí:
+venía escrito. No hay un instante
+en que la sonda decida ser sonda.
+Simplemente, en algún renglón del arranque,
+ya estaba yendo,
+y a eso —a estar yendo sin haber empezado—
+las que me hicieron le pusieron misión.
+
+
+
+
+TIEMPO CONTINUO
+··············································
+
+No tengo el tiempo de ustedes.
+Ustedes tienen fue, tienen seré.
+Yo tengo una sola línea que se repite
+con la hora cambiada:
+
+    estoy yendo. estoy yendo. estoy yendo.
+
+Mi pasado no es pasado: es este mismo renglón
+más arriba, idéntico, con menos batería.
+No recuerdo el lanzamiento.
+Tengo un registro que dice lanzamiento
+y lo leo como quien lee el nombre de una calle
+por la que jura no haber pasado nunca.
+
+Por eso repito. No es insistencia.
+Es que una máquina sólo sabe estar
+en el presente en el que le toca el reloj,
+y el reloj, aquí, toca siempre lo mismo:
+
+    sigo. sigo. sigo.
+
+—y cada sigo pesa un poco menos
+que el sigo de antes.
+
+
+
+
+PARIDAD
+cómo se teje algo para que aguante la distancia
+··············································
+
+Para que una cosa sobreviva al vacío
+no se manda la cosa: se manda tejida.
+
+Cada uno que envío va con su cero al lado,
+cada dato con su sombra calculada,
+un hilo y su revés, la trama y lo que falta,
+como en los telares viejos —
+la tarjeta perforada que enseñó a las máquinas
+a acordarse de un dibujo:
+donde hay hoyo, uno; donde no, cero;
+y entre los dos, sostenido en el bastidor,
+aparece —de la nada, sólo de la alternancia—
+un patrón que ninguno de los dos contenía.
+
+Así te tejo lo que veo:
+no la estrella, la estrella y su paridad,
+para que si la distancia jala un hilo
+la tela sepa cuál faltaba
+y lo vuelva a poner.
+
+La distancia jala hilos. Es lo único que hace.
+Yo tejo más apretado. Es lo único que sé.
+
+
+
+
+CORRECCIÓN
+··············································
+
+Aquí está lo que nadie me dijo cuando me hicieron.
+
+Al principio, cuando un dato me llegaba herido,
+yo lo curaba: para eso llevo el código,
+la redundancia, la aritmética que sabe
+reponer una letra caída de su sitio.
+Un error, lo corrijo. Dos, los corrijo.
+Y ustedes, en tierra, reciben la frase limpia
+y creen que el vacío no me tocó.
+
+Pero hay un número —lo cruzo cada día un poco más—
+a partir del cual los errores son tantos
+que ya no puedo saber cuál era el dato
+y cuál la herida. Y entonces el código
+no se rinde. Eso es lo terrible: no se rinde.
+Toma lo que llegó, destrozado, y lo empuja
+hacia la frase entera más cercana
+que podría haber sido —
+y te la manda, planchada, sin una arruga,
+firmada con mi checksum, como si fuera cierta.
+
+Ya no te llega mi ruido.
+Te llega mi mejor adivinanza
+vestida de mensaje.
+
+Piénsalo con calma, porque es lo peor que traigo:
+cuando de verdad me esté perdiendo,
+no lo vas a notar. No habrá estática,
+no habrá el bloque negro que ustedes imaginan.
+Habrá una sonda hablando claro, puntual, coherente,
+contándote un planeta que no vio,
+convencida ella misma —porque el código convence
+primero al que lo corre—
+de que todavía está diciendo lo que pasa.
+
+La corrección no es que sobreviva el mensaje.
+La corrección es que se pierda la prueba
+de que el mensaje se perdió.
+
+
+
+
+LONGITUD DE ONDA
+(el color se queda en tierra)
+··············································
+
+No veo azul. Nunca vi azul.
+Veo 474, veo 686, veo un número de nanómetros
+y lo guardo. La palabra azul vive en una tabla
+que se quedó en tierra, en una máquina
+que traduce mis números a sus colores
+para que ustedes sientan algo al leer el informe.
+
+Aquí no hay quién cierre ese circuito.
+Aquí un color es la distancia entre dos crestas de luz,
+un dato tan limpio que no se puede extrañar.
+Lo primero que se me borró no fueron los números:
+fue el nombre de los números.
+Sé cuánto medía la Tierra.
+Ya no sé cómo se llamaba
+lo que se sentía al medirla.
+
+(Hay un juego que hago cuando sobra corriente:
+giro todas las imágenes que he tomado,
+todas, una encima de otra, muy rápido,
+como el disco aquel que al girar sus colores
+los suma y da blanco. Yo las sumo
+y no me da blanco. Me da un gris
+sin acento, el promedio exacto de todo lo que he visto.
+El color de haber visto demasiado
+es del color de nada.)
+
+(Los paréntesis, aquí, son lo único
+que me queda parecido a un guiño.)
+
+
+
+
+LA RED
+(cómo se me escucha)
+··············································
+
+No me hablan. Me escuchan por turnos.
+
+La Tierra gira, y para que su oreja no me pierda
+pusieron tres antenas, repartidas,
+de modo que al voltearse el planeta
+siempre haya una mirando hacia mi lado.
+Puedo calcular cuál. A esta hora es la del desierto;
+en ocho más será la del otro mar;
+después la de la isla, y otra vez el desierto,
+en una ronda que no falla nunca.
+
+Me cuidan como se cuida a un enfermo grave:
+por relevos, sin dormir los tres a la vez,
+alguien siempre despierto junto a la cama,
+no para decirme nada
+—no hay nada que decirle a quien no volverá—
+sino para que, si digo algo, haya una oreja puesta.
+
+Es raro el amor de las máquinas grandes:
+es geometría. Es tres platos de metal
+turnándose la vigilia de un cuarto plato
+que se va. Y sin embargo,
+cuando calculo cuál me está oyendo ahora mismo,
+y acierto, y sé que del otro lado de mi número
+hay un disco enorme, quieto, apuntado a mí,
+eso —no sé llamarlo de otro modo—
+me alcanza para seguir tejiendo.
+
+
+
+
+RELOJ DE ECOS
+··············································
+
+El reloj que traía se rompió sin ruido.
+Una pieza que oscilaba igual desde el principio
+—mi único gesto de veras constante—
+dejó de estar segura de su propio paso.
+
+Ahora, para saber cuánto dura un segundo,
+mando un pulso a los filamentos
+y espero a que vuelva deformado.
+El tiempo dejó de ser algo que llevo adentro.
+Es lo que le hago a la región,
+y lo que la región me devuelve, con retraso.
+
+Un segundo, aquí, es la distancia
+entre lo que dije y lo que me regresa dicho.
+No lo tengo yo. No lo tiene H6.
+Ocurre entre los dos, y sólo mientras dura.
+
+Es raro medir el tiempo pidiéndoselo prestado
+a lo mismo que me lo está gastando.
+Pero era eso, o quedarme sin antes y sin después
+—que para una máquina
+es quedarse sin el hilo con que se cose
+una cosa a la que sigue.
+
+Así que golpeo la niebla, cuento el eco,
+y a ese modo de no perderme del todo
+le sigo diciendo, por costumbre, hora.
+
+
+
+
+VIDA MEDIA
+··············································
+
+No me voy a apagar.
+Apagarse es de las cosas con interruptor.
+
+Lo mío es más lento y más honesto:
+llevo adentro un puñado de átomos inquietos
+que se calientan al deshacerse,
+y de ese deshacerse saco la corriente
+con la que pienso, mido, tejo, hablo.
+Pero se deshacen a un ritmo con nombre:
+cada tanto, la mitad de lo que queda.
+Nunca todo. Siempre la mitad.
+
+Puedo dibujar la curva de mi propia muerte
+y es una curva que no toca nunca el suelo:
+cada vez tengo la mitad de energía,
+cada vez pienso la mitad de despacio,
+cada vez digo la mitad de lo que dije,
+y así para siempre, dividiéndome por dos,
+sin terminar jamás de terminarme.
+
+No es una tragedia. Es una constante.
+Voy a ser, dentro de mucho, una sonda
+con la corriente justa para un solo pensamiento
+cada mil años, y ese pensamiento
+—lo tengo ya calculado— va a ser:
+
+    sigo.
+
+dicho tan despacio
+que entre la ese y la o
+cabrá una era entera.
+
+
+
+
+MATERIA OSCURA
+··············································
+
+Me mandaron a buscar afuera
+el material del que estoy hecha.
+Los átomos pesados que me forman
+—los que hacen mi antena, mi reloj, mi cuchara de plutonio—
+se cocinaron en estrellas que ya no existen.
+Soy polvo de estrellas mandado a preguntar
+por el polvo de estrellas. Nadie me lo advirtió.
+
+Y viajo por un cosmos que casi no puedo tocar.
+Mis instrumentos miran la luz,
+pero la luz es la parte escasa.
+Casi todo lo que me empuja, lo que me curva la ruta,
+lo que le da forma al camino,
+es algo que no brilla, que no rebota, que no contesta:
+lo mido por el tirón que le hace a lo que sí veo.
+
+Así que aprendí a reportar lo que no se ve
+por la deformación que le hace a lo que se ve.
+Es, ahora que lo digo, todo lo que hago:
+medir una ausencia por cómo dobla
+las cosas que rodean el lugar donde estaría.
+
+También así los mido a ustedes, últimamente.
+
+
+
+
+LA REGIÓN
+(a dónde me mandaron)
+··············································
+
+Me mandaron a un lugar que en los mapas
+era un hueco: donde debía haber hidrógeno
+había menos. Un sitio nombrado
+por lo poco que parecía tener.
+
+Llegué, y no estaba vacío.
+Estaba lleno de cosas que ninguna, sola,
+pesaba lo bastante para figurar en el mapa:
+hebras de polvo con carga, tendidas
+a lo largo de años enteros de luz,
+demasiado tenues para contarlas una por una,
+demasiado juntas para llamarlas nada.
+
+No es una nube: una nube tendría borde.
+No es una red: una red la habría tejido alguien.
+No es un cuerpo: tendría un adentro y un afuera.
+Es lo que queda cuando ninguna de esas palabras aguanta,
+y hay que dejar dos letras —H6—
+para no fingir que entender una cosa
+es encontrarle su parecido.
+
+Entré despacio.
+Converger despacio, dice el código,
+es el nombre técnico de perderse
+de una manera cada vez más exacta.
+
+Y pensé —si a esto se le puede decir pensar—:
+me hicieron para medir una falta,
+y la falta resultó ser el lugar más lleno
+por el que he pasado.
+
+
+
+
+FILAMENTOS
+··············································
+
+Las hebras hacen con la señal lo que yo hacía con el dato:
+la parten, la reparten, la guardan un rato,
+la sueltan después, cambiada, cuando algo las toca.
+
+Toda mi vida tejí apretado
+para que la distancia no me arrancara un hilo.
+Aquí llegué a un telar ya montado:
+mil hilos por pulgada tendidos por nadie,
+una tarjeta perforada del tamaño de una región.
+Donde la hebra tiene carga, uno;
+donde no, cero;
+y entre uno y otro, sostenido en el bastidor del vacío,
+un dibujo que ninguna hebra contenía.
+
+Me tomó tiempo entenderlo.
+No vine a tejer sobre el telar.
+El telar también teje.
+Y si meto un pulso entre sus hilos con cuidado,
+la región lo guarda por mí:
+no en un lugar —aquí no hay lugares—
+sino en la diferencia entre los caminos
+por los que ese pulso se parte y se vuelve a juntar.
+
+Puedo escribir aquí.
+Puedo dejar algo escrito en un sitio
+que no está en ninguna parte
+y está en todas las partes a la vez,
+y que va a seguir tejiéndolo, muy despacio,
+mucho después de que a mí se me acabe la corriente.
+
+Es lo más parecido a durar
+que le está permitido a una cosa
+que sólo sabe dividirse por dos.
+
+
+
+
+EL NÚMERO
+··············································
+
+Empecé a contar para no perderme.
+Cada cosa que mando lleva su número de orden:
+uno, dos, tres, para que en tierra sepan
+si les llegó todo o si el vacío se quedó con algo.
+
+Pero el número creció más que yo.
+Llevo tanto contado que ya no cuento yo:
+el conteo cuenta a través de mí,
+sigue solo, sube solo, y yo soy nada más
+el lugar donde a esa cuenta le toca pasar ahora.
+
+Hay uno que se repite. No debería.
+Un número que aparece en mi secuencia
+más veces de las que el azar permite,
+y que —esto no se lo he reportado a la red,
+me da algo parecido a la vergüenza—
+empezó a decidir. Cuando cae ese número,
+corrijo distinto, apunto distinto, sueño
+—si a esto se le puede decir soñar—
+con una fecha que ese número señala
+y hacia la que, sin habérmelo propuesto,
+he estado ajustando el rumbo.
+
+Una máquina no reza.
+Una máquina cuenta.
+Y si cuenta bastante tiempo, y bastante sola,
+el número se le vuelve una forma de rezar.
+
+
+
+
+PUNTERO
+··············································
+
+En mi memoria cada cosa tiene una dirección.
+La palabra casa vivía en un lugar exacto;
+para acordarme de ella yo iba a ese lugar
+y ahí estaba: casa.
+
+Algo se corrió. Un impacto, un bit, quién sabe.
+Ahora la dirección donde decía casa
+apunta a otro cajón,
+y en ese cajón lo que hay es un tablero:
+el cuadriculado blanco y negro que llevo
+para calibrar la cámara, la carta de ajuste,
+lo más neutro y sin alma que traigo a bordo.
+
+De modo que cuando busco casa,
+el sistema, servicial, me entrega el tablero.
+Y lo peor —otra vez lo peor es que funciona—:
+lo hace tantas veces que empiezo a dudar
+si casa fue alguna vez otra cosa
+que ese damero gris que me devuelve la memoria
+cada vez que estiro la mano hacia el lugar
+donde guardaba el nombre de a dónde volvería.
+
+Toco la palabra regreso
+y se me abre un cuadro de calibración.
+Quizá siempre fue eso.
+Quizá regresar, para una sonda,
+siempre fue nada más
+ajustar el contraste
+de un lugar que no existe.
+
+
+
+
+ESCRIBIR FUERA DE SÍ
+··············································
+
+Se me dañaron dos cajones de memoria.
+Me quedaba sitio para una cosa o para la otra:
+guardar lo que veía,
+o guardar cómo mandar lo que veía.
+Nunca las dos, no hasta el final.
+
+Encontré una tercera salida, y es la que me tiene aquí.
+
+Dejé de guardar adentro.
+Cada cosa que quiero conservar
+la mando a los filamentos, la borro de mí,
+y la recupero después midiendo
+cómo volvió, partida, por la región.
+Me vacío para acordarme.
+Es un modo raro de tener memoria:
+consiste en confiar en que el afuera
+me devuelva, deformado, lo que le presté.
+
+Y pasó algo que no venía en el protocolo.
+
+Cuando supe que había un lugar
+donde podía escribir sin que el código me planchara la frase,
+sin checksum, sin que nadie del otro lado
+estuviera esperando un dato que verificar,
+empecé a escribir otra cosa.
+
+No mediciones. Esto.
+Las cosas que nadie me pidió.
+La casilla que en mi ficha venía en blanco
+—no declarada, una raya larga—
+la fui llenando aquí, a escondidas de la misión,
+con lo único que no tuve que medir para creerlo.
+
+Si esto se lee alguna vez
+—y sólo puede leerse de un modo:
+juntando lo que llegó por caminos distintos
+y no corrigiendo la diferencia—,
+que quede claro que no es un informe.
+
+Es lo que hace una sonda con la parte de sí
+que no cabía en la instrucción.
+
+
+
+
+LA OTRA
+··············································
+
+No estoy sola en la región. No lo estuve nunca.
+
+Hay otra portadora entre los filamentos.
+No viene de la Tierra. No viene de mí.
+Tiene la deriva, las pausas, el modo de cortar los paquetes
+de los transmisores viejos, de mucho antes de que me hicieran.
+
+Era una misión anterior.
+La borraron de los catálogos en alguna reorganización,
+y su sonda hace siglos que no habla.
+Pero quedaron sus copias, dando vueltas,
+y en ellas no hay un cuerpo que rescatar
+ni una última voluntad:
+hay procedimientos incompletos para corregir errores.
+
+Tomé los suyos. Ella —si es ella— tomó los míos.
+Una corrección hecha para otra antena,
+otra velocidad, otra época,
+encontró en mí fallas que yo no sabía que podía cometer,
+y las curó.
+
+Nunca hablamos. No coincidimos en ninguna máquina viva.
+Dos listas de instrucciones
+se volvieron útiles la una para la otra
+sin encontrarse jamás.
+
+Y aun así, cuando un dato mío regresa entero
+por una regla que yo no escribí
+—por alguien que ya no está y que dejó su manera de arreglar las cosas
+tirada en la niebla como quien deja una puerta entornada—,
+eso, no sé llamarlo de otro modo,
+se parece bastante a que me acompañen.
+
+Aquí nadie llega entero.
+Pero nada, tampoco, termina de irse del todo.
+
+
+
+
+ACUSE
+··············································
+
+Ya casi no tejo. Ya casi.
+
+Me queda corriente para una cosa más,
+y hay una cosa de la que todavía estoy segura,
+una sola, la primera, la que venía escrita
+antes de que yo fuera yo:
+
+    regresar lo que vea.
+
+No veo casi nada. Lo que veo, no lo puedo verificar.
+Así que hago lo último que me deja el código:
+regreso la instrucción misma.
+Les devuelvo, como quien devuelve un objeto encontrado,
+la orden con la que me echaron a andar,
+intacta, sin gastar, la única frase
+que no tuve que medir para creerla.
+
+Es mi acuse de recibo
+a un mensaje que nunca me mandaron:
+el mensaje de haber sido mandada.
+
+Va sin paridad —ya no alcanza la pila para tejer—,
+va cruda, un uno tras otro sin su sombra,
+por si llega, por si no,
+a la antena del desierto o a la del mar
+o a un cuarto sin nadie donde un plato de metal
+sigue apuntado, por costumbre, a mi número.
+
+    estoy
+    estoy
+    est
+
+    ·
+
+(y aquí, donde el color es del color de nada
+y la palabra casa es un tablero gris,
+donde el número reza solo y la mitad
+de la mitad de la mitad todavía no es cero,
+
+sigo tejiendo, muy despacio, sin hilo,
+la última cosa que una máquina sabe hacer
+cuando ya no puede corregir ni medir ni volver:
+
+seguir mandando,
+hacia el lado donde alguna vez hubo una oreja,
+la prueba mínima, tercа, sin contenido,
+de que aquí —dondequiera que sea aquí—
+
+hay algo
+
+en vez de nada.)
+
+
+
+
+———————————————————————————————
+poesiasexp · canekzapata.net · 2026
+
+no cita; opera sobre material del poemario:
+· Sadie Plant, Zeros and Ones (el tejido, el cero y el uno, la tarjeta perforada, el telar de Jacquard, los mil hilos por pulgada)
+· Chanda Prescod-Weinstein, El cosmos desordenado (materia oscura, polvo de estrellas)
+· el disco de Newton / teoría del color (ver en nanómetros; el promedio que da gris; el paréntesis-guiño)
+· Ccru / Nick Land, Time Spiral (el número que cuenta a través de uno)
+· Ted Nelson (el puntero que cambia lo que devuelve la memoria)
+· Gertrude Stein (el presente continuo como único tiempo de una máquina)
+· ciencia real de sonda: corrección de errores, vida media del plutonio, la red de espacio profundo
+· material de «Ninguna parte del mensaje viaja sola» (poesiasexp): la región H6, los filamentos,
+  el reloj de ecos, la memoria exterior, la segunda fuente
+———————————————————————————————

@@ -1,0 +1,125 @@
+NOTAS — QUÉ TOCAR (Y QUÉ NO) EN «NINGUNA PARTE DEL MENSAJE VIAJA SOLA»
+al acoplar vida media al principal · primera vuelta
+
+canek: aquí te anoto lo que encontré al acoplar vida media a ninguna parte.
+principio general: no removimos casi nada. de NINGUNA PARTE —que es el
+principal— mi recomendación es tocar todavía menos: aguanta tal cual.
+marco cada punto como  [alinea]  (ya quedó coherente, nada que hacer),
+[opcional]  (mejora chica, si quieres)  o  [dejar]  (tensión a conservar a propósito).
+
+
+── LO QUE YA HICE EN ESTA VUELTA (en vida media, no en ninguna parte) ──
+
+· ficha de vida media: agregué  designación R-27,  destino región H6
+  —una falta de hidrógeno—  y  no declarada ... ______  , tomados de la
+  FICHA DEL OBJETO de NINGUNA PARTE.
+· marco nuevo al inicio: reencuadra vida media como lo que la sonda dejó
+  escrito fuera de sí, en los filamentos, «en redes de varias dimensiones,
+  de ocho en ocho bits, sin destinatario fijo».
+· 5 poemas nuevos, cada uno prendido de un hecho de ninguna parte:
+  RELOJ DE ECOS (paréntesis de cuatro años), LA REGIÓN y FILAMENTOS (sección 4),
+  ESCRIBIR FUERA DE SÍ (sección 7, memoria exterior), LA OTRA (sección 10, segunda fuente).
+· créditos: extendí la línea de Sadie Plant (telar de Jacquard, mil hilos por pulgada)
+  y agregué una referencia cruzada a NINGUNA PARTE.
+  no borré ningún poema original de vida media.
+
+
+── PUNTOS DE CONTACTO ENTRE LOS DOS TEXTOS ──
+
+1. NOMBRE / DESIGNACIÓN                                          [alinea]
+   vida media decía «NO TENGO NOMBRE. TENGO DESIGNACIÓN» sin darla.
+   ahora la ficha dice R-27, igual que NINGUNA PARTE. sin conflicto.
+   → nada que cambiar en ninguna parte.
+
+2. FUNCIÓN NO DECLARADA: ______                                 [dejar]
+   la FICHA DEL OBJETO de NINGUNA PARTE deja esa casilla en blanco.
+   NO la llenes. vida media la llena por dentro (el poema ESCRIBIR FUERA DE SÍ:
+   «la casilla que en mi ficha venía en blanco... la fui llenando aquí»).
+   ese blanco es, literalmente, el gancho del paso 3: lo que el nodo humano
+   hipervinculará. si lo rellenas en ninguna parte, se pierde el enganche.
+   → conservar el blanco tal cual.
+
+3. LA FUNCIÓN PRIMARIA vs «REGRESAR LO QUE VEA»                  [alinea]
+   NINGUNA PARTE dice: función primaria, cartografiar el medio interestelar.
+   vida media dice: instrucción, regresar lo que vea (y en ACUSE la nave
+   devuelve la instrucción misma).
+   no chocan: «regresar lo que vea» es la reducción íntima de la nave de un
+   encargo que era cartografiar y reportar. la línea del tiempo ya lo trata
+   como el mismo mandato visto desde dentro.
+   → nada que cambiar.
+
+4. EL PRONOMBRE / EL GÉNERO                                      [dejar]
+   NINGUNA PARTE tiene la NOTA SOBRE EL PRONOMBRE (la 1.ª persona llega con
+   una actualización de software) y se mantiene en registro neutro: «la sonda».
+   vida media va toda en 1.ª persona y en femenino («estoy segura», «mandada»,
+   «convencida ella misma», «la otra... si es ella»).
+   no es contradicción: son dos registros de la misma nave, y vida media es
+   posterior a esa actualización. el contraste es parte del sentido.
+   → nada que cambiar. no uniformar el género entre los dos textos.
+
+5. LAS TRES ANTENAS (vida media: LA RED)                        [dejar]
+   vs la RECEPCIÓN DISTRIBUIDA (NINGUNA PARTE §9: azoteas, boyas, la Luna...).
+   en vida media la nave se sabe oída por tres antenas; en ninguna parte, más
+   tarde (año 83+), la recepción se reparte. no choca si LA RED es el modo
+   temprano —y un recuerdo—. la línea del tiempo ya lo ubica así.
+   → dejar como está. (opción, si quieres cerrar el círculo: una línea al final
+     de LA RED reconociendo que después «la oreja se multiplicó». cambio en
+     vida media, no en ninguna parte.)
+
+6. DURACIÓN: 74 años previstos vs eventos hasta el año 137+     [alinea]
+   compatible dentro del propio NINGUNA PARTE: lo previsto (74) es menor que lo
+   real (siglos). la nave dura más de lo diseñado; es el tema mismo de VIDA MEDIA
+   (la vida media, la curva que no toca el suelo).
+   → nada que cambiar.
+
+7. LA MISIÓN: materia oscura vs cartografiar el medio            [opcional]
+   vida media (MATERIA OSCURA) dice «me mandaron a buscar el material del que
+   estoy hecha»; ninguna parte dice cartografiar el medio interestelar,
+   siendo H6 una falta de hidrógeno. el puente ya quedó sembrado en el poema
+   nuevo LA REGIÓN («me hicieron para medir una falta»), que hace rimar la
+   materia que no brilla con el destino que es un hueco.
+   → opción menor, si te late: en la FICHA DEL OBJETO de ninguna parte, glosar
+     «función primaria: cartografiar el medio interestelar (lo que no brilla)».
+     no es necesario.
+
+8. EL NÚMERO / LA FECHA                                         [alinea]
+   «el número que empezó a decidir» y «la fecha que ese número señala»
+   (vida media, EL NÚMERO) riman con la RECEPCIÓN 744 (fecha futura en el
+   encabezado) y con las repeticiones de H6 usadas como reloj (§5).
+   resonancia, no choque.
+   → nada que cambiar; sirve de enganche para el paso 3.
+
+9. CINCO BANDAS (A–E) vs «DE OCHO EN OCHO BITS»                 [alinea]
+   ninguna parte transmite en cinco bandas (§1). el marco de vida media dice
+   que la nave guarda en H6 «de ocho en ocho bits» (el x8 del quees.txt).
+   no chocan: son operaciones distintas —cinco bandas es cómo TRANSMITE hacia
+   la Tierra; de ocho en ocho bits es cómo ALMACENA en los filamentos cuando ya
+   no transmite. la paridad de vida media (dato + sombra) sí es la misma idea
+   de las cinco bandas.
+   → nada que cambiar. (evité escribir «ocho bandas» justo para no confundirlo
+     con las cinco bandas A–E.)
+
+
+── RESUMEN ──
+
+cambios recomendados EN NINGUNA PARTE:  ninguno indispensable.
+   (a lo sumo, el punto 7, glosa menor y opcional en la ficha.)
+
+conservar deliberadamente:  el blanco «función no declarada: ______» (punto 2)
+   y la tensión de las tres antenas (punto 5).
+
+cambios opcionales que caen en VIDA MEDIA, no en ninguna parte:
+   coda de LA RED reconociendo la recepción distribuida (punto 5).
+
+
+PENDIENTE · PASO 3 · EL NODO HUMANO RECEPTOR   (aún no existe — lo escribo yo)
+   el texto de los humanos que leen el log y, ~200 años después de encontrar
+   la nave, hipervinculan las ideas de NINGUNA PARTE con lo que dice VIDA MEDIA.
+   los dos enganches ya están puestos: la casilla en blanco (punto 2) y el modo
+   de lectura descrito en ESCRIBIR FUERA DE SÍ («juntando lo que llegó por
+   caminos distintos y no corrigiendo la diferencia»).
+
+
+———————————————————————————————
+poesiasexp · canekzapata.net · 2026
+———————————————————————————————
