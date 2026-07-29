@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIDA MEDIA · EN VIVO — consola de vuelo R-27</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="consola.css">
+</head>
+<body>
+
+<canvas id="hydra"></canvas>
+<canvas id="nave"></canvas>
+<div id="texto"></div>
+
+<div id="hud-arriba">
+  <span id="hud-nave">R-27 · pila 100.0% · t+00:00 · H6</span>
+  <span id="hud-cuadro">PLATAFORMA</span>
+  <span id="hud-micro">micro: —</span>
+</div>
+<div id="hud-abajo">
+  <span id="hud-capas">♪ · ▓ · ✦</span>
+  <span id="hud-semilla"></span>
+  <span id="hud-aviso"></span>
+</div>
+
+<div id="ensayo"></div>
+<div id="blackout"></div>
+
+<div id="portada">
+  <h1>VIDA MEDIA</h1>
+  <p>telemetría de una sonda que se corrige hasta inventarse</p>
+  <button id="despierta">[ iniciar consola ]</button>
+  <p>concede el micrófono antes de que entre el público ·
+     espacio avanza · K es pánico · B es blackout</p>
+</div>
+
+<script src="lib/Tone.js"></script>
+<script src="lib/hydra-synth.js"></script>
+<script src="setlist.js"></script>
+<script src="texto.js"></script>
+<script src="nave.js"></script>
+<script src="visuales.js"></script>
+<script src="sonido.js"></script>
+<script src="consola.js"></script>
+</body>
+</html>
