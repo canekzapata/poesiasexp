@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIDA MEDIA · EN VIVO — consola de vuelo R-27</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="consola.css">
+</head>
+<body>
+
+<canvas id="hydra"></canvas>
+<canvas id="nave"></canvas>
+<div id="texto"></div>
+
+<div id="hud-arriba">
+  <span id="hud-nave">R-27 · pila 100.0% · t+00:00 · H6</span>
+  <span id="hud-cuadro">PLATAFORMA</span>
+  <span id="hud-micro">micro: —</span>
+</div>
+<div id="hud-abajo">
+  <span id="hud-capas">♪ · ▓ · ✦</span>
+  <span id="hud-semilla"></span>
+  <span id="hud-aviso"></span>
+</div>
+
+<div id="ensayo"></div>
+<div id="calibracion"></div>
+<div id="blackout"></div>
+
+<div id="portada">
+  <h1>VIDA MEDIA</h1>
+  <p>telemetría de una sonda que se corrige hasta inventarse</p>
+  <p class="portada-prevuelo">iniciar abre el prevuelo · audífonos primero · la función no empieza sola</p>
+  <div class="portada-acciones">
+    <button id="despierta">[ iniciar consola ]</button>
+    <button id="abre-info" aria-keyshortcuts="I" aria-haspopup="dialog">[ I · controles ]</button>
+  </div>
+  <p class="portada-pista">concede el micrófono antes de que entre el público ·
+     espacio avanza · <kbd>K</kbd> es pánico · <kbd>B</kbd> es blackout</p>
+
+  <dialog id="info-controles" aria-labelledby="info-titulo" aria-describedby="info-descripcion">
+    <div class="info-cabecera">
+      <div>
+        <span>R-27 · MAPA DE CONTROLES</span>
+        <h2 id="info-titulo">consola del performer</h2>
+      </div>
+      <button id="cierra-info" aria-label="cerrar controles">×</button>
+    </div>
+    <p id="info-descripcion" class="info-prevuelo">
+      iniciar abre el prevuelo: escuchar la sala, probar las voces y medir · la función arranca cuando tú lo digas
+    </p>
+    <div class="info-grupos">
+      <section>
+        <h3>voz</h3>
+        <dl>
+          <div><dt><kbd>T</kbd></dt><dd>R-27 lee el fragmento</dd></div>
+          <div><dt><kbd>Y</kbd></dt><dd>CORO lee el boletín</dd></div>
+          <div><dt><kbd>Shift+V</kbd></dt><dd>vocoder on/off</dd></div>
+          <div><dt><kbd>Shift+A</kbd></dt><dd>calibrador del vocoder</dd></div>
+          <div><dt><kbd>Z X C V N M ,</kbd></dt><dd>grados del acorde en vivo</dd></div>
+          <div><dt><kbd>Q</kbd></dt><dd>cerrar el micro · R-27 sigue hablando</dd></div>
+          <div class="advertencia"><dt><kbd>D</kbd></dt><dd>micro seco · riesgo de feedback</dd></div>
+        </dl>
+      </section>
+      <section>
+        <h3>navegación</h3>
+        <dl>
+          <div><dt><kbd>Espacio / →</kbd></dt><dd>cuadro siguiente</dd></div>
+          <div><dt><kbd>←</kbd></dt><dd>cuadro anterior</dd></div>
+          <div><dt><kbd>1–9 / 0</kbd></dt><dd>saltar de cuadro · 0 = 16</dd></div>
+          <div><dt><kbd>R</kbd></dt><dd>re-sembrar desde PLATAFORMA</dd></div>
+          <div><dt><kbd>A</kbd></dt><dd>auto-vuelo on/off</dd></div>
+          <div><dt><kbd>E</kbd></dt><dd>modo ensayo</dd></div>
+          <div><dt><kbd>F</kbd></dt><dd>pantalla completa</dd></div>
+          <div><dt><kbd>← → ↑</kbd></dt><dd>mover y disparar en EL NÚMERO</dd></div>
+        </dl>
+      </section>
+      <section>
+        <h3>capas y seguridad</h3>
+        <dl>
+          <div><dt><kbd>Shift+M</kbd></dt><dd>música on/off</dd></div>
+          <div><dt><kbd>H</kbd></dt><dd>hydra on/off</dd></div>
+          <div><dt><kbd>G</kbd></dt><dd>ráfaga de glitch</dd></div>
+          <div><dt><kbd>B</kbd></dt><dd>blackout · el audio sigue</dd></div>
+          <div><dt><kbd>K</kbd></dt><dd>PÁNICO · mata el audio</dd></div>
+          <div><dt><kbd>Esc</kbd></dt><dd>cerrar calibración o ayuda</dd></div>
+        </dl>
+      </section>
+    </div>
+    <p class="info-pie"><kbd>I</kbd> abre y cierra este mapa</p>
+  </dialog>
+</div>
+
+<script src="lib/Tone.js"></script>
+<script src="lib/hydra-synth.js"></script>
+<script src="rendimiento.js"></script>
+<script src="setlist.js"></script>
+<script src="texto.js"></script>
+<script src="nave.js"></script>
+<script src="visuales.js"></script>
+<!-- el audio, por capas: núcleo → música → vocoder → R-27 → mesa -->
+<script src="sonido-nucleo.js"></script>
+<script src="sonido-musica.js"></script>
+<script src="sonido-vocoder.js"></script>
+<script src="sonido-r27.js"></script>
+<script src="sonido.js"></script>
+<script src="calibracion.js"></script>
+<script src="consola.js"></script>
+</body>
+</html>
