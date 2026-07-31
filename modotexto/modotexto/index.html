@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MODO TEXTO · laberinto de caracteres en primera persona</title>
+<meta name="description" content="Un edificio cuya única materia es la celda de caracteres. poesiasexp / canekzapata.">
+<meta name="author" content="canekzapata">
+<meta name="color-scheme" content="dark light">
+
+<!-- las fuentes se toman prestadas de la carpeta hermana psfx/, como en vent/ -->
+<link rel="preload" href="../psfx/Px437_IBM_VGA_9x8-2x.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/pantalla.css">
+</head>
+<body>
+
+<div id="marco">
+  <canvas id="pantalla" role="application" aria-label="Laberinto de caracteres en primera persona. Use las flechas para caminar y girar, espacio para tocar el muro, tabulador para cambiar de panel."></canvas>
+</div>
+
+<!-- espejo accesible: no es una vista, es la obra dicha en voz baja -->
+<pre id="espejo" aria-live="polite" aria-atomic="true"></pre>
+
+<!-- constancia del recorrido: sólo existe en el papel -->
+<pre id="constancia" aria-hidden="true"></pre>
+
+<noscript>
+<pre id="singuion">
+█▓▒░ MODO TEXTO ░▒▓█
+
+Esta obra es una rejilla de caracteres que se recorre en primera persona.
+Necesita JavaScript porque el laberinto se construye al abrir la página:
+no hay documentos que enlazar, hay un solo plano continuo.
+
+poesiasexp · canekzapata.net
+</pre>
+</noscript>
+
+<script src="../otrorio/js/automatas.js"></script>
+<script src="js/rng.js"></script>
+<script src="js/rejilla.js"></script>
+<script src="js/materiales.js"></script>
+<script src="js/laberinto.js"></script>
+<script src="js/camara.js"></script>
+<script src="js/paneles.js"></script>
+<script src="js/lexico.js"></script>
+<script src="js/condensacion.js"></script>
+<script src="js/memoria.js"></script>
+<script src="js/volcado.js"></script>
+<script src="js/exportar.js"></script>
+<script src="js/sonido.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
