@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>un bit · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  body.pagina-bit main { display: grid; place-items: center; min-height: 72svh; }
+  .bit-grande {
+    font-size: clamp(9rem, 46vw, 34rem); line-height: .78; font-weight: 700;
+    letter-spacing: -.06em; background: none; border: 0; color: inherit;
+    cursor: pointer; padding: 0; font-family: inherit;
+  }
+  .bit-grande:hover { color: var(--acento); }
+  .bit-pie { text-align: center; max-width: 28em; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="bit" class="pagina-bit">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · un bit</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main>
+  <div>
+    <button class="bit-grande" id="bit" type="button" aria-label="cambiar este bit">0</button>
+    <p class="bit-pie medida" id="pie">esta página es un bit. no representa un bit: lo es. cambiarlo cambia el resto.</p>
+  </div>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>B</kbd> bitácora · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'bit', espera: 30 });
+
+  const boton = document.getElementById('bit');
+  const pie = document.getElementById('pie');
+  const est = N.mem.regimen('bit', {}).estado;
+  if (est.valor === undefined) est.valor = (N.mem.d.codigos.length % 2);
+  const inicial = est.valor;
+
+  function pintar() {
+    boton.textContent = est.valor ? '1' : '0';
+    document.documentElement.style.setProperty('--acento',
+      est.valor ? 'var(--c-transmision)' : 'var(--c-silencio)');
+    pie.textContent = est.valor
+      ? 'encendido. mientras esté así, el aparato cuenta esta visita como transmisión.'
+      : 'apagado. mientras esté así, el aparato cuenta esta visita como silencio.';
+  }
+  pintar();
+
+  boton.addEventListener('click', function () {
+    est.valor = est.valor ? 0 : 1;
+    N.mem.guardar(true);
+    /* el bit no se queda aquí: se lo lleva al mensaje */
+    N.texto.perderBit('un bit fue cambiado en la página que es un bit');
+    N.mem.hito('un-bit-a-mano', est.valor);
+    N.url.empujar('bit', { n: String(est.valor) });
+    pintar();
+  });
+
+  /* el botón Atrás deshace el bit de verdad: sin ?n en la URL,
+     la página vuelve al valor con el que se abrió */
+  N.bus.on('volver', function () {
+    const n = new URL(location.href).searchParams.get('n');
+    est.valor = (n === null) ? inicial : +n;
+    N.mem.guardar(true);
+    pintar();
+  });
+
+  N.sonido.control(document.body);
+});
+</script>
+</body>
+</html>

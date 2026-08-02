@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>expulsión · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  main.ancho { padding-bottom: .4rem; }
+  .campo { height: min(64svh, 40rem); }
+  .pila { display: flex; gap: 1.4rem; flex-wrap: wrap; align-items: flex-start; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="expulsion" class="pagina-expulsion">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · expulsión</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main class="ancho">
+  <h1 class="monumento">NO CABE</h1>
+  <p class="subtitulo">cámara de compresión · cada apretón expulsa un cuerpo y abre una dirección</p>
+
+  <div class="campo" id="campo"><canvas id="lienzo"></canvas></div>
+
+  <div class="controles">
+    <button class="boton" type="button" id="comprimir">comprimir</button>
+    <button class="boton" type="button" id="dimension">una dimensión más</button>
+    <button class="boton" type="button" id="soltar">soltar el campo</button>
+  </div>
+  <p class="medidor" id="medidor"></p>
+  <p class="medida" id="nota" aria-live="polite">el campo todavía cabe en la pantalla.</p>
+  <div class="dialogo" id="dialogo"></div>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>B</kbd> bitácora · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'expulsion', espera: 38 });
+
+  const nota = document.getElementById('nota');
+  const medidor = document.getElementById('medidor');
+  const campo = N.regA.crear(document.getElementById('lienzo'), {
+    cuerpos: window.innerWidth < 640 ? 54 : 96, vacios: 2, cobertura: 0.70,
+    alExpulsar: function (frag) { nota.textContent = 'salió del documento: ' + frag.texto + '. ahora vive en el residuo.'; }
+  });
+
+  function medir() {
+    medidor.innerHTML = '';
+    const filas = [
+      ['presión', campo.presion.toFixed(3)],
+      ['compresión', campo.compresion.toFixed(2)],
+      ['dimensión', String(campo.dimension)],
+      ['expulsados', String(campo.expulsados)],
+      ['bits apagados', String(N.texto.bitsPerdidos())]
+    ];
+    for (const [k, v] of filas) {
+      const s = document.createElement('span');
+      s.innerHTML = '<b></b> ';
+      s.querySelector('b').textContent = k + ':';
+      s.appendChild(document.createTextNode(v));
+      medidor.appendChild(s);
+    }
+  }
+  medir();
+  const parar = N.bus.every(medir, 700);
+
+  document.getElementById('comprimir').addEventListener('click', function () {
+    const antes = campo.compresion;
+    campo.comprimir(0.84);
+    if (campo.compresion >= antes - 0.001) {
+      nota.textContent = 'no se puede comprimir más. lo que sigue no es una operación del campo: es una caja.';
+      abrirCaja();
+    }
+    medir();
+  });
+  document.getElementById('dimension').addEventListener('click', function () {
+    const d = campo.aumentarDimension();
+    nota.textContent = d < 5
+      ? 'dimensión ' + d + '. caben. se ven encima. la superposición visible es la prueba de que la pantalla miente.'
+      : 'dimensión ' + d + '. ya no hay más dimensiones que agregar sin dejar de ver nada.';
+    medir();
+  });
+  document.getElementById('soltar').addEventListener('click', function () {
+    campo.soltarMascara();
+    nota.textContent = 'el campo quedó suelto. sigue sin caber, pero ahora sin ayuda.';
+  });
+
+  /* la tercera compresión abre una ruta descendiente que no estaba */
+  function abrirCaja() {
+    const host = document.querySelector('[data-salidas] .salidas-lista');
+    if (!host || host.querySelector('[data-destino="caja"]')) return;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.className = 'salida clase-aproximacion';
+    a.href = N.rutas.href('caja');
+    a.setAttribute('data-destino', 'caja');
+    a.textContent = 'una caja que sí contiene';
+    const sp = document.createElement('span'); sp.className = 'salida-clase'; sp.textContent = 'aproximación'; a.appendChild(sp);
+    a.addEventListener('click', function () { N.rutas.registrarArista('expulsion', 'caja', 'aproximacion'); });
+    li.appendChild(a); host.appendChild(li);
+    N.mem.hito('la-compresion-abrio-una-caja', true);
+  }
+  N.bus.on('expulsion', function () { if (campo.expulsados >= 3) abrirCaja(); });
+
+  const dlg = document.getElementById('dialogo');
+  N.corpus.PROCESOS.slice(0, 4).forEach(function (d) {
+    const p = document.createElement('p');
+    p.innerHTML = '<b></b>';
+    p.querySelector('b').textContent = d[0];
+    p.appendChild(document.createTextNode(d[1]));
+    dlg.appendChild(p);
+  });
+
+  /* la inactividad también comprime: el aparato trabaja sin nadie */
+  N.bus.inactividad(38, function () {
+    campo.comprimir(0.94);
+    nota.textContent = 'nadie apretó nada. el campo se comprimió solo.';
+    medir();
+  });
+
+  N.sonido.control(document.body);
+  N.bus.listen(window, 'pagehide', function () { parar(); campo && campo.destruir(); });
+});
+</script>
+</body>
+</html>
