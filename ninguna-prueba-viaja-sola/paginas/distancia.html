@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>distancia irresuelta · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  .brecha { position: relative; height: min(46svh, 24rem); margin: 2rem 0; }
+  .brecha canvas { width: 100%; height: 100%; display: block; }
+  .cifra { font-family: "Monitor", ui-monospace, monospace; font-size: clamp(2.6rem, 12vw, 8rem); line-height: 1; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="distancia" class="pagina-distancia">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · distancia irresuelta</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main>
+  <h1 class="monumento">NO<br>CIERRA</h1>
+  <p class="subtitulo">la única magnitud de esta obra que no baja con el tiempo</p>
+
+  <p class="cifra" id="cifra">—</p>
+  <p class="medida" id="explica"></p>
+
+  <div class="brecha"><canvas id="lienzo" aria-label="dos puntos que no se alcanzan"></canvas></div>
+
+  <p>Aquí no hay nada que completar. La distancia es la parte del mensaje que no viajó: se quedó
+  en el canal, en el reparto, en la diferencia entre lo que hiciste y lo que el aparato pudo
+  medir de lo que hiciste. Se puede mirar. No se puede reducir a cero sin borrarla.</p>
+
+  <p class="error-util">error útil: esperar aquí no acerca los puntos. Los separa un poco, porque esperar también se mide.</p>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>B</kbd> bitácora · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'distancia', espera: 30 });
+
+  const lienzo = document.getElementById('lienzo');
+  const g = lienzo.getContext('2d');
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  let extra = 0;
+
+  function magnitud() {
+    // distancia real: bits apagados + contradicciones + fragmentos perdidos + espera
+    const m = N.mem.d;
+    return N.texto.bitsPerdidos()
+      + m.contradicciones.length * 2
+      + m.fragmentos.filter(function (f) { return f.estado === 'perdido'; }).length
+      + extra;
+  }
+
+  function pintar() {
+    const rect = lienzo.getBoundingClientRect();
+    lienzo.width = Math.max(1, Math.floor(rect.width * dpr));
+    lienzo.height = Math.max(1, Math.floor(rect.height * dpr));
+    const cs = getComputedStyle(document.documentElement);
+    g.fillStyle = cs.getPropertyValue('--papel').trim(); g.fillRect(0, 0, lienzo.width, lienzo.height);
+    const d = magnitud();
+    const cy = lienzo.height / 2;
+    const sep = Math.min(lienzo.width * 0.42, 20 * dpr + d * 9 * dpr);
+    const cx = lienzo.width / 2;
+    g.strokeStyle = cs.getPropertyValue('--tinta').trim();
+    g.globalAlpha = .3; g.setLineDash([3 * dpr, 5 * dpr]);
+    g.beginPath(); g.moveTo(cx - sep, cy); g.lineTo(cx + sep, cy); g.stroke();
+    g.setLineDash([]); g.globalAlpha = 1;
+    g.fillStyle = cs.getPropertyValue('--c-recuerdo').trim();
+    g.beginPath(); g.arc(cx - sep, cy, 7 * dpr, 0, Math.PI * 2); g.fill();
+    g.fillStyle = cs.getPropertyValue('--c-aproximacion').trim();
+    g.beginPath(); g.arc(cx + sep, cy, 7 * dpr, 0, Math.PI * 2); g.fill();
+    document.getElementById('cifra').textContent = String(d);
+    document.getElementById('explica').textContent =
+      N.texto.bitsPerdidos() + ' bits apagados + ' + (N.mem.d.contradicciones.length * 2) + ' por contradicciones + ' +
+      N.mem.d.fragmentos.filter(function (f) { return f.estado === 'perdido'; }).length + ' pérdidas + ' + extra + ' de espera';
+  }
+  pintar();
+  const p1 = N.bus.on('bit', pintar);
+  const p2 = N.bus.on('contradiccion', pintar);
+  N.bus.listen(window, 'resize', pintar);
+
+  /* esperar aquí no resuelve: aleja */
+  N.bus.inactividad(30, function () { extra += 1; pintar(); N.mem.hito('la-distancia-crecio-sola', extra); });
+  N.bus.inactividad(75, function () { extra += 2; pintar(); });
+
+  N.sonido.control(document.body);
+  N.bus.listen(window, 'pagehide', function () { p1(); p2(); });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NINGUNA PRUEBA VIAJA SOLA</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  body.umbral { display: block; }
+  .campo--pleno { position: fixed; inset: 0; height: 100svh; }
+  .capa { position: relative; z-index: 10; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; pointer-events: none; }
+  .capa > * { pointer-events: auto; }
+  .frase-umbral { margin: 0 clamp(1rem,4vw,3.4rem) clamp(1rem,4vw,3rem); }
+  .huella-inicial { position: fixed; left: clamp(1rem,4vw,3.4rem); top: 1rem; z-index: 12;
+    font-family: "Micro","Monitor",ui-monospace,monospace; font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; opacity: .5; }
+  .delacion { margin: 0 clamp(1rem,4vw,3.4rem) 1rem; max-width: 30em; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body class="umbral pagina-umbralfalso" data-pagina="umbralfalso">
+
+<div class="campo campo--pleno" id="campo" aria-hidden="true"><canvas id="lienzo"></canvas></div>
+<div id="vacios"></div>
+
+<p class="huella-inicial"><a href="../mapa.html">mapa incompleto</a></p>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<div class="capa">
+  <p class="delacion medida" id="delacion"></p>
+  <p class="mensaje-degradado frase-umbral" id="frase-umbral"></p>
+</div>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página" style="position:relative;z-index:11;background:var(--papel)"></nav>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'umbralfalso', espera: 24 });
+
+  /* la misma superficie que el umbral, producida por otra historia:
+     los huecos llevan a otras direcciones. se ve igual, no es igual. */
+  const DESTINOS = ['contradiccion', 'copia', 'recepcion'];
+
+  function pintarVacios(vacios) {
+    const host = document.getElementById('vacios');
+    const rect = document.getElementById('lienzo').getBoundingClientRect();
+    const previos = Array.from(host.children);
+    vacios.forEach(function (v, i) {
+      let a = previos[i];
+      if (!a) {
+        a = document.createElement('a');
+        a.className = 'vacio-enlace visible';
+        host.appendChild(a);
+        a.addEventListener('click', function () {
+          const d = a.getAttribute('data-destino');
+          N.rutas.registrarArista('umbralfalso', d, N.rutas.claseDe('umbralfalso', d));
+          N.texto.perderBit('un vacío del segundo umbral fue cruzado');
+        });
+      }
+      const d = Math.max(24, Math.min(v.d, 54));
+      const destino = DESTINOS[i % DESTINOS.length];
+      a.style.left = (rect.left + v.x - d) + 'px';
+      a.style.top = (rect.top + v.y - d) + 'px';
+      a.style.width = a.style.height = (d * 2) + 'px';
+      a.href = N.rutas.href(destino);
+      a.setAttribute('data-destino', destino);
+      a.setAttribute('aria-label', 'cruzar el vacío hacia ' + N.rutas.catalogo[destino].t);
+    });
+    while (host.children.length > vacios.length) host.lastChild.remove();
+  }
+
+  const campo = N.regA.crear(document.getElementById('lienzo'), {
+    cuerpos: window.innerWidth < 640 ? 26 : 38,
+    vacios: 3,
+    cobertura: 0.30,
+    alVacio: pintarVacios
+  });
+
+  document.getElementById('frase-umbral').textContent = N.texto.mensajeDegradado();
+  N.bus.on('bit', function () { document.getElementById('frase-umbral').textContent = N.texto.mensajeDegradado(); });
+
+  /* la delación tarda: primero parece el principio */
+  const del = document.getElementById('delacion');
+  N.bus.later(function () {
+    del.textContent = 'ésta no es la primera página. tiene la misma superficie y otra historia: los huecos llevan a otro lado y el mensaje ya venía roto.';
+    N.mem.hito('dos-superficies-iguales', N.texto.bitsPerdidos());
+    N.mem.contradiccion('el umbral: tres vacíos hacia recepción, separación y retícula',
+      'este umbral: tres vacíos hacia contradicción, copia y recepción',
+      'dos recorridos no isomorfos produjeron la misma superficie visible');
+  }, 9000);
+
+  N.sonido.control(document.body);
+  N.bus.listen(window, 'pagehide', function () { campo && campo.destruir(); });
+});
+</script>
+</body>
+</html>

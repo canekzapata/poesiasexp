@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>poda · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="poda" class="pagina-poda">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · poda</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main class="ancho">
+  <p class="subtitulo">la ley que el aparato presentó como inevitable</p>
+  <p class="ley" id="ley"></p>
+
+  <p>Aquí no se añade nada. Se quita. Cada línea es una relación que tu recorrido
+  coloreó; tocarla la retira del expediente. Retirar tiene precio: el registro que
+  la produjo se queda sin causa, y si sostenía un triángulo, el triángulo deja de
+  estar aunque conste que estuvo.</p>
+
+  <svg class="lienzo-poda" id="grafo" role="img" aria-label="grafo de relaciones podable"></svg>
+
+  <p class="medidor" id="medidor"></p>
+  <p class="medida" id="nota" aria-live="polite">toca una relación para retirarla.</p>
+  <p class="error-util" id="error" hidden></p>
+
+  <div class="envoltura-tabla">
+    <table class="tabla-memoria" id="tabla">
+      <thead><tr><th>relación</th><th>clase</th><th>estado</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="veredicto-poda" id="veredicto" hidden>
+    <p class="monumento">FALLÓ</p>
+    <p id="veredicto-texto"></p>
+    <p><a class="salida clase-perdida" id="salida-final" href="#" data-destino="certificado">la salida<span class="salida-clase">pérdida</span></a></p>
+  </div>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">esta dirección no aparece en el mapa · <a href="../mapa.html">mapa</a> · <kbd>B</kbd> bitácora</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'poda', espera: 50 });
+
+  const NS = 'http://www.w3.org/2000/svg';
+  const sv = function (t, a) { const e = document.createElementNS(NS, t); if (a) for (const k in a) e.setAttribute(k, a[k]); return e; };
+  const svg = document.getElementById('grafo');
+  const nota = document.getElementById('nota');
+  const error = document.getElementById('error');
+
+  document.getElementById('ley').textContent = N.regJ.LEY;
+
+  function posiciones(ids, W, H) {
+    const r = N.seed.make(N.estado.semilla, 'poda');
+    const pos = {};
+    ids.forEach(function (id, i) {
+      const a = (i / ids.length) * Math.PI * 2 + r.f(-0.1, 0.1);
+      pos[id] = { x: W / 2 + Math.cos(a) * W * 0.36, y: H / 2 + Math.sin(a) * H * 0.38 };
+    });
+    return pos;
+  }
+
+  function pintar() {
+    const st = N.regJ.estado();
+    const vivas = N.regJ.grafo();
+    const fuera = new Set(N.regJ.podadas());
+    svg.textContent = '';
+    const rect = svg.getBoundingClientRect();
+    const W = Math.max(1, rect.width), H = Math.max(1, rect.height);
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+
+    const ids = Array.from(new Set(N.mem.d.aristas.reduce(function (a, e) { return a.concat([e[0], e[1]]); }, [])));
+    if (!ids.length) {
+      const t = sv('text', { x: 20, y: 40, class: 'nodo-etiqueta' });
+      t.textContent = 'todavía no hay relaciones que podar: hay que cruzar enlaces primero.';
+      svg.appendChild(t);
+      medir(st); tabla(); return;
+    }
+    const pos = posiciones(ids, W, H);
+    const cs = getComputedStyle(document.documentElement);
+
+    for (const e of N.mem.d.aristas) {
+      const a = pos[e[0]], b = pos[e[1]];
+      if (!a || !b) continue;
+      const retirada = fuera.has(e[3]);
+      const l = sv('line', {
+        x1: a.x, y1: a.y, x2: b.x, y2: b.y,
+        class: 'arista arista--podable' + (retirada ? ' retirada' : ''),
+        stroke: cs.getPropertyValue('--c-' + e[2]).trim(),
+        tabindex: retirada ? -1 : 0, role: 'button'
+      });
+      l.appendChild(sv('title')).textContent = e[0] + '–' + e[1] + ' · ' + N.rutas.CLASES[e[2]].etiqueta + (retirada ? ' · retirada' : ' · tocar para retirar');
+      if (!retirada) {
+        l.addEventListener('click', function () { retirar(e[3]); });
+        l.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); retirar(e[3]); } });
+      }
+      svg.appendChild(l);
+    }
+    const grados = {};
+    for (const e of vivas) { grados[e[0]] = (grados[e[0]] || 0) + 1; grados[e[1]] = (grados[e[1]] || 0) + 1; }
+    for (const id of ids) {
+      const p = pos[id];
+      const g = grados[id] || 0;
+      const c = sv('circle', { cx: p.x, cy: p.y, r: g ? 3 + Math.min(6, g) : 3, class: 'nodo' + (g ? '' : ' desprendido') });
+      c.appendChild(sv('title')).textContent = id + ' · grado ' + g;
+      svg.appendChild(c);
+      const t = sv('text', { x: p.x + 10, y: p.y + 3.5, class: 'nodo-etiqueta' });
+      t.textContent = (N.rutas.catalogo[id] || { t: id }).t;
+      svg.appendChild(t);
+    }
+    medir(st);
+    tabla();
+    veredicto(st);
+  }
+
+  function medir(st) {
+    const host = document.getElementById('medidor');
+    host.innerHTML = '';
+    const filas = [
+      ['relaciones', st.aristas + ' de ' + st.originales],
+      ['retiradas', st.podadas],
+      ['degeneración', st.degeneracion],
+      ['componentes', st.componentes],
+      ['desprendidos', st.desprendidos.length]
+    ];
+    for (const [k, v] of filas) {
+      const s = document.createElement('span');
+      s.innerHTML = '<b></b> ';
+      s.querySelector('b').textContent = k + ':';
+      s.appendChild(document.createTextNode(String(v)));
+      host.appendChild(s);
+    }
+  }
+
+  function tabla() {
+    const cuerpo = document.querySelector('#tabla tbody');
+    const fuera = new Set(N.regJ.podadas());
+    cuerpo.innerHTML = '';
+    for (const e of N.mem.d.aristas) {
+      const tr = document.createElement('tr');
+      const retirada = fuera.has(e[3]);
+      tr.className = retirada ? 'c-degradado' : '';
+      for (const v of [e[0] + ' – ' + e[1], N.rutas.CLASES[e[2]].etiqueta, retirada ? 'retirada' : 'en el expediente']) {
+        const td = document.createElement('td'); td.textContent = v; tr.appendChild(td);
+      }
+      const td = document.createElement('td');
+      const b = document.createElement('button');
+      b.className = 'boton'; b.type = 'button';
+      b.textContent = retirada ? 'devolver' : 'retirar';
+      b.addEventListener('click', function () { retirada ? devolver(e[3]) : retirar(e[3]); });
+      td.appendChild(b); tr.appendChild(td);
+      cuerpo.appendChild(tr);
+    }
+  }
+
+  function retirar(clave) {
+    const res = N.regJ.podar(clave);
+    if (!res.hecho) { nota.textContent = 'no se pudo: ' + res.razon + '.'; return; }
+    nota.textContent = 'relación retirada. ' + (res.notas.length ? res.notas.join(' ') : 'el grafo aguanta.');
+    const st = res.estado;
+    error.hidden = false;
+    error.textContent = st.desprendidos.length
+      ? 'error útil: ' + st.desprendidos.length + ' documento(s) quedaron sueltos. un expediente roto no refuta nada: sólo deja de ser un expediente.'
+      : 'error útil: la degeneración bajó a ' + st.degeneracion + '. mientras siga por encima de 1, la ley se sostiene.';
+    pintar();
+  }
+
+  function devolver(clave) {
+    N.regJ.devolver(clave);
+    nota.textContent = 'la relación volvió al expediente. la bitácora no recupera lo que ya perdió.';
+    pintar();
+  }
+
+  function veredicto(st) {
+    const caja = document.getElementById('veredicto');
+    if (!st.refuta) {
+      caja.hidden = true;
+      if (!st.habiaPrueba) {
+        nota.textContent = 'este expediente todavía no tiene un regreso que quitar. hay que recorrer más antes de poder demoler algo.';
+      }
+      return;
+    }
+    caja.hidden = false;
+    document.getElementById('veredicto-texto').textContent =
+      'Quedaron ' + st.aristas + ' relaciones, ninguna suelta, y ningún regreso: degeneración ' + st.degeneracion + '. ' +
+      'Este expediente es un bosque, y la ley decía que un bosque no puede ser una prueba. ' +
+      'La demostración que organizaba toda la obra acaba de fallar con un contraejemplo que construiste a mano. ' +
+      'El fracaso no cierra nada: abre la única salida que había.';
+    const a = document.getElementById('salida-final');
+    a.href = N.rutas.href('certificado', { v: 'poda' });
+    a.onclick = function () { N.rutas.registrarArista('poda', 'certificado', N.rutas.claseDe('poda', 'certificado')); };
+  }
+
+  pintar();
+  N.bus.listen(window, 'resize', pintar);
+  N.bus.on('demostracion-fallida', function () {
+    N.copia.rastro('yo tampoco pude demostrarlo');
+  });
+
+  N.sonido.control(document.body);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>caja · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="caja" class="pagina-caja">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · caja</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main class="ancho">
+  <h1 class="monumento">UNO<br>ADENTRO</h1>
+  <p class="subtitulo">muchos puntos en el borde · un solo punto adentro · mover una cara cambia la cuenta</p>
+
+  <svg class="lienzo-caja" id="caja" role="img" aria-label="cuerpo convexo con un único punto interior"></svg>
+  <p class="medida">arrastra los vértices, o enfoca uno con tabulador y muévelo con las flechas.</p>
+
+  <p class="medidor" id="cuenta"></p>
+  <p class="medida" id="nota" aria-live="polite"></p>
+  <p class="error-util" id="error" hidden></p>
+
+  <hr class="regla">
+  <p id="quien" class="mensaje-degradado"></p>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>B</kbd> bitácora · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'caja', espera: 36 });
+
+  const cuenta = document.getElementById('cuenta');
+  const nota = document.getElementById('nota');
+  const error = document.getElementById('error');
+  let sostenidoDesde = Date.now();
+  let expulsado = false;
+
+  /* el interior es alternativamente el visitante, una palabra, el origen,
+     la sonda o una ausencia: depende de cuánto llevas hecho */
+  const cual = N.corpus.INTERIOR[Math.min(4, Math.floor(N.mem.d.rutas.length / 4)) % N.corpus.INTERIOR.length];
+  document.getElementById('quien').textContent = 'adentro hay ' + cual + '.';
+
+  const caja = N.regH.crear(document.getElementById('caja'), {
+    paso: window.innerWidth < 640 ? 34 : 48,
+    alCambiar: function (c) {
+      cuenta.innerHTML = '';
+      const filas = [['en la frontera', c.frontera], ['adentro', c.dentro], ['admisible adentro', 1]];
+      for (const [k, v] of filas) {
+        const s = document.createElement('span');
+        s.innerHTML = '<b></b> ';
+        s.querySelector('b').textContent = k + ':';
+        s.appendChild(document.createTextNode(String(v)));
+        cuenta.appendChild(s);
+      }
+      if (c.estadoInterior !== 'dentro') {
+        if (!expulsado) {
+          expulsado = true;
+          nota.textContent = 'la caja soltó lo único que tenía.';
+          error.hidden = false;
+          error.textContent = 'error útil: ' + cual + ' salió del contenedor. lo que sale del contenedor entra en el residuo.';
+          N.mem.fragmento({ id: 'interior', texto: cual, de: 'caja', estado: 'expulsado', t: Date.now() });
+          N.texto.perderBit('el punto interior fue expulsado de la caja');
+          N.mem.hito('el-interior-fue-expulsado', cual);
+          abrirInterior();
+        }
+        sostenidoDesde = Date.now();
+      } else {
+        expulsado = false;
+        if (c.dentro > 1) {
+          nota.textContent = 'ahora caben ' + c.dentro + ' adentro. la caja dejó de ser una caja: es una habitación.';
+          sostenidoDesde = Date.now();
+        } else {
+          nota.textContent = 'sigue habiendo uno solo adentro. la forma cambió para que eso siguiera siendo cierto.';
+        }
+      }
+    }
+  });
+
+  /* sostener el punto es una operación que ocurre con el tiempo */
+  const vigilar = N.bus.every(function () {
+    const c = caja.contar();
+    if (caja.estadoInterior() === 'dentro' && c.dentro === 1) {
+      if (Date.now() - sostenidoDesde > 22000) {
+        if (N.mem.hito('punto-sostenido', c.frontera)) {
+          nota.textContent = 'el punto se sostuvo. TESTIGO lo registra como la única prueba que no expulsó nada.';
+          abrirInterior();
+        }
+      }
+    } else sostenidoDesde = Date.now();
+  }, 1500);
+
+  function abrirInterior() {
+    const host = document.querySelector('[data-salidas] .salidas-lista');
+    if (!host || host.querySelector('[data-destino="interior"]')) return;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.className = 'salida clase-perdida';
+    a.href = N.rutas.href('interior');
+    a.setAttribute('data-destino', 'interior');
+    a.textContent = 'lo que estaba adentro';
+    const sp = document.createElement('span'); sp.className = 'salida-clase'; sp.textContent = 'pérdida'; a.appendChild(sp);
+    a.addEventListener('click', function () { N.rutas.registrarArista('caja', 'interior', 'perdida'); });
+    li.appendChild(a); host.appendChild(li);
+  }
+
+  N.sonido.control(document.body);
+  N.bus.listen(window, 'pagehide', function () { vigilar(); caja.destruir(); });
+});
+</script>
+</body>
+</html>
