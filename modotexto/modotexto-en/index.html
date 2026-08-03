@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TEXT MODE · a first-person character labyrinth</title>
+<meta name="description" content="A building whose only substance is the character cell. poesiasexp / canekzapata.">
+<meta name="author" content="canekzapata">
+<meta name="color-scheme" content="dark light">
+
+<!-- las fuentes se toman prestadas de la carpeta hermana psfx/, como en vent/ -->
+<link rel="preload" href="../psfx/Px437_IBM_VGA_9x8-2x.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="stylesheet" href="css/pantalla.css">
+</head>
+<body>
+
+<div id="marco">
+  <canvas id="pantalla" role="application" aria-label="First-person character labyrinth. Use the arrow keys to walk and turn, space to touch a wall, and tab to change panels."></canvas>
+</div>
+
+<!-- espejo accesible: no es una vista, es la obra dicha en voz baja -->
+<pre id="espejo" aria-live="polite" aria-atomic="true"></pre>
+
+<!-- constancia del recorrido: sólo existe en el papel -->
+<pre id="constancia" aria-hidden="true"></pre>
+
+<noscript>
+<pre id="singuion">
+█▓▒░ TEXT MODE ░▒▓█
+
+This work is a character grid traversed in first person.
+It needs JavaScript because the labyrinth is built when the page opens:
+there are no documents to link, only one continuous plane.
+
+poesiasexp · canekzapata.net
+</pre>
+</noscript>
+
+<script src="../otrorio/js/automatas.js"></script>
+<script src="js/rng.js"></script>
+<!-- los cuerpos escultóricos vienen de lasletras/, que ya los guarda en 3D -->
+<script src="../lasletras/js/corpus.js"></script>
+<script src="../lasletras/js/architecture.js"></script>
+<!-- el palimpsesto: pozos de escritura de heraclitofable -->
+<script src="../poemario/heraclitofable/corpus.js"></script>
+<script src="js/rejilla.js"></script>
+<script src="js/materiales.js"></script>
+<script src="js/laberinto.js"></script>
+<script src="js/esculturas.js"></script>
+<script src="js/celadores.js"></script>
+<script src="js/camara.js"></script>
+<script src="js/paneles.js"></script>
+<script src="js/lexico.js"></script>
+<script src="js/condensacion.js"></script>
+<script src="js/memoria.js"></script>
+<script src="js/volcado.js"></script>
+<script src="js/exportar.js"></script>
+<script src="js/sonido.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
