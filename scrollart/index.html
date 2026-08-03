@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fractal Scrolls</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #000;
+      font-family: monospace;
+      perspective: 1000px; /* Perspectiva 3D */
+      perspective-origin: 50% 50%;
+    }
+
+    /* Contenedor principal */
+    #fractal-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      transform-style: preserve-3d; /* Mantener 3D en hijos */
+    }
+
+    /* Divs fractales con efectos 3D */
+    .fractal-div {
+      position: absolute;
+      overflow: auto;
+      border: 1px solid;
+      box-sizing: border-box;
+      transition: all 0.5s ease-in-out;
+      transform-style: preserve-3d; /* Mantener 3D */
+      backface-visibility: visible;
+    }
+
+    /* Scrollbars webkit */
+    .fractal-div::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    .fractal-div::-webkit-scrollbar-track {
+      background: rgba(0,0,0,0.3);
+      border-radius: 4px;
+    }
+
+    .fractal-div::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .fractal-div::-webkit-scrollbar-corner {
+      background: rgba(0,0,0,0.3);
+    }
+
+    /* Animaciones 3D con movimiento y transformaciones dramáticas */
+    @keyframes float-around {
+      0% { 
+        transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg);
+      }
+      25% { 
+        transform: translateX(200px) translateY(-100px) translateZ(150px) rotateX(15deg) rotateY(45deg);
+      }
+      50% { 
+        transform: translateX(-150px) translateY(150px) translateZ(-50px) rotateX(-20deg) rotateY(90deg);
+      }
+      75% { 
+        transform: translateX(100px) translateY(-200px) translateZ(200px) rotateX(30deg) rotateY(135deg);
+      }
+      100% { 
+        transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(180deg);
+      }
+    }
+
+    @keyframes dramatic-flip {
+      0% { 
+        transform: rotateX(0deg) rotateY(0deg) translateZ(0px) scale3d(1, 1, 1);
+      }
+      25% { 
+        transform: rotateX(90deg) rotateY(45deg) translateZ(300px) scale3d(0.5, 2, 0.5);
+      }
+      50% { 
+        transform: rotateX(180deg) rotateY(90deg) translateZ(-100px) scale3d(2, 0.3, 1.5);
+      }
+      75% { 
+        transform: rotateX(270deg) rotateY(135deg) translateZ(250px) scale3d(0.3, 1.8, 0.8);
+      }
+      100% { 
+        transform: rotateX(360deg) rotateY(180deg) translateZ(0px) scale3d(1, 1, 1);
+      }
+    }
+
+    @keyframes spiral-movement {
+      0% { 
+        transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg);
+      }
+      25% { 
+        transform: translateX(150px) translateY(150px) translateZ(100px) rotateZ(90deg) rotateX(45deg);
+      }
+      50% { 
+        transform: translateX(0px) translateY(300px) translateZ(-150px) rotateZ(180deg) rotateX(90deg);
+      }
+      75% { 
+        transform: translateX(-150px) translateY(150px) translateZ(200px) rotateZ(270deg) rotateX(135deg);
+      }
+      100% { 
+        transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(360deg) rotateX(180deg);
+      }
+    }
+
+    @keyframes extreme-stretch {
+      0% { 
+        width: var(--base-width);
+        height: var(--base-height);
+        transform: rotateY(0deg) translateZ(0px) scaleX(1) scaleY(1);
+      }
+      25% { 
+        width: calc(var(--base-width) * 3);
+        height: calc(var(--base-height) * 0.2);
+        transform: rotateY(60deg) translateZ(150px) scaleX(1.5) scaleY(0.1);
+      }
+      50% { 
+        width: calc(var(--base-width) * 0.1);
+        height: calc(var(--base-height) * 4);
+        transform: rotateY(120deg) translateZ(-100px) scaleX(0.1) scaleY(2);
+      }
+      75% { 
+        width: calc(var(--base-width) * 2.5);
+        height: calc(var(--base-height) * 0.3);
+        transform: rotateY(240deg) translateZ(200px) scaleX(2) scaleY(0.2);
+      }
+      100% { 
+        width: var(--base-width);
+        height: var(--base-height);
+        transform: rotateY(360deg) translateZ(0px) scaleX(1) scaleY(1);
+      }
+    }
+
+    @keyframes wobble-drift {
+      0% { 
+        transform: translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+      20% { 
+        transform: translateX(80px) translateY(-60px) rotateX(20deg) rotateY(-15deg) rotateZ(10deg);
+      }
+      40% { 
+        transform: translateX(-120px) translateY(100px) rotateX(-25deg) rotateY(30deg) rotateZ(-20deg);
+      }
+      60% { 
+        transform: translateX(160px) translateY(80px) rotateX(15deg) rotateY(-25deg) rotateZ(15deg);
+      }
+      80% { 
+        transform: translateX(-80px) translateY(-120px) rotateX(-30deg) rotateY(20deg) rotateZ(-10deg);
+      }
+      100% { 
+        transform: translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+    }
+
+    @keyframes perspective-dance {
+      0% { 
+        transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateZ(0px);
+      }
+      16% { 
+        transform: perspective(800px) rotateX(45deg) rotateY(30deg) translateZ(100px);
+      }
+      33% { 
+        transform: perspective(800px) rotateX(-30deg) rotateY(60deg) translateZ(-80px);
+      }
+      50% { 
+        transform: perspective(800px) rotateX(60deg) rotateY(-45deg) translateZ(150px);
+      }
+      66% { 
+        transform: perspective(800px) rotateX(-45deg) rotateY(90deg) translateZ(-120px);
+      }
+      83% { 
+        transform: perspective(800px) rotateX(30deg) rotateY(-60deg) translateZ(80px);
+      }
+      100% { 
+        transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateZ(0px);
+      }
+    }
+
+    /* Estados activos */
+    .fractal-div:hover {
+      z-index: 10;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    .fractal-div.scrolling {
+      border-width: 3px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div id="fractal-container"></div>
+
+  <script>
+    // Variables globales para controlar divs madre
+    let motherDivs = 0;
+    const MAX_MOTHER_DIVS = 6; // Reducido a 6 máximo
+    const MIN_MOTHER_DIVS = 2; // Mínimo 1
+    const MAX_CHILDREN_PER_MOTHER = 8;
+
+    // Generadores aleatorios
+    function rand(min, max) { 
+      return Math.random() * (max - min) + min; 
+    }
+    
+    function randInt(min, max) { 
+      return Math.floor(rand(min, max + 1)); 
+    }
+
+    // Generar color RGBA aleatorio
+    function randomColor(alpha = null) {
+      const r = randInt(0, 255);
+      const g = randInt(0, 255);
+      const b = randInt(0, 255);
+      const a = alpha !== null ? alpha : rand(0.1, 0.9);
+      return `rgba(${r}, ${g}, ${b}, ${a})`;
+    }
+
+    // Crear un div fractal que cubra más área
+    function createFractalDiv(parentEl, parentWidth, parentHeight, depth = 0, maxDepth = 4) {
+      if (depth > maxDepth) return;
+
+      const div = document.createElement('div');
+      div.className = 'fractal-div';
+      
+      // Marcar si es div madre
+      if (depth === 0) {
+        div.setAttribute('data-mother', 'true');
+        motherDivs++;
+        console.log(`Creada div madre #${motherDivs}`);
+      } else {
+        div.setAttribute('data-child-level', depth);
+      }
+      
+      // Dimensiones más pequeñas - entre 25% y 33% de la pantalla
+      let divWidth, divHeight;
+      
+      if (depth === 0) {
+        // Divs principales: 25%-33% de la pantalla
+        divWidth = rand(parentWidth * 0.25, parentWidth * 0.43);
+        divHeight = rand(parentHeight * 0.35, parentHeight * 0.53);
+      } else {
+        // Divs hijos: proporcionales al padre pero más pequeños
+        divWidth = rand(parentWidth * 0.2, parentWidth * 0.4);
+        divHeight = rand(parentHeight * 0.2, parentHeight * 0.4);
+      }
+      
+      // Dimensiones del contenido interno (más grande para scroll) - RESTAURADO
+      const contentWidth = divWidth * rand(2.5, 4);
+      const contentHeight = divHeight * rand(2.5, 4);
+      
+      // Posición - asegurar que quepan en pantalla sin salirse tanto
+      const x = rand(0, parentWidth - divWidth);
+      const y = rand(0, parentHeight - divHeight);
+      
+      // Colores aleatorios
+      const bgColor = randomColor(rand(0.1, 0.4));
+      const borderColor = randomColor(rand(0.4, 0.9));
+      const scrollColor = randomColor(0.8);
+      
+      // Aplicar estilos básicos
+      div.style.position = 'absolute';
+      div.style.left = x + 'px';
+      div.style.top = y + 'px';
+      div.style.width = divWidth + 'px';
+      div.style.height = divHeight + 'px';
+      div.style.borderColor = borderColor;
+      div.style.borderWidth = randInt(1, 3) + 'px';
+      div.style.borderStyle = 'solid';
+      div.style.overflow = 'auto';
+      div.style.boxSizing = 'border-box';
+      
+      // Aplicar gradiente inicial
+      div.style.background = createRandomGradient();
+      
+      // Variables CSS para animaciones
+      div.style.setProperty('--base-width', divWidth + 'px');
+      div.style.setProperty('--base-height', divHeight + 'px');
+      
+      // NO animación inicial - todo estático al principio
+      // Las animaciones se añadirán dinámicamente con el tiempo
+      
+      // Scrollbar personalizada
+      div.style.scrollbarColor = `${scrollColor} rgba(0,0,0,0.3)`;
+      
+      // Crear contenido interno
+      const content = document.createElement('div');
+      content.style.width = contentWidth + 'px';
+      content.style.height = contentHeight + 'px';
+      content.style.background = createRandomGradient();
+      content.style.position = 'relative';
+      
+      div.appendChild(content);
+      parentEl.appendChild(div);
+      
+      // Event listener para scroll - efectos visuales mejorados
+      div.addEventListener('scroll', () => {
+        div.classList.add('scrolling');
+        
+        // Cambiar gradiente del fondo basado en la posición del scroll
+        const scrollPercentX = div.scrollLeft / (div.scrollWidth - div.clientWidth || 1);
+        const scrollPercentY = div.scrollTop / (div.scrollHeight - div.clientHeight || 1);
+        
+        // Crear nuevo gradiente basado en el scroll
+        const hue1 = (scrollPercentX * 360) % 360;
+        const hue2 = (scrollPercentY * 360) % 360;
+        const hue3 = ((scrollPercentX + scrollPercentY) * 180) % 360;
+        
+        const scrollColor1 = `hsla(${hue1}, ${randInt(60, 90)}%, ${randInt(40, 70)}%, ${rand(0.3, 0.8)})`;
+        const scrollColor2 = `hsla(${hue2}, ${randInt(60, 90)}%, ${randInt(40, 70)}%, ${rand(0.3, 0.8)})`;
+        const scrollColor3 = `hsla(${hue3}, ${randInt(60, 90)}%, ${randInt(40, 70)}%, ${rand(0.3, 0.8)})`;
+        
+        // Alternar entre gradientes de 2 y 3 colores
+        if (Math.random() > 0.4) {
+          div.style.background = `linear-gradient(${(scrollPercentX * 360)}deg, ${scrollColor1}, ${scrollColor2}, ${scrollColor3})`;
+        } else {
+          div.style.background = `radial-gradient(circle at ${scrollPercentX * 100}% ${scrollPercentY * 100}%, ${scrollColor1}, ${scrollColor2})`;
+        }
+        
+        div.style.borderColor = scrollColor3;
+        
+        setTimeout(() => {
+          div.classList.remove('scrolling');
+        }, 300);
+        
+        // Cambiar color del scrollbar dinámicamente
+        const newScrollColor = `hsla(${(hue1 + hue2) / 2}, 70%, 60%, 0.8)`;
+        div.style.scrollbarColor = `${newScrollColor} rgba(0,0,0,0.3)`;
+      });
+      
+      // Hover effect
+      div.addEventListener('mouseenter', () => {
+        div.style.borderColor = randomColor(1);
+        div.style.backgroundColor = randomColor(rand(0.3, 0.7));
+      });
+      
+      // Crear divs hijos según la jerarquía
+      if (depth < maxDepth) {
+        let numChildren;
+        
+        if (depth === 0) {
+          // Div madre: puede tener muchos hijos
+          numChildren = randInt(4, MAX_CHILDREN_PER_MOTHER);
+          console.log(`Div madre creará ${numChildren} hijos`);
+        } else if (depth === 1) {
+          // Hijos de primer nivel: menos hijos
+          numChildren = randInt(2, 4);
+        } else {
+          // Niveles más profundos: pocos hijos
+          numChildren = randInt(1, 3);
+        }
+        
+        for (let i = 0; i < numChildren; i++) {
+          setTimeout(() => {
+            createFractalDiv(content, contentWidth, contentHeight, depth + 1, maxDepth);
+          }, rand(200, 1000));
+        }
+      }
+      
+      // Variables CSS para animaciones
+      div.style.setProperty('--base-width', divWidth + 'px');
+      div.style.setProperty('--base-height', divHeight + 'px');
+      
+      return div;
+    }
+
+    // Crear gradiente aleatorio con RGBA
+    function createRandomGradient() {
+      const angle = randInt(0, 360);
+      const color1 = randomColor(rand(0.2, 0.8));
+      const color2 = randomColor(rand(0.2, 0.8));
+      const color3 = randomColor(rand(0.2, 0.8));
+      
+      const gradientType = Math.random();
+      
+      // 60% probabilidad de gradiente de 2 colores, 40% de 3 colores
+      if (Math.random() > 0.6) {
+        // Gradiente de 3 colores
+        if (gradientType < 0.4) {
+          return `linear-gradient(${angle}deg, ${color1}, ${color2}, ${color3})`;
+        } else if (gradientType < 0.7) {
+          return `radial-gradient(circle at ${randInt(0, 100)}% ${randInt(0, 100)}%, ${color1}, ${color2}, ${color3})`;
+        } else {
+          return `conic-gradient(from ${angle}deg, ${color1}, ${color2}, ${color3})`;
+        }
+      } else {
+        // Gradiente de 2 colores
+        if (gradientType < 0.5) {
+          return `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+        } else {
+          return `radial-gradient(circle at ${randInt(0, 100)}% ${randInt(0, 100)}%, ${color1}, ${color2})`;
+        }
+      }
+    }
+
+    // Auto-scroll aleatorio - 75% de divs con movimiento de scroll
+    function autoScroll() {
+      setInterval(() => {
+        const allDivs = document.querySelectorAll('.fractal-div');
+        if (allDivs.length > 0) {
+          // Seleccionar 75% de los divs para scroll
+          const targetScrolling = Math.floor(allDivs.length * 0.85);
+          const shuffled = Array.from(allDivs).sort(() => 0.5 - Math.random());
+          const divsToScroll = shuffled.slice(0, targetScrolling);
+          
+          divsToScroll.forEach(div => {
+            const scrollDirection = Math.random() > 0.5 ? 'scrollTop' : 'scrollLeft';
+            const scrollAmount = randInt(70, 400);
+            const scrollSpeed = rand(0.5, 4); // Velocidad del scroll
+            
+            // Scroll suave con diferentes velocidades
+            const targetScroll = Math.random() > 0.5 ? 
+              div[scrollDirection] + scrollAmount : 
+              div[scrollDirection] - scrollAmount;
+            
+            // Asegurar que no sea negativo
+            const finalScroll = Math.max(0, targetScroll);
+            
+            // Scroll animado
+            const startScroll = div[scrollDirection];
+            const distance = finalScroll - startScroll;
+            const duration = rand(500, 2000); // Duración del scroll
+            const startTime = Date.now();
+            
+            function smoothScroll() {
+              const elapsed = Date.now() - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              
+              // Easing function para movimiento más natural
+              const easeProgress = 1 - Math.pow(1 - progress, 3);
+              
+              div[scrollDirection] = startScroll + (distance * easeProgress);
+              
+              if (progress < 1) {
+                requestAnimationFrame(smoothScroll);
+              }
+            }
+            
+            smoothScroll();
+          });
+        }
+      }, rand(1000, 8000)); // Scroll cada 1-3 segundos
+    }
+
+    // Sistema temporal de animaciones 3D dramáticas - 50% animados
+    function temporalAnimationSystem() {
+      setInterval(() => {
+        const allDivs = document.querySelectorAll('.fractal-div');
+        const animations = [
+          'float-around', 
+          'dramatic-flip', 
+          'spiral-movement', 
+          'extreme-stretch', 
+          'wobble-drift', 
+          'perspective-dance'
+        ];
+        
+        // Decidir cuántos divs deben estar animados (50% aprox)
+        const targetAnimated = Math.floor(allDivs.length * 0.5);
+        let currentlyAnimated = 0;
+        
+        // Primero contar cuántos están animados
+        allDivs.forEach(div => {
+          if (div.style.animation !== 'none' && div.style.animation !== '') {
+            currentlyAnimated++;
+          }
+        });
+        
+        console.log(`🎭 Animaciones 3D: ${currentlyAnimated}/${targetAnimated} activas`);
+        
+        // Ajustar para llegar al 50%
+        allDivs.forEach(div => {
+          if (Math.random() > 0.7) { // 30% probabilidad de cambio por div
+            if (currentlyAnimated < targetAnimated) {
+              // Añadir animación 3D dramática
+              const newAnimation = animations[randInt(0, animations.length - 1)];
+              const duration = rand(8, 20); // Duraciones más largas para movimientos más lentos
+              div.style.animation = `${newAnimation} ${duration}s ease-in-out infinite`;
+              console.log(`✨ Div inicia animación: ${newAnimation} (${duration}s)`);
+              currentlyAnimated++;
+            } else if (currentlyAnimated > targetAnimated) {
+              // Quitar animación pero mantener transform 3D base
+              div.style.animation = 'none';
+              const randomRotateX = rand(-25, 25);
+              const randomRotateY = rand(-25, 25);
+              const randomTranslateZ = rand(-150, 150);
+              const randomTranslateX = rand(-200, 200);
+              const randomTranslateY = rand(-200, 200);
+              div.style.transform = `translateX(${randomTranslateX}px) translateY(${randomTranslateY}px) translateZ(${randomTranslateZ}px) rotateX(${randomRotateX}deg) rotateY(${randomRotateY}deg)`;
+              currentlyAnimated--;
+            } else {
+              // Cambiar tipo de animación 3D
+              if (Math.random() > 0.4) {
+                const newAnimation = animations[randInt(0, animations.length - 1)];
+                const duration = rand(8, 20);
+                div.style.animation = `${newAnimation} ${duration}s ease-in-out infinite`;
+                console.log(`🔄 Div cambia animación: ${newAnimation}`);
+              } else {
+                div.style.animation = 'none';
+                const randomRotateX = rand(-20, 20);
+                const randomRotateY = rand(-20, 20);
+                const randomTranslateZ = rand(-60, 60);
+                const randomTranslateX = rand(-80, 80);
+                const randomTranslateY = rand(-80, 80);
+                div.style.transform = `translateX(${randomTranslateX}px) translateY(${randomTranslateY}px) translateZ(${randomTranslateZ}px) rotateX(${randomRotateX}deg) rotateY(${randomRotateY}deg)`;
+              }
+            }
+          }
+        });
+      }, rand(5000, 10000)); // Cada 5-10 segundos para permitir animaciones más largas
+    }
+
+    // Sistema temporal de z-index y perspectiva 3D con movimientos
+    function temporalZIndexSystem() {
+      setInterval(() => {
+        const allDivs = document.querySelectorAll('.fractal-div');
+        allDivs.forEach(div => {
+          if (Math.random() > 0.6) { // 40% probabilidad de cambio
+            div.style.zIndex = randInt(1, 200);
+            
+            // Cambiar posición 3D ocasionalmente con movimiento
+            if (Math.random() > 0.5) {
+              const rotateX = rand(-45, 45);
+              const rotateY = rand(-45, 45);
+              const translateZ = rand(-200, 200);
+              const translateX = rand(-300, 300);
+              const translateY = rand(-200, 200);
+              div.style.transform = `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            }
+            
+            // Ocasionalmente hacer un div muy prominente en 3D con movimiento dramático
+            if (Math.random() > 0.92) {
+              div.style.zIndex = randInt(500, 1000);
+              const dramaticX = rand(-700, 600);
+              const dramaticY = rand(-700, 800);
+              const dramaticZ = rand(550, 700);
+              const dramaticRotateX = rand(-60, 60);
+              const dramaticRotateY = rand(-90, 90);
+              const scale = rand(0.5, 2);
+              
+              div.style.transform = `translateX(${dramaticX}px) translateY(${dramaticY}px) translateZ(${dramaticZ}px) rotateX(${dramaticRotateX}deg) rotateY(${dramaticRotateY}deg) scale3d(${scale}, ${scale}, ${scale})`;
+              div.style.boxShadow = '0 0 60px rgba(255,255,255,0.9)';
+              
+              console.log(`🎪 Div dramática: X:${dramaticX} Y:${dramaticY} Z:${dramaticZ}`);
+              
+              // Quitar el efecto después de un tiempo
+              setTimeout(() => {
+                div.style.boxShadow = 'none';
+                const normalRotateX = rand(-20, 20);
+                const normalRotateY = rand(-20, 20);
+                const normalTranslateZ = rand(-80, 80);
+                const normalTranslateX = rand(-150, 150);
+                const normalTranslateY = rand(-100, 100);
+                div.style.transform = `translateX(${normalTranslateX}px) translateY(${normalTranslateY}px) translateZ(${normalTranslateZ}px) rotateX(${normalRotateX}deg) rotateY(${normalRotateY}deg) scale3d(1, 1, 1)`;
+              }, rand(4000, 12000));
+            }
+          }
+        });
+      }, rand(4000, 8000)); // Cada 4-8 segundos
+    }
+
+    // Sistema temporal de crecimiento orgánico (cada 15-25 segundos)
+    function temporalGrowthSystem() {
+      setInterval(() => {
+        const currentMotherDivs = document.querySelectorAll('[data-mother="true"]').length;
+        
+        console.log(`🔄 Divs madre actuales: ${currentMotherDivs}/${MAX_MOTHER_DIVS}`);
+        
+        // 70% probabilidad de que algo pase, 30% de que no pase nada
+        if (Math.random() > 0.3) {
+          
+          // Si tenemos menos del máximo, decidir si agregar
+          if (currentMotherDivs < MAX_MOTHER_DIVS) {
+            // 60% probabilidad de agregar, 40% de no hacer nada
+            if (Math.random() > 0.4) {
+              const availableSlots = MAX_MOTHER_DIVS - currentMotherDivs;
+              const newMotherDivs = Math.min(randInt(1, 2), availableSlots); // Solo 1 o 2 nuevas
+              
+              console.log(`✨ Agregando ${newMotherDivs} nueva(s) div(s) madre`);
+              
+              for (let i = 0; i < newMotherDivs; i++) {
+                setTimeout(() => {
+                  const container = document.getElementById('fractal-container');
+                  createFractalDiv(container, window.innerWidth, window.innerHeight, 0, 3, true);
+                }, i * rand(2000, 5000)); // Muy espaciado
+              }
+            } else {
+              console.log(`⏸️ Momento de pausa - no se agregan divs`);
+            }
+          }
+          
+          // Si tenemos más de 2, a veces remover una
+          if (currentMotherDivs > 2 && Math.random() > 0.8) {
+            const motherDivs = document.querySelectorAll('[data-mother="true"]');
+            const toRemove = 1; // Solo remover una a la vez
+            
+            console.log(`🗑️ Removiendo ${toRemove} div madre para hacer espacio`);
+            
+            const randomMother = motherDivs[randInt(0, motherDivs.length - 1)];
+            if (randomMother && randomMother.parentNode) {
+              // Efecto de desvanecimiento
+              randomMother.style.transition = 'opacity 3s ease-out, transform 3s ease-out';
+              randomMother.style.opacity = '0';
+              randomMother.style.transform = 'scale3d(0.3, 0.3, 0.3) translateZ(-300px) rotateY(180deg)';
+              
+              setTimeout(() => {
+                if (randomMother.parentNode) {
+                  randomMother.parentNode.removeChild(randomMother);
+                  motherDivs = document.querySelectorAll('[data-mother="true"]').length;
+                  console.log(`💨 Div madre removida. Quedan: ${motherDivs}`);
+                }
+              }, 3000);
+            }
+          }
+        } else {
+          console.log(`😴 Ciclo silencioso - sin cambios`);
+        }
+      }, rand(15000, 25000)); // Cada 15-25 segundos
+    }
+
+    // Sistema temporal de limpieza de hijas (menos agresivo)
+    function temporalCleanupSystem() {
+      setInterval(() => {
+        const allDivs = document.querySelectorAll('.fractal-div');
+        const childDivs = document.querySelectorAll('[data-child-level]');
+        
+        console.log(`🧹 Total divs: ${allDivs.length}, Divs hijas: ${childDivs.length}`);
+        
+        // Solo limpiar si hay MUCHAS divs hijas (más de 80)
+        if (childDivs.length > 80) {
+          const toRemoveChildren = Math.min(randInt(3, 8), childDivs.length);
+          
+          console.log(`🧽 Limpiando ${toRemoveChildren} divs hijas (demasiadas: ${childDivs.length})`);
+          
+          for (let i = 0; i < toRemoveChildren; i++) {
+            const randomChild = childDivs[randInt(0, childDivs.length - 1)];
+            if (randomChild && randomChild.parentNode) {
+              randomChild.style.transition = 'opacity 1.5s ease-out, transform 1.5s ease-out';
+              randomChild.style.opacity = '0';
+              randomChild.style.transform = 'scale3d(0.1, 0.1, 0.1) translateZ(-100px)';
+              setTimeout(() => {
+                if (randomChild.parentNode) {
+                  randomChild.parentNode.removeChild(randomChild);
+                }
+              }, 1500);
+            }
+          }
+        } else {
+          console.log(`✅ Población de divs hijas saludable: ${childDivs.length}`);
+        }
+      }, rand(25000, 35000)); // Cada 25-35 segundos, menos frecuente
+    }
+
+    // Sistema temporal de cambios de colores y propiedades con gradientes mejorados
+    function temporalPropertySystem() {
+      setInterval(() => {
+        const allDivs = document.querySelectorAll('.fractal-div');
+        allDivs.forEach(div => {
+          if (Math.random() > 0.7) { // 30% probabilidad
+            // Cambiar a gradiente aleatorio
+            div.style.background = createRandomGradient();
+            div.style.borderColor = randomColor(rand(0.4, 0.9));
+            div.style.borderWidth = randInt(1, 5) + 'px';
+            
+            const content = div.firstChild;
+            if (content) {
+              content.style.background = createRandomGradient();
+            }
+          }
+        });
+      }, rand(4000, 8000)); // Cada 4-8 segundos
+    }
+
+    // Inicializar
+    function init() {
+      const container = document.getElementById('fractal-container');
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+      
+      // Empezar con solo 1-3 divs madre
+      const initialMotherDivs = randInt(1, 3);
+      console.log(`🌱 Iniciando con ${initialMotherDivs} divs madre (crecerá hasta ${MAX_MOTHER_DIVS})`);
+      
+      for (let i = 0; i < initialMotherDivs; i++) {
+        setTimeout(() => {
+          createFractalDiv(container, screenWidth, screenHeight, 0, 3, true);
+        }, i * rand(500, 1500)); // Más espaciado al inicio
+      }
+      
+      // Iniciar todos los sistemas temporales
+      setTimeout(() => {
+        autoScroll();
+        temporalAnimationSystem();
+        temporalZIndexSystem();
+        temporalGrowthSystem(); // Nuevo sistema de crecimiento orgánico
+        temporalCleanupSystem(); // Sistema de limpieza menos agresivo
+        temporalPropertySystem();
+      }, 3000);
+    }
+
+    // Manejar redimensionamiento
+    window.addEventListener('resize', () => {
+      const allDivs = document.querySelectorAll('.fractal-div');
+      allDivs.forEach(div => {
+        if (Math.random() > 0.7) {
+          // Reposicionar y redimensionar algunos divs
+          const newWidth = rand(window.innerWidth * 0.3, window.innerWidth * 0.8);
+          const newHeight = rand(window.innerHeight * 0.3, window.innerHeight * 0.8);
+          
+          div.style.width = newWidth + 'px';
+          div.style.height = newHeight + 'px';
+          div.style.setProperty('--base-width', newWidth + 'px');
+          div.style.setProperty('--base-height', newHeight + 'px');
+          
+          div.style.left = rand(-newWidth * 0.2, window.innerWidth - newWidth * 0.8) + 'px';
+          div.style.top = rand(-newHeight * 0.2, window.innerHeight - newHeight * 0.8) + 'px';
+        }
+      });
+    });
+
+    // Eliminar click interactions - todo es temporal ahora
+
+    // Iniciar todo cuando cargue la página
+    window.addEventListener('load', init);
+  </script>
+</body>
+</html>
