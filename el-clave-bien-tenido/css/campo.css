@@ -1,0 +1,174 @@
+/* =====================================================================
+   EL CLAVE BIEN TEÑIDO — css/campo.css
+   BANCO DE PRUEBAS. esto todavía no es la interfaz de la pieza: es lo
+   mínimo para que los siete verbos sean operables y la cadena vertical
+   se pueda comprobar entera. la ventana de la casa —`.poem-window`,
+   `.window-bar`, `.window-residue`, `.iframe-cell`— entra en la fase
+   visual, que es el trabajo siguiente.
+
+   lo que sí es definitivo desde ya:
+   · el color no es el único canal: el borde dice la clase de memoria, el
+     microtexto dice área y período, la textura dice rugosidad;
+   · `mix-blend-mode` es el medio de la mezcla, a la vista;
+   · nada parpadea por encima de 3 Hz;
+   · `prefers-reduced-motion` hace la pieza más lenta, no muda.
+   ===================================================================== */
+
+:root {
+  --fondo: #0d0d0f;
+  --tinta: #e8e6e0;
+  --tenue: #7d7a74;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: var(--mono);
+  font-size: 13px;
+  overflow: hidden;
+}
+
+#campo {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.pantalla {
+  position: absolute;
+  overflow: hidden;
+  resize: both;
+  min-width: 34px;
+  min-height: 34px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  cursor: grab;
+  touch-action: none;
+  transition: opacity 1.2s linear;
+}
+
+.pantalla:focus-visible { outline: 3px solid var(--tinta); outline-offset: 2px; }
+
+/* el borde y el residuo son genealogía y clase de memoria. una pantalla
+   inventada se ve distinta de una recordada, y sin usar el matiz. */
+.pantalla[data-clase="verdadero"]     { border-style: solid; }
+.pantalla[data-clase="degradado"]     { border-style: dashed; }
+.pantalla[data-clase="inferido"]      { border-style: dotted; }
+.pantalla[data-clase="inventado"]     { border-style: double; border-width: 4px; }
+.pantalla[data-clase="contradictorio"]{ border-style: groove; border-width: 4px; }
+
+/* el medio de la mezcla está en el CSS, no en un ajuste oculto */
+.pantalla[data-medio="aditivo"]     { mix-blend-mode: screen; }
+.pantalla[data-medio="sustractivo"] { mix-blend-mode: multiply; }
+.pantalla[data-medio="diferencia"]  { mix-blend-mode: difference; }
+
+/* congelada: el gradiente deja de moverse y se nota sin oír nada */
+.pantalla[data-congelado="1"] { filter: contrast(1.25); border-color: var(--tinta); }
+.pantalla[data-congelado="1"]::before {
+  content: "";
+  position: absolute; inset: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* la rugosidad es una textura, no un color */
+.pantalla > .rug {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    var(--rug-ang, 45deg),
+    rgba(0, 0, 0, 0.22) 0 2px,
+    rgba(255, 255, 255, 0.06) 2px 4px);
+  opacity: var(--rug, 0);
+}
+
+/* microtexto: la misma información para quien no distingue matices */
+.pantalla > .dato {
+  position: absolute;
+  left: 3px; bottom: 2px;
+  font-size: 9px;
+  line-height: 1.15;
+  color: #fff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  white-space: pre;
+}
+
+.residuo {
+  position: absolute;
+  border: 1px dashed rgba(232, 230, 224, 0.4);
+  pointer-events: none;
+  opacity: 0.5;
+}
+.residuo::after {
+  content: attr(data-nombre);
+  position: absolute; left: 2px; top: 2px;
+  font-size: 9px; color: var(--tenue);
+}
+
+/* ---- el aparato de lectura: sobrio, sin panel de parámetros ---------- */
+#barra {
+  position: fixed;
+  z-index: 20;
+  left: 0; right: 0; bottom: 0;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding: 5px 8px;
+  background: rgba(13, 13, 15, 0.86);
+  border-top: 1px solid #26262a;
+  font-size: 11px;
+}
+
+#barra button {
+  font: inherit;
+  color: var(--tinta);
+  background: transparent;
+  border: 1px solid #45454c;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+#barra button:focus-visible { outline: 3px solid var(--tinta); outline-offset: 2px; }
+
+#estado { color: var(--tenue); }
+#semilla { color: var(--tinta); }
+
+#bitacora {
+  position: fixed;
+  z-index: 20;
+  right: 0; top: 0;
+  width: min(38ch, 46vw);
+  max-height: 46vh;
+  overflow: auto;
+  padding: 6px 8px;
+  background: rgba(13, 13, 15, 0.82);
+  border-left: 1px solid #26262a;
+  border-bottom: 1px solid #26262a;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: var(--tenue);
+}
+#bitacora b { color: var(--tinta); font-weight: normal; }
+
+/* la puerta: una sola cosa, a los ocho segundos, y no vuelve a insistir */
+#puerta {
+  position: fixed;
+  z-index: 30;
+  left: 50%; top: 42%;
+  transform: translate(-50%, -50%);
+  color: var(--tenue);
+  opacity: 0;
+  transition: opacity 2.4s linear;
+  pointer-events: none;
+  text-align: center;
+}
+#puerta.visible { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pantalla { transition: none; }
+  #puerta { transition: none; }
+}

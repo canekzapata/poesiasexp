@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>arma tu ritmo · mezcla tus colores</title>
+<meta name="description" content="el clave bien teñido — instrumento generativo de poesiasexp">
+<link rel="stylesheet" href="css/campo.css">
+</head>
+<body>
+
+<div id="campo" role="application" aria-label="campo de pantallas"></div>
+
+<p id="puerta" aria-hidden="true"></p>
+
+<div id="bitacora" role="log" aria-live="polite" aria-label="bitácora"></div>
+
+<div id="barra">
+  <button id="sonido" type="button" aria-pressed="false">encender</button>
+  <span id="semilla"></span>
+  <span id="estado" aria-live="polite"></span>
+  <a id="descendiente" href="#" hidden>·</a>
+</div>
+
+<script src="js/Tone.js"></script>
+<script src="js/rng.js"></script>
+<script src="js/nombres.js"></script>
+<script src="js/color.js"></script>
+<script src="js/contrapunto.js"></script>
+<script src="js/red.js"></script>
+<script src="js/cuerpo.js"></script>
+<script src="js/tiempo.js"></script>
+<script src="js/campo.js"></script>
+<script>
+'use strict';
+(function () {
+  /* la semilla viaja en la URL: compartir una URL comparte el mundo, no
+     el estado. si no hay ninguna, la máquina firma una y la escribe. */
+  var semilla = CLAVE.rng.deLaUrl();
+  if (!semilla) {
+    semilla = CLAVE.rng.nueva();
+    try { history.replaceState(null, '', '?seed=' + encodeURIComponent(semilla)); } catch (e) {}
+  }
+
+  var org = CLAVE.contrapunto.crear(semilla);
+  window.CLAVE.organismo = org;
+  document.getElementById('semilla').textContent = semilla;
+  CLAVE.campo.iniciar(org);
+
+  /* el sonido no arranca solo y no se puede configurar de otro modo:
+     apagado hasta el consentimiento. */
+  var boton = document.getElementById('sonido');
+  boton.addEventListener('click', function () {
+    if (CLAVE.tiempo.encendido) {
+      CLAVE.tiempo.apagar();
+      boton.textContent = 'encender';
+      boton.setAttribute('aria-pressed', 'false');
+      return;
+    }
+    boton.disabled = true;
+    CLAVE.tiempo.encender(org).then(function (peldano) {
+      boton.disabled = false;
+      boton.textContent = 'apagar';
+      boton.setAttribute('aria-pressed', 'true');
+      /* cada peldaño se declara con una línea sobria. no se pide instalar
+         nada y no se muestra un error técnico. */
+      org.inscribir('audio', peldano === 'completo'
+        ? 'suena con cuerpo espectral'
+        : 'suena con menos cuerpo: la misma estructura, las mismas causas',
+        { causa: 'peldaño ' + peldano });
+      CLAVE.campo.escribir();
+    }).catch(function () {
+      boton.disabled = false;
+      org.inscribir('audio', 'este dispositivo no da sonido; la obra se recorre entera igual',
+        { causa: 'peldaño sin audio' });
+      CLAVE.campo.escribir();
+    });
+  });
+
+  /* el final no cadencia: se detiene a mitad de una entrada y deja una
+     semilla descendiente que hereda la deformación, no una grabación. */
+  var enlace = document.getElementById('descendiente');
+  setInterval(function () {
+    if (!org.detenido || !enlace.hidden) return;
+    enlace.hidden = false;
+    enlace.textContent = 'descendiente: ' + org.semillaDescendiente();
+    enlace.href = '?seed=' + encodeURIComponent(org.semillaDescendiente());
+    if (CLAVE.tiempo.encendido) CLAVE.tiempo.apagar();
+  }, 1000);
+
+  /* al salir no queda nada vivo */
+  window.addEventListener('pagehide', function () { CLAVE.tiempo.apagar(); });
+})();
+</script>
+</body>
+</html>
