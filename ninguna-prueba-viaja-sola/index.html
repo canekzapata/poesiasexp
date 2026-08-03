@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NINGUNA PRUEBA VIAJA SOLA</title>
+<meta name="description" content="Diez maneras de no demostrar que una señal estuvo aquí. Net art matemático, hipervincular y jugable.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/regimes.css">
+<link rel="stylesheet" href="css/print.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+<style>
+  body.umbral { display: block; }
+  .campo--pleno { position: fixed; inset: 0; height: 100svh; }
+  .capa { position: relative; z-index: 10; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; pointer-events: none; }
+  .capa > * { pointer-events: auto; }
+  .frase-umbral {
+    margin: 0 clamp(1rem,4vw,3.4rem) clamp(1rem,4vw,3rem);
+    opacity: 0; transition: opacity 2.4s ease;
+  }
+  .frase-umbral.visible { opacity: 1; }
+  .controles-umbral { margin: 0 clamp(1rem,4vw,3.4rem) 1rem; }
+  .huella-inicial {
+    position: fixed; left: clamp(1rem,4vw,3.4rem); top: 1rem; z-index: 12;
+    font-family: "Micro","Monitor",ui-monospace,monospace;
+    font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; opacity: .5;
+  }
+</style>
+</head>
+<body class="umbral" data-pagina="umbral">
+
+<div class="campo campo--pleno" id="campo" aria-hidden="true"><canvas id="lienzo"></canvas></div>
+<div id="vacios"></div>
+
+<p class="huella-inicial"><a href="mapa.html">mapa incompleto</a></p>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<div class="capa">
+  <div class="controles-umbral controles" id="controles" hidden>
+    <button class="boton" type="button" id="comprimir">comprimir el campo</button>
+    <button class="boton" type="button" id="dimension">una dimensión más</button>
+    <form class="forma-vacio" id="forma">
+      <input id="frase" type="text" maxlength="28" placeholder="escribir en un vacío" aria-label="escribir una frase en un vacío">
+      <button class="boton" type="submit">dejarla ahí</button>
+    </form>
+  </div>
+  <p class="mensaje-degradado frase-umbral" id="frase-umbral"></p>
+</div>
+
+<noscript>
+  <main>
+    <h1 class="monumento">NINGUNA<br>PRUEBA</h1>
+    <p>Esta pieza necesita JavaScript para acomodar los cuerpos. Sin él quedan las direcciones:
+      <a href="paginas/recepcion.html">recepción</a>, <a href="paginas/separacion.html">separación</a>,
+      <a href="paginas/reticula.html">retícula</a>, <a href="mapa.html">mapa</a>.</p>
+  </main>
+</noscript>
+
+<script src="js/seed.js"></script>
+<script src="js/events.js"></script>
+<script src="js/state.js"></script>
+<script src="corpus/fragments.js"></script>
+<script src="js/memory.js"></script>
+<script src="js/routes.js"></script>
+<script src="js/text.js"></script>
+<script src="js/regimes/codes.js"></script>
+<script src="js/regimes/packing.js"></script>
+<script src="js/regimes/lattice.js"></script>
+<script src="js/narrative.js"></script>
+<script src="js/copy.js"></script>
+<script src="js/espectro.js"></script>
+<script src="js/voces.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/shell.js"></script>
+<script>
+(function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'umbral', espera: 20 });
+
+  const lienzo = document.getElementById('lienzo');
+  const hostVacios = document.getElementById('vacios');
+  const fraseUmbral = document.getElementById('frase-umbral');
+  const controles = document.getElementById('controles');
+
+  /* las tres direcciones del umbral: no hay botón de comenzar, hay huecos */
+  const DESTINOS = ['recepcion', 'separacion', 'reticula'];
+  let mostrada = false;
+
+  function mostrarFrase() {
+    if (mostrada) return;
+    mostrada = true;
+    fraseUmbral.textContent = N.texto.mensajeDegradado();
+    fraseUmbral.classList.add('visible');
+    controles.hidden = false;
+  }
+
+  const campo = N.regA.crear(lienzo, {
+    cuerpos: window.innerWidth < 640 ? 26 : 38,
+    vacios: 3,
+    cobertura: 0.30,
+    alVacio: pintarVacios,
+    alExpulsar: (frag) => {
+      fraseUmbral.textContent = N.texto.mensajeDegradado();
+      nota('un cuerpo salió del documento: ' + frag.texto);
+    }
+  });
+
+  /* cada hueco es un enlace real, con foco y con nombre */
+  function pintarVacios(vacios) {
+    const rect = lienzo.getBoundingClientRect();
+    const previos = Array.from(hostVacios.children);
+    vacios.forEach((v, i) => {
+      let a = previos[i];
+      if (!a) {
+        a = document.createElement('a');
+        a.className = 'vacio-enlace';
+        hostVacios.appendChild(a);
+        a.addEventListener('click', function (ev) {
+          const destino = a.getAttribute('data-destino');
+          N.rutas.registrarArista('umbral', destino, N.rutas.claseDe('umbral', destino));
+          N.mem.gesto('umbral', 'clic', ev.clientX || 0, ev.clientY || 0, 'vacío cruzado');
+          // al cruzar el primer vacío, la frase pierde un bit
+          N.texto.perderBit('un vacío del campo fue cruzado');
+          N.mem.hito('un-vacio-fue-cruzado', destino);
+        });
+      }
+      // el enlace nunca baja del tamaño mínimo de un objetivo táctil
+      const d = Math.max(24, Math.min(v.d, 54));
+      const destino = DESTINOS[i % DESTINOS.length];
+      a.style.left = (rect.left + v.x - d) + 'px';
+      a.style.top = (rect.top + v.y - d) + 'px';
+      a.style.width = a.style.height = (d * 2) + 'px';
+      a.href = N.rutas.href(destino);
+      a.setAttribute('data-destino', destino);
+      if (!a.firstChild) a.appendChild(document.createElement('span'));
+      a.firstChild.className = 'nombre';
+      a.firstChild.textContent = N.rutas.catalogo[destino].t;
+      a.setAttribute('aria-label', 'cruzar el vacío hacia ' + N.rutas.catalogo[destino].t);
+      a.classList.add('visible');
+    });
+    while (hostVacios.children.length > vacios.length) hostVacios.lastChild.remove();
+  }
+
+  function nota(texto) {
+    let n = document.querySelector('.campo-nota');
+    if (!n) {
+      n = document.createElement('p');
+      n.className = 'campo-nota medida';
+      n.setAttribute('aria-live', 'polite');
+      document.querySelector('.capa').insertBefore(n, controles);
+    }
+    n.textContent = texto;
+  }
+
+  /* operaciones del régimen A */
+  document.getElementById('comprimir').addEventListener('click', () => {
+    const f = campo.comprimir(0.86);
+    fraseUmbral.textContent = N.texto.mensajeDegradado();
+    nota('el campo cabe menos. expulsado: ' + (f ? f.texto : '—') + ' · presión ' + campo.presion.toFixed(2));
+  });
+  document.getElementById('dimension').addEventListener('click', () => {
+    const d = campo.aumentarDimension();
+    nota('dimensión ' + d + '. ahora caben, pero se ven encima. lo que no se ve sostiene el orden.');
+  });
+  document.getElementById('forma').addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const inp = document.getElementById('frase');
+    const t = inp.value.trim();
+    if (!t) return;
+    campo.escribirEnVacio(t, 0);
+    inp.value = '';
+    nota('la frase ocupa lugar. ahora estorba como cualquier cuerpo.');
+  });
+
+  /* la obra no tiene botón de comenzar y eso está bien, pero una obra en
+     la que nadie encuentra la puerta está rota. si a los ocho segundos
+     nadie ha cruzado nada, los huecos dicen su nombre. */
+  const nombrar = N.bus.later(function () {
+    hostVacios.classList.add('senalados');
+  }, 8000);
+  N.bus.listen(document, 'pointerdown', function () { nombrar(); }, { once: true, passive: true });
+
+  /* observar sin intervenir también es una operación */
+  N.bus.inactividad(20, () => {
+    campo.escribirConCuerpos('ALGO\nTODAVÍA\nLLEGA');
+    nota('nadie intervino. el campo siguió acomodándose.');
+    N.bus.later(mostrarFrase, 7000);
+  });
+  N.bus.inactividad(64, () => {
+    campo.soltarMascara();
+    nota('la frase se deshizo. los cuerpos volvieron a no caber.');
+  });
+
+  // si el visitante actúa antes, la frase llega igual
+  N.bus.listen(document, 'pointerdown', () => N.bus.later(mostrarFrase, 900), { once: true });
+  N.bus.listen(document, 'keydown', () => N.bus.later(mostrarFrase, 900), { once: true });
+  N.bus.on('bit', () => { if (mostrada) fraseUmbral.textContent = N.texto.mensajeDegradado(); });
+
+  N.sonido.control(document.body);
+  N.bus.listen(window, 'pagehide', () => campo && campo.destruir());
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>demora · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  .versos p { font-size: 1.12rem; margin: 0 0 .5em; max-width: 26em; }
+  .versos p.nueva { animation: entra 2.6s ease both; }
+  @keyframes entra { from { opacity: 0 } to { opacity: 1 } }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="demora" class="pagina-demora">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · demora</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main>
+  <h1 class="monumento">DESPUÉS</h1>
+  <p class="subtitulo">esta dirección sólo aparece cuando nadie hace nada · y se lee del mismo modo</p>
+
+  <div class="versos" id="versos" aria-live="polite"></div>
+  <p class="medida" id="cuenta"></p>
+  <p class="error-util">error útil: irse de aquí conserva lo aparecido. volver no lo repite: continúa.</p>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'demora', espera: 90 });
+
+  const LINEAS = [
+    'Algo llegó mientras nadie miraba.',
+    'El aparato no distingue entre esperar y leer, pero la espera deja otra huella: más pareja, más larga, sin clics.',
+    'Cada línea de esta página se ganó con tiempo de pestaña visible. No hay manera de apurarla.',
+    'Cuando la señal se dividió, una parte se quedó a esperar aquí, por si alguien volvía.',
+    'No volvió nadie durante mucho tiempo. La parte que esperaba aprendió a esperar mejor.',
+    'Ahora es esto: una página que sólo existe para la gente que se distrae.',
+    'Gracias por distraerte.',
+    'Ninguna parte del mensaje viaja sola. Ésta viajó contigo, que estabas quieto.'
+  ];
+
+  const est = N.mem.regimen('demora', {}).estado;
+  est.lineas = est.lineas || 0;
+  const host = document.getElementById('versos');
+  const cuenta = document.getElementById('cuenta');
+
+  function poner(i, nueva) {
+    const p = document.createElement('p');
+    if (nueva) p.className = 'nueva';
+    p.textContent = LINEAS[i];
+    host.appendChild(p);
+  }
+  for (let i = 0; i < Math.min(est.lineas, LINEAS.length); i++) poner(i, false);
+
+  function actualizar() {
+    cuenta.textContent = est.lineas + ' de ' + LINEAS.length + ' líneas materializadas · sólo cuenta el tiempo con la pestaña visible';
+    if (est.lineas >= LINEAS.length) N.mem.hito('la-demora-se-completo', est.lineas);
+  }
+  actualizar();
+
+  /* sólo avanza con la pestaña visible: la demora es real */
+  let acumulado = 0;
+  const parar = N.bus.every(function () {
+    if (document.hidden) return;
+    acumulado += 1;
+    if (acumulado >= 14 && est.lineas < LINEAS.length) {
+      acumulado = 0;
+      poner(est.lineas, true);
+      est.lineas++;
+      N.mem.guardar(true);
+      actualizar();
+    }
+  }, 1000);
+
+  N.sonido.control(document.body);
+  N.bus.listen(window, 'pagehide', parar);
+});
+</script>
+</body>
+</html>

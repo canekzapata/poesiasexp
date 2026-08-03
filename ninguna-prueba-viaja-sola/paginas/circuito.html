@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>circuito · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="circuito" class="pagina-circuito">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · circuito</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main class="ancho">
+  <h1 class="monumento">EL COSTO</h1>
+  <p class="subtitulo">lo que hiciste, leído como máquina · simplificar funciona, y por eso cuesta</p>
+
+  <svg class="lienzo-circuito" id="circuito" role="img"
+       aria-label="el recorrido dibujado como circuito aritmético"></svg>
+
+  <p class="medida" id="tocada" aria-live="polite">toca una puerta para saber de dónde salió.</p>
+
+  <table class="tabla-costos" id="costos">
+    <thead><tr><th>medida</th><th>antes</th><th>ahora</th><th></th></tr></thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="controles">
+    <button class="boton" type="button" id="compartir">fundir las puertas repetidas</button>
+    <button class="boton" type="button" id="aplanar">acortar el camino más largo</button>
+    <button class="boton" type="button" id="desduplicar">quitar las repetidas sin repartidor</button>
+  </div>
+  <p class="medida" id="nota" aria-live="polite"></p>
+  <p class="error-util" id="error" hidden></p>
+
+  <hr class="regla">
+  <p class="subtitulo">lo que el aparato sostiene sobre este circuito</p>
+  <p class="demostracion" id="dictamen"></p>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>B</kbd> bitácora · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'circuito', espera: 42 });
+
+  const svg = document.getElementById('circuito');
+  const nota = document.getElementById('nota');
+  const error = document.getElementById('error');
+  let circuito = N.regE.construir();
+  let anterior = null;
+
+  function pintar() {
+    const m = N.regE.dibujar(svg, circuito, {
+      alTocar: function (n) {
+        document.getElementById('tocada').textContent =
+          (n.t === 'entrada' ? 'entrada' : n.t === 'salida' ? 'salida' : 'puerta ' + n.op + ' — ' + N.regE.OPS[n.op]) +
+          ' · ' + n.et + ' · código ' + n.w;
+        N.mem.gesto('circuito', 'clic', 0, 0, 'puerta ' + n.id);
+      }
+    });
+    costos(m);
+    return m;
+  }
+
+  function costos(m) {
+    const cuerpo = document.querySelector('#costos tbody');
+    cuerpo.innerHTML = '';
+    const filas = [
+      ['nodos', 'cuántas puertas hacen falta'],
+      ['profundidad', 'el camino más largo hasta la prueba'],
+      ['duplicacion', 'subexpresiones repetidas'],
+      ['cable', 'píxeles reales de conexión en pantalla'],
+      ['dom', 'elementos vivos en el documento']
+    ];
+    for (const [k, glosa] of filas) {
+      const tr = document.createElement('tr');
+      const antes = anterior ? anterior[k] : null;
+      const dif = antes === null ? '' : (m[k] > antes ? '▲ +' + (m[k] - antes) : (m[k] < antes ? '▼ −' + (antes - m[k]) : '='));
+      for (const v of [k, antes === null ? '—' : antes, m[k], dif]) {
+        const td = document.createElement('td');
+        td.textContent = v;
+        tr.appendChild(td);
+      }
+      tr.className = dif.indexOf('▲') === 0 ? 'sube' : (dif.indexOf('▼') === 0 ? 'baja' : '');
+      tr.title = glosa;
+      cuerpo.appendChild(tr);
+    }
+  }
+
+  function operar(tipo) {
+    anterior = N.regE.medir(circuito, circuito.cable);
+    const res = N.regE.aplicar(circuito, tipo);
+    if (!res.hecho) {
+      nota.textContent = 'no se pudo: ' + res.razon + '.';
+      return;
+    }
+    const m = pintar();
+    nota.textContent = res.nota;
+    if (res.peaje) {
+      error.hidden = false;
+      error.textContent = 'error útil: el atajo no abarató nada, así que el circuito creció con una puerta que no calcula. eso también es una medida.';
+    } else {
+      const subieron = ['nodos', 'profundidad', 'duplicacion', 'cable']
+        .filter(function (k) { return m[k] > anterior[k]; });
+      error.hidden = false;
+      error.textContent = subieron.length
+        ? 'error útil: bajó lo que pediste y subió ' + subieron.join(', ') + '. el circuito no admite rebajas gratis.'
+        : 'error útil: el circuito bajó en todo. eso no es gratis: lo que el grafo se ahorró lo perdió el expediente, que ya no distingue lo que pasó dos veces de lo que pasó una.';
+    }
+    dictamen();
+  }
+
+  document.getElementById('compartir').addEventListener('click', function () { operar('compartir'); });
+  document.getElementById('aplanar').addEventListener('click', function () { operar('aplanar'); });
+  document.getElementById('desduplicar').addEventListener('click', function () { operar('desduplicar'); });
+
+  function dictamen() {
+    const m = N.regE.medir(circuito, circuito.cable);
+    const ops = ((N.mem.d.regimenes.E && N.mem.d.regimenes.E.estado.ops) || []).length;
+    document.getElementById('dictamen').textContent =
+      'circuito del expediente ' + N.estado.semilla + '\n' +
+      'entradas: la semilla, el mensaje, el primer gesto\n' +
+      'salida: la prueba\n' +
+      'nodos ' + m.nodos + ' · profundidad ' + m.profundidad + ' · duplicación ' + m.duplicacion + ' · cable ' + m.cable + ' px\n' +
+      'simplificaciones aplicadas: ' + ops + '\n\n' +
+      (m.profundidad >= m.nodos / 3
+        ? 'TESTIGO: el circuito es profundo. reconstruir el mensaje con él tomaría más pasos que haberlo recibido.'
+        : 'TESTIGO: el circuito es ancho. reconstruir el mensaje con él exige repetir lo que ya se hizo.') + '\n' +
+      'TESTIGO: no existe un circuito pequeño para este mensaje. la ruta directa es, medida en nodos, la más larga.\n' +
+      'TESTIGO: toda simplificación funciona. el ahorro no se descuenta del circuito: se descuenta del expediente.';
+  }
+
+  pintar();
+  dictamen();
+  N.bus.listen(window, 'resize', pintar);
+
+  /* la inactividad también opera: el aparato simplifica sin nadie y cobra */
+  N.bus.inactividad(42, function () {
+    anterior = N.regE.medir(circuito, circuito.cable);
+    const res = N.regE.aplicar(circuito, 'compartir');
+    if (res.hecho) {
+      pintar(); dictamen();
+      nota.textContent = 'nadie tocó nada. el aparato fundió puertas por su cuenta: ' + res.nota;
+      N.mem.hito('la-espera-simplifico-el-circuito', true);
+    }
+  });
+
+  N.sonido.control(document.body);
+});
+</script>
+</body>
+</html>
