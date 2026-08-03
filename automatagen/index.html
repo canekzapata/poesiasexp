@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Automatas Celulares Superpuestos con Efectos Avanzados</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      overflow: hidden;
+      font-family: monospace;
+    }
+    canvas {
+      display: block;
+      background: #000;
+    }
+    .info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #fff;
+      font-size: 12px;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="info">
+    <div>3 Capas de Autómatas Wolfram Superpuestos</div>
+    <div>Presiona ESPACIO para pausar/reanudar</div>
+    <div>Presiona R para reiniciar</div>
+  </div>
+  <script>
+    // CONFIGURACIÓN DEL CANVAS Y DE LA CUADRÍCULA (PANTALLA COMPLETA)
+    const canvas = document.getElementById('canvas');
+    const cellSize = 12;     // Tamaño de cada celda aumentado
+    
+    // Hacer que ocupe toda la pantalla
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    
+    const gridWidth = Math.floor(canvas.width / cellSize);
+    const gridHeight = Math.floor(canvas.height / cellSize);
+    
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.font = `${cellSize}px monospace`;
+
+    // Lista expandida de caracteres de bloques
+    const BLOCK_ELEMENTS = [
+      '▐', '░', '▒', '▓', '▔', '▕', '▖', '▗', '▘', '▙', '▚', '▛', '▜', '▝', '▞', '▟',
+      '█', '▄', '▀', '▌', '▉', '▊', '▋', '▍', '▎', '▏', '▬', '▭', '▮', '▯', '▰', '▱'
+    ];
+
+    // SISTEMA DE COLORES RECURSIVO CON RGBA
+    class RecursiveColorSystem {
+      constructor() {
+        // Colores base iniciales
+        this.r = Math.floor(Math.random() * 256);
+        this.g = Math.floor(Math.random() * 256);
+        this.b = Math.floor(Math.random() * 256);
+        this.alpha = 0.4 + Math.random() * 0.4; // Entre 0.4 y 0.8
+        
+        // Historial de colores para recursión
+        this.colorHistory = [
+          { r: this.r, g: this.g, b: this.b, alpha: this.alpha }
+        ];
+        this.historySize = 8; // Cuántos colores recordar
+        
+        // Funciones recursivas para cada componente
+        this.rFunction = this.createRecursiveFunction();
+        this.gFunction = this.createRecursiveFunction();
+        this.bFunction = this.createRecursiveFunction();
+        this.alphaFunction = this.createRecursiveFunction();
+        
+        // Parámetros de evolución
+        this.evolutionSpeed = 0.02 + Math.random() * 0.08;
+        this.recursionDepth = 2 + Math.floor(Math.random() * 4);
+        this.mutationRate = 0.05;
+        
+        // Factores de influencia entre componentes
+        this.crossInfluence = {
+          rInfluencesG: (Math.random() - 0.5) * 0.3,
+          gInfluencesB: (Math.random() - 0.5) * 0.3,
+          bInfluencesR: (Math.random() - 0.5) * 0.3,
+          rgbInfluencesAlpha: (Math.random() - 0.5) * 0.1
+        };
+      }
+      
+      createRecursiveFunction() {
+        // Crear funciones recursivas aleatorias
+        const operations = [
+          (prev, prev2) => (prev * 0.8 + prev2 * 0.2),
+          (prev, prev2) => (prev + prev2) * 0.5,
+          (prev, prev2) => Math.abs(prev - prev2) + prev * 0.7,
+          (prev, prev2) => (prev * prev2 / 255) * 0.3 + prev * 0.7,
+          (prev, prev2) => (prev + prev2 + Math.sin(prev / 50) * 20) * 0.5,
+          (prev, prev2) => prev * 0.9 + Math.cos(prev2 / 80) * 15
+        ];
+        
+        return operations[Math.floor(Math.random() * operations.length)];
+      }
+      
+      evolveColor(current, prevValues, recursiveFunc, min = 0, max = 255) {
+        if (prevValues.length < 2) return current;
+        
+        let newValue = recursiveFunc(
+          prevValues[prevValues.length - 1],
+          prevValues[prevValues.length - 2]
+        );
+        
+        // Añadir ruido evolutivo
+        newValue += (Math.random() - 0.05) * 20 * this.evolutionSpeed;
+        
+        // Mantener en rango
+        return Math.max(min, Math.min(max, newValue));
+      }
+      
+      update() {
+        // Obtener historial de cada componente
+        const rHistory = this.colorHistory.map(c => c.r);
+        const gHistory = this.colorHistory.map(c => c.g);
+        const bHistory = this.colorHistory.map(c => c.b);
+        const alphaHistory = this.colorHistory.map(c => c.alpha);
+        
+        // Evolución recursiva de cada componente
+        let newR = this.evolveColor(this.r, rHistory, this.rFunction);
+        let newG = this.evolveColor(this.g, gHistory, this.gFunction);
+        let newB = this.evolveColor(this.b, bHistory, this.bFunction);
+        let newAlpha = this.evolveColor(this.alpha, alphaHistory, this.alphaFunction, 0.2, 0.9);
+        
+        // Influencias cruzadas entre componentes
+        newR += newG * this.crossInfluence.bInfluencesR;
+        newG += newB * this.crossInfluence.gInfluencesB;
+        newB += newR * this.crossInfluence.rInfluencesG;
+        newAlpha += ((newR + newG + newB) / 765) * this.crossInfluence.rgbInfluencesAlpha;
+        
+        // Clampear valores finales
+        this.r = Math.max(0, Math.min(255, newR));
+        this.g = Math.max(0, Math.min(255, newG));
+        this.b = Math.max(0, Math.min(255, newB));
+        this.alpha = Math.max(0.2, Math.min(0.9, newAlpha));
+        
+        // Añadir al historial
+        this.colorHistory.push({
+          r: this.r,
+          g: this.g,
+          b: this.b,
+          alpha: this.alpha
+        });
+        
+        // Mantener tamaño del historial
+        if (this.colorHistory.length > this.historySize) {
+          this.colorHistory.shift();
+        }
+        
+        // Mutación ocasional de las funciones recursivas
+        if (Math.random() < this.mutationRate) {
+          const componentToMutate = Math.floor(Math.random() * 4);
+          switch(componentToMutate) {
+            case 0: this.rFunction = this.createRecursiveFunction(); break;
+            case 1: this.gFunction = this.createRecursiveFunction(); break;
+            case 2: this.bFunction = this.createRecursiveFunction(); break;
+            case 3: this.alphaFunction = this.createRecursiveFunction(); break;
+          }
+        }
+        
+        // Mutación de influencias cruzadas
+        if (Math.random() < this.mutationRate * 0.5) {
+          Object.keys(this.crossInfluence).forEach(key => {
+            this.crossInfluence[key] += (Math.random() - 0.5) * 0.1;
+            this.crossInfluence[key] = Math.max(-0.5, Math.min(0.5, this.crossInfluence[key]));
+          });
+        }
+      }
+      
+      getColor() {
+        return `rgba(${Math.floor(this.r)}, ${Math.floor(this.g)}, ${Math.floor(this.b)}, ${this.alpha})`;
+      }
+      
+      getVariationColor(variation = 0) {
+        // Crear variación basada en el historial
+        const historyIndex = Math.max(0, this.colorHistory.length - 1 - Math.abs(variation) % this.colorHistory.length);
+        const baseColor = this.colorHistory[historyIndex];
+        
+        const varR = Math.max(0, Math.min(255, baseColor.r + variation * 2));
+        const varG = Math.max(0, Math.min(255, baseColor.g + variation * 1.5));
+        const varB = Math.max(0, Math.min(255, baseColor.b + variation * 3));
+        const varAlpha = Math.max(0.2, Math.min(0.9, baseColor.alpha + variation * 0.01));
+        
+        return `rgba(${Math.floor(varR)}, ${Math.floor(varG)}, ${Math.floor(varB)}, ${varAlpha})`;
+      }
+      
+      // Método para obtener el color promedio del historial (para efectos especiales)
+      getHistoryAverage() {
+        if (this.colorHistory.length === 0) return this.getColor();
+        
+        const avg = this.colorHistory.reduce((acc, color) => ({
+          r: acc.r + color.r,
+          g: acc.g + color.g,
+          b: acc.b + color.b,
+          alpha: acc.alpha + color.alpha
+        }), { r: 0, g: 0, b: 0, alpha: 0 });
+        
+        const len = this.colorHistory.length;
+        return `rgba(${Math.floor(avg.r / len)}, ${Math.floor(avg.g / len)}, ${Math.floor(avg.b / len)}, ${avg.alpha / len})`;
+      }
+    }
+
+    // FUNCIONES DE AUTÓMATA CELULAR
+    function formatRuleset(ruleNum) {
+      const bin = ruleNum.toString(2).padStart(8, '0');
+      return Array.from(bin).map(Number);
+    }
+
+    function newGeneration(row, rule) {
+      const padded = [0, ...row, 0];
+      const newRow = [];
+      for (let i = 1; i < padded.length - 1; i++) {
+        const left   = padded[i - 1];
+        const center = padded[i];
+        const right  = padded[i + 1];
+        const idx = left * 4 + center * 2 + right;
+        newRow.push(rule[7 - idx]);
+      }
+      return newRow;
+    }
+
+    function generateWolframAutomata(ruleNum, width, height, randomStart = false) {
+      const rule = formatRuleset(ruleNum);
+      const grid = [];
+      
+      // Primera fila: punto central o aleatorio
+      const firstRow = new Array(width).fill(0);
+      if (randomStart) {
+        // Solo 1-2 puntos aleatorios para mantener el estilo Wolfram
+        const numSeeds = Math.floor(Math.random() * 2) + 1;
+        for (let i = 0; i < numSeeds; i++) {
+          const rx = Math.floor(Math.random() * width);
+          firstRow[rx] = 1;
+        }
+      } else {
+        // Punto central clásico de Wolfram
+        firstRow[Math.floor(width / 2)] = 1;
+      }
+      
+      grid.push(firstRow);
+      
+      // Generar cada fila basada en la anterior (regla Wolfram)
+      for (let i = 1; i < height; i++) {
+        const newRow = newGeneration(grid[i - 1], rule);
+        grid.push(newRow);
+      }
+      
+      return grid;
+    }
+
+    function drawWolframLayer(grid, cellSize, char, colorSystem, layer, offsetX = 0, offsetY = 0) {
+      for (let y = 0; y < grid.length; y++) {
+        for (let x = 0; x < grid[y].length; x++) {
+          if (grid[y][x] === 1) {
+            // Variación de color específica por capa y posición
+            const variation = (x + y * layer) % 20 - 10;
+            ctx.fillStyle = colorSystem.getVariationColor(variation);
+            
+            // Sombra más sutil para las capas superpuestas
+            const shadowIntensity = 0.3 + (layer * 0.2);
+            ctx.shadowColor = colorSystem.getHistoryAverage();
+            ctx.shadowBlur = 2 + layer;
+            ctx.shadowOffsetX = layer * 0.5;
+            ctx.shadowOffsetY = layer * 0.5;
+            
+            ctx.fillText(char, offsetX + x * cellSize + cellSize / 2, offsetY + y * cellSize + cellSize / 2);
+            
+            // Limpiar sombra
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+          }
+        }
+      }
+    }
+
+    // FUNCIONES DEL EFECTO GLITCH MEJORADO
+    function applyAdvancedGlitch() {
+      const effects = [
+        () => applyColorShift(),
+        () => applyPixelSort(),
+        () => applyDataMosh(),
+        () => applyDigitalNoise()
+      ];
+      
+      const effect = effects[Math.floor(Math.random() * effects.length)];
+      effect();
+    }
+
+    function applyColorShift() {
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const data = imageData.data;
+      for (let i = 0; i < data.length; i += 4) {
+        const temp = data[i];     // R
+        data[i] = data[i + 2];    // R = B
+        data[i + 2] = data[i + 1]; // B = G
+        data[i + 1] = temp;       // G = R original
+      }
+      ctx.putImageData(imageData, 0, 0);
+    }
+
+    function applyPixelSort() {
+      const strips = Math.floor(Math.random() * 5) + 2;
+      for (let i = 0; i < strips; i++) {
+        const y = Math.floor(Math.random() * canvas.height);
+        const height = Math.floor(Math.random() * 20) + 5;
+        const imageData = ctx.getImageData(0, y, canvas.width, height);
+        const dx = Math.floor((Math.random() - 0.5) * 50);
+        ctx.putImageData(imageData, dx, y);
+      }
+    }
+
+    function applyDataMosh() {
+      const sections = Math.floor(Math.random() * 3) + 1;
+      for (let i = 0; i < sections; i++) {
+        const x = Math.floor(Math.random() * canvas.width * 0.5);
+        const y = Math.floor(Math.random() * canvas.height * 0.5);
+        const w = Math.floor(Math.random() * canvas.width * 0.3);
+        const h = Math.floor(Math.random() * canvas.height * 0.3);
+        const imageData = ctx.getImageData(x, y, w, h);
+        const dx = Math.floor((Math.random() - 0.5) * 100);
+        const dy = Math.floor((Math.random() - 0.5) * 100);
+        ctx.putImageData(imageData, x + dx, y + dy);
+      }
+    }
+
+    function applyDigitalNoise() {
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const data = imageData.data;
+      for (let i = 0; i < data.length; i += 4) {
+        if (Math.random() < 0.01) {
+          data[i] = Math.floor(Math.random() * 256);     // R
+          data[i + 1] = Math.floor(Math.random() * 256); // G
+          data[i + 2] = Math.floor(Math.random() * 256); // B
+        }
+      }
+      ctx.putImageData(imageData, 0, 0);
+    }
+
+    // CONFIGURACIÓN DE 3 AUTÓMATAS WOLFRAM SUPERPUESTOS
+    const numAutomata = 3; // Exactamente 3 capas
+    const automataConfigs = [];
+    
+    for (let i = 0; i < numAutomata; i++) {
+      automataConfigs.push({
+        rule: Math.floor(Math.random() * 256), // Regla Wolfram (0-255)
+        char: BLOCK_ELEMENTS[Math.floor(Math.random() * BLOCK_ELEMENTS.length)],
+        colorSystem: new RecursiveColorSystem(),
+        ruleDelta: (Math.random() < 0.5 ? 1 : -1) * (Math.floor(Math.random() * 2) + 1),
+        randomStart: i === 0 ? false : Math.random() < 0.4, // Primera capa siempre centrada
+        updateSpeed: 2 + i, // Diferentes velocidades para cada capa
+        layer: i // Identificador de capa
+      });
+    }
+
+    function updateConfig(config, frameCount) {
+      // Solo actualizar cada ciertos frames según la velocidad
+      if (frameCount % config.updateSpeed === 0) {
+        config.rule = (config.rule + config.ruleDelta) % 256;
+        if (config.rule < 0) config.rule += 256;
+        
+        // Cambiar carácter ocasionalmente
+        if (Math.random() < 0.09) {
+          config.char = BLOCK_ELEMENTS[Math.floor(Math.random() * BLOCK_ELEMENTS.length)];
+        }
+        
+        // Cambiar dirección de regla ocasionalmente
+        if (Math.random() < 0.01) {
+          config.ruleDelta *= -1;
+        }
+      }
+      
+      config.colorSystem.update();
+    }
+
+    // VARIABLES DE CONTROL
+    let glitchActive = false;
+    let glitchFramesLeft = 0;
+    let frameCount = 0;
+    let isPaused = false;
+    let animationSpeed = 5; // Controla la velocidad general (más alto = más lento)
+
+    // CONTROLES DE TECLADO
+    document.addEventListener('keydown', (e) => {
+      switch(e.code) {
+        case 'Space':
+          e.preventDefault();
+          isPaused = !isPaused;
+          if (!isPaused) animate();
+          break;
+        case 'KeyR':
+          // Reiniciar con nuevas configuraciones
+          automataConfigs.forEach(config => {
+            config.rule = Math.floor(Math.random() * 256);
+            config.colorSystem = new RecursiveColorSystem();
+            config.char = BLOCK_ELEMENTS[Math.floor(Math.random() * BLOCK_ELEMENTS.length)];
+          });
+          break;
+      }
+    });
+
+    // ANIMACIÓN PRINCIPAL MÁS LENTA
+    function animate() {
+      if (isPaused) return;
+      
+      frameCount++;
+      
+      // Solo actualizar cada ciertos frames para hacerlo más lento
+      if (frameCount % animationSpeed === 0) {
+        // Fondo con desvanecimiento gradual en lugar de limpieza completa
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Actualizar y dibujar cada autómata Wolfram (3 capas)
+        automataConfigs.forEach(config => {
+          updateConfig(config, frameCount);
+          const grid = generateWolframAutomata(config.rule, gridWidth, gridHeight, config.randomStart);
+          drawWolframLayer(grid, cellSize, config.char, config.colorSystem, config.layer);
+        });
+        
+        // Control del efecto glitch más sofisticado
+        if (!glitchActive && Math.random() < 0.03) {
+          glitchActive = true;
+          glitchFramesLeft = Math.floor(Math.random() * 15) + 5;
+        }
+        
+        if (glitchActive) {
+          applyAdvancedGlitch();
+          glitchFramesLeft--;
+          if (glitchFramesLeft <= 0) {
+            glitchActive = false;
+          }
+        }
+      }
+      
+      requestAnimationFrame(animate);
+    }
+
+    // Iniciar la animación
+    animate();
+  </script>
+</body>
+</html>

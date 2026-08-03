@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BTLDR - Automatas Celulares Wolfram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      overflow: hidden;
+      font-family: monospace;
+    }
+    canvas {
+      display: block;
+      background: #000;
+    }
+    .info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #fff;
+      font-size: 12px;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="info">
+    <div>BTLDR v0.0.1 - Autómatas Wolfram</div>
+    <div>Presiona ESPACIO para pausar/reanudar</div>
+    <div>Presiona R para reiniciar</div>
+  </div>
+  <script>
+// bootloader: v0.0.1 - Autómatas Wolfram Superpuestos
+BTLDR.svg.setAttribute('viewBox', '0 0 800 600');
+
+// Lista de caracteres de bloques Unicode
+const BLOCKS = ['▐','░','▒','▓','▔','▕','▖','▗','▘','▙','▚','▛','▜','▝','▞','▟','█','▄','▀','▌','▉','▊','▋','▍','▎','▏'];
+
+// Sistema de colores recursivo simplificado
+class ColorSys {
+  constructor() {
+    this.h = BTLDR.rnd() * 360;
+    this.s = 60 + BTLDR.rnd() * 30;
+    this.l = 40 + BTLDR.rnd() * 40;
+    this.a = 0.6 + BTLDR.rnd() * 0.3;
+    this.hSpeed = (BTLDR.rnd() - 0.5) * 4;
+    this.history = [this.h];
+  }
+  
+  update() {
+    this.h = (this.h + this.hSpeed) % 360;
+    if (this.h < 0) this.h += 360;
+    this.history.push(this.h);
+    if (this.history.length > 8) this.history.shift();
+  }
+  
+  getColor(variation = 0) {
+    const h = (this.h + variation * 10) % 360;
+    const l = Math.max(20, Math.min(80, this.l + variation));
+    return `hsla(${h}, ${this.s}%, ${l}%, ${this.a})`;
+  }
+}
+
+// Funciones de autómata Wolfram
+function formatRule(ruleNum) {
+  return ruleNum.toString(2).padStart(8, '0').split('').map(Number);
+}
+
+function nextGen(row, rule) {
+  const padded = [0, ...row, 0];
+  const newRow = [];
+  for (let i = 1; i < padded.length - 1; i++) {
+    const idx = padded[i-1] * 4 + padded[i] * 2 + padded[i+1];
+    newRow.push(rule[7 - idx]);
+  }
+  return newRow;
+}
+
+function generateGrid(ruleNum, width, height, randomStart) {
+  const rule = formatRule(ruleNum);
+  const grid = [];
+  
+  const firstRow = new Array(width).fill(0);
+  if (randomStart) {
+    const seeds = Math.floor(BTLDR.rnd() * 3) + 1;
+    for (let i = 0; i < seeds; i++) {
+      firstRow[Math.floor(BTLDR.rnd() * width)] = 1;
+    }
+  } else {
+    firstRow[Math.floor(width / 2)] = 1;
+  }
+  
+  grid.push(firstRow);
+  for (let i = 1; i < height; i++) {
+    grid.push(nextGen(grid[i - 1], rule));
+  }
+  
+  return grid;
+}
+
+// Configuración de capas
+const cellSize = 8;
+const gridW = Math.floor(800 / cellSize);
+const gridH = Math.floor(600 / cellSize);
+const numLayers = 3 + Math.floor(BTLDR.rnd() * 3);
+
+const layers = [];
+for (let i = 0; i < numLayers; i++) {
+  layers.push({
+    rule: Math.floor(BTLDR.rnd() * 256),
+    char: BLOCKS[Math.floor(BTLDR.rnd() * BLOCKS.length)],
+    colorSys: new ColorSys(),
+    ruleDelta: (BTLDR.rnd() < 0.5 ? 1 : -1) * (Math.floor(BTLDR.rnd() * 4) + 1),
+    randomStart: i === 0 ? BTLDR.rnd() < 0.3 : BTLDR.rnd() < 0.6,
+    updateSpeed: 1 + Math.floor(BTLDR.rnd() * 6),
+    layer: i
+  });
+}
+
+// Crear elementos SVG para cada capa
+const layerGroups = [];
+for (let i = 0; i < numLayers; i++) {
+  const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  group.setAttribute('class', `layer-${i}`);
+  BTLDR.svg.appendChild(group);
+  layerGroups.push(group);
+}
+
+// Función para dibujar una capa
+function drawLayer(grid, layerConfig, groupElement) {
+  // Limpiar grupo anterior
+  while (groupElement.firstChild) {
+    groupElement.removeChild(groupElement.firstChild);
+  }
+  
+  for (let y = 0; y < grid.length; y++) {
+    for (let x = 0; x < grid[y].length; x++) {
+      if (grid[y][x] === 1) {
+        const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text.setAttribute('x', x * cellSize + cellSize / 2);
+        text.setAttribute('y', y * cellSize + cellSize / 2);
+        text.setAttribute('text-anchor', 'middle');
+        text.setAttribute('dominant-baseline', 'central');
+        text.setAttribute('font-family', 'monospace');
+        text.setAttribute('font-size', cellSize);
+        
+        const variation = (x + y * layerConfig.layer) % 20 - 10;
+        text.setAttribute('fill', layerConfig.colorSys.getColor(variation));
+        text.setAttribute('opacity', 0.8);
+        
+        text.textContent = layerConfig.char;
+        groupElement.appendChild(text);
+      }
+    }
+  }
+}
+
+// Variables de control
+let frameCount = 0;
+const animSpeed = 3 + Math.floor(BTLDR.rnd() * 8);
+
+// Función de actualización
+function updateLayer(config, frame) {
+  if (frame % config.updateSpeed === 0) {
+    config.rule = (config.rule + config.ruleDelta) % 256;
+    if (config.rule < 0) config.rule += 256;
+    
+    if (BTLDR.rnd() < 0.15) {
+      config.char = BLOCKS[Math.floor(BTLDR.rnd() * BLOCKS.length)];
+    }
+    
+    if (BTLDR.rnd() < 0.02) {
+      config.ruleDelta *= -1;
+    }
+    
+    if (BTLDR.rnd() < 0.005) {
+      config.rule = Math.floor(BTLDR.rnd() * 256);
+    }
+  }
+  
+  config.colorSys.update();
+}
+
+// Función de animación principal
+function animate() {
+  frameCount++;
+  
+  if (frameCount % animSpeed === 0) {
+    layers.forEach((config, index) => {
+      updateLayer(config, frameCount);
+      const grid = generateGrid(config.rule, gridW, gridH, config.randomStart);
+      drawLayer(grid, config, layerGroups[index]);
+    });
+  }
+  
+  requestAnimationFrame(animate);
+}
+
+// Iniciar animación
+animate();
+  </script>
+</body>
+</html>
