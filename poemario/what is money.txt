@@ -1,0 +1,613 @@
+What is Money? How is it Created and
+Destroyed?
+David Andolfatto
+Simon Fraser University
+January 2009
+1I n t r o d u c t i o n
+What follows is a short essay on the theory of money. By a theory of money ,
+Im e a na ne x p l a n a t i o nf o r why money is useful or necessary to facilitate trade.
+Having such a theory is useful because it helps us understand (or at least,
+interpret) the apparent demand for money. And as the demand for any product
+or service is likely to generate a supply to satisfy it, the theory can also help usunderstand the business of money creation; and whether the regulation of thisbusiness is in any way desirable.
+But before we can begin theorizing about money, we need to de ﬁne the term.
+My preferred de ﬁnition is as follows: Money is an object that circulates widely
+as a medium of exchange .
+1Throughout the course of human history, a wide
+variety of objects appear to have ﬁtt h i sd e ﬁnition; including beads, seashells,
+metallic coins, and even salt (from which we derive the word salary ). In the
+19th century, money predominantly took the form of paper notes issued byprivate banks. More recently, governments have legislated themselves control
+of the paper money supply, with banks retaining a prominent role in managing
+(creating and destroying) the econ omy’s “electronic” money supply.
+With these thoughts in mind, my essay begins with describing a theory of
+money demand (that is, the demand for a circulating medium of exchange).
+The theory I present below is not likely to be familiar to you, as I have gleaned
+it from what currently exists at the frontier of the discipline.
+2Having provided
+an explanation for why money might be useful, I turn next to describing atheory of the money supply. Contrary to what may be commonly believed, the
+money supply is not entirely in the government domain. Because the supply of
+money is so intricately linked to the business of banking, I take some time to
+1This de ﬁnition is not entirely satisfactory, as it leaves unde ﬁned precisely what “widely”
+is supposed to mean; but I hope that the idea is intuitive enough.
+2Unfortunately, the recent theory on this subject is highly technical. Kocherlakota (1998)
+makes an attempt at conveying the basic idea in a relatively simple manner.
+1
+develop a theory of banking as well. And ﬁnally, because the subject of banking
+features so prominently in periods of ﬁnancial crisis, I take some time to explain
+to explain alternative interpretations concerning the alleged “fragility” of the
+banking sector and the desirability of various government policies designed torectify this apparent shortcoming.
+2T h e D e m a n d f o r M o n e y
+Why is there a demand for money? It seem s clear enough that money facilitates
+the exchange process. But understanding precisely whymoney is useful or even
+necessary to facilitate exchange is not as obvious as it may ﬁrst seem. Let me
+explain.
+Money is useful, we are sometimes told, because it serves as a unit of account,
+as a store of value, and as a convenient means of settling debts. But while itis frequently true that money serves as a unit of account, there is nothing that
+logically prevents any object from serving the same role. For example, you
+might negotiate a salary in terms of so many loaves of bread per year and bepaid in the dollar equivalent.
+3And while it is true that money is a store of
+value, it is frequently a poor one relative to other assets; like an interest-bearing
+bond. It is also true that debts are frequently settled with money. But if you
+do not settle your restaurant bill with money, you may very well be asked tosettle it in some other manner; for example, by washing dishes. In fact, it isnot that uncommon to observe debts settled with goods or labor. One might
+further note that a retaliatory debt is frequently delivered in-kind.
+4
+The properties described above simply constitute a list of attributes that are
+commonly—but not exclusively—found in money. This list does not explain why
+money is useful or necessary as a medium of exchange .
+2.1 A Lack of Double-Coincidence of Wants
+Explanations for why money is useful or necessary typically center on the dif-
+ﬁculties associated with barter exchange. Barter exchange requires that there
+exist bilateral gains to trade between two parties; this is sometimes called a
+double-coincidence of wants . Barter may involve a quid-pro-quo exchange of
+goods or services; for example, I’ll scratc h your back, if you’ll scratch mine. But
+barter may also involve a credit arrangement; for example, I’ll scratch your backtoday, if you’ll scratch my back tomorrow. Barter may also involve an insurance
+3This is not just a theoretical possibility. In high-in ﬂation countries, merchants have been
+known to post their prices in units distinct from the medium of exchange. For example, a
+merchant may post prices in locally nonexistent U.S. dollars, but accept and make paymentsin the local currency at the prevailing exchange rate.
+4The phrase an eye for an eye is a quotation from Exodus 21:23—27 in which a person
+who has taken the eye of another in a ﬁght is instructed to give his own eye in compensation.
+2
+arrangement; for example, let’s agree to scratch each other’s back whenever we
+feel an itch.
+If all the gains to trade in an economy can be exhausted through bilateral
+relationships, then there is obviously no need for a circulating medium. People
+would simply trade directly for the goods they want in exchange for the goodsthey have. Evidently, it is not the case that all the gains to trade in an economy
+can be exhausted in this manner. Frequently, the gains to trade are multilateral —
+rather than bilateral—in nature. The existence of multilateral gains to tradeimplies a lack of double-coincidence of wants . To understand what I mean by
+this, it will be useful to consider an example.
+2.1.1 An ABC Economy
+Imagine a world inhabited by three people: Adam, Betty, and Charlie (ABC).
+Adam likes to eat bread in the morning; Betty likes to eat bread in the afternoon;
+and Charlie likes to eat bread at night. Adam has the ability to produce breadat night; Betty has the ability to produce bread in the day; and Charlie hasthe ability to produce bread in the afternoon. Assume that once it is produced,
+bread must be consumed immediately (it will otherwise spoil). Finally, assume
+that producing bread entails a cost (i.e., it requires some e ﬀort).
+In the ABC economy described above, Adam is hungry in the morning and
+Betty has the ability to produce morning bread. Unfortunately, Betty does not
+value what Adam has to o ﬀer (night bread). In this meeting between Adam and
+Betty, there are no bilateral gains to trade. In fact, it should take no longer than
+a moment to realize that there are no bilateral gains to trade for anypairing of
+these people. In this economy, there is a complete lack of double-coincidence of
+wants (no bilateral gains to trade).
+At the same time, it should be obviou s that the people in this economy
+c o u l db em a d eb e t t e ro ﬀby engaging in some form of trade (that is, there exist
+multilateral gains to trade). In fact, everyone would be made strictly better o ﬀif
+they were to follow these instructions: Betty produces bread in the morning forAdam; Charlie produces bread in the afternoon for Betty; and Adam producesbread at night for Charlie. In this way, everyone expends a little e ﬀort producing
+bread, and everyone gets to consume bread when they value it the most; see
+Figure 1.
+5
+It is commonly asserted that a lack of double-coincidence makes money nec-
+essary. And indeed, one could well imagine how money might be used in the
+economy described above. That is, imagine that Adam is endowed with one dol-
+lar. Then Adam could pay for his morning bread with his dollar; that is, Bettyproduces morning bread in exchange for a dollar. Betty then takes her dollarand uses it to purchase bread in the afternoon from Charlie. In the evening,
+5Figure 1 depicts a version of the famous Wicksellian Triangle; named after the Swedish
+economist, Knut Wicksell (1851-1926).
+3
+Charlie uses his dollar to purchase bread from Adam. In this manner, the dollar
+circulates as a medium of exchange over time.
+Adam
+Wants Morning Bread
+Produces Night BreadBetty
+Wants Afternoon Bread
+Produces Morning BreadCharlie
+Wants Night Bread
+Produces Afternoon Bread
+Morning 
+DeliveryAfternoon
+DeliveryNight
+DeliveryFigure 1
+Multilateral Gains to Trade
+and a Lack of Double-Coincidence 
+in the ABC Economy
+There is, unfortunately, a signi ﬁcant defect in explaining the role of money
+as a solution to the lack of double-coincidence problem. The defect is thatmoney does not appear to be necessary. In particular, what is to prevent them
+from simply following my earlier instructions to produce bread when they have
+the ability to do so and to consume it when they are hungry? I have describednothing in this economy that would prevent it from functioning as a communalgift-giving economy ; with each producer making a “gift” of output that is to be
+reciprocated by some other member of the community at a later date.
+6
+To develop a theory of money, we need to ask what prevents the world from
+operating along simple “communist” principles.7If money is a solution, then
+there must be some problem it is solving. What is the problem? Evidently, the
+problem cannot simply be a lack of double-coincidence, as is commonly asserted.
+Evidently, there must be some other factor in the real world that explains why
+6In fact, many primitive economies appear to have functioned precisely in this manner.
+Indeed, even today, exchange is commonly organized in this manner among small groups ofpeople (for example, in families or clubs).
+7In his 1875 Critique of the Gotha Program , Karl Marx wrote a phrase that is considered
+by many to be a de ﬁning principle of a communist system: From each according to his ability,
+to each according to his needs .
+4
+money is necessary.
+2.2 Information and Incentives
+Society might function well enough as a communal gift-giving network if people
+c o u l dg e n e r a l l yb er e l i e du p o nt ob e h a v ei nas o c i a l l yr e s p o n s i b l em a n n e r . S o ,
+for example, Adam meets Betty and expresses his genuine desire for bread; andBetty honestly reveals her ability to produce it. Note that Betty has no directprivate incentive to produce bread for Adam (he has nothing to o ﬀer her in
+return). Is it reasonable to expect that pe ople in Betty’s situation will make the
+required sacri ﬁce for the bene ﬁt of others? Our experience with human behav-
+iour suggests that this is not likely to happen; at least, not as frequently as onemight like to imagine. Individuals typically respond to real private incentives—
+not idealistic social obligations.
+If this is so, then the question becomes one of designing a system where
+people have the private incentive to achieve the social good. In the contextof our example, Betty might be induced to produce bread for Adam if she
+can reasonably expect a reward for doing so. This reward cannot come from
+Adam; it must come from some other member of society (in this case, fromCharlie). And, of course, the same holds true for everyone else. What sort ofarrangement might Adam, Betty, and Charlie adopt that gives each of them
+the private incentive to do what is best for the community (and by extension,
+themselves)?
+One arrangement that might work is for each of them to adopt a tit-for-tat
+strategy. That is, imagine that in the morning of the ﬁrst day, Betty produces
+bread for Adam. And for every period following, imagine that each person
+produces bread for the person who desires it; but only in the event that therecipient has a record of having made a similar gift in the past. This type ofbehaviour is called tit-for-tat becaus e each person is rewarded (or punished)
+on the basis of their own past contributions to society. If everyone adopts this
+mode of behaviour, then each person may have a private incentive to do theright thing. In particular, failing to produce when one has the opportunity todo so implies a short-term gain (a saving of work e ﬀort) in exchange for a future
+loss (foregone consumption). The threat of retaliation can be su ﬃciently strong
+to keep everyone working. If this is the case, then money is not necessary.
+Social scientists frequently claim to observe tit-for-tat behaviour; interpret-
+ing it as a mechanism designed to induce cooperation among groups of people
+that are not intrinsically cooperative in nature.
+8The feasibility of a tit-for-tat
+system when there are multilateral gains to trade, however, relies on the public
+availability of information relating to personal trading histories. In practice,
+this type of information may not be easily observable; and if it is not, it may be
+subject to manipulation. In the context of our ABC model, for example, what
+8See, for example, http://en.wikipedia.org/wiki/Live_and_let_live_(World_War_I)
+5
+is to prevent Adam from asking Betty for a little more food, justifying his claim
+by saying that he will supply Charlie with a little extra as well? And what is to
+prevent Adam from then supplying Charlie with a little less food, telling him
+that he too took a little less from Betty? Indeed, what is to prevent anyonefrom making false and mutually inconsistent claims such as these?
+9
+Personal trading histories are like ind ividual reputations. People with good
+reputations are rewarded (for example, a creditor is willing to extend credit to
+a person with a good credit history). B ecause a good reputation is valuable,
+people are motivated to take costly actions to maintain them (like paying backtheir debts when they come due). But reputations can only have value if they
+convey accurate information; moreover, this information must be easily accessi-
+ble by others. Needless to say, this may not always be the case. We frequentlyencounter people that are strangers to us. And even among friends or casual ac-quaintances, we are not likely to be privy to all relevant aspects of their personal
+histories. If people can get away with it, they may be motivated to fabricate
+their personal histories (or even the histories of others; as in the spreading falserumours). Strangers may go so far as to pretend that they are someone else (a
+form of counterfeiting, or identity theft).
+Imagine then that our ABC model is a ﬄicted with this type of information
+problem. In particular, imagine that it is impossible for society to monitor thetrading histories of its members. So, for example, while Adam may personallyknow whether Betty has produced bread for him, assume that there is no way
+for Charlie to observe that this was in fact the case. Likewise, while Betty may
+personally know whether Charlie has pro duced bread for her, assume that there
+is no way for Adam to observe this; and so on. Moreover, assume that there isno way to record information in the form of written records (that is, assume that
+written records can be costlessly counterf eited—so that issuing personal receipts
+or IOUs is infeasible). If this is the cas e, then absent any innovation, trade will
+not occur.
+10
+2.3 Money as a Record-Keeping Device
+Fortunately, the situation described above can be rescued with the innovation
+of monetary exchange. Imagine, for example, that Adam is endowed with a
+“dollar.”11Moreover, imagine that he uses his dollar to buy his morning bread
+from Betty. In the afternoon, Betty approaches Charlie and asks him to producebread. But how does Charlie know that Betty produced bread for Adam? The
+answer is simple: he can ask Betty to “s how me the money.” If counterfeiting
+9This is an issue that was ﬁrst made explicit by Ostroy (1973).
+10These assumptions are admittedly extreme. But the logic of the argument that follows
+will continue to hold as long as there are some people who are di ﬃcult to monitor.
+11Historically, the term “dollar” (derived from the German “thaler”) referred to a speci ﬁc
+quantity of silver. But for this example, you can think of a dollar as taking any form; forexample, a shell or a token coin. For this dollar to possess exchange value, it must necessarily
+be diﬃcult or impossible to counterfeit.
+6
+or theft is not a problem in this economy, then the only way for Betty to have
+acquired her dollar is by having earlier worked for it (i.e., to have made a gift
+to society). Upon seeing her dollar, Charlie asks that she pay for her bread
+with her dollar. The dollar in Charlie’s hand now serves as evidence that he hasmade a gift to society; and at night, the evidence will pass back into Adam’shands. Note that people are motivated here to work hard for money in the same
+way that they were willing to work hard in the tit-for-tat economy to maintain
+their reputations. The inability to monit or individual trading histories makes
+money necessary for trade.
+According to this theory then, the economic function of money is to serve
+as a record-keeping device .
+12Speci ﬁcally, the monetary object described above
+serves as a cost-e ﬃcient substitute for the information that might otherwise have
+been gathered and recorded by some public monitoring device. Money would becompletely super ﬂuous (even with a lack of double-coincidence) if people either
+did not behave opportunistically or if thei r past actions were publicly observable
+at zero cost. To the extent that this is true, one may legitimately take the viewthat “evil is the root of all money.”
+13
+3 The Money Supply
+In the previous section, I described the circumstances that give rise to a demandfor money. According to the theory outlined there, the role of money is to serveas a record-keeping device. The question concerning the supply of money might
+therefore be cast in terms of asking how society might best arrange this record-
+keeping service.
+The idea of money as a record-keeping device implies that the role of money
+is to encode a certain type of information; in particular, information relating
+to one’s past contributions to society. There is no unique way in which to
+record information. Physically, information can be encoded in either a tangibleor intangible manner. Examples of tangible money include physical tokens,
+coins, or paper notes. Examples of intangible money include abstract book-
+entry items; like the electronic digits contained in your bank account.
+The key di ﬀerence between tangible and intangible money appears to be
+whether some third party (an intermed iary) is involved in any transaction.
+When you purchase a good using a cheque or a debit card, you are in e ﬀect
+instructing an intermediary to transfer monetary digits from your account to
+that of the merchant. Alternatively, if you choose to pay with cash, you are ineﬀect debiting your pocket of notes or coin and crediting the merchant’s cash
+12Alternatively, money is sometimes said to be a communication device ;a si t sp o s s e s s i o n
+communicates information concerning a personal trading history; see, for example, Townsend
+(1987).
+13This phrase, used by Kiyotaki and Moore (2002), is a play on 1Timothy 6:10 “For the
+love of money is the root of all evil.”
+7
+register without the aid of an intermediary. This example highlights the dis-
+tinction to be made between a means of payment and a method of payment.
+Here, money (either in the form of cash or electronic digits) is both a means
+and method of payment; whereas debit/credit cards or cheques are only di ﬀerent
+methods of payment.
+Another important distinction to be m ade in terms of monetary objects is
+whether they are backed orunbacked . A backed monetary instrument is a debt
+instrument (an IOU) that represents a clai m against something of intrinsic value.
+An example of this would be a government operating under a gold standard ;
+with small denomination government pap er notes representing claims against
+gold. Another example would be private banks issuing paper notes (banknotes)
+redeemable in specie (gold or silver coins) and representing senior claims against
+the bank’s physical capital (land and buildings) in the event of bankruptcy.There have also been several historical episodes in which private companies
+have issued paper notes or coupons red eemable in store merchandise (much
+likeCanadian Tire money or Airmiles reward points). Finally, any form of
+commodity money is in a sense backed by the intrinsic value of the underlyingcommodity.
+Unbacked money, as the name suggest s, is a monetary object that does not
+represent a claim against anything of intrinsic value. I am unaware of any pri-vate agency ever issuing unbacked money; although the practice appears to bewidespread among modern day governments. Most of the world’s currencies
+today, like the U.S. dollar, the Euro, and the Yen, are essentially unbacked;
+they derive their value primarily by government ﬁat(so that unbacked money
+is commonly referred to as ﬁat money ). In other words, governments around the
+world have typically legislated themselves monopoly control over the business of
+small denomination paper note issue; an d these notes have value to the extent
+that people ﬁnd making cash payments useful. At the same time, private agen-
+cies with government charters are allowed to create money in electronic form;although money in this form is typically required to be made redeemable for
+government cash.
+3.1 Private Money
+Although the business of money creation has almost always been subject to
+heavy government regulation, if not outright control, it is not immediately ob-vious why this should be the case. To see how private money-issue might work
+in theory, it will be useful to refer back to the ABC economy described above.
+In that model, I assumed that it was impossible to monitor the trading historiesof all the members of society. I also assumed that Adam was endowed with a“dollar,” without explaining where this money came from.
+Let me now modify the information structure in this ABC economy. In
+particular, assume that Adam can be cost lessly monitored; that is, his actions
+are observable (and remembered) by all members of society. I continue to assume
+8
+that Betty and Charlie cannot be monitored. It may be useful to think of Adam
+as some “famous” person (or agency) and everyone else as “anonymous” people.
+Because Adam now has a reputation, he can use it to his advantage. In par-
+ticular, he is in a position to make promises that others might value.14Imagine
+that Adam issues a security (an IOU) that, if presented to him at night by anyperson, entitles that person to a loaf of bread. Note that Adam has an incentive
+to keep this promise; as failing to do so would destroy his reputation (no one
+would ever value his promises again).
+Now, recall that Adam wants bread in the morning and that Betty is in a
+position to produce it. The only thing that Adam has to pay for morning bread
+is his personal IOU; that is, a promise to deliver bread at night. Of course,
+Betty does not value bread at night; she values bread in the afternoon. Wouldit ever make sense for Betty to work hard producing bread in the morning inexchange for a promise of night bread? The answer to this question is “yes;”
+at least, as long as Betty can expect to use the IOU to purchase bread from
+Charlie in the afternoon. Would it ever make sense for Charlie to work hardproducing bread in the afternoon in exchange for a promise of bread at night?As Charlie is the person who values bread at night, the answer to this question
+is “yes;” at least, as long as Charlie can be assured that Adam will make good
+on his promise. Adam will keep his promise, if he values his reputation.
+In the economy just described, the instrument that serves as money is a
+privately-issued debt instrument (Ada m’s IOU). As before, the economic func-
+tion of this monetary instrument is to serve as a record-keeping device (in
+particular, Betty and Charlie can present this IOU as evidence of their pastcontributions to society). We also get a hint here of how the process of moneycreation and destruction works. First, money is created to ﬁll the demand for an
+economywide means of payment (not everyone is in a position to issue credible
+promises). Second, money is “destroyed ” (taken out of circulation) when it is
+ultimately redeemed by the issuer.
+Well, this is the way that things might work in theory, at least. Is there any
+evidence which suggests that this has ever happened in history? The answer
+is most certainly yes. A prominent example is the paper money (called scrip )
+issued by private companies in the 19th century U.S. Railway companies would,
+f o re x a m p l e ,p a yt h e i rw o r k e r si nt h e i ro w ns c r i p ;a n dt h es c r i pw a st h e nu s e db y
+workers to purchase output at the company store. Another example is providedby Bodenhorn (1993), who quotes an Italian General Secretary of the BancoD’Italia who explained how, prior to 1874, “everyone was issuing notes, even
+individuals and commercial ﬁrms; the country was overrun with little notes of
+50, 25, and 20 centimes issued by everyone who liked to do so.” The author alsonotes that when state legislation banned U.S. banks from issuing notes of lessthan $5, railroad companies, public houses, merchants and even churches ﬁlled
+the void with their own notes.
+14The promises of anonymous people are not likely to count for anything, as they can always
+deny having made them.
+9
+The author’s remark concerning the legislation that banned the private issue
+of small denomination notes goes a long way in explaining why the phenomenon
+is not so widespread today. The motivation for such legislation was for a long
+time a hotly debated issue. Advocates for such legislation typically rested theircase on the idea that the private sector cannot be trusted to manage the supplyof small denomination paper (implicitly suggesting that the government can be
+better trusted). Private money issuers ev idently had an incentive to “overissue”
+paper (making promises that they could not keep); even though the evidencefor whether this was ever a problem more serious than “government overissue,”or the “overissue” of other types of ﬁnancial instruments, is not entirely clear.
+3.2 Government Money
+There is a long tradition of government involvement in the business of money
+creation. It was very common for a local sovereign to legislate on behalf of thecrown monopoly control over the minting of coins. Coin clipping—the practice ofclipping of pieces of gold and silver coin and melting the shavings into counterfeit
+coin—was frequently considered an o ﬀense punishable by death. Over the course
+of time, some governments supplemented the supply of money by issuing papernotes (either directly, or by contracting out the service to some privileged privatesector agency) backed by gold or silver. More recently, most governments have
+abandoned any pretense of backing their paper money.
+In principle, the public provision of money poses no obvious theoretical ob-
+stacle. Indeed, a case could be made th at the business of money creation is a
+sort of natural monopoly; i.e., that a single, uniform currency, might naturally
+dominate a system with multiple currency issuers (a similar argument is used
+by advocates of common currency areas). In the context of the ABC modelabove, Adam’s private IOU might easily be replaced by a government moneythat performs the same essential function.
+In practice, however, the public provision of money has not always worked
+so smoothly. This is because there is frequently a great temptation on the partof the money supplier to exploit its monopoly position to extract seigniorage
+revenue from the population. The way this might work in the context of the
+ABC model is as follows. First, the government passes legislation to prohibit
+private note issue (so that Adam is not allowed to create his IOU). But as thereis a demand for money in some form, people will be induced to work (or supplygoods) for it. The government can exploit this demand for money by simply
+printing new money to pay for what it wants. At every date, people who are
+holding “old money” (money that they worked for) will be competing with the“new money” created by the government to purchase some of the economy’soutput. Inevitably, this process results in in ﬂation; i.e., a systematic rise in
+the price of goods and services (or, equivalently, a systematic decline in the
+purchasing power of money). The resulting in ﬂation acts like a tax on money
+holdings; and for this reason, it is sometimes called an inﬂation tax (another
+10
+name for seigniorage).
+There are, of course, both economic an d political limits associated with the
+government’s ability to extract seigniorage revenue from the population. The
+economic limits are governed by the demand for money (people may not bewilling to hold as much money during periods of high in ﬂation; an e ﬀect which
+reduces the tax base) and the availab ility of currency substitutes (which the
+government may try very hard to suppress through legislation).
+15The political
+limits are those commonly associated with oppressive taxation. In any case,it should not be surprising to learn that periods of intense ﬁscal stress (e.g., a
+period of war) are frequently associated with high rates of in ﬂation.
+3.3 Banking
+There is probably no other business less well understood than that of banking.
+The reason for this no doubt lies in the fact that the business of banking is inpractice multifaceted and highly complic ated. But in fact, the basic principles
+of banking are easy to understand; even if the details are sometimes messy and
+confusing.
+The ﬁrst thing to keep in mind is that a bank is a ﬁnancial intermediary;
+b u tt h a tn o ta l l ﬁnancial intermediaries are banks. Financial intermediaries are
+best thought of as asset-transformers . To understand what I mean by this, keep
+in mind that the distinction between a ﬁnancial asset and a ﬁnancial liability
+is simply a matter of perspective. For example, Adam’s IOU constitutes aﬁnancial liability as far as he is concerned; but it constitutes a ﬁnancial asset
+for the person who holds it. With this in mind, consider the following.
+Insurance companies collect premiums which they use to purchase assets
+(e.g., bonds and asset-backed commercial paper). At the same time, insurancecompanies create state-contingent liabilities that are backed by the assets they
+hold. To put things another way, insuran ce companies transform their assets
+intoinsurance policies that promise a cash payout in certain states of the world
+(for example, in the event your house burns down). Similarly, pension fundscollect contributions which they use to purchase assets; at the same time, theycreate time-dependent liabilities that are backed by the assets they own. To
+put things another way, pension funds transform their assets into pension plans
+that promise a cash payout in the event of retirement. The liabilities created byinsurance companies and pension funds are typically illiquid ; for example, it is
+diﬃcult to purchase your morning co ﬀee by selling o ﬀa part of your insurance
+policy or pension plan.
+As with other ﬁnancial intermediaries, banks collect assets (deposits of cash
+and collateral); which they transform into demandable liabilities . Demandable
+liabilities are securities that can be red eemed for cash on demand (for example,
+15Governments sometimes prevent their citizens from using foreign currency or opening
+foreign currency accounts, for example.
+11
+when you choose to withdraw cash from a bank machine). Note that by “cash”
+what I mean here is a tangible monetary object; today primarily in the form of
+small denomination government paper, but historically also found in the form
+of specie (gold and silver coins).
+The distinguishing characteristic of banks vis-à-vis other ﬁnancial interme-
+diaries is that the demandable liabilities created by banks are commonly used
+as a form of money; which is to say that they are liquid (as in the case of
+Adam’s circulating IOU). To put things in another way, banks are ﬁnancial
+intermediaries specialized in the busin ess of money creation. In days gone by,
+private banks regularly issued small de nomination paper notes redeemable in
+specie. For example, in the U.S. “free banking” era (1836-63), there were lit-
+erally hundreds of banks that issued their own currency (a practice that wasabolished by both the northern and southern governments during the U.S. civilwar). The demand-deposit liabilities iss ued by chartered banks today no longer
+exist in paper form; instead, they exist in the form of electronic digits recorded
+in centralized accounts. Moreover, th is modern “bank money” is redeemable
+not for specie, but for government cash. It is of interest to note that most ofthe “money supply” in any well-developed economy is created by the private
+sector.
+3.3.1 The ABC’s of Banking
+Let us again consider the ABC economy, but with the following modi ﬁcations.
+First, assume that Adam, Betty, and Ch arlie cannot be publicly monitored;
+so that their personal IOUs are worthless as a circulating medium. Second,assume the existence of another agent (or agency) called “the bank.” Unlike
+Adam, Betty, and Charlie, the bank has no ability to produce output. The
+bank’s only advantage is that its reputation is publicly observable.
+The situation now is as follows. Adam has an asset (his IOU), but no
+reputation that would support its value in the market. The bank, on the other
+hand, has a reputation, but no assets to exploit it. Adam and the bank each
+have something that the other values; perhaps they can strike a deal for theirmutual bene ﬁt (and incidentally, for the bene ﬁto fs o c i e t y ) .
+Imagine that Adam and the bank agree to the following “contract.” Adam
+is required to “deposit” his IOU with the bank as collateral for a loan. Thebank creates paper notes that are backed by the value of this collateral andlends them to Adam. Adam agrees to pay back the money loan at the end of
+the night (he might throw in a little extra bread as interest—after all, bankers
+have to eat too).
+Note that while Adam’s reputation (credit history) is not publicly observable,
+it is observable to the bank. Adam is therefore motivated to pay back his loan;
+at least, if he wishes to maintain his future access to bank credit. To pay back his
+loan at night, Adam will have to produce night bread and sell it for banknotes
+12
+(money). Hence, Charlie should be willing to produce bread in the afternoon in
+exchange for banknotes; and likewise, Betty should be willing to produce bread
+in the morning for banknotes too. Of course, morning bread is precisely what
+Adam values; to acquire this bread, he will ﬁrst have to agree to the contract
+described above.
+The bank’s reputation in this story is important for the purpose of main-
+taining the integrity of its money. As th e value of the bank’s money ultimately
+rests on the quality of its loan portfolio, the bank will have to ensure that itsloan applicants have sound business plans. A bank that creates banknotes andlends them out in a haphazard manner would quickly see the value of its money
+(and hence, its business) fall to zero. This is why screening loan applicants,
+managing portfolio risk, and collecting on money loans are some of the impor-tant activities associated with the bus iness of banking. At the end of the day,
+however, the essential function of banking is to transform illiquid assets (like
+Adam’s IOU) into liquid liabilities (banknotes).
+3.3.2 Demandable Liabilities
+The example of banking described abov e, while accurate in some respects, is
+missing an important aspect of the way in which banks operate in reality. Mostmonetary systems are in fact what one might term dual money regimes in that
+there are usually (at least) two coexisting monetary objects; a primary money
+and a secondary money. The primary money supply—sometimes also called base
+money —is usually more liquid. Historically, base money took the form of specie
+(gold or silver coin); in modern times, it comes in the form of small denominationgovernment paper notes and coin. The secondary money supply is somewhat
+less liquid; it is typically issued by private banks and made convertible (on
+demand) for base money. Historically, these demandable liabilities took theform of private banknotes convertible into specie; in modern times, they takethe form of electronic digits convertible into government cash.
+The demandability property found in secondary money (as well as other debt
+instruments) is a peculiar ﬁnancial innovation. In the language of high- ﬁnance,
+it is called an American put option; that is, the seller (a bank) issues a liability
+that gives the buyer (the depositor or bo rrower) the right, but not the obligation,
+to sell the liability back to the issuer at any time (on demand) in exchange forcash at a prespeci ﬁed strike price (usually par). This may sound complicated,
+but all it really means is that if you deposit cash at a bank, or take out a money
+loan, your account is credited with elect ronic digits in the amount of the deposit
+or loan; and that moreover, you may, at any time, convert your electronic digitsinto cash (this is what happens, for example, when you withdraw cash from anATM).
+The idea of being able to convert your bank money into cash whenever you
+want is an attractive one; and no doubt, this is one reason why banks eager toattract business o ﬀer their clients this option. T o put things another way, the
+13
+demandability clause makes bank money more widely acceptable as a means
+of payment; allowing banks to better ful ﬁl the economy’s need for a supply of
+liquidity that responds rapidly to changing business conditions.
+The demand for cash likely stems from the fact that (even in this age of
+electronic payments), it is a more economical method of payment for smallpurchases. Moreover, not all merchants are willing to accept cheques; and not
+all points-of-sale are hooked up to an electronic payments system.
+16For these
+reasons, banks will keep cash in reserve to meet the need for daily withdrawals.At the same time, these reserves are replenished by merchants making cashdeposits out of their daily sales. The ups hot of all this is that the balance sheet
+for a bank (or the consolidated banking sector) looks something like this:
+Assets
+Liabilities
+Cash Reserves: $10,000 Demandable Liabilities: $100,000
+Illiquid Assets: $90,000
+Total Assets: $100,000 Total Liabilities: $100,000
+According to the balance sheet ab ove, the bank has $100,000 in “demand-
+deposit liabilities;” that is, the bank’s clients have $100,000 credited to theiraccounts that they can—if they want—convert into cash at any time. Note thatwhile the bank’s clients may believe that there is $100,000 of money in their
+bank, this is subject to an important quali ﬁcation. That is, there is indeed
+$100,000 in the form of money; but there is only $10,000 in the form of cash(the remainder is in the form of electronic digits). For some reason, people arefrequently shocked to discover this fact; but it is an essential property associated
+with the business of banking (which is to convert the $90,000 of illiquid assets
+i n t oal i q u i df o r m ) .
+4 Financial Crises
+As described above, the demandability clause built into bank liabilities enhancestheir use as a means of payment. But this peculiar property has a potentialdownside risk attached to it. Demandable liabilities are, by construction, “short-term” debt instruments; that is, they give people the right to cash out on
+very short notice. In contrast, the asset side of a bank’s balance sheet consists
+predominantly of “long-term” illiquid assets; for example, personal loans, likeAdam’s IOU, or a portfolio of individual mortgages. The illiquid nature of abank’s assets and the liquid nature of its liabilities is termed by accountants a
+security mismatch .
+16The underground economy, whose participants are not eager to leave records of their
+transactions, is also a major source of the demand for cash.
+14
+4.1 Bank Runs
+The potential problem with security mismatch is as follows: what happens if
+(for whatever reason) everyone wants to withdraw their money from the bank(or banking system) at the same time? In such an event (called a bank run ),
+the bank is clearly not in a position to honour its obligations; there is not
+enough cash in reserve to do so. The only way that the bank can acquire the
+cash that people want is to start selling o ﬀits assets. But a bank’s assets are
+by nature illiquid; which means that they will either have to wait a long timebefore ﬁnding someone willing to pay full value, or that they will have to dispose
+of their assets at ﬁresale prices. If people want their cash now, the bank has
+only one of two options; either: [1] start selling o ﬀassets at a large discount
+to their “true” market value (which may threaten the bank’s solvency); or [2]suspend withdrawals (which will put the bank in technical default, potentially
+leading to bankruptcy). Neither opti on appears particularly attractive.
+The interesting theoretical possibility associated with security mismatch is
+the idea that a bank run may become a self-ful ﬁlling prophesy .
+17That is,
+imagine that (for some unexplained reaso n), people become fearful that their
+bank is insolvent. The particular reason for this expectation does not matter; for
+example, it may simply be based on an unsu bstantiated rumour. Nevertheless,
+conditional on the expectation, it will make sense for each individual depositorto “run” their bank; that is, to withdraw cash, even if they have no pressing need
+for it. But if all depositors act in this manner, the bank may have to dispose
+of its assets at ﬁresale prices, which may then lead to insolvency—an event that
+would con ﬁrm the initial expectations. In other words, if everyone believes that
+their bank is insolvent, this belief may in the end come true (whether or not the
+bank was truly insolvent to begin with).
+This same line of reasoning, applied to the banking sector as a whole, is
+thought by many to give rise to the prospect of a widespread banking panic .T h i s
+perceived “fragility” of the banking sector is what undoubtedly motivates the
+vast array of banking regulations designed to correct or mitigate the potential
+problem of a widespread banking panic. For example, banks are frequentlysubject to “reserve requirements;” i.e., laws that stipulate a minimum level ofcash reserves. They are also subject to “c apital requirements;” i.e., laws that
+stipulate a minimum level of “safe” assets (like government securities). They
+are also typically required to join a government sponsored insurance programthat protects depositors up to some legislated maximum amount per account.
+18
+17This idea was ﬁrst formalized by Diamond and Dybvig (1983). See also Diamond (2007).
+18Banks are frequently subject to many other regulations; for example, limitations on branch
+banking, prohibition on the sale of insurance, entry restrictions, prohibition on mergers, etc.
+Most of these regulations appear to be politically motivated; they serve no obvious economic
+purpose.
+15
+4.2 Lender of Last Resort
+Most countries (or common currency areas) have a central bank that is respon-
+sible for managing the supply of base money. The central bank (the monetary
+authority ) serves as a banking agent for the government (the ﬁscal authority ); as
+well as for commercial banks and other ﬁnancial agencies. Chartered banks typ-
+ically hold some cash reserves in their accounts with the central bank; and the
+government holds deposits at both the central bank and designated charteredbanks.
+Contrary to what some may believe, a central bank cannot simply create
+money and inject it into the economy. When the monetary authority wishes to
+expand the supply of base money, it will do so by swapping government bondsfor cash; either by “monetizing” the g overnment bonds that the central bank
+holds as assets, or by selling the government bonds it holds in the bond market
+(anopen market operation ).
+19
+One important function of the central bank is to serve as a “lender of last
+resort” for chartered banks. The idea here is the central bank may be in aposition to avoid a banking panic if it stands ready to lend cash to banks who
+( t h r o u g hn of a u l to ft h e i ro w n )a r eb e i n gs u b j e c tt oab a n kr u n . N o r m a l l y ,s u c h
+emergency lending is performed through a discount window facility; the central
+bank “injects” cash reserves into a troubled bank in exchange for high-gradeassets (typically, government bonds); i.e., a form of collateralized lending.
+In periods of unusual ﬁnancial stress, such as what we have experienced
+during the ﬁnancial crisis of 2008, a central bank may expand the list of eligible
+securities that it will accept as collateral (such as prime-grade mortgages) forshort-term cash loans. The securities in question are typically illiquid (since
+otherwise, a troubled bank could have raised the cash it needs by disposing
+of these securities on the open market). The whole idea behind a bank run,however, is that illiquid securities can only be disposed of quickly in the marketat a huge discount. Rather than bear the cost of a ﬁresale on its assets, a
+troubled bank can o ﬀer them to the central bank at a much more “reasonable”
+discount. Once the crisis passes, a (formerly) troubled bank will be able to payoﬀits debt (and reacquire the illiquid ass ets it put up as collateral). At least,
+this is the way things are supposed to work in theory.
+4.3 Bank Runs: An Alternative Interpretation
+Are banks really as fragile as some would like to make them out to be? Is itreally possible for a bank to fail as the result of a self-ful ﬁlling prophesy? Have
+self-ful ﬁlling bank runs even ever occurred in history? You will not be surprised
+to learn that economists frequently disagree on the answers to these questions.
+19In Canada, the central bank can also alter the supply of cash reserves available to chartered
+banks by shifting cash out of its government accounts into the government accounts of the
+banking sector.
+16
+The idea of bank sector fragility appears to be ﬁrmly ingrained in our pop-
+ular culture. Who can forget that famous scene in the Christmas classic It’s a
+Wonderful Life (1946) where George Bailey (James Stewart) begs his account
+holders to limit their cash withdrawals as they storm his bank?20The wide-
+spread banking failures experienced in the U.S. during the 1930s no doubt didmuch to promote this view.
+Of course, no one doubts the fact the banks sometimes fail and that, at
+times, many banks fail during an economic crisis. The point of disagreement isin terms of what precipitates bank failure. The popular view is that a sudden lossof con ﬁdence can in itself become a self-ful ﬁlling prophesy. But an alternative
+interpretation is that the loss of con ﬁdence is merely a symptom—and not the
+cause—of a ﬁnancial crisis. After all, even non-bank ﬁrms are known to fail;
+and there are typically many such failures during an economic crisis. The crisisis likely caused by bets (risky investments) that turn out badly, leading to a
+fundamental decline in the value of assets throughout the economy (or the ﬁrm
+in question).
+21
+At issue then, between these two very di ﬀerent interpretations, is the direc-
+tion of causality. The popular view is that a loss of con ﬁdence can ultimately
+lead to a deterioration of economic fundam entals (justifying the initial loss of
+conﬁdence). The alternative view is that d eteriorating fundamentals are nor-
+mal occurrences in the process of economic development; and that a loss ofconﬁdence is symptomatic of these unfortunate events.
+22
+Empirically, it is very di ﬃcult to discriminate between these two competing
+views. This is unfortunate because the two views deliver very di ﬀerent policy
+implications. The self-ful ﬁlling view generally justi ﬁes the use of government
+policies to “stabilize” the banking sect or. The fundamental view, in contrast,
+suggests that many “stabilizing” policies are likely to be counterproductive.
+Limitations on branch banking, for example, likely contributed to the wave ofbank failures in the United States during the Great Depression.
+23Moreover,
+lender-of-last-resort facilities and fede ral deposit insurance programs may induce
+banks to ﬁnance riskier bets than they might otherwise undertake if such policies
+were absent.
+20You can view the clip on YouTube: www.youtube.com/watch?v=MJJN9qwhkkE
+21One might note that the “run” on George Bailey’s bank was in fact precipitated not by
+unsubstantiated rumour, but by the fact that he had lost a substantial part of the bank’sassets.
+22See, for example, Allen and Gale (1998).
+23Support for this view can be found in the fact that Canada experienced no bank failures
+during the Great Depression (Canadian banks were allowed to open branches across the coun-try; whereas U.S. banks were largely prohibited from opening branches beyond their state
+borders).
+17
+5F u r t h e r R e a d i n g s
+For an accessible and short history of private money-issue and banking in the
+United States, see Champ (2007). Rolnick and Weber (1985) dispel some com-monly held myths concerning a famous episode in the history of banking. Rol-nick, Smith, and Weber (2000) examine an interesting historical episode of a
+private central bank. Smith (1936) documents the early debates concerning the
+relative merits of central banking in several countries.
+18
+6 References
+1. Allen, Franklin and Doug Gale (1998). “Optimal Financial Crises,” Jour-
+nal of Finance , 53: 1245—1284.
+2. Bodenhorn, Howard (1993). “Small-Denomination Banknotes in Antebel-
+lum America,” Journal of Money, Credit, and Banking , 25(4): 812—827.
+3. Champ, Bruce (2007). “Private Money in Our Past, Present, and Future,”
+Federal Reserve Bank of Cleveland Economic Commentary , www.clevelandfed.org/
+research/ Commentary/ 2007/010107.cfm
+4. Diamond, Doug (2007). “Banks and Liquidity Creation: A Simple Expo-
+sition of the Diamond-Dybvig Model,” Federal Reserve Bank of Richmond
+Quarterly Review , 93(2): 189—200.
+5. Diamond, Doug and Philip Dybvig (1983). “Bank Runs, Deposit Insur-
+ance, and Liquidity,” Journal of Political Economy , 91(5): 401—419.
+6. Kiyotaki, Nobuhiro, and John Moore (2002). “Evil Is the Root of All
+Money,” American Economic Review , 92(2): 62—66.
+7. Kocherlakota, Narayana (1998). “The Technological Role of Fiat Money,”
+Federal Reserve Bank of Minneapolis Quarterly Review , 22(3): 2—10.
+8. Ostroy, Joseph (1973). “The Informational E ﬃciency of Monetary Ex-
+change,” American Economic Review , 63: 597—610.
+9. Rolnick, Arthur J. and Warren E. Weber (1985). “Banking Instability and
+Regulation in the U.S. Free Banking Era, Federal Reserve Bank of Min-
+neapolis Quarterly Review (Summer), www.minneapolisfed.org/ research/
+QR/ QR931.pdf
+10. Rolnick, Arthur J., Bruce D. Smith, and Warren E. Weber (200). “The
+Suﬀolk Bank and the Panic of 1837,” Federal Reserve Bank of Minneapolis
+Quarterly Review , www.minneapolisfed.org/ research/ QR/ QR2421.pdf
+11. Smith, Vera C. (1936). The Rationale of Central Banking ,W e s t m i n s t e r ,
+England: P.S. King & Son Ltd. (Reprinted by the Liberty Press, 1990).
+12. Townsend, Robert (1987). “Econom ic Organization with Limited Com-
+munication,” American Economic Review , 77: 954—971.
+19
