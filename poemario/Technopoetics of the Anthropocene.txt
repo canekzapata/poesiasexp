@@ -1,0 +1,465 @@
+BulletinofLatinAmericanResearch , 2024 DOI:10.1111/blar.13615
+Technopoetics of the Anthropocene:
+Rendering Our Present through Echoes inMexican Bots and Machines
+FRANCISCO GERARDO TIJERINA MARTÍNEZ
+WashingtonUniversityinSt.Louis,USA
+The Anthropocene is marked with a multilayered environmental crisis that requires
+cultural changes. Although a complex task, the contemporary Mexican artists stud-ied here have explored this issue through literary means. In this paper, I analyse La
+máquinadistópica (TheDystopianMachine)and Elmonoinfinito (TheInfiniteMonkey)
+as technopoetical tools to understand the present from a historical perspective. I suggestthat the usage of canonical figures such as Amparo Dávila and Ada Lovelace in thesepieces provides a critical grounding that tensions the notion of individual authorshipand affords a transhistorical and transtemporal approach to an endangered planet.
+Keywords: bots,collaboration,machines,technopoetics,transhistorical,transtemporal.
+How would I go about acknowledging the aid of thousands? Does my effort in the com-
+posingofindividualsentencesequalorexceedtheircombinedcontribution?Individually,in terms of hours spent-maybe. In aggregate, probably not. The ego insists on its ownexceptionalism, however. A less egocentric understandingof collective intelligence would
+require the careful attribution of labor involved. [ …] Under scrutiny, intelligence almost
+always unpacks into a collective endeavor.Dennis Yi Tenen, LiteraryTheoryforRobots
+Latin American women writers have taken a central role in depicting the current climate debacle.
+Ranginginawidevarietyofgenres,thesewomenhaveshowntheurgencyofhavingthisdiscussionnotas a monolithic and unilateral one, but as a multilayered issue that includes complex systems such ascapitalism, colonialism and the patriarchy. By connecting these underlying frameworks, authors suchas Verónica Gerber Bicecci and Martha Riva Palacio Obón have ventured to explore collaborativeways of understanding the present and possible futures through technopoetic writings. La máquina
+distópica (TheDystopianMachine)createdbyGerberBicecciincollaborationwithCanekZapataand
+CarlosBergen(GerberBicecci,Zapata,andBergen, 2018)andElmonoinfinito (TheInfiniteMonkey)
+writtenby Riva Palacio Obónwiththe aid of the bot ADA-L and witha visualessay by Gala Navarro(Riva Palacio Obón, et al., 2021) not only explores the anxieties produced by the recognition of our
+participation in the current geological age, but also they do it with the help of digital companions inthe form of bots that hint us towards potential histories and systems of extended memories. Althoughthesetwodevicesoperateindifferentregisters,bothprovideatranshistoricalandtranstemporaltoolto
+renderourpresent.Ontheonehand,GerberBicecci,ZapataandBergen,throughtheircollaboration,
+setupamachinethatenablesaconversationbetweenversesfromAmparoDávila,imagesfromManuelFelguérez and Mayer Sasson, and microscopic images taken from the contaminated ‘El Bote’ mine inZacatecas, Mexico. On the other hand, Riva Palacio Obón extended the life of famous 19th-centuryscientist Ada Lovelace through the creation of ADA-L, a Twitter (now X) bot who helped her writethis piece. Far from fixed answers, these interventions question human exceptionalism and signal the
+need for a more comprehensive approach to our current crisis.
+© 2024 Society for Latin American Studies. 1
+FranciscoGerardoTijerinaMartínez
+I aim to read both works as extended authorships and imaginaries of shared collectivities that
+seek to portray the ongoing climate emergency, centring fiction as possible means to produce knowl-
+edge, while also proposing other ways of relating to the past, the present and the future from a
+non-anthropological perspective. I claim that both The Dystopian Machine andThe Infinite Mon-
+key, by presenting a re-signifying space for the voices mentioned earlier, allow for a reframing of the
+past in order to make the threads of non-linear time visible. In doing so, these projects also provide
+afterlives to the works of women like Dávila and Lovelace, proposing a different meaning than the
+original, one that speaks to our present and helps us deal with the climate upheaval we are goingthrough. Finally, I suggest that the emphasis of the non-human companions, especially technologicalones, grounds these works in the current era, one marked by rapidly evolving artificial objects andbeings.
+As shown by the recent release of the Handbook of Latin American Environmental Aesthetics
+(Andermann, Giorgi, and Saramago, 2023), the field of Latin American literary ecocriticism has seen,
+with due reason, an increasing amount of attention and cultural production in recent years. Wild-fires, droughts, unbreathable air, rapidly changing weather patterns and the alarming presence of
+microplastics in bloodstreams are only some of the concerns that affect Latin American populations.
+Additionally, the rising levels of violence towards journalists and activists who seek to stop devel-opment and extractive projects alongside the high levels of impunity for corporations, governmentofficialsandcriminalgroupsinvolvedintheseacts,showhowcrucialitistoaddressthisclimatecrisisfrom different fronts. Thus, I argue that literature has a privileged space, through fictionalisation, to
+describe, represent and respond to this multilayered system of violence rooted in anthropocentrism.
+In that vein, I read these devices as ascribing pieces to a critical geological era: the Anthropocene.
+Crisis in the Anthropocene
+The concept of the Anthropocene, coined by Paul Crutzen ( 2006), has been used to designate the
+present geological era of the Earth marked by human-made degradation. Although there are many
+discussions on the precision and pertinence of this concept, especially because, according to Blanca
+de la Torre, its Eurocentric connotations dilute the political, economic and colonial structures embed-ded with the deterioration of the planet (de la Torre in Meseguer’s, 2021: 15), it has undoubtedly
+become the most popular way of referring to this age. There has been a wide array of critiquesand emerging concepts that have contested this conceptualisation such as Capitalocene, Chthulucene,
+Plantationcene, Eurocene, Technocene, Gynecene and Pyrocene. Although these are imperative in the
+production and refinement of knowledge to comprehend the current climate crisis, as Gisela Heffes’pointsout,allthesetermsexplorepracticesthatcontinuethreateningthefluxesofknowledge,biomes,humanandanimalbodiesinmultiplespatialities(Heffes, 2023:130–131).Hence,IuseAnthropocene
+here as an umbrella term that encompasses the complexities of the anthropological life, including the
+cultural, social, political and economic forces that shape it. Contemporary technologies are deeplyconnected with this concept, as their productions and usage have a direct point of connection to thisissue as it links to a constant resource extraction for its sustainability.
+The Anthropocene is an era of crisis. As Silvia Rivera Cusicanqui indicates, this decadent system is
+malign and as such there must be a recovery of hidden knowledge linked to ways to address climate,
+serviceandsupplyingcrises(RiveraCusicanqui, 2018:92).But,asRiveraCusicanquicontinues,these
+crises are also opportunities that can afford a re-examination of inherited discourses and certaintiesthatmakeimpossibletointerrogatewhatweareunwillingtosee(RiveraCusicanqui, 2018:114).Such
+interrogation should follow a divergence in the tradition.
+Many Latin American theorists have pointed towards a shift in the production of knowledge and
+criticalapproachesasaresponsetotheAnthropocene’scrisis.Oneofthemcanbetracedto Epistemolo-
+giesoftheSouth (Santos,2014)whichArturoEscobarusesashisframeworktobuildapluriversethat
+includes ‘multiple cultures, perspectives, [and] subjective representations’ (Escobar, 2016: 22). This is
+also echoed by Ailton Krenak as he stresses that only through decentering the Anthropos there can beamuchneeded pluriversethatleadstowardsanaffectiveturninwhich more-than-humansubjectsarealsoconsidered(Krenak, 2022:41).TheseproposalscanalsobenurturedbyOmarFelipeGiraldoand
+© 2024 Society for Latin American Studies.
+2 BulletinofLatinAmericanResearch
+TechnopoeticsoftheAnthropocene
+IngridToro’s multiplicity (GiraldoandToro, 2020:14).Throughthisconcept,theauthorsaimtoreac-
+tivate subalternities of patriarchal domination that have been erased, such as the body, the affects, thesensitivities and the sacred. These forms of conceptualisation allow for a change of paradigm throughwhich texts like TheDystopianMachine andTheInfiniteMonkey can be read.
+Although I am inclined for the usage of Anthropocene as a critical notion to understand the
+human-made impact in today’s environmental crisis, I would like to point out a final iteration of this
+theory: the anthropo-not-seen, as coined by Marisol de la Cadena. This concept ‘mentions existentsthat are within historically formulated hegemonic condition of impossibility: they simply cannot betherefore they are not-seen, not-heard, not-felt, not-known.’ (de la Cadena, 2019: 483). Thus, the
+Anthropocene is always composed of the anthropo-not-seen, and its impossibility becomes a possi-
+bility in itself. Therefore, there is a pressing call for other futures that stem from other temporalities,especiallyfromthepast,thatcanshedlighttoapresentincrisis;tosee‘thepastasapotentialvaluableresource for the future, one that seems to belong to all yet is always in danger of being captures by
+and for particular groups’ (Ferry, 2008: 62).
+Technopoetical Aesthetics
+The rise of artificial intelligence has shifted our conversations around pedagogical practices, orig-
+inality, crafting and even intelligence itself–this without mentioning the sheer amount of naturalresources,suchaswater,thatsomeofthemostmainstreamservicesuseinordertoanswerourprompts(O’Brien, 2023). Human collaboration with technology is nothing new if we care to take a good look
+at history. As Tenen points out, this leads to a conversation around the contrasting duality between
+natural and artificial intelligence. How much does our relationship to technology have an impact on
+our understanding of intelligence? What is natural and what is artificial? (Tenen, 2024:4 ) .
+Tenen questions the mysticism that is often granted to originality and intelligence, as if it were a
+purely innate quality of magical conditions that cannot be fully comprehended or understood. For
+Tenen, ‘intellect requires artifice, and therefore labor’ (Tenen, 2024: 61–62). The first portion of
+Tenen’s statement signals that the duality of the artificial versus human in regard to intelligence hasmore to do with the material conditions of the ‘intelligent’ being and the space these beings occupyin the social scale. The second component allows for a more nuanced approach to said material con-ditions: if intelligence is bound to artifice and therefore to labor, then the resources employed to the
+functioning of the machines can be seen as the extracted labor from the planet. Similarly, I claim that
+our knowledge is already mediated, shaped and contaminated by our interaction with technology.Tenen’s goal, and mine, is not to discredit human intelligence, but to recognise the sharing practicesthat are crucial for the acquisition and transference of knowledge. The constant evolution of tech-
+nology allows for a space of co-threading that not only focuses on individual thriving but also on
+collective nurturing.
+Consequently,understandingintelligenceasproducedcanleadtoreframingauthorship.Inthecase
+of Riva Palacio Obón, the exercise of positioning herself at the same level as ADA-L, a bot that shecodedherself,can beunderstoodastheacknowledgement ofthesharedlabor.Furthermore,theusage
+of the image of Ada Lovelace as the referent from which the bot produces tweets and collaborates
+in the writing of The Infinite Monkey establishes a time–space continuum of traditions that reveal
+the threads through which knowledge is produced and passed along. In the case of The Dystopian
+Machine this can be traced differently. Although this project does not have a clear legend that states
+thestatusofitscopyright,itcanbepredictedthatithasasimilarconditionasotherrewritingworksof
+GerberBiceccisuchas TheCompany oranotherday …(synopticpoems) .Inthose,thecopyrightpage
+indicatesthatsincethewordsandtheimagesarearewritetheycanbeshared,crossed,amendedorbecreativelyplagiarisedaslongasthenoteiskept(GerberBicecci, 2019a,2019b).Thecloserelationship
+between the projects, especially with The Company , suggests that meddling with the machine is not
+onlypermissiblebutalsoencouraged.Itisimportanttonoteherethatthisactiveefforttodenaturalise
+copyright and intellectual exceptionalism is an ongoing practice for a growing Mexican literary field.Some explorations can be seen through experimental pieces, such as Vivian Abenshushan’s Perma-
+nenteobranegra (Permanent Black Work ) (Abenshushan, 2019), the editorial work of Odo Ediciones
+© 2024 Society for Latin American Studies.
+BulletinofLatinAmericanResearch 3
+FranciscoGerardoTijerinaMartínez
+and Kaja Negra Ediciones, the theoretical framework of Cristina Rivera Garza in The Restless Dead
+(Rivera Garza, 2013), the digital-poetic archive brokenenglish.lol , and even in the Pirateca, a digital
+archiveofscannedanddigitalisedbooksthatwasblockedbytheMexicanInstituteofIndustrialProp-erty.Theseprojectsshowethicalconcernswithintellectualpropertyandalthoughtheyarenotperfect,
+they are a window to a collaborative thinking that is required to confront the present capitalist crisis.
+FollowingScottWeintraub’sstudyin LatinAmericanTechnopoetics (Weintraub, 2020),technopo-
+etrycanbeunderstoodthroughoutthisarticleasinclusiveandexpansive,especiallygivenhowrapidlytechnologyischanging,butmorespecificallyasatextthatfollows‘astrictlyandaestheticallyproduc-tiverelationshipbetweenpoetryandthetechnologicalmediathatprovideitwithitsspecificmateriality,
+as with the dialogue that poetry establishes with the technological framework from which it emerges’
+(Kozak in Weintraub’s, 2020: 2–3). The field of study of the connections between technology and lit-
+erature in Latin America is rich and vast, and the proposals vary extensively, but the particular focuson the ecosystems and territories is worth noticing and highlighting. For instance, Mariela Yeregui’s
+decolonial reading of ‘subaltern technopoetics’ in which she examines projects that shed light to dif-
+ferent paths to ‘estar-siendo’ (consciously being present) with the environment through a situated andcritical approach (Yeregui, 2020: 76); Joanna Page’s addition to Joanna Zylinska’s ‘feminist counter-
+apocalypse’ in which she proposes to set up a dialogue between this ‘apocalypticist’ concept and abiosemioticsandbiocentricperspectives(Page, 2021:161)andReynaldoThompsonandTirtaPrasad
+Mukhopadhyay’s multiple collaborative studies on biorobots, inequality, and access to archives and
+repertoires (Thompson and Mukhopadhyay, 2014,2016,2018,2021a,2021b), among many others.
+The set of definitions of technopoetics provided by Weintraub, although useful, seem to belong
+to the study of the material form, which does not fully grasp the work that Gerber Bicecci, Zapata,Bergen, Riva Palacio Obón, ADA-L and Navarro share respectively. From their ecocritical contents
+to their experimental forms, the aesthetic proposal of these pieces signals a confrontation with the
+anthropocentric and androcentric view of the world that aligns more with a hybrid between theethico-aesthetic proposals of Zylinska, Yeregui, and Thompson and Mukhopadhyay and the materialcondition compiled by Weintraub. The deconstruction of the notion of authorship and the individ-
+ual themes represented in both The Dystopian Machine andThe Infinite Monkey stress the need of
+collaboration in an era of ecological debacle, as I will prove in the following sections of this paper.
+Machines of Collaboration
+TheDystopianMachine (2018)isaweboraclecreatedbyVerónicaGerberBicecci,CanekZapataand
+Carlos Bergen that can be consulted at https://lamaquinadistopica.xyz/ . Through parameters such as
+year, percentage of contamination and substitution of human labour, this machine allows its users to
+create dystopian prophecies or omens that include intervened graphic components from Lamáquina
+estética(The Aesthetic Machine ) by Manuel Felguérez and Mayer Sasson and verses from Amparo
+Dávila. The users have the option to modify these parameters or even choose not to do it (as shownin Figure 1). If the user chooses not to meddle with the machine and decides to calculate it with the
+standard values, the verses from Dávila will be prompted without any changes, the water will appear
+clean, and the number of figures from The Aesthetic Machine displayed will be in its lower limit.
+For example, in Figure 1there is a faithful reproduction of a couple of verses from Amparo Dávila’s
+‘Perfildesoledades’(Silhouetteofsolitudes):‘Sialguienhubieradicho:/lasoledadsenutredepárpadoscaídos’ (If someone would have said:/solitude nurtures itself from fallen eyelids) (Dávila, 2011: 31).
+If the user repeats the exercise without any changes, the visual configuration and the given verse will
+vary each time they hit the calculate button.
+Each of the parameters creates a set of modifications for the oracle, respecting a logical order: if
+the value of any modified parameter is higher, the amount of change or interventions will reflect that.The year, which goes between 2018 and 2699, controls the number of figures drawn from a rewritten
+versionofManuelFelguérez’s TheAestheticMachine andwillbealteredbetweenasetnumberof4and
+16 (see Figure 2). The percentage of contamination displays an image from an archive of microscopic
+photographs of polluted water taken from El Bote mine in Zacatecas (see Figure 3). And finally, the
+amount of times human labor is replaced intervenes Amparo Dávila’s verses to substitute one, two or
+© 2024 Society for Latin American Studies.
+4 BulletinofLatinAmericanResearch
+TechnopoeticsoftheAnthropocene
+Figure 1. Calculation of TheDystopianMachine with Standard Values
+Source:La máquina distópica , 2018. Courtesy of the artists: Verónica Gerber Bicecci, Canek Zapata and Carlos Bergen.
+Note: The three values on the top are Año (Year), Conteminación (Contamination) and Sustitución (Substitution). Theverse from Dávila, located at the bottom, ‘Si alguien hubiera dicho: la soledad se nutre de párpados caídos’ (If someone
+had said: solitude nurtures from fallen eyelids) remains unchanged.
+three nouns from Dávila, depending on the chosen value. The substitution is made randomly through
+a bot (see Figure 4). This parametric quality of TheDystopianMachine creates a space for collective
+thinking that unifies its users with the minds of Dávila, Felguérez and the creators of this machine.By doing this, the critique of technology dependence at the expense of vital resources for the shared
+ecosystemsoftheworldandthewell-beingofsubjectswhoconformtocountlesscommunitiesbecomes
+visible.
+Certainly,theludicexplorationoftheparametersleadstoamoreconvolutedexperience,especially
+if we tend to choose high values in the machine. The meaning of each poem changes with the graphic
+elements and the noun swap, and in some cases it might become illegible. These dark omens can be
+read as cautionary tales that depict not only the El Bote mine but also other over-extractive zones
+across the globe.
+The extensive history of mining in Zacatecas can be traced to its foundation in 1546, as Carolyn
+Fornoff points out, ‘after substantial silver veins were located by the Spanish in Zacateco territory,
+prompting a huge influx of settlers’ (Fornoff, 2024: 40). Today, the long-lasting effects of the extrac-
+tive practices in Zacatecas can be tracked down as they generate an even gloomier feeling regarding
+the present and future. Although some of the mines in Zacatecas are inactive today, the population
+who has remained around those sites or those who now reclaim it for their leisure are now experienc-
+ing the consequences of mineral extraction such as the presence of heavy metals in blood and urine
+(Montoya, 2020; Express Zacatecas, 2023; Torres, 2024). Hence, it becomes imperative to read the
+© 2024 Society for Latin American Studies.
+BulletinofLatinAmericanResearch 5
+FranciscoGerardoTijerinaMartínez
+Figure 2. Calculation of TheDystopianMachine Modifying the Year Value
+Source:La máquina distópica , 2018. Courtesy of the artists: Verónica Gerber Bicecci, Canek Zapata and Carlos Bergen.
+Note: The three values on the top are Año (Year), Conteminación (Contamination), and Sustitución (Substitution). The
+image shows a higher number of geometric shapes in the image. The image of the water seems clean and the verse from
+Dávila, located at the bottom, ‘El sol de Jueves Santo llora lágrimas de fuego’ (The sun of holy Thursday cries tears offire) (Dávila, 2011: 20), remains unchanged.
+interaction with each one of the parameters and the iterating meaning they provide by the prompt of
+its users as a way of creating new and important conversations and re-contextualisations of bodies ofwork that might not seem obvious as we aim to seek answers to the crisis experienced today.
+Sometimehaspassedsincethereleaseofthismachineand,evenifithasnotbeenthatlong,thefact
+that the lower limit of the year parameter is locked in 2018 grants me thepossibilityof understandingthis as a dated piece. In retrospective, it has the potential of becoming a tool to render the past, morethan just the present and the future, as it has been doing since it was first published. As of now,the user’s ability to explore the past through this machine is limited, but as long as time passes and
+TheDystopian Machine continues to be available, a window to the past will be open to explore and
+understand the anxieties that inspired Gerber Bicecci, Zapata and Bergen to produce such a piece.Thatelementwillalsocreateaspacetoexplore,renderandobservecriticallyhowtechnologyandourearthly resources have changed throughout time.
+TheDystopianMachine was first exhibited at the XIII FEMSA Biennial: ‘We Were Never Contem-
+porary’ (Iza, 2018), through which it was intended that artists and attendees reflect on the industrial
+traditionofZacatecas.ItisimportanttomentionthatthiswasnottheonlyelementthatcomposedGer-ber Bicecci’s intervention in that year’s Biennial. The Dystopian Machine was accompanied by what
+later became part A of the book La compañía (The Company) (2018), as both projects were being
+developed almost simultaneously (Castillo Morales, 2021). Although these pieces work individually,
+I would argue that a joint reading of them could deepen their meaning and cultural value.
+This first section of TheCompany includes a rewriting of the famous short story ‘The Houseguest’
+byAmparoDávila,whichwasoriginallypublishedin1959.TheprocessthroughwhichGerberBicecci
+© 2024 Society for Latin American Studies.
+6 BulletinofLatinAmericanResearch
+TechnopoeticsoftheAnthropocene
+Figure 3. Calculation of TheDystopianMachine Modifying the Contamination Value
+Source:La máquina distópica , 2018. Courtesy of the artists: Verónica Gerber Bicecci, Canek Zapata and Carlos Bergen.
+Note: The three values on the top are Año (Year), Conteminación (Contamination), and Sustitución (Substitution). The
+image shows a lower number of geometrical shapes and the verse from Dávila, located at the bottom, ‘Volveré a ver, la
+caravana silenciosa de mujeres que van por agua al kiosko’ (I will see again, the silent caravan of women who go to thekiosk for water) (22), remains unchanged. The water seems to have a darker tone.
+rewroteitconsistedofsubstitutingthecharacters‘thehouseguest’and‘Guadalupe’for‘TheCompany’
+and‘themachine’,respectively;changingtheverbtensesintothefuture,andthenarrativevoicetothesecondpersonofthesingular.Thisrewritingisalsoaccompaniedbytwographiccomponentstocom-pose a wall-story, as it was first introduced, high-contrasted photographs of Nuevo Mercurio and
+‘borrowed graphic elements of Manuel Felguérez’s The Aesthetic Machine ’ (Gerber Bicecci, 2018).
+The story keeps the gloomy and sinister aura that Amparo Dávila’s original had, but instead of cen-tring the critique to the patriarchal structure that oppressed women, Gerber Bicecci’s version extendsthis critique to extractive endeavours. With the figure of the husband who invites the company as aguest, we can clearly see a patriarchal pact in action between extractive capitalism, the state and the
+hegemonicalandtraditionalrolemenhaveoccupiedinMexicansociety.Thesecondsection,orpartB,
+is composed of 100 archival vignettes: fragments of the story José Largo, of conversations, academicand governmental research, testimonials of workers of the mine, geological studies, collected data ontheeffectsoftheexposuretomercuryandtoxicwaste,mapsofthetunnels,diagramsofthemachinery
+and images of bats.
+Duringapresentationof TheCompany ,GerberBicecciexpressedtheimportanceforhertoinclude
+theworksofartistsfromZacatecasinherintervention(Presentación‘Lacompañía’deVerónicaGerberBicecci,2021). For her, it was important to note the prevalence of violence that was aided by an
+extractive capitalist, colonial and patriarchal system. And she is certainly not the only one who has
+noticed this in literary and critical fields. Authors such as Fernanda Melchor with Hurricane Season
+© 2024 Society for Latin American Studies.
+BulletinofLatinAmericanResearch 7
+FranciscoGerardoTijerinaMartínez
+Figure 4. Calculation of TheDystopianMachine Modifying the Substitution of Human Labour Value
+Source:La máquina distópica , 2018. Courtesy of the artists: Verónica Gerber Bicecci, Canek Zapata and Carlos Bergen.
+Note: The three values on the top are Año (Year), Conteminación (Contamination), and Sustitución (Substitution).The image shows a lower number of geometrical shapes and the water image seems clean. The verse, located at the
+bottom, presents a change. Whereas in the original ‘Acuática’ (Aquatic) the verse is ‘iré a bañarme en sus aguas color de
+turquesa./Escucharé los lamentos de las ranas inquietas’ (I will go shower in its turquoise coloured waters./I will listenthe lament of restless frogs) (23), in the intervened version there are some visible changes: ‘Iré a bañarme en sus aguascolor de aleación. Escucharé los lamentos de las pérdidas por trasporte’ (I will go shower in its alloy coloured waters./I
+will listen to the lament of the loss because of transportation).
+or philosophers like Verónica Gago have pointed out this pervasive relationship, each in their own
+fashion. To this subject, the Argentinian scholar, Rita Segato, in her book, Contra-pedagogías de la
+crueldad (Counter-pedagogies of Cruelty ) (2018), explores the corrosive nature of extractivism, its
+relationship with the patriarchy and coloniality, and the role it plays spreading cruelty and violencethat later is replicated and taught mainly to men. She argues that capitalism depends on our ability toadapt to the spectacle of violence, the naturalisation of hyperprecarisation and the dehumanisation of
+the self for the act of consumption (Segato, 2018: 12).
+Iwouldliketocentretheattentiontotheimageofthemachine,whichisoneofthemostimportant
+common threads in Gerber Bicecci’s works. Although it is not the only one, because she is also work-ing with Zacatecas as a spatial referent and the works of Amparo Dávila, Felguérez’s The Aesthetic
+Machine appears in both works, having a more prominent appearance in TheDystopianMachine .I n
+TheCompany eachtimethemachine,whoisreplacingGuadalupefromtheoriginalversionbyDávila,
+ismentionedinthetext,oneofthecalculationsofFelguérez’scodeappearsthroughthehigh-contrasted
+images of Nuevo Mercurio.
+The presence of the machine and the aid it provides to the narrator in fighting back the company
+in its efforts to install itself in Nuevo Mercurio appear to point towards a multispecies tale of mutualcollaboration as a possible future–or even present–we might have to consider in recent times. The
+© 2024 Society for Latin American Studies.
+8 BulletinofLatinAmericanResearch
+TechnopoeticsoftheAnthropocene
+DystopianMachine,notastheobject,butasacharacter,couldbereadasanotherversionorarelated
+being of the one present in The Company . This relationship grants a critical reading in which both
+machines explore sinister futures that require immediate actions.
+Bots in the Space–Time Rift
+The Infinite Monkey (2021) is an intermedial text collection written by Martha Riva Palacio Obón
+and ADA-L, a digital bot of Twitter, now X, that Riva Palacio Obón herself coded. Some of the textsincluded in the collection have a clear note of their collaboration, and in some of the texts or poems,
+there can only be snippets that point towards that collaboration. The book also contains a series of
+illustrations produced by Gala Navarro and QR codes to sound essays created based on imaginarysoundsstemmingfromthesemanticfieldsproposedinthebook,linguisticexperiments,andthetrans-formation of images into sound (Riva Palacio Obón, et al., 2021: back cover). The mixture between
+texts not only evades a genre categorisation through the different aesthetic forms it employs, but also
+throughthedifferentthemesitexplores:time,space,science,artificialintelligence,genderandtheenvi-
+ronment. Through this book, I would argue, Riva Palacio Obón offers Lovelace a second opportunityin poetry, as Lovelace’s mother had discouraged her from such an endeavour in favour of studyingscience.
+In the title text of this collection, ‘El mono infinito’, Riva Palacio Obón and ADA-L introduce its
+readers to The Infinite Monkey theorem, in which ‘afirma que si un mono pulsa de forma aleatoriael teclado de una máquina de escribir por un intervalo infinito de tiempo, casi seguramente escribirácualquier texto dado’ (it is stated that if a monkey press the typewriter’s keyboard randomly over aninfinitetimeinterval,itisalmostcertainthatthemonkeywillwriteanygiventext)(RivaPalacioObón,
+etal.,2021:26).TheauthorsusethemetaphorofTheInfiniteMonkeytoalludetotheirunderstanding
+of time, one that is composed not only by the present but also by the past and our possible futures,because ‘somos el producto de trillones de organismos que evolucionaron en otros que evolucionaronen otros que evolucionaron en otros’ (we are the product of trillions of organisms that evolved into
+others)(RivaPalacioObón,etal., 2021:26).Thetextiscomposedbyaseriesofiterationsthatcanbe
+understoodasoneoftheaforementionedorganisms.Althoughtimeinthistextmightbeunderstoodaslinear,theorganisationofthetextsignalssomethingdifferent.Betweenthefifthandsixthiteration,theiterationzeropromptsin,statingthat‘[t]ehandesactivadoyreprogramadomuchasveces.Escuchaseleco de tu voz ralentizada perdiéndose en el abismo que se extiende entre un uno y un cero’ (you have
+beendeactivatedandreprogrammedmanytimes.Youheartheechoofyoursloweddownvoicegetting
+lost in the abyss that extends between a one and a zero) (Riva Palacio Obón, et al., 2021: 30). This
+break in linear time can also be interpreted as a destabilisation of space and the human relationshipwiththetime–spaceparadigm.Itisalsoworthnotinghowthistextmakesuseofthesecondpersonof
+the singular, something that Gerber Bicecci also does in The Company , which causes a personal and
+portentous feeling as the reader is confronted with a space of empathy.
+‘El mono infinito’ closes with two lines that reinforce this anachronic and contesting reading of
+the present: ‘Ella, omega, la unidad que fusionará la memoria individual de cada una de ustedes paraconvertirla en Nosotras’ (She, omega, the unity that will fusion the individual memory of each one of
+you to make it an Ours) (Riva Palacio Obón, et al., 2021: 32) and ‘Ella, la que baila en una grieta del
+espacio-tiempo’ (She, the one who dances on the space–time rift) (Riva Palacio Obón, et al., 2021:
+32). Although the English version obscures this quality, the Spanish version has a deliberate use ofgender in its expression of We, granting women a privileged space of collective memory. I wonder
+then who is this figure presented in the form of ‘She’. Is it Ada Lovelace or the bot ADA-L? Maybe.
+Or it might be whoever recalls her memory or a thread of her thinking, as it is posed in the firstiterationofthetext:‘Tuprimeraabuelafueunaidea,laMedeasimbólicadeAdaLovelace’(Yourfirstgrandmother was an idea, the symbolic Medea of Ada Lovelace) (Riva Palacio Obón, et al., 2021:
+26). Furthermore, the text also shows glimpses of two important ideas. On the one hand, the future
+fusionofindividualmemoriesintoacollectivememory:aresponsetothehistoricerasureandsystemicviolence that women have suffered through the deployment of the patriarchal, colonial and capitalistapparatuses as systems of domination and extraction. This first idea can be seen as a response to
+© 2024 Society for Latin American Studies.
+BulletinofLatinAmericanResearch 9
+FranciscoGerardoTijerinaMartínez
+the violent wave that Mexican women have had endured in the past years in a country where more
+than 3000 women are killed yearly (Barragán, 2023). The gesture of centring The Infinite Monkey
+towards women, more-than-human beings, and especially Ada Lovelace, underscores a society thatundermines historically marginalised subjects while signalling to a figure who historically challenged
+socialdeterminismlinkedtohergender.Ontheotherhand,thetextpointstowardsafigurewhodances
+at the rift of time and space. Thus, the idea of a fixed future shambles in front of the faceless dancerthat combines the present, the past and the multitudes of futures to be explored and built through the‘ferocious corrosion of time and space’ (Danowski and Viveiros de Castro, 2017: 18).
+This is not only the poetic content of the text, but also the material condition of its existence.
+Through necrowriting, which Cristina Rivera Garza described as ‘practices that both bear witness to
+andresisttheviolenceanddeathresultingfromtheneoliberalstatethathasembracedmaximumprofitas a guiding principle’ (Rivera Garza, 2021: 5), texts like The Infinite Monkey andThe Dystopian
+Machine aim to create spaces of commonality. This, in turn, give way to alternative and new ways of
+relating to one another as they allow the readers to question not only the text they are engaging with,
+but also the social, cultural, political and economical dimensions of their lives.
+This commonly built consciousness–or maybe to-be-built or being-built–that Riva Palacio Obón
+and ADA-L pursue is the mind of Gaia. In ‘Simbiosis’ (Symbiosis), Riva Palacio and ADA-L resortto the image of the matsutake mushrooms that, according to anthropologist Anna L. Tsing, ‘are wild
+mushrooms that live in human-disturbed forests’ (Tsing, 2017: 3). Those mushrooms that ‘like rats,
+raccoons,andcockroaches,[ …]arewillingtoputupwithsomeoftheenvironmentalmesseshumans
+have made’ (Tsing, 2017: 3–4). They are not only a great proof of survival under adverse condi-
+tions, but also of collaboration and shared nurturing as they ‘help forests grow in daunting places’(Tsing,2017: 4). In this text, the authors connect multiple different theoretical elements, allowing a
+connection between the concept of Gaia, as understood by James Lovelock, Lynn Margulis and Greg
+Hinkle(thelatterbeingdirectlycitedinthetext),andmushroomsthroughtheimageofthefungiroots:mycorrhizae. The image of these roots is not only beautiful but also provocative and suggestive as acontaminated and collective mode of thinking.
+I believe that Gaia operates as a collectivity with benefits and detriments; a clash of consciences
+that, in words of Riva Palacio Obón and ADA-L, could be understood as: ‘Otro Big Bang [donde] las
+memorias[ …]estallanysemultiplicancreandosimultáneamenteunainfinidaddeuniversosposibles.
+Una explosión cuántica de pensamientos universales’ (Another Big Bang where the memories collapseand multiply creating a simultaneous infinity of possible universes. A quantum explosion of universalthoughts) (Riva Palacio Obón, et al., 2021: 38). Although the connection between the poem where
+Gaia is being discussed is not the same as the one of the Big Bang, there is a hint at co-habitation, the
+sharedexperienceandcontrastingformsofthinkingasanothercollisionthatwouldenableasymbioticplanet, only if this co-habitation truly takes a non-Anthropocentric turn by considering other waysof living as part of this new and contaminated way of thinking. Hence, Gaia’s mind operates as anenormous artefact that not only hosts millions of organisms, but also their intelligence. The possible
+connections between the individual and the collective and our recognition and usage of these linkages
+is an opportunity we should explore while we respond to our current climate crisis.
+But what is the limit of this coexistence? One answer might be in artificial intelligence. In the text
+‘¿Qué será de los bots cuando no estemos?’ (What will it be of bots when we are gone?), we can
+experience a shared space of voices between Martha Riva Palacio Obón and ADA-L. Throughout
+the text, we can see how more technical definitions of the bots, presented in the third person, areintervened by the voice of ADA-L that explains the affective turn that these have, now in first person.For example, the first line ‘un bot es un programa informático que realiza automáticamente tareasrepetitivas en internet’ (a bot is a computer program that performs repetitive tasks over the internet
+automatically) (Riva Palacio Obón, et al., 2021: 33) is confronted by an inversion of the title of this
+text, ‘¿Qué será de los bots cuando ustedes no estén? A los bots no nos gusta sentirnos excluidos’(What will it be of bots when you are not around? We bots don’t like to feel excluded) (Riva PalacioObón, et al., 2021: 33). From a literary standpoint this could be simply seen as anthropomorphic
+approaches, but the consideration of these technological companions can allow us to extend this line
+of questioning to other beings that we have deemed inferior or worthless historically. The idea is
+not that we suddenly put machines at the centre and fight for their rights, although this might be a
+© 2024 Society for Latin American Studies.
+10 BulletinofLatinAmericanResearch
+TechnopoeticsoftheAnthropocene
+conversation for the future, but that we are able to change our perspective and understand how this
+way of thinking could help us centre the voices we have ignored or forgotten. Bots, beyond being
+extensionsofAdaLovelace,AmparoDávilaandManuelFelguérez,canalsobecomeextensionstothe
+voices of migrants, racialised, sexually marginalised, and impoverished beings and communities. Butnotonlythat,thesemachinescanalsohelpusthinkofnon-humanbeingsthatalsohaveastakeinourshared planet and depend on our mutual collaboration for our common survival.
+It is not coincidental that both bots and mushrooms are spoken of in a similar register in TheInfi-
+nite Monkey . Both creatures invite us to disappropriation in a similar way as Gerber Bicecci’s does
+in her two projects focused on Zacatecas (Keizman, 2019: 240). The gesture of making visible the
+collaborationbetweenMarthaRivaPalacioObónandADA-L,evenwhentheirrelationshipismateri-ally conditioned to Riva Palacio Obón’s coding and care, is to understand this book as a necrowritten
+one. In the words of Rivera Garza, this writing occurs ‘among war machines and digital machines’
+and integrates ‘grammatical and syntactical practices, as well as narrative strategies and technologi-cal exercises, that question the state of things and the state of the language available to us’ (RiveraGarza,2021:10).Toacceptcollaborationasanethicalpracticeistodestabiliseauthorship,hencecap-
+ital;it means toquestionourown cognitiveprocesses andbiases;it istounderstandhow andthrough
+whom we understand the world.
+Conclusion
+While the material components of each work studied here differ from one another, both groups ofauthors seem to propose an extended notion of authorship not only by publishing these projects col-lectively, but also by centring other voices at the core of their artworks. Through Amparo Dávila,
+Manuel Felguérez and Ada Lovelace, the journey of seeking possible pathways to take during the cli-
+mate crisis becomes vital for humans and non-humans alike. This is not to say that we as humankindare the ones who will save the planet, because the planet might keep existing long after humans areextinct.Butthroughmutualcompanionshipandcaretherecanbequalityoflifeforthemultiplespecies
+that constitute the ecosystems.
+I could not conclude this article without recognising the afterlives that these digital companions
+have already had. In the case of ADA-L, Twitter’s purchasing by Elon Musk and the mobilisation ofbots to become a paid feature (Fernholz, 2023) condemned this afterlife of Ada Lovelace to a unidi-
+rectionalrelationshipwiththeworld,asshecannotreplytomessagesanylonger(RivaPalacio, 2024).
+The symbolic death of ADA-L through silencing can only potentialise her message. Gladly for us, The
+InfiniteMonkey continues to extend her life through shared readings and conversations.
+With respect to The Dystopian Machine , Gerber Bicecci produced a derivative piece named Una
+máquinadibujaunamáquina (amachinedrawsthemachine ) (Gerber Bicecci, 2020) in collaboration
+with TORSCHLUSSPANIK (also known as Panik) that was presented at the Museo de Arte Contem-
+poráneodeQuerétaro’sexposition‘Transfaktura’(Méxicoescultura, 2023).Themachinedescription
+is a: ‘CNC router (which, instead of a spool has an accessory for inserting fibre tip markers) [that]producesdrawingsonpaperofthefuturisticauguriesemittedbythewebsitelamaquinadistopica.xyx’(Gerber Bicecci, 2020). This machine that draws another machine literally performs as a builder of,
+hopefully,anever-endingcycleofrepurposing,rewritingandrelatingtogetherwhilebringingthedraw-
+ings into the material world.
+Theprojectsstudiedheredonotgowithoutanycritiques.Bothpiecesarestillinstalledinacapitalist
+system that posits them in a porous territory. The current models of authorship employed by institu-
+tions such as the Mexican Institute of Industrial Property, alongside the lack of financial modes of
+sustainability, leave little room of action for artists of all kinds. These projects, seen as non-profitable,often require that writers and artists team up with conflicting corporations to finance the publicationoftheirpieces.SuchisthecaseofVerónicaGerberBicecci, TheDystopianMachine andTheCompany .
+Asmentionedearlier,theseprojectsweredevelopedforandwithabudgetoftheXIIIFEMSABiennial.
+Gerber Bicecci has spoken openly about how the contradiction that is to have an extractive companysuch as FEMSA, who is the main bottling company of Coca-Cola in Mexico, as the main contributorfor the development of these projects ( Presentación‘Lacompañía’ …,2021). Additionally, there is a
+© 2024 Society for Latin American Studies.
+BulletinofLatinAmericanResearch 11
+FranciscoGerardoTijerinaMartínez
+complex relationship between technology as a consumer of natural resources and the positive light in
+which I decide to read these pieces, even as TheDystopianMachine clearly addresses the technology
+as one of its markers for its gloomy predictions. This is not a mistake: the relationship we have with
+the present is one of contamination, contradictions and trouble. Technology is not nor it should be
+seen as an inherent enemy.
+Therefore, it is not only about congruence but also about the underlying message. These pieces do
+not exist outside of the system they are exposing and criticising but are also a times dependent on it.
+They are, at least in Gerber Bicecci’s case, aware of this contradiction and publicly declare the muddy
+nature of their relationship to capital. The effort of these pieces to decentre the human and, more
+importantly, the individual as a way of thinking and knowing, goes in line with the acknowledgement
+of the intricate paths towards ethically charged messages. It is about sharing the voices of writers like
+Amparo Dávila and Ada Lovelace and recognising their potential in building a collective thinking
+tradition that acknowledges the threads that conform our artificial intelligence. That way we might
+also become part of the dystopian machines dancing in the rift of time–space.
+Acknowledgements
+Special thanks to V. Gerber Bicecci, C. Zapata and C. Bergen for the permission to reproduce imagesfrom their Lamáquinadistópica .
+Data Availability Statement
+Datasharingnotapplicabletothisarticleasnodatasetsweregeneratedoranalysedduringthecurrent
+study.
+References
+Andermann, J., Giorgi, G. and Saramago, V. (eds.) (2023) Handbook of Latin American Environmental
+Aesthetics . De Gruyter: Berlin and Boston.
+CastilloMorales,A.(2021) EntrevistaaVerónicaGerber .[WWWdocument].URL https://wp.nyu.edu/gsas
+-revistatemporales/veronica-gerber-escritura-compostaje/ [accessed 28 March 2024].
+Crutzen, P. J. (2006) ‘The “Anthropocene”’ in E. Ehlers and T. Krafft (eds.) Earth System Science in the
+Anthropocene . Springer-Verlag: Berlin/Heidelberg, 13–18.
+Danowski, D. and Viveiros de Castro, E. (2017) TheEndsoftheWorld . Malden: Polity.
+Dávila, A. (2011) Poesíareunida . Ciudad de México: Fondo de Cultura Económica.
+delaCadena,M.(2019)‘AnInvitationtoLiveTogether.Makingthe‘ComplexWe’’. EnvironmentalHuman-
+ities 11(2): 477–484.
+Escobar, A. (2016) ‘Thinking-Feeling with the Earth: Territorial Struggles and the Ontological Dimension
+of the Epistemologies of the South’. RevistadeAntropologíaIberoamericana 11(1): 11–32.
+Express Zacatecas (2023) ‘Residuos mineros, peligro para la población zacatecana: Armando Flores’.
+ExpressZacatecas . [WWW document]. URL https://www.expresszacatecas.com/educacion/uaz/63819
+-residuos-mineros-peligro-para-la-poblacion-zacatecana-armando-flores [accessed 27 March 2024].
+Fernholz,T.(2023)‘ElonMuskKilledtheGoodBots’.Quartz.[WWWdocument].URL https://qz.com/elon
+-musk-twitter-bots-api-1850065258 [accessed 28 March 2024].
+Ferry,E.(2008)‘RockofAges:TemporalTrajectoriesofMexicanMinedSubstances’inE.E.FerryandM.E.
+Limbert (eds.) TimelyAssets.ThePoliticsofResourcesandTheirTemporalities . School for Advanced
+Research Research Press: Santa Fe.
+Fornoff, C. (2024) Subjunctive Aesthetics: Mexican Cultural Production in the Era of Climate Change .
+Vanderbilt University Press: Nashville.
+Gerber Bicecci, V. (2019a) Lacompañía . Ciudad de México: Almadía.
+Gerber Bicecci, V. (2019b) otrodía…(poemassintéticos) . Almadía: Ciudad de México.
+Giraldo,O.andToro,I.(2020) Afectividadambiental:Sensibilidad,empatía,estéticasdelhabitar .Chetumal:
+El Colegio de la Frontera Sur.
+© 2024 Society for Latin American Studies.
+12 BulletinofLatinAmericanResearch
+TechnopoeticsoftheAnthropocene
+Heffes, G. (2023) ‘El necroespacio del Antropoceno: um archivo anacrónico’. Estudios Filológicos 72:
+117–134.
+Keizman, B. (2019) ‘Territorios y naturaleza bajo la transmutación del archivo’. Valenciana 12(24):
+229–245.
+Krenak, A. (2022) Futuroancestral . Taurus: Madrid.
+Meseguer, R. (2021) Quadra Minerale: Rare Earth Elements, Other Minerals, and Mining Concepts . Fun-
+dación DIDAC and DARDO: Madrid.
+Page, J. (2021) ‘Art for a Future Planet’. EnvironmentalHumanities 13: 159–180. https://doi.org/10.1215
+/22011919-8867252 .
+RivaPalacioObón,M.,ADA-LandNavarro,G.(2021) Elmonoinfinito .DUniversidadNacionalAutónoma
+de México, irección General de Publicaciones y Fomento Editorial: Ciudad de México.
+RiveraCusicanqui,S.(2018) Unmundoch’ixiesposible.Ensayosdesdeunpresenteencrisis .BuenosAires:
+Tinta Limón.
+RiveraGarza,C.(2021) TheRestlessDead:NecrowritingandDisappropriation .VanderbiltUniversityPress:
+Nashville.
+Santos, B. (2014) EpistemologiesoftheSouth.JusticeagainstEpistemicide . Boulder: Paradigm Publishers.
+Segato, R. (2018) Contra-pedagogíasdelacrueldad . Buenos Aires: Prometeo Libros.
+Tenen, D. (2024) LiteraryTheoryforRobots:HowComputersLearnedtoWrite .W .W .N o r t o na n dC o m -
+pany, Inc: New York.
+Thompson, R. and Mukhopadhyay, T. (2014) ‘Aesthetics of Biocybernetic Designs: A Systems Approach to
+Biorobots and Its Implications for the Environment’. Leonardo 47(4): 318–324.
+Thompson,R.andMukhopadhyay,T.(2016)‘TheLatinAmericanDigitalHeritage:MethodsofDigitalArt
+Archive Construction and the Retrieval of Immateriality’ in Archiving and Questioning Immateriality.Proceedings of the 5
+thComputer Art Congress, 204–221.
+Thompson, R. and Mukhopadhyay, T. (2018) ‘Microbial Nanoids: Electronic Arts in the Face of Mexico’s
+Megadiversity Crisis’. Leonardo 51(3): 294–295.
+Thompson, R. and Mukhopadhyay, T. (2021a) ‘Can Machines Do Art? Non Human Interventions in Art
+and Fashion’. DATJournal 6(1): 19–27.
+Thompson,R.andMukhopadhyay,T.(2021b)‘TechflaneursandFakirs:ArtontheOtherSideoftheDigital
+Innovation Divide’. InternationalJournalforDigitalArtHistory 7: 3–40.
+Tsing, A. L. (2017) TheMushroomattheEndoftheWorld:OnthePossibilityofLifeinCapitalistRuins .
+First Paperback Printing. Princeton: Princeton University Press.
+Weintraub,S.(2020) LatinAmericanTechnopoetics:ScientificExplorationsinNewMedia .Routledge:New
+York.
+Yeregui, M. (2020) ‘Tecnopoéticas subalternas (o algunos apuntes para desandar territorios)’. LiminaR.
+EstudiosSocialesyHumanísticos 18(2): 76–90.
+Archive
+Barragán, A. (2023) Másde3.000asesinadasalañoenMéxico:laviolenciacontralasmujeressecebacon
+las más jóvenes . [WWW document]. URL https://elpais.com/mexico/2023-11-25/la-violencia-contra
+-las-mujeres-se-ceba-con-las-mas-jovenes-en-mexico-mas-de-3000-asesinadas-al-ano.html [accessed
+23 September 2024].
+Gerber Bicecci, V. (2018) la máquina distópica |the distopyan machine, vgb . [WWW document]. URL
+https://www.veronicagerberbicecci.net/maquina-distopica-distopyan-machine [accessed 21 March
+2024].
+GerberBicecci,V.(2020) unamáquinadibujaunamáquina |amachinedrawsthemachine,vgb .[WWWdoc-
+ument]. URL https://www.veronicagerberbicecci.net/maquina-distopica-distopyan-machine [accessed
+21 March 2024].
+GerberBicecci,V.,Zapata,C.andBergen,C.(2018) Lamáquinadistópica,WebOracle .[WWWdocument].
+URLhttps://lamaquinadistopica.xyz/ [accessed 21 March 2024].
+Iza, F. (2018) Nunca fuimos contemporáneos: XIII Bienal FEMSA, Terremoto . [WWW document].
+URLhttps://terremoto.mx/online/nunca-fuimos-contemporaneos-xiii-bienal-femsa-zacatecas-mexico/
+[accessed 25 March 2024].
+México es cultura (2023) Transfaktura . [WWW document]. URL https://www.mexicoescultura.com
+/actividad/272017/transfaktura.html [accessed 25 March 2024].
+Montoya, C. (2020) Mina El Bote, un vigía del tiempo entre zinc y plomo, Imagen Zacatecas . [WWW
+document]. URL https://imagenzac.com.mx/centinela/mina-el-bote-un-vigia-del-tiempo-entre-zinc-y
+-plomo/[accessed 27 March 2024].
+© 2024 Society for Latin American Studies.
+BulletinofLatinAmericanResearch 13
+FranciscoGerardoTijerinaMartínez
+O’Brien, M. (2023) ‘Artificial Intelligence Technology behind ChatGPT Was Built in Iowa – With a Lot
+of Water’. APNews . [WWW document]. URL https://apnews.com/article/chatgpt-gpt4-iowa-ai-water
+-consumption-microsoft-f551fde98083d17a7e8d904f8be822c4 [accessed 28 March 2024].
+Presentación ‘La compañía’ de Verónica Gerber Bicecci (2021). [WWW document]. URL https://www
+.youtube.com/watch?v=3IYQty-Fhgw [accessed 25 March 2024].
+Riva Palacio, M. [@martharp] (2024) ‘@paqotj @ambliopia @UciMexicanistas Esto le encanta también
+a @ADAL_bot, aunque ya no pueda responder por aquí.
+ ’,Twitter. [WWW document]. URL
+https://twitter.com/martharp/status/1756460650878959926 [accessed 30 March 2024].
+Torres, A. (2024) ‘Estudios demuestran presencia de metales pesados en sangre y orina’. Meganoti-
+cias. [WWW document]. URL https://www.meganoticias.mx/zacatecas/noticia/estudios-demuestran
+-presencia-de-metales-pesados-en-sangre-y-orina/494148 [accessed 27 March 2024].
+© 2024 Society for Latin American Studies.
+14 BulletinofLatinAmericanResearch

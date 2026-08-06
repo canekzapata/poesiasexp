@@ -1,0 +1,687 @@
+Theory, Culture & Society
+0(0) 1–22
+!The Author(s) 2015
+Reprints and permissions:
+sagepub.co.uk/journalsPermissions.nav
+DOI: 10.1177/0263276415590237
+tcs.sagepub.comInterview
+A Network is a
+Network is a Network:
+Reflections on the
+Computational and the
+Societies of Control
+David M. Berry
+University of Sussex
+Alexander R. Galloway
+New Y ork University
+Abstract
+In this wide-ranging conversation, Berry and Galloway explore the implications ofundertaking media theoretical work for critiquing the digital in a time when networksproliferate and, as Galloway claims, we need to ‘forget Deleuze’. Through the lens ofGalloway’s new book, Laruelle: Against the Digital , the potential of a ‘non-philosophy’
+for media is probed. From the import of the allegorical method from excommuni-cation to the question of networks, they discuss Galloway’s recent work and reflecton the implications of computation for media theory, thinking about media objects,
+and critical theory.
+Keywords
+computation, control society, critical theory, Laruelle, media theory, networks, non-philosophy
+The ‘network’ has become a key concept for understanding an increas-
+ingly postdigital age, sedimented in contemporary understandings of thespeciﬁcity of digital technologies within social life. In a number of ﬁelds,
+attempts to study and interpret the digital have been refracted through a
+‘network’ lens, an optic that has increasingly been subject to importantcritiques but which has remained remarkably consistent as an explana-tory framework. Galloway’s recent approach to media, which incorpor-ates Laruelle’s non-philosophy (Galloway, 2014), problematizes thistaken-for-grantedness of the network and seeks to explore the
+Corresponding author: David M. Berry. Email: d.m.berry@sussex.ac.uk
+Extra material: http://theoryculturesociety.org/
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+‘speciﬁcities and vicissitudes of comput ers and other digital machines’, using
+what we might call a method of exploring ‘non-media’ towards a critical re-
+reading of the digital. This is a rigorous non-philosophical knowledge of the
+‘kernel’ of (digital) media, to investi gate the deterministic causality found in
+an ontology of media that stresses its uni directional causality and ultimate
+status as the ground of possibility. That is, to contest and explore a set of
+realist claims using Laruelle’s rigoro usly non-philosophical tradition, espe-
+cially those that seek to get at the core of media, at the ‘thing in itself’. But
+Galloway also deploys Laruelle to rethink philosophy and media in a com-putational milieu, arguing that ‘it is impossible to think philosophy without
+thinking digitality. It is impossible to think philosophy without interrogating
+the zero, the one, the two, the multiple, and the distinctions made amongthese terms’ (Galloway, 2014: 219).
+If we take seriously the claims of Franc ¸ ois Laruelle that it is possible to
+undertake what he calls a ‘non-philosophy’ – a project that seeks out a
+‘non-philosophical kernel’ within a philosophical system – then what
+would be the implications of what we are here calling a method of‘non-media’? Laruelle himself undertook a similar project in relation toMarxism in Introduction au non-marxisme (2000) ,where he seeks to
+‘philosophically impoverish’ Marxism, with the goal of ‘universalizing’it through a ‘scientiﬁc mode of universalization’. Laruelle, in Galloway’sinterpretation, sought to develop ‘an ontological platform that, while
+leaving room for certain kinds of causality and relation, radically denies
+exchange in any form whatsoever’ (Galloway, 2012: 194). For example, inseeking a ‘non-Euclidean’ Marxism, Laruelle argues that we coulduncover, in some sense, the non-philosophical ‘ingredient’, as Galloway
+has called it. Finding the non-Marxist ‘kernel’ serves as the starting point,
+both as ‘symptom and model’, for undertaking systematic enquiry.
+In this wide-ranging conversation, Berry and Galloway explore the
+implications of the symptom and model that Galloway draws fromLaruelle in his new book, Against the Digital (Galloway, 2014), and the
+allegorical methods introduced in the co-written book, Excommunication
+(Galloway et al., 2013). The aim is to uncover the implications of under-taking media theoretical writing and (non)thinking of the digital at a timewhen digital networks proliferate and, as Galloway claims, it is urgent
+that we ‘forget Deleuze’. Berry and Galloway reﬂect on the implications
+for media theory, thinking about media objects and the implications ofGalloway’s turn against the digital.
+1
+David M. Berry : In my own work I am interested in the ways in which we
+can further develop a post-foundational and decentred critical theory inrelation to our contemporary computational society (Berry, 2014). Doyou see the argument developed in your work as intersecting with such a
+project, or do you see it as diﬀerent to it?2 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+Alexander R. Galloway : I view things like decentralization and anti-foun-
+dationalism as perhaps having a tactical utility, but lacking a more dur-
+able use. Let’s not forget that bourgeois capitalism is the greatest
+proponent of anti-foundationalism and decentralization. ‘All that issolid melts into air.’ Nothing wants to destroy essences and sovereignbodies more than big business. There is no better example of decentra-
+lized sovereignty than global empire. I’m much too paranoid to subscribe
+to any of that. This is why I’m a materialist.
+I’m what you might call a ‘weak foundationalist’. As I see it, weak
+foundationalism means: ‘I have no dogma, except ...’. Or to put it more
+verbosely: ‘I am anti-dogmatic and have no dogma (except for this one
+small scrap of dogma-x).’ Dogma-x refers to any kind of coherent image
+of things. It may be observational or methodological, provisional ortotal, small or large. To claim ‘all is water’ is to articulate somedogma-x. To say ‘everything is material’ is a dogma-x. So too are the
+great mantras of modern criticality: ‘think freely’, ‘always historicize’, or
+the ‘conditions of possibility’ of thought.
+Even sceptics, pragmatists, and empiricists – those anti-dogmatic
+heroes – have their own kinds of dogma-x: for the sceptic, the notionthat knowledge is fallible; for the pragmatist, the commitment to prac-
+tical application; for the empiricist, the religion of sense experience. And
+even the most intrepid anti-essentialist positions, such as poststructural-ism or deconstruction, have their own versions of dogma-x: ‘there isnothing outside of the text’ or ‘all rationality contains a play of supple-
+mentarity’. Dogma-x is a claim, a claim formulated as a picture of the
+world. Weak foundationalism means that, irrespective of the anti-dogmatic or critical nature of any particular knowledge claims, all suchknowledge claims are claims, and thus as claims embody some kind of
+dogma-x, no matter how minimal. It would take longer to demonstrate,
+but in essence I believe that all philosophical positions, when fully articu-lated, are weak foundationalist (at the very least; they may be strong
+foundationalist too).
+DMB : How do you deploy such a materialist ‘weak-foundational’
+approach?ARG : The most sensible use of dogma-x, and the best way to mitigate its
+dangers, is always to side with the generic or the common. If we are fated
+to have one small scrap of dogma-x, the best use of dogma – call it afundamentalism if you like – is in the form of an insuﬃcient materialism.
+And note that such a weak foundationalism is weak two times over. The
+dogma-x itself is the most minimal scrap. It does not occupy the role of aPrime Mover or absolute cause, but rather determines ‘in the lastinstance’, as Althusser and Laruelle liked to say. And likewise, an insuf-
+ﬁcient generic materialism is, if you like, a ‘philosophy ofBerry and Galloway 3
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+impoverishment’. I view such a move as absolutely essential to any kind
+of political or ethical project today.
+The key, therefore, is to select this dogma-x with the utmost care.
+Huge swaths of contemporary thought are either oblivious to theirown dogma-x or, when conscious of it, have constructed their dogma-x
+in dubious ways. Consider what I call reticular pessimists. Their dogma-
+x? ‘Everything is a network.’ That strikes me as a rather questionableform of foundationalism for a number of reasons. First, it’s way toopresentist to pass the ‘straight face’ test. (I suppose in 1860 they wouldhave said ‘everything is a steam engine’? Puﬀ puﬀ!) Blinded by suchpresentism, the claim is simply incorrect in a lot of ways; think of allthe things that aren’t networks. And third, their claim crashes directlyinto contemporary forms of network power, and in doing so misses a
+wonderful opportunity to contest them.
+DMB : By ‘weak foundationalism’ are you referring to a minimal ontol-
+ogy guiding your work?
+ARG : Yes, and we urgently need more cogent theories of this ‘minimal’
+condition itself, the condition of the weak. You might say I’m some-
+thing of a reverse Nietzschean. A muscular subject who wilfully over-comes the bankruptcy of the world might have been a radical subject
+position at some point in the past. But today the most radical gesture is
+to withhold the suﬃciency of power. To withhold suﬃciency itself.
+(Such is Laruelle’s project in a nut shell.) We need this strategy to
+combat empire, to combat patriarchy, to combat fascism, both microand macro.
+DMB : How do you understand this notion of ‘minimal ontology’?
+ARG : Consider the age-old diﬀerence between philosophy and science.
+Philosophy is the thing that is transcendental vis-a `-vis the real. Generic
+science, by contrast, is the thing that is immanent vis-a `-vis the real.
+Philosophy uses the as-structure , science the in-structure . From an exist-
+ential point of view, philosophy asks the same question over and over,
+‘what is x?’, or what is the identity of anything whatsoever? And from anontological point of view the inquiry is similar, ‘all is x’, or All as theprinciple of unity that subtends anything whatsoever.
+Generic science does it diﬀerently. Contra philosophy’s approach
+(‘what is x?’), the existential question of generic science is ‘x is what?’,or how is anything whatsoever an instance of identity? Likewise the
+generic’s ontological inquiry is ‘x is all’, or the anything whatsoever as
+the principle of unity.
+On this score the pre-Socratics are much more interesting than every-
+thing that came after. Still, the goal is not so much to proﬀer explana-t o r yr u b r i c sl i k e‘ w a t e ri sa l l ’o r‘ ﬁ r ei sa l l ’ .I n s t e a d ,w eo u g h tt ob e g i nwith ‘all is water’ or ‘all is ﬁre’ and c ontinue from there. Ultimately the4 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+generic question is not ‘what is x?’ but ‘what is all?’. What is the All?
+What is the one? What is the unary t endency of all being? And how can
+we withdraw from being in order to discover the one within the unarytendency?
+The aforementioned dogma-x now comes full circle. The dogma-x
+should be subjected to a principle of insuﬃciency. This forces thedogma in the direction of the generic, and away from traps like essen-tialism or liberal universalism. (Despite their overall incompatibility,
+Badiou and Laruelle synchronize somewhat on this point: Badiou
+(2007, 185) says void, but Laruelle’s generic is as impoverished and unen-cumbered as something can get without vanishing into nothing. The
+generic is ‘on the edge of the void’ as Badiou likes to say.) Forcing the
+dogma-x in the direction of the generic results in an insuﬃcient andgeneric weak foundation upon which the normal forms of anti-dogmatic
+critique can best arise.
+What Laruelle calls ‘generic science’ also comes under another name:
+no longer philosophy, but ‘theory’. Philosophy is always inﬂationary andmaximalist. Even the most hard-nosed sceptics are philosophical because
+they remain suﬃcient unto themselves – scepticism as ‘adequate’ forthinking. By contrast, theory creates a minimalism in thought. Theory
+is a rigorous science of the inadequacy of material life.
+DMB : In my own work I am interested in exploring how theoretical work
+is aesthetically theoretical, and here I mean in terms of a method informed
+by aesthetic or mimetic reason, and theoretically aesthetic, such that itremains concerned with the object mediating structures constitutive of
+socio-historical reality. Does your work explore similar themes?
+ARG : What a fascinating question. Certainly ‘ﬁrst philosophy’ has
+always been closely linked with things like representation or mimesis.
+From the Book of Genesis to Pygmalion and Plato, the existence ofthings in the world has often been bound up with notions of creativity,
+art, and expression. It’s no exaggeration to say that Plato’s theory of art
+is a theory of being, and vice versa. I love when these connections aremade explicit: Deleuze labelling Leibniz a Baroque philosopher, and so
+on. Perhaps we ought to learn from this and more clearly describe thin-
+kers according to the aesthetic yearnings they exhibit. Or the reverse, domore to characterize art as pure rationality.
+As regards the ‘object mediating structures’ in your question, I read
+recently that the architect Frank Gehry was enlisted to design an expan-sion to the Facebook headquarters in Menlo Park, California.
+Facebook’s existing site is the spot of the old Sun Microsystems building,
+and they have already renovated Sun’s old hierarchical ﬂoor plan to amore open and emergent ethos. It’s the great fable of the information
+age: structured hierarchy surpassed by emergent horizontality. Even Sun
+is over the hill, vulnerable to the new upstarts.Berry and Galloway 5
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+But why Gehry for ‘Facebook East’, the new expansion building? Isn’t
+this a bit incongruous? Now, at 83 years old, Gehry is the quintessential
+Los Angeles deconstructivist, the indisputable king of the old guard. A
+baby boomer if not by birth then by spirit, Gehry designed a building in
+Seattle that looks like how a Jimi Hendrix guitar solo is supposed to
+sound, and on the MIT campus he designed a building that ‘looks like aparty of drunken robots got together to celebrate’. On the other hand
+there’s Facebook’s Mark Zuckerberg, the most emblematic of the new
+dot-com executives, young, ﬁery, and ﬁlthy rich. A 28-year-old multi-billionaire, he forged his riches online. Unlike the great moguls of the
+past, he doesn’t exploit steel or shipping or oil or banking, he exploits
+interpersonal relationships. Facebook operates not in the sphere of work
+but in the sphere of leisure, not in commodities or manufacturing but in
+friends (and friends of friends).
+In fact Gehry and Zuckerberg are an excellent pairing because they
+synchronize almost identically on the question of object mediating struc-
+tures. Consider the old mantra of modernist design: form follows func-
+tion. Modernism embodies the virtues of industrial standardization, andgeometric regularity, taking advantage of new materials like steel and
+glass. Or consider the principle of minimalism: how objects elicit theat-
+ricality. Minimalism embodies a diﬀerent set of virtues: the necessary
+involvement of the viewer who must complete the work; the shift from
+painting to sculpture; or a dematerialization further into performance,installation, happenings, and experiences. But today we have a new dom-
+inant, the realists, the vitalists, the environmentalists, those whose chief
+concern is the expressivity of matter. Today’s new virtues include ﬂatnessover hierarchy, liberation over discipline, openness over structure, impro-
+visation over repetition, play over work – all of which are designed to
+liberate aﬀect as much as possible, to make ﬂourish a vast plane of
+machinic expression. ‘Form follows function’ is more true today than
+it ever has been, only today ‘function’ has been understood in strictlymathematical or algorithmic terms (function as subroutine, method,
+black box, etc.), not mechanical function as it was for modernist
+design 50 or 100 years ago.
+From one perspective Gehry and Zuckerberg are slightly mismatched,
+but from another perspective they are nearly identical. They are both
+‘environmental activists’, that is, they both assume that the most import-
+ant things in the universe are systems, ecologies, networks, assemblages,
+environments; and likewise they both assume that such environments
+have a single responsibility, to express themselves, to produce aﬀectiveresponses, to create value, to be active. Sure, they are environmental
+activists in a rather silly, mundane way, green rooftops and all that,
+but they are also environmental activists because they believe quite mili-
+tantly that the world consists of vital systems. This is the problem of
+reticular pessimism.6 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+DMB : How can we understand this notion of ‘reticular pessimism’?
+ARG : Today we are trapped in a sort of ‘networked’ or ‘reticular’ pes-
+simism. And here I’m taking a cue from the notion of ‘Afro-pessimism’ in
+critical race theory. Just as Afro-pessimism refers to the trap in whichAfro-American identity is only ever deﬁned via the fetters of its ownhistorical evolution, reticular pessimism claims, in essence, that there is
+no escape from the fetters of the network. There is no way to think in,through, or beyond networks except in terms of networks themselves.
+According to reticular pessimism, responses to networked power are only
+able to be conceived in terms of other network forms. (And thus to ﬁghtGoogle and the NSA we need ecologies, assemblages, or multiplicities.)
+DMB : Are there identiﬁable trends in thinking or commentators that you
+think are emblematic of this form of thinking?
+ARG : Yes, a new pantheon of dot-com philosophers reigns supreme
+today, ready to proclaim at every turn that ‘everything is a network’.
+Mark Zuckerberg: people are networks. Donald Rumsfeld: the battleﬁeld
+is a network. Bruno Latour: ontology is a network. Franco Moretti:Hamlet is a network. David Joselit: art is a network. Guy Debord: the
+post-capitalist city is a network. John Von Neumann: computation is anetwork. Konrad Wachsmann: architecture is a network.
+DMB : Are there political implications that stem from this position?
+ARG : Postmodernism is deﬁnitively over; we have a new meta-narrative
+to guide us – reticular empiricism. Welcome to the new dark age! By
+oﬀering no alternative to the network form, reticular pessimism is deeplycynical because it forecloses any kind of utopian thinking that mightentail an alternative to our many pervasive and invasive networks.And all of this is often under the aegis of ‘Deleuze’ – our once dearDeleuze!
+DMB : It seems to me that tackling the importance of a non-oppressive
+mediation between critical theory and contemporary society is needed
+in our theoretical work, and here I am thinking of the way in whichone might harmonize the method of study and the object of studywithout doing violence to the complexity of historical and social rela-
+tions. In your approach, what do you think are the ways forward for
+doing this?
+ARG : We must forget Deleuze. It’s troubling to admit, given how inﬂu-
+ential Deleuze has been on my own thinking. But it’s imperative today
+that we forget Deleuzianism in all its many guises.
+First, we must forget the Google Deleuzians, those who see the world
+as a vital assemblage, proﬀering untold bounties of knowledge – and
+riches. From clouds, to humans, to molluscs, to molecules, the world isnothing but systems. Lines of ﬂight slice through assemblages, creatingBerry and Galloway 7
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+new living landscapes. Systems are open, dynamic, and robust. Networks
+produce value. These are some of the many mantras of the Google
+Deleuzians.
+We must also forget the Carl Sagan Deleuzians. Remember Carl
+Sagan and his awestruck odes to the ‘billions and billions of stars’?
+Carl Sagan Deleuzians are those who think that ontology is about pro-ducing a sense of sublime grandeur in the mind of the thinker. Thesekinds of Deleuzians assume that ‘nature’ and ‘human nature’ coincide,
+and that the world is there ‘for us’ or, more speciﬁcally, to ‘impress’ us.
+For the Carl Sagan Deleuzians ontology means awesome-ology.
+Finally, we must forget the Wet Diaper Deleuzians, or those who,
+in an endless restaging of the 1960s, think that being political meansliberating one’s desires. (Let’s not f orget that Facebook’s entire busi-
+ness plan is based on the liberation of desire.) For the Wet DiaperDeleuzians, everything is a desi r i n gm a c h i n ed r i v e nb ya ne n d l e s s
+reserve of polymorphous perversity. They giggle and cry, suckle and
+shit, fall down and get back up. The world is a giant sandbox, ﬁlled
+with toys. Everyone they meet is a potential Father or Master thatmight threaten their desire, someone to be dethroned, debased, evenkilled. Each act becomes a doll house revolution – oﬀ with their
+heads!
+DMB : If we are to cut oﬀ Deleuze’s head, in a paradoxical attempt to
+stop the ‘dethroned’ Deleuzian ﬂavours of theory and practice, with what
+would we replace this theoretical work? Or do you have in mind some
+other register for thinking about a post-Deleuzian world?
+ARG : I’m poking fun of course. The problem is less with Deleuze himself
+than with a certain kind of Deleuzian School that has arisen since his
+death. We must forget Deleuze, but only a limited and somewhat per-
+verted interpretation of Deleuze. In fact there are two Deleuzes, theDeleuze of 1972 and the Deleuze of 1990. The ’72 Deleuze is the thinkerof machinic subjectivity and diﬀerential systematicity. The ’90 Deleuze is
+the thinker of control and historical transformation. Unfortunately, the
+ﬁrst Deleuze is so commonplace today that it has essentially become aTED talk. I see the ’90 Deleuze as the more radical voice. For example,the reticular pessimists champion the Deleuze of 1972 while ignoring the
+Deleuze of 1990. The legacy of May 1968, and all that it represents, plays
+a large role. I’m thinking of the Maude character in the ﬁlm Harold and
+Maude , and the weary notion that liberation means running stoplights in
+a fast car.
+But while we forget Deleuze we should also remember him. We should
+remember Deleuze the anti-fascist. We should remember Deleuze thethinker of materialism and immanence. We should remember Deleuzethe communist.8 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+DMB : In thinking about the reticular, I am also interested in your
+critique of what you have called the ‘reticular empiricists’. How does
+(non-)philosophical critique assist us in thinking about the infrastruc-tural base and deploying a material and ideological critique?
+ARG : Ten years ago in Protocol I wrote that protocols and networks are
+‘against interpretation’. At that time I was trying to describe the qualities
+of this new reticular infrastructure. One of the key issues was the way inwhich computers are very weak interpreters – they are in very literal
+terms anti-hermeneutic. So it comes as no surprise that, with a change
+in the mode of production since the early 1970s, we have a change in theideology of how knowledge is produced. The reticular empiricists aremore or less dominant today. From Nate Silver to Franco Moretti, thehard-nosed empiricism of big data is triumphing over more interpretiveor normative approaches. To be a knowledge worker today, one mustaﬀect a kind of sober pragmatism and deal with the world empirically. Ina certain sense we’ve all become gloriﬁed journalists, or at best social
+scientists, expected simply to observe and describe the world. Bruno
+Latour conﬁrms this recently in his An Inquiry into Modes of
+Existence : we all ought to be, like William James, radical empiricists;
+we all ought to move beyond ‘common sense’ to ‘good sense’. In factDeleuze, bless his heart, is the consummate reticular empiricist. Deleuzeis aﬃrmative, non-dialectical, network-centric, and might be said to beone of the great proponents of a radical empiricism.
+Shall we resist such empiricism? What a silly notion, of course not.
+Empiricism is essential. But it’s also totally banal. Empiricism is some-thing akin to respiration. We all must breathe air in order to remainalive. But the spirit of humanity does not ﬂoat on the breath.
+Badiou’s work in Logics of Worlds is an important critique of such
+reticular empiricism. I’m thinking of his phrase ‘only bodies and lan-guages’ from the opening passages of the book. Asserting that thereexist ‘only bodies and languages’ is the key danger of contemporarylife, because it suggests that nothing exists except for entities and the
+symbolic structures that organize them. Later in the book he uses the
+concept of an ‘atonal’ world to evoke something similar. Atonal worldsare lifeless worlds, ﬂat worlds, worlds that have no topography. Atonalworlds claim that there are only bodies and languages – in other words,that there are only objects in the world and the various relations thatcombine and organize objects. For Badiou this is the utmost in cynicism,for it denies the event. Atonal worlds have being, but nothing else. Theyhave being without event.
+Whether consciously or unconsciously, the reticular empiricists make
+the same claim: being without event. For example, in Latour nothing canever really change because there is nothing in his work that goes beyond aseries of descriptive frameworks for bodies and languages. Latour is veryDeleuzian in this sense because he embeds diﬀerence (along with change,Berry and Galloway 9
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+process, transformation, etc.) inside the reticular infrastructure. For
+example, events are relatively banal in Deleuze, whereas they are extra-
+ordinary in Badiou. Cells dividing ...versus the storming of the Winter
+Palace. (Badiou is the DeMille of philosophy: it’s all about the Big
+Event.) Because of this, many have accused Latour of promoting a
+more or less neoliberal, market-driven ontology in which all things are
+actors who meet on equal footing in order to exchange, translate, arbi-
+trate, and indeed ﬂesh out their very existence. To these accusers Latour’s
+chief ﬂaw is a political one, for at best he abstains from the political
+question by naturalizing it, and at worst he unwittingly assists the dom-
+inant ideology by endorsing and recapitulating it. I’ll admit I’m per-
+suaded by such accusations, and ﬁnd Latour’s work shallow because of
+them.
+Latour still believes the old myth that ‘networks are enough’. He still
+believes that bazaars are better than c athedrals, that systems are enough
+to disrupt hierarchies, that networks corrode the power of the sover-
+eign, that markets are the most na tural, most democratic, and most
+scientiﬁcally accurate heuristic for redistributing and indeed deﬁningknowledge. Such claims are often necessary to make, and are often
+true within a certain limited arena. Yet Latour is unable or unwilling
+to move beyond them, to take the ultimate step and acknowledge the
+historicity of networks. Such a step requires a number of things, but
+most importantly it requires that we acknowledge the special relation-
+ship between networks and the industr ial infrastructur e, a relationship
+that began in the middle of the 20th century and has become dominantnow at the turn of the millennium. Latour has little interest in the
+contingency of systematicity. He would not agree with me that there
+is an historical phase ‘after decentr alization’ has taken place. And even
+if we might convince him of such an hi storical periodization, he would
+not likely agree that this new infrastructure should itself be the target of
+criticism.
+DMB : Latour asserted that critique is running out of steam, arguing,
+somewhat unconvincingly, that ‘critical theory died away long ago’
+(Latour, 2004: 248). Are you gesturing to another kind of post-ideologi-
+cal approach, perhaps as a (reconﬁgured) Laruellean ‘real’?
+ARG : Critique only runs out of steam if thinking becomes the hand-
+maiden of its natural surroundings, only if the world of networks is
+taken to be the one and only network-world. Latour ultimately eschews
+both the Kantian and Marxian modes of critique: denying Kant, he
+shuns the kind of inquiry that would plumb the conditions of possibility
+undergirding the present state of aﬀairs, in the hopes of auto-position via
+better self-clariﬁcation; denying Marx, he shuns the kind of inquiry that
+superimposes a two-structure of antagonism onto the state of aﬀairs, in
+the hopes of destroying and preserving the world in a higher form. In10 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+other words, Latour enacts a kind of ‘reticular decision’ in which mar-
+kets, networks, and other kinds of economic exchange are deemed suﬃ-
+cient to describe any situation whatsoever. To avoid the Latourian trap
+one must withdraw from the reticular decision, refusing to decide infavour of the network, and ultimately discovering the network’s genericinsuﬃciency. (This is how to arrive at the ‘Laruellean real’ evoked in
+your question.)
+DMB : If we withdraw from the ‘reticular decision’, what approach comes
+‘after’?ARG : ‘After’ is a useful way to think about historical periodization and
+other kinds of diachronic phenomena. For example, I’ve been tremen-
+dously inﬂuenced by Deleuze’s short essay ‘Postscript on ControlSocieties’ in which he describes a historical period, dubbed control soci-
+ety, that comes after what Foucault called the disciplinary and sovereign
+societies.
+DMB : Delueze’s (1992) article remains a key, albeit provocatively
+ambiguous, description of an emergent ‘control’ society that relies heav-
+ily on computation and digital networks. Could you explain what you
+think lies ‘after’ networks and how Laruelle is helpful for thinkingthrough the control society?
+ARG : In the case of networks, prepositions like ‘after’ are perhaps less
+useful. I realize that sounds pedantic, but we should be aware how such
+prepositions indicate – even sculpt – our thinking. Much of criticalthought still clings to a canonical set of relational structures: meta,
+post, or after. But these all imply some kind of development, exchange,
+reversibility, representation, combination, negation, or synthesis. Suchstructures remain thoroughly metaphysical.
+Laruelle’s question is not so much what lies after networks, but what is
+‘in’ networks. Or to put it another way: What is the immanent identity of
+networks? As I previously mentioned, transcendental philosophy tends
+toward the as-structure . Something appears ‘as’ something else. By con-
+trast, materialist science tends toward the in-structure . Something
+remains ‘in’ whatsoever it is. The former is what Marx called the
+‘form-of-appearance’. The latter comes under many names: Deleuze
+was partial to ‘univocity’ or ‘speaking in one’; Laruelle uses terms like‘in-One’ or ‘in-person’.
+I ﬁnd the in-structure to be much more useful for theoretical investi-
+gation, for it withdraws rather deﬁnitively from the legacy of transcen-
+dental philosophy. I see this as the chief task of any materialism. Or at
+the very least it shows a way to augment the classic ‘historical’ form ofmaterialism (Marx qua Marx) with a rigorously synchronic form of
+materialism (Laruelle’s generic one).Berry and Galloway 11
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+The stakes for me are thoroughly utopian, and unabashedly so. We
+urgently need to think utopia in the here and now! The diﬃcult thing is
+determining how utopian thinking actually works. Along with
+Meillassoux, Laruelle is perhaps the most utopian of the so-called specu-
+lative realist thinkers, for he is the one who sidelines the correlationist
+scenario most deﬁnitively. The case of Graham Harman is more diﬃcult
+as regards utopia, because he does not surpass correlationism. On the
+contrary, Harman is the Johnny Appleseed of correlation; he stridesthrough the world assigning the as-structure to all entities in sight.
+Harman borrows the basic world structure from Heidegger and then
+asserts that every object constructs its own world or place. In this
+sense Harman is something like a pan-correlationist. His ontology is a
+vast democratization of correlation that extends above and beyond the
+bounds of the human. Consider how Harman and Laruelle contrast on
+the theme of withdrawal: for Harman reality is rooted in the withdrawalof the object, but for Laruelle reality is discovered via the withdrawal
+from the philosophical decision. The withdrawal of the object creates a
+world, but the withdrawal from philosophy creates a non-world. Thus
+while Harman is a disseminator of worlds, Laruelle is the consummate
+thinker of the non-world, a non-place (a utopia) in parallel with this one.
+I see Laruelle as the chief utopian thinker of our times.
+DMB : It is certainly the case that we need to historicize ‘networks’ and
+place them within a speciﬁc historical constellation of ideas and practices.
+How do you think the question of networks relates to collaboration inthe humanities, and here I am thinking of digital humanities, etc.?
+ARG : What librarians used to call ‘humanities computing’ has reinvented
+itself under the meme ‘digital humanities’. I see this as a web 2.0 phe-
+nomenon; in other words, it’s part of the real subsumption of networks.The vanguard of the late ’90 s – people like Knowbotic Research or Etoy
+– were participating in the formal subsumption phase, during which real
+exploration and transformation was possible. But now it’s the real sub-
+sumption phase: send out the bots to gather and valorize data.
+Digital humanities faces a number of challenges. First and foremost it
+has deﬁned itself as a community of tool users favouring empirical andpositivistic methods. This has the dual advantage of both bringing more
+scholars into the fold and endowing them with powerful new technolo-
+gies. But at the same time it exacerbates what we might call the
+Zuhandenheit problem: tools get used unconsciously and without critical
+reﬂection. With this waning in critical reﬂection, and as the digital huma-
+nities expands, the ideological infrastructure will become more
+emboldened.
+As a colleague of mine likes to joke: digital humanities is for old pro-
+fessors who don’t understand computers, and for young ones who don’tunderstand hermeneutics. Of course we need computation and12 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+hermeneutics at the same time. But that’s nothing new. A much more
+challenging question has to do with the precise relationship between
+computation and hermeneutics. Why do we see these two terms as dif-
+ferent in the ﬁrst place? What do they have to say to each another? Canwe have a hermeneutics of computation? Or a computation ofhermeneutics?
+DMB : My own work has called for a speciﬁc attention to the materiality
+and speciﬁcity of computation in relation to the humanities as a task for
+the digital humanities (Berry, 2012). How should we understand the
+digital humanities in relation to your recent work?
+ARG :Excommunication doesn’t directly answer such questions, but it
+does provide a broader frame of reference for both critics and poets,
+as well as engineers – or in my language, Hermes, Iris, and the Furies.In other books, I’ve used allegory as the chief method for connecting
+computers and hermeneutics. The problem with digital methods, such as
+n-grams, is that they often don’t tell you much. I argue that allegory is amuch more powerful investigative method for thinking about the nonhu-
+man, objects or networks.
+DMB : You have suggested that Excommunication is about taking a her-
+etical position on ‘mass communication-style communication theory’.
+Indeed, the use of ﬁguration and allegory as a means of talking about
+media objects seems to move away from critique. Could you explain yourapproach?
+ARG : I wouldn’t want to overstate our stance, or construe it as some sort
+of quixotic opposition to the discipline. It’s not that. And in many ways
+my chapter on ‘the middle’ is very traditional, even slightly old fashioned.
+Media studies is still a very young ﬁeld. A number of the most basicquestions are still available for further exploration.
+My contribution to the book serves to map out a series of alternatives
+to the hermeneutic tradition, which I view as the dominant tradition in
+humanities scholarship, even as it might be losing its foothold today.
+I start from a very simple conceit: why does the term hermeneuticscome from Hermes? Is Hermes the god of interpretation, or perhaps
+even the god of media? (I love when Derrida called Hermes ‘the signiﬁer
+god’.) And if Hermes is a god of media, are there other gods of mediathat we’ve overlooked? I use this exploration as a way to map out howintellectual work has shifted in the modern period. So we quickly dis-
+cover the ‘other’ god of media, Iris, and the tradition of mediation she
+represents that is diametrically opposed to the Hermes model. SusanSontag evoked this alternative in her famous essay ‘Against
+Interpretation’, a title more or less equivalent to ‘Against Hermes’. But
+I show how it’s not suﬃcient simply to amend hermeneutics with thisalternative tradition of iridescent immediacy. This brings us to theBerry and Galloway 13
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+network form of mediation, a form that is as old as time. Indeed the
+Greeks had a robust sense of assemblages and multiplicity in the form of
+the Erinyes.
+Some have a problem with ‘going back to Greece’. Indeed, after post-
+modernism ancient Greece presents a double bind: on the one hand post-
+modernism destroyed the notion that canonical literature still holds anyauthority over what we call culture today, and on the other hand post-modernism reframed the desire to return to Greece as a suspicious if not
+pernicious form of nostalgia. There is a tendency – particularly in
+German thought from Kittler to Heidegger and beyond – to use ancientGreece as a way to explore essences and origins. I’ll admit I don’t share
+the anxiety that often surrounds such a move. My tastes are more
+catholic. We need to have a grasp on both the ancient and modernworlds. We should be writing computer code and reading Homer atthe same time.
+In a very practical sense, going back to Greece is an attempt to expand
+the repertoire of what counts for media studies. John Durham Peters, forexample, does this quite nicely in the opening chapters of his Speaking
+into the Air . The goal for me is to show that networks and network
+thinking are always already embedded in the very heart of western phil-
+osophy. Networks are ancient, not just postmodern. Networks are a
+mode of mediation, just like any other. They aren’t ‘more natural’ or‘more real’, despite what many pundits and intellectuals try to claim.
+DMB : Could you explain what you mean when you say you ‘don’t view
+Greek thought as literary; [you] view it as real’?ARG : We have this trumped-up notion of Greek gods sitting astride
+thrones up on Mount Olympus, an image no doubt ﬁltered through
+the cloud-city conception of a Christian heaven. But the Greeks viewed
+their spirits very diﬀerently. They viewed them as simply various aspectsof the world. (Husserlian phenomenology, in fact, adopts this notion ofaspect in very useful ways.) Recall how Hermes is the god of the thresh-
+old. When you open the door to step over a threshold, and you hear the
+squeak of the hinge on the door, that very squeak is Hermes. The squeakdoesn’t merely refer to Hermes, nor is it caused by Hermes; it actually is
+Hermes. Gods don’t reside in a land beyond, but right here in these many
+aspects of the world. The Greeks even had a special name for squeaky
+Hermes: ‘Hermes Strophaios’ or ‘Hermes of the Turning Hinge’.
+DMB : You said that you think media studies is a young ﬁeld, but in
+many ways (depending where one stands) it seems to me that the ﬁeld is
+going through something of a mid-life crisis as the certainties of thebroadcast era give way to digital streams and networks. We cannot butnotice the diﬃculties that media studies has in the encounter with the
+digital, which undermines not only its taken-for-granted disciplinary14 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+divisions (TV, radio, print, ﬁlm) but also its emphasis on representation
+and culture. What do you think is the way forward for media studies?
+ARG : Young only in the scholastic sense! Media studies has taken an
+interesting turn over the last 10 or 20 years. During the 1980s and ’90 s –
+inﬂuenced greatly by poststructuralism, psychoanalysis, and culturalMarxism – media studies tended to focus on the realm of the superstruc-
+ture: subjects, texts, ideology, spectacle, language, and so on, whereas
+today the focus has shifted from the superstructure to the base. I’mthinking of the renaissance in more archival and historical approachesto media studies (dubbed media archaeology), or the trend in digital
+media toward more hard-nosed, machine-oriented methods (platform
+studies, software studies). Kittler said that in order to be literate todayone must know at least one natural language and one computer lan-
+guage. And he was right.
+DMB : But if not networks to analyse networks, what do you think will
+be the new theoretical and methodological innovations in the ﬁeld?ARG : To be clear, methodological innovation might not be the goal
+today. I’m afraid that the term innovation has been forever corrupted
+by the entrepreneurial ideology of the start-ups. Innovation is an ideo-logical problem in contemporary life; it doesn’t oﬀer a solution. And here
+I might deviate from the view oﬀered by Wark in his book A Hacker
+Manifesto . He deﬁnes the hacker in terms of novelty and innovation;
+hackers are those who ‘produce new concepts, new perceptions, new
+sensations, hacked out of raw data’. By contrast I’m quite pessimistic
+about the new as a category, and instead am much more interested in
+concepts like repetition, withdrawal, collapse, extinction. Consider some-thing like social justice. We don’t need ‘innovation’ when it comes tosocial justice. We need enactment of social justice. Every child knows
+how to make a just society. We simply need the will to carry it out.
+Gramsci was right: pessimism of the intellect, optimism of the will.
+Badiou is inspiring here when he describes truth. For Badiou, truth is
+not a grand overarching absolute – and it’s not a kind of perpetuallycresting wave of intensiﬁcation and machinic process as per the
+Deleuzian tradition. Rather, Badiou speaks in terms of the generic ﬁdel-
+ity to truth furnished to all. ‘What we know about inventive politics atleast since 1793’, Badiou wrote, ‘is that it can only be egalitarian andnon-Statist, tracing, in the historic and social thick, humanity’s generic-
+ity, the deconstruction of strata, the ruin of diﬀerential or hierarchical
+representations and the assumption of a communism of singularities. [ ...]
+Philosophy today is the thinking of the generic as such.’
+DMB : You have talked about your project as having a ‘love of the
+middle’. What do you mean by this?Berry and Galloway 15
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+ARG : The most sophisticated work in media studies tends to follow a
+particular trend: looking at media objects is interesting but it only goes so
+far; what’s really interesting are modes of mediation. Hence a gradual
+shift from objects to processes. Not just the telegraph but telepresence.
+Not just HTML but protocol. Not just the body but gesture. Not just‘the people’ but a process of political realization. The term ‘middle’ is anattempt to identify these kinds of processes or modes of mediation. I seemiddle as a synonym for ‘milieu’ or ‘mode of mediation’.
+DMB : What are the conditions of possibility for this ‘middle’, and in
+what way is ‘love’ helpful as a concept for thinking through a standpoint
+in relation to it?
+ARG : Why love? Love means many things: a commitment to the generic
+(agape ), a relation of intimacy ( Eros), a romantic sublime, a mystical
+unknown, an aﬀective sense of joy, and of course love may appear in
+any manner of compulsions, desires, or drives. In Excommunication ,
+Aphrodite forms the connection between media and love, for she isnamed ‘the one who is fond of the middle’. So love is a media concept,but let’s not forget that it’s also a political concept. Here I’m inﬂuenced
+greatly by my teacher Michael Hardt and his work on the relation
+between love and the political. Drawing on Spinoza, Hardt talks aboutlove in terms of joy, or the ‘mutual increase in power’ contained in col-lective interaction. In Commonwealth , Hardt and Negri deﬁne love as ‘the
+production of the common and the production of social life’. All of these
+concepts swirl together in my mind: an intimacy with the common; a
+commitment to the generic; media as middle; love as middle – they all gotogether.
+DMB : How do you see the production of the common deployed in a
+political sense? Are there connections to civil society, and what are the
+implications for notions of solidarity?
+ARG : Since Hegel, if not earlier, civil society has been understood as
+essentially synonymous with bourgeois society [ bu¨rgerliche
+Gesellschaft ]. This is the realm of the market economy, of the citizen.
+Civil society forms a bulwark against the state of nature (and itself is
+subsumed by the state form).
+Hardt wrote an important essay in 1995 called ‘The Withering of Civil
+Society’ in which he described how the various institutions of civil society
+‘have been displaced ...by a new conﬁguration of apparatuses, deploy-
+ments, and structures’. In other words, the old dichotomy between thesocial and the natural – civil society as refuge from the state of nature –
+has given way to a new scenario in which political technologies assume
+more inﬂuence than social structures.
+Here Marx was correct: civil society is a barren wasteland ﬁlled with
+compromises, contradictions, and half-truths. We would be wise to do16 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+away with this category – along with Hegel as well! – because the
+common cannot be found there. But as Hardt instructs, today’s
+techno-centric infrastructure is no better. I think the problem is not so
+much with any of these categories as such but simply the ideologicalmove that insinuates an elemental diﬀerence between the natural and
+the social, with technophilic ‘control’ dialectically synthesizing the ﬁrst
+two and thus solving the problems they seem to invent. These three dis-cursive moments are not an indication of a problem, they arethe prob-
+lem. The common is thus not found in some supposed resolution of theproblem of the social but by undoing the representational structure that
+sustains it.
+DMB : Collaboration, particularly collaborative writing, is diﬃcult, hence
+my own interest in new forms of writing practice such as book sprints
+and hackathons. What was the writing process you developed withMcKenzie Wark and Eugene Thacker for Excommunication ?
+ARG : Collaboration can be tricky indeed. Collaboration is one of the
+great demons haunting the humanities, although the sciences, by con-
+trast, are much less skittish about it. Most humanities scholars do very
+little collaboration. Or when they do, collaboration is masked by certainobfuscatory infrastructures, such as graduate student labour, or the
+‘silent partnership’ of the wife/girlfriend/secretary. I’ve done a few dif-
+ferent kinds of collaboration in the past: a book translation, variouskinds of co-authoring, a number of software projects that require
+teams of diﬀerent sizes. Writing Excommunication was uncomplicated,
+though, since each chapter was a solo eﬀort. There was much cross talk
+among the three of us, but ultimately each chapter was the expression of
+a single voice.
+DMB : How did you conceive of this project and ﬁnish the writing
+process?
+ARG : The idea grew out of a conversation Thacker had been having with
+his editor, and it quickly gelled after that. We wanted to explore the more
+theological wing of philosophical thought. Hence the crude chronology
+of the book. I focus on a series of archaic divinities, Thacker is inspired
+by the heretical monotheism of medieval mysticism, and Wark is workingon a more modern and postsecular form of heresy. The concept of
+‘excommunication’, with both its theological and media-theoretical con-
+notations, seemed like a ﬁtting framework. Since ﬁrst starting to writeThe Exploit together, already several years ago now, Thacker and I have
+both been interested in the non-human. The coda to that book opens adoor that we’re only now fully exploring. All three of us quickly gravi-tated to the theme of excommunication, particularly the way in which it
+implies some sort of mediation with the radically non-human, what
+Thacker calls ‘the world without us’.Berry and Galloway 17
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+DMB : In relation to the challenges raised with collaboration, I wondered
+if you felt that working with Thacker and Wark pushed your thinking in
+new or diﬀerent directions.
+ARG : Eugene Thacker has an impressive knowledge of mystical and
+esoteric philosophical texts, and McKenzie Wark’s familiarity with the
+history of radical thinking is peerless. I’m always learning new things
+from both of them. They constantly reinvent themselves too, which I
+admire. Never the same thing twice.
+Thacker’s book After Life altered the course of my own thinking in
+measurable ways, particularly his treatment of concepts like the uncrea-ture, equivocal inexistence, uncreated univocity, and dark pantheism. His
+use of apophatic reason has also been tremendously useful in my own
+understanding of Laruelle, not to reinforce some sort of transcendental,religious or otherwise, but to highlight how important denial is for con-temporary methodology. In other words, while much contemporary
+thought operates through a logic of augmentation – more this, more
+that – I’m much more excited by a logic of subtraction. One examplewould be Badiou’s theory of the event. We need a kind of anorexicphilosophy, not an inﬂated one. Thinking is hamstrung by claims to
+transcendental suﬃciency; thought is only liberated via the generic
+common. I see this as the key to unlocking the non-human.
+DMB : McKenzie Wark recently stated on the Empyre mailing list that
+‘Excommunication is a *structural condition*, not something one
+chooses. Communication needs to excommunicate in order to commu-nicate.’ To what extent do you agree with him and what are the impli-cations for thought and practice?
+ARG : The question of a structural condition leads to a number of inter-
+esting places. One way to approach it is through the lens of post-struc-
+turalism, whereby the outside is a structuring ingredient in the inside.
+Here the notion of communicative immediacy is co-constituted with
+threats of disconnection, alienation or exile. We talk about this aspecta great deal in Excommunication , particularly in regard to critical
+thought in the last half of the 20th century.
+But we also pursue another direction. I’m thinking again of what
+Thacker calls ‘the world without us’. Post-structuralism is an incrediblypowerful discourse, but it also diminishes certain approaches. Considerthe ‘return to truth’ in a contemporary thinker like Badiou, or the ‘returnto the absolute’ in Meillassoux. That’s not exactly our approach, but we
+do try to look beyond a number of the post-structuralist prohibitions
+that conditioned so much of critical thinking for so long.Excommunication , therefore, is a way to think about things like anti-
+and post-humanism, the notion of an absolute outside, and the possibil-
+ity for strictly unidirectional mediation.18 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+DMB : Your new book, Laruelle: Against the Digital , appears provoca-
+tively located in relation to the contemporary mode of informational
+capitalism. Laruelle is explicitly cited as a key resource for thinking theprovocation in this work. Could you outline your argument in the new
+book and how it connects with your previous work?
+ARG : Rather than oﬀering a synopsis or critical annotation of
+Laruelle’s work, the book aims to collide Laruelle’s non-standard
+method with the concept of digitality. I say concept of digitality because
+the topic at hand is not exactly the web, computers, video games, or
+even binary numbers, but a principle that subtends and facilitates all ofthem. I deﬁne digitality as a process of distinction. Thus I see an imme-
+diate resemblance with Laruelle’s noti on of the ‘philosophical decision’.
+Philosophy and digitality both require a fundamental act in whichsomething is divided into two. For example, metaphysics requires thenotion of a division between essences and instances. Or on a computerchip data is modelled and processed b y means of voltage diﬀerentials.
+This fundamental action is important: d istinction, division, decision, or
+discretization. Not so much the pro verbial ‘zero and one’ of computer
+culture, I’m focused here on ‘one and two’, or what it means to movefrom one to two.
+We know that thought can be understood digitally, that’s the easy
+part. Philosophical rationality has worked that way since Plato, and sodoes a computer. (So-called digital philosophers like Stephen Wolframmerely state the obvious through a redundancy in terminology: there is
+no other philosophy than digital philosophy!) The hard part is to specu-
+late about a withdrawal from the digital decision. In this sense the bookis nothing but a massive thought experiment: is it possible to think non-digitally? My answer is the same answer given since time immemorial:Yes. We need immanence and materialism to accomplish it.
+DMB : Critical theory argues that philosophy is a speciﬁc historical trad-
+ition bound up with the history of class thought. How is Laruelle useful
+in contributing to a general process of reﬂection on basic assumptions ofwhich philosophy would be an example?
+ARG : Laruelle gives a basic instruction, one that reveals the distinction
+between philosophy and theory – or ‘science’, as Laruelle, Althusser and
+others often prefer to call it. His instruction is that the best response tophilosophy is not more philosophy. The best response to philosophy is tocease doing it.
+Marx’s eleventh thesis on Feuerbach conveys a similar instruction. In
+that famous maxim, Marx suggests that philosophers ought to changethe world, not simply interpret it. And elsewhere in the early writings,Marx delineates cleanly between speculative philosophy and the kind oftheoretical intervention necessary for political action. Laruelle may beeﬀectively read through a similar lens. The correct response toBerry and Galloway 19
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+interpretation (philosophy) is not more interpretation (not more philoso-
+phy). Marx’s ‘philosophers only interpret the world’ is identical to whatLaruelle calls the ‘philosophical decision’. The point is not to continue
+enacting the decision but to articulate a rigorous and immanent theoret-
+ical science of it.
+This is precisely what critical theory has always done. Whether it be
+through ideological demystiﬁcation or experiments in radical practice,critical theory has always posed itself against the naturalizing powers
+of representational structures. For Laruelle, the goal is not so much to
+reﬂect on those structures, but to show how there is really only onestructure, the generic commonality of the material base.
+DMB : Do you feel that Snowden’s NSA revelations have strengthened
+the conditions for a critique for the ‘societies of control’ and their mate-
+rial base?
+ARG : I ﬁrst started working on the problem of mass data surveillance with
+the ‘Carnivore’ project in early 2001. Launched during an earlier phase of
+mass government monitoring, Carnivore was essentially a packet sniﬀerwrapped up in an easy API so that artists and designers could visualize
+real-time network data with a minimum amount of coding knowledge. The
+project was partially pedagogical (get to know your data!) and partiallytactical (start using encryption!). The recent Snowden revelations merelyconﬁrmed what everyone already knew. In my ﬁrst book, Protocol , I wrote
+that, contra conventional wisdom around the seemingly chaotic or unor-
+ganizable nature of digital systems, the internet is in fact the mostly highly
+controlled mass media hitherto known.
+Today we’re witnessing the true potential of these kinds of systems,
+not only by the state but also in the commercial sector as well. A trueideological coup: cybernetics, which since its inception was deﬁned as atechnology of systemic control and management, was rolled out under
+the banner of individual freedom. The goal of critical thinking today,
+indeed the very deﬁnition of thought in the broadest sense, is to establisha relationship of the two vis-a `-vis its object, a relation of diﬀerence,
+distinction, decision, or opposition.
+DMB : More recently you have been using the notion of ‘compression’ as
+a concept for thinking philosophically. What are the implications of
+compression for activist tactics and strategies?
+ARG : The work on compression – for which I’m greatly inspired by
+scholars like Jonathan Sterne and Jason R. LaRivie `re – is motivated
+by what you might call an anti-Baroque instinct. The Baroque has a
+tendency toward over-saturation, toward the accentuation of a
+manner. Deleuze’s book on the Baroque shows how such an accentu-ation – or a ‘fold’, as he calls it – is in fact the genesis of the modernsubject. This fold is a kind of compression, or at least a kind of sculpting20 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+and inﬂecting of forces and energies. Much of modern life, thus, hinges
+on the relative compression or expansion of this vital milieu. Deleuze’swork in particular hinges on this dynamic. No longer beholden to thehighly compressed model of the Freudian subject, Deleuze opened up an
+uncompressed vital milieu, prizing expressive logics over compressive
+ones. Or think about the new social movements of the 1960s and theway in which political action revolved around the expansion or liberationof quotidian experience. Express yourself. Liberate your desire. Takeback the streets.
+All of these tactics are tremendously useful. Yet the world is diﬀerent
+today, and thus we need to invent diﬀerent tactics. We shouldn’t expectthat the tools from the 1960s will still work. This is part of why I’m
+drawn to generic compression as a tactic. It breaks the orthodox assump-
+tions of Marxist critique, that one should avoid mystiﬁcation anddenaturalization. Yet in an age of mandated visibility, of high resolution,and high bandwidth, I wonder if a little bit of compression isn’t tacticallyuseful. I wonder if a cryptographic world isn’t more attractive today thana world decompressed and fully legible to all (legible not just by the BigOther or the Father, but the NSA and Gmail). I wonder if a degradedimage isn’t better than a photorealistic one. Heidegger used phenomen-
+ology as an avenue for truth, phenomenology as the pursuit of ‘that
+which shows itself’. But obfuscation might be the better paradigm today.
+Note
+1. This text is a re-presentation of an email discussion between David M. Berry
+and Alexander R. Galloway, carried out between April and June 2014, which
+has been edited to clarify the argument and the dialogue. Questions and
+answers may have been merged or re-ordered from the original emailexchange.
+References
+Badiou A (2007) Being and Event . London: Bloomsbury Publishing.
+Berry DM (2012) Understanding Digital Humanities . Basingstoke: Palgrave
+Macmillan.
+Berry DM (2014) Critical Theory and the Digital . New York, Continuum.
+Deleuze G (1992) Postscript on the societies of control. October 59: 3–7.
+Galloway AR (2006) Protocol: How Control Exists After Decentralization .
+Cambridge, MA: MIT Press.
+Galloway AR (2012) Laruelle, anti-capitalist. In: Mullarkey J and Smith AP
+(eds) Laruelle and Non-Philosophy . Edinburgh: Edinburgh University Press.
+Galloway AR (2014) Laruelle: Against the Digital . Minneapolis: University of
+Minnesota Press.
+Galloway AR, Thacker E and Wark M (2013) Excommunication: Three Inquiries
+in Media and Mediation . Chicago: University of Chicago Press.
+Hardt M (1995) The withering of civil society. Social Text 45: 27–44.Berry and Galloway 21
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
+Laruelle F (2000) Introduction au non-marxisme . Paris: Presses universitaires de
+France.
+Latour B (2004) Why has critique run out of steam? From matters of fact to
+matters of concern. Critical Inquiry 30(2): 225–248.
+David M. Berry is Reader in the School of Media, Film and Music at the
+University of Sussex.
+Alexander R. Galloway is Professor in the Department of Media, Culture,
+and Communication at New York University.22 Theory, Culture & Society 0(0)
+ at Bobst Library, New York University on June 18, 2015 tcs.sagepub.com Downloaded from 
