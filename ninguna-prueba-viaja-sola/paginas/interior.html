@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>interior · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  body.pagina-interior main { display: grid; place-items: center; min-height: 66svh; text-align: center; }
+  .punto-solo { width: 12px; height: 12px; border-radius: 50%; background: var(--c-perdida); margin: 0 auto 2.4rem; }
+  .voz { max-width: 30em; font-size: 1.06rem; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="interior" class="pagina-interior">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · interior</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main>
+  <div>
+    <div class="punto-solo" aria-hidden="true"></div>
+    <div class="voz suelto" id="voz"></div>
+    <p class="medida" id="pie"></p>
+  </div>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">esta dirección no aparece en el mapa · <a href="../mapa.html">mapa</a></p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'interior', espera: 26 });
+
+  const frag = N.mem.d.fragmentos.find(function (f) { return f.id === 'interior'; });
+  const sostenido = N.mem.tieneHito('punto-sostenido');
+  const voz = document.getElementById('voz');
+
+  const lineas = sostenido
+    ? ['Me sostuvieron.',
+       'No sé si eso significa que me guardaron o que la caja aprendió a tener mi forma.',
+       'Cada vez que movías una cara yo no me movía. Es la única cosa que puedo demostrar.',
+       'El aparato lo anotó como prueba. Yo lo anoto como compañía.']
+    : (frag
+      ? ['Salí.',
+         'No fue una decisión: fue una cuenta. Alguien movió una cara y dejé de estar adentro.',
+         'Ahora soy residuo, que es una manera educada de decir que sigo existiendo en otra página.',
+         'Si me recuperan, el mensaje va a perder otro bit. Piénsenlo.']
+      : ['Todavía estoy adentro.',
+         'Llegaste antes de que la cuenta cambiara. Eso no ocurre casi nunca.',
+         'Mientras tanto: la caja no me protege. Se deforma alrededor de mí, que no es lo mismo.',
+         'Vuelve a cerrarla cuando salgas.']);
+
+  let i = 0;
+  (function poner() {
+    if (i >= lineas.length) return;
+    const p = document.createElement('p');
+    voz.appendChild(p);
+    N.texto.teclear(p, lineas[i++], 24, function () { N.bus.later(poner, 700); });
+  })();
+
+  document.getElementById('pie').textContent = frag
+    ? 'estado del punto: ' + frag.estado
+    : 'estado del punto: ' + (sostenido ? 'sostenido' : 'adentro');
+
+  N.sonido.control(document.body);
+});
+</script>
+</body>
+</html>

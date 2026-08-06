@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>certificado · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/regimes.css">
+<link rel="stylesheet" href="css/print.css">
+<style>
+  .cert { max-width: 52rem; font-family: "Monitor", ui-monospace, monospace; font-size: .86rem; line-height: 1.85; }
+  .cert h2 { font-family: "Apercu", system-ui, sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; opacity: .55; margin: 2rem 0 .5rem; font-weight: 400; }
+  .cert ul { list-style: none; margin: 0; padding: 0; }
+  .cert li { padding: .1rem 0; }
+  .veredicto { font-family: "Apercu", system-ui, sans-serif; font-size: clamp(1.5rem, 6vw, 3.6rem); line-height: 1.02; font-weight: 700; letter-spacing: -.03em; margin: 2.4rem 0 1rem; max-width: 16em; }
+  .sello { display: block; margin: 2rem 0; }
+  .descendiente { border-top: 2px solid var(--tinta); padding-top: 1.2rem; margin-top: 2.6rem; }
+  .semilla-hija { font-family: "Monitor", ui-monospace, monospace; font-size: 1.2rem; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="certificado" class="pagina-certificado">
+
+<header class="cabeza"><p class="marca"><a href="index.html">ninguna prueba viaja sola</a> · certificado</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main>
+  <h1 class="monumento">ACTA</h1>
+  <p class="subtitulo" id="expediente"></p>
+
+  <svg class="sello" id="sello" width="220" height="220" role="img" aria-label="sello compuesto con el recorrido"></svg>
+
+  <svg class="lienzo-circuito" id="circuito-acta" role="img"
+       aria-label="el circuito de esta prueba, impreso con el acta"></svg>
+
+  <div class="cert" id="cert"></div>
+
+  <p class="veredicto" id="veredicto"></p>
+  <p id="cierre" style="max-width:34em"></p>
+
+  <div class="controles">
+    <button class="boton" type="button" id="imprimir">imprimir el acta</button>
+    <button class="boton" type="button" id="copiar">copiar la semilla</button>
+  </div>
+
+  <div class="descendiente">
+    <p class="subtitulo">semilla descendiente</p>
+    <p class="semilla-hija" id="hija"></p>
+    <p>Esta acta también puede leerse como la primera página de otro recorrido. La semilla
+    descendiente no reinicia nada: hereda de ésta los bits apagados y empieza con un mensaje
+    que ya venía roto.</p>
+    <p><a class="salida clase-transmision" id="ir-hija" href="#">entrar por la semilla descendiente<span class="salida-clase">transmisión</span></a></p>
+  </div>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="mapa.html">mapa</a> · <kbd>B</kbd> bitácora</p>
+
+<script src="js/carga.js" data-base="./"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'certificado', espera: 60 });
+
+  const m = N.mem.d;
+  const mov = N.narrativa.estado();
+  const g = N.narrativa.ganados();
+  const suficiente = N.narrativa.puedeCertificar();
+
+  document.getElementById('expediente').textContent =
+    'expediente ' + N.estado.semilla + ' · movimiento ' + mov.n + ' · ' + mov.nombre +
+    ' · emitido con ' + g.length + ' invariantes';
+
+  /* el acta se compone con datos reales: rutas, pausas, residuos,
+     transformaciones, contradicciones, fragmentos, falsos recuerdos y
+     páginas nunca visitadas. */
+  const cert = document.getElementById('cert');
+  function seccion(titulo, lineas) {
+    const h = document.createElement('h2'); h.textContent = titulo; cert.appendChild(h);
+    const ul = document.createElement('ul');
+    if (!lineas.length) lineas = ['—'];
+    for (const l of lineas) { const li = document.createElement('li'); li.textContent = l; ul.appendChild(li); }
+    cert.appendChild(ul);
+  }
+
+  const vistas = N.mem.paginasVistas();
+  const nunca = N.rutas.IDS.filter(function (id) { return vistas.indexOf(id) < 0; });
+  const perdidos = m.fragmentos.filter(function (f) { return f.estado === 'perdido'; });
+
+  seccion('rutas recorridas', vistas.map(function (p) {
+    const c = N.rutas.catalogo[p];
+    return (c ? c.t : p) + ' · ' + N.mem.vecesEn(p) + ' visitas';
+  }));
+
+  seccion('permanencia y pausas', [
+    Math.round(N.mem.permanenciaTotal() / 1000) + ' s de permanencia acumulada',
+    m.copia.pausas.length + ' pausas registradas · mediana ' + (N.copia.modelo().mediana) + ' s',
+    m.cargas + ' cargas de este expediente'
+  ]);
+
+  seccion('transformaciones aplicadas al mensaje', m.bits.flips.map(function (f, i) {
+    return 'bit ' + (i + 1) + ' · carácter ' + f[0] + ' · ' + (f[2] || 'sin causa registrada');
+  }));
+
+  seccion('residuos', m.fragmentos.map(function (f) { return f.texto + ' · ' + f.estado + ' · de ' + f.de; }));
+
+  seccion('contradicciones', m.contradicciones.map(function (c) { return c.a + ' ‖ ' + c.b + ' · ' + c.causa; }));
+
+  seccion('falsos recuerdos', m.falsos.map(function (f) { return '[' + f.tipo + '] ' + f.ref + ' · ' + f.causa; }));
+
+  /* el circuito: la prueba leída como máquina, con su costo medido */
+  const circuito = N.regE.construir();
+  const costo = N.regE.dibujar(document.getElementById('circuito-acta'), circuito, {});
+  const opsE = ((m.regimenes.E && m.regimenes.E.estado.ops) || []);
+  seccion('el circuito de esta prueba', [
+    'nodos ' + costo.nodos + ' · profundidad ' + costo.profundidad + ' · duplicación ' + costo.duplicacion + ' · cable ' + costo.cable + ' px',
+    opsE.length ? 'simplificaciones aplicadas: ' + opsE.map(function (o) { return o.tipo; }).join(', ') : 'ninguna simplificación aplicada',
+    'huecos por relaciones retiradas: ' + ((m.regimenes.E && m.regimenes.E.estado.huecos) || 0),
+    'no existe un circuito pequeño para este mensaje'
+  ]);
+
+  /* la poda: qué quedó del grafo y si la ley aguantó */
+  const stJ = N.regJ.estado();
+  seccion('la poda', [
+    stJ.aristas + ' relaciones en pie de ' + stJ.originales + ' coloreadas',
+    stJ.podadas + ' relaciones retiradas a mano',
+    'degeneración ' + stJ.degeneracion + ' · componentes ' + stJ.componentes + ' · documentos sueltos ' + stJ.desprendidos.length,
+    'ley: ' + N.regJ.LEY,
+    stJ.refuta ? 'estado de la ley: REFUTADA por contraejemplo' : 'estado de la ley: en pie'
+  ]);
+
+  seccion('estados matemáticos', [
+    'empaquetamiento · dimensión ' + ((m.regimenes.A && m.regimenes.A.estado.dimension) || 2) + ' · expulsados ' + ((m.regimenes.A && m.regimenes.A.estado.expulsados) || 0),
+    'códigos · ' + m.codigos.length + ' palabras · distancia mínima ' + N.regB.distanciaMinima() + ' · mutadas ' + ((m.regimenes.B && m.regimenes.B.estado.mutados) || 0),
+    'retícula · deformación ' + ((m.regimenes.G && m.regimenes.G.estado.deformacion) || 0),
+    'cuerpo convexo · deformaciones ' + ((m.regimenes.H && m.regimenes.H.estado.deformaciones) || 0),
+    'grafo · ' + m.aristas.length + ' relaciones · ' + m.triangulos.length + ' triángulos monocromáticos'
+  ]);
+
+  const esp = N.espectro.medidas();
+  const huellas = N.espectro.guardado().huellas;
+  seccion('genealogía musical', [
+    'fundamental ' + esp.f0 + ' Hz · ' + esp.vivos + ' parciales vivos de 16 · ' + esp.callados + ' callados',
+    'armonicidad ' + esp.armonicidad + ' · rugosidad ' + esp.rugosidad,
+    esp.sostenidos + ' parciales sostenidos · ' + esp.huellas + ' huellas · ' + esp.regresos + ' regresos',
+    esp.regresosPosibles ? 'quedan ' + esp.regresosPosibles + ' vías por las que algo podría volver' : 'no queda ninguna vía por la que algo pueda volver'
+  ].concat(huellas.slice(-8).map(function (h) {
+    return 'huella ' + h.id + ' · parcial ' + h.parcial + ' · ' + h.clase + ' · ' + h.causa;
+  })).concat(['este registro describe cómo sonó el expediente; no afirma qué decía el mensaje']));
+
+  seccion('la copia', m.copia.activa
+    ? ['despertó con ' + Object.keys(m.copia.transiciones).length + ' tramos aprendidos',
+       m.copia.actos.length + ' actos propios',
+       'color elegido: ' + (m.copia.color ? N.rutas.CLASES[m.copia.color].etiqueta : '—')]
+    : ['no llegó a existir: faltaron gestos, páginas o repeticiones']);
+
+  seccion('páginas nunca visitadas', nunca.map(function (id) { return N.rutas.catalogo[id].t; }));
+
+  seccion('invariantes admitidos', g.map(function (x) { return x.texto; }));
+
+  /* el sello: la firma gráfica del recorrido, no un adorno */
+  (function sello() {
+    const svg = document.getElementById('sello');
+    const NS = 'http://www.w3.org/2000/svg';
+    const cs = getComputedStyle(document.documentElement);
+    const cx = 110, cy = 110;
+    const pasos = Math.min(60, m.rutas.length);
+    if (pasos < 2) { svg.style.display = 'none'; return; }   // sin recorrido no hay firma
+    let d = '';
+    for (let i = 0; i < pasos; i++) {
+      const rr = m.rutas[m.rutas.length - pasos + i];
+      const idx = N.rutas.IDS.indexOf(rr.p);
+      const a = (idx / N.rutas.IDS.length) * Math.PI * 2;
+      const rad = 26 + (rr.d ? Math.min(74, Math.log(1 + rr.d) * 9) : 12);
+      d += (i ? 'L' : 'M') + (cx + Math.cos(a) * rad).toFixed(1) + ',' + (cy + Math.sin(a) * rad).toFixed(1) + ' ';
+    }
+    d += 'Z';
+    const p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', d);
+    p.setAttribute('fill', 'none');
+    p.setAttribute('stroke', cs.getPropertyValue('--tinta').trim());
+    p.setAttribute('stroke-width', '1');
+    svg.appendChild(p);
+    for (const e of m.aristas.slice(-24)) {
+      const i1 = N.rutas.IDS.indexOf(e[0]), i2 = N.rutas.IDS.indexOf(e[1]);
+      if (i1 < 0 || i2 < 0) continue;
+      const a1 = (i1 / N.rutas.IDS.length) * Math.PI * 2, a2 = (i2 / N.rutas.IDS.length) * Math.PI * 2;
+      const l = document.createElementNS(NS, 'line');
+      l.setAttribute('x1', cx + Math.cos(a1) * 92); l.setAttribute('y1', cy + Math.sin(a1) * 92);
+      l.setAttribute('x2', cx + Math.cos(a2) * 92); l.setAttribute('y2', cy + Math.sin(a2) * 92);
+      l.setAttribute('stroke', cs.getPropertyValue('--c-' + e[2]).trim());
+      l.setAttribute('stroke-opacity', '.7');
+      svg.appendChild(l);
+    }
+  })();
+
+  /* tres actas distintas: la que se cierra, la que sigue abierta, y la
+     que se emite porque la demostración falló. sólo la tercera es salida. */
+  document.getElementById('veredicto').textContent = stJ.refuta
+    ? 'LA DEMOSTRACIÓN FALLÓ. NINGUNA PARTE DEL MENSAJE VIAJÓ SOLA'
+    : (suficiente
+      ? 'NINGUNA PARTE DEL MENSAJE VIAJÓ SOLA'
+      : 'EXPEDIENTE ABIERTO: NINGUNA PARTE DEL MENSAJE VIAJÓ SOLA');
+
+  document.getElementById('cierre').textContent = stJ.refuta
+    ? 'La ley que organizaba el expediente decía que ninguna prueba es un bosque, porque toda prueba contiene al menos un regreso. Retiraste ' + stJ.podadas + ' relaciones hasta dejar un bosque que no soltó a ningún documento. El contraejemplo es tuyo y no se puede deshacer: la bitácora ya perdió las causas. Lo que queda no demuestra el contenido del mensaje —nunca iba a demostrarlo—, demuestra que la máquina necesitaba la prueba más que el mensaje.'
+    : (suficiente
+      ? 'Esta acta no demuestra el contenido del mensaje. Demuestra que hubo tránsito, que el tránsito modificó lo que transportaba, y que ninguna de sus partes llegó por su cuenta. El original no tiene página en este archivo.'
+      : 'Se emite con lo que hay. Faltan ' + N.narrativa.faltaParaCertificar() + ' invariantes para que el aparato considere cerrado el expediente; el acta se emite igual, porque cerrar tampoco demostraría el contenido.');
+
+  N.mem.hito('acta-emitida', g.length);
+
+  /* la semilla descendiente hereda los bits apagados */
+  const hija = N.estado.semilla + '·' + (N.texto.bitsPerdidos() || 0) + '·' + (N.seed.hash32(N.estado.semilla + ':' + m.rutas.length) % 997);
+  document.getElementById('hija').textContent = hija;
+  const ir = document.getElementById('ir-hija');
+  ir.href = 'index.html?seed=' + encodeURIComponent(hija) + '&z=0&v=descendiente';
+  ir.addEventListener('click', function () {
+    try {
+      // la descendiente no empieza de cero: nace con el mensaje ya roto
+      const base = JSON.parse(localStorage.getItem('npvs.' + N.estado.semilla) || '{}');
+      const nuevo = { v: 1, semilla: hija, creada: Date.now(), cargas: 0,
+        rutas: [], gestos: [], celdas: {}, codigos: [], colores: {}, aristas: [], triangulos: [],
+        contradicciones: [], fragmentos: [],
+        /* la descendiente hereda si la ley ya se cayó una vez: en ese mundo
+           TESTIGO enuncia una ley que alguien, antes, ya refutó */
+        regimenes: stJ.refuta ? { J: { visto: 0, hecho: 0, estado: { heredado: true, podadas: [] } } } : {},
+        falsos: [{ tipo: 'inferencia', ref: N.estado.semilla, causa: 'este mundo desciende de otro expediente y heredó sus bits apagados' }]
+          .concat(stJ.refuta ? [{ tipo: 'inferencia', ref: 'la ley', causa: 'la ley de este mundo ya fue refutada en el expediente anterior y se enuncia igual' }] : []),
+        copia: { transiciones: {}, direcciones: { izq: 0, der: 0, arriba: 0, abajo: 0 }, pausas: [], color: null, actos: [], activa: false, despertada: 0 },
+        bits: { perdidos: (base.bits && base.bits.perdidos) || 0, flips: (base.bits && base.bits.flips) || [] },
+        hitos: {}, destruidas: [], esperadas: [], ultima: null };
+      localStorage.setItem('npvs.' + hija, JSON.stringify(nuevo));
+    } catch (e) {}
+  });
+
+  document.getElementById('imprimir').addEventListener('click', function () { window.print(); });
+  document.getElementById('copiar').addEventListener('click', function () {
+    const u = location.origin + location.pathname.replace('certificado.html', 'index.html') + '?seed=' + encodeURIComponent(N.estado.semilla);
+    if (navigator.clipboard) navigator.clipboard.writeText(u).catch(function () {});
+    document.getElementById('copiar').textContent = 'semilla copiada';
+  });
+
+  N.sonido.control(document.body);
+});
+</script>
+</body>
+</html>

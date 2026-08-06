@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>bitácora · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  .leyenda { display: flex; gap: 1.2rem; flex-wrap: wrap; margin: .6rem 0 1.4rem; }
+  .leyenda span { font-family: "Micro","Monitor",ui-monospace,monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+  .invariantes { list-style: none; margin: 1rem 0; padding: 0; max-width: 44em; }
+  .invariantes li { padding: .3rem 0; border-bottom: 1px dotted var(--borde); }
+  .invariantes li::before { content: "▪ "; color: var(--acento); }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="bitacora" class="pagina-bitacora">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · bitácora</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main class="ancho">
+  <h1 class="monumento">LO QUE<br>SE DICE</h1>
+  <p class="subtitulo">no es un registro: es un aparato que recuerda, degrada, infiere e inventa</p>
+
+  <div class="leyenda">
+    <span class="c-verdadero">■ verdadero</span>
+    <span class="c-degradado">■ degradado</span>
+    <span class="c-inferencia">■ inferencia</span>
+    <span class="c-inventado">■ inventado</span>
+  </div>
+
+  <div class="envoltura-tabla">
+    <table class="tabla-memoria" id="tabla">
+      <thead><tr><th>página</th><th>permanencia</th><th>vía</th><th>clase</th><th>causa</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <hr class="regla">
+  <p class="subtitulo">invariantes conseguidos · no son puntos, son condiciones que ya no se pueden deshacer</p>
+  <ul class="invariantes" id="invariantes"></ul>
+  <p class="medida" id="certificable"></p>
+
+  <hr class="regla">
+  <p class="subtitulo">expediente espectral · el segundo registro, sometido a las mismas leyes</p>
+  <p class="medida" id="espectro-linea"></p>
+  <div class="espectro-acta" id="espectro-trazo"></div>
+  <ul class="genealogia" id="genealogia"></ul>
+
+  <hr class="regla">
+  <p class="subtitulo">lo que la memoria sostiene sin haberlo visto</p>
+  <ul class="invariantes" id="falsos"></ul>
+
+  <div class="controles">
+    <button class="boton" type="button" id="imprimir">imprimir la bitácora</button>
+    <a class="boton" id="ir-cert" href="#">ir al certificado</a>
+  </div>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'bitacora', espera: 50 });
+
+  const cuerpo = document.querySelector('#tabla tbody');
+  N.mem.d.rutas.slice(-70).reverse().forEach(function (r) {
+    const tr = document.createElement('tr');
+    tr.className = 'c-' + r.c;
+    const cat = N.rutas.catalogo[r.p];
+    const celdas = [
+      cat ? cat.t : r.p,
+      (r.d ? (Math.round(r.d / 100) / 10) + ' s' : '—'),
+      r.via || '—',
+      r.c,
+      r.causa || (r.c === 'verdadero' ? '' : '—')
+    ];
+    for (const c of celdas) { const td = document.createElement('td'); td.textContent = c; tr.appendChild(td); }
+    cuerpo.appendChild(tr);
+  });
+
+  const inv = document.getElementById('invariantes');
+  const g = N.narrativa.ganados();
+  if (!g.length) {
+    const li = document.createElement('li');
+    li.textContent = 'todavía ninguno. el aparato registra movimiento, no historia.';
+    inv.appendChild(li);
+  }
+  for (const x of g) { const li = document.createElement('li'); li.textContent = x.texto; inv.appendChild(li); }
+
+  /* el expediente espectral se lee igual con la bocina apagada */
+  document.getElementById('espectro-linea').textContent = N.espectro.linea();
+  N.espectro.trazo(document.getElementById('espectro-trazo'), { alto: 58 });
+  const gen = document.getElementById('genealogia');
+  const huellas = N.espectro.guardado().huellas;
+  if (!huellas.length) {
+    const li = document.createElement('li');
+    li.textContent = 'ninguna huella todavía. permanecer en una página deja crecer un parcial; interrumpirlo lo vuelve residuo.';
+    gen.appendChild(li);
+  }
+  for (const h of huellas.slice(-16).reverse()) {
+    const li = document.createElement('li');
+    li.className = 'c-' + h.clase;
+    const cat = N.rutas.catalogo[h.pagina];
+    li.innerHTML = '<span class="clase"></span> ';
+    li.querySelector('.clase').textContent = h.clase + ' · ' + h.estado;
+    li.appendChild(document.createTextNode(
+      'parcial ' + h.parcial + ' · ' + (cat ? cat.t : h.pagina) +
+      ' · ' + h.regresos + ' regresos · ' + h.dur + ' s' +
+      (h.copia ? ' · terminada por la copia' : '') + ' — ' + h.causa));
+    gen.appendChild(li);
+  }
+
+  const falsos = document.getElementById('falsos');
+  if (!N.mem.d.falsos.length) {
+    const li = document.createElement('li');
+    li.textContent = 'nada inventado todavía. hace falta volver más veces para que la memoria empiece a completar huecos.';
+    falsos.appendChild(li);
+  }
+  for (const f of N.mem.d.falsos) {
+    const li = document.createElement('li');
+    li.textContent = '[' + f.tipo + '] ' + f.ref + ' — ' + f.causa;
+    falsos.appendChild(li);
+  }
+
+  const cert = document.getElementById('certificable');
+  const ir = document.getElementById('ir-cert');
+  ir.href = N.rutas.href('certificado');
+  if (N.narrativa.puedeCertificar()) {
+    cert.textContent = 'hay evidencia suficiente para emitir un certificado. no demostrará el mensaje.';
+  } else {
+    cert.textContent = 'faltan ' + N.narrativa.faltaParaCertificar() + ' invariantes de al menos cuatro familias distintas. el certificado se emite igual, pero dirá menos.';
+  }
+  ir.addEventListener('click', function () { N.rutas.registrarArista('bitacora', 'certificado', 'recuerdo'); });
+
+  document.getElementById('imprimir').addEventListener('click', function () { window.print(); });
+
+  N.sonido.control(document.body);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ruido · ninguna prueba viaja sola</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/regimes.css">
+<link rel="stylesheet" href="../css/print.css">
+<style>
+  .tapiz { width: 100%; height: min(56svh, 34rem); display: block; touch-action: manipulation; }
+  .revelado { font-size: clamp(1.1rem, 3.4vw, 2.2rem); font-weight: 500; max-width: 22em; margin: 1.4rem 0; min-height: 2.4em; }
+</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%23222'/%3E%3C/svg%3E">
+</head>
+<body data-pagina="ruido" class="pagina-ruido">
+
+<header class="cabeza"><p class="marca"><a href="../index.html">ninguna prueba viaja sola</a> · ruido</p></header>
+<div class="telemetria" data-telemetria aria-label="telemetría de la señal"></div>
+
+<main class="ancho">
+  <h1 class="monumento">RUIDO</h1>
+  <p class="subtitulo">lo que ustedes llaman ruido es la parte que viajó conmigo</p>
+
+  <canvas class="tapiz" id="tapiz" aria-label="campo de ruido que revela estructura al repetirse"></canvas>
+  <p class="medida">cada clic promedia una repetición más. el ruido no se limpia: se acumula hasta que aparece lo que había debajo.</p>
+
+  <p class="revelado" id="revelado"></p>
+  <p class="medidor" id="medidor"></p>
+  <div class="trama" id="trama"></div>
+</main>
+
+<nav class="salidas" data-salidas aria-label="salidas de esta página"></nav>
+<p class="pie">semilla en la barra de direcciones · <a href="../mapa.html">mapa</a> · <kbd>M</kbd> mapa · <kbd>B</kbd> bitácora · <kbd>Esc</kbd> hueco</p>
+
+<script src="../js/carga.js" data-base="../"></script>
+<script>
+document.addEventListener('npvs:cargado', function () {
+  'use strict';
+  const N = window.NPVS;
+  N.shell.iniciar({ pagina: 'ruido', espera: 26 });
+
+  const c = document.getElementById('tapiz');
+  const g = c.getContext('2d');
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  const est = N.mem.regimen('ruido', {}).estado;
+  est.repeticiones = est.repeticiones || 0;
+
+  /* repetir promedia: la estructura aparece porque el ruido es independiente
+     y la señal no. es la operación, no un filtro. */
+  const frase = N.texto.mensajeDegradado().toUpperCase().split(' ').slice(0, 4).join(' ');
+  let mascara = [];
+  let acumulado = null;
+
+  function medir() {
+    const rect = c.getBoundingClientRect();
+    c.width = Math.max(1, Math.floor(rect.width * dpr));
+    c.height = Math.max(1, Math.floor(rect.height * dpr));
+    mascara = N.texto.mascaraDeTexto(frase, c.width, c.height, 3);
+    acumulado = new Float32Array(Math.ceil(c.width / 3) * Math.ceil(c.height / 3));
+  }
+
+  function paso() {
+    const cols = Math.ceil(c.width / 3);
+    const r = N.seed.make(N.estado.semilla, 'ruido:' + est.repeticiones);
+    const enMascara = new Set(mascara.map(function (p) { return Math.floor(p[1] / 3) * cols + Math.floor(p[0] / 3); }));
+    for (let i = 0; i < acumulado.length; i++) {
+      const senal = enMascara.has(i) ? 0.62 : 0.38;
+      acumulado[i] += (r.raw() < senal ? 1 : 0);
+    }
+    est.repeticiones++;
+    N.mem.guardar();
+  }
+
+  function pintar() {
+    const cs = getComputedStyle(document.documentElement);
+    g.fillStyle = cs.getPropertyValue('--papel').trim();
+    g.fillRect(0, 0, c.width, c.height);
+    const cols = Math.ceil(c.width / 3);
+    const tinta = cs.getPropertyValue('--tinta').trim();
+    g.fillStyle = tinta;
+    const n = Math.max(1, est.repeticiones);
+    for (let i = 0; i < acumulado.length; i++) {
+      const p = acumulado[i] / n;
+      if (p <= 0.5) continue;
+      g.globalAlpha = Math.min(1, (p - 0.5) * 7);
+      g.fillRect((i % cols) * 3, Math.floor(i / cols) * 3, 3, 3);
+    }
+    g.globalAlpha = 1;
+    document.getElementById('medidor').innerHTML = '';
+    const filas = [['repeticiones', est.repeticiones], ['legibilidad', Math.min(100, Math.round(est.repeticiones / 40 * 100)) + '%']];
+    for (const [k, v] of filas) {
+      const s = document.createElement('span');
+      s.innerHTML = '<b></b> ';
+      s.querySelector('b').textContent = k + ':';
+      s.appendChild(document.createTextNode(String(v)));
+      document.getElementById('medidor').appendChild(s);
+    }
+    document.getElementById('revelado').textContent = est.repeticiones >= 40 ? frase : '';
+    if (est.repeticiones >= 40) N.mem.hito('la-repeticion-revelo-la-estructura', est.repeticiones);
+  }
+
+  medir();
+  for (let i = 0; i < Math.min(est.repeticiones, 12); i++) paso();
+  pintar();
+
+  N.bus.listen(c, 'pointerdown', function () { for (let i = 0; i < 4; i++) paso(); pintar(); });
+  N.bus.listen(window, 'resize', function () { medir(); pintar(); });
+  /* la inactividad también repite: el aparato promedia sin nadie */
+  N.bus.inactividad(26, function () { for (let i = 0; i < 12; i++) paso(); pintar(); });
+  N.bus.inactividad(70, function () { for (let i = 0; i < 24; i++) paso(); pintar(); });
+
+  const tr = [];
+  for (const cod of N.mem.d.codigos.slice(-60)) tr.push(cod.w);
+  document.getElementById('trama').textContent = (tr.length ? tr : ['sin recuerdos']).join(' ');
+
+  N.sonido.control(document.body);
+});
+</script>
+</body>
+</html>
