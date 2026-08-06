@@ -1,0 +1,1818 @@
+"To Do Justice to Freud": The History of Madness in the Age of Psychoanalysis
+Author(s): Jacques Derrida, Pascale-Anne Brault, Michael Naas
+Source: Critical Inquiry, Vol. 20, No. 2 (Winter, 1994), pp. 227-266 
+Published by: The University of Chicago Press
+Stable URL: http://www.jstor.org/stable/1343910
+Accessed: 20/09/2009 21:40
+Your use of the JSTOR archive indicates your acceptance of JSTOR's Terms and Conditions of Use, available at
+http://www.jstor.org/page/info/about/policies/terms.jsp. JSTOR's Terms and Conditions of Use provides, in part, that unless
+you have obtained prior permission, you may not download an entire issue of a journal or multiple copies of articles, and you
+may use content in the JSTOR archive only for your personal, non-commercial use.
+Please contact the publisher regarding any further use of this work. Publisher contact information may be obtained at
+http://www.jstor.org/action/showPublisher?publisherCode=ucpress.
+Each copy of any part of a JSTOR transmission must contain the same copyright notice that appears on the screen or printed
+page of such transmission.
+JSTOR is a not-for-profit organization founded in 1995 to build trusted digital archives for scholarship. We work with the
+scholarly community to preserve their work and the materials they rely upon, and to build a common research platform that
+promotes the discovery and use of these resources. For more information about JSTOR, please contact support@jstor.org.
+The University of Chicago Press is collaborating with JSTOR to digitize, preserve and extend access to Critical
+Inquiry.
+http://www.jstor.org
+"To Do Justice to Freud": The History of 
+Madness in the Age of Psychoanalysis 
+Jacques Derrida 
+Translated by Pascale-Anne Brault and Michael Naas 
+When Elisabeth Roudinesco and Rene Major did me the honor and kind- 
+ness of inviting me to a commemoration that would also be a reflection, 
+to one of these genuine tributes where thought is plied to fidelity and 
+fidelity honed by thought, I did not hesitate for one moment. 
+First of all, because I love memory. This is nothing original, of 
+course, and yet how else can one love? Indeed, thirty years ago, this great 
+book of Foucault was an event whose repercussions were so intense and 
+multiple that I will not even try to identify much less measure them deep 
+down inside me. Next, because I love friendship, and the trusting af- 
+fection that Foucault showed me thirty years ago, and that was to last for 
+many years, was all the more precious in that, being shared, it corre- 
+sponded to my professed admiration. Then, after 1972, what came to 
+obscure this friendship, without, however, affecting my admiration, was 
+not, in fact, alien to this book, and to a certain debate that ensued-or at 
+least to its distant, delayed, and indirect effects. There was in all of this a 
+sort of dramatic chain of events, a compulsive and repeated precipitation 
+that I do not wish to describe here because I do not wish to be alone, to 
+be the only one to speak of this after the death of Michel Foucault- 
+except to say that this shadow that made us invisible to one another, that 
+made us not associate with one another for close to ten years (until 1 
+On 23 November 1991, the Ninth Colloquium of the International Society for the History of Psychiatry and Psychoanal- 
+ysis devoted a conference to Foucault's Histoire de lafolie to mark the thirtieth anniversary of its publication. This essay, 
+which was given as a talk at that conference, was published in French in Penser lafolie: Essais sur Michel Foucault (Paris, 
+1992). 
+Critical Inquiry 20 (Winter 1994) 
+English translation ?1994 by Editions Galilee. Used with permission. 
+227 
+228 Jacques Derrida 
+January 1982 when I returned from a Czech prison), is still part of a story 
+that I also love like life itself. It is part of a story or history that is related, 
+and that thus relates me by the same token, to the book whose great event 
+we are commemorating here, to something like its postface, one of 
+its postfaces, since the drama I just alluded to also arose out of a certain 
+postface, and even out of a sort of postscript added by Foucault to a post- 
+face in 1972. 
+While accepting wholeheartedly this generous invitation, I nonethe- 
+less declined the suggestion that came along with it to return to the dis- 
+cussion that began some twenty-eight years ago. I declined for numerous 
+reasons, the first being the one I just mentioned: one does not carry on 
+a stormy discussion after the other has departed. Second, because this 
+whole thing is more than just overdetermined (so many difficult and in- 
+tersecting texts, Descartes's, Foucault's, so many objections and re- 
+sponses, from me but also from all those, in France and elsewhere, who 
+later came to act as arbiters); it has become too distant from me, and 
+perhaps because of the drama just alluded to I no longer wished to return 
+to it. In the end, the debate is archived and those who might be interested 
+in it can analyze as much as they want and decide for themselves. By 
+rereading all the texts of this discussion, right up to the last word, and 
+especially the last word, one will be better able to understand, I imagine, 
+why I prefer not to give it a new impetus today. There is no privileged 
+witness for such a situation-which, moreover, only ever has the chance 
+of forming, and this from the very origin, with the possible disappearance 
+of the witness. This is perhaps one of the meanings of any history of 
+madness, one of the problems for any project or discourse concerning a 
+history of madness, or even a history of sexuality: is there any witnessing 
+to madness? Who can witness? Does witnessing mean seeing? Is it to 
+provide a reason [rendre raison]? Does it have an object? Is there any 
+Jacques Derrida is Directeur d'Etudes at the Ecole des Hautes 
+Etudes en Sciences Sociales in Paris and professor of French, University 
+of California, Irvine. His most recent contribution to Critical Inquiry is 
+"Given Time: The Time of the King" (Winter 1992). Pascale-Anne 
+Brault is assistant professor of French at DePaul University. She has writ- 
+ten articles on contemporary French literature and drama and is cur- 
+rently working on a book on the revisioning of female identity in classical 
+Greek literature. Michael Naas is assistant professor of philosophy at De- 
+Paul University. He has written articles on contemporary French thought 
+and is the author of Turning: From Persuasion to Philosophy (1993). He is 
+currently working on a book on the thought of Jacques Derrida. Brault 
+and Naas have previously translated two books by Derrida: The Other 
+Heading (1992) and Memoirs of the Blind (1993). The History of Madness 
+Winter 1994 229 
+object? Is there a possible third that might provide a reason without 
+objectifying, or even identifying, that is to say, without examining [ar- 
+raisoner]? 
+Though I have decided not to return to what was debated close to 
+thirty years ago, it would nevertheless be absurd, obsessional to the point 
+of pathological, to say nothing of impossible, to give in to a sort of fetishis- 
+tic denial and to think that I can protect myself from any contact with the 
+place or meaning of this discussion. Although I intend to speak today of 
+something else altogether, starting from a very recent rereading of The 
+History of Madness in the Classical Age, I am not surprised, and you will 
+probably not be either, to see the silhouette of certain questions re- 
+emerge: not their content, of course, to which I will in no way return, but 
+their abstract type, the schema or specter of an analogous problematic. 
+For example, if I speak not of Descartes but of Freud, if I thus avoid a 
+figure who seems central to this book and who, because he is decisive as 
+far as its center or centering of perspective is concerned, emerges right 
+from the early pages on, right from the first border or approach,' if I 
+thus avoid this Cartesian reference in order to move toward another (psy- 
+choanalysis, Freudian or some other) that is evoked only on the edges of 
+the book and is named only right near the end, or ends, on the other 
+border, this will perhaps be once again in order to pose a question that 
+will resemble the one that imposed itself upon me thirty years ago, 
+namely, that of the very possibility of a history of madness. The question 
+will be, in the end, just about the same, though it will be posed from 
+another border, and it still imposes itself upon me as the first tribute owed 
+such a book. If this book was possible, if it had from the beginning and 
+retains today a certain monumental value, the presence and undeniable 
+1. See Michel Foucault, Folie et diraison: Histoire de lafolie a l'dge classique (Paris, 1961), 
+pp. 53-57; hereafter abbreviated F Derrida refers here and throughout to the original 
+edition of this work. The book was reprinted with different pagination in 1972 and in- 
+cluded as an appendix "Mon corps, ce papier, ce feu," Foucault's response to Derrida's 
+"Cogito et histoire de la folie," a lecture first given in 1963 and reprinted in 1967 in Der- 
+rida, L'Ecriture et la difference (Paris, 1967). A much abridged version of Histoire de lafolie was 
+published in 1964 and was translated into English by Richard Howard under the title Mad- 
+ness and Civilization: A History of Insanity in the Age of Reason (New York, 1965); hereafter ab- 
+breviated M. 
+Since Derrida refers to the unabridged text of 1961 and works with the original title 
+throughout, we have referred to this work as The History of Madness (or in some cases, The 
+History of Madness in the Classical Age). This is in keeping with "Cogito and the History of 
+Madness," Writing and Difference, trans. Alan Bass (Chicago, 1978), pp. 31-63. For the reader 
+who wishes to follow Derrida's itinerary through Folie et diraison: Histoire de la folie a l'dge 
+classique, we have given all references to the 1961 French version along with references to 
+the English translation when they exist in the abridged version. Since all the other texts of 
+Foucault cited by Derrida have been translated in their entirety, we have in each case given 
+the French followed by the English page references. Translations have been slightly modi- 
+fied in several instances to fit the context of Derrida's argument.-TRANS. Critical Inquiry 
+230 Jacques Derrida 
+necessity of a monument, that is, of what imposes itself by recalling and 
+cautioning, it must tell us, teach us, or ask us something about its own 
+possibility. 
+About its own possibility today: yes, we are saying today, a certain to- 
+day. Whatever else one may think of this book, whatever questions or 
+reservations it might inspire in those who come at it from some other 
+point of view, its pathbreaking force seems incontestable. Just as incon- 
+testable, in fact, as the law according to which all pathbreaking opens the 
+way only at a certain price, that is, by bolting shut other passages, by 
+ligaturing, stitching up, or compressing, indeed repressing, at least provi- 
+sionally, other veins. And so today, like yesterday, I mean in March of 
+1963, it is this question of the today that is important to me, the question 
+such as I had tried to formulate it yesterday. I ask you to pardon me this 
+once, then, since I will not make a habit of it, for citing a few lines that 
+then defined, in its general form, a task that seems to me still necessary, 
+on the side of [du cote de] Freud this time rather than on the side of Des- 
+cartes. By saying "on the side of Freud" rather than "on the side of Des- 
+cartes," let us not give in too quickly to the naivete that would precipitate 
+us into believing that we are closer to a today with Freud than with Des- 
+cartes, though this is the opinion of most historians. 
+Here, then, is the question of yesterday, of the today of yesterday, 
+such as I would like to translate it today, on the side of Freud, trans- 
+porting it in this way into the today of today: 
+Therefore, if Foucault's book, despite all the acknowledged impossi- 
+bilities and difficulties [acknowledged by him, of course], was capable 
+of being written, we have the right to ask what, in the last resort, 
+supports this language without recourse or support ["without re- 
+course" and "without support" are expressions of Foucault that I had 
+just cited]: who enunciates the possibility of nonrecourse? Who wrote 
+and who is to understand, in what language and from what historical 
+situation of logos, who wrote and who is to understand this history 
+of madness? For it is not by chance that such a project could take 
+shape today. Without forgetting, quite to the contrary, the audacity of 
+Foucault's act in the History of Madness, we must assume that a certain 
+liberation of madness has gotten underway, that psychiatry has 
+opened itself up, however minimally [and, in the end, I would be 
+tempted simply to replace psychiatry by psychoanalysis in order to 
+translate the today of yesterday into the today of my question of to- 
+day], and that the concept of madness as unreason, if it ever had a 
+unity, has been dislocated. And that a project such as Foucault's can 
+find its historical origin and passageway in the opening produced by 
+this dislocation. 
+If Foucault, more than anyone else, is attentive and sensitive to 
+these kinds of questions, it nevertheless appears that he does not The History of Madness 
+Winter 1994 231 
+acknowledge their quality of being prerequisite methodological or 
+philosophical considerations.2 
+If this type of question made any sense or had any legitimacy, if the 
+point was then to question that which, today, in this time that is ours, this 
+time in which Foucault's History of Madness was written, made possible the 
+event of such a discourse, it would have been more appropriate for me 
+to elaborate this problematic on the side of modernity, a parte subjecti, in 
+some sense, on the side where the book was written, thus on the side, for 
+example, of what must have happened to the modern psychiatry men- 
+tioned in the passage I just read. To modern psychiatry or, indeed, to 
+psychoanalysis or rather to psychoanalyses or psychoanalysts, since the 
+passage to the plural will be precisely what is at stake in this discussion. 
+It would have thus been more imperative to insist on modern psychiatry 
+or psychoanalysis than to direct the same question toward Descartes. To 
+study the place and role of psychoanalysis in the Foucauldian project of 
+a history of madness, as I am now going to try to do, might thus consist 
+in correcting an oversight or in confronting more directly a problematic 
+that I had left in a preliminary stage, as a general, programmatic frame, 
+in the introduction to my lecture of 1963. That lecture made only one 
+allusion to psychoanalysis. It is true, however, that it inscribed it from the 
+very opening. In a protocol that laid out certain reading positions, I 
+spoke of the way in which philosophical language is rooted in nonphilo- 
+sophical language, and I recalled a rule of hermeneutical method that 
+still seems to me valid for the historian of philosophy as well as for the 
+psychoanalyst, namely, the necessity of first ascertaining a surface or man- 
+ifest meaning and, thus, of speaking the language of the patient to whom 
+one is listening: the necessity of gaining a good understanding, in a quasi- 
+scholastic way, philologically and grammatically, by taking into account 
+the dominant and stable conventions, of what Descartes meant on the al- 
+ready so difficult surface of his text, such as it is interpretable according 
+to classical norms of reading; the necessity of gaining this understanding 
+before submitting the first reading to a symptomatic and historical inter- 
+pretation regulated by other axioms or protocols, before and in order to 
+destabilize, wherever this is possible and if it is necessary, the authority of 
+canonical interpretations. Whatever one ends up doing with it, one must 
+begin by listening to the canon. It is in this context that I recalled Fer- 
+enczi's remark cited by Freud in The Interpretation of Dreams ("Every 
+language has its own dream language") and Lagache's observations con- 
+cerning polyglotism in analysis.3 
+In its general and historical form, my question concerned the site 
+2. Derrida, "Cogito et histoire de la folie," p. 61; "Cogito and the History of Madness," 
+p. 38. 
+3. See ibid., p. 53; p. 307.-TRANS. Critical Inquiry 
+232 Jacques Derrida 
+that today gives rise to a history of madness and thereby makes it possible. 
+Such a question should have led me, it is true, toward the situation of 
+psychiatry and psychoanalysis rather than toward a questioning of a read- 
+ing of Descartes. This logic would have seemed more natural and the 
+consequence more immediate. But if, in so strictly delimiting the field, I 
+substituted Descartes for Freud, it was perhaps not only because of the 
+significant and strategic place that Foucault confers upon the Cartesian 
+moment in the interpretation of the Great Confinement and of the Classical 
+Age, that is to say, in the layout of the very object of the book; it was 
+already, at least implicitly, because of the role that the reference to a cer- 
+tain Descartes played in the thought of that time, in the early sixties, as 
+close as possible to psychoanalysis, in the very element, in truth, of a cer- 
+tain psychoanalysis and Lacanian theory. This theory developed around 
+the question of the subject and the subject of science. Whether it was a 
+question of anticipated certainty and logical time (1945, in Ecrits) or, some 
+years later (1965-1966), of the role of the cogito and-precisely-of the 
+deceitful God in "La Science et la verite," Lacan returned time and again 
+to a certain unsurpassability of Descartes.4 In 1945, Lacan associated Des- 
+cartes with Freud in his "Propos sur la causalite psychique" and con- 
+cluded by saying that "neither Socrates, nor Descartes, nor Marx, nor 
+Freud, can be 'surpassed' insofar as they led their research with this pas- 
+sion for unveiling whose object is the truth."5 
+The title I have proposed for the few reflections I will risk today, 
+"The History of Madness in the Age of Psychoanalysis," clearly indicates 
+a change-a change in tense, in mode or in voice. It is no longer a ques- 
+tion of the age described by a History of Madness. It is no longer a question 
+of an epoch or period, such as the classical age, that would, inasmuch as 
+it is its very object, stand before the history of madness such as Foucault 
+writes it. It is a question today of the age to which the book itself belongs, 
+the age from out of which it takes place, the age that provides it its situa- 
+tion; it is a question of the age that is describing rather than the age that 
+is described. In my title, it would be necessary to put "the history of mad- 
+ness" in quotation marks since the title designates the age of the book, 
+The History (historia rerum gestarum) of Madness-as a book-in the age of 
+psychoanalysis and not the history (res gestae) of madness, of madness it- 
+self, in the age of psychoanalysis, even though, as we will see, Foucault 
+regularly attempts to objectify psychoanalysis and to reduce it to that of 
+which he speaks rather than to that from out of which he speaks. What 
+will interest me will thus be rather the time and historical conditions in 
+which the book is rooted, those that it takes as its point of departure, and 
+4. See Jacques Lacan, "Propos sur la causalite psychique" and "La Science et la v6rite," 
+Ecrits (Paris, 1966), p. 209, pp. 219-44. The latter was translated by Bruce Fink under the 
+title "Science and Truth," Newsletter of the Freudian Field 3, nos. 1-2 (1989):4-29.-TRANS. 
+5. Lacan, "Propos sur la causalite psychique," p. 193. The History of Madness 
+Winter 1994 233 
+not so much the time or historical conditions that it recounts and tries in 
+a certain sense to objectify. Were one to trust too readily in the opposition 
+between subject and object, as well as in the category of objectification 
+(something that I here believe to be neither possible nor just, and hardly 
+faithful to Foucault's own intention), one would say for the sake of conve- 
+nience that it is a question of considering the history of madness a parte 
+subjecti, that is, from the side where it is written or inscribed and not from 
+the side of what it describes. 
+Now, from the side where this history is written, there is, of course, 
+a certain state of psychiatry-as well as psychoanalysis. Would Foucault's 
+project have been possible without psychoanalysis, with which it is con- 
+temporary and of which it speaks little and in such an equivocal or ambiv- 
+alent manner in the book? Does the project owe psychoanalysis anything? 
+What? Would the debt, if it had been contracted, be essential? Or would 
+it, on the contrary, define the very thing from which the project had to 
+detach itself, and in a critical fashion, in order to take shape? In a word, 
+what is the situation of psychoanalysis at the moment of, and with respect 
+to, Foucault's book? And how does this book situate its project with re- 
+spect to psychoanalysis? 
+Let us put our trust for a moment in this common name, psychoanal- 
+ysis. And let us delay a bit the arrival of proper names, for example Freud 
+or Lacan, and provisionally assume that there is indeed a psychoanalysis 
+that is a single whole: as if it were not, already in Freud, sufficiently di- 
+vided to make its localization and identification more than problematic. 
+Yet the very thing whose coming due we are here trying to delay will no 
+doubt form the very horizon, in any case the provisional conclusion, of 
+this talk. 
+As you well know, Foucault speaks rather little of Freud in this book. 
+This may seem justified, on the whole, by the very delimitation that a 
+historian of madness in the classical age must impose upon himself. If 
+one accepts the great caesura of this layout (even though this raises a 
+question, or swarm of questions, that I prudently, and by economy, de- 
+cide not to approach in order to get a better grasp on what Foucault means 
+by Freud, situating myself, therefore, within the thesis or hypothesis of 
+the partition between a classical and a postclassical age), then Freud does 
+not have to be treated. He can and must be located at the very most on 
+the borderline. The borderline is never a secure place, it never forms an 
+indivisible line, and it is always on the border that the most disconcerting 
+problems of topology get posed. Where, in fact, would a problem of to- 
+pology get posed if not on the border? Would one ever have to worry about 
+the border if it formed an indivisible line? A borderline is, moreover, not 
+a place per se. It is always risky, particularly for the historian, to assign to 
+whatever happens on the borderline, to whatever happens between sites, 
+the taking-place of a determinable event. 
+Now, Foucault does and does not want to situate Freud in a historical Critical Inquiry 
+234 Jacques Derrida 
+place that is stabilizable, identifiable, and open to a univocal understand- 
+ing. The interpretation or topography that he presents us of the Freudian 
+moment is always uncertain, divided, mobile, some would say ambiguous, 
+others ambivalent, confused, or contradictory. Sometimes he wants to 
+credit Freud, sometimes discredit him, unless he is actually doing both 
+indiscernibly and at the same time. One will always have the choice of 
+attributing this ambivalence to either Foucault or Freud; it can character- 
+ize a motivation, the gesture of the interpreter and a certain state of his 
+work, but it can also, or in the first place, refer simply to the interpreter 
+or historian's taking account of a structural duplicity that his work reflects 
+from the thing itself, namely, from the event of psychoanalysis. The moti- 
+vation would thus be justly motivated, it would be just that-motivated; it 
+would be called for and justified by the very thing that is in question. For 
+the ambiguity of which we are going to speak could indeed be on the 
+side of psychoanalysis, on the side of the event of this invention named 
+psychoanalysis. 
+To begin, let us indicate a few telling signs. If most of the explicit 
+references to Freud are grouped in the conclusions of the book (at the 
+end of "The Birth of the Asylum" and in the beginning of "The Anthro- 
+pological Circle"),6 what I would here call a charniere, a hinge, comes ear- 
+lier on, right in the middle of the volume, to divide at once the book and 
+the book's relation to Freud. 
+Why a charniere? This word can be taken in the technical or anatomi- 
+cal sense of a central or cardinal articulation, a hinge pin (cardo) or pivot. 
+A charniere or hinge is an axial device that enables the circuit, the trope, 
+or the movement of rotation. But one might also dream a bit in the vicin- 
+ity of its homonym, that is, in line with this other artifact that the code of 
+falconry also calles a charniere, the place where the hunter attracts the 
+bird by laying out the flesh of a lure. 
+This double articulation, this double movement or alternation be- 
+tween opening and closing that is assured by the workings of a hinge, this 
+coming and going, indeed this fort/da of a pendulum [pendule] or balance 
+[balancier]-that is what Freud means to Foucault. And this technico- 
+historical hinge also remains the place of a possible simulacrum or lure- 
+for both the body and the flesh. Taken at this level of generality, things 
+will never change for Foucault. There will always be this interminable 
+alternating movement that successively opens and closes, draws near and 
+distances, rejects and accepts, excludes and includes, disqualifies and le- 
+gitimates, masters and liberates. The Freudian place is not only the 
+technico-historical apparatus, the artifact called charniere or hinge. Freud 
+himself will in fact take on the ambiguous figure of a doorman or door- 
+keeper [huissier]. Ushering in a new epoch of madness, our epoch, the 
+6. This final chapter of Histoire de lafolie is not included in Madness and Civilization.- 
+TRANS. The History of Madness 
+Winter 1994 235 
+one out of which is written The History of Madness (the book bearing this 
+title), Freud also represents the best guardian of an epoch that comes to 
+a close with him, the history of madness such as it is recounted by the 
+book bearing this title. 
+Freud as the doorman of the today, the holder of the keys, of those 
+that open as well as those that close the door, that is, the huis: onto the 
+today [l'aujourd'hui] or onto madness. He [Lui], Freud, is the double fig- 
+ure of the door and the doorkeeper. He stands guard and ushers in. 
+Alternatively or simultaneously, he closes one epoch and opens another. 
+And as we will see, this double possibility is not alien to an institution, to 
+what is called the analytic situation as a scene behind closed doors [huis 
+clos]. That is why-and this would be the paradox of a serial law-Freud 
+does and does not belong to the different series in which Foucault in- 
+scribes him. What is outstanding, outside the series [hors-serie], turns out 
+to be regularly reinscribed within different series. I am not now going to 
+get involved in formal questions concerning a quasi-transcendental law 
+of seriality that could be illustrated in an analogous way by so many other 
+examples, each time, in fact, that the transcendental condition of a series 
+is also, paradoxically, a part of that series, creating aporias for the consti- 
+tution of any set or whole [ensemble], particularly, of any historical con- 
+figuration (age, episteme, paradigm, themata, epoch, and so on). These 
+aporias are anything but accidental impasses that one should try to force 
+at all costs into received theoretical models. The putting to the test of 
+these aporias is also the chance of thinking. 
+To keep to the contract of this conference, I will restrict myself to a 
+single example. 
+The first sign comes right in the middle of the book (F, pp. 410-11; 
+M, pp. 197-98). It comes at the end of the second part, in the chapter 
+entitled "Doctors and Patients." We have there a sort of epilogue, less 
+than a page and a half long. Separated from the conclusion by asterisks,7 
+the epilogue also signals the truth of a transition and the meaning of a 
+passage. It seems to be firmly structured by two unequivocal statements: 
+1. Psychology does not exist in the classical age. It does not yet exist. 
+Foucault says this without hesitation right at the beginning of the epi- 
+logue: "In the classical age, it is futile to try to distinguish physical thera- 
+peutics from psychological medications, for the simple reason that 
+psychology did not exist." 
+2. But as for the psychology that was to be born after the classical 
+age, psychoanalysis would not be a part, it would no longer be a part. 
+Foucault writes: "It is not psychology that is involved in psychoanalysis." 
+In other words, if in the classical age there is notyet psychology, there 
+is, in psychoanalysis, already no more psychology. But in order to affirm 
+this, it is necessary, on the one hand, to resist a prejudice or a temptation, 
+7. This is the case for the French versions but not for the English.-TRANS. Critical Inquiry 
+236 Jacques Derrida 
+to resist that which continues to urge so many interpreters of good sense 
+(and sometimes, in part, Foucault among them) to take psychoanalysis 
+for a psychology (however original or new it may be). Foucault is going 
+to show signs of this resistance, as we will see. But it is also necessary, on 
+the other hand, to accept, within this historical schema, the hypothesis of a 
+return: not the return to Freud but the return of Freud to-. 
+What return? Return to what? Return is Foucault's word, an under- 
+scored word. If psychoanalysis is already no longer a psychology, does it 
+not, at least in this respect, seem to suggest a certain return to the time 
+when psychology was not yet? Beyond eighteenth-century psychology 
+and, very broadly, beyond the psychologistic modernity of the nineteenth 
+century, beyond the positivist institution of psychology, does it not seem 
+as if Freud were joining back up with a certain classical age or, at least, 
+with whatever in this age does not determine madness as a psychical ill- 
+ness but as unreason, that is, as something that has to do with reason? In 
+the classical age, if such a thing exists (an hypothesis of Foucault that I 
+take here, in this context, as such, as if it were not debatable), unreason 
+is no doubt reduced to silence; one does not speak with it. One interrupts 
+or forbids dialogue; and this suspension or interdiction would have re- 
+ceived from the Cartesian cogito the violent form of a sentence. For Freud 
+too madness would be unreason (and in this sense, at least, there would 
+be a neo-Cartesian logic at work in psychoanalysis). But this time one 
+should resume speaking with it: one would reestablish a dialogue with 
+unreason and lift the Cartesian interdiction. Like the word return, the 
+expression "dialogue with unreason" is a quotation. The two expressions 
+scan a final paragraph of this epilogue, in the middle of the book, that 
+begins with the phrase with which I entitled this talk: "We must do justice 
+to Freud" (F, p. 411; M, p. 198). 
+When one says, "one must do justice," "one has to be fair" ["ilfaut 
+etre juste"], it is often with the intention of correcting an impulse or re- 
+versing the direction of a tendency; one is also recommending resisting 
+a temptation. Foucault had to have felt this temptation, the temptation to 
+do an injustice to Freud, to be unfair to him, that is, in this case, to write 
+him into the age of the psychopathological institution (which we will de- 
+fine in a moment). He must have felt it outside or within himself. Indeed, 
+such a temptation must still be threatening and liable to reemerge since 
+it is still necessary to call for vigilance and greater justice. 
+Here, then, is the paragraph, which I read in extenso, since its inter- 
+nal tension determines, it seems to me, the matrix of all future statements 
+about psychoanalysis; it determines them in the very oscillation of their 
+movement back and forth. It is like scales ofjustice [la balance d'unejustice] 
+that not even the death sentence [arret de mort] would ever be able to stop 
+[arreterait] in their even or just [juste] stability. It is as if justice were to 
+remain its own movement: The History of Madness 
+Winter 1994 237 
+This is why we must do justice to Freud. Between Freud's Five Case 
+Histories and Janet's scrupulous investigations of Psychological Healing, 
+there is more than the density of a discovery; there is the sovereign 
+violence of a return. Janet enumerated the elements of a division, 
+drew up his inventory, annexed here and there, perhaps conquered. 
+Freud went back to madness at the level of its language, reconstituted 
+one of the essential elements of an experience reduced to silence by 
+positivism; he did not make a major addition to the list of psychologi- 
+cal treatments for madness; he restored, in medical thought, the pos- 
+sibility of a dialogue with unreason. Let us not be surprised that the 
+most "psychological" of medications has so quickly encountered its 
+converse and its organic confirmations. It is not psychology that is 
+involved in psychoanalysis: but precisely an experience of unreason 
+that it has been psychology's meaning, in the modern world, to mask. 
+[F, p. 411; M, p. 198]8 
+"To mask": positivist psychology would thus have masked the experi- 
+ence of unreason: an imposition of the mask, a violent dissimulation of 
+the face, of truth or of visibility. Such violence would have consisted in 
+disrupting a certain unity, that which corresponded precisely [justement] 
+to the presumed unity of the classical age: from then on, there would be, 
+on the one hand, illness of an organic nature and, on the other, unreason, 
+an unreason often tempered by this modernity under its "epithetic" 
+form: the unreasonable, whose discursive manifestations will become the 
+object of a psychology.9 This psychology then loses all relation to a certain 
+truth of madness, that is, to a certain truth of unreason. Psychoanalysis, 
+on the contrary, breaks with psychology by speaking with the Unreason that 
+speaks within madness and, thus, by returning through this exchange of 
+words not to the classical age itself-which also determined madness as 
+8. One will note in passing that we have here, along with very brief allusions to the 
+Three Essays on the Theory of Sexuality, Introductory Lectures on Psycho-Analysis, and a couple of 
+individual cases in Mental Illness and Psychology, and a reference just as brief to Totem and 
+Taboo in The Order of Things, one of the few times that Foucault mentions a work of Freud; 
+beyond this, he does not, to my knowledge, cite or analyze any text of Freud, or of any 
+other psychoanalyst, not even those of contemporary French psychoanalysts. Each time, 
+only the proper name is pronounced-Freud, or the common name-psychoanalysis. See 
+Michel Foucault, Maladie mentale et psychologie (Paris, 1962), hereafter abbreviated MM, 
+trans. Alan Sheridan, under the title Mental Illness and Psychology (Berkeley, 1987), p. 31, 
+hereafter abbreviated MI; and Les Mots et les choses: Une Archeologie des sciences humaines (Paris, 
+1966), hereafter abbreviated MC, trans. pub., under the title The Order of Things: An Archaeol- 
+ogy of the Human Sciences (New York, 1973), p. 379, hereafter abbreviated OT. 
+Discovery is underscored by Foucault, along with return and language. Freud is the event 
+of a discovery-the unconscious and psychoanalysis as a movement of return-and what re- 
+lates the discovery to the return is language, the possibility of speaking with madness, "the 
+possibility of a dialogue with unreason." 
+9. Foucault had earlier noted this in F, p. 195. Critical Inquiry 
+238 Jacques Derrida 
+unreason, but, unlike psychology, did so only in order to exclude or con- 
+fine it-but toward this eve of the classical age that still haunted it. 
+While this schema is firmly established by the page just cited, I was 
+struck in rereading The History of Madness by a paradox in the form of a 
+chiasm. I had not, in my first reading, given it the attention it deserves. 
+What is the schema of this paradox? By reason of what we have just 
+heard, in order to do "justice" to Freud we ought to give him credit- 
+and this is what happens-for finding a place in the gallery of all those 
+who, from one end of the book to the other, announce, like heralds of 
+good tidings, the very possibility of the book: Nietzsche above all and, 
+most frequently, Nietzsche and Artaud, who are often associated in the 
+same sentence, Nietzsche, Artaud, Van Gogh, sometimes Nerval, and 
+Holderlin from time to time. Their excess, "the madness in which the 
+work of art is engulfed," is the gulf or abyss out of which opens "the space 
+of our enterprise" (F, p. 643; M, p. 288). 
+It is before this madness, in the fleeting moment when it is joined to 
+the work, that we are responsible. We are far from being able to arraign it 
+or make it appear, for it is we who must appear before it. Let us recognize, 
+then, that we are responsible before it rather than being authorized to 
+examine it [arraisonner], to objectify and demand an explanation from it. 
+At the end of the last page, after having spent a good deal of time speak- 
+ing of Nietzsche and after having mentioned Van Gogh, Foucault writes: 
+"The moment when, together, the work of art and madness are born and 
+fulfilled is the beginning of the time when the world finds itself arraigned 
+by that work of art and responsible before it for what it is" (F, p. 643; M, 
+p. 289). This is what The History of Madness, in responding to the sum- 
+mons, takes note of and assumes responsibility for. It assumes responsibil- 
+ity before that which is named by the names of Nietzsche and all these 
+others who, as everyone knows, were deemed crazy by society (Artaud, 
+and before him Van Gogh, and before him Nerval, and before him Hold- 
+erlin). 
+But what about Freud? Why is he, in the same book, sometimes asso- 
+ciated with and sometimes opposed to these great witnesses of madness 
+and excess, these great witnesses who are also great judges, our judges, 
+those who judge us? Must we be arraigned before Freud? And why do 
+things then get complicated? 
+I would see the chiasm of which I just spoke appearing in a place 
+where Freud is in fact found near Nietzsche, on the same side as he, that 
+is, on our side, on the side of what Foucault calls "contemporary man": 
+this enigmatic "we" for whom a history of madness opens today, for whom 
+the door of today [l'huis d'aujourd'hui] is cracked open so that its possibility 
+may be glimpsed. Foucault has just described the loss of unreason, the 
+background against which the classical age determined madness. It is the 
+moment when unreason degenerates or disappears into the unreason- 
+able; it is the tendency to pathologize, so to speak, madness. And there The History of Madness 
+Winter 1994 239 
+again, it is through a return to unreason, this time without exclusion, that 
+Nietzsche and Freud reopen the dialogue with madness itself (assuming, 
+along with Foucault, that one can here say "itself"). This dialogue had, 
+in a sense, been broken off twice, and in two different ways: the second 
+time, by a psychological positivism that no longer conceived of madness 
+as unreason, and the first time, already by the classical age, which, while 
+excluding madness and breaking off the dialogue with it, still determined 
+it as unreason, and excluded it precisely because of this-but excluded it 
+as close as possible to itself, as its other and its adversary: this is the 
+Cartesian moment, such as it is determined, at least, in the three pages 
+that were the object of our debate nearly thirty years ago. 
+I will underscore everything that marks the today, the present, the 
+now, the contemporary, this time that is proper and common to us, the 
+time of this fragile and divided "we" from which is decided the possibility 
+of a book like The History of Madness, decided while scarcely being sketched 
+out, while promising itself, in short, rather than giving itself over. 
+Nietzsche and Freud are here conjoined, conjugated, like a couple, 
+Nietzsche and Freud, and the conjunction of their coupling is also the 
+copula-hinge or, if you prefer, the middle term of the modern propo- 
+sition: 
+If contemporary man, since Nietzsche and Freud, finds deep within 
+himself the site for contesting all truth, being able to read, in what he 
+now knows of himself, the signs of fragility through which unreason 
+threatens, seventeenth-century man, on the contrary, discovers, in 
+the immediate presence of his thought to itself, the certainty in which 
+reason in its pure form is announced. [E pp. 195-96] 
+Why did I speak of a chiasm? And why would we be fascinated by 
+the multiple chiasm that organizes this entire interpretative scene? 
+It is because, in the three pages devoted to Descartes at the begin- 
+ning of the second chapter "The Great Confinement," Foucault spoke of 
+an exclusion. He described it, posed it, declared it unequivocally and 
+firmly ("madness is excluded by the subject who doubts"). This exclusion 
+was the result of a "decision," the result (and these are all his words) of a 
+"strange act of force" that was going to "reduce to silence" the excluded 
+madness and trace a very strict "line of division." In the part of the Medi- 
+tations that he cited and focused on, Foucault left out all mention of the 
+Evil Genius. It was thus in recalling the hyperbolic raising of the stakes 
+in the fiction of the Evil Genius that I had then confessed my perplexity 
+and proposed other questions. When Foucault responds to me nine years 
+later in the afterward to the 1972 Gallimard edition of The History of Mad- 
+ness, he still firmly contests the way I used this Cartesian fiction 
+of the Evil Genius and this hyperbolic moment of doubt. He accuses me 
+of erasing "everything that shows that the episode of the evil genius is an 
+exercise that is voluntary, controlled, mastered and carried out from start Critical Inquiry 
+240 Jacques Derrida 
+to finish by a meditating subject who never lets himself be surprised";'0 
+(F, p. 601; such a reproach was indeed unfair, unjust, since I had stressed 
+that this methodical mastery of the voluntary subject is "almost always" 
+at work and that Foucault, therefore, like Descartes, is "almost always 
+right [a ... raison]," and almost always wins out over [a raison de] the Evil 
+Genius." But that is not what is at issue here, and I said that I would 
+not reopen the debate.) And by accusing me of erasing this methodical 
+neutralization of the Evil Genius, Foucault-once again in his response 
+of 1972-confirms the claims of the three pages in question and main- 
+tains that "if the evil genius again takes on the powers of madness, this is 
+only after the exercise of meditation has excluded the risk of being mad." 12 
+One might be tempted to respond that if the Evil Genius can again take 
+on these powers of madness, if he once "again takes them on" afterwards, 
+after the fact, it is because the exclusion of the risk of being mad makes 
+way for an after. The narrative is thus not interrupted during the exclu- 
+sion alleged by Foucault, an exclusion that is, up to a certain point at 
+least, attested to and incontestable (and I never in fact contested this ex- 
+clusion in this regard, quite the contrary); neither the narrative nor the 
+exercise of the meditation that it retraces are any more interrupted than 
+the order of reasons is definitively stopped by this same exclusion. But 
+let us move on. As I said earlier, I am not invoking this difficulty in order 
+to return to an old discussion. I am doing it because Freud is going to be, 
+as I will try to show, doubly situated, twice implicated in the chiasm that 
+interests me: on the one hand, in the sentence that I cited a moment ago 
+(where Freud was immediately associated with Nietzsche, the only one to 
+be associated with him, on the "good" side, so to speak, on the side where 
+"we" contemporaries reopen the dialogue with unreason that was twice 
+interrupted); this sentence is followed by a few references to the Evil Ge- 
+nius that complicate, as I myself had tried to do, the reading of the scene 
+of Cartesian doubt as the moment of the great confinement; but also, and 
+on the other hand, since I will later try, in a more indirect way-and this 
+would be in the end the essence of my talk today-to recall the necessity 
+of taking into account a certain Evil Genius of Freud, namely, the pres- 
+ence of the demonic, the devil, the devil's advocate, the limping devil, 
+and so on in Beyond the Pleasure Principle, where psychoanaysis finds, it 
+seems to me, its greatest speculative power but also the place of greatest 
+resistance to psychoanalysis (death drive, repetition compulsion, and so 
+on, andfort/da!). 
+10. Foucault, "My Body, This Paper, This Fire," trans. GeoffBennington, Oxford Literary 
+Review 4 (Autumn 1979): 26; trans. mod.; "Mon corps, ce papier, ce feu" was first published 
+in Paideia (Sept. 1971) and was reissued as the appendix to the 1972 edition of Histoire de 
+lafolie. 
+11. Derrida, "Cogito et histoire de la folie," p. 91; "Cogito and the History of Madness," 
+p. 58. 
+12. Foucault, "My Body, This Paper, This Fire," p. 26. The History of Madness 
+Winter 1994 241 
+Thus, just after having spoken of "contemporary man, since 
+Nietzsche and Freud," Foucault offers a development on the subject of the 
+Evil Genius. The logic of this sequence seems to me guided by a "One 
+must not forget" that I would be tempted to relate to the "One must do 
+justice" of a moment ago. What must one not forget? The Evil Genius, of 
+course [justement]. And especially, I emphasize, the fact that the Evil Ge- 
+nius is anterior to the cogito, such that its threat remains perpetual. 
+This might contradict (as I had attempted to do) the thesis argued 
+150 pages earlier on the subject of the Cartesian cogito as the simple 
+exclusion of madness. This could have, as a result, indeed this should 
+have, spared us a long and dramatic debate. But it is too late now. Fou- 
+cault reaffirms all the same, despite the recognized anteriority of the Evil 
+Genius, that the cogito is the absolute beginning, even if, in this absolute 
+beginning, "one must not forget" what has, in short, been forgotten or 
+omitted in the discourse on the exclusion of madness by the cogito. The 
+question thus still remains what a methodically absolute beginning would 
+be that does not let us forget this anterior-and moreover perpetual- 
+threat, nor the haunting backdrop that first lets it appear. As always, I 
+prefer to cite, even though it is a long passage. Here is what Foucault says 
+immediately after having evoked the "contemporary man" who, "since 
+Nietzsche and Freud," meets in "what he now knows of himself" that 
+"through which unreason threatens." He says, in effect, that what is called 
+contemporary had already begun in the classical age and with the Evil 
+Genius, which clearly, to my eyes at least, cannot leave intact the historical 
+categories of reference and the presumed identity of something like the 
+classical age (for example). 
+But this does not mean that classical man was, in his experience of 
+the truth, more distanced from unreason than we ourselves might 
+be. It is true that the cogito is the absolute beginning [this statement 
+thus confirms the thesis of F, pp. 54-57] but one must not forget [my 
+emphasis] that the evil genius is anterior to it. And the evil genius is 
+not the symbol in which are summed up and systematized all the 
+dangers of such psychological events as dream images and sensory 
+errors. Between God and man, the evil genius has an absolute mean- 
+ing: he is in all his rigor the possibility of unreason and the totality 
+of its powers. He is more than the refraction of human finitude; well 
+beyond man, he signals the danger that could prevent man once and 
+for all from gaining access to the truth: he is the main obstacle, not 
+of such a spirit but of such reason. And it is not because the truth 
+that gets illuminated in the cogito ends up entirely masking the 
+shadow of the evil genius that one ought to forget its perpetually 
+threatening power [my emphasis: Foucault had earlier said that one 
+must not forget that the evil genius is anterior to the cogito, and he 
+now says that one must not forget its perpetually threatening power, even after the passage, the moment, the experience, the certainty of Critical Inquiry 
+242 Jacques Derrida 
+the cogito, and the exclusion of madness that this brings about]: this 
+danger will hover over Descartes' reflections right up until the 
+establishment of the existence and truth of the external world. [F, 
+p. 196] 
+One would have to ask, though we will not have the time and this is 
+not the place, about the effects that the category of the "perpetual threat" 
+(and this is Foucault's term) can have on indications of presence, positive 
+markings, the determinations made by means of signs or statements, in 
+short, the whole criteriology and symptomatology that can give assurance 
+to a historical knowledge concerning a figure, an episteme, an age, an ep- 
+och, a paradigm, once all these determinations are found to be in effect 
+[justement] threatened by a perpetual haunting. For, in principle, all these 
+determinations are, for the historian, either presences or absences; as 
+such, they thus exclude haunting; they allow themselves to be located by 
+means of signs, one would almost say on a table of absences and pres- 
+ences; they come out of the logic of opposition, in this case, the logic of 
+inclusion or exclusion, of the alternative between the inside and the out- 
+side, and so on. The perpetual threat, that is, the shadow of haunting 
+(and haunting is, like the phantom or fiction of an Evil Genius, neither 
+present nor absent, neither positive nor negative, neither inside nor out- 
+side) does not challenge only one thing or another; it threatens the logic 
+that distinguishes between one thing and another, the very logic of exclu- 
+sion or foreclosure, as well as the history that is founded upon this logic 
+and its alternatives. What is excluded is, of course, never simply ex- 
+cluded, not by the cogito nor by anything else, without this eventually 
+returning-and that is what a certain psychoanalysis will have also 
+helped us to understand. Let me leave undeveloped this general prob- 
+lem, however, in order to return to a certain regulated functioning in the 
+references to psychoanalysis and to the name of Freud in The History of 
+Madness in the Classical Age. 
+Let us consider the couple Nietzsche/Freud, this odd couple about 
+which there is so much else to say (I have attempted this elsewhere, espe- 
+cially in The Post Card, and precisely [justement] in relationship to Beyond 
+the Pleasure Principle). The affiliation or filiation of this couple reappears 
+elsewhere. It is again at a filial limit, in the introduction to the third and 
+final part, when the "delirium" of Rameau's Nephew sets the tone or gives 
+the key, just as the Cartesian cogito had, for a new arrangement or divi- 
+sion [partition]. For the "delirium" of Rameau's Nephew "announces Freud 
+and Nietzsche." Let us set aside all the questions that the concept of "an- 
+nouncing" might pose for the historian. It is not by accident that they 
+resemble those raised a moment ago by the concept of haunting. As soon 
+as that which announces already no longer completely belongs to a present 
+configuration and already belongs to the future of another, its place, the 
+taking-place of its event, calls for another logic; it disrupts, in any case, The History of Madness 
+Critical Inquiry Winter 1994 243 
+the axiomatics of a history that places too much trust in the opposition 
+between absence and presence, outside and inside, inclusion and exclu- 
+sion. Let us read, then, this sentence and note the recurring and thus all 
+the more striking association of this announcement with the figure of the 
+Evil Genius, but, this time, with the figure of "another evil genius": 
+The delirium of Rameau's Nephew is a tragic confrontation of need 
+and illusion in an oneiric mode, one that announces Freud and 
+Nietzsche [the order of names is this time reversed]; it is also the 
+ironic repetition of the world, its destructive reconstitution in the 
+theater of illusion. [F, p. 422] 
+An Evil Genius then immediately reappears. And who will see this 
+inevitable repetition as a coincidence? But it is not the same Evil Genius. 
+It is another figure of the evil genius. There would thus be a recurring 
+function of the Evil Genius, a function that, in making reference to a 
+Platonic hyperbole, I had called hyperbolic in "Cogito and the History of 
+Madness." This function had been fulfilled by the Evil Genius, under the 
+guise as well as under the name that it takes on in Descartes. But another 
+Evil Genius, which is also the same one, can reappear without this name 
+and under a different guise, for example, in the vicinity or lineage of 
+Rameau's Nephew: a different Evil Genius, certainly, but bearing enough 
+of a resemblance because of its recurring function that the historian, here 
+Foucault, allows himself a metonymy that is legitimate enough in his eyes 
+to continue calling it Evil Genius. This reappearance occurs after the sec- 
+ond passage of Freud-and-Nietzsche, as they are furtively announced by 
+Rameau's Nephew, whose laugh "prefigures in advance and reduces the 
+whole movement of nineteenth-century anthropology" (F, p. 424). This 
+time of prefiguration and announcement, this delay between the antici- 
+patory lightning flash and the event of what is foreseen, is explained by 
+the very structure of an experience of unreason, if there is any, namely, 
+an experience in which one cannot maintain oneself and out of which 
+one cannot but fall after having approached it. All this thus forbids us 
+from making this history into a properly successive and sequential history 
+of events. This is formulated in Foucault's question: "Why is it not pos- 
+sible to maintain oneself in the difference of unreason?" (F, p. 425). 
+But in this vertigo where the truth of the world is maintained only 
+on the inside of an absolute void, man also encounters the ironic 
+perversion of his own truth, at the moment when it moves from the 
+dreams of interiority to the forms of exchange. Unreason then takes 
+on the figure of another evil genius [my emphasis]-no longer the one 
+who exiles man from the truth of the world, but the one who at once 
+mystifies and demystifies, enchants to the point of extreme disen- 
+chantment, this truth of man that man had entrusted to his hands, 
+to his face, to his speech; an evil genius who no longer operates when 
+244 Jacques Derrida 
+man wants to accede to the truth but when he wants to restitute to 
+the world a truth that is his own, when, thrown into the intoxication 
+of the sensible realm where he is lost, he finally remains "immobile, 
+stupid, astonished." It is no longer in perception that the possibility of 
+the evil genius resides [that is, as in Descartes] but in expression. [F, 
+p. 423] 
+But immediately after this appearance or arraignment of Freud next 
+to Nietzsche and all the Evil Geniuses, the pendulum of thefort/da is put 
+back in motion; from this point on, it will not cease to convoke and dis- 
+miss Freud from the two sides of the dividing line, both inside and out- 
+side of the series from out of which the history of madness is signed. For 
+it is here, in the following pages, that we find Freud separated from the 
+lineage in which are gathered all those worthy heirs of Rameau's 
+Nephew. The name of the one who was not crazy, not crazy enough in 
+any case, the name of Freud, is dissociated from that of Nietzsche. It is 
+regularly passed over in silence when, according to another filiation, 
+Hoderlin, Nerval, Nietzsche, Van Gogh, Roussel, and Artaud are at sev- 
+eral reprieves named and renamed-renowned-within the same 
+"family." 
+From this point on, things are going to deteriorate. "To do justice to 
+Freud" will more and more come to mean putting on trial a psychoanaly- 
+sis that will have participated, in its own way, however original that may 
+be, in the order of the immemorial figures of the Father and the Judge, 
+of Family and Law, in the order of Order, of Authority and Punishment, 
+whose immemorial figures must, as Philippe Pinel had noted, be brought 
+into play by the doctor, in order to cure (see F, p. 607; M, p. 272). There 
+was already a disturbing sign of this long before the chapter on "The 
+Birth of the Asylum" that will so strictly inscribe psychoanalysis into the 
+tradition of Tuke and Pinel and will go so far as to say that "all nineteenth- 
+century psychiatry really converges on Freud" (F, p. 611; M, p. 277). For 
+the latter had already appeared in another chain, the chain of those who, 
+since the nineteenth century, know that madness, like its counterpart rea- 
+son, has a history. These will have been led astray by a sort of historicism 
+of reason and madness, a risk that is avoided by those who, "from Sade 
+to Holderlin, to Nerval and to Nietzsche," are given over to a "repeated 
+poetic and philosophical experience" and plunge into a language "that 
+abolishes history." As a cultural historian of madness, like others are of 
+reason, Freud thus appears between Janet and Brunschvicg (F, p. 456). 
+While accumulating the two errors, the rationalist historian of this 
+cultural phenomenon called madness nonetheless continues to pay trib- 
+ute to myth, magic, and thaumaturgy. Indeed thaumaturgy will be the 
+word chosen by Foucault himself for the verdict. There is nothing sur- 
+prising in this collusion of reason and a certain occultism. Montaigne and 
+Pascal would have perhaps called it mystical authority; the history of rea- The History of Madness 
+Winter 1994 245 
+son and reason within history would exercise essentially the same vio- 
+lence, the same obscure, irrational, dictatorial violence, serving the same 
+interests in the name of the same fictional allegation, as psychoanalysis 
+does when it confers all powers to the doctor's speech. Freud would free 
+the patient interned in the asylum only in order to reconstitute him "in 
+his essential character" at the heart of the analytic situation. There is a 
+continuity from Pinel and Tuke to psychoanalysis. There is an inevitable 
+movement, right up to Freud, a persistence of what Foucault calls "the 
+myth of Pinel, like that of Tuke" (F, p. 577). This same insistence is always 
+concentrated in the figure of the doctor; it is, in the eyes of the patient 
+who is always an accomplice, the becoming-thaumaturge of the doctor, of 
+a doctor who is not even supposed to know. Homo medicus does not exer- 
+cise his authority in the name of science but, as Pinel himself seems to 
+recognize and to claim, in the name of order, law, and morality, specifi- 
+cally, by "relying upon that prestige that envelops the secrets of the Family, 
+of Authority, of Punishment, and of Love; ... by wearing the mask of 
+Father and of Judge" (F, pp. 607-8; M, p. 273; my emphasis). 
+And when the walls of the asylum give way to psychoanalysis, it is in 
+effect a certain concept of the secret that assures the tradition from Pinel 
+to Freud. It would be necessary to follow throughout these pages all the 
+ins and outs of the value-itself barely visible-of a secret, of a certain 
+secrecy value. This value would come down, in the end, to a technique of 
+the secret, and of the secret without knowledge. Wherever knowledge 
+can only be supposed, wherever, as a result, one knows that supposition 
+cannot give rise to knowledge, wherever no knowledge could ever be 
+disputed, there is the production of a secrecy effect, of what we might be 
+able to call a speculation on the capital secret or on the capital of the secret. The 
+calculated and yet finally incalculable production of this secrecy effect 
+relies on a simulacrum. This simulacrum recalls, from another point of 
+view, the situation described at the opening of Raymond Roussel: the risk 
+of "being deceived less by a secret than by the awareness that there is 
+a secret." 13 
+What persists from Pinel to Freud, in spite of all the differences, is 
+the figure of the doctor as a man not of knowledge but of order. In this 
+figure all secret, magic, esoteric, thaumaturgical powers are brought 
+together-and these are all Foucault's words. The scientific objectivity 
+that is claimed by this tradition is only a magical reification: 
+If we wanted to analyze the profound structures of objectivity in the 
+knowledge and practice of nineteenth-century psychiatry from Pinel 
+to Freud [this is the definitive divorce between Nietzsche and Freud, 
+the second coupling for the latter], we should have to show in fact 
+that such objectivity was from the start a reification of a magical na- 
+13. Foucault, Raymond Roussel (Paris, 1963), p. 10; trans. Charles Ruas, under the title 
+Death and the Labyrinth: The World of Raymond Roussel (New York, 1986), p. 3. Critical Inquiry 
+246 Jacques Derrida 
+ture, which could only be accomplished with the complicity of the 
+patient himself, and beginning from a transparent and clear moral 
+practice, gradually forgotten as positivism imposed its myths of scien- 
+tific objectivity. [F, p. 610; M, p. 276] 
+In the name of Freud, one can read the call for a note. At the bottom 
+of the page, Foucault persists, dates and signs, but the note introduces a 
+slight precaution; it is indeed a note of prudence, but Foucault insists 
+nonetheless and speaks of persistence: "These structures still persist in 
+non-psychoanalytic psychiatry, and in many aspects or on many sides [par 
+bien des c6tes] of psychoanalysis itself" (F, p. 610; M, p. 299). 
+Though too discreetly marked, there is indeed a limit to what per- 
+sists "on many sides." The always divisible line of this limit situates, in its 
+form, the totality of the stakes. More precisely, the stakes are nothing 
+other than those of totality, and of the procedures of totalization: what 
+does it mean to say psychoanalysis "itself"? What does one thereby iden- 
+tify in such a global way? Is it psychoanalysis "itself;" as Foucault says, that 
+inherits from Pinel? What is psychoanalysis itself? And are the aspects or 
+sides through which it inherits the essential and irreducible aspects or 
+sides of psychoanalysis itself or the residual "asides" that it can win out 
+over [avoir raison de]? or even, that it must, that it should, win out over? 
+If the answer to this last question still seems up in the air in this note, 
+it is soon going to come in a more determined and less equivocal form: 
+no, psychoanalysis will never free itself of the psychiatric heritage. Its 
+essential historical situation is linked to what is called the "analytic situa- 
+tion," that is, to the thaumaturgical mystification of the couple doctor- 
+patient, regulated this time by institutional protocols. Before citing word 
+for word a conclusion that will remain, I believe, without appeal not only 
+in The History of Madness but in Foucault's entire oeuvre-and right up 
+to its awful interruption-I will once again risk wearing out your pa- 
+tience in order to look for a moment at the way in which Foucault de- 
+scribes the thaumaturgical play whose techne Pinel would have passed 
+down to Freud, a techne that would be at once art and technique, the 
+secret, the secret of the secret, the secret that consists in knowing how to 
+make one suppose knowledge and believe in the secret. It is worth paus- 
+ing here in order to point out another paradoxical effect of the chiasm- 
+one of the most significant for what concerns us here, namely, a certain 
+diabolical repetition and the recurrence of the various figures of the Evil 
+Genius. What does Foucault say? That in the couple doctor-patient "the 
+doctor becomes a thaumaturge" (F, p. 609; M, p. 275). Now, to describe 
+this thaumaturgy, Foucault does not hesitate to speak of the demonic and 
+satanic, as if the Evil Genius resided this time not on the side of unreason, 
+of absolute disorder and madness (to say it quickly and with a bit of a 
+smile, using all the necessary quotation marks, "on the good side"), but The History of Madness 
+Winter 1994 247 
+on the side of order, on the side of a subtly authoritative violence, the 
+side of the Father, the Judge, the Law, and so on: 
+It was thought, and by the patient first of all, that it was in the esoter- 
+icism of his knowledge, in some almost daemonic secret of knowledge 
+[I emphasize "almost": Foucault will later say-his relation to Freud 
+surely being anything but simple-that the philistine representation 
+of mental illness in the nineteenth century would last "right up to 
+Freud-or almost"] that the doctor had found the power to unravel 
+insanity; and increasingly the patient would accept this self- 
+surrender to a doctor both divine and satanic, beyond human mea- 
+sure in any case. [F, p. 609; M, p. 275] 
+Two pages later, it is said that Freud "amplified the thaumaturgical 
+virtues" of the "medical personage," "preparing for his omnipotence a 
+quasi-divine status." And Foucault continues: 
+He focussed upon this single presence-concealed behind the pa- 
+tient and above him, in an absence that is also a total presence-all 
+the powers that had been distributed in the collective existence of 
+the asylum; he transformed this into an absolute Observation, a pure 
+and circumspect Silence, a Judge who punishes and rewards in a 
+judgment that does not even condescend to language; he made it 
+the mirror in which madness, in an almost motionless movement, 
+clings to and casts off itself. 
+To the doctor, Freud transferred all the structures Pinel and 
+Tuke had set up within confinement. [F, p. 611; M, pp. 277-78] 
+Fictive omnipotence and a divine, or rather "quasi-divine," power, divine 
+by simulacrum, at once divine and satanic-these are the very traits of 
+an Evil Genius that are now being attributed to the figure of the doctor. 
+The doctor suddenly begins to resemble in a troubling way the figure of 
+unreason that continued to haunt what is called the classical age after the 
+act of force [coup de force] of the cogito. And like the authority of the laws 
+whose "mystical foundation" is recalled by Montaigne and Pascal,14 the 
+14. "And so laws keep up their good standing, not because they are just, but because 
+they are laws: that is the mystical foundation of their authority, they have no other.... 
+Anyone who obeys them because they are just is not obeying them the way he ought to" 
+(quoted in Derrida, "Force of Law: The 'Mystical Foundation of Authority,"' trans. Mary 
+Quaintance, Cardozo Law Review 11 JUuly/Aug. 1990]: 939; Derrida's French text appears on 
+facing pages). Elsewhere, Montaigne had mentioned the "legitimate fictions" on which "our 
+law" "founds the truth of its justice" (ibid.). And Pascal cites Montaigne without naming 
+him when he recalls both the principle of justice and the fact that it should not be traced 
+back to its source unless one wants to ruin it. What is he himself doing, then, when he 
+speaks of "the mystical foundation of its authority," adding in the same breath, "Whoever 
+traces it to its source annihilates it" (ibid.)? Is he re-founding or ruining that of which he 
+speaks? Will one ever know? Must one know? 
+Power, authority, knowledge and non-knowledge, law, judgment, fiction, good stand- Critical Inquiry 
+248 Jacques Derrida 
+authority of the psychoanalyst-doctor is the result of a fiction; it is the 
+result, by transfer, of the credit given to a fiction; and this fiction appears 
+analogous to that which provisionally confers all powers-and even more 
+than knowledge-to the Evil Genius. 
+At the conclusion of "The Birth of the Asylum," Foucault is going to 
+dismiss without appeal this bad genius of the thaumaturgical doctor in 
+the figure of the psychoanalyst; he is going to do this-I believe one can 
+say without stretching the paradox-against Descartes, against a certain 
+Cartesian subject still represented in the filiation that runs from Descartes 
+to Pinel to Freud. But he is also going to do this, more or less willingly, as 
+Descartes, or, at least, as the Descartes whom he had accused of excluding 
+madness by excluding, mastering, or dismissing-since these all come 
+down to the same thing-the powers of the Evil Genius. Against Freud, 
+this descendant of Descartes, against Descartes, it is still the Cartesian 
+exclusion that is repeated in a deadly and devilish way, like a heritage 
+inscribed within a diabolical and almost all-powerful program that one 
+should admit one never gets rid of or frees oneself from without re- 
+mainder. 
+To substantiate what I have just said, I will cite the conclusion of this 
+chapter. It describes the transfer from Pinel to Freud (stroke of genius, 
+"masterful short-circuit"-it is a question of Freud's genius, the good like 
+the bad, the good as bad)-and it implacably judges psychoanalysis in the 
+past, in the present, and even in the future. For psychoanalysis is condemned 
+in advance. No future is promised that might allow it to escape its destiny 
+once it has been determined both within the institutional (and suppos- 
+edly inflexible) structure of what is called the analytic situation and in the 
+figure of the doctor as subject: 
+To the doctor, Freud transferred all the structures Pinel and Tuke 
+had set up within confinement. He did deliver the patient from the 
+existence of the asylum within which his "liberators" had alienated 
+him; but he did not deliver him from what was essential in this exis- 
+tence; he regrouped its powers, extended them to the maximum by 
+uniting them in the doctor's hands; he created the psychoanalytical 
+situation where, by a masterful short-circuit [court-circuit genial; I un- 
+derscore this allusion to the stroke of genius (coup de genie), which, as 
+soon as it confirms the evil of confinement and of the interior asylum, 
+is diabolical and properly evil (malin); and as we will see, for more 
+than twenty years Foucault never stopped seeing in Freud-and 
+quite literally so-sometimes a good and sometimes a bad or evil 
+ing or credit, transfer: from Montaigne to Pascal onto others, we recognize the same net- 
+work of a critical problematic, an active, vigilant, hypercritical problematization. It is diffi- 
+cult to be sure that the "classical age" did not thematize, reflect, and also deploy the 
+concepts of its symptoms: the concepts that one will later direct toward the symptoms that 
+it will one day be believed can be assigned to it. The History of Madness 
+Winter 1994 249 
+(mauvais) genius], alienation becomes disalienating because, in the 
+doctor, it becomes a subject. 
+The doctor, as an alienating figure, remains the key to psycho- 
+analysis. It is perhaps because it did not suppress this ultimate struc- 
+ture, and because it referred all the others to it, that psychoanalysis 
+has not been able, will not be able [I thus emphasize this future; it 
+announces the invariability of this verdict in Foucault's subsequent 
+work], to hear the voices of unreason, nor to decipher in themselves 
+the signs of the madman. Psychoanalysis can unravel some of the 
+forms of madness; it remains a stranger to the sovereign enterprise 
+of unreason. It can neither liberate nor transcribe, nor most certainly 
+explain, what is essential in this enterprise. [F, pp. 611-12; M, p. 278] 
+And here, just after, are the very last lines of the chapter; we are far 
+from the couple Nietzsche/Freud. They are now separated on both sides 
+of what Foucault calls "moral imprisonment," and it will be difficult to 
+say, in certain situations, who is to be found on the inside and who on the 
+outside-and sometimes outside but inside. As opposed to Nietzsche and 
+a few other great madmen, Freud no longer belongs to the spacefrom out 
+of which The History of Madness could be written. He belongs, rather, to 
+this history of madness that the book in turn makes its object: 
+Since the end of the eighteenth century, the life of unreason no 
+longer manifests itself except in the lightning-flash of works such as 
+those of Holderlin, of Nerval, of Nietzsche, or of Artaud-forever 
+irreducible to those alienations that can be cured, resisting by their 
+own strength that gigantic moral imprisonment which we are in the 
+habit of calling, doubtless by antiphrasis, the liberation of the insane 
+[alienes] by Pinel and Tuke. [F, p. 612; M, p. 278] 
+This diagnosis, which is also a verdict, is confirmed in the last chapter 
+of the book, "The Anthropological Circle." This chapter fixes the new 
+distribution of names and places into the great series that form the grid 
+of the book. When it is a question of showing that since the end of the 
+eighteenth century the liberation of the mad has been replaced by an 
+objectification of the concept of their freedom (within such categories as 
+desire and will, determinism and responsibility, the automatic and the 
+spontaneous) and that "one will now untiringly recount the trials and 
+tribulations of freedom," which is also to say, of a certain humanization 
+as anthropologization, Freud is then regularly included among the exem- 
+plary figures of this anthropologism of freedom. Foucault says, page after 
+page: "From Esquirol to Janet, as from Reil to Freud or from Tuke to 
+Jackson" (F, p. 616), or again, "From Esquirol to Freud" (F, p. 617), or 
+again "since Esquirol and Broussais right up to Janet, Bleuler, and 
+Freud" (F, p. 624). A slight yet troubling reservation comes just after to 
+mitigate all these regroupings. Concerning general paralysis and neuro- Critical Inquiry 
+250 Jacques Derrida 
+syphilis, philistinism is everywhere, "right up to Freud-or almost" (F, 
+p. 626) 
+The chiasmatic effects multiply. Some two hundred pages earlier, 
+what had inscribed both Freud and Nietzsche, like two accomplices of the 
+same age, was the reopening of the dialogue with unreason, the lifting of 
+the interdiction against language, the return to a proximity with madness. 
+Yet it is precisely this or, rather, the silent double and hypocritical simula- 
+crum of this, the mask of this language, the same freedom now objecti- 
+fled, that separates Freud from Nietzsche. It is this that now makes them 
+unable to associate or to be associated with one another from the two 
+sides of a wall that is all the more unsurmountable insofar as it consists of 
+an asylum's partition, an invisible, interior, but eloquent partition, that of 
+truth itself as the truth of man and his alienation. Foucault was able, 
+much earlier, to say that Freudian psychoanalysis, to which one must be 
+fair or "do justice," is not a psychology as soon as it takes language into 
+account. Now it is language itself that brings psychoanalysis back down 
+to the status of a psycho-anthropology of alienation, "this language 
+wherein man appears in madness as being other than himself," this "al- 
+terity," "a dialectic that is always begun anew between the Same and the 
+Other," revealing to man his truth "in the babbling movement of alienation 
+or madness" (F, p. 631). 
+Concerning dialectic and alienation or madness-concerning every- 
+thing, in fact, that happens in the circulation of this "anthropological 
+circle" wherein psychoanalysis is caught up or held-one should, and I 
+myself would have liked to have done this given more time, pause a bit 
+longer than Foucault did on a passage from Hegel's Encyclopedia. I am 
+referring to the Remark of ?408 in which Hegel situates and deduces 
+madness as a contradiction of the subject between the particular determi- 
+nation of self-feeling and the network of mediations that is called con- 
+sciousness. Hegel makes in passing a spirited praise of Pinel (I do not 
+understand why Foucault, in quickly citing this passage, replaces this 
+praise for Pinel by an ellipsis). More important, perhaps, is the fact that 
+Hegel also interprets madness as the taking control of a certain Evil Gen- 
+ius (der bise Genius) in man. Foucault elliptically cites a short phrase in 
+translation ("mechant genie") without remarking on it and without link- 
+ing these few extraordinary pages of Hegel to the great dramaturgy of 
+the Evil Genius that concerns us here. 
+Let me be absolutely clear about this: my intention here is not at all 
+to accuse or criticize Foucault, to say, for example, that he was wrong to 
+confine Freud himself (in general) or psychoanalysis itself (in general) to this 
+role and place; on the subject of Freud or psychoanalysis themselves and in 
+general, I have in this form and place almost nothing to say or think, 
+except perhaps that Foucault has some good arguments and that others 
+would have some pretty good ones as well to oppose to his. It is also not 
+my intention, in spite of what it may look like, to suggest that Foucault The History of Madness 
+Critical Inquiry Winter 1994 251 
+contradicts himself when he so firmly places the same Freud (in general) 
+or the same psychoanalysis (in general) sometimes on one side and some- 
+times on the other of the dividing line, and always on the side of the Evil 
+Genius-who is found sometimes on the side of madness, sometimes on 
+the side of its exclusion-reappropriation, on the side of its confinement 
+to the outside or the inside, with or without asylum walls. The contradic- 
+tion is no doubt in the things themselves, so to speak. And we are in a 
+region where the wrong (the being-wrong or the doing-someone-wrong) 
+would want to be more than ever on the side of a certain reason, on the 
+side of what is called raison garder-that is, on the side of keeping one's 
+cool, keeping one's head-on the side, precisely, where one is right [a 
+raison], and where being right [avoir raison] is to win out over or prove someone 
+wrong [avoir raison de], with a violence whose subtlety, whose hyperdialec- 
+tic and hyperchiasmatic resources, cannot be completely formalized, that 
+is, can no longer be dominated by a metalanguage. Which means that we 
+are always caught in the knots that are woven, before us and beyond us, 
+by this powerful-all too powerful-logic. The history of reason embed- 
+ded in all these turbulent idioms (to prove someone wrong [donner tort] or to 
+prove them right [donner raison], to be right [avoir raison], to be wrong [avoir 
+tort], to win out over [avoir raison de], to do someone wrong [faire tort], and so 
+on) is also the history of madness that Foucault wished to recount to us. 
+The fact that he was caught up, caught up even before setting out, in the 
+snares of this logic-which he sometimes thematizes as having to do with 
+a "system of contradictions" and "antinomies" whose "coherence" re- 
+mains "hidden"-cannot be reduced to a fault or wrong on his part (F p. 
+624). This does not mean, however, that we, without ever finding him to 
+be radically wrong or at fault, have to subscribe a priori to all his state- 
+ments. One would be able to master this entire problematic, assuming 
+this were possible, only after having satisfactorily answered a few ques- 
+tions, questions as innocent-or as hardly innocent-as, What is reason? 
+for example, or more narrowly, What is the principle of reason? What 
+does it mean to be right [avoir raison]? What does it mean to be right or 
+to prove someone right [avoir ou donner raison]? To be wrong, to prove 
+someone wrong, or to do them wrong [avoir, donner oufaire tort]? You will 
+forgive me here, I hope, for leaving these enigmas as they are. 
+I will restrict myself to a modest and more accessible question. The 
+distribution of statements, such as it appears to be set out before us, 
+should lead us to think two apparently incompatible things: the book 
+entitled The History of Madness, as the history of madness itself, is and is 
+not the same age as Freudian psychoanalysis. The project of this book 
+thus does and does not belong to the age of psychoanalysis; it already 
+belongs to it and already no longer belongs to it. This division without 
+division would put us back on the track of another logic of division, one 
+that would urge us to think the internal partitions of wholes, partitions 
+that would make such things as madness, reason, history, and age-espe- 
+252 Jacques Derrida 
+cially the whole we call age-but also psychoanalysis, Freud, and so on, 
+into rather dubious identities, sufficiently divided from within to threaten 
+in advance all our statements and all our references with parasitism: it 
+would be a bit as if a virus were introduced into the matrix of language, 
+the way such things are today introduced into computer software, the 
+difference being that we are-and for a very good reason-very far from 
+having at our disposal any of these diagnostic and remedial antiviral pro- 
+grams that are available on the market today, even though these same 
+programs-and for a very good reason-have a hard time keeping pace 
+with the industrial production of these viruses, which are themselves 
+sometimes produced by those who produce the intercepting programs. 
+A maddening situation for any discourse, certainly, but a certain mad 
+panic is not necessarily the worst thing that can happen to a discourse on 
+madness as soon as it does not go all out to confine or exclude its object, 
+that is, in the sense Foucault gives to this word, to objectify it. 
+Does one have the right to stop here and be content with this as an 
+internal reading of Foucault's great book? Is an internal reading possible? 
+Is it legitimate to privilege to this extent its relation to something like an 
+"age" of psychoanalysis "itself"? The reservations that such presumptions 
+of identity might arouse (the unity of an "age," the indivisibility of psy- 
+choanalysis "itself," and so on-and I've made more than one allusion to 
+them-would be enough to make us question this. 
+One would be able to justify a response to this question, in any case, 
+only by continuing to read and to analyze, by continuing to take into 
+account particularly Foucault's corpus, his archive, what this archive says 
+on the subject of the archive. Without limiting ourselves to this, think in 
+particular of the problems posed some five to eight years later: (1) by The 
+Order of Things concerning something that has always seemed enigmatic 
+to me and that Foucault calls for a time episteme (there where it is said, 
+"We think in that place" [MC, p. 396; DT p. 384]); a place that, and I will 
+return to this in a moment, encompasses or comprehends the psycho- 
+analysis that does not comprehend it, or more precisely, that compre- 
+hends it without comprehending it and without acceding to it; (2) by The 
+Archaeology of Knowledge concerning "The Historical a priori and the Ar- 
+chive" (this is the title of the central chapter) and archaeology in its rela- 
+tion to the history of ideas. 
+It is out of the question to get involved here, in so short a time, in 
+such difficult readings. I will thus be content to conclude, if you will still 
+allow me, with a few indications (two at the most) along one of the paths 
+I would have wanted to follow on the basis of these readings. 
+1. On the one hand, I would have tried to identify the signs of an 
+imperturbable constancy in this movement of the pendulum or balance. 
+The oscillation regularly leads from one topological assignation to the 
+other: as if psychoanalysis had two places or took place two times. Yet it 
+seems to me that the law of this displacement operates without the struc- The History of Madness 
+Winter 1994 253 
+tural possibility of an event or a place being analyzed for itself, and with- 
+out the consequences being drawn with regard to the identity of all the 
+concepts at work in this history that does not want to be a history of ideas 
+and representations. 
+This constancy in the oscillation of the pendulum is first marked, of 
+course, in books that are more or less contemporary with The History of 
+Madness. Maladie mentale et psychologie [Mental Illness and Psychology] (1962) 
+intersects and coincides at many points with The History of Madness. In the 
+history of mental illness, Freud appears as "the first to open up once 
+again the possibility for reason and unreason to communicate in the dan- 
+ger of a common language, ever ready to break down and disintegrate 
+into the inaccessible" (MM, p. 82; MI, p. 69). In truth, though profoundly 
+in accord with the movement and logic of The History of Madness, this book 
+of 1962 is, in the end, a bit more precise and differentiated in its refer- 
+ences to Freud, although Beyond the Pleasure Principle is never mentioned. 
+Foucault speaks both of Freud's "stroke of genius" (and this is indeed his 
+word) and of the dividing line that runs down his work. Freud's "stroke of 
+genius" was to have escaped the evolutionist horizon of John Hughlings 
+Jackson (MM, p. 37; MI, p. 31), whose model can nevertheless be found 
+in the description of the evolutive forms of neurosis and the history of 
+libidinal stages,15 the libido being mythological (a myth to destroy, often 
+a biopsychological myth that is abandoned, Foucault then thinks, by psy- 
+choanalysts), just as mythological as Janet's "'psychic force,"' with which 
+Foucault associates it more than once (MM, p. 29; MI, p. 24).16 
+If the assignation of Freud is thus double, it is because his work is 
+15. Insofar as, and to the extent that, it follows Jackson's model (for the "stroke of 
+genius" also consists in escaping from this), psychoanalysis is credulous, it will have been credu- 
+lous, for it is in this that it is outdated, a credulous presumption: "it believed that it could," 
+"Freud believed." After having cited Jackson's The Factors of Insanities, Foucault in fact adds 
+(I emphasize the verb and tense of to believe): 
+Jackson's entire work tended to give right of place to evolutionism in neuro- and 
+psycho-pathology. Since the Croonian Lectures (1874), it has no longer been possible to 
+omit the regressive aspects of illness; evolution is now one of the dimensions by which 
+one gains access to the pathological fact. 
+A whole side of Freud's work consists of a commentary on the evolutive forms of 
+neurosis. The history of the libido, of its development, of its successive fixations, resem- 
+bles a collection of the pathological possibilities of the individual: each type of neurosis 
+is a return to a libidinal stage of evolution. And psychoanalysis believed that it could write 
+a psychology of the child by carrying out a pathology of the adult.... This is the cele- 
+brated Oedipus complex, in which Freud believed that he could read the enigma of man 
+and the key to his destiny, in which one must find the most comprehensive analysis of 
+the conflicts experienced by the child in his relations with his parents and the point at 
+which many neuroses became fixated. 
+In short, every libidinal stage is a potential pathological structure. Neurosis is a 
+spontaneous archeology of the libido. [MM, pp. 23-26; MI, pp. 19-21] 
+16. For example: "It is not a question of invalidating the analyses of pathological re- 
+gression; all that is required is to free them of the myths that neither Janet nor Freud 
+succeeded in separating from them" (MM, p. 31; MI, p. 26). Critical Inquiry 
+254 Jacques Derrida 
+divided: "In psychoanalysis, it is always possible," says Foucault, "to sepa- 
+rate that which pertains to a psychology of evolution (as in Three Essays on 
+the Theory of Sexuality) and that which belongs to a psychology of individual 
+history (as in Five Psychoanalyses and the accompanying texts)" (MM, p. 
+37; MI, p. 31). 
+Despite this consideration for the "stroke of genius," Foucault is in- 
+deed speaking here of an analytic psychology. This is what he calls it. 
+Insofar as it remains a psychology, it remains speechless before the lan- 
+guage of madness. Indeed, "there is a very good reason why psychology 
+can never master madness; it is because psychology became possible in 
+our world only when madness had already been mastered and excluded 
+from the drama" (MM, p. 104; MI, p. 87-a few lines before the end of 
+the book). 
+In other words, the logic at work in this conclusion, the conse- 
+quences-the ruinous consequences-of which one would ceaselessly 
+have to take into account, is that what has already been mastered can no 
+longer be mastered, and that too much mastery (in the form of exclusion 
+but also of objectification) deprives one of mastery (in the form of access, 
+knowledge, competence). The concept of mastery is an impossible con- 
+cept to manipulate, as we know: the more there is, the less there is, and 
+vice versa. The conclusion drawn in the few lines I just cited thus ex- 
+cludes both Freud's "stroke of genius" and psychology, be it analytic or 
+some other. Freudian man remains a homo psychologicus. Freud is once 
+again passed over in silence, cut out of both the lineage and the work of 
+mad geniuses. He is given over to a forgetfulness where one can then 
+accuse him of silence and forgetting. 
+And when, in lightning flashes and cries, madness reappears, as in 
+Nerval or Artaud, Nietzsche or Roussel, it is psychology that remains 
+silent, speechless, before this language that borrows a meaning of its 
+own from that tragic split [I emphasize this phrase; this is a tragic and 
+romantic discourse on the essence of madness and the birth of trag- 
+edy, a discourse just as close, literally, to that of a certain Novalis as 
+to that of Holderlin], from that freedom, that, for contemporary 
+man, only the existence of"psychologists" allows him to forget. [MM, 
+p. 104; MI, pp. 87-88]17 
+And yet. Still according to the interminable and inexhaustiblefort/da that 
+we have been following for some time now, the same Freudian man is 
+reinscribed into the noble lineage at the end of Naissance de la clinique [The 
+17. A literally identical schema was at work a few pages earlier: "Psychology can never 
+tell the truth about madness because it is madness that holds the truth of psychology." It is 
+again a tragic vision, a tragic discourse on the tragic. Holderlin, Nerval, Roussel, and Ar- 
+taud are again named through their works as witnesses of a "tragic confrontation with mad- 
+ness" free of all psychology (MM, p. 89; MI, pp. 74, 75). No reconciliation is possible 
+between psychology, even if analytic, and tragedy. The History of Madness 
+Winter 1994 255 
+Birth of the Clinic] (a book published in 1963 but clearly written during the 
+same creative period). Why single out this occurrence of the reinscription 
+rather than another? Because it might give us (and this is, in fact, the 
+hypothesis that interests me) a rule for reading thisfort/da; it might pro- 
+vide us with a criterion for interpreting this untiring exclusion/inclusion. 
+It is a question of another divide, within psychoanalysis, or, in any case, 
+a divide that seems somewhat different than the one I spoke of a moment 
+ago between Freud, the psychologist of evolution, and Freud, the psy- 
+chologist of individual history. I say "seems somewhat different" because 
+the one perhaps leads back to the other. 
+The line of this second divide is, quite simply-if one can say this- 
+death. The Freud who breaks with psychology, with evolutionism and 
+biologism, the tragic Freud, really, who shows himself hospitable to mad- 
+ness (and I take the risk of this word) because he is foreign to the space 
+of the hospital, the tragic Freud who deserves hospitality in the great 
+lineage of mad geniuses, is the Freud who talks it out with death. This 
+would especially be the Freud, then, of Beyond the Pleasure Principle, al- 
+though Foucault never, to my knowledge, mentions this work and makes 
+only a very ambiguous allusion in Mental Illness and Psychology to what he 
+calls a death instinct, the one by which Freud wished to explain the war, 
+although "it was war that was dreamed in this shift in Freud's thinking" 
+(MM, p. 99; MI, p. 83). 
+Death alone, along with war, introduces the power of the negative 
+into psychology and into its evolutionist optimism. On the basis of this 
+experience of death, on the basis of what is called in the final pages of 
+The Birth of the Clinic "originary finitude"'8 (a vocabulary and theme that 
+then take over Foucault's text and that always seemed to me difficult to 
+dissociate from Heidegger, who as you know is practically never evoked, 
+nor even named, by Foucault),'9 Freud is reintegrated into this modernity 
+from out of which The History of Madness is written and from which he had 
+been banished at regular intervals. It is by taking account of death as 
+18. Foucault, Naissance de la clinique: Une Archeologie du regard medical (Paris, 1963), p. 
+199; hereafter abbreviated N; trans. A. M. Sheridan Smith, under the title The Birth of the 
+Clinic: An Archeology of Medical Perception (New York, 1975), p. 197; hereafter abbreviated B. 
+19. Except perhaps in passing in Les Mots et les choses: "the experience of Holderlin, 
+Nietzsche, and Heidegger, in which the return is posited only in the extreme recession of 
+the origin" (MC, p. 345; OT, p. 334). 
+This ponderous silence would last, I believe, right up until an interview that he gave 
+not long before his death. Faithful to the Foucauldian style of interpretation, one might say 
+that the spacing of this omission, of this blank silence-like the silence that reigns over the 
+name of Lacan, whom one can associate with Heidegger up to a certain point, and thus 
+with a few others who never stopped, in France and elsewhere, to dialogue with these two- 
+is anything but the empty and inoperative sign of an absence. It gives rise or gives the place 
+[donne lieu], on the contrary, it marks out the place and the age. The dotted lines of a sus- 
+pended writing situate with a formidable precision. No attention to the age or to the prob- 
+lem of the age should lose sight of this. Critical Inquiry 
+256 Jacques Derrida 
+"the concrete a priori of medical experience" that "the beginning of that 
+fundamental relation that binds modern man to his originary finitude" 
+comes about (N, pp. 198, 199; B, pp. 196, 197). This modern man is also 
+a "Freudian man": 
+the experience of individuality in modern culture is bound up with 
+that of death: from Holderlin's Empedocles to Nietzsche's Zarathus- 
+tra, and on to Freudian man, an obstinate relation to death pre- 
+scribes to the universal its singular face, and lends to each individual 
+the power of being heard forever. [N, p. 199; B, p. 197] 
+Originary finitude is a finitude that no longer arises out of the infinity of 
+a divine presence. It now unfolds "in the void left by the absence of the 
+gods" (N, p. 200; B, p. 198). What we have here, then, is, in the name of 
+death, so to speak, a reinscription of Freudian man into a "modern" 
+grouping or whole from which he was sometimes excluded. 
+One can then follow two new but equally ambiguous consequences. 
+On the one hand, the grouping in question is going to be restructured. One 
+should not be surprised to see reappear, as on the very last page of The 
+Birth of the Clinic, the name of Jackson-and, before him, Bichat, whose 
+Traite des membranes (1827) and Recherches physiologiques would have al- 
+lowed death to be seen and thought. This vitalism would have arisen 
+against the backdrop of "'mortalism"' (N, p. 147; B, p. 145). It would be 
+a characteristic of the entire European nineteenth century, and it could 
+be attested to just as well by Goya, Gericault, Delacroix, or Baudelaire, to 
+name just a few: "The importance of Bichat, Jackson, and Freud in Euro- 
+pean culture does not prove that they were philosophers as well as doc- 
+tors, but that, in this culture, medical thought is fully engaged in the 
+philosophical status of man" (N, p. 200; B, p. 198). 
+But there is a second ambiguous consequence of this relation to 
+death as originary finitude. And so, on the other hand, the figure or face 
+that is then fixed, and in which one believes one recognizes the traits of 
+"Freudian man," comes to occupy a rather singular place with respect to 
+what Foucault calls the analytic of finitude and the modern episteme at the 
+end of Les Mots et les choses [The Order of Things] (1966). From the stand- 
+point of a certain epistemological trihedron (life, work, and language, or 
+biology, economy, and philology), the human sciences are seen to be at 
+once inclusive and exclusive; these are Foucault's words (see MC, p. 358; 
+OT p. 347). 
+As for this inclusive exclusion, Freud's work, to which Foucault un- 
+waveringly assigns a model that is more philological than biological, still 
+occupies the place of the hinge; Foucault in fact speaks about the place 
+and workings of a "pivot": "all this knowledge, within which Western cul- 
+ture had given itself in one century a certain image of man, pivots on 
+the work of Freud, though without, for all that, leaving its fundamental 
+arrangement" (MC, p. 372; OT, p. 361). The History of Madness 
+Winter 1994 257 
+"Though without, for all that, leaving its fundamental arrange- 
+ment": that is how everything turns round the event or the invention of 
+psychoanalysis. It turns in circles and in place, endlessly returning to the 
+same. It is a revolution that changes nothing. Hence this is not, as Fou- 
+cault adds at this point, "the most decisive importance of psychoanalysis." 
+In what, then, does this "most decisive importance of psychoanalysis" 
+consist? In exceeding both consciousness and representation-and, as a 
+result, the human sciences, which do not go beyond the realm of the 
+representable. It is in this respect that psychoanalysis, like ethnology in 
+fact, does not belong to the field of the human sciences. It "relates the 
+knowledge of man to the finitude that gives man its foundation" (MC, p. 
+392; OT, p. 381). We are far from its earlier determination as an analytic 
+psychology. And this same excessive character leads psychoanalysis to- 
+ward the very forms of finitude that Foucault writes in capital letters, that 
+is, toward Death, Desire, Law or Law-Language (see MC, p. 386; OT, p. 
+375). It would be necessary to devote a more detailed and more probing 
+reading to these few pages, something I cannot do here. To keep to the 
+surest schema, let us simply say that, from this point of view and to this 
+degree at least, psychoanalysis, as an analytic of finitude, is now granted 
+an intimacy with the madness that it had sometimes been conceded but 
+had most often been emphatically denied in The History of Madness. And 
+this intimacy is a sort of complicity with the madness of the day, the mad- 
+ness of today, "madness in its present form, madness as it is posited in 
+the modern experience, as its truth and its alterity" (MC, p. 387; OT, 
+p. 375). 
+But let us not oversimplify things. What Foucault generously grants 
+psychoanalytic experience is now nothing other than what is denied it; 
+more precisely, it is the being able to see what is denied it. Indeed, the 
+only privilege that is here granted to psychoanalysis is that of the experi- 
+ence that accedes to that to which it can never accede. If Foucault here men- 
+tions, under the name of madness, only schizophrenia and psychosis, it 
+is because psychoanalysis most often approaches these only in order to 
+acknowledge its own limit: a forbidden or impossible access. This limit de- 
+finespsychoanalysis. Its intimacy with madness par excellence is an intimacy 
+with the least intimate, a nonintimacy that relates it to what is most heter- 
+ogenous, to that which in no way lets itself be interiorized, nor even sub- 
+jectified: neither alienated, I woul say, nor inalienable. 
+This is why psychoanalysis finds in that madness par excellence ["mad- 
+ness par excellence" is also the title given by Blanchot many years ear- 
+lier to a text on Holderlin, and Foucault is no doubt echoing this 
+without saying so]-which psychiatrists term schizophrenia-its inti- 
+mate, its most invincible torture: for, given in this form of madness, 
+in an absolutely manifest and absolutely withdrawn form [this abso- 
+lute identity of the manifest and the withdrawn, of the open and the Critical Inquiry 
+258 Jacques Derrida 
+secret, is no doubt the key to this double gesture of interpretation 
+and evaluation], are the forms of finitude towards which it usually 
+advances unceasingly (and interminably) from the starting-point of 
+that which is voluntarily-involuntarily offered to it in the patient's 
+language. So psychoanalysis 'recognizes itself' when it is confronted 
+with those very psychoses to which, nevertheless (or rather, for that 
+very reason), it has scarcely any means of access: as if the psychosis 
+were displaying in a savage illumination, and offering in a mode not 
+too distant but precisely too close, that towards which analysis must 
+make its laborious way. [MC, p. 387; OT, pp. 375-76] 
+This displacement, as ambiguous as it is, leads Foucault to adopt the 
+exact opposite position of certain theses of The History of Madness and Men- 
+tal Illness and Psychology concerning the couple patient-doctor, concerning 
+transference or alienation. This time, psychoanalysis not only has nothing 
+to do with a psychology but it constitutes neither a general theory of 
+man-since it is above all else a knowledge linked to a practice-nor an 
+anthropology (see MC, pp. 388, 390; OT, pp. 376, 378-79). Even better: 
+in the movement where he clearly affirms this, Foucault challenges the 
+very thing of which he had unequivocally accused psychoanalysis, 
+namely, of being a mythology and a thaumaturgy. He now wants to ex- 
+plain why psychologists and philosophers were so quick, and so naive, to 
+denounce a Freudian mythology there where that which exceeds repre- 
+sentation and consciousness must have in fact resembled, but only resem- 
+bled, something mythological (see MC, p. 386; OT, p. 374). As for the 
+thaumaturgy of transference, the logic of alienation, and the subtly or 
+sublimely asylumlike violence of the analytic situation, they are no longer, 
+Foucault now says, essential to psychoanalysis, no longer "constitutive" of 
+it. It is not that all violence is absent from this rehabilitated psychoanaly- 
+sis, but it is, I hardly dare say it, a good violence, or in any case what 
+Foucault calls a "calm" violence, one that, in the singular experience of 
+singularity, allows access to "the concrete figures of finitude": 
+neither hypnosis, nor the patient's alienation within the fantasmatic 
+character of the doctor, is constitutive of psychoanalysis; ... the latter 
+can be deployed only in the calm violence of a particular relationship 
+and the transference it produces.... Psychoanalysis makes use of the 
+particular relation of the transference in order to reveal, on the outer 
+confines of representation, Desire, Law, and Death, which outline, at 
+the extremity of analytic language and practice, the concrete figures 
+of finitude. [MC, pp. 388-89; OT, pp. 377-78] 
+Things have indeed changed-or so it appears-between The History 
+of Madness and The Order of Things. The History of Madness 
+Winter 1994 259 
+From where does the theme of finitude that seems to govern this 
+new displacement of the pendulum come? To what philosophical event 
+is this analytic of finitude to be attributed-this analytic in which is in- 
+scribed the trihedron of knowledges or models of the modern episteme, 
+with its nonsciences, the "'human sciences,'" according to Foucault (MC, 
+p. 378; OT, p. 366), and its "'counter-sciences,"' which Foucault says psy- 
+choanalysis and ethnology also are (MC, p. 391; OT, p. 379)? 
+As a project, the analytic of finitude would belong to the tradition of 
+the Kantian critique. Foucault insists on this Kantian filiation by speci- 
+fying, to cite it once again: "We think in that place." Here is again and 
+for a time, according to Foucault, our age, our contemporaneity. It is true 
+that if originary finitude obviously makes us think of Kant, it would be 
+unable to do so alone, that is-to summarize an enormous venture in a 
+word, in a name-without the active interpretation of the Heideggerian 
+repetition and all its repercussions, particularly, since this is our topic 
+today, in the discourse of French philosophy and psychoanalysis, and es- 
+pecially, Lacanian psychoanalysis; and when I say Lacanian, I am also 
+referring to all the debates with Lacan during the past few decades. This 
+would have perhaps deserved some mention here on the part of Fou- 
+cault, especially when he speaks of originary finitude. For Kantian 
+finitude is precisely not "originary," as is, on the contrary, the one to 
+which the Heideggerian interpretation leads. Finitude in Kant's sense 
+is instead derived, as is the intuition bearing the same name. But let 
+us leave all this aside, since it would, as we say, take us a bit too 
+far afield. 
+The "we" who is saying "we think in that place" is evidently, tautolog- 
+ically, the "we" from out of which the signatory of these lines, the author 
+of The History of Madness and The Order of Things, speaks, writes, and 
+thinks. But this "we" never stops dividing, and the places of its signature 
+are displaced in being divided up. A certain untimeliness always disturbs 
+the contemporary who reassures him or herself in a "we." This "we," our 
+"we," is not its own contemporary. The self-identity of its age, or of any 
+age, appears as divided, and thus problematic, problematizable (I under- 
+score this word for a reason that will perhaps become apparent in a mo- 
+ment), as the age of madness or an age of psychoanalysis-as well as, 
+in fact, all the historical or archeological categories that promise us the 
+determinable stability of a configurable whole. In fact, from the moment 
+a couple separates, from the moment, for example, just to locate here a 
+symptom or a simple indication, the couple Freud/Nietzsche forms and 
+then unforms, this decoupling fissures the identity of the epoch, of the 
+age, of the episteme or the paradigm of which one or the other, or both 
+together, might have been the significant representatives. This is even 
+more true when this decoupling comes to fissure the self-identity of some 
+individual, or some presumed individuality, for example, of Freud. What Critical Inquiry 
+260 Jacques Derrida 
+allows one to presume the non-self-difference of Freud, for example? 
+And of psychoanalysis? These decouplings and self-differences no doubt 
+introduce a good deal of disorder into the unity of any configuration, 
+whole, epoch, or historical age. Such disturbances make the historians' 
+work rather difficult, even and especially the work of the most original 
+and refined among them. This self-difference, this difference to self [d soi], 
+and not simply with self, makes life hard if not impossible for historical 
+science. But inversely, would there be any history, would anything ever 
+happen, without this principle of disturbance? Would there ever be any 
+event without this disturbance of the principality? 
+At the point where we are, the age of finitude is being de-identified 
+for at least one reason, from which I can here abstract only the general 
+schema: the thought of finitude, as the thought of finite man, speaks both 
+of the tradition, the memory of the Kantian critique or of the knowledges 
+rooted in it, and of the end [fin] of this finite man, this man who is "near- 
+ing its end," as Foucault's most famous sentence would have it in this final 
+wager, placed on the edge of a promise that has yet to take shape, in the 
+final lines of The Order of Things: "then one can certainly wager that man 
+would be effaced, like a face drawn in sand at the edge or limit of the sea" 
+(MC, p. 398; OT, p. 387). The trait (the trait of the face, the line or the 
+limit) that then runs the risk of being effaced in the sand would perhaps 
+also be the one that separates an end from itself, thereby multiplying it 
+endlessly and making it, once again, into a limit: the self-relation of a 
+limit at once erases and multiplies the limit; it cannot but divide it in 
+inventing it. The limit only comes to be effaced-it only comes to efface 
+itself-as soon as it is inscribed. 
+2. I'm finished with this point, and so I should really finish it up 
+right here. Assuming that I haven't already worn out your patience, I will 
+conclude with a second indication as a sort of postscript-and even more 
+schematically-in order to point once again in the direction of psycho- 
+analysis and to put these hypotheses to the test of The History of Sexuality 
+(1976-1984).20 
+If one is still willing to follow this figure of the pendulum [balancier] 
+making a scene before psychoanalysis, then one will observe that thefort/ 
+da here gives a new impetus to the movement, a movement with the same 
+rhythm but with a greater amplitude and range than ever before. Psycho- 
+analysis is here reduced, more than it ever was, to a very circumscribed 
+and dependent moment in a history of the "strategies of knowledge and 
+power" (juridical, familial, psychiatric) (VS, p. 210; HS, p. 159). Psycho- 
+20. Histoire de la sexualite is the name given by Foucault to his entire project on sexuality, 
+of which three volumes have now been published: La Volonte de savoir (Paris, 1976), hereafter 
+abbreviated VS, trans. Robert Hurley, under the title The History of Sexuality: An Introduction 
+(New York, 1978), hereafter abbreviated HS; LUsage des plaisirs (Paris, 1984), trans. Hurley, 
+under the title The Use of Pleasure (New York, 1985); and Le Souci de soi (Paris, 1984), trans. 
+Hurley, under the title The Care of the Self (New York, 1986). The History of Madness 
+Winter 1994 261 
+analysis is taken by and interested in these strategies, but it does not think 
+them through. The praises of Freud fall decisively and irreversibly: one 
+hears, for example, of "how wonderfully effective he was-worthy of the 
+greatest spiritual fathers and directors of the classical period-in giving 
+a new impetus to the secular injunction to study sex and transform it 
+into discourse" (VS, p. 210; HS, p. 159). This time, in other words, in 
+reinscribing the invention of psychoanalysis into the history of a disciplin- 
+ary dynamic, one no longer indicts only the ruses of objectivization and 
+psychiatric alienation, as in The History of Madness, and no longer only the 
+stratagems that would have allowed the confinement without confinement of 
+the patient in the invisible asylum of the analytic situation. This time, it 
+is a question of going much further back, and more radically than the 
+"repressive hypothesis" ever did, towards the harsh ruses of the monar- 
+chy of sex and the agencies of power that support it. These latter invest 
+in and take charge of sexuality, so that there is no need to oppose, as one 
+so often and naively believes, power and pleasure. 
+And since we have been following for so long now the obsessive ava- 
+tars of the Evil Genius, the irresistible, demonic, and metamorphic 
+returns of this quasi-God, of God's second in command, this metempsy- 
+chotic Satan, we here find Freud himself once again, Freud, to whom 
+Foucault leaves a choice between only two roles: the bad genius and the 
+good one. And what we have here is another chiasm: in the rhetoric of 
+the few lines that I will read in a moment, one will not be surprised to 
+see that the accused, the one who is the most directly targeted by the 
+indictment-for no amount of denying will make us forget that we are 
+dealing here with a trial and a verdict-is the "good genius of Freud" 
+and not his "bad genius." Why so? In the final pages of the first volume 
+of The History of Sexuality, the accusation of pansexualism that was often 
+leveled against psychoanalysis naturally comes up. Those most blind in 
+this regard, says Foucault, were not those who denounced pansexualism 
+out of prudishness. Their only error was to have attributed "solely to the 
+bad genius [mauvais genie] of Freud what had already gone through a long 
+stage of preparation" (VS, p. 210; HS, p. 159; my emphasis). The opposite 
+error, the symmetrical lure, corresponds to a more serious mystification. 
+It is the illusion that could be called emancipatory, the aberration of the 
+Enlightenment, the misguided notion on the part of those who believed 
+that Freud, the 'good genius" of Freud, had finally freed sex from its re- 
+pression by power. These 
+were mistaken concerning the nature of the process; they believed 
+that Freud had at last, through a sudden reversal, restored to sex 
+the rightful share which it had been denied for so long; they had not 
+seen how the good genius of Freud had placed it at one of the critical 
+points marked out for it since the eighteenth century by the strate- 
+gies of knowledge and power, how wonderfully effective he was ... Critical Inquiry 
+262 Jacques Derrida 
+in giving a new impetus to the secular injunction to study sex and 
+transform it into discourse. [VS, p. 210; HS, p. 159; my emphasis]21 
+The "good genius" of Freud would thus be worse than the bad one. 
+It would have consisted in getting itself well placed, in spotting the best 
+place in an old strategy of knowledge and power. 
+Whatever questions it might leave unanswered-and I will speak in 
+just a moment of one of those it suscitates in me-this project appears 
+nonetheless exciting, necessary, and courageous. And I would not want 
+any particular reservation on my part to be too quickly classified among 
+the reactions of those who hastened to defend the threatened privilege 
+of the pure invention of psychoanalysis, that is, of an invention that would 
+be pure, of a psychoanalysis that one might still dream would have inno- 
+cently sprung forth already outfitted, helmeted, armed, in short, outside 
+all history, after the epistemological cutting of the cord, as one used to 
+say, indeed, after the unraveling of the navel of the dream. Foucault him- 
+self during an interview seemed to be ready for some sort of compromise 
+on this issue, readily and good-spiritedly acknowledging the "impasses" 
+(this was his word) of his concept of episteme and the difficulties into which 
+this new project had led him.22 But only those who work, only those who 
+21. It is perhaps appropriate to recall here the lines immediately following this, the last 
+in the first volume of The History of Sexuality. They unequivocally describe this sort of Chris- 
+tian teleology or, more precisely, modern Christianity (as opposed to "an old Christianity") 
+whose completion would, in some sense, be marked by psychoanalysis: 
+the secular injunction to study sex and transform it into discourse. We are often re- 
+minded of the countless procedures which an old Christianity once employed to make 
+us detest the body; but let us ponder all the ruses that were employed for centuries to 
+make us love sex, to make the knowledge of it desirable and everything said about it 
+precious. Let us consider the stratagems by which we were induced to apply all our 
+skills to discovering its secrets, by which we were attached to the obligation to draw out 
+its truth, and made guilty for having failed to recognize it for so long. These devices 
+are what ought to make us wonder today. Moreover, we need to consider the possibility 
+that one day, perhaps, in a different economy of bodies and pleasures, people will no 
+longer quite understand how the ruses of sexuality, and the power that sustains its 
+organization, were able to subject us to that austere monarchy of sex, so that we became 
+dedicated to the endless task of forcing its secret, of exacting the truest of confessions 
+from a shadow. 
+The irony of this deployment is in having us believe that our "liberation" is in the 
+balance. [VS, pp. 210-11; HS, p. 159] 
+Some might be tempted to relate this conclusion to that of The Order of Things, to every- 
+thing that is said there about the end and about its tomorrow, about man "nearing his end" 
+right up to this "day" when, as The History of Sexuality says, "in a different economy of bodies 
+and pleasures, people will no longer quite understand how," and so on. It is difficult not to 
+hear in the rhetoric and tonality of such a call, in the apocalyptic and eschatological tone of 
+this promise (even if "we can at the moment do no more than sense the possibility [of this 
+event]-without knowing either what its form will be or what it promises" [MC, p. 398; OT, 
+p. 387]), a certain resonance with the Christianity and Christian humanism whose end is 
+being announced. 
+22. See "Le Jeu de Michel Foucault," Ornicar? 10 (July 1977): 62-93; ed. Alain Grosri- 
+chard, under the title "The Confessions of the Flesh," Power/Knowledge: Selected Interviews The History of Madness 
+Winter 1994 263 
+take risks in working, encounter difficulties. One only ever thinks and 
+takes responsibility-if indeed one ever does-in the testing of the apo- 
+ria; without this, one is content to follow an inclination or apply a pro- 
+gram. And it would not be very generous, indeed it would be especially 
+naive and imprudent, to take advantage of these avowals, to take them 
+literally, and to forget what Foucault himself tells us about the confes- 
+sional scene. 
+The question that I would have liked to formulate would thus not 
+aim to protect psychoanalysis against some new attack, nor even to cast 
+the slightest doubt upon the importance, necessity, and legitimacy of Fou- 
+cault's extremely interesting project concerning this great history of sex- 
+uality. My question would only seek-and this would be, in sum, a sort 
+of modest contribution-to complicate somewhat an axiomatic and, on 
+the basis of this perhaps, certain discursive or conceptual procedures, 
+particularly regarding the way in which this axiomatic is inscribed in its 
+age, in the historical field that serves as a point of departure, and in its 
+reference to psychoanalysis. In a word, without compromising in the least 
+the necessity of reinscribing almost "all" psychoanalysis (assuming one 
+could seriously say such a thing, which I do not believe one can: psycho- 
+analysis itself, all psychoanalysis, the whole truth about all psychoanalysis) 
+into a history that precedes and exceeds it, it would be a question of 
+becoming interested in certain gestures, in certain works, in certain mo- 
+ments of certain works of psychoanalysis, Freudian and post-Freudian 
+(for one cannot, especially in France, seriously treat this subject by lim- 
+iting oneself to a strictly Freudian discourse and apparatus), in certain 
+traits of a consequently nonglobalizable psychoanalysis, one that is di- 
+vided and multiple (like the powers that Foucault ceaselessly reminds us 
+are essentially dispersed). It would then be a question of admitting that 
+these necessarily fragmentary or disjointed movements say and do, pro- 
+vide resources for saying and doing, what The History of Sexuality (The Will 
+to Knowledge) wishes to say, what it means [veut dire], and what it wishes to 
+do (to know and to make known) with regard to psychoanalysis. In other 
+words, if one still wanted to speak in terms of age-something that I 
+would only ever do in the form of citation-at this point, here on this 
+line, concerning some trait that is on the side from out of which the his- 
+tory of sexuality is written rather than on the side of what it describes or 
+objectifies, one would have to say that Foucault's project belongs too 
+much to "the age of psychoanalysis" in its possibility for it, when claiming 
+to thematize psychoanalysis, to do anything other than let psychoanalysis 
+continue to speak obliquely of itself and to mark one of its folds in a 
+scene that I will not call self-referential or specular but whose structural 
+complication I will not here try to describe (I have tried to do this else- 
+and Other Writings, 1972-77, trans. Colin Gordon et al., ed. Gordon (New York, 1980), esp. 
+pp. 196-97. Critical Inquiry 
+264 Jacques Derrida 
+where). This is not only because of what withdraws this history from the 
+regime of representation (because of what already inscribes the possibility 
+of this history in and since the age of Freud and Heidegger-to use these 
+names as mere indications for the sake of convenience). It is also for a 
+reason that interests us here more directly: what Foucault announces and 
+denounces about the relation between pleasure and power, in what he 
+calls the "double impetus: pleasure and power" (VS, p. 62; HS, p. 45), 
+would find, already in Freud, to say nothing of those who followed, dis- 
+cussed, transformed, and displaced him, the very resources for the objec- 
+tion leveled against the "good genius," the so very bad "good genius," of 
+the father of psychoanalysis. I will situate this with just a word in order to 
+conclude. 
+Foucault had clearly cautioned us: this history of sexuality was not 
+to be a historian's history. A "genealogy of desiring man" was to be neither 
+a history of representations nor a history of behaviors or sexual practices. 
+This would lead one to think that sexuality cannot become an object of 
+history without seriously affecting the historian's practice and the concept 
+of history. Moreover, Foucault puts quotation marks around the word 
+sexuality: "the quotation marks have a certain importance," he adds.23 We 
+are thus also dealing here with the history of a word, with its usages start- 
+ing in the nineteenth century and the reformulation of the vocabulary in 
+relation to a large number of other phenomena, from biological mecha- 
+nisms to traditional and new norms, to the institutions that support these, 
+be they religious, juridical, pedagogical, or medical (for example, psycho- 
+analytic). This history of the uses of a word is neither nominalist nor 
+essentialist. It concerns procedures and, more precisely, zones of "prob- 
+lematization." It is a "history of truth" as a history of problematizations, 
+and even as an "archeology of problematizations," "through which being 
+offers itself as something that can and must be thought."24 The point is 
+to analyze not simply behaviors, ideas, or ideologies but, first of all, these 
+problematizations in which a thought of being intersects "practices" and 
+"practices of the self," a "genealogy of practices of the self" through 
+which these problematizations are formed. With its reflexive vigilance 
+and care in thinking itself in its rigorous specificity, such an analysis thus 
+calls for the problematization of its own problematization. This latter must itself 
+also question itself, and with the same archaeological and genealogical 
+care, the same care that it itself methodically prescribes. 
+When confronted with a historical problematization of such scope 
+and thematic richness, one should not be satisfied with a mere survey, 
+nor with asking in just a few minutes an overarching question so as to 
+insure some sort of synoptic mastery. What we can and must try to do in 
+such a situation is to pay tribute to a work that is this great and this un- 
+23. Foucault, LUsage des plaisirs, p. 9; The Use of Pleasure, p. 3. 
+24. Ibid., pp. 17-19; pp. 11-13. The History of Madness 
+Winter 1994 265 
+certain by means of a question that it itself raises, by means of a question 
+that it carries within itself, that it keeps in reserve in its unlimited poten- 
+tial, one of the questions that can thus be deciphered within it, a question 
+that keeps it in suspense, holding its breath [tient ... en haleine]-and, 
+thus, keeps it alive. 
+One of these questions, for me, for example, would be the one I had 
+tried to formulate a few years ago during a conference honoring Foucault 
+at New York University.25 It was developed by means of a problematiza- 
+tion of the concept of power and of the theme of what Foucault calls the 
+spiral in the duality power/pleasure. Leaving aside the huge question of 
+the concept of power and of what gives it its alleged unity under the 
+essential dispersion rightly recalled by Foucault himself, I will pull out 
+only a thread: it would lead to that which, in a certain Freud and at the 
+center of a certain-let's say for the sake of convenience-French heri- 
+tage of Freud, would not only not let itself be objectified by the Foucaul- 
+dian problematization but would actually contribute to it in the most 
+determinate and efficient way, thereby deserving to be inscribed on the 
+thematizing rather than on the thematized border of this history of sexu- 
+ality. I thus have to wonder what Foucault would have said, in this per- 
+spective and were he to have taken this into account, not of "Freud" or 
+of psychoanalysis "itself" in general-which does not exist any more than 
+power does as one big central and homogeneous corpus-but, for ex- 
+ample, since this is only one example, about an undertaking like Beyond 
+the Pleasure Principle, about something in its lineage or between its filial 
+connections-along with everything that has been inherited, repeated, 
+or discussed from it since then. In following one of these threads or filial 
+connections, one of the most discreet, in following the abyssal, unassign- 
+able, and unmasterable strategy of this text, a strategy that is finally with- 
+out strategy, one begins to see that this text not only opens up the horizon 
+of a beyond of the pleasure principle (the hypothesis of such a beyond 
+never really seeming to be of interest to Foucault) against which the whole 
+economy of pleasure needs to be rethought, complicated, pursued in its 
+most unrecognizable ruses and detours. By means of one of these filia- 
+tions-another one unwinding the spool of the fort/da that continues to 
+interest us-this text also problematizes, in its greatest radicality, the 
+agency of power and mastery. In a discreet and difficult passage, an origi- 
+nal drive for power or drive for mastery (Bemdchtigungstrieb) is mentioned. 
+It is very difficult to know if this drive for power is still dependent upon 
+the pleasure principle, indeed, upon sexuality as such, upon the austere 
+monarchy of sex that Foucault speaks of on the last page of his book. 
+How would Foucault have situated this drive for mastery in his dis- 
+25. The following analysis thus intersects a much longer treatment of the subject in 
+an unpublished paper entitled "Beyond the Power Principle" that I presented during this 
+conference at New York University, organized by Thomas Bishop, in April 1986. Critical Inquiry 
+266 Jacques Derrida 
+course on power or on irreducibly plural powers? How would he have 
+read this drive, had he read it, in this extremely enigmatic text of Freud? 
+How would he have interpreted the recurring references to the demonic 
+from someone who then makes himself, according to his own terms, the 
+"devil's advocate" and who becomes interested in the hypothesis of a late 
+or derived appearance of sex and sexual pleasure? In the whole problem- 
+atization whose history he describes, how would Foucault have inscribed 
+this passage from Beyond the Pleasure Principle, and this concept and these 
+questions (with all the debates to which this book of Freud either directly 
+or indirectly gave rise, in a sort of critical capitalization, particularly in 
+the France of our age, beginning with everything in Lacan that takes its 
+point of departure in the repetition compulsion [Wiederholungszwang])? 
+Would he have inscribed this problematic matrix within the whole whose 
+history he describes? Or would he have put it on the other side, on the 
+side of what allows one on the contrary to delimit the whole, indeed to 
+problematize it? And thus on a side that no longer belongs to the whole, 
+nor, as I would be tempted to think, to any whole, such that the very idea 
+of a gathering of problematization or procedure, to say nothing any 
+longer of age, episteme, paradigm, or epoch, would make for so many 
+problematic names, just as problematic as the very idea of problemati- 
+zation? 
+This is one of the questions that I would have liked to ask him. I am 
+trying, since this is, unfortunately, the only recourse left us in the solitude 
+of questioning, to imagine the principle of the reply. It would perhaps be 
+something like this: what one must stop believing in is principality or 
+principleness, in the problematic of the principle, in the principled unity 
+of pleasure and power, or of some drive that is thought to be more ori- 
+ginary than the other. The theme of the spiral would be that of a drive 
+duality (power/pleasure) that is without principle. 
+It is the spirit of this spiral that keeps one in suspense, holding one's 
+breath-and, thus, keeps one alive. 
+The question would thus once again be given a new impetus: is not 
+the duality in question, this spiralled duality, what Freud tried to oppose 
+to all monisms by speaking of a dual drive and of a death drive, of a death 
+drive that was no doubt not alien to the drive for mastery? And, thus, to 
+what is most alive in life, to its very living on [survivance]? 
+I am still trying to imagine Foucault's response. I can't quite do it. I 
+would need him to take it on himself. 
+But in this place where no one can answer for him, in the absolute 
+silence where we remain nonetheless turned toward him, I would ven- 
+ture to bet that, in a sentence that I will not construct for him, he would 
+have associated and yet also dissociated, he would have placed back to 
+back, mastery and death, that is, the same-death and the master, death 
+as the master. The History of Madness 
