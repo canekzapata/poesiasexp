@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>las hierbas que crecen en el servidor</title>
+<meta name="description" content="Informe compilado. HW, Rubén, un data center en Querétaro y plantas que no deberían existir.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="leyenda" aria-hidden="true">
+  <span><span class="punto f1"></span> logs</span>
+  <span><span class="punto f2"></span> post-its</span>
+  <span><span class="punto f3"></span> poemas</span>
+  <span><span class="punto f4"></span> cuaderno</span>
+  <span><span class="punto f5"></span> legales</span>
+  <span><span class="punto nota"></span> compilador</span>
+</div>
+
+<main id="escritorio" role="application" aria-label="archivos del caso"></main>
+
+<div id="lector" role="dialog" aria-label="visor de documento">
+  <div class="ventana">
+    <div class="barra">
+      <span class="ruta" id="nombre-doc"></span>
+      <div class="acciones">
+        <button id="btn-margenes" aria-pressed="false">márgenes</button>
+        <button id="btn-cerrar" class="cerrar" aria-label="cerrar">&times;</button>
+      </div>
+    </div>
+    <div class="cuerpo"></div>
+  </div>
+</div>
+
+<footer id="pie">
+  <span>abiertos: <b id="contador">0</b></span>
+  <span>disponibles: <b id="leidos">0</b></span>
+  <span>esc · cerrar &nbsp; m · márgenes</span>
+</footer>
+
+<script src="corpus.js"></script>
+<script src="motor.js"></script>
+</body>
+</html>
