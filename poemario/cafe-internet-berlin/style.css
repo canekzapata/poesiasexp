@@ -1,0 +1,221 @@
+/* =====================================================================
+   CAFÉ INTERNET, BERLÍN, 1997 — style.css
+
+   el color no decora: clasifica. cinco señales sobre un gris de sala.
+   paleta tomada de las cuatro imágenes de referencia (documento 3):
+   gris frío, beige, verde ácido, cian, magenta — los intensos como
+   excepción, nunca como baño nostálgico.
+   ===================================================================== */
+
+@font-face{ font-family:'c97-mono'; font-display:swap;
+  src:url('../../Web437_IBM_Model3x_Alt4.woff') format('woff'),
+      url('../fonts/Ac437_ACM_VGA_8x14.ttf') format('truetype'); }
+
+:root{
+  --sala:#15181a;          /* gris frío: la habitación */
+  --mesa:#1c2023;          /* la mesa */
+  --hueco:#101315;         /* lo que falta */
+  --tinta:#e2dccb;         /* beige: el papel, el CRT caliente */
+  --tenue:#8c8f8a;         /* lo ya leído */
+  --verde:#b6f24a;         /* acción: performativo, la máquina responde */
+  --cian:#54d6e8;          /* memoria y procedencia */
+  --magenta:#ff3d9a;       /* error, contradicción, contaminación temporal */
+  --ambar:#f0b33c;         /* cuidado */
+
+  --mono:'c97-mono', ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+  --serif:'Iowan Old Style','Palatino Linotype', Palatino, Georgia, serif;
+
+  --col:64ch;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; height:100%; }
+body{
+  background:var(--sala); color:var(--tinta);
+  font:15px/1.62 var(--serif);
+  -webkit-text-size-adjust:100%;
+  display:grid; grid-template-columns:20rem minmax(0,1fr) 22rem;
+  grid-template-rows:auto minmax(0,1fr) auto;
+  grid-template-areas:"cab cab cab" "arb doc not" "pie pie pie";
+}
+::selection{ background:var(--verde); color:var(--sala); }
+:focus-visible{ outline:2px solid var(--verde); outline-offset:2px; }
+
+/* ---- cabecera: la ficha del archivo abierto ----------------------- */
+#cabecera{
+  grid-area:cab; border-bottom:1px solid #2c3134; background:var(--mesa);
+  padding:.5rem .9rem; font:11px/1.5 var(--mono); letter-spacing:.02em;
+  display:flex; flex-wrap:wrap; gap:.25rem 1.4rem; align-items:baseline;
+}
+#cabecera b{ color:var(--tinta); font-weight:normal; }
+#cabecera .r{ color:var(--verde); }
+#cabecera .d{ color:var(--tenue); }
+#titulo-obra{ color:var(--tenue); margin-right:auto; }
+#titulo-obra i{ color:var(--tinta); font-style:normal; }
+
+/* ---- el árbol de directorios -------------------------------------- */
+#arbol{
+  grid-area:arb; overflow-y:auto; border-right:1px solid #2c3134;
+  padding:.9rem .4rem 3rem .9rem; font:11px/1.75 var(--mono);
+}
+#arbol h2{
+  font:11px/1.6 var(--mono); font-weight:normal; color:var(--cian);
+  margin:1.1rem 0 .2rem; letter-spacing:.08em;
+}
+#arbol h2:first-child{ margin-top:0; }
+#arbol a{
+  display:block; color:var(--tinta); text-decoration:none;
+  padding:0 .3rem; border-left:2px solid transparent; white-space:nowrap;
+  overflow:hidden; text-overflow:ellipsis;
+}
+#arbol a:hover{ background:#22282b; }
+#arbol a.leido{ color:var(--tenue); }
+#arbol a.leido::after{ content:" ·"; color:var(--cian); }
+#arbol a.aqui{ border-left-color:var(--verde); color:var(--verde); background:#1f2528; }
+#arbol .n{ color:#4d5457; }
+
+/* ---- el documento -------------------------------------------------- */
+#doc{ grid-area:doc; overflow-y:auto; padding:2.2rem 2rem 6rem; }
+#hoja{ max-width:var(--col); margin:0 auto; }
+
+#hoja h1{
+  font:11px/1.5 var(--mono); font-weight:normal; letter-spacing:.14em;
+  color:var(--verde); text-transform:uppercase; margin:0 0 .2rem;
+}
+#hoja .sub{ font:11px/1.5 var(--mono); color:var(--tenue); margin:0 0 2rem; }
+
+/* el cuerpo: verso a verso, sin justificar, sin viudas forzadas */
+#cuerpo{ white-space:pre-wrap; font-family:var(--serif); font-size:15.5px; line-height:1.66; }
+#cuerpo .v{ display:block; min-height:1.66em; }
+#cuerpo .v.oculto{ visibility:hidden; }
+/* registros de máquina, tablas, sesiones y código: monoespaciada */
+body[data-clase="log"] #cuerpo,
+body[data-clase="tabla"] #cuerpo,
+body[data-clase="sesion"] #cuerpo,
+body[data-clase="cola"] #cuerpo,
+body[data-clase="codigo"] #cuerpo,
+body[data-clase="correo"] #cuerpo,
+body[data-clase="ficha"] #cuerpo{
+  font:12.5px/1.72 var(--mono);
+}
+body[data-clase="vacio"] #cuerpo{ line-height:2.4; }
+
+/* ---- enlaces con retórica ------------------------------------------ */
+a.e{ color:var(--tinta); text-decoration:none; border-bottom:1px solid; cursor:pointer; }
+a.e::before{ font-family:var(--mono); font-size:.82em; margin-right:.35em; opacity:.9; }
+a.e[data-t="continuacion"]{ border-bottom-style:solid; }
+a.e[data-t="continuacion"]::before{ content:"→"; }
+a.e[data-t="procedencia"]{ color:var(--cian); }
+a.e[data-t="procedencia"]::before{ content:"⌐"; }
+a.e[data-t="contradiccion"]{ color:var(--magenta); }
+a.e[data-t="contradiccion"]::before{ content:"↮"; }
+a.e[data-t="performativo"]{ color:var(--verde); }
+a.e[data-t="performativo"]::before{ content:"⏎"; }
+a.e[data-t="roto"]{ color:var(--tenue); border-bottom-style:dotted; text-decoration:line-through; }
+a.e[data-t="roto"]::before{ content:"✕"; text-decoration:none; display:inline-block; }
+a.e[data-t="apocrifo"]{ color:var(--magenta); border-bottom-style:dashed; }
+a.e[data-t="apocrifo"]::before{ content:"⟳"; }
+a.e[data-t="cuidado"]{ color:var(--ambar); }
+a.e[data-t="cuidado"]::before{ content:"♥"; }
+a.e:hover{ background:#232a2d; }
+/* memoria pública del navegador: el enlace visitado no vuelve a ser nuevo */
+a.e.visitado{ opacity:.62; }
+a.e.visitado::after{
+  content:" ·" attr(data-veces); font:9px var(--mono); vertical-align:super;
+  opacity:.8; letter-spacing:0;
+}
+
+/* ---- carga por franjas ---------------------------------------------- */
+#barra{ height:2px; background:#262c2f; margin:0 0 1.4rem; position:relative; }
+#barra i{ display:block; height:100%; width:0; background:var(--verde); transition:width .12s linear; }
+#barra[hidden]{ display:none; }
+#aviso-carga{ font:10px/1 var(--mono); color:var(--tenue); margin:-1.1rem 0 1.4rem; }
+
+/* ---- notas ---------------------------------------------------------- */
+#notas{
+  grid-area:not; overflow-y:auto; border-left:1px solid #2c3134;
+  padding:1.4rem 1.1rem 6rem; background:#171a1c;
+}
+#notas h2{
+  font:10px/1.5 var(--mono); font-weight:normal; letter-spacing:.14em;
+  color:var(--tenue); text-transform:uppercase; margin:0 0 1rem;
+}
+.nota{ margin:0 0 1.15rem; font-size:13px; line-height:1.55; }
+.nota .m{
+  font:10px var(--mono); letter-spacing:.06em; display:inline-block;
+  margin-right:.4em; color:var(--tenue);
+}
+.nota[data-m="M97"] .m{ color:var(--tinta); }
+.nota[data-m="M?"] .m{ color:var(--magenta); }
+.nota[data-m="ED"] .m{ color:var(--cian); }
+.nota[data-m="MAQUINA"] .m{ color:var(--verde); }
+.nota[data-m="K"] .m{ color:var(--ambar); }
+.nota[data-m="↳"] .m{ color:var(--verde); }
+.nota .num{ color:#4d5457; font:10px var(--mono); margin-right:.35em; }
+/* la nota 6, en blanco, con su espacio reservado */
+.nota.blanca{ color:var(--tenue); }
+/* el espacio reservado de una nota que no tiene texto. se ve el hueco. */
+.nota.blanca .hueco{
+  display:block; height:1.15em; margin:.35em 0 .1em;
+  border-bottom:1px dashed #454d51;
+}
+.nota.llena{ color:var(--tinta); }
+.nota.llena .m{ color:var(--magenta); }
+.nota.nueva{ animation:llegar 1.4s ease-out 1; }
+@keyframes llegar{ from{ background:#2a2135; } to{ background:transparent; } }
+
+/* ---- pie: la bitácora local ----------------------------------------- */
+#pie{
+  grid-area:pie; border-top:1px solid #2c3134; background:var(--mesa);
+  padding:.4rem .9rem; font:10px/1.6 var(--mono); color:var(--tenue);
+  display:flex; gap:1.2rem; align-items:center; flex-wrap:wrap;
+}
+#pie b{ color:var(--tinta); font-weight:normal; }
+#ruta-lector{ flex:1 1 16rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#pie a{ color:var(--ambar); text-decoration:none; border-bottom:1px solid; }
+#pie button{
+  background:none; border:1px solid #333a3d; color:var(--tenue);
+  font:10px var(--mono); padding:.15rem .45rem; cursor:pointer;
+}
+#pie button:hover{ color:var(--tinta); border-color:var(--tenue); }
+
+/* ---- morgen: la página que no termina de cargar ---------------------- */
+body[data-clase="incompleto"] #hoja::after{
+  content:"esperando…"; display:block; margin-top:2rem;
+  font:11px var(--mono); color:var(--tenue);
+}
+#morgen-barra{ margin-top:1rem; font:11px var(--mono); color:var(--tenue); }
+#morgen-barra b{ color:var(--verde); font-weight:normal; }
+
+/* ---- 404 -------------------------------------------------------------- */
+body[data-clase="error"]{ background:var(--hueco); }
+body[data-clase="error"] #hoja h1{ color:var(--magenta); }
+
+/* ---- responsive: no es una reducción, es otra disposición ------------ */
+@media (max-width:1100px){
+  body{ grid-template-columns:16rem minmax(0,1fr); grid-template-areas:"cab cab" "arb doc" "not not" "pie pie"; grid-template-rows:auto minmax(0,1fr) auto auto; }
+  #notas{ border-left:0; border-top:1px solid #2c3134; max-height:40vh; }
+}
+/* en móvil no se reduce la composición: se reordena. primero el archivo
+   abierto, después sus notas, y el directorio al final, plegado. */
+@media (max-width:720px){
+  body{
+    display:flex; flex-direction:column; height:auto; min-height:100%;
+    grid-template-columns:none; grid-template-areas:none;
+  }
+  #cabecera{ position:sticky; top:0; z-index:5; order:1; font-size:10px; }
+  #doc{ order:2; padding:1.5rem 1.1rem 1rem; overflow:visible; }
+  #notas{ order:3; border-left:0; border-top:1px solid #2c3134; max-height:none;
+          overflow:visible; padding-bottom:1.5rem; }
+  #arbol{ order:4; border-right:0; border-top:1px solid #2c3134;
+          max-height:42vh; padding:.9rem .9rem 2rem; overflow-y:auto; }
+  #pie{ order:5; position:sticky; bottom:0; z-index:5; }
+  :root{ --col:100%; }
+}
+
+/* la dificultad es estética; el movimiento no es obligatorio */
+@media (prefers-reduced-motion:reduce){
+  *{ animation:none !important; transition:none !important; }
+}
+
+.sin-js{ padding:3rem; max-width:60ch; margin:0 auto; }

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#15181a">
+  <meta name="color-scheme" content="dark">
+  <title>café internet, berlín, 1997</title>
+  <meta name="description" content="Reconstrucción imposible de un directorio llamado morgen. Un día de montaje, una noche de exhibición, tres soportes incompletos. poesiasexp / canekzapata.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><rect width='12' height='12' fill='%2315181a'/><rect x='3' y='3' width='1' height='2' fill='%23b6f24a'/><rect x='8' y='3' width='1' height='2' fill='%23b6f24a'/><rect x='3' y='7' width='6' height='1' fill='%23b6f24a'/></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-clase="poema">
+
+  <!-- la ficha del archivo abierto: ruta, hora, peso, fecha, soporte.
+       ningún archivo aparece sin procedencia. -->
+  <header id="cabecera"></header>
+
+  <!-- el árbol de directorios: jerarquía y parentesco como espacio legible -->
+  <nav id="arbol" aria-label="directorio /cafe_berlin_1997"></nav>
+
+  <!-- el documento. carga por franjas; clic o Esc lo completa. -->
+  <main id="doc">
+    <article id="hoja">
+      <div id="barra" hidden><i></i></div>
+      <div id="aviso-carga"></div>
+      <div id="cuerpo"></div>
+    </article>
+  </main>
+
+  <!-- las notas se abren junto al cuerpo, no encima de él -->
+  <aside id="notas" aria-live="polite" aria-label="notas del archivo"></aside>
+
+  <!-- la bitácora local del lector. no se envía a ningún servidor. -->
+  <footer id="pie">
+    <span id="contador"></span>
+    <span id="ruta-lector"></span>
+    <a href="#nachtkopie/call_constanta.txt" data-r="nachtkopie/call_constanta.txt">♥ kifli</a>
+    <button id="olvidar" type="button" title="borra la memoria local de esta lectura">olvidar esta lectura</button>
+    <span>j/k · n=404 · m=morgen</span>
+  </footer>
+
+  <noscript>
+    <div class="sin-js">
+      <h1>café internet, berlín, 1997</h1>
+      <p>Esta versión necesita JavaScript para abrir los archivos, cargar por
+      franjas y recordar por dónde pasaste.</p>
+      <p>El libro completo está en texto plano, sin ninguna dependencia, en
+      <a href="CAFE_INTERNET_BERLIN_1997.txt">CAFE_INTERNET_BERLIN_1997.txt</a>.
+      Ahí la nota 6 también está en blanco, pero no se llena sola: hay que
+      llegar a la pieza 33.</p>
+    </div>
+  </noscript>
+
+  <script src="corpus.js"></script>
+  <script src="motor.js"></script>
+</body>
+</html>

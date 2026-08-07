@@ -1,0 +1,91 @@
+CAFÉ INTERNET, BERLÍN, 1997
+—reconstrucción de un directorio llamado morgen—
+
+                              poesiasexp / canek zapata
+
+
+
+
+[esto no se escribió como libro.
+
+Se escribió como archivos, durante un día de montaje y una noche de
+exhibición, en diez máquinas que no compartían reloj.
+
+Lo que sigue es una edición. Es decir: alguien abrió una caja de zapatos
+en 2001, encontró tres soportes incompletos, ninguno de acuerdo con los
+otros, y decidió el orden.
+
+Hay cuatro capas y todo lo que aparece pertenece a alguna:
+la sala —cuerpos, polvo, calor, café—;
+la red local —cables, permisos, la impresora—;
+la red remota —correo, IRC, dos ciudades que mandan—;
+y el archivo tardío —discos recuperados, OCR, huecos.
+
+Las notas están firmadas con marcas. No todas son fiables. Una de ellas
+crece cada vez que se lee. Otra estuvo cuatro años en blanco y se llenó
+sola la noche en que alguien abrió una impresora atascada.
+
+Se lee de arriba abajo y no alcanza. Las rutas cruzadas —→ señaladas al
+pie de cada pieza— son parte del texto, no del aparato.]
+
+
+
+
+FICHA DEL DISCO
+
+    designación .... /cafe_berlin_1997
+    soportes ....... 3, ninguno completo
+    máquinas ....... 10, relojes desiguales
+    personas ....... 5 en la sala, 3 a distancia, ~200 esa noche
+    lugar .......... Berlín, un espacio cultural adaptado
+    fecha .......... viernes 5 de septiembre de 1997
+    duración ....... 19 h 29 min (según el reloj adelantado)
+    edición ........ 2001, o después
+    editor ......... ______
+    estado ......... intentando
+
+
+
+
+MARCAS DE ANOTACIÓN
+
+    [M97] ......... nota escrita durante el montaje
+    [M?] .......... nota atribuida a Mara, sin fecha o con fecha imposible
+    [ED] .......... intervención de quien reconstruye el archivo
+    [MÁQUINA] ..... texto de software, conversión u OCR
+    [OTRA MANO] ... escritura no atribuida
+    [K] ........... nota sobre el perro, no pensada para publicarse
+    [↳] ........... la nota continúa en otra nota y no vuelve
+
+
+
+
+ÍNDICE — ÁRBOL DE DIRECTORIOS
+
+{{INDICE}}
+    El índice miente en un punto: works/ aparece porque estaba en el
+    disco. Está vacío. Cada pieza de la exposición vivía en la máquina
+    de quien la hizo, y la red local era, sobre todo, un acuerdo entre
+    personas que se veían.
+
+
+
+
+UMBRAL
+
+    No hace falta leer en orden, pero el día sí ocurrió en orden.
+
+    Al pie de cada pieza hay rutas. Tienen retórica, no sólo destino:
+
+        →  continuación     la frase termina en otra parte
+        ↮  contradicción    la nota niega la escena
+        ⌐  procedencia      de dónde vino esto y por qué manos
+        ⏎  performativo     seguirlo hace algo
+        ✕  roto             la ausencia trabaja
+        ⟳  apócrifo         dice 1997 y lleva a después
+        ♥  cuidado          no es teoría ni obra: es el perro, el turno,
+                            la comida, avisar al llegar
+
+    Al menos un tercio de estas piezas no se resuelve en su propio
+    cuerpo. La nota 6 de la pieza 01 está en blanco. Se llena en la 33.
+    No hay que buscarla: hay que llegar.

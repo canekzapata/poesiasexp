@@ -1,0 +1,174 @@
+
+
+════════════════════════════════════════════════════════════════════════
+                         APARATO · RÉGIMEN DE VERDAD
+════════════════════════════════════════════════════════════════════════
+
+El cuerpo del libro conserva la ambigüedad. El aparato no puede.
+
+
+DOCUMENTO (histórico, verificable)
+
+    · Hipertexto y lexias: bloques articulados por enlaces; una nota
+      puede abrirse como documento propio y generar nuevas rutas.
+    · MUD/MOO: presencia simultánea, juego, conversación, programación
+      y construcción textual de espacios, anteriores a 1997.
+    · Scott Fahlman propuso :-) y :-( en un tablón de Carnegie Mellon
+      en septiembre de 1982, para distinguir bromas de afirmaciones
+      serias.
+    · Kaomoji: circulación en servicios japoneses desde mediados de los
+      ochenta. La atribución de (^_^) a Yasushi Wakabayashi en
+      ASCII-NET (1986) se maneja con cautela: el registro temprano no
+      tiene la solidez del de Fahlman.
+    · Alexei Shulgin, Form Art, 1997: elementos de formulario HTML como
+      material artístico.
+    · Fax art y arte telemático: colaboraciones remotas durante los
+      años ochenta y noventa.
+    · Los comunicados zapatistas circularon internacionalmente por
+      redes digitales y, crucialmente, por cadenas humanas de
+      retransmisión, traducción y solidaridad. El levantamiento es de
+      1994; los Acuerdos de San Andrés, de 1996.
+    · Electronic Disturbance Theater desarrollaría acciones de sentada
+      virtual en 1998. En un libro de 1997 esto sólo puede aparecer
+      como futuro, no como hecho.
+    · Los 176 emoji de Shigetaka Kurita se desarrollaron para i-mode
+      entre 1998 y 1999: 12 × 12 píxeles transmitidos como datos de
+      carácter, para devolver información gestual a mensajes breves.
+    · Podewil, Berlín, 5–7 de septiembre de 1997: programa Net Culture
+      / Netzkultur, con café internet y galería de aventuras de texto
+      en diez monitores. Daniela Alina Plewe, Michael Joyce, Joseph
+      Weizenbaum, Wiglaf Droste con Denny Dziuks Küche.
+
+
+FICCIÓN PLAUSIBLE (compatible con 1997, inventada)
+
+    · Mara, Hanna, Zsóka, Wera, Tibor, Doina y el café de este libro.
+    · El performance de impresoras Cusco – San Cristóbal – Berlín.
+    · La pieza FACE TO FACE / WITHOUT A FACE y su tabla
+      body_language.tbl.
+    · La visita de A. y la posibilidad de que sea Shulgin.
+    · La nota marginal de 1997 que propone mandar un código de doce por
+      doce en vez de una imagen. La idea es técnicamente correcta para
+      su año; no es una profecía, es aritmética.
+
+
+HIPERSTICIÓN (documento que fabrica su propio antecedente)
+
+    · La frase del margen de la hoja atascada (33), que responde a un
+      archivo que nunca salió del disco de Mara, y que llena la nota 6
+      de la pieza 01 cuatro años después.
+    · emotion_font.gif (46) y su sobre: «EMOTION FONT / FIRST EMOJI /
+      1997», rótulo escrito en 2001 y conservado con fecha de 1997.
+    · El trabajo 013 de la cola de impresión (29): un kilobyte recibido
+      de ninguna parte a las 00:04.
+    · El directorio /morgen, creado a una hora en que no había nadie.
+    · Las tres entradas ATASCO idénticas del montage.log.
+    · Las notas [M?] dentro de una copia que se cerró esa noche.
+
+    Ninguna de estas se resuelve en el cuerpo del libro. Todas están
+    marcadas aquí. La hiperstición no autoriza a mentir en las notas
+    históricas: depende de que el lector pueda distinguir
+    investigación, invención y contaminación temporal.
+
+
+LO QUE ESTE LIBRO NO HACE
+
+    No presenta los noventa como época inocente. No convierte las
+    computadoras en seres sentimentales. No usa el fallo como adorno.
+    No hace de Berlín un decorado. No resuelve la amistad con una
+    confesión. No afirma que internet antes era mejor. No confunde
+    precariedad con libertad. No convierte al EZLN en decoración
+    radical ni atribuye la circulación de sus palabras a una tecnología
+    sin mediadores humanos. No presenta a Mara como genio solitario.
+
+
+
+
+════════════════════════════════════════════════════════════════════════
+                            COLOFÓN AMPLIADO
+════════════════════════════════════════════════════════════════════════
+
+    título ......... Café internet, Berlín, 1997
+    serie .......... Cuadernos de Especulaciones Poéticas
+    archivo ........ canekzapata/poesiasexp · poemario/cafe-internet-berlin
+    piezas ......... 48 numeradas + 4 de raíz
+    notas .......... 168, en 7 marcas
+    rutas .......... 126 llamadas cruzadas, 7 retóricas de enlace
+    lenguas ........ español (principal), alemán, inglés, rumano,
+                     húngaro, japonés — sin glosario, por decisión
+    restricción 1 .. al menos un tercio de las piezas no se resuelve en
+                     su propio cuerpo
+    restricción 2 .. la frase «no lo apagues todavía» cambia de
+                     hablante y de función tres veces
+    restricción 3 .. cada sección contiene al menos una acción física y
+                     una transmisión
+    restricción 4 .. ningún archivo aparece sin soporte, ruta o
+                     procedencia
+    restricción 5 .. el último texto no cierra la conexión: la deja
+                     intentando
+    restricción 6 .. toda falla modifica una decisión humana; ningún
+                     error es adorno
+    anomalía 1 ..... la nota 6 de la pieza 01 está en blanco hasta la
+                     pieza 33. Es la única operación del libro que
+                     ocurre fuera del cuerpo de los dos poemas que la
+                     producen.
+    anomalía 2 ..... la pieza 48 no proviene de ningún soporte de 1997 y
+                     firma con la marca de alguien que dice no haber
+                     estado. Se conserva.
+
+    generado a partir de los tres cuadernos de trabajo del propio
+    directorio (01 temas e historia · 02 tono y forma · 03 mundo
+    material, voces y archivo), del MANIFIESTO_CUADERNOS_DE_
+    ESPECULACIONES_POETICAS.md y del WEB_DESIGN_PROTOCOL.md del
+    repositorio.
+
+    el .txt y el .md no se escribieron dos veces: los emite
+    construir-libro.mjs desde el mismo corpus.js que mueve la pieza web.
+    si una pieza cambia, cambia en las tres. la máquina hace el libro;
+    nosotros hacemos las condiciones para que el libro pueda hacerse.
+
+    del propio archivo poesiasexp: Mario Montalbetti, «Cajas» —una caja
+    cerrada promete algo adentro, y lo que promete no es lo que hay:
+    abrirla desvanece el objeto de la promesa. La pieza 48 y el gesto de
+    la 33 (cerrar la tapa sin sacar la hoja) trabajan ahí. También
+    «Some poems that Li Po conveyed to me», por sus ediciones
+    imposibles —8888, 6666, 2222 a.C.—, que son la ley de /morgen; y las
+    notas sobre Arvatov y el coleccionista, que preguntan qué se
+    conserva cuando lo que hay que conservar es un ambiente
+    computacional entero y no un archivo.
+
+    corpus local leído para esta edición: Landow, Hypertext 3.0 ·
+    Drucker, SpecLab · Ludovico, Post-Digital Print · Blas, Jue y Rhee
+    eds., Informatics of Domination · Haiven, Art after Money, Money
+    after Art · archivo de nettime · programa del Podewil · archivo
+    MoMA sobre los emoji de Kurita · registro de Carnegie Mellon sobre
+    Fahlman.
+
+    lo que el sistema no pudo hacer: no consiguió una versión sin
+    editor. Cada intento de quitar la voz tardía dejó los poemas
+    coherentes y muertos. La pieza 45 es la cicatriz de esos intentos:
+    la voz que sobra es la única que explica por qué existe el libro.
+
+    existe también una versión ejecutable en el mismo directorio
+    (index.html), donde las rutas se recorren, la nota 6 se llena al
+    llegar a la 33, la pieza 45 crece con cada lectura y la 44 no
+    termina de cargar nunca.
+
+    esta versión es una entre varias posibles.
+    poesiasexp · canekzapata.net
+
+
+
+
+════════════════════════════════════════════════════════════════════════
+
+                                  morgen
+
+                     lo que hay que hacer:
+                       devolver las sillas
+                       el cable de la cocina
+                       preguntarle a Zsóka si
+
+                     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  87%
+
+════════════════════════════════════════════════════════════════════════
