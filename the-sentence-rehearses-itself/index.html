@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>THE SENTENCE REHEARSES ITSELF</title>
+<meta name="description" content="A grammar that can hear the difference between repeating and returning. One continuous computational poem with a melody that remembers the reading.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 12V4M3 4h6M8 12V8' fill='none' stroke='%23444'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<main id="field" aria-label="The sentence rehearses itself. A field of words that rearranges itself into trees, graphs, tables, plots and scores.">
+  <canvas id="trace-layer" aria-hidden="true"></canvas>
+  <svg id="structure-layer" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
+  <div id="text-layer"></div>
+</main>
+
+<p id="colophon">
+  <b>the sentence rehearses itself</b><br>
+  a grammar that can hear the difference<br>
+  between repeating and returning.<br>
+  stay on a word and it insists.<br>
+  join two and they change.<br>
+  set one aside and it stays.
+</p>
+
+<pre id="ledger" aria-hidden="true"></pre>
+
+<nav id="controls" aria-label="Controls">
+  <button id="audio-toggle" type="button" aria-pressed="false">start sound</button>
+  <button id="print" type="button">print this reading</button>
+  <button id="reset" type="button">begin again</button>
+  <button id="reseed" type="button">another seed</button>
+  <span class="meta">seed <span id="seed-value">—</span></span>
+  <span class="meta" id="regime">naming</span>
+</nav>
+
+<p class="visually-hidden">
+  Keyboard: Tab moves between words. Enter selects a word; selecting a second word relates them.
+  Backspace sets a word aside without deleting it. Arrow keys move a word into another branch,
+  changing its grammatical role. S starts and stops sound. P prints an edition of this reading.
+  R begins again with the same seed.
+</p>
+
+<div id="live" class="visually-hidden" role="status" aria-live="polite"></div>
+<div id="edition" aria-hidden="true"></div>
+
+<script src="js/corpus.js"></script>
+<script src="js/grammar.js"></script>
+<script src="js/memory.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/diagrams.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/reader.js"></script>
+<script src="js/print.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
