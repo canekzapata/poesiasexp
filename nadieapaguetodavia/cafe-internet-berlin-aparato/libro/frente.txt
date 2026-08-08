@@ -1,0 +1,78 @@
+════════════════════════════════════════════════════════════════════════════
+
+                        N A D I E   A P A G U E
+                            T O D A V Í A
+
+              a p a r a t o   c r í t i c o   d e   u n
+        p o e m a r i o   q u e   n o   s e   c o n s e r v a
+
+════════════════════════════════════════════════════════════════════════════
+
+  Cuadernos de Especulaciones Poéticas
+  poesiasexp · canek zapata
+
+
+FICHA DE LA OBRA PERDIDA
+
+  título          NADIE APAGUE TODAVÍA
+  autoría         Mara Ionescu (atribuido)
+  lugar y fecha   Berlín, septiembre de 1997
+  extensión       40 piezas, cosidas en cinco cuadernillos
+  estado          no se conserva
+
+  El libro nunca se imprimió. De su texto sobreviven fragmentos dispersos en
+  cinco soportes parciales. Lo único completo que existe es el índice, escrito
+  a mano al dorso del plano de la sala: Mara usó ese papel porque era la única
+  hoja lo bastante grande. De modo que tenemos el mapa de la habitación y la
+  lista de los poemas en las dos caras del mismo papel, y no tenemos los poemas.
+
+
+LOS CINCO TESTIGOS
+
+{{TESTIGOS}}
+
+CÓMO LEER ESTE APARATO
+
+  Un aparato crítico se lee al revés que un libro: primero el hueco, después
+  quién lo llena, después con qué autoridad.
+
+  Cada verso aparece con todas sus lecturas y la sigla del testigo que las
+  sostiene. Cuando dos o más testigos dicen lo mismo, sus siglas se agrupan:
+  CD significa que el cuaderno y el disquete coinciden. Cuando discrepan, la
+  edición impresa deja el desacuerdo abierto: no elige.
+
+  Donde ningún testigo habla hay una laguna, y la laguna trae su medida en
+  signos. Es lo único que se conserva de esos versos: cuánto ocupaban. Un
+  agujero no tiene contenido; tiene tamaño.
+
+
+MARCAS DE ANOTACIÓN
+
+  [ED]          intervención de quien reconstruye el archivo
+  [M97]         nota escrita durante el montaje, verificable
+  [M?]          nota atribuida a Mara, sin fecha o con fecha imposible
+  [MÁQUINA]     texto producido por software, registro o lectura automática
+  [OTRA MANO]   escritura que no se ha podido atribuir
+  [K]           nota sobre el perro, que Mara no habría publicado
+  [↳]           la nota sigue en otra nota y no vuelve al cuerpo
+
+
+ADVERTENCIA SOBRE ESTA SALIDA
+
+  Ésta es la edición diplomática. Presenta todas las lecturas y no resuelve
+  ninguna, porque el papel no puede cobrar por una decisión.
+
+  El pliego ejecutable —index.html, en esta misma carpeta— sí puede. Allí un
+  verso en desacuerdo no existe hasta que alguien elige una lectura; elegirla
+  acredita a un testigo y desacredita a los otros; un testigo bastante
+  desacreditado se retira del aparato y se lleva consigo los versos que sólo
+  él sostenía. Esos huecos no son de 1997: los produce la lectura, y no se
+  pueden deshacer.
+
+  El último folio del pliego está vacío y admite escritura. Lo que se escriba
+  ahí entra al aparato como testimonio T, y las notas anteriores empiezan a
+  citarlo.
+
+
+ÍNDICE — AL DORSO DEL PLANO DE LA SALA
+{{INDICE}}

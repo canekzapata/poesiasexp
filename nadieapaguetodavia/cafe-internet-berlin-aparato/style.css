@@ -1,0 +1,558 @@
+/* =====================================================================
+   NADIE APAGUE TODAVÍA — aparato crítico
+   style.css
+
+   el color clasifica testigos, no decora.
+   cinco tintas para cinco maneras de fallar, y el rojo del editor encima.
+   ===================================================================== */
+
+:root {
+  --papel:      #efe9dd;
+  --papel-2:    #e6dfd0;
+  --papel-3:    #dcd3c1;
+  --tinta:      #23211d;
+  --tinta-2:    #5c574d;
+  --tinta-3:    #8a8376;
+  --regla:      #c8bfab;
+
+  --ed:         #a72a1e;   /* intervención editorial */
+  --laguna:     #a3937a;   /* el hueco tiene color propio */
+
+  --c1:         #38468c;   /* C · cuaderno · tinta */
+  --c2:         #1f6f66;   /* D · disquete · máquina */
+  --c3:         #7d5c2e;   /* P · hojas · papel */
+  --c4:         #b0521f;   /* O · OCR · error */
+  --c5:         #8e3355;   /* R · voz */
+
+  --serif:  "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --mono:   ui-monospace, "SF Mono", "DejaVu Sans Mono", "Courier New", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-luz="dia"]) {
+    --papel:   #1c1a17;
+    --papel-2: #232019;
+    --papel-3: #2b271f;
+    --tinta:   #ded6c6;
+    --tinta-2: #a49b8a;
+    --tinta-3: #7a7263;
+    --regla:   #453f34;
+    --ed:      #e0705f;
+    --c1:      #8b9ae0;
+    --c2:      #5cbdb0;
+    --c3:      #c9a165;
+    --c4:      #e78f56;
+    --c5:      #d98099;
+    --laguna:  #5d5546;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ---------- cabecera: la ficha de la obra perdida ---------------------- */
+
+header.ficha {
+  border-bottom: 1px solid var(--regla);
+  padding: 2.4rem 1.5rem 1.4rem;
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+header.ficha h1 {
+  font-size: clamp(1.5rem, 4.4vw, 2.5rem);
+  letter-spacing: .06em;
+  font-weight: 400;
+  margin: 0 0 .2rem;
+  line-height: 1.12;
+}
+
+header.ficha h1 .perdido {
+  text-decoration: line-through;
+  text-decoration-color: var(--ed);
+  text-decoration-thickness: 1px;
+}
+
+header.ficha .sub {
+  font-family: var(--mono);
+  font-size: .74rem;
+  letter-spacing: .04em;
+  color: var(--tinta-2);
+  text-transform: uppercase;
+  margin: .5rem 0 0;
+}
+
+header.ficha .cintillo {
+  margin-top: 1rem;
+  font-size: .95rem;
+  color: var(--tinta-2);
+  max-width: 40rem;
+}
+
+/* ---------- barra de testigos ----------------------------------------- */
+
+.testigos {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--papel-2);
+  border-bottom: 1px solid var(--regla);
+  padding: .45rem .8rem;
+  display: flex;
+  gap: .35rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.testigo {
+  font-family: var(--mono);
+  font-size: .66rem;
+  line-height: 1.25;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .25rem .45rem;
+  cursor: help;
+  background: transparent;
+  min-width: 5.6rem;
+  text-align: left;
+  position: relative;
+}
+
+.testigo .sig { font-size: .95rem; font-weight: 700; letter-spacing: .06em; }
+.testigo .cred { display: block; color: var(--tinta-3); letter-spacing: .02em; }
+
+.testigo[data-s="C"] { color: var(--c1); }
+.testigo[data-s="D"] { color: var(--c2); }
+.testigo[data-s="P"] { color: var(--c3); }
+.testigo[data-s="O"] { color: var(--c4); }
+.testigo[data-s="R"] { color: var(--c5); }
+.testigo[data-s="T"] { color: var(--ed); }
+
+.testigo .barra {
+  display: block;
+  height: 2px;
+  background: currentColor;
+  margin-top: .22rem;
+  transition: width .6s ease;
+}
+
+.testigo.entredicho { opacity: .62; }
+.testigo.entredicho .sig { text-decoration: line-through; }
+.testigo.retirado {
+  opacity: .35;
+  border-style: dashed;
+}
+.testigo.retirado .sig { text-decoration: line-through; }
+
+/* ---------- disposición ----------------------------------------------- */
+
+main {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 8rem;
+}
+
+.estudio {
+  border-left: 2px solid var(--regla);
+  padding: 0 0 .4rem 1.1rem;
+  margin: 1.6rem 0 2.6rem;
+  color: var(--tinta-2);
+  font-size: .96rem;
+}
+.estudio p { margin: 0 0 .8rem; }
+.estudio .marginal {
+  display: block;
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--ed);
+  border-top: 1px dotted var(--ed);
+  margin-top: .9rem;
+  padding-top: .5rem;
+  line-height: 1.5;
+}
+.estudio .marginal::before { content: "ED — "; opacity: .7; }
+
+/* ---------- índice ----------------------------------------------------- */
+
+.cuadernillo-tit {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--tinta-3);
+  border-bottom: 1px solid var(--regla);
+  padding-bottom: .3rem;
+  margin: 2.2rem 0 .7rem;
+}
+.cuadernillo-tit em { font-style: normal; color: var(--tinta-2); letter-spacing: .04em; text-transform: none; }
+
+ol.indice { list-style: none; margin: 0; padding: 0; }
+
+ol.indice li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto;
+  gap: .6rem;
+  align-items: baseline;
+  padding: .16rem 0;
+  border-bottom: 1px dotted var(--regla);
+}
+
+ol.indice .num { font-family: var(--mono); font-size: .74rem; color: var(--tinta-3); }
+
+ol.indice a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+ol.indice a:hover, ol.indice a:focus-visible { border-bottom-color: var(--tinta); outline: none; }
+
+ol.indice .est {
+  font-family: var(--mono);
+  font-size: .64rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--tinta-3);
+  white-space: nowrap;
+}
+ol.indice li[data-estado="perdida"] a,
+ol.indice li[data-estado="sin_testimonio"] a { color: var(--tinta-3); font-style: italic; }
+ol.indice li[data-hecha="1"] .est { color: var(--ed); }
+
+/* ---------- la pieza --------------------------------------------------- */
+
+article.pieza { margin: 2.4rem 0 0; scroll-margin-top: 4.6rem; }
+
+.pieza > h2 {
+  font-size: 1.28rem;
+  font-weight: 400;
+  margin: 0 0 .1rem;
+  letter-spacing: .01em;
+}
+.pieza .folio {
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: var(--tinta-3);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* versos */
+
+.versos { margin: 0 0 1.4rem; }
+
+.verso {
+  padding: .1rem 0 .1rem 2.6rem;
+  position: relative;
+  min-height: 1.4rem;
+}
+.verso .vn {
+  position: absolute;
+  left: 0;
+  top: .22rem;
+  font-family: var(--mono);
+  font-size: .62rem;
+  color: var(--tinta-3);
+}
+.verso.blanco { height: .9rem; }
+
+.texto-restituido { display: block; }
+
+.sello {
+  font-family: var(--mono);
+  font-size: .6rem;
+  color: var(--tinta-3);
+  margin-left: .7rem;
+  letter-spacing: .04em;
+  vertical-align: .14em;
+  white-space: nowrap;
+}
+/* el testimonio único no se cotejó con nada: el sello lo dice más fuerte */
+.verso.unica .sello { color: var(--c4); }
+
+.verso.resuelto .texto-restituido { color: var(--tinta); }
+
+.sig-inline {
+  font-family: var(--mono);
+  font-size: .62rem;
+  font-weight: 700;
+  vertical-align: .3em;
+  margin-left: .35rem;
+  letter-spacing: .04em;
+}
+.s-C { color: var(--c1); } .s-D { color: var(--c2); } .s-P { color: var(--c3); }
+.s-O { color: var(--c4); } .s-R { color: var(--c5); } .s-T { color: var(--ed); }
+
+/* cotejo: las lecturas en disputa */
+
+.cotejo {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: .25rem 0 .5rem;
+  border-left: 2px solid var(--regla);
+  padding-left: .7rem;
+}
+
+.lectura {
+  display: flex;
+  gap: .55rem;
+  align-items: baseline;
+  background: transparent;
+  border: 0;
+  border-radius: 2px;
+  padding: .2rem .4rem .2rem .2rem;
+  font: inherit;
+  color: var(--tinta-2);
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+}
+.lectura:hover, .lectura:focus-visible {
+  background: var(--papel-3);
+  color: var(--tinta);
+  outline: none;
+}
+.lectura .sg {
+  font-family: var(--mono);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  flex: 0 0 1.1rem;
+}
+.lectura[data-s="C"] .sg { color: var(--c1); }
+.lectura[data-s="D"] .sg { color: var(--c2); }
+.lectura[data-s="P"] .sg { color: var(--c3); }
+.lectura[data-s="O"] .sg { color: var(--c4); }
+.lectura[data-s="R"] .sg { color: var(--c5); }
+
+.lectura.entredicho { opacity: .55; }
+.lectura.entredicho .tx { text-decoration: line-through; text-decoration-thickness: 1px; }
+
+.cotejo-nota {
+  font-family: var(--mono);
+  font-size: .62rem;
+  color: var(--tinta-3);
+  letter-spacing: .03em;
+  padding: .1rem .2rem .3rem;
+}
+
+/* lagunas */
+
+.laguna {
+  color: var(--laguna);
+  letter-spacing: .04em;
+  font-family: var(--mono);
+  font-size: .8rem;
+}
+.laguna .medida {
+  font-size: .6rem;
+  letter-spacing: .06em;
+  margin-left: .5rem;
+  text-transform: uppercase;
+}
+.laguna.producida { color: var(--ed); opacity: .8; }
+
+/* notas al pie de cada pieza */
+
+.notas {
+  border-top: 1px solid var(--regla);
+  padding-top: .7rem;
+  font-size: .86rem;
+  color: var(--tinta-2);
+  line-height: 1.5;
+}
+.notas .nota { margin: 0 0 .55rem; padding-left: 4.6rem; position: relative; }
+.notas .marca {
+  position: absolute;
+  left: 0;
+  top: .12rem;
+  font-family: var(--mono);
+  font-size: .6rem;
+  letter-spacing: .06em;
+  color: var(--ed);
+  border: 1px solid currentColor;
+  padding: 0 .25rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.notas .nota[data-m="M97"] .marca,
+.notas .nota[data-m="M?"] .marca  { color: var(--c1); }
+.notas .nota[data-m="MÁQUINA"] .marca { color: var(--c4); }
+.notas .nota[data-m="R"] .marca { color: var(--c5); }
+.notas .nota[data-m="K"] .marca { color: var(--c3); }
+.notas .nota[data-m="OTRA MANO"] .marca { color: var(--tinta-3); }
+.notas .nota[data-m="↳"] .marca { color: var(--tinta-3); }
+
+.notas a, .estudio a, .cintillo a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--tinta-3); }
+.notas a:hover, .estudio a:hover { border-bottom-color: var(--tinta); }
+
+.ref-t {
+  font-family: var(--mono);
+  font-size: .78em;
+  font-weight: 700;
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+/* estados no restituibles */
+
+.estado-nota {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--tinta-3);
+  border: 1px dashed var(--regla);
+  padding: .5rem .7rem;
+  margin: 0 0 1.1rem;
+}
+
+/* ---------- folio 20v: donde escribe quien lee ------------------------- */
+
+.morgen-campo {
+  border: 1px solid var(--regla);
+  background: var(--papel-2);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.morgen-campo textarea {
+  width: 100%;
+  min-height: 8rem;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--regla);
+  color: var(--tinta);
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+  padding: .3rem 0;
+}
+.morgen-campo textarea:focus { outline: none; border-bottom-color: var(--ed); }
+.morgen-campo .aviso {
+  font-family: var(--mono);
+  font-size: .64rem;
+  color: var(--tinta-3);
+  letter-spacing: .03em;
+  margin-top: .6rem;
+  line-height: 1.5;
+}
+
+button.acto {
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--ed);
+  border: 1px solid var(--ed);
+  border-radius: 2px;
+  padding: .4rem .8rem;
+  cursor: pointer;
+  margin-top: .7rem;
+}
+button.acto:hover { background: var(--ed); color: var(--papel); }
+button.acto[disabled] { opacity: .4; cursor: default; }
+button.acto[disabled]:hover { background: transparent; color: var(--ed); }
+
+.morgen-restituido {
+  border-left: 2px solid var(--ed);
+  padding-left: 1rem;
+  white-space: pre-wrap;
+  margin: 1rem 0;
+}
+
+/* ---------- estado de la edición --------------------------------------- */
+
+.estado-edicion {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  font-family: var(--mono);
+  font-size: .66rem;
+  background: var(--papel-2);
+  border: 1px solid var(--regla);
+  border-right: 0;
+  border-bottom: 0;
+  padding: .5rem .7rem;
+  color: var(--tinta-2);
+  max-width: 19rem;
+  line-height: 1.5;
+}
+.estado-edicion b { color: var(--tinta); font-weight: 700; }
+.estado-edicion .cerrar {
+  float: right;
+  margin-left: .6rem;
+  cursor: pointer;
+  color: var(--tinta-3);
+  border: 0;
+  background: none;
+  font: inherit;
+}
+.estado-edicion.min { max-width: none; }
+.estado-edicion .cuerpo { margin-top: .3rem; }
+.estado-edicion.min .cuerpo { display: none; }
+.estado-edicion .olvidar {
+  display: inline-block;
+  margin-top: .4rem;
+  color: var(--ed);
+  cursor: pointer;
+  border: 0; background: none; font: inherit; padding: 0;
+  border-bottom: 1px solid currentColor;
+}
+
+/* ---------- pie -------------------------------------------------------- */
+
+footer.colofon {
+  border-top: 1px solid var(--regla);
+  margin: 4rem auto 0;
+  max-width: 62rem;
+  padding: 1.6rem 1.5rem 4rem;
+  font-size: .84rem;
+  color: var(--tinta-2);
+}
+footer.colofon h3 {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--tinta-3);
+  font-weight: 400;
+  margin: 1.4rem 0 .5rem;
+}
+footer.colofon p { margin: 0 0 .7rem; max-width: 44rem; }
+footer.colofon .teclas { font-family: var(--mono); font-size: .68rem; letter-spacing: .04em; }
+
+/* ---------- móvil ------------------------------------------------------ */
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  main { padding: 1rem 1rem 9rem; }
+  header.ficha { padding: 1.6rem 1rem 1rem; }
+  .verso { padding-left: 2rem; }
+  .notas .nota { padding-left: 0; padding-top: 1.1rem; }
+  .notas .marca { top: 0; }
+  ol.indice li { grid-template-columns: 1.8rem 1fr; }
+  ol.indice .est { grid-column: 2; font-size: .58rem; }
+  .estado-edicion { max-width: none; left: 0; right: 0; border-left: 0; }
+  .testigo { min-width: 4.4rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .testigo .barra { transition: none; }
+}

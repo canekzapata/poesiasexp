@@ -1,0 +1,1332 @@
+# ~~NADIE APAGUE TODAVÍA~~
+### aparato crítico de un poemario que no se conserva
+
+> poesiasexp / canek zapata · serie *Cuadernos de Especulaciones Poéticas*
+
+Poemario de Mara Ionescu (atribuido). Berlín, 1997. Cuarenta piezas. Perdido.
+Lo que sigue es su aparato: cinco testigos parciales que no están de acuerdo.
+Esta salida es la **edición diplomática**: presenta todas las lecturas y no
+resuelve ninguna. Para resolverlas hay que abrir `index.html`, donde elegir
+cuesta algo.
+
+## Los testigos
+
+| | testigo | soporte | virtud | falla |
+|---|---|---|---|---|
+| **C** | cuaderno de tapas negras | papel · tinta y lápiz · 96 hojas, 61 escritas | es lo más cercano que hay a un original: la letra escribiendo. | son borradores. Mara tachaba y seguía. tres lenguas en la misma línea. |
+| **D** | disquete once, sin etiqueta | 3.5" DD · copia hecha al cierre · doce sectores ilegibles | es el único testimonio con hora de máquina. | el archivo se corta. donde el sector muere, el verso muere. |
+| **P** | juego de hojas | papel · impresión láser, después fotocopia de fotocopia | alguien las leyó de verdad: hay correcciones a mano. | no sabemos de quién es la mano. mejoró los versos sin firmar. |
+| **O** | OCR de 2003 | lectura automática de [[T:P]] cuando [[T:P]] ya se borraba | conserva páginas de P que después se perdieron. | es una máquina. confunde rn con m, l con 1, y a veces mejora. |
+| **R** | Hanna, 2011 | testimonio oral, transcrito · 3 h 40 min de grabación | es la única que sabe cómo sonaban. | recuerda el efecto y reconstruye las palabras. y ya había leído a los otros. |
+
+## Índice
+
+Escrito al dorso del plano de la sala. Es lo único completo que sobrevive.
+
+**cuadernillo I · verbinden** *(conectar)*
+
+01. tren nocturno — *restituible*
+02. inventario de lo que cruzó la frontera — *restituible*
+03. la sala antes — *restituible*
+04. CAFÉ / INTERNET / HEUTE — *fragmentaria*
+05. dos monitores — *restituible*
+06. topología del suelo — *restituible*
+07. quién trae la extensión — *perdida*
+08. el mapa que dejó de coincidir — *restituible*
+09. tarea sin autoridad — *fragmentaria*
+
+**cuadernillo II · laden** *(cargar)*
+
+10. besetzt — *restituible*
+11. si esto abre, ya estoy ahí — *restituible*
+12. once minutos por una imagen — *restituible*
+13. nadie estaba mirando — *fragmentaria*
+14. la habitación del MOO — *restituible*
+15. una taza que nadie puede beber — *fragmentaria*
+16. comida sobre el teclado — *restituible*
+17. FACE TO FACE / WITHOUT A FACE — *restituible*
+18. lo que Kifli hizo hoy — *restituible*
+
+**cuadernillo III · senden** *(enviar)*
+
+19. la carpeta que no está — *restituible*
+20. dos discos, dos memorias — *fragmentaria*
+21. apertura — *restituible*
+22. view-source — *restituible*
+23. A. / FORM? — *fragmentaria*
+24. dónde está el arte — *perdida*
+25. cola de impresión — *restituible*
+26. Cusco por bandas — *restituible*
+27. San Cristóbal: intervalos — *restituible*
+28. el atasco de las 21:17 — *restituible*
+
+**cuadernillo IV · speichern** *(guardar)*
+
+29. saturación — *fragmentaria*
+30. la estación que siguió mostrando la caché — *restituible*
+31. se fue sin despedirse — *fragmentaria*
+32. llamada a Constanța — *fragmentaria*
+33. el perro cenó — *restituible*
+34. nadie apague todavía — *restituible*
+35. nueve monitores obedecen — *fragmentaria*
+36. disquete sin etiqueta — *fragmentaria*
+
+**cuadernillo V · morgen** *(mañana)*
+
+37. procedimiento — *restituible*
+38. notas del autor, 2001 — *fragmentaria*
+39. index.html — *perdida*
+40. morgen — *sin testimonio*
+
+---
+
+## Cuadernillo I · verbinden *(conectar)*
+
+### 01 · tren nocturno
+
+`folio 1r · restituible`
+
+```
+  1 │ CD  salgo de Constanța con dos monitores
+    │ R   salió de Constanța cargando dos pantallas, dijo, y ya venía cansada
+  2 │ C   y una caja de cables que pesa más que los monitores
+    │ P   y una caja de cables que pesa más
+    │ O   y una caja de cabIes que pesa rnás
+  3 │ CD  en la aduana húngara preguntan si son mercancía
+  4 │ CP  digo que son obra y no me creen
+    │ R   dijo que eran obra, y el hombre se rió, y ella pagó igual
+
+  5 │ CD  escribo obra en el formulario
+  6 │ C   en la casilla que dice valor escribo cero
+    │ P   en la casilla del valor escribo cero
+    │ O   en la casilla del vaIor escribo cero
+  7 │ ··························  laguna · 41 signos
+  8 │ D   y las dos cosas son verdad al mismo tiempo
+    │ R   y decía que las dos cosas eran ciertas, eso lo repitió
+
+  9 │ CD  en el bolsillo llevo un papel con un teléfono
+    │ P   llevo en el bolsillo un papel con un teléfono
+ 10 │ CP  y una instrucción: llamar después de las seis
+    │ O   y una instrucción: IIamar después de Ias seis
+ 11 │ CD  preguntar por el perro
+    │ R   preguntar por Kifli. lo dijo así, con el nombre.
+```
+
+> **[ED]** Pieza de apertura en los cinco testimonios. Es la única de la que nadie discute el lugar.
+>
+> **[M97]** La aduana fue en Curtici, no en Hungría. Lo dejo mal porque suena mejor y porque a esa hora yo tampoco sabía dónde estaba.
+>
+> **[ED]** La laguna del verso 7 mide 41 signos en D. Es el único hueco del libro cuyo tamaño conocemos con exactitud: el sector se cortó limpio. Sabemos cuánto falta y no qué falta.
+>
+> **[M?]** Lo que falta ahí es la palabra que buscaba para decir que una cosa puede no valer nada y ser todo lo que traes. No la encontré en 1997 y no la he encontrado.
+>
+> **[R]** «Leyó esta primero, de pie, con el abrigo puesto todavía. Nadie le había pedido que leyera.»
+>
+> **[K]** El papel del teléfono estaba escrito por Ileana, que se quedó con el perro. La letra es de ella hasta la palabra perro, y de Mara desde ahí.
+>
+
+
+### 02 · inventario de lo que cruzó la frontera
+
+`folio 1v · restituible`
+
+```
+  1 │ C   dos monitores CRT, beige, distinto beige cada uno
+    │ D   dos monitores CRT beige, distinto beige cada uno
+    │ O   dos rnonitores CRT beige, distinto beige cada uno
+  2 │ CP  catorce cables, once que sé para qué son
+  3 │ CD  cuarenta y un disquetes, treinta y nueve con etiqueta
+    │ R   cuarenta y tantos disquetes. dos sin nombre, eso sí lo recuerdo.
+  4 │ C   una regleta rumana que no entra en el enchufe alemán
+    │ P   una regleta que no entra en el enchufe alemán
+  5 │ CD  un adaptador que sí
+
+  6 │ CP  una libreta con direcciones y contraseñas tachadas
+    │ O   una Iibreta con direcciones y contraseñas tachadas
+  7 │ CD  las tachaduras también son información
+    │ R   decía que lo tachado también contaba. eso lo dijo mucho.
+
+  8 │ ·················  laguna · 27 signos
+  9 │ DP  y una foto de unas patas debajo de una mesa
+    │ O   y una foto de unas patas debajo de una rnesa
+```
+
+> **[ED]** El inventario coincide en todos los testimonios salvo en el número de disquetes. R dice cuarenta y tantos; los demás, cuarenta y uno. Se conserva la cifra.
+>
+> **[M97]** Falta en la lista el termo. El termo cruzó cuatro fronteras y no lo puse. Lo pongo aquí.
+>
+> **[OTRA MANO]** el termo no era suyo
+>
+> **[ED]** La laguna del verso 8 corresponde en C a una línea tachada hasta el papel. La transcripción de 2004 anota: «ilegible, cinco palabras, la tinta atraviesa la hoja».
+>
+
+
+### 03 · la sala antes
+
+`folio 2r · restituible`
+
+```
+  1 │ CD  una mesa larga hecha de tableros y caballetes
+    │ P   una mesa larga de tableros y caballetes
+  2 │ C   polvo con la forma de lo que estuvo aquí antes
+    │ P   polvo con la forma de lo que estuvo antes
+    │ R   hablaba del polvo. de que el polvo tenía forma de las cosas anteriores.
+  3 │ C   una pared demasiado blanca para lo que vamos a hacerle
+    │ O   una pared dernasiado blanca para lo que vamos a hacerle
+
+  4 │ CDP pongo la primera computadora en la esquina
+  5 │ CD  la enciendo
+  6 │ C   y la habitación se vuelve un lugar con centro
+    │ P   y la habitación adquiere un centro
+    │ O   y la habitación adquiere un centre
+    │ R   y dijo: ahora la sala ya tiene dónde mirar
+
+  7 │ CD  escribo CAFÉ / INTERNET / HEUTE en una hoja
+  8 │ CP  la pego torcida
+    │ R   la pegó chueca y la dejó chueca. eso fue a propósito.
+  9 │ CD  la dejo torcida
+```
+
+> **[ED]** La lectura de O en el verso 6 —«centre»— es un error de reconocimiento. Se conserva en el aparato porque durante nueve años fue la lectura aceptada: la primera edición mecanografiada la leyó como palabra francesa y anotó al margen «cf. centre, Derrida».
+>
+> **[M?]** Nunca leí a Derrida en 1997. Lo leí en 2006 porque me lo prestaron para explicarme un poema mío.
+>
+> **[ED]** La hoja pegada torcida se conserva. Está en P, fotocopiada con el muro incluido. La cinta adhesiva aparece como dos rectángulos negros.
+>
+> **[↳]** Sobre esa hoja, ver la pieza «CAFÉ / INTERNET / HEUTE» (4), de la que sólo queda ella.
+>
+
+
+### 04 · CAFÉ / INTERNET / HEUTE
+
+`folio 2v · fragmentaria`
+
+```
+  1 │ P   hoy quiere decir hasta las dos de la mañana
+    │ O   hoy quiere decir hasta Ias dos de Ia rnañana
+```
+
+> **[ED]** De esta pieza sobrevive un verso. No está en ningún testimonio del libro: está escrito con marcador al reverso de la hoja del cartel, y llegó al archivo porque alguien fotocopió la hoja por los dos lados sin saber por qué.
+>
+> **[M97]** El cartel decía HEUTE. Nadie preguntó hoy hasta cuándo.
+>
+> **[R]** «El cartel se cayó como a las once y nadie lo volvió a pegar. Para entonces ya no hacía falta anunciar nada.»
+>
+
+
+### 05 · dos monitores
+
+`folio 3r · restituible`
+
+```
+  1 │ CD  el mío calienta por arriba y hay que dejarle aire
+    │ O   el rnío caIienta por arriba y hay que dejarIe aire
+  2 │ C   el otro tiene el verde alto y todas las caras se ven enfermas
+    │ P   el otro tiene el verde alto: todas las caras se ven enfermas
+  3 │ CD  no lo calibro
+  4 │ CP  que el retrato de esta noche salga con fiebre
+    │ R   quería que la noche saliera con fiebre. usó esa palabra, fiebre.
+
+  5 │ CD  un monitor pesa lo que pesa una persona pequeña
+    │ P   un monitor pesa como una persona pequeña
+  6 │ CD  por eso se cargan entre dos
+  7 │ C   y por eso mover una exposición se parece a mudarse
+    │ P   y mover una exposición se parece a mudarse
+    │ O   y rnover una exposición se parece a rnudarse
+  8 │ ············  laguna · 19 signos
+```
+
+> **[ED]** El verso final falta en los cinco testimonios. D conserva su longitud: 19 signos. C tiene la línea empezada y abandonada: «y por eso una amis».
+>
+> **[M?]** No lo terminé porque en ese momento entró alguien cargando el suyo.
+>
+> **[MÁQUINA]** Reconstrucción propuesta por la edición de 2003 y rechazada: «y por eso una amistad». Longitud 19. Coincide. No se acepta: coincidir no es ser.
+>
+
+
+### 06 · topología del suelo
+
+`folio 3v · restituible`
+
+```
+  1 │ CP  las extensiones dibujan en el piso lo que no dibujamos en la pared
+    │ O   Ias extensiones dibujan en eI piso Io que no dibujarnos en Ia pared
+  2 │ CD  quién depende de quién para tener corriente
+
+  3 │ CDP la estación 7 cuelga de la 6
+  4 │ CD  la 6 de una regleta que sostiene un ladrillo
+  5 │ CP  el ladrillo lo trajo Hanna del patio
+    │ R   el ladrillo lo traje yo. no del patio: de la obra de al lado.
+
+  6 │ CD  pegamos cinta amarilla encima de los cables
+    │ O   pegarnos cinta arnariIIa encirna de Ios cabIes
+  7 │ CD  para que nadie se caiga
+  8 │ C   al final de la noche la cinta es lo único que sigue en su lugar
+    │ P   al final la cinta es lo único que sigue en su sitio
+    │ R   y al final quedó la cinta pegada, con la forma de todo lo que ya no estaba
+```
+
+> **[ED]** Única pieza en la que R corrige un dato de hecho y los editores anteriores la creyeron. El ladrillo venía de una obra vecina. Se conserva la lectura de C en el cuerpo y la corrección aquí: no es lo mismo un patio que una obra.
+>
+> **[M97]** Estación 7 = la de la escritora. Estación 6 = la del escáner. Si se cae el escáner se cae ella. Escribirlo antes de que pase.
+>
+> **[ED]** Pasó. Ver «nadie estaba mirando» (13), de la que sólo se conserva el verso que lo cuenta.
+>
+
+
+### 07 · quién trae la extensión
+
+`folio 4r · perdida`
+
+*Sin testimonio. Sólo el título.*
+
+> **[ED]** Título en el índice. Ningún testimonio conserva una sola palabra del cuerpo. D tiene el nombre del archivo y cero bytes.
+>
+> **[R]** «Ésa me acuerdo que existía porque me daba risa. No me acuerdo de nada más. Perdón.»
+>
+> **[M?]** Era la más corta del libro. Era una lista de nombres. No hacía falta ser poema.
+>
+
+
+### 08 · el mapa que dejó de coincidir
+
+`folio 4v · restituible`
+
+```
+  1 │ CD  dibujo el mapa de las conexiones en una hoja grande
+    │ P   dibujo en una hoja grande el mapa de las conexiones
+  2 │ CD  mientras lo dibujo alguien mueve la estación 3
+    │ O   rnientras Io dibujo aIguien rnueve Ia estación 3
+  3 │ CP  el mapa envejece más rápido de lo que lo hago
+    │ R   decía que el mapa se ponía viejo mientras lo hacía. se reía de eso.
+
+  4 │ CD  no lo tiro
+  5 │ C   lo cuelgo al lado del mapa correcto
+    │ P   lo cuelgo junto al mapa correcto
+  6 │ CP  para que se vea el rato en que creímos eso
+    │ O   para que se vea eI rato en que creírnos eso
+
+  7 │ CD  al reverso de este mapa escribo el índice del libro
+  8 │ CD  es la única hoja lo bastante grande
+    │ R   usó el revés del plano porque no había otra hoja. eso fue todo. no fue una idea.
+```
+
+> **[ED]** Esta pieza explica por qué existe este aparato. El índice del poemario —lo único completo que sobrevive— está escrito al dorso del plano de la sala. Se conservó porque el plano se conservó, y el plano se conservó porque estaba clavado en la pared cuando alguien fotografió el muro.
+>
+> **[ED]** De modo que tenemos el mapa de la habitación y la lista de los poemas en las dos caras del mismo papel, y no tenemos los poemas.
+>
+> **[M?]** Si hubiera sabido, escribo los poemas al reverso y el índice en el cuaderno.
+>
+> **[OTRA MANO]** no habrías sabido cuál era el reverso
+>
+
+
+### 09 · tarea sin autoridad
+
+`folio 5r · fragmentaria`
+
+```
+  1 │ C   nadie dijo quién manda y todo el día alguien decide
+    │ R   algo de que nadie mandaba pero alguien siempre decidía
+  2 │ C   casi siempre la misma persona
+    │ O   casi siernpre Ia rnisrna persona
+```
+
+> **[ED]** Dos versos, ambos en C, ambos tachados con una sola raya —es decir, legibles: Mara tachaba para no publicar, no para borrar.
+>
+> **[M97]** No lo pongas. Va a parecer que me quejo y estoy describiendo.
+>
+> **[ED]** Se pone. La instrucción de no publicar llegó junto con el texto, en el mismo soporte, con la misma letra. Publicar la instrucción es la única manera honesta de obedecerla a medias.
+>
+
+
+---
+
+## Cuadernillo II · laden *(cargar)*
+
+### 10 · besetzt
+
+`folio 5v · restituible`
+
+```
+  1 │ CD  una línea telefónica para diez máquinas
+    │ P   una sola línea telefónica para diez máquinas
+  2 │ CD  el módem marca y suena ocupado
+    │ O   eI rnódern rnarca y suena ocupado
+  3 │ CD  marca otra vez
+  4 │ CD  besetzt
+    │ R   y decía besetzt en voz alta cada vez, como un conteo
+
+  5 │ CP  aprendemos la palabra sin traducirla
+  6 │ CD  porque la aprendemos oyéndola
+    │ P   la aprendemos oyéndola
+  7 │ CD  quince veces seguidas
+    │ R   fueron muchas más de quince. muchas más.
+
+  8 │ C   conectar no es un estado: es una insistencia
+    │ PO  conectar no es un estado sino una insistencia
+  9 │ CD  alguien tiene que estar ahí marcando
+ 10 │ C   y esa persona no está mirando la exposición
+    │ P   y esa persona no está viendo la exposición
+    │ R   y ella no vio nada esa noche. nada. estuvo marcando.
+```
+
+> **[ED]** El poema entero está construido sobre la única palabra alemana que el grupo aprendió esa semana sin que nadie la tradujera.
+>
+> **[M97]** besetzt: ocupado. También se dice de un asiento y de un país.
+>
+> **[ED]** La glosa de C no está en el poema sino al margen. Los editores de 2003 la incorporaron al cuerpo como un verso 11 que aquí no existe. Se retira: es una nota, y una nota que dice demasiado.
+>
+
+
+### 11 · si esto abre, ya estoy ahí
+
+`folio 6r · restituible`
+
+```
+  1 │ CDP llega un correo enviado anoche desde otra ciudad
+  2 │ CD  trae una imagen comprimida y una frase
+    │ O   trae una irnagen cornprirnida y una frase
+  3 │ CD  si esto abre, ya estoy ahí
+    │ R   si esto abre ya estoy ahí. eso lo repetimos toda la noche, como saludo.
+
+  4 │ CD  abre
+  5 │ CD  y no está
+    │ P   y no está aquí
+
+  6 │ C   la frase no mentía: dijo ahí, no aquí
+    │ P   la frase no mentía: decía ahí, no aquí
+    │ O   Ia frase no rnentía: decía ahí, no aquí
+  7 │ ·····················  laguna · 33 signos
+  8 │ D   un archivo es una manera de estar en un sitio sin llegar
+    │ R   algo así como que abrir un archivo era estar sin llegar. no sé si esas palabras.
+```
+
+> **[ED]** La frase «si esto abre, ya estoy ahí» aparece en los cinco testimonios sin variantes. Es el único verso del libro en esa situación.
+>
+> **[M?]** Porque no es mío. Lo escribió Vasile en el asunto del correo y yo lo copié.
+>
+> **[ED]** No hay ningún Vasile en la lista de participantes ni en R. La nota se conserva: una atribución falsa también es un documento sobre cómo alguien quiso repartir el crédito.
+>
+
+
+### 12 · once minutos por una imagen
+
+`folio 6v · restituible`
+
+```
+  1 │ CD  sesenta y un kilobytes
+    │ O   sesenta y un kiIobytes
+  2 │ CD  once minutos
+  3 │ CP  la imagen baja por franjas y cada franja es una noticia
+    │ R   iba bajando a tiras. cada tira nos ponía nerviosos.
+
+  4 │ CD  franja 1: cielo o pared, no se sabe
+  5 │ CDP franja 4: hay alguien
+  6 │ CD  franja 7: hay dos
+  7 │ C   franja 9: el segundo es una silla
+    │ P   franja 9: el segundo era una silla
+    │ O   franja 9: eI segundo era una siIIa
+
+  8 │ CDP durante once minutos hablamos de otra cosa
+  9 │ CP  la espera es el único rato en que nos miramos
+    │ R   decía que sólo nos veíamos las caras mientras cargaba algo
+ 10 │ CD  cuando termina de cargar no hay nadie mirando
+    │ O   cuando termina de cargar no hay nadie rnirando
+```
+
+> **[ED]** El cálculo es correcto para las condiciones descritas. No es una exageración poética: 61 KB por línea conmutada compartida daba ese orden de espera.
+>
+> **[M97]** La imagen era el patio de la casa de Ileana. Con el perro. El perro salió movido.
+>
+> **[K]** Salió movido porque estaba yendo hacia quien tomaba la foto.
+>
+> **[ED]** La nota anterior está marcada C pero la letra no es de Mara. Es la única nota [K] escrita por otra persona y nadie la ha reclamado.
+>
+
+
+### 13 · nadie estaba mirando
+
+`folio 7r · fragmentaria`
+
+```
+  1 │ P   el escáner se cayó y la escritora lo sostuvo con la rodilla
+    │ O   eI escáner se cayó y Ia escritora Io sostuvo con Ia rodiIIa
+    │ R   se venció la mesa de mi lado y aguanté el escáner con la pierna hasta que vinieron
+  2 │ P   durante cuatro minutos fue la obra más difícil de la sala
+    │ R   cuatro minutos. o menos. se me hicieron largos.
+```
+
+> **[ED]** Los dos versos vienen de P —una hoja suelta, sin folio, encontrada dentro de otra pieza— y están confirmados por R, que es la protagonista. Es el único caso del libro en que la testigo y el personaje son la misma persona.
+>
+> **[R]** «Y ella lo escribió esa misma noche. Me lo enseñó. Le dije que no era para tanto y me dijo que ése era exactamente el punto.»
+>
+
+
+### 14 · la habitación del MOO
+
+`folio 7v · restituible`
+
+```
+  1 │ CDP escribo look
+  2 │ CD  y la habitación me contesta cómo es
+    │ O   y Ia habitación rne contesta córno es
+  3 │ CP  hay tres personas aquí y ninguna tiene cuerpo
+    │ R   tres tipos conectados en un cuarto que no existía, y ella les habló
+
+  4 │ CD  escribo say hello
+  5 │ CP  dos contestan y uno lleva cuatro horas quieto
+    │ O   dos contestan y uno IIeva cuatro horas quieto
+  6 │ CD  está conectado y no está
+  7 │ C   es el primer fantasma que veo y es un permiso mal cerrado
+    │ P   es el primer fantasma que veo y es una sesión mal cerrada
+    │ R   dijo que el fantasma era un permiso que nadie cerró
+
+  8 │ CDP construyo una taza
+  9 │ CD  escribo su descripción con cuidado
+ 10 │ C   nadie puede beber de ella y la dejo ahí de todos modos
+    │ P   nadie puede beber de ella y la dejo ahí igual
+    │ O   nadie puede beber de eIIa y Ia dejo ahí iguaI
+ 11 │ CD  no sé si esto es programar, jugar, conversar o escribir teatro
+    │ R   y preguntó si eso era programar o jugar o hablar. no lo resolvió.
+```
+
+> **[ED]** La taza sobrevivió al libro. Aparece en «comida sobre el teclado» (16) como objeto de la sala y en R como recuerdo físico. Hanna cree haber bebido de ella.
+>
+> **[M?]** La taza del MOO no se podía beber. La taza de la mesa sí. Una noche larga vuelve eso indistinguible y ése era el chiste.
+>
+> **[MÁQUINA]** Registro conservado de la sesión: >build taza / You now have taza. / >describe taza as "está tibia" / Description set.
+>
+> **[ED]** El registro anterior procede de D y es el único texto del libro que la máquina escribió sin intermediario. Se conserva como testimonio, no como verso.
+>
+
+
+### 15 · una taza que nadie puede beber
+
+`folio 8r · fragmentaria`
+
+```
+  1 │ D   está tibia porque yo escribí que está tibia
+    │ R   está tibia porque lo escribí. eso sí lo puedo repetir palabra por palabra.
+```
+
+> **[ED]** Un verso. Coincidencia exacta entre un disquete y una memoria de catorce años después. El aparato no puede explicarlo y no lo intenta.
+>
+> **[OTRA MANO]** puede explicarlo: hanna leyó el disquete en 2009
+>
+> **[ED]** Hanna declara no haber visto nunca el contenido de D. La nota anterior no está firmada y aparece en el margen de una fotocopia de trabajo del propio archivo. No es de 1997: es de aquí.
+>
+
+
+### 16 · comida sobre el teclado
+
+`folio 8v · restituible`
+
+```
+  1 │ CD  comemos junto a las máquinas porque siempre falta algo
+    │ O   cornernos junto a Ias rnáquinas porque siernpre faIta aIgo
+  2 │ C   la pausa es falsa y aun así es la mejor hora del día
+    │ P   la pausa es falsa y es la mejor hora del día
+    │ R   la comida fue lo mejor. ahí se habló de verdad.
+
+  3 │ CD  quién se va de Berlín
+  4 │ CDP quién no tiene para el alquiler
+  5 │ C   quién quiere dejar de hacer arte y no lo dice así
+    │ P   quién quiere dejar de hacer arte sin decirlo así
+    │ O   quién quiere dejar de hacer arte sin decirIo así
+  6 │ CD  quién guarda todavía los correos de alguien
+    │ R   y quién no había borrado los mensajes de su ex. eso lo preguntó Mara.
+
+  7 │ CDP una taza deja un círculo sobre la lista de archivos
+  8 │ CD  el círculo tapa cuatro nombres
+  9 │ C   los cuatro que después no encontramos
+    │ P   los cuatro que después no aparecieron
+    │ R   y justo ésos fueron los que se perdieron. eso me lo dijo después, no ahí.
+```
+
+> **[ED]** La coincidencia entre la mancha y la pérdida es, casi con seguridad, una construcción posterior: R admite que la relación se la contaron después. Se conserva porque el libro la sostiene tres veces más.
+>
+> **[M97]** La mancha existe. La lista existe. Está en la caja.
+>
+> **[ED]** Está en la caja. La hoja con el círculo se conserva y es ilegible exactamente donde el poema dice.
+>
+> **[↳]** La mancha vuelve en «apertura» (21) como zona negra del escáner y en «nadie apague todavía» (34) como halo. Sobre su tercera vida, ver la nota 2 de «nadie apague todavía» (34).
+>
+
+
+### 17 · FACE TO FACE / WITHOUT A FACE
+
+`folio 9r · restituible`
+
+```
+  1 │ CDP en una pantalla las caras están acostadas
+  2 │ CD  hay que inclinar la cabeza para verlas
+    │ O   hay que incIinar Ia cabeza para verIas
+  3 │ CP  en la otra están de pie y te miran de frente
+    │ R   una pantalla con caritas de lado y otra con caritas derechas
+
+  4 │ CD  la instrucción dice: haz una cara y ponle nombre en tu lengua
+    │ P   la instrucción dice: componga una cara y nómbrela en su lengua
+
+  5 │ CD  la misma cara recibe cuatro nombres
+    │ O   Ia rnisrna cara recibe cuatro nornbres
+  6 │ CP  cansancio, cortesía, tristeza que no quiere molestar, sueño
+    │ R   alguien puso cansada y otro puso educada y era la misma carita
+  7 │ CP  no es un idioma universal: es una superficie donde no coincidimos despacio
+    │ O   no es un idiorna universaI: es una superficie donde no coincidirnos despacio
+
+  8 │ CD  imprimo las caras y las cuelgo como una conversación sin frases
+    │ P   imprimo las caras y las cuelgo como conversación sin frases
+  9 │ ······························  laguna · 52 signos
+```
+
+> **[ED]** Las dos genealogías que la pieza pone frente a frente están documentadas y son distintas. El emoticono lateral remite a la propuesta de Scott Fahlman en un tablón de Carnegie Mellon, septiembre de 1982. El kaomoji erguido circulaba en servicios japoneses desde mediados de los ochenta, con una atribución individual mucho menos firme. En 1997 ambos son historia disponible, no profecía.
+>
+> **[M97]** Nota al margen de la hoja: en vez de mandar la imagen cada vez, mandar un código chico y que cada aparato la dibuje él.
+>
+> **[ED]** Ésa es la laguna del verso 9: cincuenta y dos signos. La nota al margen sobrevivió; el verso que la contenía, no. Es exactamente lo contrario de lo que suele pasar.
+>
+> **[M?]** La hoja con esa nota apareció después dentro de un sobre rotulado FIRST EMOJI / 1997. La letra del sobre es mía. La fecha del sobre es de 2001.
+>
+> **[ED]** El conjunto histórico de 176 signos de 12×12 píxeles se desarrolló para i-mode entre 1998 y 1999 y se transmitía como datos de carácter. Una anticipación fechada en 1997 sólo puede leerse como ficción o como lectura retroactiva. El sobre no prueba una anticipación: prueba que alguien, en 2001, quiso tener un antecedente.
+>
+
+
+### 18 · lo que Kifli hizo hoy
+
+`folio 9v · restituible`
+
+```
+  1 │ CD  el mensaje tarda dos días en llegar y dice tres cosas
+    │ P   el mensaje tardó dos días y dice tres cosas
+
+  2 │ CD  comió a las ocho
+  3 │ CD  salió al puerto
+    │ P   salió hasta el puerto
+  4 │ C   espera junto a la puerta a la hora en que llegabas
+    │ P   espera junto a la puerta a la hora en que tú llegabas
+    │ O   espera junto a Ia puerta a Ia hora en que tú IIegabas
+    │ R   que el perro se ponía en la puerta a la hora de siempre. eso la puso mal.
+
+  5 │ CD  esto es una red también
+    │ P   esto también es una red
+  6 │ CP  alguien mira a un animal y escribe tres líneas
+  7 │ CD  y las manda a mil quinientos kilómetros
+    │ O   y Ias rnanda a rniI quinientos kiIórnetros
+  8 │ C   para que yo pueda seguir cableando
+    │ P   para que yo pueda seguir con los cables
+    │ R   decía que le escribían del perro para que ella pudiera trabajar
+```
+
+> **[K]** Ileana escribe siempre en el mismo orden: comió, salió, esperó. Cambia el orden sólo cuando algo va mal.
+>
+> **[ED]** Los mensajes sobre Kifli forman la serie más regular del libro: «lo que Kifli hizo hoy» (18), «el perro cenó» (33) y la nota 6 de «tren nocturno» (1). Son también los únicos textos cuya procedencia nadie ha discutido nunca.
+>
+> **[M?]** Porque a nadie le pareció que valieran la pena y por eso nadie los tocó. Es la mejor conservación que hay: que no le interesen a nadie.
+>
+
+
+---
+
+## Cuadernillo III · senden *(enviar)*
+
+### 19 · la carpeta que no está
+
+`folio 10r · restituible`
+
+```
+  1 │ CDP a las cuatro y cuarto la carpeta no está donde estaba
+  2 │ C   o nunca estuvo y lo que teníamos era el acuerdo de que estaba
+    │ P   o nunca estuvo y teníamos sólo el acuerdo de que estaba
+    │ O   o nunca estuvo y teníarnos sóIo eI acuerdo de que estaba
+
+  3 │ CD  en el disco de Hanna hay una versión de agosto
+  4 │ CDP en el mío una de la semana pasada
+  5 │ CD  ninguna es la que perdimos
+    │ R   ninguna servía. las dos eran de otro momento.
+
+  6 │ C   discutimos tres cosas: reconstruir, disimular, mostrar el hueco
+    │ P   discutimos tres cosas: reconstruir, disimular o mostrar el hueco
+    │ O   discutirnos tres cosas: reconstruir, disirnuIar o rnostrar eI hueco
+  7 │ CP  gana el hueco por cansancio, no por poética
+    │ R   al final dejamos el hueco porque ya no daba el tiempo. después dijimos que era a propósito.
+
+  8 │ CD  no hay culpable
+  9 │ CP  hay una obra que siempre fue un acuerdo entre memorias
+    │ O   hay una obra que siernpre fue un acuerdo entre rnernorias
+```
+
+> **[ED]** Esta pieza describe, en 1997 y sobre otra cosa, el procedimiento exacto de esta edición. No se ha añadido una sola palabra.
+>
+> **[M97]** Escribir esto ahora, antes de que decidamos qué contamos mañana.
+>
+> **[ED]** La lectura de R en el verso 7 —«después dijimos que era a propósito»— no está en ningún soporte de 1997. Puede ser lucidez de 2011 o puede ser el verso que Mara borró. El aparato no decide.
+>
+
+
+### 20 · dos discos, dos memorias
+
+`folio 10v · fragmentaria`
+
+```
+  1 │ C   comparar dos copias es una manera de discutir sin gritar
+    │ O   cornparar dos copias es una rnanera de discutir sin gritar
+```
+
+> **[ED]** Un verso en C, al pie de una página ocupada por un diagrama de dos círculos que se cortan. La zona común está rayada y dice «esto sí».
+>
+> **[M?]** El resto del poema estaba en la máquina de Hanna y la máquina de Hanna se vendió en 1999.
+>
+
+
+### 21 · apertura
+
+`folio 11r · restituible`
+
+```
+  1 │ CD  entran antes de que terminemos de probar
+    │ P   entran antes de que terminemos las pruebas
+  2 │ CDO y eso ya no se puede deshacer
+
+  3 │ CD  una niña juega la aventura de texto sin leer las instrucciones
+    │ P   una niña juega la aventura sin leer las instrucciones
+  4 │ C   escribe lo que quiere y el juego a veces le contesta
+    │ P   escribe lo que quiere y a veces el juego le contesta
+    │ R   la niña le escribía cualquier cosa a la máquina y se moría de risa
+  5 │ CD  encuentra en veinte minutos dos errores que no vimos en tres semanas
+    │ O   encuentra en veinte rninutos dos errores que no virnos en tres sernanas
+
+  6 │ CD  una señora usa el correo para escribirle a su hijo
+    │ P   una señora usa el correo para escribir a su hijo
+  7 │ C   no viene a ver arte: viene a mandar un mensaje y el mensaje es urgente
+    │ P   no viene a ver arte: viene a mandar algo urgente
+    │ R   una mujer mayor mandó un correo de verdad. eso fue lo mejor de la noche.
+  8 │ CD  le doy la estación 4 y me quedo de espaldas
+    │ P   le doy la estación 4 y me pongo de espaldas
+
+  9 │ CD  un hombre pregunta dónde está el arte
+ 10 │ C   mientras lo pregunta tapa la ventilación de un monitor con el abrigo
+    │ P   mientras pregunta tapa con el abrigo la ventilación de un monitor
+    │ O   rnientras pregunta tapa con eI abrigo Ia ventiIación de un rnonitor
+ 11 │ CD  no le contesto: muevo el abrigo
+    │ R   y ella no le contestó, nomás le quitó el abrigo de encima. buenísimo.
+```
+
+> **[ED]** Pieza más larga conservada. También la de mayor acuerdo entre testimonios: cuatro de cinco coinciden en la estructura y en el orden de las tres visitas.
+>
+> **[M97]** Poner que la niña rompió el juego. No poner su nombre.
+>
+> **[ED]** No hay nombre en ningún testimonio. La instrucción se cumplió y no sabemos quién era.
+>
+> **[OTRA MANO]** yo era la niña
+>
+> **[ED]** Esa nota está escrita a lápiz en una fotocopia de P que llegó al archivo en 2014 desde una dirección de Kreuzberg, sin remitente. No se ha podido verificar ni descartar. Se conserva en su sitio.
+>
+
+
+### 22 · view-source
+
+`folio 11v · restituible`
+
+```
+  1 │ CD  un visitante abre el código fuente de la página
+    │ P   un visitante abre el código de la página
+  2 │ CP  y lee los comentarios que dejamos para nosotras
+    │ O   y Iee Ios cornentarios que dejarnos para nosotras
+
+  3 │ CD  arreglar esto antes del viernes
+  4 │ CD  no tocar, no sé por qué funciona
+    │ P   no tocar: no sé por qué funciona
+  5 │ CD  aquí iba la foto de todas
+    │ R   había un comentario que decía dónde iba la foto que nunca pusimos
+
+  6 │ CP  se ríe y me dice que ésa es la obra
+    │ O   se ríe y rne dice que ésa es Ia obra
+  7 │ CD  le digo que ésa es la lista de pendientes
+  8 │ C   los dos tenemos razón y sólo uno se va a poder ir a dormir
+    │ P   los dos tenemos razón y sólo uno se va a ir a dormir
+    │ R   le contestó que era la lista de cosas por hacer. y que ella no se iba a dormir.
+```
+
+> **[ED]** El visitante aparece en C como «A.» y en P sin nombre. En R es «el ruso, o el que decían que era el ruso».
+>
+> **[M97]** A. miró los botones como si ya fueran cuadros.
+>
+> **[M?]** ¿A. era Alexei o Andrei?
+>
+> **[ED]** El aparato no ofrece certificado. En 1997 existía una obra hecha con elementos de formulario HTML —Form Art, de Alexei Shulgin—: eso está documentado. Que su autor estuviera en esta sala esa noche, no.
+>
+> **[↳]** La tarjeta con las palabras A. / FORM? se conserva. Es todo lo que queda de «A. / FORM?» (23).
+>
+
+
+### 23 · A. / FORM?
+
+`folio 12r · fragmentaria`
+
+```
+  1 │ P   un menú desplegable es una lista que decidió esconderse
+    │ O   un rnenú despIegabIe es una Iista que decidió esconderse
+```
+
+> **[ED]** Único verso. Está escrito al dorso de una tarjeta que dice, por delante, A. / FORM?. La letra del verso no es la de la tarjeta.
+>
+> **[R]** «Eso lo dijo él y ella lo apuntó. O lo dijo ella y él lo apuntó. Estábamos todos hablando encima.»
+>
+
+
+### 24 · dónde está el arte
+
+`folio 12v · perdida`
+
+*Sin testimonio. Sólo el título.*
+
+> **[ED]** Título en el índice. Sin testimonio. La pregunta que la titula sí sobrevive, dentro de «apertura» (21), donde no se contesta.
+>
+> **[M?]** La escribí y la saqué el mismo día. Contestaba demasiado.
+>
+
+
+### 25 · cola de impresión
+
+`folio 13r · restituible`
+
+```
+  1 │ CD  no hay obras: hay trabajos
+    │ P   no hay obras, hay trabajos
+
+  2 │ CD  007 CUSCO 21:03 14K imprimiendo
+  3 │ CD  008 SANCRIS 21:07 2K retenido
+  4 │ CD  009 BERLIN 21:11 61K en cola
+    │ O   009 BERLlN 21:11 61K en coIa
+  5 │ DP  013 —— 21:14 0K recibido
+
+  6 │ CD  el trabajo 013 no tiene origen y pesa cero
+    │ P   el 013 no tiene origen y pesa cero
+  7 │ CD  está en la cola desde las nueve y catorce
+  8 │ CD  nadie lo cancela
+    │ R   nadie lo quitó. le tomamos cariño, la verdad.
+
+  9 │ C   un estado no es una descripción: es una promesa con hora
+    │ P   un estado no es una descripción sino una promesa con hora
+    │ O   un estado no es una descripción sino una prornesa con hora
+```
+
+> **[ED]** El trabajo 013 aparece en los cinco testimonios y en el registro de máquina de D. Es decir: existió como entrada en la cola. Su origen es lo que no existe.
+>
+> **[MÁQUINA]** QUEUE.LOG 21:14:02 — job 013 received from (null), 0 bytes, retained.
+>
+> **[M?]** Alguien mandó un trabajo vacío para ver si llegaba. Nunca supimos quién y era la mejor pieza de la noche.
+>
+> **[ED]** O el spool escribió una línea sobre sí mismo. Las dos explicaciones tienen la misma evidencia: una línea de registro.
+>
+
+
+### 26 · Cusco por bandas
+
+`folio 13v · restituible`
+
+```
+  1 │ CDP la imagen llega en cuatro paquetes y sale en cuatro densidades
+  2 │ CD  la hoja es más oscura arriba que abajo
+    │ O   Ia hoja es rnás oscura arriba que abajo
+  3 │ CP  y esa diferencia es el viaje, no el dibujo
+    │ R   decía que lo interesante era que se veía el viaje en la tinta
+
+  4 │ CD  Rosa manda instrucciones antes que imágenes
+    │ P   manda instrucciones antes que imágenes
+  5 │ CD  imprimir sin corregir el contraste
+  6 │ CDP no centrar
+  7 │ C   si se atasca, dejarla atascada un minuto y después seguir
+    │ P   si se atasca, dejarla atascada un minuto y seguir
+    │ O   si se atasca, dejarIa atascada un rninuto y seguir
+
+  8 │ CDP escaneamos lo que salió y se lo devolvemos deformado
+  9 │ CP  ella responde a la deformación, no a la imagen
+    │ R   y lo que mandaba después contestaba a lo que le habíamos roto
+ 10 │ CD  en ninguna de las tres ciudades existe el original
+    │ O   en ninguna de Ias tres ciudades existe eI originaI
+```
+
+> **[ED]** El nombre Rosa aparece sólo en C y D. Los testimonios impresos lo omiten. Se conserva: la artista de Cusco tenía nombre y la costumbre de las crónicas europeas era no escribirlo.
+>
+> **[M97]** Instrucción de Rosa, textual: no me arreglen la impresión.
+>
+> **[ED]** Las prácticas de transmisión remota entre artistas —fax art, arte telemático— tenían ya más de una década en 1997. Esta pieza no inaugura nada y no pretende hacerlo. Documenta un turno de trabajo.
+>
+
+
+### 27 · San Cristóbal: intervalos
+
+`folio 14r · restituible`
+
+```
+  1 │ CDP de allá llegan palabras y silencios medidos
+  2 │ CD  el silencio también ocupa hoja
+    │ O   eI siIencio tarnbién ocupa hoja
+
+  3 │ CDP entre las páginas viene un fragmento de un comunicado
+  4 │ CP  y viene con su cadena: quién lo escribió, quién lo tradujo,
+  5 │ CD  quién lo tecleó, quién pagó la llamada, quién lo reenvió
+    │ O   quién Io tecIeó, quién pagó Ia IIarnada, quién Io reenvió
+
+  6 │ CD  aquí decimos que la selva entró directo al módem
+    │ R   aquí en Berlín se decía esa frase, sí. la de la selva y el módem.
+  7 │ CD  y en medio había catorce pasos
+    │ P   y en medio hubo catorce pasos
+  8 │ CDP trece de ellos son personas
+
+  9 │ CD  no imprimimos lo que no pudimos rastrear
+    │ O   no irnprirnirnos Io que no pudirnos rastrear
+ 10 │ CP  eso también fue una decisión estética
+    │ R   hubo cosas que decidieron no imprimir. hubo discusión.
+```
+
+> **[ED]** En septiembre de 1997 el levantamiento de 1994 tiene tres años y los Acuerdos de San Andrés, uno. No es mitología: es correo reciente.
+>
+> **[ED]** La circulación internacional de los comunicados zapatistas ocurrió por redes digitales y, de manera decisiva, por cadenas humanas de retransmisión, traducción y solidaridad. La cuenta de los catorce pasos que hace el poema es la parte que el entusiasmo de la época solía saltarse.
+>
+> **[M97]** Preguntar a G. si podemos imprimir el segundo texto. Si no contesta hoy, no se imprime.
+>
+> **[ED]** No contestó. No se imprimió. El hueco correspondiente en el papel continuo se conserva y mide once centímetros.
+>
+> **[M?]** Once centímetros de no hacer algo. Es lo único de esa noche de lo que estoy segura.
+>
+
+
+### 28 · el atasco de las 21:17
+
+`folio 14v · restituible`
+
+```
+  1 │ CDP la impresora se traba con la hoja a medio salir
+  2 │ CD  el papel está caliente y toda la sala lo mira
+    │ O   eI papeI está caIiente y toda Ia saIa Io rnira
+  3 │ C   es lo más parecido a una obra que ha pasado en tres horas
+    │ P   es lo más parecido a una obra que pasó en tres horas
+    │ R   cuando se atascó, todo el mundo se juntó ahí. fue el momento.
+
+  4 │ CD  abrir la máquina, ¿es reparar o es interrumpir?
+    │ P   abrir la máquina: ¿reparar o interrumpir?
+
+  5 │ CDP de Cusco llega CONTINÚEN
+  6 │ CD  de San Cristóbal: EL ATASCO TAMBIÉN LLEGÓ AQUÍ
+    │ O   de San Cristóbal: EL ATASCO TAMBlÉN LLEGÓ AQUÍ
+
+  7 │ CD  abro la tapa
+  8 │ CP  la hoja tiene algo escrito en el margen que no mandó nadie
+    │ R   en la orilla del papel había una frase. no era de ninguno de los dos envíos.
+  9 │ ··························  laguna · 41 signos
+ 10 │ CDP cierro la tapa sin sacar la hoja
+```
+
+> **[ED]** El centro del libro y su mayor pérdida. La laguna del verso 9 mide 41 signos: exactamente la del verso 7 de «tren nocturno» (1).
+>
+> **[ED]** Los editores de 2003 concluyeron que era el mismo verso y lo imprimieron dos veces, restituido en ambos lugares. El texto que imprimieron no procede de ningún testimonio: lo escribieron ellos.
+>
+> **[M?]** No era el mismo verso. Eran el mismo tamaño de agujero, que no es lo mismo. Un agujero no tiene contenido: tiene medida.
+>
+> **[R]** «Leyó lo del margen en voz alta y después cerró la impresora. Nadie le pidió que la abriera otra vez. Yo creo que ni ella se acordaba al día siguiente.»
+>
+> **[ED]** El rumor de que las tres impresoras se atascaron a la misma hora en las tres ciudades circula desde 2004 y no tiene ningún soporte. Se registra aquí como lo que es: una leyenda que el libro produjo después de perderse.
+>
+
+
+---
+
+## Cuadernillo IV · speichern *(guardar)*
+
+### 29 · saturación
+
+`folio 15r · fragmentaria`
+
+```
+  1 │ P   a las once ya nadie sabe qué es la obra y qué es la documentación
+    │ O   a Ias once ya nadie sabe qué es Ia obra y qué es Ia docurnentación
+  2 │ R   y a nadie le importaba, ésa es la parte que no se cuenta nunca
+```
+
+> **[ED]** El primer verso está en P y en su lectura mecánica. El segundo existe únicamente en R: Hanna lo da como verso y podría ser suyo.
+>
+> **[R]** «No sé si eso lo escribió ella o lo estoy diciendo yo ahora. Déjalo con mi nombre, mejor.»
+>
+> **[ED]** Se deja con su nombre. Es la única atribución del libro pedida por la testigo.
+>
+
+
+### 30 · la estación que siguió mostrando la caché
+
+`folio 15v · restituible`
+
+```
+  1 │ CDP la estación 9 pierde la red y no se entera
+  2 │ CD  sigue mostrando la página que ya no está en ninguna parte
+    │ O   sigue rnostrando Ia página que ya no está en ninguna parte
+
+  3 │ CD  dos visitantes la leen completa
+    │ P   dos visitantes la leen entera
+  4 │ CD  discuten sobre ella
+  5 │ CP  uno la copia a mano en una servilleta
+    │ R   un muchacho copió un texto en una servilleta. eso lo vi yo.
+
+  6 │ CDP la página existió mientras alguien la leía
+  7 │ CP  que es más de lo que puede decirse de casi todo
+    │ O   que es rnás de Io que puede decirse de casi todo
+    │ R   y decía que eso ya era bastante
+
+  8 │ CD  no reinicio la máquina hasta las dos
+  9 │ C   no por respeto: por no interrumpir una conversación
+    │ P   no por respeto sino por no interrumpir una conversación
+    │ R   no la apagó porque estaban platicando. así de simple.
+```
+
+> **[ED]** La servilleta no se conserva. Se conserva la mención en tres testimonios independientes, lo que es más de lo que puede decirse de casi todo.
+>
+> **[M?]** La página era mía. Es la única obra mía que alguien copió a mano.
+>
+> **[ED]** En C esa nota está escrita y después tachada, y después escrita otra vez debajo, igual.
+>
+
+
+### 31 · se fue sin despedirse
+
+`folio 16r · fragmentaria`
+
+```
+  1 │ C   no es un final: es que había un tren
+    │ P   no es un final: había un tren
+    │ R   se fue porque tenía tren. no fue drama. después sí fue drama.
+```
+
+> **[ED]** Un verso. La pieza figura en el índice con doce líneas —Mara numeraba— y once no existen.
+>
+> **[M97]** No escribir esto hoy. Escribirlo cuando ya no duela o cuando duela distinto.
+>
+> **[ED]** La nota está fechada por Mara: 5.IX. El verso conservado, en la misma página, no tiene fecha. No sabemos cuál de los dos se escribió primero.
+>
+
+
+### 32 · llamada a Constanța
+
+`folio 16v · fragmentaria`
+
+```
+  1 │ D   marco a las once y no contesta nadie porque allá es más tarde
+    │ O   rnarco a Ias once y no contesta nadie porque aIIá es rnás tarde
+  2 │ D   marco a las doce y contesta Ileana con la voz de haber estado dormida
+```
+
+> **[ED]** Dos versos en D, donde el archivo se corta. El sector siguiente está muerto.
+>
+> **[ED]** Lo que decía el resto lo sabemos por «el perro cenó» (33), que existe entero. Es el único caso del libro en que la continuación sobrevive y el poema no.
+>
+> **[M?]** Constanța está una hora adelante. Toda la noche calculé mal en la misma dirección.
+>
+
+
+### 33 · el perro cenó
+
+`folio 17r · restituible`
+
+```
+  1 │ CDP pregunto por él antes que por nadie
+  2 │ CD  Ileana dice: comió, y está debajo de la mesa
+    │ O   IIeana dice: cornió, y está debajo de Ia rnesa
+  3 │ CD  cerca del teléfono
+    │ R   el perro estaba junto al teléfono. eso lo contó como cinco veces.
+
+  4 │ CDP cuelgo y vuelvo a la sala
+  5 │ CDP aquí hay ochenta personas hablando de comunicación planetaria
+
+  6 │ CD  la noticia más importante de la noche
+    │ O   Ia noticia rnás irnportante de Ia noche
+  7 │ CDP es que el perro cenó
+    │ R   que el perro había cenado. y lo dijo en serio, no de broma.
+
+  8 │ CP  no lo escribo para que sea gracioso
+  9 │ C   lo escribo porque es la información que viajó mil quinientos kilómetros
+    │ P   lo escribo porque es la información que cruzó mil quinientos kilómetros
+    │ O   Io escribo porque es Ia inforrnación que cruzó rniI quinientos kiIórnetros
+ 10 │ CD  y llegó completa
+    │ R   y llegó entera. eso último lo dijo despacio.
+```
+
+> **[ED]** Única pieza del libro conservada íntegra en cuatro testimonios, sin lagunas y con variantes menores. También la más citada por quienes conocieron el poemario sin haberlo leído.
+>
+> **[K]** Kifli: bollo con forma de media luna. Se lo pusieron por la manera en que dormía.
+>
+> **[ED]** Kifli murió en 2003 en Constanța, con Ileana. El dato no pertenece al libro y se registra aquí porque el libro lo va a hacer inevitable.
+>
+> **[M?]** Todo el poemario iba a llamarse así hasta la semana anterior. Cambié el título porque me pareció que un libro no puede llamarse por lo único que salió bien.
+>
+
+
+### 34 · nadie apague todavía
+
+`folio 17v · restituible`
+
+```
+  1 │ CDP lo digo tres veces esta noche y significa tres cosas
+
+  2 │ CD  a las siete: no apaguen, todavía estoy copiando
+    │ O   a Ias siete: no apaguen, todavía estoy copiando
+  3 │ CD  a las once: no apaguen, la señora no ha terminado su correo
+    │ P   a las once: no apaguen, la señora no terminó su correo
+  4 │ CD  a las dos: no apaguen
+    │ R   y la tercera vez ya no dijo por qué. sólo dijo no apaguen.
+
+  5 │ C   la tercera no tiene explicación detrás
+    │ P   la tercera no lleva explicación detrás
+    │ O   Ia tercera no IIeva expIicación detrás
+  6 │ CP  la digo mirando a alguien que se va mañana
+    │ R   lo dijo mirando a la que se iba. todos entendimos y nadie dijo nada.
+
+  7 │ CDP una instrucción técnica repetida suficientes veces
+  8 │ CP  se convierte en la manera de decir lo que no sabemos decir
+    │ O   se convierte en Ia rnanera de decir Io que no saberrios decir
+
+  9 │ ···············  laguna · 24 signos
+ 10 │ D   y las máquinas obedecen la primera acepción
+    │ R   algo de que las máquinas sólo entienden el primer sentido
+```
+
+> **[ED]** Pieza que da título al conjunto. El título aparece en el índice —al dorso del plano— con letra más grande y subrayado dos veces.
+>
+> **[ED]** El halo oscuro que atraviesa esta hoja en P es el círculo de café de «comida sobre el teclado» (16), trasladado por seis años de fotocopias. Ya no es una mancha: es una propiedad del papel.
+>
+> **[M?]** Tres veces, tres sentidos, y el tercero es el único que iba dirigido a una persona. Ella no lo oyó. Estaba abajo, desconectando.
+>
+> **[R]** «Sí lo oí.»
+>
+> **[ED]** Las dos notas anteriores están separadas por catorce años y una de ellas contesta a la otra. El aparato las deja juntas porque es el único lugar donde pueden estarlo.
+>
+
+
+### 35 · nueve monitores obedecen
+
+`folio 18r · fragmentaria`
+
+```
+  1 │ CDP apagamos nueve y el décimo tarda
+  2 │ C   un punto blanco en el centro que no termina de irse
+    │ O   un punto bIanco en eI centro que no terrnina de irse
+    │ R   quedaba un puntito blanco en medio de la pantalla, sí, así eran
+```
+
+> **[ED]** Dos versos de una pieza que el índice numera con nueve. Los siete restantes no existen en ningún soporte.
+>
+> **[M97]** Uno por monitor. El décimo se queda sin verso a propósito.
+>
+> **[ED]** Si la instrucción anterior se cumplió, la pieza tenía nueve versos para diez monitores, y lo que falta —siete— no incluye el décimo, que nunca se escribió. La pérdida y el hueco deliberado son indistinguibles en el resultado, y no lo son en absoluto.
+>
+
+
+### 36 · disquete sin etiqueta
+
+`folio 18v · fragmentaria`
+
+```
+  1 │ CD  escribir el nombre es la parte que se olvida
+    │ O   escribir eI nornbre es Ia parte que se oIvida
+```
+
+> **[ED]** Un verso. Está en el testimonio que él mismo describe: D es el disquete sin etiqueta.
+>
+> **[M?]** Once tenían nombre. El once no.
+>
+> **[ED]** El disquete se llama once porque llegó al archivo en una caja con otros diez, no porque nadie lo numerara. El nombre que usamos para el testigo se lo pusimos nosotros, aquí, en esta edición. También esto es una restitución.
+>
+
+
+---
+
+## Cuadernillo V · morgen *(mañana)*
+
+### 37 · procedimiento
+
+`folio 19r · restituible`
+
+```
+  1 │ CDP guardar
+  2 │ CDP expulsar
+  3 │ CDP escribir el nombre
+  4 │ CDP llevar una copia a otra casa
+    │ O   IIevar una copia a otra casa
+  5 │ CD  acordarse mañana de qué se quiso guardar
+    │ R   y al final: acordarse mañana de qué querías guardar. ésa me la sé.
+
+  6 │ CD  de los cinco pasos hacemos cuatro
+    │ P   de los cinco pasos hicimos cuatro
+  7 │ CP  el que falta no es el tercero
+    │ O   eI que faIta no es eI tercero
+  8 │ CD  es el quinto
+    │ R   el que no hicimos fue el último. acordarnos.
+```
+
+> **[ED]** Instrucción afectiva en forma de procedimiento técnico. Los cinco pasos coinciden en todos los testimonios; los tres versos finales, no: D los tiene, C los tiene tachados con una raya, P no los imprime.
+>
+> **[M97]** Quitar los últimos tres. Explican.
+>
+> **[ED]** No se quitan. Sin ellos el poema es una instrucción; con ellos es un balance. Esta edición prefiere el balance y declara que está prefiriendo.
+>
+> **[OTRA MANO]** el tercero tampoco lo hicieron. el once no tiene etiqueta.
+>
+
+
+### 38 · notas del autor, 2001
+
+`folio 19v · fragmentaria`
+
+```
+  1 │ D   esto lo escribo cuatro años después dentro de una copia cerrada en 1997
+    │ O   esto Io escribo cuatro años después dentro de una copia cerrada en 1997
+```
+
+> **[ED]** El archivo que contiene este verso está dentro de D, cuya última escritura registrada es del 06.09.97 a las 02:41. La fecha interna del archivo es 14.03.01.
+>
+> **[ED]** Un disquete puede reescribirse. La explicación aburrida es que alguien lo abrió en 2001 y guardó algo dentro. Ninguna otra huella de esa apertura existe: el resto de los archivos conserva su fecha.
+>
+> **[M?]** Yo no fui.
+>
+> **[ED]** El poema que crea la evidencia de la que dice provenir. Se marca aquí como lo que es —hiperstición— y se conserva en el cuerpo con su ambigüedad intacta, porque quitarla sería editar el problema en vez de editar el libro.
+>
+
+
+### 39 · index.html
+
+`folio 20r · perdida`
+
+*Sin testimonio. Sólo el título.*
+
+> **[ED]** Título en el índice. Sin testimonio de ninguna clase.
+>
+> **[MÁQUINA]** El archivo homónimo en D contiene 812 bytes de HTML incompleto. Una etiqueta de lista abierta y nunca cerrada. No es un poema: es una página que quedó a medio escribir.
+>
+> **[ED]** Salvo que el índice la numere entre los poemas, con folio, como a las demás. El índice está escrito a mano y no distingue entre lo que era poema y lo que era archivo. Puede que Mara tampoco.
+>
+
+
+### 40 · morgen
+
+`folio 20v · sin testimonio`
+
+*Ningún testigo lo vio. En el pliego ejecutable, este folio lo escribe quien lee.*
+
+> **[ED]** Último título del índice. No se conserva ni una palabra, ni una cita, ni una mención en R. De las cuarenta piezas del libro, es la única de la que no sabemos absolutamente nada excepto que Mara la contó.
+>
+> **[ED]** El aparato ha llegado hasta aquí restituyendo con testimonios. Aquí no hay ninguno. Cualquier cosa que aparezca en este folio la habrá puesto quien lee.
+>
+> **[M?]** morgen no es una carpeta.
+>
+
+
+---
+
+
+════════════════════════════════════════════════════════════════════════════
+APARATO FINAL
+════════════════════════════════════════════════════════════════════════════
+
+
+RÉGIMEN DE VERDAD
+
+El libro distingue tres niveles y sólo los separa aquí. El cuerpo del
+aparato conserva la ambigüedad a propósito.
+
+DOCUMENTO
+  El programa Net Culture / Netzkultur en el Podewil de Berlín, septiembre
+  de 1997. Form Art, de Alexei Shulgin, 1997. La propuesta de Scott Fahlman
+  de usar :-) y :-( en un tablón de Carnegie Mellon, 1982. Los kaomoji
+  erguidos circulando en servicios japoneses desde mediados de los ochenta,
+  con una atribución individual bastante menos firme que la de Fahlman. Los
+  sistemas MUD y MOO anteriores a 1997, con presencia simultánea, juego,
+  conversación y construcción textual de espacios. Los 176 signos de 12×12
+  píxeles de Shigetaka Kurita para i-mode, desarrollados entre 1998 y 1999
+  y transmitidos como datos de carácter. Las prácticas de fax art y arte
+  telemático, con más de una década de transmisiones remotas para 1997. La
+  circulación internacional de los comunicados zapatistas por redes
+  digitales y, de manera decisiva, por cadenas humanas de retransmisión,
+  traducción y solidaridad.
+
+FICCIÓN PLAUSIBLE
+  Mara Ionescu y el poemario perdido. Hanna, Ileana, Rosa, el grupo, el
+  café internet temporal, el performance de impresión entre Cusco, San
+  Cristóbal de Las Casas y Berlín, la pieza FACE TO FACE / WITHOUT A FACE,
+  el perro Kifli, los cinco testigos y esta edición.
+
+HIPERSTICIÓN
+  El sobre que en 2001 rotula FIRST EMOJI / 1997 una hoja de 1997. El
+  trabajo 013, recibido de ninguna parte y de peso cero. El archivo fechado
+  en 2001 dentro de una copia cerrada en 1997. El rumor de las tres
+  impresoras atascadas a la misma hora en tres ciudades. Y, en el pliego
+  ejecutable, el testimonio T: el que escribe quien lee, y que las notas
+  anteriores empiezan a citar como si siempre hubiera estado ahí.
+
+La hiperstición no autoriza a mentir en las notas históricas. Su potencia
+depende de que se pueda distinguir investigación, invención y contaminación
+temporal. Por eso están separadas aquí y sólo aquí.
+
+
+SOBRE EL EZLN
+
+En septiembre de 1997 el levantamiento de 1994 tiene tres años y los
+Acuerdos de San Andrés, uno. Es correo de esta temporada, no mitología.
+
+La pieza 27 desmonta la frase «la selva entró directamente al módem»
+contando los catorce pasos que hubo en medio, trece de los cuales son
+personas. Registra además una decisión: lo que no se pudo rastrear no se
+imprimió, y el hueco correspondiente en el papel continuo mide once
+centímetros. No hay pasamontañas usados como textura.
+
+
+SOBRE LOS NOMBRES PROPIOS
+
+Las personas históricas que aparecen nombradas —Fahlman, Shulgin, Kurita—
+entran por sus obras y documentos, con fecha. Que alguna de ellas estuviera
+en esta sala esa noche no se afirma en ningún lugar de este aparato: el
+visitante se llama A. y el libro no ofrece certificado. La confusión entre
+«hizo esta obra en 1997» y «estuvo en esta fiesta» es exactamente el error
+que un aparato crítico existe para no cometer.
+
+
+QUÉ HACE LA MÁQUINA QUE EL PAPEL NO PUEDE
+
+En papel, un aparato presenta las variantes y quien lee las mira. El pliego
+ejecutable obliga a elegir para que el verso exista; cobra la elección en
+crédito de los testigos rechazados; retira del libro al testigo que pierde
+demasiado y borra con él los versos que sólo él sostenía; corrige su propio
+estudio preliminar a medida que la lectura lo desmiente; y deja el último
+folio en blanco para que lo llene alguien que no estuvo allí.
+
+Al terminar, la máquina informa a quién le creyó usted. Ésa es la única
+conclusión que el libro ofrece, y es un retrato del lector, no de 1997.
+
+La bitácora de la lectura se guarda en la máquina de quien lee y no se
+envía a ningún servidor.
+
+
+COLOFÓN
+
+Segunda edición del mismo día. La primera —«Café internet, Berlín, 1997»,
+que lee esa noche como un sistema de archivos abierto muchos años después—
+está en poemario/cafe-internet-berlin/. Ninguna corrige a la otra: son dos
+ejecuciones de los mismos tres cuadernos de trabajo, y el desacuerdo entre
+ellas es del mismo orden que el desacuerdo entre C, D, P, O y R.
+
+Compuesta a partir de los cuadernos 01_temas_e_historia,
+02_tono_y_forma y 03_mundo_material_voces_y_archivo.
+
+corpus.js                 los cinco testigos y todas sus lecturas
+aparato.js                la máquina de cotejar
+index.html                el pliego ejecutable
+style.css                 cinco tintas para cinco maneras de fallar
+construir-aparato.mjs     emite estas dos salidas desde el mismo corpus,
+                          para que la impresa y la ejecutable no puedan
+                          separarse
+
+Sin bibliotecas externas. Sin dependencias remotas. Sin servidor.
+
+El procedimiento queda abierto: el folio 20v sigue vacío en cada máquina
+donde nadie lo ha escrito todavía.
+
+════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,108 @@
+
+════════════════════════════════════════════════════════════════════════════
+APARATO FINAL
+════════════════════════════════════════════════════════════════════════════
+
+
+RÉGIMEN DE VERDAD
+
+  El libro distingue tres niveles y sólo los separa aquí. El cuerpo del
+  aparato conserva la ambigüedad a propósito.
+
+  DOCUMENTO
+    El programa Net Culture / Netzkultur en el Podewil de Berlín, septiembre
+    de 1997. Form Art, de Alexei Shulgin, 1997. La propuesta de Scott Fahlman
+    de usar :-) y :-( en un tablón de Carnegie Mellon, 1982. Los kaomoji
+    erguidos circulando en servicios japoneses desde mediados de los ochenta,
+    con una atribución individual bastante menos firme que la de Fahlman. Los
+    sistemas MUD y MOO anteriores a 1997, con presencia simultánea, juego,
+    conversación y construcción textual de espacios. Los 176 signos de 12×12
+    píxeles de Shigetaka Kurita para i-mode, desarrollados entre 1998 y 1999
+    y transmitidos como datos de carácter. Las prácticas de fax art y arte
+    telemático, con más de una década de transmisiones remotas para 1997. La
+    circulación internacional de los comunicados zapatistas por redes
+    digitales y, de manera decisiva, por cadenas humanas de retransmisión,
+    traducción y solidaridad.
+
+  FICCIÓN PLAUSIBLE
+    Mara Ionescu y el poemario perdido. Hanna, Ileana, Rosa, el grupo, el
+    café internet temporal, el performance de impresión entre Cusco, San
+    Cristóbal de Las Casas y Berlín, la pieza FACE TO FACE / WITHOUT A FACE,
+    el perro Kifli, los cinco testigos y esta edición.
+
+  HIPERSTICIÓN
+    El sobre que en 2001 rotula FIRST EMOJI / 1997 una hoja de 1997. El
+    trabajo 013, recibido de ninguna parte y de peso cero. El archivo fechado
+    en 2001 dentro de una copia cerrada en 1997. El rumor de las tres
+    impresoras atascadas a la misma hora en tres ciudades. Y, en el pliego
+    ejecutable, el testimonio T: el que escribe quien lee, y que las notas
+    anteriores empiezan a citar como si siempre hubiera estado ahí.
+
+  La hiperstición no autoriza a mentir en las notas históricas. Su potencia
+  depende de que se pueda distinguir investigación, invención y contaminación
+  temporal. Por eso están separadas aquí y sólo aquí.
+
+
+SOBRE EL EZLN
+
+  En septiembre de 1997 el levantamiento de 1994 tiene tres años y los
+  Acuerdos de San Andrés, uno. Es correo de esta temporada, no mitología.
+
+  La pieza 27 desmonta la frase «la selva entró directamente al módem»
+  contando los catorce pasos que hubo en medio, trece de los cuales son
+  personas. Registra además una decisión: lo que no se pudo rastrear no se
+  imprimió, y el hueco correspondiente en el papel continuo mide once
+  centímetros. No hay pasamontañas usados como textura.
+
+
+SOBRE LOS NOMBRES PROPIOS
+
+  Las personas históricas que aparecen nombradas —Fahlman, Shulgin, Kurita—
+  entran por sus obras y documentos, con fecha. Que alguna de ellas estuviera
+  en esta sala esa noche no se afirma en ningún lugar de este aparato: el
+  visitante se llama A. y el libro no ofrece certificado. La confusión entre
+  «hizo esta obra en 1997» y «estuvo en esta fiesta» es exactamente el error
+  que un aparato crítico existe para no cometer.
+
+
+QUÉ HACE LA MÁQUINA QUE EL PAPEL NO PUEDE
+
+  En papel, un aparato presenta las variantes y quien lee las mira. El pliego
+  ejecutable obliga a elegir para que el verso exista; cobra la elección en
+  crédito de los testigos rechazados; retira del libro al testigo que pierde
+  demasiado y borra con él los versos que sólo él sostenía; corrige su propio
+  estudio preliminar a medida que la lectura lo desmiente; y deja el último
+  folio en blanco para que lo llene alguien que no estuvo allí.
+
+  Al terminar, la máquina informa a quién le creyó usted. Ésa es la única
+  conclusión que el libro ofrece, y es un retrato del lector, no de 1997.
+
+  La bitácora de la lectura se guarda en la máquina de quien lee y no se
+  envía a ningún servidor.
+
+
+COLOFÓN
+
+  Segunda edición del mismo día. La primera —«Café internet, Berlín, 1997»,
+  que lee esa noche como un sistema de archivos abierto muchos años después—
+  está en poemario/cafe-internet-berlin/. Ninguna corrige a la otra: son dos
+  ejecuciones de los mismos tres cuadernos de trabajo, y el desacuerdo entre
+  ellas es del mismo orden que el desacuerdo entre C, D, P, O y R.
+
+  Compuesta a partir de los cuadernos 01_temas_e_historia,
+  02_tono_y_forma y 03_mundo_material_voces_y_archivo.
+
+  corpus.js                 los cinco testigos y todas sus lecturas
+  aparato.js                la máquina de cotejar
+  index.html                el pliego ejecutable
+  style.css                 cinco tintas para cinco maneras de fallar
+  construir-aparato.mjs     emite estas dos salidas desde el mismo corpus,
+                            para que la impresa y la ejecutable no puedan
+                            separarse
+
+  Sin bibliotecas externas. Sin dependencias remotas. Sin servidor.
+
+  El procedimiento queda abierto: el folio 20v sigue vacío en cada máquina
+  donde nadie lo ha escrito todavía.
+
+════════════════════════════════════════════════════════════════════════════
