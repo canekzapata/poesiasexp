@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure Markov Text Generator</title>
+</head>
+<body>
+    <h1>Configure Markov Text Generator</h1>
+    <form method="POST" action="/configure">
+        <label for="model_type">Model Type:</label>
+        <select name="model_type" id="model_type">
+            <option value="individual">Individual</option>
+            <option value="combined">Combined</option>
+        </select>
+        <br><br>
+
+        <div id="individual_model">
+            <label for="json_file">JSON File:</label>
+            <input type="text" id="json_file" name="json_file">
+            <br><br>
+        </div>
+
+        <div id="combined_model" style="display: none;">
+            <label for="json_file1">First JSON File:</label>
+            <input type="text" id="json_file1" name="json_file1">
+            <br><br>
+            <label for="weight1">Weight for First Model:</label>
+            <input type="number" id="weight1" name="weight1" step="0.1" value="1.0">
+            <br><br>
+            <label for="json_file2">Second JSON File:</label>
+            <input type="text" id="json_file2" name="json_file2">
+            <br><br>
+            <label for="weight2">Weight for Second Model:</label>
+            <input type="number" id="weight2" name="weight2" step="0.1" value="1.0">
+            <br><br>
+        </div>
+
+        <label for="text_generation_type">Text Generation Type:</label>
+        <select name="text_generation_type" id="text_generation_type">
+            <option value="sentence">Sentence</option>
+            <option value="paragraph">Paragraph</option>
+            <option value="sentence_seed">Sentence with Seed</option>
+            <option value="paragraph_seed">Paragraph with Seed</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Update Configuration">
+    </form>
+
+    <script>
+        document.getElementById('model_type').addEventListener('change', function () {
+            if (this.value === 'individual') {
+                document.getElementById('individual_model').style.display = 'block';
+                document.getElementById('combined_model').style.display = 'none';
+            } else {
+                document.getElementById('individual_model').style.display = 'none';
+                document.getElementById('combined_model').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

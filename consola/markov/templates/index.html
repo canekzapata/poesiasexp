@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markov Text Generator</title>
+    <style>
+        p {font-size: 2.3vmax;}
+    </style>
+</head>
+<body>
+    <h1>Markov Text Generator</h1>
+    <form method="POST" action="/">
+        <label for="seed">Seed word (optional):</label>
+        <input type="text" id="seed" name="seed">
+        <br><br>
+        <input type="submit" value="Generate Text">
+    </form>
+
+    {% if paragraph %}
+        <hr>
+        <h2>Generated Text:</h2>
+        <p>{{ paragraph }}</p>
+    {% endif %}
+
+    <a href="/download">
+        <button type="button">Descargar Texto Acumulado</button>
+    </a>
+</body>
+</html>
