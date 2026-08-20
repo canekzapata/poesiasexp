@@ -1,0 +1,25 @@
+{
+  "_comment": "Copia este archivo a users.json y reemplaza los hashes. Genera hashes con: python -c \"from werkzeug.security import generate_password_hash; print(generate_password_hash('TU_PASSWORD'))\"",
+  "users": [
+    {
+      "username": "alex",
+      "password_hash": "scrypt:32768:8:1$EXAMPLE_REEMPLAZA_ESTO"
+    },
+    {
+      "username": "amix1",
+      "password_hash": "scrypt:32768:8:1$EXAMPLE_REEMPLAZA_ESTO"
+    },
+    {
+      "username": "amix2",
+      "password_hash": "scrypt:32768:8:1$EXAMPLE_REEMPLAZA_ESTO"
+    },
+    {
+      "username": "amix3",
+      "password_hash": "scrypt:32768:8:1$EXAMPLE_REEMPLAZA_ESTO"
+    },
+    {
+      "username": "amix4",
+      "password_hash": "scrypt:32768:8:1$EXAMPLE_REEMPLAZA_ESTO"
+    }
+  ]
+}

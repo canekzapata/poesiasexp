@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CONSOLA :: login</title>
+<style>
+  html, body { margin:0; padding:0; height:100%; background:#008080; font-family:"MS Sans Serif","Tahoma",sans-serif; font-size:12px; color:#000; }
+  body { display:flex; align-items:center; justify-content:center; }
+  .window { width:340px; background:#c0c0c0; border:2px solid; border-color:#fff #000 #000 #fff; box-shadow:1px 1px 0 0 #000; }
+  .titlebar { background:#000080; color:#fff; padding:3px 6px; font-weight:bold; display:flex; justify-content:space-between; }
+  .titlebar .x { background:#c0c0c0; color:#000; border:1px solid; border-color:#fff #000 #000 #fff; width:16px; text-align:center; line-height:14px; }
+  .content { padding:14px; }
+  .field { margin-bottom:8px; }
+  label { display:block; margin-bottom:2px; }
+  input[type=text], input[type=password] {
+    width:100%; box-sizing:border-box; padding:3px 5px;
+    border:2px solid; border-color:#808080 #fff #fff #808080;
+    background:#fff; font-family:"Courier New",monospace; font-size:12px;
+  }
+  .btnrow { display:flex; gap:6px; justify-content:flex-end; margin-top:10px; }
+  button {
+    background:#c0c0c0; padding:3px 14px; font-family:inherit; font-size:12px;
+    border:2px solid; border-color:#fff #000 #000 #fff; cursor:pointer;
+  }
+  button:active { border-color:#000 #fff #fff #000; }
+  .msg { color:#800000; min-height:14px; margin-top:6px; font-family:"Courier New",monospace; }
+  .ascii { font-family:"Courier New",monospace; white-space:pre; text-align:center; font-size:10px; line-height:1.1; margin:0 0 6px 0; color:#000; }
+  marquee { font-family:"Courier New",monospace; font-size:11px; color:#000080; }
+</style>
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar"><span>:: CONSOLA :: identif&iacute;cate</span><span class="x">x</span></div>
+    <div class="content">
+      <pre class="ascii">
+  ___ ___  _  _ ___  ___  _      _
+ / __/ _ \| \| / __|/ _ \| |    /_\
+| (_| (_) | .` \__ \ (_) | |__ / _ \
+ \___\___/|_|\_|___/\___/|____/_/ \_\
+      </pre>
+      <marquee scrollamount="3">~ escribe con markov, tracery, claude y el internet en vivo ~</marquee>
+      <form id="loginForm">
+        <div class="field">
+          <label for="u">usuarie:</label>
+          <input id="u" name="username" type="text" autofocus autocomplete="username">
+        </div>
+        <div class="field">
+          <label for="p">password:</label>
+          <input id="p" name="password" type="password" autocomplete="current-password">
+        </div>
+        <div class="btnrow">
+          <button type="submit">[ entrar ]</button>
+        </div>
+        <div class="msg" id="msg"></div>
+      </form>
+    </div>
+  </div>
+<script>
+const form = document.getElementById('loginForm');
+const msg = document.getElementById('msg');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  msg.textContent = '> autenticando...';
+  const fd = new FormData(form);
+  const body = JSON.stringify({ username: fd.get('username'), password: fd.get('password') });
+  try {
+    const r = await fetch('/login', { method:'POST', headers:{'Content-Type':'application/json'}, body });
+    const j = await r.json();
+    if (r.ok && j.ok) { msg.textContent = '> ok, entrando...'; window.location.href = '/'; }
+    else { msg.textContent = '> ' + (j.error || 'error'); }
+  } catch (err) { msg.textContent = '> error de red'; }
+});
+</script>
+</body>
+</html>
